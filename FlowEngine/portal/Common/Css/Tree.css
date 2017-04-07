@@ -1,0 +1,69 @@
+td {
+	font-size: 12px;
+}
+.tree_bg_normal
+{/*菜单正常显示*/
+	color:000000;
+	background-image: url(../Images/tree_bg_normal.gif);
+	background-repeat: repeat-x;
+	height: 25px;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #7786A7;
+	border-bottom: 1px solid #7786A7;
+	border-left: 1px solid #ffffff;
+	padding-left: 15px;
+}
+.tree_bg_chosen
+{/*菜单选中显示*/
+	color:000000;
+	background-color:#ffffff;
+	background-repeat: repeat-x;
+	height: 25px;
+	border-top: 1px solid #ffffff;
+	border-right: 1px solid #5D790D;
+	border-bottom: 1px solid #5D790D;
+	border-left: 1px solid #ffffff;
+	padding-left: 15px;
+}
+.tree_word_chosen
+{/*菜单文字选中显示*/
+	color:#09135A;
+	text-decoration:none;
+}
+.tree_all_bg
+{
+	color:000000;
+	background-color: #F4F2F2;
+	vertical-align: top;
+	border-top: 1px solid #7786A7;
+	border-right: 1px solid #ADAEAA;
+	border-bottom: 1px solid #ADAEAA;
+	border-left: 1px solid #ADAEAA;
+}
+.tree_menu_padding
+{
+	color:000000;
+	vertical-align: top;
+	border-top: 0px solid #7786A7;
+	border-right: 0px solid #ADAEAA;
+	border-bottom: 1px solid #7786A7;
+	border-left: 0px solid #ADAEAA;
+	height:2px;
+	background-repeat: repeat;
+	background-color: #CDD9F5;
+}
+.tree_menu1_word
+{/*菜单超链接文字*/
+	color:#000000;
+	text-decoration:none;
+}
+A.tree_menu1_word:link
+{
+	color:#000000;
+	text-decoration:none;
+}
+A.tree_menu1_word:hover
+{
+	color:#09135A;
+	text-decoration:none;
+}

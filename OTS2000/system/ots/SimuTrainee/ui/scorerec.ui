@@ -1,0 +1,335 @@
+<ui version="4.0" >
+ <class>CScoreRec</class>
+ <widget class="QWidget" name="CScoreRec" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>526</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>成绩查询</string>
+  </property>
+  <property name="styleSheet" >
+   <string notr="true" >
+font: 14pt "宋体";
+background-color: rgb(231, 240, 245);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3" >
+   <item>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="styleSheet" >
+      <string notr="true" >border-color: rgb(255, 3, 15);</string>
+     </property>
+     <property name="title" >
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <item row="0" column="0" >
+       <layout class="QHBoxLayout" name="horizontalLayout" >
+        <item>
+         <widget class="QLabel" name="label" >
+          <property name="minimumSize" >
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet" >
+           <string notr="true" >font: 75 10pt "新宋体";
+color: rgb(4, 30, 103);
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 0), stop:0.5 rgba(224, 234, 245, 0), stop:1 rgba(255, 255, 255, 0));
+    border-width:0px;</string>
+          </property>
+          <property name="text" >
+           <string>查询方式：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboMode" >
+          <property name="minimumSize" >
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1" colspan="2" >
+       <layout class="QHBoxLayout" name="horizontalLayout_3" >
+        <item>
+         <spacer name="horizontalSpacer_2" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelContent" >
+          <property name="minimumSize" >
+           <size>
+            <width>60</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>60</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet" >
+           <string notr="true" >font: 75 10pt "新宋体";
+color: rgb(4, 30, 103);
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 0), stop:0.5 rgba(224, 234, 245, 0), stop:1 rgba(255, 255, 255, 0));
+    border-width:0px;</string>
+          </property>
+          <property name="text" >
+           <string>用户名:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboContent" >
+          <property name="minimumSize" >
+           <size>
+            <width>220</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="editable" >
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item rowspan="2" row="0" column="4" >
+       <widget class="QPushButton" name="buttonSearch" >
+        <property name="minimumSize" >
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet" >
+         <string notr="true" >background-color: qlineargradient(spread:pad, x1:0.520599, y1:1, x2:0.508, y2:0.142, stop:0 rgba(255, 255, 255, 255), stop:0.0564972 rgba(214, 240, 253, 255), stop:0.536723 rgba(216, 239, 253, 255), stop:1 rgba(255, 255, 255, 255));
+
+    border-width: 2px;
+    border-color: rgb(0, 113, 173);
+    border-style: solid;
+    border-radius: 5;
+    padding:5px;
+ 
+font: 11pt "汉仪中黑简";
+color: rgb(7, 100, 143);</string>
+        </property>
+        <property name="text" >
+         <string>查  询</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2" >
+       <layout class="QHBoxLayout" name="horizontalLayout_2" >
+        <item>
+         <widget class="QLabel" name="label_2" >
+          <property name="minimumSize" >
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet" >
+           <string notr="true" >font: 75 10pt "新宋体";
+color: rgb(4, 30, 103);
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 0), stop:0.5 rgba(224, 234, 245, 0), stop:1 rgba(255, 255, 255, 0));
+    border-width:0px;</string>
+          </property>
+          <property name="text" >
+           <string>开始时间：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateTimeEdit" name="dateTimeEditStart" >
+          <property name="displayFormat" >
+           <string>yyyy-MM-dd HH:mm:ss</string>
+          </property>
+          <property name="calendarPopup" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer" >
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="2" >
+       <layout class="QHBoxLayout" name="horizontalLayout_4" >
+        <item>
+         <widget class="QLabel" name="label_3" >
+          <property name="minimumSize" >
+           <size>
+            <width>70</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize" >
+           <size>
+            <width>70</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet" >
+           <string notr="true" >font: 75 10pt "新宋体";
+color: rgb(4, 30, 103);
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 0), stop:0.5 rgba(224, 234, 245, 0), stop:1 rgba(255, 255, 255, 0));
+    border-width:0px;</string>
+          </property>
+          <property name="text" >
+           <string>结束时间：</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateTimeEdit" name="dateTimeEditEnd" >
+          <property name="displayFormat" >
+           <string>yyyy-MM-dd HH:mm:ss</string>
+          </property>
+          <property name="calendarPopup" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item rowspan="2" row="0" column="5" >
+       <widget class="QPushButton" name="buttonSearchTaday" >
+        <property name="minimumSize" >
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet" >
+         <string notr="true" >background-color: qlineargradient(spread:pad, x1:0.520599, y1:1, x2:0.508, y2:0.142, stop:0 rgba(255, 255, 255, 255), stop:0.0564972 rgba(236, 241, 245, 255), stop:0.536723 rgba(236, 241, 245, 255), stop:1 rgba(255, 255, 255, 255));
+
+    border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    border-radius:2;
+    padding:5px;
+ 
+font: 11pt "汉仪中黑简";
+color: rgb(7, 100, 143);</string>
+        </property>
+        <property name="text" >
+         <string>查询当天</string>
+        </property>
+       </widget>
+      </item>
+      <item rowspan="2" row="0" column="6" >
+       <widget class="QPushButton" name="buttonExport" >
+        <property name="minimumSize" >
+         <size>
+          <width>0</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize" >
+         <size>
+          <width>80</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet" >
+         <string notr="true" >background-color: qlineargradient(spread:pad, x1:0.520599, y1:1, x2:0.508, y2:0.142, stop:0 rgba(255, 255, 255, 255), stop:0.0564972 rgba(236, 241, 245, 255), stop:0.536723 rgba(236, 241, 245, 255), stop:1 rgba(255, 255, 255, 255));
+
+    border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    border-radius:2;
+    padding:5px;
+ 
+font: 11pt "汉仪中黑简";
+color: rgb(7, 100, 143);</string>
+        </property>
+        <property name="text" >
+         <string>导出EXCEL</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableView" name="listScoreRec" >
+     <property name="styleSheet" >
+      <string notr="true" >background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 100), stop:0.5 rgba(224, 234, 245, 100), stop:1 rgba(255, 255, 255, 100));
+ border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    padding: 2px;</string>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+! Relational table of sequence name and ots filename 
+! sequence name 	filename
+!
+1.1.49.1.1		RB.LCU15R.SYS.UNIT_STA_Start
+1.1.49.1.2		RB.LCU15R.SYS.UNIT_STA_Stop
+1.1.52.0.0		RB.LCU15R.PAM.YG_GD
+1.1.53.0.0		RB.LCU15R.PAM.WG_GD
+
+

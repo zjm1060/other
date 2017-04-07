@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SceneReset</class>
+ <widget class="QDialog" name="SceneReset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>工况初始</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>501</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>工况初始</string>
+   </property>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>211</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string notr="true">1</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButtonInit">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>340</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Agency FB&quot;;</string>
+    </property>
+    <property name="text">
+     <string>执  行  初  始  化</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>42</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 255);font: 12pt &quot;Agency FB&quot;;</string>
+    </property>
+    <property name="text">
+     <string>模拟量初始值</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditANA">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>49</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditINT">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>107</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>100</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 255);font: 12pt &quot;Agency FB&quot;;</string>
+    </property>
+    <property name="text">
+     <string>整型量初始值</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_confirm">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>270</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+    </property>
+    <property name="text">
+     <string>验  证</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>233</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Agency FB&quot;;
+color: rgb(170, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>初始化密码</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPSW">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>240</y>
+     <width>113</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_OK">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>490</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+   </property>
+   <property name="text">
+    <string>确  认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_CANCEL">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>490</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Agency FB&quot;;</string>
+   </property>
+   <property name="text">
+    <string>取  消</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

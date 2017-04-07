@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model.sys">
+	<class name="RelationalOperator" table="sys_关系运算符">
+		<id name="id" column="运算符ID">
+			<generator class="assigned" />
+		</id>
+		<property name="operator" column="运算符" type="string" />
+	</class>
+	<class name="Currency" table="sys_货币">
+		<id name="id" column="货币ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="货币名称" type="string" />
+		<property name="rateOfExchange2RMB" column="对人民币汇率" type="double" />
+		<property name="symbol" column="货币符号" type="string" />
+	</class>
+	<class name="Power" table="sys_功率单位">
+		<id name="id" column="功率单位ID">
+		<generator class="assigned" />
+		</id>
+		<property name="name" column="功率单位" type="string" />
+	</class>
+	<class name="Weight" table="sys_重量单位">
+		<id name="id" column="重量单位ID">
+		<generator class="assigned" />
+		</id>
+		<property name="name" column="重量单位" type="string" />
+	</class>
+	
+	<class name="Sex" table="sys_性别">
+		<id name="id" column="性别ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="性别" type="string" />
+	</class>
+	<class name="PoliticalStatus" table="sys_政治面貌">
+		<id name="id" column="政治面貌ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="政治面貌" type="string" />
+	</class>
+
+	<class name="MaritalStatus" table="sys_婚姻状态">
+		<id name="id" column="婚姻状态ID">
+			<generator class="assigned" />
+		</id>
+		<property name="description" column="描述" type="string" />
+	</class>
+	<class name="Post" table="sys_职务">
+		<id name="id" column="职务ID" type="integer">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="职务名称" type="string" />
+		<property name="description" column="职务说明" type="string" />
+		<property name="px" column="排序" type="int" />
+	</class>
+
+	<class name="Education" table="sys_学历">
+		<id name="id" column="学历ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="学历" type="string" />
+		<property name="schoolName" column="毕业院校" type="string" />
+		<property name="graduationDate" column="毕业时间" type="date" />
+		<property name="major" column="专业" type="string" />
+		<property name="eduRemark" column="附注" type="string" />
+	</class>
+	<class name="UserHabit" table="sys_用户习惯">
+		<id name="id" column="ID">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="employeeID" column="人员ID" type="integer" />
+		<property name="habit" column="用户习惯" type="string" />
+	</class>
+	<class name="SysLog" table="sys_系统日志">
+		<id name="id" column="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="userID" column="userID" type="string" />
+		<property name="opTime" column="opTime" type="timestamp" />
+		<property name="opType" column="opType" type="string" />
+		<property name="opUri" column="opUri" type="string" />
+		<property name="opIP" column="opIP" type="string" />
+	</class>
+	<class name="Draft" table="sys_草稿">
+		<id name="id" column="ID">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="model" type="string" column="模块" />
+		<property name="appId" type="string" column="应用ID" />
+		<property name="url" type="string" column="链接地址" />
+		<property name="text" type="string" column="标题" />
+		<property name="userID" type="string" column="用户ID" />
+		<property name="content" type="string" column="内容" />
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="lastModifier" />
+	</class>
+		<class name="DisabledReason" table="sys_禁用原因">
+		<id name="id" column="ID" unsaved-value="null">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="name" column="原因" type="string" />
+	</class>
+	
+	<class name="Business" table="sys_物资信息业务属性" >
+		<id name="id" column="状态ID">
+		<generator class="assigned" />
+		</id>
+		<property name="name" column="状态" type="string" />
+	</class>
+	
+	<class name="MaterialsUse" table="sys_物资用途" >
+		<id name="id" column="状态ID">
+		<generator class="assigned" />
+		</id>
+		<property name="name" column="状态" type="string" />
+	</class>
+	
+	<class name="MaterialsProperty" table="sys_物资自身属性" >
+		<id name="id" column="状态ID">
+		<generator class="assigned" />
+		</id>
+		<property name="name" column="状态" type="string" />
+	</class>
+	
+	<class name="ProduceStatus" table="sys_物资生产状态" >
+		<id name="id" column="状态ID">
+		<generator class="assigned" />
+		</id>
+		<property name="name" column="状态" type="string" />
+	</class>
+	
+	<class name="DutyLevel" table="sys_职务级别">
+		<id name="id" column="职务级别ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="职务级别名称" type="string" />
+		
+	</class>
+	
+	<class name="Echnicalposition" table="sys_技术职务">
+		<id name="id" column="技术职务ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="技术职务名称" type="string" />
+		<property name="px" column="排序" type="integer" />
+	</class>
+	
+	<class name="ProfessionalLevel" table="sys_专业技术级别">
+		<id name="id" column="专业技术级别ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="专业技术级别名称" type="string" />
+	</class>
+	
+	<class name="Degree" table="sys_现有文化程度">
+		<id name="id" column="现有文化程度ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="现有文化程度名称" type="string" />
+	</class>
+	
+	<class name="WorkType" table="sys_工种">
+		<id name="id" column="工种ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="工种名称" type="string" />
+	</class>
+	
+	<class name="InServiceType" table="sys_在职类型">
+		<id name="id" column="在职类型ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="在职类型名称" type="string" />
+	</class>
+	
+	
+	<class name="IdentityObj" table="sys_身份">
+		<id name="id" column="身份ID">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="身份名称" type="string" />
+	</class>
+		<class name="OfficeSupplies" table="xmis.T_Office_Supplies_Type_Info">
+		<id name="supplies_type_id" column="supplies_type_id">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="supplies_type_Name" column="supplies_type_Name" type="string" />
+		<property name="remark" column="remark" type="string" />
+	</class>
+	<query name="getUserHabitByUserID">
+		<![CDATA[from UserHabit d where d.employeeID = ?]]>
+	</query>
+</hibernate-mapping>

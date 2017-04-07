@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="ApplyOfficialSuppliesRepair" Name="ApplyOfficialSuppliesRepair" DisplayName="办公用品维修申请" ResourceFile="" ResourceManager="">
+    <fpdl:DataFields>
+        <fpdl:DataField Id="ApplyOfficialSuppliesRepair.isForceStop" Name="isForceStop" DisplayName="是否强制结束" DataType="BOOLEAN" InitialValue="false"/>
+    </fpdl:DataFields>
+    <fpdl:StartNode Id="ApplyOfficialSuppliesRepair.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="14"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="142"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="ApplyOfficialSuppliesRepair.ApplicantApply" Name="ApplicantApply" DisplayName="部门经办人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="123"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="69"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="123"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyOfficialSuppliesRepair.ApplicantApply.Task" Name="Task" DisplayName="部门经办人申请" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="部门经办人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyofficesuppliesList.jsp" DisplayName="applyofficesuppliesList.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/applymanage/applyofficesuppliesRepairList.jsp?form_id={form_id}&amp;step={$taskId}&amp;applicant_name={applicant_name}&amp;applicant_time={applicant_time}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;办公用品维修申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyOfficialSuppliesRepair.DeptManagerApproval" Name="DeptManagerApproval" DisplayName="部门负责人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="295"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="121"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyOfficialSuppliesRepair.DeptManagerApproval.Task" Name="Task" DisplayName="部门负责人签字" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,0)" DisplayName="部门负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyofficesuppliesList.jsp" DisplayName="applyofficesuppliesList.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/applymanage/applyofficesuppliesRepairList.jsp?form_id={form_id}&amp;step={$taskId}&amp;applicant_name={applicant_name}&amp;applicant_time={applicant_time}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;办公用品维修申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyOfficialSuppliesRepair.ChargeLeaderApproval" Name="ChargeLeaderApproval" DisplayName="分管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="514"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="123"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyOfficialSuppliesRepair.ChargeLeaderApproval.Task" Name="Task" DisplayName="分管领导签字" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,1)" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyofficesuppliesList.jsp" DisplayName="applyofficesuppliesList.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/applymanage/applyofficesuppliesRepairList.jsp?form_id={form_id}&amp;step={$taskId}&amp;applicant_name={applicant_name}&amp;applicant_time={applicant_time}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;办公用品维修申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyOfficialSuppliesRepair.OfficeDirectorApproval" Name="OfficeDirectorApproval" DisplayName="办公室主任" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="735"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="122"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyOfficialSuppliesRepair.OfficeDirectorApproval.Task" Name="Task" DisplayName="办公室主任签字" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(officedirector_role)" DisplayName="办公室主任">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyofficesuppliesList.jsp" DisplayName="applyofficesuppliesList.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/applymanage/applyofficesuppliesRepairList.jsp?form_id={form_id}&amp;step={$taskId}&amp;applicant_name={applicant_name}&amp;applicant_time={applicant_time}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;办公用品维修申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyOfficialSuppliesRepair.SuppliesManagerConfirm" Name="SuppliesManagerConfirm" DisplayName="办公用品负责人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="951"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="123"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyOfficialSuppliesRepair.SuppliesManagerConfirm.Task" Name="Task" DisplayName="办公用品负责人确认" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(suppliesmanager_role)" DisplayName="办公用品负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:ViewForm Name="applyofficesuppliesList.jsp" DisplayName="applyofficesuppliesList.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/applymanage/applyofficesuppliesRepairList.jsp?form_id={form_id}&amp;step={$taskId}&amp;applicant_name={applicant_name}&amp;applicant_time={applicant_time}</fpdl:Uri>
+                    </fpdl:ViewForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;办公用品维修申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyOfficialSuppliesRepair.ForceStop" Name="ForceStop" DisplayName="强制结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="111"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="47"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyOfficialSuppliesRepair.Activity7" Name="Activity7" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="291"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="48"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="ApplyOfficialSuppliesRepair.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="221"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="142"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyOfficialSuppliesRepair.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="432"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="117"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyOfficialSuppliesRepair.Synchronizer3" Name="Synchronizer3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="663"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="143"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyOfficialSuppliesRepair.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="876"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="144"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="ApplyOfficialSuppliesRepair.EndNode1" Name="EndNode1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1097"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="143"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+        <fpdl:EndNode Id="ApplyOfficialSuppliesRepair.EndNode2" Name="EndNode2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="234"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="28"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition1" From="ApplyOfficialSuppliesRepair.START_NODE" To="ApplyOfficialSuppliesRepair.ApplicantApply" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition2" From="ApplyOfficialSuppliesRepair.ApplicantApply" To="ApplyOfficialSuppliesRepair.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition3" From="ApplyOfficialSuppliesRepair.Synchronizer1" To="ApplyOfficialSuppliesRepair.DeptManagerApproval" Name="Transition3" DisplayName="">
+            <fpdl:Condition>(!isForceStop)&amp;&amp;(!isDeptManager)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition4" From="ApplyOfficialSuppliesRepair.DeptManagerApproval" To="ApplyOfficialSuppliesRepair.Synchronizer2" Name="Transition4" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition5" From="ApplyOfficialSuppliesRepair.Synchronizer2" To="ApplyOfficialSuppliesRepair.ChargeLeaderApproval" Name="Transition5" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition6" From="ApplyOfficialSuppliesRepair.ChargeLeaderApproval" To="ApplyOfficialSuppliesRepair.Synchronizer3" Name="Transition6" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition7" From="ApplyOfficialSuppliesRepair.Synchronizer3" To="ApplyOfficialSuppliesRepair.OfficeDirectorApproval" Name="Transition7" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition8" From="ApplyOfficialSuppliesRepair.OfficeDirectorApproval" To="ApplyOfficialSuppliesRepair.Synchronizer4" Name="Transition8" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition9" From="ApplyOfficialSuppliesRepair.Synchronizer4" To="ApplyOfficialSuppliesRepair.SuppliesManagerConfirm" Name="Transition9" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition10" From="ApplyOfficialSuppliesRepair.SuppliesManagerConfirm" To="ApplyOfficialSuppliesRepair.EndNode1" Name="Transition10" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition12" From="ApplyOfficialSuppliesRepair.ForceStop" To="ApplyOfficialSuppliesRepair.EndNode2" Name="Transition12" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition13" From="ApplyOfficialSuppliesRepair.Synchronizer1" To="ApplyOfficialSuppliesRepair.Activity7" Name="Transition13" DisplayName="">
+            <fpdl:Condition>(!isForceStop)&amp;&amp;(isDeptManager)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition14" From="ApplyOfficialSuppliesRepair.Activity7" To="ApplyOfficialSuppliesRepair.Synchronizer2" Name="Transition14" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyOfficialSuppliesRepair.Transition15" From="ApplyOfficialSuppliesRepair.Synchronizer1" To="ApplyOfficialSuppliesRepair.ForceStop" Name="Transition15" DisplayName="强制结束">
+            <fpdl:Condition>isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:Loops>
+        <fpdl:Loop Id="ApplyOfficialSuppliesRepair.Loop1" From="ApplyOfficialSuppliesRepair.Synchronizer2" To="ApplyOfficialSuppliesRepair.START_NODE" Name="Loop1" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(399,220)(246,221)(91,225)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ApplyOfficialSuppliesRepair.Loop2" From="ApplyOfficialSuppliesRepair.Synchronizer3" To="ApplyOfficialSuppliesRepair.START_NODE" Name="Loop2" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(586,259)(387,261)(97,264)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ApplyOfficialSuppliesRepair.Loop3" From="ApplyOfficialSuppliesRepair.Synchronizer4" To="ApplyOfficialSuppliesRepair.START_NODE" Name="Loop3" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(769,300)(532,301)(87,304)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+    </fpdl:Loops>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+</fpdl:WorkflowProcess>

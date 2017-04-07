@@ -1,0 +1,235 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #dce0e2; FONT-SIZE: 12px; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #687888; SCROLLBAR-3DLIGHT-COLOR: #687888; SCROLLBAR-ARROW-COLOR: #6e7e88; SCROLLBAR-TRACK-COLOR: #f4f4f0; FONT-FAMILY: "宋体"; SCROLLBAR-DARKSHADOW-COLOR: #dce0e2; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-SIZE: 12px
+}
+.Tableblock {
+	BORDER-RIGHT: #aba6a6 1px solid; BORDER-LEFT: #aba6a6 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.Toptr {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: right bottom; BACKGROUND-IMAGE: url(./images/toptr.gif); PADDING-TOP: 3px; BORDER-BOTTOM: #817f7f 1px solid; BACKGROUND-REPEAT: repeat-y; HEIGHT: 20px; BACKGROUND-COLOR: #89aff9; TEXT-ALIGN: right
+}
+.Topword {
+	FONT-WEIGHT: bold; COLOR: white; TEXT-DECORATION: none
+}
+.Banner {
+	BACKGROUND-IMAGE: url(./images/bannerbg.gif); VERTICAL-ALIGN: top; HEIGHT: 44px
+}
+.Navbg {
+	BACKGROUND-POSITION: left bottom; BORDER-TOP: #817f7f 1px solid; BACKGROUND-IMAGE: url(../images/navbg.gif); PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; PADDING-TOP: 3px; BACKGROUND-REPEAT: repeat-x; HEIGHT: 25px; BACKGROUND-COLOR: #f1f1f1
+}
+.DashNavCurDashArea {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.DashNavLink {
+	BORDER-RIGHT: #f1f1f1 1px solid; BORDER-TOP: #f1f1f1 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #f1f1f1 1px solid; COLOR: black; BORDER-BOTTOM: #f1f1f1 1px solid; TEXT-DECORATION: none
+}
+A.DashNavLink:hover {
+	BORDER-RIGHT: #302d2b 1px solid; BORDER-TOP: #302d2b 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #302d2b 1px solid; BORDER-BOTTOM: #302d2b 1px solid; BACKGROUND-COLOR: white; TEXT-DECORATION: none
+}
+.DashNavChosen {
+	FONT-SIZE: 9pt; COLOR: #be4505; TEXT-DECORATION: none
+}
+.Dashline {
+	FONT-SIZE: 9pt; WIDTH: 1px; COLOR: #686565
+}
+.Welcome {
+	FONT-SIZE: 10pt; PADDING-BOTTOM: 1px; PADDING-TOP: 4px; BORDER-BOTTOM: #817f7f 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #f4ecc8
+}
+.Noticetd {
+	COLOR: #000000; HEIGHT: 23px; BACKGROUND-COLOR: #f3f2f2
+}
+.Noticelink {
+	COLOR: #0000ff; TEXT-DECORATION: none
+}
+.Left {
+	WIDTH: 200px
+}
+.BlockTitlebg1 {
+	BORDER-RIGHT: #b0afaf 1px solid; BORDER-TOP: #b0afaf 1px solid; PADDING-LEFT: 5px; BACKGROUND-IMAGE: url(../images/titlebg1.gif); VERTICAL-ALIGN: top; BORDER-LEFT: #b0afaf 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #b0afaf 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 21px
+}
+.ListBlock1 {
+	BORDER-RIGHT: #b0afaf 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 3px; BORDER-LEFT: #b0afaf 1px solid; BORDER-BOTTOM: #b0afaf 1px solid
+}
+.Titlebg2 {
+	BACKGROUND-IMAGE: url(../images/titlebg2.gif); BORDER-LEFT: #b3c2dd 1px solid; BORDER-BOTTOM: #b3c2dd 1px solid; BACKGROUND-REPEAT: repeat-x; HEIGHT: 22px; BACKGROUND-COLOR: #c6d9fb
+}
+.Title2 {
+	PADDING-LEFT: 5px; FONT-WEIGHT: bold; WIDTH: 200px; COLOR: #3b4660; PADDING-TOP: 5px
+}
+.Titlehead {
+	PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-TOP: 4px; HEIGHT: 22px; BACKGROUND-COLOR: #e3e8f3
+}
+.Toolbar {
+	BORDER-RIGHT: #b3c2dd 1px solid; PADDING-LEFT: 5px; BORDER-LEFT: #b3c2dd 1px solid; HEIGHT: 21px; BACKGROUND-COLOR: #f2efef
+}
+.TitlecontentTr1 {
+	PADDING-LEFT: 3px; PADDING-TOP: 3px; HEIGHT: 20px
+}
+.TitlecontentTr2 {
+	PADDING-LEFT: 3px; PADDING-TOP: 3px; HEIGHT: 20px; BACKGROUND-COLOR: #fef8dd
+}
+.Block2 {
+	BORDER-RIGHT: #b3c2dd 1px solid; BORDER-LEFT: #b3c2dd 1px solid
+}
+.Moretd1 {
+	BORDER-RIGHT: #b3c2dd 1px solid; PADDING-RIGHT: 2px; BORDER-LEFT: #b3c2dd 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #b3c2dd 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #f2efef; TEXT-ALIGN: right
+}
+.Titlebg3 {
+	BORDER-RIGHT: #b3c2dd 1px solid; BACKGROUND-POSITION: left top; BORDER-TOP: #b3c2dd 1px solid; PADDING-LEFT: 45px; BACKGROUND-IMAGE: url(../images/titleleft3.gif); BORDER-LEFT: #b3c2dd 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #b3c2dd 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 22px
+}
+.Block3 {
+	BORDER-RIGHT: #b3c2dd 1px solid; PADDING-LEFT: 2px; BORDER-LEFT: #b3c2dd 1px solid; BORDER-BOTTOM: #b3c2dd 1px solid
+}
+.Imgtd {
+	VERTICAL-ALIGN: top; WIDTH: 90px; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.Middle {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px
+}
+.Dot {
+	COLOR: #ff6600
+}
+.Titletd {
+	PADDING-BOTTOM: 2px; LINE-HEIGHT: 15px; PADDING-TOP: 3px
+}
+.Titleword1 {
+	COLOR: #3b4660
+}
+.Icontd {
+	PADDING-RIGHT: 3px; PADDING-BOTTOM: 2px
+}
+.Titlelink {
+	COLOR: black; TEXT-DECORATION: none
+}
+.MoreTd {
+	HEIGHT: 20px; TEXT-ALIGN: right
+}
+.Moreword {
+	COLOR: black; TEXT-DECORATION: none
+}
+.Date {
+	COLOR: #666666
+}
+.PartTitleLeft {
+	BORDER-RIGHT: #7392c6 0px solid; BORDER-TOP: #7392c6 1px solid; PADDING-LEFT: 3px; VERTICAL-ALIGN: bottom; BORDER-LEFT: #7392c6 1px solid; COLOR: #394963; BORDER-BOTTOM: #7392c6 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #bac8e3
+}
+.PartTitleMiddle {
+	BORDER-RIGHT: #7392c6 0px solid; BORDER-TOP: #7392c6 1px solid; BORDER-LEFT: #7392c6 0px solid; WIDTH: 90px; BORDER-BOTTOM: #7392c6 1px solid; BACKGROUND-COLOR: #bac8e3; TEXT-ALIGN: right
+}
+.PartIFrame {
+	BORDER-RIGHT: #7392c6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7392c6 0px solid; PADDING-LEFT: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: #7392c6 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #7392c6 1px solid
+}
+.PartRightCornerImage {
+	BORDER-RIGHT: #7392c6 0px solid; BORDER-TOP: #7392c6 0px solid; BORDER-LEFT: #7392c6 0px solid; WIDTH: 6px; BORDER-BOTTOM: #7392c6 1px solid; BACKGROUND-COLOR: #bac8e3; TEXT-ALIGN: right
+}
+.DashTitleRight {
+	
+}
+.DashTitleBackground {
+	BACKGROUND-IMAGE: url(topbanner.jpg); BACKGROUND-REPEAT: repeat-x; HEIGHT: 44px
+}
+.TreeNode {
+	FONT-SIZE: 1.2em; COLOR: blue; FONT-FAMILY: 宋体
+}
+.TreeNodeSelected {
+	FONT-WEIGHT: bolder; FONT-SIZE: 1.2em; COLOR: yellow; FONT-FAMILY: 宋体
+}
+.DashNavNode {
+	FONT-SIZE: 1.2em; COLOR: white; FONT-FAMILY: 宋体
+    BACKGROUND-COLOR: transparent
+}
+.DashNavArea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: black; PADDING-TOP: 0px; BACKGROUND-COLOR: #003399
+}
+.DashNavDashArea {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 2px; PADDING-LEFT: 0px; FONT-SIZE: 9pt; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: silver 1px solid; PADDING-TOP: 2px; FONT-FAMILY: verdana
+}
+.DashNavDropDownArea {
+	PADDING-RIGHT: 15px; BACKGROUND-POSITION: left center; BACKGROUND-IMAGE: url(dropdown.gif); BACKGROUND-REPEAT: no-repeat
+}
+.DashNavCurDropDownArea {
+	PADDING-RIGHT: 15px; BACKGROUND-POSITION: left center; BACKGROUND-IMAGE: url(dropdown.gif); BACKGROUND-REPEAT: no-repeat
+}
+.HBar {
+	WIDTH: 100%; HEIGHT: 4px; BACKGROUND-COLOR: #d8e3fc
+}
+.DashNavUpArea {
+	PADDING-RIGHT: 25px; BACKGROUND-POSITION: center center; BACKGROUND-IMAGE: url(up.gif); CURSOR: hand; BACKGROUND-REPEAT: no-repeat
+}
+.DashNavChildMenu {
+	BORDER-RIGHT: #cfd5e5 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #cfd5e5 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 2px; BORDER-LEFT: #cfd5e5 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #cfd5e5 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: lightgrey
+}
+.DashNavChildMenuItem {
+	
+}
+.DashLayoutTable {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+.DashZoneTop {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; HEIGHT: 2%; TEXT-ALIGN: left
+}
+.DashZoneBottom {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; HEIGHT: 2%; TEXT-ALIGN: left
+}
+.DashZoneLeft {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; WIDTH: 20px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.DashZoneCenter {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.DashZoneRight {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; WIDTH: 20px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.DashPartFrame {
+	BORDER-RIGHT: #cfd5e5 1px solid; BORDER-TOP: #cfd5e5 1px solid; BORDER-LEFT: #cfd5e5 1px solid; WIDTH: 100%; BORDER-BOTTOM: #cfd5e5 1px solid
+}
+.DashPartTitle {
+	PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 0.8em; PADDING-BOTTOM: 1px; COLOR: #0033cc; PADDING-TOP: 2px; FONT-FAMILY: arial, verdana; BACKGROUND-COLOR: #a8bccf; TEXT-ALIGN: left
+}
+.DashPartCommandsArea {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; BACKGROUND-COLOR: #a8bccf; TEXT-ALIGN: right
+}
+.DashPartSpacing {
+	HEIGHT: 6px
+}
+.DashPartBody {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.UserShadedRegion {
+	BACKGROUND-COLOR: whitesmoke
+}
+.UserCaption {
+	COLOR: white; BACKGROUND-COLOR: lightslategray
+}
+.DashTitleTable {
+	BORDER-RIGHT: 2px; BORDER-TOP: 2px; MARGIN-BOTTOM: 0px; BORDER-LEFT: 2px; BORDER-BOTTOM: 2px
+}
+.DashTitleArea {
+	BORDER-RIGHT: #666699 1px solid; BORDER-TOP: #666699 1px solid; BACKGROUND-IMAGE: url(topbanner.gif); BORDER-LEFT: #666699 1px solid; WIDTH: 100%; BORDER-BOTTOM: #666699 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: transparent
+}
+.DashTitle {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 1.25em; WIDTH: 100px; COLOR: white; FONT-FAMILY: Verdana
+}
+.DashTitleImage {
+	BACKGROUND-POSITION: left top; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(topbanner.gif); BACKGROUND-REPEAT: no-repeat; HEIGHT: 44px
+}
+.PartTitleLeft {
+	BORDER-RIGHT: #7392c6 0px solid; BORDER-TOP: #7392c6 1px solid; PADDING-LEFT: 3px; VERTICAL-ALIGN: bottom; BORDER-LEFT: #7392c6 1px solid; COLOR: #394963; BORDER-BOTTOM: #7392c6 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #bac8e3
+}
+.PartTitleMiddle {
+	BORDER-RIGHT: #7392c6 0px solid; BORDER-TOP: #7392c6 1px solid; BORDER-LEFT: #7392c6 0px solid; WIDTH: 90px; BORDER-BOTTOM: #7392c6 1px solid; BACKGROUND-COLOR: #bac8e3; TEXT-ALIGN: right
+}
+.PartIFrame {
+	BORDER-RIGHT: #7392c6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7392c6 0px solid; PADDING-LEFT: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: #7392c6 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #7392c6 1px solid
+}
+.PartRightCornerImage {
+	BORDER-RIGHT: #7392c6 0px solid; BORDER-TOP: #7392c6 0px solid; BORDER-LEFT: #7392c6 0px solid; WIDTH: 6px; BORDER-BOTTOM: #7392c6 1px solid; BACKGROUND-COLOR: #bac8e3; TEXT-ALIGN: right
+}
+.DashTitleRight {
+	
+}
+.DashTitleBackground {
+	BACKGROUND-IMAGE: url(topbanner_bg.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 44px
+}

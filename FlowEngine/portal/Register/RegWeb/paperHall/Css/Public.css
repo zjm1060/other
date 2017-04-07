@@ -1,0 +1,85 @@
+BODY {
+	FONT-FAMILY: "宋体";
+    FONT-SIZE: 9pt;
+    BACKGROUND-COLOR:#ffffff;
+    COLOR: #000000;
+    LINE-HEIGHT: 180%;
+    MARGIN-TOP: 4px;
+    MARGIN-LEFT: 0px;
+    MARGIN-RIGHT: 0px;
+  
+}
+TD {
+	FONT-SIZE: 9pt;  FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; LINE-HEIGHT: 180%;
+	MARGIN-LEFT: 2px;
+    MARGIN-RIGHT: 2px;
+}
+
+A:link {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: underline
+}
+
+.my a:active { FONT-SIZE: 10pt; color: #000000; font:bold;  FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none }
+.my a:link { FONT-SIZE: 10pt; color: #000000; font:bold;  FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none}
+.my a:visited { FONT-SIZE: 10pt;  color: #000000; font:bold; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none }
+.my a:hover { FONT-SIZE: 10pt; color: #000000; font:bold; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none }
+
+.my2 a:active { font-size:9pt; color: #6D6D6D; font:bold; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none }
+.my2 a:link { font-size:9pt; color: #333333; font:bold;  FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none}
+.my2 a:visited { font-size:9pt; color: #333333; font:bold; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none }
+.my2 a:hover { font-size:9pt; color: #6D6D6D; font:bold; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; text-decoration: none }
+
+
+.title1 {
+   FONT-SIZE: 9pt; COLOR: #ffffff; TEXT-DECORATION: none
+
+}
+
+.title2 {
+   FONT-SIZE: 9pt; COLOR: #771A10; TEXT-DECORATION: none
+
+}
+
+.title3 {
+   FONT-SIZE: 9pt;  FONT:BOLD; TEXT-DECORATION: none
+
+}
+
+SELECT {
+	FONT-SIZE: 9pt; FILTER: Alpha(Opacity=50); COLOR: #000000;
+    FONT-FAMILY: "song", "MS Shell Dlg", "宋体"; BACKGROUND-COLOR: #f5f5f5
+}
+INPUT.input1
+{
+    BACKGROUND-COLOR: #ECECEC;
+    BORDER-STYLE:solid solid solid solid;
+    border-width:1px 1px 1px 1px;
+    border-color:#2F4C69;
+    HEIGHT:22px;
+    PADDING-RIGHT:2px;
+    PADDING-LEFT :2px;
+    PADDING-TOP  :4px;
+    PADDING-BOTTOM :2px;
+	font-size: 9pt;
+    VERTICAL-ALIGN: center
+}
+
+INPUT.input2
+{
+    BACKGROUND-COLOR: #58BFF0;
+    BORDER-STYLE:solid solid solid solid;
+    border-width:1px 1px 1px 1px;
+    border-color:#999999;
+    HEIGHT:20px;
+    LEFT: 0px;
+    TOP: 0px;
+	font-size: 9pt;
+    VERTICAL-ALIGN: center
+}
+.seldept{font-weight: bold;}

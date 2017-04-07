@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping 
+	package="com.bitc.jk.xmis.model">
+	<class name="Condition" table="sys_条件">
+		<id name="id" column="条件ID">
+			<generator class="identity"/>
+		</id>
+		<property name="desc" column="描述" type="string" /> 
+		<bag name="items" lazy="false" order-by="排序">
+			<key column="条件ID"></key>
+			<one-to-many class="ConditionMap"></one-to-many>			
+		</bag>
+	</class>
+	<class name="ConditionMap" table="sys_条件选项对应表">
+		<id name="id" column="对应ID">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="typeConfig" column="类型配置" type="string"></property>
+		<property name="sql" column="连接SQL" type="string"></property>
+		<many-to-one name="conditionItem" column="选项ID" class="ConditionItem" lazy="false" fetch="join"></many-to-one>
+		<many-to-one name="conditionType" column="类型ID" class="ConditionType" lazy="false" fetch="join"></many-to-one>
+		<many-to-one name="operator" column="运算符ID" class="com.bitc.jk.xmis.model.sys.RelationalOperator" lazy="false" fetch="join"></many-to-one>
+	</class>
+	<class name="ConditionItem" table="sys_条件选项">
+		<id name="id" column="选项ID">
+			<generator class="identity"/>
+		</id>
+		<property name="name" column="名称" type="string" /> 
+		<property name="type" column="类型" type="string" /> 
+		<property name="description" column="描述" type="string" />
+	</class>
+	<class name="ConditionType" table="sys_条件选项类型">
+		<id name="id" column="ID">
+			<generator class="identity"/>
+		</id>
+		<property name="name" column="类型" type="string" /> 
+	</class>
+</hibernate-mapping>

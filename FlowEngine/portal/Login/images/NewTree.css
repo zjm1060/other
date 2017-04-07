@@ -1,0 +1,24 @@
+.treeDiv {
+	BORDER-RIGHT: #d0d1cf 1px solid; BORDER-TOP: #d0d1cf 1px solid; BORDER-LEFT: #d0d1cf 1px solid; WIDTH: 160px; BORDER-BOTTOM: #d0d1cf 1px solid; HEIGHT: 500px; BACKGROUND-COLOR: #f4f2f2
+}
+.normalL1 {
+	BORDER-RIGHT: #7786a7 1px solid; BORDER-TOP: #7786a7 1px solid; BACKGROUND-IMAGE: url(../../images/tree_1bg_normal.gif); VERTICAL-ALIGN: middle; BORDER-LEFT: #7786a7 1px solid; CURSOR: hand; BORDER-BOTTOM: #7786a7 1px solid; BACKGROUND-REPEAT: repeat-x; HEIGHT: 25px
+}
+.normalL2 {
+	BORDER-RIGHT: #9dabcb 1px solid; BORDER-TOP: white 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #9dabcb 1px solid; CURSOR: hand; BORDER-BOTTOM: #9dabcb 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: #d8e3fc
+}
+.normalL3 {
+	BORDER-RIGHT: #9dabcb 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #9dabcb 1px solid; CURSOR: hand; BORDER-BOTTOM: #ced6e9 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: #eff5fe
+}
+.normalL4 {
+	BORDER-RIGHT: #9dabcb 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #9dabcb 1px solid; CURSOR: hand; BORDER-BOTTOM: #ced6e9 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: blue
+}
+.normalL5 {
+	BORDER-RIGHT: #9dabcb 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #9dabcb 1px solid; CURSOR: hand; BORDER-BOTTOM: #ced6e9 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: red
+}
+.breakL1 {
+	HEIGHT: 1px; BACKGROUND-COLOR: #cdd9f5
+}
+.selectL {
+	BORDER-RIGHT: #60790c 1px solid; BORDER-TOP: #60790c 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #60790c 1px solid; COLOR: #893705; BORDER-BOTTOM: #60790c 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: white
+}

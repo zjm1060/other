@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-8-1 13:38:48 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.bitc.jk.xmis.task.Task" table="xmis.sys_任务队列表">
+		<id name="id" type="java.lang.String">
+			<column name="ID" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="commandBeanName" type="java.lang.String">
+			<column name="命令名字" />
+		</property>
+		<property name="paramString" type="java.lang.String">
+			<column name="参数串" />
+		</property>
+		<property name="executeTime" type="timestamp">
+			<column name="执行时间" />
+		</property>
+		<property name="state" type="int">
+			<column name="状态" />
+		</property>
+		<property name="taskDesc" type="string">
+			<column name="任务描述" />
+		</property>
+		<many-to-one name="creator" column="创建人ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.SimpleEmployee">
+		</many-to-one>
+		<property name="createDateTime" column="创建时间" type="timestamp" />
+	</class>
+</hibernate-mapping>

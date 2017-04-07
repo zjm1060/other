@@ -1,0 +1,91 @@
+ .WebFX-ContextMenu 		{
+							border: 0;/*2px outset;*/
+							width:  10px;
+						}
+
+.WebFX-ContextMenu-Body {
+							background-color:white;
+							margins:	0px;
+							padding:	1px;
+							border: 2px outset;
+							font-size:9pt;
+						}
+						
+.WebFX-ContextMenu-Item {
+                			cursor:			default;
+							font:	verdana;
+							font-size:9pt;
+							width:	100%;
+							padding: 2px 16px 2px 16px;
+							border:			1px solid white;
+
+						}
+
+.WebFX-ContextMenu-Over {
+                			cursor:			default;
+                			background-color: rgb(234,242,255);
+							font:				verdana;
+							width:	100%;
+							padding: 2px 16px 2px 16px;
+							color: black;
+							font-size:9pt;
+							border:			1px solid rgb(120,172,255);
+						}
+
+.WebFX-ContextMenu-Disabled {
+                			cursor:			default;
+							font: verdana;
+							width:	100%;
+							padding: 2px 16px 2px 16px;
+							color:graytext;
+							font-size:9pt;
+							border:			1px solid white;
+							}
+
+.WebFX-ContextMenu-Disabled-Over {
+                			cursor:			default;
+                			background-color: rgb(234,242,255);
+							font:	verdana;
+							width:	100%;
+							padding: 2px 16px 2px 16px;
+							color: graytext;
+							font-size:9pt;
+							border:			1px solid rgb(120,172,255);
+							}
+				
+.WebFX-ContextMenu-Separator
+{
+							font-size:      0pt;
+							border:         1px inset;
+							height:         2px;
+							overflow:       hidden;
+							margin:			3px 1px 3px 1px;
+}
+
+.WebFX-ContextMenu-Disabled-Over .WebFX-ContextMenu-DisabledContainer
+ {
+	display: block;
+	width: 100%;
+	vertical-align:	center;
+}
+
+/*very nice hack by erik below */
+.WebFX-ContextMenu-Disabled .WebFX-ContextMenu-DisabledContainer
+ {
+	display: block;
+	background: graytext;
+	filter: chroma(color=red) dropshadow(color=buttonhighlight, offx=1, offy=1);
+	width: 100%;
+	vertical-align:	center;
+}
+
+.WebFX-ContextMenu-Disabled .WebFX-ContextMenu-DisabledContainer .WebFX-ContextMenu-DisabledContainer
+{
+	background:	transparent;
+	filter: mask(color=red);
+}
+
+.WebFX-ContextMenu-Disabled-Over .WebFX-ContextMenu-DisabledContainer .WebFX-ContextMenu-DisabledContainer
+{
+
+}

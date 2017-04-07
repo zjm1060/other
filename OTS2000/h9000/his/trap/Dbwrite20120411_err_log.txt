@@ -1,0 +1,12 @@
+08:40:53:156	Fail to find variable QLT_ALM_TYPE
+11:14:36:671	Fail to find ems string EVENT_COLOR_NORMAL
+11:14:36:671	Fail to find ems string EVENT_COLOR_ALM_LMT
+11:14:36:671	Fail to find ems string EVENT_COLOR_WARN_LMT
+11:14:36:671	Fail to find ems string EVENT_COLOR_TREND_LMT
+11:14:36:687	Fail to find ems string EVENT_COLOR_RECOVER_LMT
+11:14:36:687	Fail to find ems string EVENT_COLOR_CHANNEL_FAIL
+11:14:36:687	Fail to find ems string EVENT_COLOR_MAN_FORCE
+11:14:36:687	Fail to find ems string EVENT_COLOR_FAIL_TAG
+11:14:36:687	Fail to find ems string EVENT_COLOR_FAULT_TAG
+11:14:36:687	Fail to find ems string EVENT_COLOR_SMS_ALARM
+11:14:36:687	Fail to find ems string EVENT_COLOR_OVERFLOW

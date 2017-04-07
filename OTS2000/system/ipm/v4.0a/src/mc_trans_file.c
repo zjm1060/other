@@ -1,0 +1,387 @@
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdio.h>
+#include <gtk/gtk.h>
+
+/* #define	DEBUG     */
+
+FILE 	*OpenFile();
+FILE 	*OpenWriteFile();
+
+
+#include	"/DBINC/dms_structure_def.h"
+#include	"/DBINC/dms_data_def.h"
+#include	"/DBINC/dms_com.h"
+
+#include	"gtk_ipm_k_def.h"
+#include	"dyn_form_def.h"
+#include	"menu_def.h"
+#include	"mode_def.h"
+#include	"gtk_msg_text_def.h"
+#include	"gtk_widgets.h"
+#include	"/OIXINC/gtk_draw_def.h"
+
+
+new_fwriteLnkRcd (FILE	*fp, NEW_LINKRCD	*rcd)
+{
+	int	len;
+	
+#ifdef	SUN_OS
+	NEW_LINKRCD	sun_rcd;
+
+	sun_rcd = *rcd;
+	len	=sizeof (rcd->act.ctrl_type);
+/*printf("in write:::ctrl_type=%d\n",rcd->act.ctrl_type);*/	
+	Swap4Byte(&sun_rcd.act.ctrl_type);
+	Swap4Byte(&sun_rcd.act.ctrl_tag);
+	
+	fwrite (&sun_rcd.act.ctrl_type, len, 1, fp);
+	fwrite (&sun_rcd.act.ctrl_tag, len, 1, fp);
+	
+	switch ( rcd->act.ctrl_type )
+	{
+		case	CTRL_REQ_PROG:
+#ifdef 	DEBUG
+			printf(" in Read: before convert: prog_id=%d\n",  &sun_rcd.act.fmt_def.prog.id);
+#endif
+			Swap4Byte( &sun_rcd.act.fmt_def.prog.id);
+#ifdef DEBUG
+			printf(" in Read: after convert: prog_id=%d\n",  &sun_rcd.act.fmt_def.prog.id);
+#endif
+			break;
+			
+		case	CTRL_REQ_MENU:
+			Swap4Byte( &sun_rcd.act.fmt_def.menu.id);
+			
+			break;
+		default:
+			break;
+
+	}
+	len 	= sizeof (rcd->act.fmt_def.free_area);
+
+	fwrite (sun_rcd.act.fmt_def.free_area, len, 1, fp);
+	
+
+	len	=sizeof (rcd->dyn.dyn_type);
+	Swap4Byte(&sun_rcd.dyn.dyn_type);
+	Swap4Byte(&sun_rcd.dyn.dyn_tag);
+	Swap4Byte(&sun_rcd.dyn.dio_type);
+	Swap4Byte(&sun_rcd.dyn.f_by_off);
+	Swap4Byte(&sun_rcd.dyn.qi_loc);
+	Swap4Byte(&sun_rcd.dyn.tagi_loc);
+	Swap4Byte(&sun_rcd.dyn.data_class);
+	
+	
+	fwrite (&sun_rcd.dyn.dyn_type, len, 1, fp);
+	fwrite (&sun_rcd.dyn.dyn_tag, len, 1, fp);
+	fwrite (&sun_rcd.dyn.dio_type, len, 1, fp);
+	fwrite (&sun_rcd.dyn.f_by_off, len, 1, fp);
+	fwrite (&sun_rcd.dyn.qi_loc, len, 1, fp);
+	fwrite (&sun_rcd.dyn.tagi_loc, len, 1, fp);
+	fwrite (&sun_rcd.dyn.data_class,  len, 1, fp);
+
+	len	=sizeof (rcd->dbname);
+
+	fwrite (sun_rcd.dbname, len, 1, fp);
+
+	switch( rcd->dyn.dyn_type )
+	{
+		case	DF_DYN_COLOR:
+			break;
+			
+		case	DF_STRING_GRP:		
+			Swap4Byte( &sun_rcd.dyn.fmt_def.str.str_grp);
+			break;
+			
+		case	DF_SYMBOL_GRP:
+			Swap4Byte(&sun_rcd.dyn.fmt_def.sym.sym_grp);
+			break;
+			
+		case	DF_BAR_CHART:
+			Swap4Byte( &sun_rcd.dyn.fmt_def.bar_chart.hi_limit );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.bar_chart.low_limit );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.bar_chart.hi_limit_2 );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.bar_chart.low_limit_2 );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.bar_chart.direction );
+			break;
+		
+		case	DF_HIST_BAR:
+			Swap4Byte( &sun_rcd.dyn.fmt_def.hist_bar.hi_limit );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.hist_bar.low_limit );
+			Swap2Byte( &sun_rcd.dyn.fmt_def.hist_bar.hour_id );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.hist_bar.hi_limit_2 );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.hist_bar.low_limit_2 );
+			break;
+				
+		
+		case	DF_LINE_PLOT:
+		case	DF_PQ_CHART:
+			Swap4Byte( &sun_rcd.dyn.fmt_def.curve.hi_limit );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.curve.low_limit );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.curve.hi_limit_2 );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.curve.low_limit_2 );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.curve.direction );
+			break;
+			
+		case	DF_ANA_STATUS:
+			Swap4Byte( &sun_rcd.dyn.fmt_def.ana_status.sym_grp);
+			Swap2Byte( &sun_rcd.dyn.fmt_def.ana_status.limit_type);
+			break;
+
+			
+		case	DF_NUMERIC:
+			Swap4Byte( &sun_rcd.dyn.fmt_def.num.hi_limit );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.num.low_limit );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.num.length );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.num.sign_typ );
+			Swap4Byte( &sun_rcd.dyn.fmt_def.num.dec_pt );
+			break;				
+		
+		case	DF_RPT_NUMERIC:	
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.length );
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.sign_type );
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.dec_pt);
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.req_type );
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.hour_id );
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.date_id );
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.month_id );
+			Swap2Byte( &sun_rcd.dyn.fmt_def.rpt_num.special_type );
+			break;
+		default:
+			break;
+	}
+	len	= sizeof (rcd->dyn.fmt_def.free_area);
+
+	fwrite (sun_rcd.dyn.fmt_def.free_area, len, 1, fp);
+	
+
+	len	=sizeof (rcd->cgrp.cgrp_id);
+	Swap4Byte(&sun_rcd.cgrp.cgrp_id);
+	Swap4Byte(&sun_rcd.cgrp.tag);
+	
+	fwrite (&sun_rcd.cgrp.cgrp_id, len, 1, fp);
+	fwrite (&sun_rcd.cgrp.tag,	len, 1, fp);
+
+#else
+	len	=sizeof (rcd->act.ctrl_type);
+	fwrite (&rcd->act.ctrl_type, len, 1, fp);
+	fwrite (&rcd->act.ctrl_tag, len, 1, fp);
+
+	len 	= sizeof (rcd->act.fmt_def.free_area);
+	fwrite (rcd->act.fmt_def.free_area, len, 1, fp);
+
+	len	=sizeof (rcd->dyn.dyn_type);
+	fwrite (&rcd->dyn.dyn_type, len, 1, fp);
+	fwrite (&rcd->dyn.dyn_tag, len, 1, fp);
+	fwrite (&rcd->dyn.dio_type, len, 1, fp);
+	fwrite (&rcd->dyn.f_by_off, len, 1, fp);
+	fwrite (&rcd->dyn.qi_loc, len, 1, fp);
+	fwrite (&rcd->dyn.tagi_loc, len, 1, fp);
+	fwrite (&rcd->dyn.data_class,  len, 1, fp);
+
+	len	=sizeof (rcd->dbname);
+	fwrite (rcd->dbname, len, 1, fp);
+	
+	len	= sizeof (rcd->dyn.fmt_def.free_area);
+	fwrite (rcd->dyn.fmt_def.free_area, len, 1, fp);
+
+	len	=sizeof (rcd->cgrp.cgrp_id);
+	fwrite (&rcd->cgrp.cgrp_id, len, 1, fp);
+	fwrite (&rcd->cgrp.tag,	len, 1, fp);
+#endif
+
+}
+
+
+void	new_freadLnkRcd (FILE	*fp, NEW_LINKRCD 	*rcd)
+{
+#ifdef SUN_OS
+	int	i;
+#endif
+	int	len;
+
+	len     =sizeof (rcd->act.ctrl_type);
+	fread (&rcd->act.ctrl_type, len, 1, fp);
+	fread (&rcd->act.ctrl_tag, len, 1, fp);
+	len     = sizeof (rcd->act.fmt_def.free_area);
+	fread (rcd->act.fmt_def.free_area, len, 1, fp);
+
+	len     =sizeof (rcd->dyn.dyn_type);
+	fread (&rcd->dyn.dyn_type, len, 1, fp);
+	fread (&rcd->dyn.dyn_tag, len, 1, fp);
+	fread (&rcd->dyn.dio_type, len, 1, fp);
+	fread (&rcd->dyn.f_by_off, len, 1, fp);
+	fread (&rcd->dyn.qi_loc, len, 1, fp);
+	fread (&rcd->dyn.tagi_loc, len, 1, fp);
+	fread (&rcd->dyn.data_class, len, 1, fp);
+
+	len     =sizeof (rcd->dbname);
+
+	fread (rcd->dbname, len, 1, fp);
+
+	len     = sizeof (rcd->dyn.fmt_def.free_area);
+	fread (rcd->dyn.fmt_def.free_area, len, 1, fp);
+
+	len     =sizeof (rcd->cgrp.cgrp_id);
+	fread (&rcd->cgrp.cgrp_id, len, 1, fp);
+	fread (&rcd->cgrp.tag,  len, 1, fp);
+	
+#ifdef SUN_OS	
+	Swap4Byte( &rcd->act.ctrl_type );	
+
+	Swap4Byte( &rcd->act.ctrl_tag );
+
+	switch ( rcd->act.ctrl_type )
+	{
+		case	CTRL_REQ_PROG:
+			Swap4Byte( &rcd->act.fmt_def.prog.id);
+			break;
+			
+		case	CTRL_REQ_MENU:
+			Swap4Byte( &rcd->act.fmt_def.menu.id);			
+			break;
+		default:
+			break;
+	}
+	
+	Swap4Byte( &rcd->dyn.dyn_type );
+	Swap4Byte( &rcd->dyn.dyn_tag );
+	Swap4Byte( &rcd->dyn.dio_type );
+	Swap4Byte( &rcd->dyn.f_by_off );
+	Swap4Byte( &rcd->dyn.qi_loc );
+	Swap4Byte( &rcd->dyn.tagi_loc );
+	Swap4Byte( &rcd->dyn.data_class );
+
+	switch( rcd->dyn.dyn_type )
+	{
+		case	DF_DYN_COLOR:
+			break;
+			
+		case	DF_SYMBOL_GRP:
+			Swap4Byte(&rcd->dyn.fmt_def.sym.sym_grp);
+			break;
+			
+		case	DF_BAR_CHART:
+			Swap4Byte( &rcd->dyn.fmt_def.bar_chart.hi_limit );
+			Swap4Byte( &rcd->dyn.fmt_def.bar_chart.low_limit );
+			Swap4Byte( &rcd->dyn.fmt_def.bar_chart.hi_limit_2 );
+			Swap4Byte( &rcd->dyn.fmt_def.bar_chart.low_limit_2 );
+			Swap4Byte( &rcd->dyn.fmt_def.bar_chart.direction );
+			break;
+		
+		case	DF_HIST_BAR:
+			Swap4Byte( &rcd->dyn.fmt_def.hist_bar.hi_limit );
+			Swap4Byte( &rcd->dyn.fmt_def.hist_bar.low_limit );
+			Swap2Byte( &rcd->dyn.fmt_def.hist_bar.hour_id );
+			Swap4Byte( &rcd->dyn.fmt_def.hist_bar.hi_limit_2 );
+			Swap4Byte( &rcd->dyn.fmt_def.hist_bar.low_limit_2 );
+			break;
+				
+		
+		case	DF_LINE_PLOT:
+		case	DF_PQ_CHART:
+			Swap4Byte( &rcd->dyn.fmt_def.curve.hi_limit );
+			Swap4Byte( &rcd->dyn.fmt_def.curve.low_limit );
+			Swap4Byte( &rcd->dyn.fmt_def.curve.hi_limit_2 );
+			Swap4Byte( &rcd->dyn.fmt_def.curve.low_limit_2 );
+			Swap4Byte( &rcd->dyn.fmt_def.curve.direction );
+			break;
+			
+		case	DF_ANA_STATUS:
+			Swap4Byte( &rcd->dyn.fmt_def.ana_status.sym_grp);
+			Swap2Byte ( &rcd->dyn.fmt_def.ana_status.limit_type);
+			break;
+			
+		case	DF_NUMERIC:
+			Swap4Byte( &rcd->dyn.fmt_def.num.hi_limit );
+			Swap4Byte( &rcd->dyn.fmt_def.num.low_limit );
+			Swap4Byte( &rcd->dyn.fmt_def.num.length );
+			Swap4Byte( &rcd->dyn.fmt_def.num.sign_typ );
+			Swap4Byte( &rcd->dyn.fmt_def.num.dec_pt );
+			break;	
+			
+		case	DF_STRING_GRP:		
+			Swap4Byte( &rcd->dyn.fmt_def.str.str_grp);
+			break;
+
+		case	DF_RPT_NUMERIC:	
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.length );
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.sign_type );
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.dec_pt);
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.req_type );
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.hour_id );
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.date_id );
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.month_id );
+			Swap2Byte( &rcd->dyn.fmt_def.rpt_num.special_type );
+			break;
+		default:
+			break;
+	}
+	
+	Swap4Byte( &rcd->cgrp.cgrp_id );
+	Swap4Byte( &rcd->cgrp.tag);
+
+#endif
+}
+
+
+void	newLoadMenuLibrary ()
+{
+	int	len, i, j;
+	FILE	*fp;
+	char	menu_full_name[MAX_FILE_NAME_LEN];
+	char	*menu_part_name = {"/usr/ems/system/oix/v3.0a/DSP/CTRL_MENU_LIBRARY.DBIN"};
+
+	fp = fopen( menu_part_name, "rb");
+
+	if (fp == NULL)
+	{
+		printf ("OIX: open CTRL_MENU_LIBRARY.DBIN file error.\n");
+		/* ExitProc ();  */
+	}
+
+	len	=4;
+	fread (&new_menudb.nextpos, len, 1, fp);
+#ifdef SUN_OS
+        Swap4Byte(&new_menudb.nextpos);
+#endif
+
+	for (i=0; i<new_menudb.nextpos; i++)	
+	{
+		len	=4;
+		fread (&new_menudb.menu[i].nextpos, len, 1, fp);
+		fread (&new_menudb.menu[i].x1, len, 1, fp);
+		fread (&new_menudb.menu[i].y1, len, 1, fp);
+		fread (&new_menudb.menu[i].x2, len, 1, fp);
+		fread (&new_menudb.menu[i].y2, len, 1, fp);
+#ifdef SUN_OS
+ 	       Swap4Byte(&new_menudb.menu[i].nextpos);
+ 	       Swap4Byte(&new_menudb.menu[i].x1);
+ 	       Swap4Byte(&new_menudb.menu[i].y1);
+ 	       Swap4Byte(&new_menudb.menu[i].x2);
+ 	       Swap4Byte(&new_menudb.menu[i].y2);
+
+/*printf("newload::::menu[%d].x1=%d,y1=%d,x2=%d,y2=%d\n",i,new_menudb.menu[i].x1,new_menudb.menu[i].y1,new_menudb.menu[i].x2,new_menudb.menu[i].y2);*/
+#endif
+
+		fread (new_menudb.menu[i].name, sizeof(new_menudb.menu[i].name), 1, fp);
+
+	/*printf("new_menu[%d].name=%s\n",i,	new_menudb.menu[i].name);*/
+
+		if ( strlen(new_menudb.menu[i].name) > MENU_NAME_LEN )     
+                {
+                        printf("Load menu lib: menu name is too long: %s\n", new_menudb.menu[i].name );
+                        new_menudb.menu[i].name[MENU_NAME_LEN-1] = 0;
+                }
+/*printf("read::::new_menudb.menu[%d].nextpos=%d\n",i,new_menudb.menu[i].nextpos);*/
+		for (j=0; j<new_menudb.menu[i].nextpos; j++)
+		{
+			freadBckRcd (fp, &new_menudb.menu[i].rcd[j].bck);
+			new_freadLnkRcd (fp, &new_menudb.menu[i].rcd[j].lnk);
+		}
+	}
+
+	fclose (fp);
+	printf ("OIX: newLoadMenuLibrary ok\n");	
+}

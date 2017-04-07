@@ -1,0 +1,11 @@
+
+
+***********************************************************
+          LOGGING STARTED Fri Dec  6 21:06:53 2002
+***********************************************************
+
+00.000s SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+00.004s SLOGALWAYS (mi_main.c 154) 
+  Initializing ...

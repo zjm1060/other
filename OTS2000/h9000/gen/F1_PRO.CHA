@@ -1,0 +1,59 @@
+RECORD      NAME = CHA
+
+ENTRY      NAME	= GWX2_TL_TW
+           LONGNAME	= '推力轴瓦温度'
+           D_BAND	= 1
+           HDB_BAND	= 2
+           ENG_CVT	= 1
+           HI_RANGE	= 1
+           LO_RANGE	= 0
+           CMD_MSG	= 0
+           UNIT_NAME	= ℃
+           HDB_REC	= YES
+           ID	= 5570000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= GWX2_XD_TW
+           LONGNAME	= '下导轴瓦温度'
+           D_BAND	= 1
+           HDB_BAND	= 2
+           ENG_CVT	= 1
+           HI_RANGE	= 1
+           LO_RANGE	= 0
+           CMD_MSG	= 0
+           UNIT_NAME	= ℃
+           HDB_REC	= YES
+           ID	= 5570001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= GWX3_SD_TW
+           LONGNAME	= '上导轴瓦温度'
+           D_BAND	= 1
+           HDB_BAND	= 2
+           ENG_CVT	= 1
+           HI_RANGE	= 1
+           LO_RANGE	= 0
+           CMD_MSG	= 0
+           UNIT_NAME	= ℃
+           HDB_REC	= YES
+           ID	= 5570002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SLJWX_SD_TW
+           LONGNAME	= '水导轴瓦温度'
+           D_BAND	= 1
+           HDB_BAND	= 2
+           ENG_CVT	= 1
+           HI_RANGE	= 1
+           LO_RANGE	= 0
+           CMD_MSG	= 0
+           UNIT_NAME	= ℃
+           HDB_REC	= YES
+           ID	= 5570003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+END

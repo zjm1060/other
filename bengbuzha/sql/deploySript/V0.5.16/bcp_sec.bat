@@ -1,0 +1,33 @@
+@echo off 
+rem bcp "xmis.sec_业务功能字段对应表" out "sec_业务功能字段对应表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_业务功能表" out "sec_业务功能表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_业务子模块表" out "sec_业务子模块表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_业务数据字段表" out "sec_业务数据字段表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_业务模块功能对应表" out "sec_业务模块功能对应表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_业务模块对应表" out "sec_业务模块对应表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_业务模块表" out "sec_业务模块表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_功能列表" out "sec_功能列表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_操作权限表" out "sec_操作权限表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_数据权限定义表" out "sec_数据权限定义表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_权限参数表" out "sec_权限参数表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_角色" out "sec_角色" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_角色功能" out "sec_角色功能" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+rem bcp "xmis.sec_角色用户操作权限定义表" out "sec_角色用户操作权限定义表" -c -q -S "192.169.11.149" -U "xmis-uat" -P "xmis"
+
+
+
+@echo
+bcp "xmis.sec_业务功能字段对应表" in "sec_业务功能字段对应表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_业务功能表" in "sec_业务功能表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_业务子模块表" in "sec_业务子模块表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_业务数据字段表" in "sec_业务数据字段表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_业务模块功能对应表" in "sec_业务模块功能对应表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_业务模块对应表" in "sec_业务模块对应表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_业务模块表" in "sec_业务模块表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_功能列表" in "sec_功能列表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_操作权限表" in "sec_操作权限表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_数据权限定义表" in "sec_数据权限定义表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_权限参数表" in "sec_权限参数表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_角色" in "sec_角色" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_角色功能" in "sec_角色功能" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"
+bcp "xmis.sec_角色用户操作权限定义表" in "sec_角色用户操作权限定义表" -c -q -S "192.169.11.6" -U "xmis" -P "xmis"

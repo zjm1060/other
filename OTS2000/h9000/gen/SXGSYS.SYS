@@ -1,0 +1,219 @@
+RECORD      NAME = SYS
+
+ENTRY      NAME	= SYS1
+           LONGNAME	= '1F机组LCU操作权切电站'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS2
+           LONGNAME	= '1F机组LCU操作权切集控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS3
+           LONGNAME	= '1F机组LCU操作权切省调'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS4
+           LONGNAME	= '2F机组LCU操作权切电站'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS5
+           LONGNAME	= '2F机组LCU操作权切集控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580004
+           PNT_ADD	= 4
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS6
+           LONGNAME	= '2F机组LCU操作权切省调'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580005
+           PNT_ADD	= 5
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS7
+           LONGNAME	= '3F机组LCU操作权切电站'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580006
+           PNT_ADD	= 6
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS8
+           LONGNAME	= '3F机组LCU操作权切集控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580007
+           PNT_ADD	= 7
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS9
+           LONGNAME	= '3F机组LCU操作权切省调'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580008
+           PNT_ADD	= 8
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS10
+           LONGNAME	= '4F机组LCU操作权切电站'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580009
+           PNT_ADD	= 9
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS11
+           LONGNAME	= '4F机组LCU操作权切集控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580010
+           PNT_ADD	= 10
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS12
+           LONGNAME	= '4F机组LCU操作权切省调'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580011
+           PNT_ADD	= 11
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS13
+           LONGNAME	= '开关站LCU操作权切电站'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580012
+           PNT_ADD	= 12
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS14
+           LONGNAME	= '开关站LCU操作权切集控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580013
+           PNT_ADD	= 13
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS15
+           LONGNAME	= '大坝工作门LCU操作权切电站'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580014
+           PNT_ADD	= 14
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS16
+           LONGNAME	= '大坝工作门LCU操作权切集控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580015
+           PNT_ADD	= 15
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS17
+           LONGNAME	= '全站控制权切电站'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580016
+           PNT_ADD	= 16
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS18
+           LONGNAME	= '全站控制权切集控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580017
+           PNT_ADD	= 17
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS19
+           LONGNAME	= '全站控制权切省调直控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580018
+           PNT_ADD	= 18
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS20
+           LONGNAME	= '全站控制权切省调间控'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580019
+           PNT_ADD	= 19
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS21
+           LONGNAME	= '1#机组检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580020
+           PNT_ADD	= 20
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS22
+           LONGNAME	= '2#机组检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580021
+           PNT_ADD	= 21
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS23
+           LONGNAME	= '3#机组检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580022
+           PNT_ADD	= 22
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SYS24
+           LONGNAME	= '4#机组检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11580023
+           PNT_ADD	= 23
+           AOR_GRP	= GEN
+
+END

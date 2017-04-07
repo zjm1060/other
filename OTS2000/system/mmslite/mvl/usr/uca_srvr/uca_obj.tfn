@@ -1,0 +1,267 @@
+/************************************************************************/
+/* SISCO SOFTWARE MODULE HEADER *****************************************/
+/************************************************************************/
+/*   (c) Copyright Systems Integration Specialists Company, Inc.,	*/
+/*      		1998, All Rights Reserved		        */
+/*									*/
+/* MODULE NAME : uca_obj.tfn   						*/
+/* PRODUCT(S)  : MMSEASE-LITE						*/
+/*									*/
+/* MODULE DESCRIPTION : 						*/
+/*									*/
+/* GLOBAL FUNCTIONS DEFINED IN THIS MODULE :				*/
+/*									*/
+/* MODIFICATION LOG :							*/
+/*  Date     Who   Rev			Comments			*/
+/* --------  ---  ------   -------------------------------------------	*/
+/* 12/16/02  JRB     05    Del _REF defines not needed with new code,	*/
+/*			   especially those using "offsetof",		*/
+/*			   & those for UCA Reports.			*/
+/*			   Fix *_SBO_REF for new scheme.		*/
+/*			   Add functs for POPF$BR IEC Buffered reports.	*/
+/* 07/13/00  JRB     04    Chg seqnum to sqnum.				*/
+/* 09/16/98  MDE     03    BASRCB rd/wr funs are now in MVLU_RPT.c and	*/
+/*			   have been renamed. Added SBO stuff.		*/
+/* 08/12/98  MDE     02    Use MVLU report funs, added array samples	*/
+/* 07/01/98  MDE     01    Added header					*/
+/************************************************************************/
+/************************************************************************/
+
+/************************************************************************/
+/************************************************************************/
+/*			DI READ/WRITE HANDLERS				*/
+/************************************************************************/
+#define u_di_name_rd_ind_fun		   u_string_offset_rd_ind_fun
+#define u_di_class_rd_ind_fun		   u_string_offset_rd_ind_fun
+#define u_di_d_rd_ind_fun		   u_string_offset_rd_ind_fun
+#define u_di_own_rd_ind_fun		   u_string_offset_rd_ind_fun
+#define u_di_loc_rd_ind_fun		   u_string_offset_rd_ind_fun
+#define u_di_vndid_vnd_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_vndid_mdl_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_vndid_devmdls_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_vndid_sernum_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_vndid_hwrev_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_vndid_sftrev_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_commid_commadr_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_commid_commrev_rd_ind_fun	   u_string_offset_rd_ind_fun
+#define u_di_commid_pro_rd_ind_fun	   u_uint8_offset_rd_ind_fun
+#define u_di_commid_med_rd_ind_fun	   u_uint8_offset_rd_ind_fun
+#define u_di_commid_mac_rd_ind_fun	   u_uint8_offset_rd_ind_fun
+
+/* Writes to the DI object are not allowed				*/
+#define u_di_name_wr_ind_fun			u_no_write_allowed
+#define u_di_class_wr_ind_fun			u_no_write_allowed
+#define u_di_d_wr_ind_fun			u_no_write_allowed
+#define u_di_own_wr_ind_fun			u_no_write_allowed
+#define u_di_loc_wr_ind_fun			u_no_write_allowed
+#define u_di_vndid_vnd_wr_ind_fun		u_no_write_allowed
+#define u_di_vndid_mdl_wr_ind_fun		u_no_write_allowed
+#define u_di_vndid_devmdls_wr_ind_fun		u_no_write_allowed
+#define u_di_vndid_sernum_wr_ind_fun		u_no_write_allowed
+#define u_di_vndid_hwrev_wr_ind_fun		u_no_write_allowed
+#define u_di_vndid_sftrev_wr_ind_fun		u_no_write_allowed
+#define u_di_commid_commadr_wr_ind_fun		u_no_write_allowed
+#define u_di_commid_commrev_wr_ind_fun		u_no_write_allowed
+#define u_di_commid_pro_wr_ind_fun		u_no_write_allowed
+#define u_di_commid_med_wr_ind_fun		u_no_write_allowed
+#define u_di_commid_mac_wr_ind_fun		u_no_write_allowed
+
+
+/************************************************************************/
+/************************************************************************/
+/* 		REPORT CONTROL BLOCK HANDLERS				*/
+/************************************************************************/
+
+/* BRO.RP.BRCBST READ/WRITE HANDLERS					*/
+
+/* We will use a set of standard report handling functions 	*/
+#define u_globe_rp_brcbmx_rptid_rd_ind_fun  	mvlu_rptid_rd_ind_fun
+#define u_globe_rp_brcbmx_rptena_rd_ind_fun  	mvlu_rptena_rd_ind_fun
+#define u_globe_rp_brcbmx_datset_rd_ind_fun	mvlu_datsetna_rd_ind_fun
+#define u_globe_rp_brcbmx_optflds_rd_ind_fun  	mvlu_optflds_rd_ind_fun
+#define u_globe_rp_brcbmx_buftim_rd_ind_fun  	mvlu_buftim_rd_ind_fun
+#define u_globe_rp_brcbmx_trgs_rd_ind_fun  	mvlu_trgs_rd_ind_fun
+#define u_globe_rp_brcbmx_sqnum_rd_ind_fun  	mvlu_sqnum_rd_ind_fun
+#define u_globe_rp_brcbmx_trgops_rd_ind_fun  	mvlu_trgops_rd_ind_fun
+#define u_globe_rp_brcbmx_rbepd_rd_ind_fun  	mvlu_rbepd_rd_ind_fun
+#define u_globe_rp_brcbmx_intgpd_rd_ind_fun  	mvlu_intgpd_rd_ind_fun
+
+#define u_globe_rp_brcbmx_rptid_wr_ind_fun  	mvlu_rptid_wr_ind_fun
+#define u_globe_rp_brcbmx_rptena_wr_ind_fun  	mvlu_rptena_wr_ind_fun
+#define u_globe_rp_brcbmx_datset_wr_ind_fun  	u_no_write_allowed
+#define u_globe_rp_brcbmx_optflds_wr_ind_fun  	mvlu_optflds_wr_ind_fun
+#define u_globe_rp_brcbmx_buftim_wr_ind_fun  	mvlu_buftim_wr_ind_fun
+#define u_globe_rp_brcbmx_trgs_wr_ind_fun  	mvlu_trgs_wr_ind_fun
+#define u_globe_rp_brcbmx_sqnum_wr_ind_fun  	mvlu_sqnum_wr_ind_fun
+#define u_globe_rp_brcbmx_trgops_wr_ind_fun  	mvlu_trgops_wr_ind_fun
+#define u_globe_rp_brcbmx_rbepd_wr_ind_fun  	mvlu_rbepd_wr_ind_fun
+#define u_globe_rp_brcbmx_intgpd_wr_ind_fun  	mvlu_intgpd_wr_ind_fun
+
+
+
+#define u_globe_rp_brcbst_rptid_rd_ind_fun  	mvlu_rptid_rd_ind_fun
+#define u_globe_rp_brcbst_rptena_rd_ind_fun  	mvlu_rptena_rd_ind_fun
+#define u_globe_rp_brcbst_datset_rd_ind_fun  	mvlu_datsetna_rd_ind_fun
+#define u_globe_rp_brcbst_optflds_rd_ind_fun  	mvlu_optflds_rd_ind_fun
+#define u_globe_rp_brcbst_buftim_rd_ind_fun  	mvlu_buftim_rd_ind_fun
+#define u_globe_rp_brcbst_trgs_rd_ind_fun  	mvlu_trgs_rd_ind_fun
+#define u_globe_rp_brcbst_sqnum_rd_ind_fun  	mvlu_sqnum_rd_ind_fun
+#define u_globe_rp_brcbst_trgops_rd_ind_fun  	mvlu_trgops_rd_ind_fun
+#define u_globe_rp_brcbst_rbepd_rd_ind_fun  	mvlu_rbepd_rd_ind_fun
+#define u_globe_rp_brcbst_intgpd_rd_ind_fun  	mvlu_intgpd_rd_ind_fun
+
+#define u_globe_rp_brcbst_rptid_wr_ind_fun  	mvlu_rptid_wr_ind_fun
+#define u_globe_rp_brcbst_rptena_wr_ind_fun  	mvlu_rptena_wr_ind_fun
+#define u_globe_rp_brcbst_datset_wr_ind_fun  	u_no_write_allowed
+#define u_globe_rp_brcbst_optflds_wr_ind_fun  	mvlu_optflds_wr_ind_fun
+#define u_globe_rp_brcbst_buftim_wr_ind_fun  	mvlu_buftim_wr_ind_fun
+#define u_globe_rp_brcbst_trgs_wr_ind_fun  	mvlu_trgs_wr_ind_fun
+#define u_globe_rp_brcbst_sqnum_wr_ind_fun  	mvlu_sqnum_wr_ind_fun
+#define u_globe_rp_brcbst_trgops_wr_ind_fun  	mvlu_trgops_wr_ind_fun
+#define u_globe_rp_brcbst_rbepd_wr_ind_fun  	mvlu_rbepd_wr_ind_fun
+#define u_globe_rp_brcbst_intgpd_wr_ind_fun  	mvlu_intgpd_wr_ind_fun
+
+
+/************************************************************************/
+/************************************************************************/
+/************************************************************************/
+/* EXTERNAL DECLARATIONS						*/
+
+/* REPORT CONTROL BLOCK HANDLERS */
+/* These functions are found in mvlu_rpt.c				*/
+extern ST_VOID mvlu_rptid_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_rptena_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_datsetna_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_optflds_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_buftim_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_trgs_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_sqnum_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_trgops_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_rbepd_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_intgpd_rd_ind_fun 	(MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_rptid_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_rptena_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_optflds_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_buftim_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_trgs_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_sqnum_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_trgops_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_rbepd_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_intgpd_wr_ind_fun 	(MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+
+/* SBO HANDLERS	*/
+/* These functions are found in mvlu_sbo.c				*/
+extern ST_VOID mvlu_sbo_operate_wr_ind (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_sbo_select_rd_ind (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+
+/* GENERAL PURPOSE */
+/* These functions are found in rdwrind.c				*/
+extern ST_VOID u_string_offset_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_uint8_offset_rd_ind_fun  (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_string_table_rd_ind_fun  (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_no_read_allowed 	  (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_no_write_allowed 	  (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+
+/* 'LIVE' REPORT VARIABLES */
+/* These functions are found in rdwrind.c				*/
+extern ST_VOID u_pbro_sg_pu_phsi_rd_ind_fun     (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_sg_pu_neuti_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_sg_pu_hzi_rd_ind_fun      (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+
+/* ARRAY SAMPLE FUNCTIONS */
+/* These functions are found in rdwrind.c				*/
+extern ST_VOID u_arr_type_a_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_arr_type_b_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_arr_type_c_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_arr_type_d_da_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_arr_type_d_db_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_arr_type_a_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID u_arr_type_b_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID u_arr_type_c_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID u_arr_type_d_da_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID u_arr_type_d_db_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+
+extern ST_VOID u_srcconfig_srcname_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_srcconfig_srcphsct_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_srcconfig_srcgndct_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_srcconfig_srcphsvt_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_srcconfig_srcname_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID u_srcconfig_srcphsct_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID u_srcconfig_srcgndct_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID u_srcconfig_srcphsvt_wr_ind_fun (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+
+/************************************************************************/
+/************************************************************************/
+/* SBO READ/WRITE							*/
+/************************************************************************/
+
+#define PBRO_CO_ENADISFCT_SBO_REF            ((ST_RTREF) "OperDev")
+#define u_pbro_co_enadisfct_sbo_rd_ind_fun 	mvlu_sbo_select_rd_ind
+#define u_pbro_co_enadisfct_sbo_wr_ind_fun 	u_no_write_allowed
+#define u_pbro_co_enadisfct_operdev_rd_ind_fun 	u_no_read_allowed
+#define u_pbro_co_enadisfct_operdev_wr_ind_fun 	mvlu_sbo_operate_wr_ind
+
+#define PBRO_CO_RSTAR_SBO_REF            ((ST_RTREF) "b1")
+#define u_pbro_co_rstar_sbo_rd_ind_fun 		mvlu_sbo_select_rd_ind
+#define u_pbro_co_rstar_sbo_wr_ind_fun 		u_no_write_allowed
+#define u_pbro_co_rstar_b1_rd_ind_fun 		u_no_read_allowed
+#define u_pbro_co_rstar_b1_wr_ind_fun 		mvlu_sbo_operate_wr_ind
+
+#define PBRO_CO_RSLAT_SBO_REF            ((ST_RTREF) "b1")
+#define u_pbro_co_rslat_sbo_rd_ind_fun 		mvlu_sbo_select_rd_ind
+#define u_pbro_co_rslat_sbo_wr_ind_fun 		u_no_write_allowed
+#define u_pbro_co_rslat_b1_rd_ind_fun 		u_no_read_allowed
+#define u_pbro_co_rslat_b1_wr_ind_fun 		mvlu_sbo_operate_wr_ind
+
+#define PBRO_CO_ENALATRS_SBO_REF      ((ST_RTREF) "b1")
+#define u_pbro_co_enalatrs_sbo_rd_ind_fun 	mvlu_sbo_select_rd_ind
+#define u_pbro_co_enalatrs_sbo_wr_ind_fun 	u_no_write_allowed
+#define u_pbro_co_enalatrs_b1_rd_ind_fun 	u_no_read_allowed
+#define u_pbro_co_enalatrs_b1_wr_ind_fun 	mvlu_sbo_operate_wr_ind
+
+
+
+
+
+extern ST_VOID u_pbro_st_out_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_st_tar_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_st_fctds_b2_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_st_fctds_q_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_st_fctds_t_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_st_auxin1_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID u_pbro_st_pugrp_rd_ind_fun (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+
+
+#define u_popf_br_brcbst_rptena_rd_ind_fun		mvlu_rptena_rd_ind_fun
+#define u_popf_br_brcbst_rptid_rd_ind_fun		mvlu_rptid_rd_ind_fun
+#define u_popf_br_brcbst_datset_rd_ind_fun		mvlu_datsetna_rd_ind_fun
+#define u_popf_br_brcbst_confrev_rd_ind_fun		mvlu_confrev_rd_ind
+#define u_popf_br_brcbst_optflds_rd_ind_fun		mvlu_optflds_rd_ind_fun
+#define u_popf_br_brcbst_buftim_rd_ind_fun		mvlu_buftim_rd_ind_fun
+#define u_popf_br_brcbst_sqnum_rd_ind_fun		mvlu_sqnum_rd_ind_fun
+#define u_popf_br_brcbst_trgops_rd_ind_fun		mvlu_trgops_rd_ind_fun
+#define u_popf_br_brcbst_intgpd_rd_ind_fun		mvlu_intgpd_rd_ind_fun
+#define u_popf_br_brcbst_gi_rd_ind_fun			mvlu_gi_rd_ind
+#define u_popf_br_brcbst_purgebuf_rd_ind_fun		mvlu_purgebuf_rd_ind
+#define u_popf_br_brcbst_entryid_rd_ind_fun		mvlu_entryid_rd_ind
+
+#define u_popf_br_brcbst_rptena_wr_ind_fun		mvlu_rptena_wr_ind_fun
+#define u_popf_br_brcbst_rptid_wr_ind_fun		mvlu_rptid_wr_ind_fun
+#define u_popf_br_brcbst_datset_wr_ind_fun		u_no_write_allowed
+#define u_popf_br_brcbst_confrev_wr_ind_fun		u_no_write_allowed
+#define u_popf_br_brcbst_optflds_wr_ind_fun		mvlu_optflds_wr_ind_fun
+#define u_popf_br_brcbst_buftim_wr_ind_fun		mvlu_buftim_wr_ind_fun
+#define u_popf_br_brcbst_sqnum_wr_ind_fun		mvlu_sqnum_wr_ind_fun
+#define u_popf_br_brcbst_trgops_wr_ind_fun		mvlu_trgops_wr_ind_fun
+#define u_popf_br_brcbst_intgpd_wr_ind_fun		mvlu_intgpd_wr_ind_fun
+#define u_popf_br_brcbst_gi_wr_ind_fun			mvlu_gi_wr_ind
+#define u_popf_br_brcbst_purgebuf_wr_ind_fun		mvlu_purgebuf_wr_ind
+#define u_popf_br_brcbst_entryid_wr_ind_fun		mvlu_entryid_wr_ind
+
+extern ST_VOID mvlu_confrev_rd_ind (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_purgebuf_rd_ind (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_gi_rd_ind (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_entryid_rd_ind (MVLU_RD_VA_CTRL *mvluRdVaCtrl);
+extern ST_VOID mvlu_purgebuf_wr_ind (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_gi_wr_ind (MVLU_WR_VA_CTRL *mvluWrVaCtrl);
+extern ST_VOID mvlu_entryid_wr_ind (MVLU_WR_VA_CTRL *mvluWrVaCtrl);

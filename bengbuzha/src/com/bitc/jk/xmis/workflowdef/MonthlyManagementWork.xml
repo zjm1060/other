@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="MonthlyManagementWork" Name="MonthlyManagementWork" DisplayName="部门每月计划" ResourceFile="" ResourceManager="">
+    <fpdl:StartNode Id="MonthlyManagementWork.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="8"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="88"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="MonthlyManagementWork.Activity1" Name="Activity1" DisplayName="部门申请" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="69"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="66"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MonthlyManagementWork.Activity1.Task1" Name="Task1" DisplayName="月初计划提交" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="当前用户">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="EarlyPlans" DisplayName="月初计划">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/MonthlyManagementWork/MonthlyManagementWork.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;月初申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MonthlyManagementWork.Activity2" Name="Activity2" DisplayName="分管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="270"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="59"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MonthlyManagementWork.Activity2.Task2" Name="Task2" DisplayName="分管领导审批月初计划" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,1)" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="LeadersInCharge" DisplayName="分管领导审批">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/MonthlyManagementWork/MonthlyManagementWork.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;月报申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MonthlyManagementWork.Activity3" Name="Activity3" DisplayName="部门申请" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="610"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="55"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MonthlyManagementWork.Activity3.Task3" Name="Task3" DisplayName="月末计划及完成情况提交" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$ids(applicantID)" DisplayName="当前申请人 ">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="TheEndOfThePlanned" DisplayName="月末完成计划">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/MonthlyManagementWork/MonthlyManagementWork.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;月末申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MonthlyManagementWork.Activity4" Name="Activity4" DisplayName="分管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="__title" Value="applicant+&quot;月计划申请&quot;"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="774"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="69"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MonthlyManagementWork.Activity4.Task4" Name="Task4" DisplayName="分管领导审批月末计划及完成情况" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,1)" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="LeadersInCharge" DisplayName="分管领导审批">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/MonthlyManagementWork/MonthlyManagementWork.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;月报申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MonthlyManagementWork.Activity5" Name="Activity5" DisplayName="同意直接结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="31"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="886"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="160"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MonthlyManagementWork.Activity6" Name="Activity6" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="27"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="448"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="30"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="MonthlyManagementWork.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="206"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="85"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="MonthlyManagementWork.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="394"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="73"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="MonthlyManagementWork.Synchronizer3" Name="Synchronizer3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="739"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="70"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="MonthlyManagementWork.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="794"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="175"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="MonthlyManagementWork.Synchronizer5" Name="Synchronizer5" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="571"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="72"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="MonthlyManagementWork.EndNode1" Name="EndNode1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1002"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="173"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition1" From="MonthlyManagementWork.Activity1" To="MonthlyManagementWork.Synchronizer1" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition2" From="MonthlyManagementWork.Synchronizer1" To="MonthlyManagementWork.Activity2" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition3" From="MonthlyManagementWork.Activity2" To="MonthlyManagementWork.Synchronizer2" Name="Transition3" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition5" From="MonthlyManagementWork.Activity3" To="MonthlyManagementWork.Synchronizer3" Name="Transition5" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition6" From="MonthlyManagementWork.Synchronizer3" To="MonthlyManagementWork.Activity4" Name="Transition6" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition8" From="MonthlyManagementWork.START_NODE" To="MonthlyManagementWork.Activity1" Name="Transition8" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition9" From="MonthlyManagementWork.Activity4" To="MonthlyManagementWork.Synchronizer4" Name="Transition9" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition10" From="MonthlyManagementWork.Activity5" To="MonthlyManagementWork.EndNode1" Name="Transition10" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition11" From="MonthlyManagementWork.Synchronizer4" To="MonthlyManagementWork.Activity5" Name="Transition11" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition14" From="MonthlyManagementWork.Synchronizer5" To="MonthlyManagementWork.Activity3" Name="Transition14" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition12" From="MonthlyManagementWork.Synchronizer2" To="MonthlyManagementWork.Activity6" Name="Transition12" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MonthlyManagementWork.Transition13" From="MonthlyManagementWork.Activity6" To="MonthlyManagementWork.Synchronizer5" Name="Transition13" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:Loops>
+        <fpdl:Loop Id="MonthlyManagementWork.Loop2" From="MonthlyManagementWork.Synchronizer2" To="MonthlyManagementWork.START_NODE" Name="Loop2" DisplayName="不同意">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(397,186)(269,182)(125,186)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="MonthlyManagementWork.Loop3" From="MonthlyManagementWork.Synchronizer4" To="MonthlyManagementWork.Synchronizer5" Name="Loop3" DisplayName="不同意">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(526,165)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+    </fpdl:Loops>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+</fpdl:WorkflowProcess>

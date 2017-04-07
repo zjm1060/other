@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: avc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\work\AppData\Local\Temp\RSPDDFA.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/avc.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\home\ems\system\avc\v4.0a\src\avc.c"
+]
+Creating command line "cl.exe @C:\Users\work\AppData\Local\Temp\RSPDDFA.tmp" 
+Creating temporary file "C:\Users\work\AppData\Local\Temp\RSPDE0A.tmp" with contents
+[
+\home\ems\system\dms\v4.0a\lib\dblib.lib \home\ems\system\dps\v4.0a\lib\dpslib.lib \home\ems\system\dps\v4.0a\lib\ipclib.lib wsock32.lib \home\ems\system\lan\v4.0a\lib\lan.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/avc.pdb" /debug /machine:I386 /out:"Debug/avc.exe" /pdbtype:sept 
+.\Debug\avc.obj
+]
+Creating command line "link.exe @C:\Users\work\AppData\Local\Temp\RSPDE0A.tmp"
+<h3>Output Window</h3>
+Compiling...
+avc.c
+F:\home\ems\system\avc\v4.0a\src\avc.c(175) : warning C4101: 'stat' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(415) : warning C4244: '=' : conversion from 'float ' to 'int ', possible loss of data
+F:\home\ems\system\avc\v4.0a\src\avc.c(550) : warning C4244: '=' : conversion from 'double ' to 'float ', possible loss of data
+F:\home\ems\system\avc\v4.0a\src\avc.c(524) : warning C4101: 'data_type' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(1401) : warning C4101: 'data_type' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(1474) : warning C4101: 'rt_status' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(1578) : warning C4101: 'ctrl_sdtc' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(1578) : warning C4101: 'ctrl_sdtr' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(1578) : warning C4101: 'ctrl_right' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(2117) : warning C4244: 'function' : conversion from 'float ' to 'int ', possible loss of data
+F:\home\ems\system\avc\v4.0a\src\avc.c(2370) : warning C4101: 'wVersionRequested' : unreferenced local variable
+F:\home\ems\system\avc\v4.0a\src\avc.c(1524) : warning C4761: integral size mismatch in argument; conversion supplied
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/avc.bsc"  .\Debug\avc.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+avc.exe - 0 error(s), 12 warning(s)
+</pre>
+</body>
+</html>

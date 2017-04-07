@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- Filter Define -->
+<!-- GenPowerPlan id=ems.dispatchscheduledata.scheduleid interval=minute-->
+<ROOT>
+  <Predefine>
+    <FILTER name="11">
+      <STN_ID>0</STN_ID>
+      <STN_MASK>FFFFFFFF</STN_MASK>
+      <CMD_TYPE>2</CMD_TYPE>
+      <FAULT_MASK>4294967295</FAULT_MASK>
+      <TYPE_ID_MASK>4294967295</TYPE_ID_MASK>
+      <DEV_MASK>FFFFFFFF</DEV_MASK>
+      <GROUP_MASK>FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</GROUP_MASK>
+      <DATATYPE_MASK>FFFFFFFF</DATATYPE_MASK>
+      <ATTRIB_MASK>0000000000000000</ATTRIB_MASK>
+      <START_TIME>-1</START_TIME>
+      <END_TIME>-1</END_TIME>
+      <LOGIC_NAME/>
+      <LONG_NAME/>
+    </FILTER>
+    <FILTER name="22">
+      <STN_ID>0</STN_ID>
+      <STN_MASK>FFFFFFFF</STN_MASK>
+      <CMD_TYPE>0</CMD_TYPE>
+      <FAULT_MASK>4294967295</FAULT_MASK>
+      <TYPE_ID_MASK>4294967290</TYPE_ID_MASK>
+      <DEV_MASK>FFFFFFFF</DEV_MASK>
+      <GROUP_MASK>FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</GROUP_MASK>
+      <DATATYPE_MASK>FFFFFFFF</DATATYPE_MASK>
+      <ATTRIB_MASK>0000000000000000</ATTRIB_MASK>
+      <START_TIME>-1</START_TIME>
+      <END_TIME>-1</END_TIME>
+      <LOGIC_NAME></LOGIC_NAME>
+      <LONG_NAME></LONG_NAME>
+    </FILTER>
+  </Predefine>
+  <Userdefine/>
+  <DspDefine>
+    <CommonDir>CDJK_SY.dbin</CommonDir>
+    <ZJX>GIS_ZJX.dbin</ZJX>
+    <Name>XJB_HMSY.dbin</Name>
+    <Name>dfgdfgdgdfg</Name>
+  </DspDefine>
+  <GenPowerPlan>
+    <Station name="溪洛渡">
+      <Power id="0" name="左岸电站" interval="15" stn="2" dev="1" datatype="1" pt="0"/>
+      <Power id="1" name="右岸电站" interval="15" stn="1" dev="2" datatype="1" pt="0"/>
+    </Station>
+    <Station name="向家坝">
+      <Power id="2" name="左岸电站" interval="15" stn="2" dev="1" datatype="1" pt="0"/>
+      <Power id="3" name="右岸电站" interval="15" stn="2" dev="2" datatype="1" pt="0"/>
+    </Station>
+  </GenPowerPlan>
+  <OperPerf>
+    <Station id="1">
+      <Dev id="1" graph="0" colorGroup="UNIT_CONDITION">
+        <DataType netHead="1" guideVaneOpening="1" activePower="1" reactivePower="1" speed="1"/>
+        <Point netHead="18" guideVaneOpening="1" activePower="8" reactivePower="3" speed="4"/>
+      </Dev>
+    </Station>
+    <Graph id="0" xMin="100" xMax="950" yMin="140" yMax="240">
+      <Curve type="Inhibit" rgb="255 0 0" mode="fill">
+        <x>380		380		325		260	360	460		549.7	549.7</x>
+        <y>228.4	197.6	175.8	154	154	175.8	197.6	228.4</y>
+      </Curve>
+      <Curve type="Stable" rgb="0 128 0" mode="fill">
+        <x>549.7	549.7	460		360	520.5	655.7	780		780</x>
+        <y>228.4	197.6	175.8	154	154		175.8	197.6	228.4</y>
+      </Curve>
+      <Curve type="Restrict" rgb="255 255 0" mode="fill">
+        <x>780		780		655.7	520.5	546	893.6	893.6</x>
+        <y>228.4	197.6	175.8	154		154	217.5	228.4</y>
+      </Curve>
+      <Curve type="Discharge">
+        <x>354.6	360			365			370			375			380			385			390		397			400			405			410			415		420			425			429.4</x>
+        <y>188.6	187.49 	186.64	185.92	185.32	184.81	184.37	184		183.54	183.36	183.09	182.84	182.6	182.37	182.15	181.96</y>
+      </Curve>
+      <Curve type="Discharge" rgb="255 255 255" label="90" labelpos="end">
+        <x>254.6	260			265			270			275			280			285			290		297			300			305			310			315		320			325			329.4</x>
+        <y>188.6	187.49 	186.64	185.92	185.32	184.81	184.37	184		183.54	183.36	183.09	182.84	182.6	182.37	182.15	181.96</y>
+      </Curve>
+      <Curve type="GuideVaneOpening" rgb="167 117 169" mode="dash">
+        <x>950	375</x>
+        <y>238	140</y>
+      </Curve>
+      <Curve type="GuideVaneOpening" rgb="187 187 187" mode="indicator">
+        <x>800 400</x>
+        <y>200 200</y>
+      </Curve>
+    </Graph>
+  </OperPerf>
+</ROOT>

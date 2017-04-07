@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+       <!--define DataSource,Hibernate SessionFactory and TansactionManager-->
+       <bean id="basicDataSource" class="org.apache.tomcat.dbcp.dbcp.BasicDataSource" destroy-method="close">
+              <property name="driverClassName">
+                     <value>${dataSource.driver}</value>
+              </property>
+              <property name="url" >
+                     <value>${dataSoure.url}</value>
+              </property>
+              <property name="username" >
+                     <value>${dataSoure.username}</value>
+              </property>
+              <property name="password" >
+                     <value>${dataSoure.password}</value>
+              </property>
+              <property name="initialSize" value="2"/>
+              <property name="maxActive" value="20"/>
+              <property name="maxIdle" value="60"/>
+              <property name="maxWait" value="9000"/>
+              <!--removeAbandoned: 是否自动回收超时连接-->
+              <property name="removeAbandoned"  value="true"/>
+              <!--removeAbandonedTimeout: 超时时间(以秒数为单位)-->
+              <property name="removeAbandonedTimeout" value="10"/>
+              <property name="poolPreparedStatements" value="false"/>
+              <!--<property name="MaxOpenPreparedStatements" value="250"/>-->
+       </bean>
+       <!--<bean id="appNameStrategy" class="com.bitc.sz.wrenv.sys.hibernate.AppNameStrategy">-->
+              <!--<property name="prefix">-->
+                     <!--<value>${tablename.prefix}</value>-->
+              <!--</property>-->
+       <!--</bean>-->
+       <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+              <property name="dataSource">
+                     <ref bean="basicDataSource"/>
+              </property>
+              <property name="hibernateProperties">
+                     <props>
+                            <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+                            <prop key="hibernate.show_sql">false</prop>
+                            <prop key="hibernate.format_sql">true</prop>
+                            <prop key="hibernate.hbm2ddl.auto">update</prop>
+                     </props>
+              </property>
+              <property name="packagesToScan">
+                     <list>
+                            <value>bitc.sz.wzEnv.security.model</value>
+                            <value>bitc.sz.wzEnv.model</value>
+                            <value>bitc.sz.wzEnv.report.model</value>
+                     </list>
+              </property>
+              <!--<property name="namingStrategy">-->
+                     <!--<ref local="appNameStrategy"/>-->
+              <!--</property>-->
+       </bean>
+       <bean id="transactionManager"
+             class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+              <property name="sessionFactory" ref="sessionFactory" />
+       </bean>
+       <tx:annotation-driven transaction-manager="transactionManager"/>
+       <!--<bean id="jdbcTemplate"-->
+             <!--class="org.springframework.jdbc.core.JdbcTemplate">-->
+              <!--<property name="dataSource">-->
+                     <!--<ref local="basicDataSource"/>-->
+              <!--</property>-->
+       <!--</bean>-->
+       <!--<bean id="ht" class="org.springframework.orm.hibernate3.HibernateTemplate">-->
+              <!--<property name="sessionFactory">-->
+                     <!--<ref local="sessionFactory"/>-->
+              <!--</property>-->
+       <!--</bean>-->
+</beans>

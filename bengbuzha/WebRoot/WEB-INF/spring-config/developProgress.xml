@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	<!-- Contract -->
+	<bean name="/developProgressMaint"
+		class="com.bitc.jk.xmis.web.action.DevelopProgressAction">
+		<property name="developProgressService">
+			<ref local="developProgressServiceImpl" />
+		</property>
+	</bean>
+	
+	<bean id="developProgressServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.DevelopProgressServiceImpl">
+		<property name="developProgressDAO">
+			<ref local="developProgressDAOImpl" />
+		</property>
+	</bean>
+	
+	<bean id="developProgressDAOImpl" parent="baseDAO"
+		class="com.bitc.jk.xmis.dao.impl.DevelopProgressDAOImpl">
+	</bean>
+	
+</beans>

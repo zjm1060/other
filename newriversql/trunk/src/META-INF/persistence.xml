@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+	<persistence-unit name="riversql" transaction-type="RESOURCE_LOCAL">
+		<provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>
+		<class>com.riversql.entities.Driver</class>
+		<class>com.riversql.entities.Source</class>
+        <class>com.riversql.task.impl.MultiTask</class>
+        <class>com.riversql.task.CommandFactory</class>
+        <class>com.riversql.entities.ImportResult</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+        	<property name="toplink.target-database" value="Auto"/>
+
+            <!-- Provider-specific connection properties -->
+            <property name="toplink.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="toplink.jdbc.url" value="jdbc:oracle:thin:@192.169.11.84:1521:orcl"/>
+            <property name="toplink.jdbc.user" value="gaugemeter"/>
+            <property name="toplink.jdbc.password" value="essence"/>
+
+            <!--<property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>-->
+            <!--<property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/aa"/>-->
+            <!--<property name="toplink.jdbc.user" value="root"/>-->
+            <!--<property name="toplink.jdbc.password" value="1234"/>-->
+
+
+
+            <!-- Provider-specific settings -->
+            <property name="toplink.logging.level" value="INFO"/>
+            <property name="toplink.ddl-generation" value="create-tables"/>
+
+        </properties>
+	</persistence-unit>
+</persistence>

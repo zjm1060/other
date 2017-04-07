@@ -1,0 +1,374 @@
+
+
+***********************************************************
+          LOGGING STARTED Sun Dec 11 11:03:07 2011
+***********************************************************
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_main.c 268) 
+  Executing '..\..\bin\foundry'
+  Input TDL file         : '..\..\mvl\usr\server\srvrobj.odf'
+  Configuration file     : '..\..\mvl\util\foundry\win32\align.cfg'
+  Output 'C' file        : '..\..\mvl\usr\server\srvrobj.c'
+  Output 'H' file        : '..\..\mvl\usr\server\srvrobj.h'
+  Output 'LAP XML' file  : '..\..\mvl\usr\server\lap_out.xml'
+  Output 'Lefttodo' file : '..\..\mvl\usr\server\lefttodo.txt'
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_parse.c 157) 
+  Searching for object definitions: 
+  
+    userIncIn = 'server.h'
+  
+    userLabelIn = 'I16'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Short'
+    userDescIn  = 'Single 16-bit signed integer'
+  
+    userLabelIn = 'I32'
+    userFlagsIn = ':T'
+    userTdlIn   = 'Long'
+    userDescIn  = 'Single 32-bit signed integer'
+  
+    userLabelIn = 'U32'
+    userFlagsIn = ':TK'
+    userTdlIn   = 'ULong'
+    userDescIn  = 'Single 32-bit unsigned integer'
+  
+    userLabelIn = 'STRUCT1'
+    userFlagsIn = ':T'
+    userTdlIn   = '{(s)Short,(l)Long}'
+    userDescIn  = 'Basic simple structure'
+  
+    userLabelIn = 'ARR1'
+    userFlagsIn = ':T'
+    userTdlIn   = '[10:Short]'
+    userDescIn  = 'Array Of 10 16-bit signed integers'
+  
+    userLabelIn = 'LARGE_ARR'
+    userFlagsIn = ':T'
+    userTdlIn   = '[400:Short]'
+    userDescIn  = 'Array Of 400 16-bit signed integers'
+  
+    userLabelIn = 'UTC_TM'
+    userFlagsIn = ':TK'
+    userTdlIn   = 'Utctime'
+    userDescIn  = 'UTC Time'
+  
+    userLabelIn = 'UTF8VSTRING13'
+    userFlagsIn = ':T'
+    userTdlIn   = 'UTF8Vstring13'
+    userDescIn  = 'variable len Unicode UTF8 string'
+  
+    domName = 'mvlLiteDom'
+  
+    domName = 'mvlLiteDom1'
+  
+    varName = 'Temperature'
+    domName = ''
+    typeName = 'I16'
+    initText = '&Temperature'
+    procText = '&varProcFuns'
+  
+    varName = 'arr1'
+    domName = ''
+    typeName = 'ARR1'
+    initText = 'arr1'
+    procText = '&varProcFuns'
+  
+    varName = 'struct1'
+    domName = ''
+    typeName = 'STRUCT1'
+    initText = '&struct1'
+    procText = '&varProcFuns'
+  
+    varName = 'struct1$l'
+    domName = ''
+    typeName = 'I32'
+    initText = '&struct1.l'
+    procText = '&varProcFuns'
+  
+    varName = 'struct1$s'
+    domName = ''
+    typeName = 'I16'
+    initText = '&struct1.s'
+    procText = '&varProcFuns'
+  
+    varName = 'domTemperature'
+    domName = 'mvlLiteDom'
+    typeName = 'I16'
+    initText = '&domTemperature'
+    procText = '&varProcFuns'
+  
+    varName = 'domArr1'
+    domName = 'mvlLiteDom'
+    typeName = 'ARR1'
+    initText = 'domArr1'
+    procText = '&varProcFuns'
+  
+    varName = 'domStruct1'
+    domName = 'mvlLiteDom'
+    typeName = 'STRUCT1'
+    initText = '&domStruct1'
+    procText = '&varProcFuns'
+  
+    varName = 'domStruct1$l'
+    domName = 'mvlLiteDom'
+    typeName = 'I32'
+    initText = '&domStruct1.l'
+    procText = '&varProcFuns'
+  
+    varName = 'domStruct1$s'
+    domName = 'mvlLiteDom'
+    typeName = 'I16'
+    initText = '&domStruct1.s'
+    procText = '&varProcFuns'
+  
+    varName = 'UtcTimeNow'
+    domName = ''
+    typeName = 'UTC_TM'
+    initText = '&UtcTimeNow'
+    procText = '&varProcFuns'
+  
+    varName = 'UTF8Vstring13test'
+    domName = ''
+    typeName = 'UTF8VSTRING13'
+    initText = '&UTF8Vstring13test'
+    procText = ''
+    varListName = 'nvl1'
+    domName = ''
+    varListName = 'nvl1'
+    domName = 'mvlLiteDom'
+    varListName = 'allButAaVars'
+    domName = ''
+  
+    jouName = 'SampleJournal'
+  
+    jouName = 'mvlLiteDom1:MyJournal'
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_opt.c 62) 
+  Removing transient and unreferenced base types ...
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_opt.c 109) 
+  Eliminating Twins
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 171) 
+  Writing output files ...
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 923) 
+  WRITING VARIABLE INITIALIZATION CODE
+    Variable: 'Temperature'
+    Variable: 'UTF8Vstring13test'
+    Variable: 'UtcTimeNow'
+    Variable: 'arr1'
+    Variable: 'struct1'
+    Variable: 'struct1$l'
+    Variable: 'struct1$s'
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 564) 
+  WRITING DOMAIN INITIALIZATION CODE
+    Domain: 'mvlLiteDom
+    Variable: 'domArr1'
+    Variable: 'domStruct1'
+    Variable: 'domStruct1$l'
+    Variable: 'domStruct1$s'
+    Variable: 'domTemperature'
+    Domain: 'mvlLiteDom1
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 725) 
+  WRITING AA INITIALIZATION CODE
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 1025) 
+  WRITING VARIABLE LIST INITIALIZATION CODE
+    Variable List: 'allButAaVars'
+      Variable: 'Temperature', reference 'mvl_vmd.var_assoc_tbl[0]'
+      Variable: 'arr1', reference 'mvl_vmd.var_assoc_tbl[3]'
+      Variable: 'struct1', reference 'mvl_vmd.var_assoc_tbl[4]'
+      Variable: 'struct1$l', reference 'mvl_vmd.var_assoc_tbl[5]'
+      Variable: 'struct1$s', reference 'mvl_vmd.var_assoc_tbl[6]'
+      Variable: 'domTemperature', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[4]'
+      Variable: 'domArr1', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[0]'
+      Variable: 'domStruct1', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[1]'
+      Variable: 'domStruct1$l', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[2]'
+      Variable: 'domStruct1$s', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[3]'
+    Variable List: 'nvl1'
+      Variable: 'arr1', reference 'mvl_vmd.var_assoc_tbl[3]'
+      Variable: 'struct1', reference 'mvl_vmd.var_assoc_tbl[4]'
+      Variable: 'Temperature', reference 'mvl_vmd.var_assoc_tbl[0]'
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 658) 
+  WRITING DOMAIN INITIALIZATION CODE
+    Domain: 'mvlLiteDom
+    Variable List: 'nvl1'
+      Variable: 'domArr1', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[0]'
+      Variable: 'domStruct1', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[1]'
+      Variable: 'domTemperature', reference 'mvl_vmd.dom_tbl[0]->var_assoc_tbl[4]'
+    Domain: 'mvlLiteDom1
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 833) 
+  WRITING AA VARIABLE LIST INITIALIZATION CODE
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 1370) 
+  WRITING JOURNAL INITIALIZATION CODE
+    Journal: 'SampleJournal'
+    DOM_SPEC Journal: 'mvlLiteDom1:MyJournal'
+
+2011-12-11 11:03:07.440 SLOGALWAYS (fo_write.c 1213) 
+  WRITING RUNTIME TYPES
+    Writing type 'I16' (0 ref)
+    Writing type 'I32' (0 ref)
+    Writing type 'U32' (0 ref)
+    Writing type 'STRUCT1' (0 ref)
+    Writing type 'ARR1' (0 ref)
+    Writing type 'LARGE_ARR' (0 ref)
+    Writing type 'UTC_TM' (0 ref)
+    Writing type 'UTF8VSTRING13' (0 ref)
+
+2011-12-11 11:03:07.456 MEM_LOG_DUMP (mem_chks.c 1324) 
+  DYNAMIC MEMORY POINTER TABLE
+----------------------------  
+  Ptr 0x0037F644  Size    37  File : ..\..\mvl\util\foundry\fo_write.c #0630
+  Ptr 0x0037F5F4  Size    37  File : ..\..\mvl\util\foundry\fo_write.c #0630
+  Ptr 0x0037F5A4  Size    37  File : ..\..\mvl\util\foundry\fo_write.c #0630
+  Ptr 0x0037F554  Size    37  File : ..\..\mvl\util\foundry\fo_write.c #0630
+  Ptr 0x0037F504  Size    37  File : ..\..\mvl\util\foundry\fo_write.c #0630
+  Ptr 0x0037F4BC  Size    25  File : ..\..\mvl\util\foundry\fo_write.c #0956
+  Ptr 0x0037F474  Size    25  File : ..\..\mvl\util\foundry\fo_write.c #0956
+  Ptr 0x0037F42C  Size    25  File : ..\..\mvl\util\foundry\fo_write.c #0956
+  Ptr 0x0037F3E4  Size    25  File : ..\..\mvl\util\foundry\fo_write.c #0956
+  Ptr 0x0037F39C  Size    25  File : ..\..\mvl\util\foundry\fo_write.c #0956
+  Ptr 0x0037F354  Size    25  File : ..\..\mvl\util\foundry\fo_write.c #0956
+  Ptr 0x0037F30C  Size    25  File : ..\..\mvl\util\foundry\fo_write.c #0956
+  Ptr 0x015A908C  Size     2  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x015A905C  Size     2  File : ..\..\mvl\util\foundry\fo_write.c #1856
+  Ptr 0x015A902C  Size     1  File : ..\..\mvl\util\foundry\fo_write.c #1852
+  Ptr 0x0037D07C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #1364
+  Ptr 0x0037D044  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #1363
+  Ptr 0x0037D39C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #1362
+  Ptr 0x0037D00C  Size    14  File : ..\..\mvl\util\foundry\fo_parse.c #1396
+  Ptr 0x0037CFD4  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #1395
+  Ptr 0x0037E2B4  Size    40  File : ..\..\mvl\util\foundry\fo_parse.c #1312
+  Ptr 0x0037CF9C  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1202
+  Ptr 0x0037D35C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #1201
+  Ptr 0x0037E27C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #1312
+  Ptr 0x015A8FFC  Size     5  File : ..\..\mvl\util\foundry\fo_parse.c #1202
+  Ptr 0x0037D31C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #1201
+  Ptr 0x0037E244  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #1312
+  Ptr 0x015A8FCC  Size     5  File : ..\..\mvl\util\foundry\fo_parse.c #1202
+  Ptr 0x0037D2DC  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #1201
+  Ptr 0x0037D29C  Size    19  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037D25C  Size    18  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9FA4  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x0037CF64  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CF2C  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037CEF4  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9F4C  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9F0C  Size    19  File : ..\..\mvl\util\foundry\fo_parse.c #1064
+  Ptr 0x0037CEBC  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CE84  Size    14  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037CE4C  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9EB4  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9E74  Size    19  File : ..\..\mvl\util\foundry\fo_parse.c #1064
+  Ptr 0x0037CE14  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CDDC  Size    14  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037CDA4  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9E1C  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9DDC  Size    19  File : ..\..\mvl\util\foundry\fo_parse.c #1064
+  Ptr 0x0037CD6C  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CD34  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037CCFC  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9D84  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9D44  Size    19  File : ..\..\mvl\util\foundry\fo_parse.c #1064
+  Ptr 0x0037CCC4  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x015A8F9C  Size     8  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x015A8F6C  Size     8  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9CEC  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9CAC  Size    19  File : ..\..\mvl\util\foundry\fo_parse.c #1064
+  Ptr 0x0037CC8C  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CC54  Size    16  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037CC1C  Size    15  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9C54  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x0037CBE4  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CBAC  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037CB74  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9BFC  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x0037CB3C  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CB04  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x0037CACC  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9BA4  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x0037CA94  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x0037CA5C  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x015A8F3C  Size     8  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9B4C  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9B14  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x015A8F0C  Size     5  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x015A8EDC  Size     5  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A9ABC  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9A84  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1056
+  Ptr 0x015A9A4C  Size    13  File : ..\..\mvl\util\foundry\fo_parse.c #1053
+  Ptr 0x015A9A14  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #1049
+  Ptr 0x015A99BC  Size    44  File : ..\..\mvl\util\foundry\fo_parse.c #1048
+  Ptr 0x015A9984  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0902
+  Ptr 0x015A993C  Size    28  File : ..\..\mvl\util\foundry\fo_parse.c #0901
+  Ptr 0x015A9904  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0902
+  Ptr 0x015A98BC  Size    28  File : ..\..\mvl\util\foundry\fo_parse.c #0901
+  Ptr 0x015A987C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A8EAC  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x015A9844  Size    14  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A97F4  Size    33  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x015A97BC  Size    14  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A974C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x015A96A4  Size   128  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x015A9664  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A8E7C  Size     2  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x015A8E34  Size     7  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A8DFC  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x015A8DCC  Size     8  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A8D5C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x015A8CB4  Size   128  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x015A8C4C  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A8C14  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x015A8BDC  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A8B8C  Size    36  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x015A8B54  Size    12  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A8AE4  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x015A8954  Size   360  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x015A88EC  Size    60  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A88B4  Size    10  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x015A8884  Size     5  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A8834  Size    35  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x015A87FC  Size    11  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A878C  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x015A85FC  Size   360  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x015A8584  Size    80  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A8544  Size    24  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x015A8514  Size     8  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A84D4  Size    23  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x015A8494  Size    19  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A8424  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x015A821C  Size   476  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x015A81DC  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A81AC  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x015A817C  Size     4  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A8134  Size    31  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x015A8104  Size     6  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A8094  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x015A7FEC  Size   128  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x015A7FAC  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A7F7C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x015A7F4C  Size     4  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A7F04  Size    29  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x015A7ED4  Size     5  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A7E64  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x015A7DBC  Size   128  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x015A7D7C  Size    20  File : ..\..\mvl\util\foundry\fo_parse.c #0857
+  Ptr 0x015A7D4C  Size     3  File : ..\..\mvl\util\foundry\fo_parse.c #0849
+  Ptr 0x00372794  Size     4  File : ..\..\mvl\util\foundry\fo_parse.c #0788
+  Ptr 0x015A7D04  Size    29  File : ..\..\mvl\util\foundry\fo_parse.c #0787
+  Ptr 0x00372764  Size     6  File : ..\..\mvl\util\foundry\fo_parse.c #0786
+  Ptr 0x015A7C94  Size    68  File : ..\..\mvl\util\foundry\fo_parse.c #0783
+  Ptr 0x003726BC  Size   128  File : ..\..\src\mms_tdef.c #2566
+  Ptr 0x00372684  Size     9  File : ..\..\mvl\util\foundry\fo_parse.c #0701
+  ---- END OF MEMORY POINTER TABLE ----------
+  Total number of allocated pointers:   142
+  Total amount of memory allocated:     4813 bytes 
+  Maximum number of pointers allocated: 143
+  Maximum amount of memory allocated:   303111 bytes

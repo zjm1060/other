@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xmlns:aop="http://www.springframework.org/schema/aop"  
+xmlns:jee="http://www.springframework.org/schema/jee"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+	<!-- JDBC-->
+	<jee:jndi-lookup id="XMISDB" jndi-name="java:comp/env/jdbc/xmis" />	
+	<bean id="JdbcTemplate" 
+         class="org.springframework.jdbc.core.JdbcTemplate"> 
+         <property name="dataSource"> 
+             <ref bean="XMISDB"/> 
+         </property> 
+    </bean> 
+	<!-- jee:jndi-lookup id="JKGL" jndi-name="java:comp/env/jdbc/JKGL" />	
+	<bean id="JKGLTemplate" 
+         class="org.springframework.jdbc.core.JdbcTemplate"> 
+         <property name="dataSource"> 
+             <ref bean="JKGL"/> 
+         </property> 
+    </bean--> 
+	
+	<!-- JtaTransactionManager -->	
+	<bean id="transactionManager"
+		class="org.springframework.transaction.jta.JtaTransactionManager" />
+	
+	<!-- Transaction Setting for advice mode -->
+	<aop:aspectj-autoproxy/>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">  
+        <tx:attributes>  
+            <tx:method name="do*" rollback-for="Excepiton"/>  
+            <tx:method name="get*" read-only="true"/>  
+        </tx:attributes>  
+    </tx:advice>  
+
+	 <aop:config proxy-target-class="true">
+	  <aop:advisor pointcut="execution(* com.bitc.jk.xmis.service.impl.*.*(..))"
+    	  advice-ref="txAdvice"/>
+	 </aop:config>
+  
+    <!-- aop:config proxy-target-class="true"> 
+        <aop:pointcut id="userOperation"  
+                      expression="execution(* com.bitc.jk.xmis.service.impl.*.*(..))"/>  
+        <aop:advisor advice-ref="txAdvice"  
+                     pointcut-ref="userOperation"/>  
+    </aop:config-->  
+    
+    <!-- Transcation Setting for annotation -->
+	<!-- tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/-->
+
+	<!-- Organization & Login -->
+	<bean name="/loginAction"
+		class="com.bitc.jk.xmis.web.action.LoginAction">
+		<property name="organizationService">
+			<ref bean="organizationServiceImpl" />
+		</property>
+		<property name="loginService">
+			<ref bean="loginServiceImpl" />
+		</property>
+	</bean>
+
+	<bean name="/logout"
+		class="com.bitc.jk.xmis.web.action.LogoutAction">
+	</bean>
+
+	<bean name="/orgMaint"
+		class="com.bitc.jk.xmis.web.action.OrganizationAction">
+		<property name="organizationService">
+			<ref bean="organizationServiceImpl" />
+		</property>
+	</bean>
+
+	<bean id="organizationServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.OrganizationServiceImpl">
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl" />
+		</property>
+	</bean>
+
+	<bean id="loginServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.LoginServiceImpl">
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl" />
+		</property>
+	</bean>
+
+	<bean id="organizationDAOImpl"
+		class="com.bitc.jk.xmis.dao.impl.OrganizationDAOImpl">
+		<property name="jt">
+			<ref local="JdbcTemplate" />
+		</property>
+	</bean>
+
+	<!-- bean id="transactionFroxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+		<property name="transactionManager">
+			<ref bean="TransactionManager" />
+		</property>
+		<property name="target">
+			<ref local="organizationServiceImpl" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="do*">PROPAGATION_REQUIRED</prop>
+				<prop key="find*">PROPAGATION_SUPPORTS,readOnly</prop> 	
+                <prop key="get*">PROPAGATION_SUPPORTS,readOnly</prop> 				
+			</props>
+		</property>
+	</bean-->
+
+
+	<!-- Contract -->
+	<bean name="/contractMain"
+		class="com.bitc.jk.xmis.web.action.ContractAction">
+		<property name="contractService">
+			<ref bean="contractServiceImpl" />
+		</property>
+	</bean>
+	<bean id="contractServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.ContractServiceImpl">
+		<property name="contractDAO">
+			<ref bean="contractDAOImpl" />
+		</property>
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl" />
+		</property>
+	</bean>
+	
+	<bean id="contractDAOImpl"
+		class="com.bitc.jk.xmis.dao.impl.ContractDAOImpl">
+		<property name="jt">
+			<ref local="JdbcTemplate" />
+		</property>
+	</bean>
+	
+
+	<!-- CRM -->
+	<bean name="/crmMaint"
+		class="com.bitc.jk.xmis.web.action.CrmAction">
+		<property name="crmService">
+			<ref bean="crmServiceImpl" />
+		</property>
+	</bean>
+	<bean id="crmServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.CrmServiceImpl">
+		<property name="crmDAO">
+			<ref bean="crmDAOImpl" />
+		</property>
+	</bean>
+	<bean id="crmDAOImpl"
+		class="com.bitc.jk.xmis.dao.impl.CrmDAOImpl">
+		<property name="jt">
+			<ref local="JdbcTemplate" />
+		</property>
+	</bean>
+	
+	
+	<!-- CRM -->
+	<bean name="/projectMaint"
+		class="com.bitc.jk.xmis.web.action.ProjectAction">
+		<property name="projectService">
+			<ref bean="projectServiceImpl" />
+		</property>
+	</bean>
+	<bean id="projectServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.ProjectServiceImpl">
+		<property name="projectDAO">
+			<ref bean="projectDAOImpl" />
+		</property>
+	</bean>
+	<bean id="projectDAOImpl"
+		class="com.bitc.jk.xmis.dao.impl.ProjectDAOImpl">
+		<property name="jt">
+			<ref local="JdbcTemplate" />
+		</property>
+	</bean>	
+	
+</beans>

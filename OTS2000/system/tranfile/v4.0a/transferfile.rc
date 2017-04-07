@@ -1,0 +1,421 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\transferfile.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\transferfile.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 transferfile"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "transferfile 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TRANSFERFILE_DIALOG DIALOGEX 0, 0, 284, 264
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件传输程序   中水科技"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "开始发送",IDSTARTTRANSFER,7,145,50,14
+    PUSHBUTTON      "添加计算机",IDADDDST,117,145,50,14
+    GROUPBOX        "",IDC_STATIC,135,22,142,117
+    GROUPBOX        "",IDC_STATIC,137,1,140,20
+    CONTROL         "数据文本 (gen)",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,44,66,10
+    CONTROL         "数据文件 (dat)",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,57,64,10
+    CONTROL         "执行文件 (bin)",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,70,64,10
+    CONTROL         "画面文件 (dsp)",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,83,66,10
+    CONTROL         "语音文件 (wav)",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,96,67,10
+    CONTROL         "预留备用 (res)",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,141,109,65,10
+    CONTROL         "预留备用 (res)",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,141,122,65,10
+    EDITTEXT        IDC_EDITLOG,7,166,270,92,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "A:",IDC_RADIODRIVERA,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,166,8,15,10
+    CONTROL         "C:",IDC_RADIODRIVERC,"Button",BS_AUTORADIOBUTTON,184,8,
+                    15,10
+    CONTROL         "D:",IDC_RADIODRIVERD,"Button",BS_AUTORADIOBUTTON,202,8,
+                    15,10
+    CONTROL         "E:",IDC_RADIODRIVERE,"Button",BS_AUTORADIOBUTTON,220,8,
+                    15,10
+    CONTROL         "F:",IDC_RADIODRIVERF,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,238,8,15,10
+    CONTROL         "G:",IDC_RADIODRIVERJ,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,256,8,15,10
+    CONTROL         "List2",IDC_LISTDST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,26,122,113,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "退出程序",IDCANCEL,227,145,50,14
+    PUSHBUTTON      "Test",IDC_BUTTON1,200,210,50,14,NOT WS_VISIBLE
+    LTEXT           "本地：",IDC_STATIC,140,8,24,8
+    GROUPBOX        "",IDC_STATIC,7,1,122,20,WS_GROUP
+    LTEXT           "版本：",IDC_STATIC,13,8,24,8
+    CONTROL         "v2.0a",IDC_RADIOVER1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,38,8,28,10
+    CONTROL         "v3.0a",IDC_RADIOVER2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,67,8,30,10
+    CONTROL         "v4.0a",IDC_RADIOVER3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,98,8,30,10
+    PUSHBUTTON      "保存配置",IDSAVECONFIG,172,145,50,14
+    PUSHBUTTON      "Get && Edit",IDSTARTGET,62,145,50,14,WS_DISABLED
+    PUSHBUTTON      "文件过滤...",IDSETFILTER,155,211,49,14,NOT WS_VISIBLE
+    PUSHBUTTON      "选择...",IDSETFILTER1,238,31,31,12,BS_FLAT
+    PUSHBUTTON      "选择...",IDSETFILTER2,238,44,31,12,BS_FLAT
+    PUSHBUTTON      "选择...",IDSETFILTER3,238,57,31,12,BS_FLAT
+    PUSHBUTTON      "选择...",IDSETFILTER4,238,70,31,12,BS_FLAT
+    PUSHBUTTON      "选择...",IDSETFILTER5,238,83,31,12,BS_FLAT
+    PUSHBUTTON      "选择...",IDSETFILTER6,238,96,31,12,BS_FLAT
+    PUSHBUTTON      "选择...",IDSETFILTER7,238,109,31,12,BS_FLAT | 
+                    WS_DISABLED
+    CONTROL         "配置文件 (def)",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,31,64,10
+    PUSHBUTTON      "选择...",IDSETFILTER8,238,122,31,12,BS_FLAT | 
+                    WS_DISABLED
+END
+
+IDD_DSTPRMDIALOG DIALOG DISCARDABLE  0, 0, 204, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "目标计算机属性"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDITUSERNAME,64,34,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPWD,64,53,73,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITIP,64,15,73,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDCONFIRM,43,134,34,14
+    PUSHBUTTON      "取消",IDCANCEL,83,134,34,14
+    CONTROL         "PC机",IDC_RADIOTYPE0,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,154,16,33,10
+    CONTROL         "UNIX机",IDC_RADIOTYPE1,"Button",BS_AUTORADIOBUTTON,154,
+                    34,37,10
+    CONTROL         "启用",IDC_CHECKSTATUS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,155,50,32,10
+    LTEXT           "用户名：",IDC_STATIC,14,36,43,11
+    LTEXT           "密    码：",IDC_STATIC,14,54,45,11
+    LTEXT           "IP或机器名：",IDC_STATIC,14,18,50,11
+    GROUPBOX        "",IDC_STATIC,149,3,46,86
+    GROUPBOX        "",IDC_STATIC,7,4,137,85
+    CONTROL         "A",IDC_RADIODRIVERA,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED | WS_GROUP,72,98,15,10
+    CONTROL         "C",IDC_RADIODRIVERC,"Button",BS_AUTORADIOBUTTON,89,98,
+                    15,10
+    CONTROL         "D",IDC_RADIODRIVERD,"Button",BS_AUTORADIOBUTTON,106,98,
+                    15,10
+    CONTROL         "E",IDC_RADIODRIVERE,"Button",BS_AUTORADIOBUTTON,123,98,
+                    15,10
+    CONTROL         "F",IDC_RADIODRIVERF,"Button",BS_AUTORADIOBUTTON,140,98,
+                    15,10
+    CONTROL         "G",IDC_RADIODRIVERJ,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_DISABLED,157,98,15,10
+    GROUPBOX        "",IDC_STATIC,7,90,189,39
+    LTEXT           "注：Unix机不需要选择盘符",IDC_STATIC,16,113,105,11
+    PUSHBUTTON      "选取...",IDC_GETFROMFILE,125,134,34,14
+    DEFPUSHBUTTON   "修改",IDMODIFY,45,134,32,14,NOT WS_VISIBLE
+    LTEXT           "选择目标盘符：",IDC_STATIC,14,99,57,8
+    EDITTEXT        IDC_EDITPWDCONF,64,71,73,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "确认密 码：",IDC_STATIC,14,72,48,11
+END
+
+IDD_DSTSELDLG DIALOGEX 0, 0, 187, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择目标计算机"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDCONFIRM,7,96,34,14
+    PUSHBUTTON      "取消",IDCANCEL,47,96,34,14
+    LTEXT           "从hosts文件读取的计算机列表:",IDC_STATIC,7,9,120,10
+    CONTROL         "List2",IDC_LISTHOST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,21,175,70,WS_EX_CLIENTEDGE
+END
+
+IDD_SETFILTERDLG DIALOG DISCARDABLE  0, 0, 217, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置过滤条件"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDITF1,129,18,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITF2,129,35,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITF3,129,52,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITF4,129,69,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITF5,74,86,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITF6,129,103,73,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITF7,129,120,73,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDCONFIRMSET,43,199,34,14
+    PUSHBUTTON      "取消",IDCANCELSET,83,199,34,14
+    PUSHBUTTON      "恢复默认",IDC_SETDEFAULT,125,199,45,14
+    LTEXT           "数据库文本文件:",IDC_STATIC,14,18,97,11
+    GROUPBOX        "",IDC_STATIC,7,4,205,139
+    GROUPBOX        "",IDC_STATIC,7,144,205,39
+    LTEXT           "注：请输入每一种文件的过滤条件。必须为系统认识的过滤条件。画面文件可以最多输入四种过滤条件，以 | 隔开。",
+                    IDC_STATIC,14,153,190,26
+    DEFPUSHBUTTON   "修改",IDMODIFY,45,199,32,14,NOT WS_VISIBLE
+    LTEXT           "数据库生成文件:",IDC_STATIC,14,35,97,11
+    LTEXT           "闭锁条件及综合计算文本:",IDC_STATIC,14,52,97,11
+    LTEXT           "闭锁条件及综合计算生成文件:",IDC_STATIC,14,69,108,11
+    LTEXT           "画面文件:",IDC_STATIC,14,86,45,11
+    LTEXT           "语音文件:",IDC_STATIC,14,103,97,11
+    LTEXT           "事故追忆文件:",IDC_STATIC,14,120,97,11
+END
+
+IDD_TRANSFERFILE_DIALOG_NEW DIALOGEX 0, 0, 283, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件传输程序"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "开始发送",IDSTARTTRANSFER,7,8,50,14
+    PUSHBUTTON      "添加计算机",IDADDDST,117,8,50,14
+    EDITTEXT        IDC_EDITLOG,7,184,269,76,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "List2",IDC_LISTDST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,152,48,124,130,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "退出程序",IDCANCEL,226,8,50,14
+    PUSHBUTTON      "保存配置",IDSAVECONFIG,172,8,50,14
+    PUSHBUTTON      "Get && Edit",IDSTARTGET,62,8,50,14
+    COMBOBOX        IDC_COMBO1,7,30,139,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List2",IDC_LISTDST2,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,47,140,131,WS_EX_CLIENTEDGE
+    LTEXT           "Static",IDC_STATIC,155,33,121,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "transferfile Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "transferfile\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "transferfile.EXE\0"
+            VALUE "ProductName", "transferfile 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TRANSFERFILE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_DSTPRMDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_DSTSELDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_SETFILTERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_TRANSFERFILE_DIALOG_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 260
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DSTIPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "DSTIP"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "禁止所选",                    ID_ENABLEMENU
+        MENUITEM "全部启用",                    ID_ENABLEALLMENU
+        MENUITEM "全部禁用",                    ID_DISENABLEALLMENU
+        MENUITEM "修改属性",                    ID_MODIFYMENU
+        MENUITEM "删除计算机",                  ID_DELMENU
+        MENUITEM SEPARATOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 transferfile(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\transferfile.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

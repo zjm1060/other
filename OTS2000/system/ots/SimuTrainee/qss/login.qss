@@ -1,0 +1,3 @@
+QPushButton:hover{
+ background-image: url(:/pic/images/background/µÇÂ½°´Å¥Q.png);
+}

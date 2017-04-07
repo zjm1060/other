@@ -1,0 +1,164 @@
+﻿描述文件
+http://localhost:8080/services/query?wsdl
+方法：
+1、登录
+    方法名称：login
+    参数1：userName，String，用户名
+    参数2：password，String，密码
+    返回值：String，JSON字符串，格式为
+        {
+            "success": true,//登陆成功为true,登陆失败为false
+            "message": null,//不成功时的提示信息
+            "title": null,//提示信息标题
+            "attributes": {  //附带的内容
+              "waterBodys": [  // 用户权限内的水体主体
+                {
+                  "id": "1",   //主体ID
+                  "name": "太子河", //名称
+                  "mapId":"xxxxx"
+                  "superObjId":"xxxx"
+		  "icoFlag":"1" //图标显示标志 0不显示，1显示
+		  "typeIDs":"x,xx,xxx" //对象类型表述 x- mainTypeID（重点水体、敏感目标）；xx 第一级类型，xxx 第二级类型 ... 以此类推
+                }
+              ],
+              "user": {         //用户信息
+                "id": "1",   //用户ID
+                "name": "某某某"  //用户姓名
+              }
+            }
+        }
+2、获取主体下的第一级类型
+    方法名称：getMainTypes
+    参数1：userId，String，当前用户Id
+    参数2：waterBodyId，String，水体主体ID，第一步Login后用户选中的水体主体
+    返回值：String，JSON字符串，格式为
+        {
+            "success": true,//请求成功为true,登陆失败为false
+            "message": null,//不成功时的提示信息
+            "title": null,//提示信息标题
+            "attributes": {  //附带的内容
+              "mainTypes": [
+                {
+                  "id": "1",  //ID
+                  "name": "重点水体" //名称
+                },
+                {
+                  "id": "2",
+                  "name": "敏感目标"
+                }
+              ]
+            }
+         }
+3、获取下拉框中类型，各级通用
+    方法名称：getTypes
+    参数1：userId，String，当前用户Id
+    参数2：waterBodyId，String，水体主体ID，第一步Login后用户选中的水体主体
+    参数3：mainTypeId，String，第一级类型ID，第二步用户点击图标后的类型ID
+    参数4：typeIds，String，下拉框各级ID拼在一起，以逗号隔开，此值为空时返回第一级下拉框内容；获取第二级时typeIds='第一级下拉框ID'，获取第二级时typeIds='第一级下拉框ID,第二级下拉框ID'
+    参数5：keyword，String，搜索关键字
+    返回值：String，JSON字符串，格式为
+        {
+            "success": true,//请求成功为true,登陆失败为false
+            "message": null,//不成功时的提示信息
+            "title": null,//提示信息标题
+            "attributes": {  //附带的内容
+              "types": [  //类型下级类型列表
+                {
+                    "typeId":"xxx",  //类型ID
+                    "typeName":"xxx", //类型名称
+                    "icoFlag":"xxx"  //ico标志
+                }
+              ],
+              "targetList":[{
+                    "id":"xxx",
+                     "name":"xxx",
+                     "location":"xxx",
+	                  "mapId":"xxxxx"
+	                  "superObjId":"xxxx"
+		  "icoFlag":"1" //图标显示标志 0不显示，1显示
+		  "typeIDs":"x,xx,xxx" //对象类型表述 x- mainTypeID（重点水体、敏感目标）；xx 第一级类型，xxx 第二级类型 ... 以此类推
+                }]
+            }
+         }
+4、关键字搜索目标对象
+    方法名称：getObjsBySearch
+    参数1：userId，String，当前用户Id
+    参数2：waterBodyId，String，水体主体ID，第一步Login后用户选中的水体主体
+    参数3：mainTypeId，String，第一级类型ID，第二步用户点击图标后的类型ID
+    参数4：keyword，String，搜索关键字
+    返回值：String，JSON字符串，格式为
+        {
+            "success": true,//请求成功为true,登陆失败为false
+            "message": null,//不成功时的提示信息
+            "title": null,//提示信息标题
+            "attributes": {  //附带的内容
+              "objs":[{ // 该类型下的目标对象列表
+                  "id": "" ,//目标对象ID
+                  "name":"" ,//目标对象名称
+                  "location":"", //目标对象地理位置
+                  "mapId":"xxxxx"
+                  "superObjId":"xxxx"
+		  "icoFlag":"1" //图标显示标志 0不显示，1显示
+		  "typeIDs":"x,xx,xxx" //对象类型表述 x- mainTypeID（重点水体、敏感目标）；xx 第一级类型，xxx 第二级类型 ... 以此类推
+              }]
+            }
+        }
+        
+        
+5、获取目标对象详细信息
+    方法名称：getTarget
+    参数1：userId，String，当前用户Id
+    参数2：targetIds，String，目标对象Id
+    返回值：String，JSON字符串，格式为
+        {
+            "success": true,//请求成功为true,登陆失败为false
+            "message": null,//不成功时的提示信息
+            "title": null,//提示信息标题
+            "attributes": {  //附带的内容
+              "targets":{  //目标对象
+                 "id": "" ,//目标对象ID
+                  "name":"" ,//目标对象名称
+                  "location":"", //目标对象地理位置
+                  "mapId":"xxxxx"
+                  "superObjId":"xxxx"
+		  "icoFlag":"1" //图标显示标志 0不显示，1显示
+		  "typeIDs":"x,xx,xxx" //对象类型表述 x- mainTypeID（重点水体、敏感目标）；xx 第一级类型，xxx 第二级类型 ... 以此类推
+
+                  "attributes":{  //属性Map,动态生成
+                      "对象属性1":"1000xxx",
+                      "对象属性2"："sdfd"
+                  }
+              }
+            }
+        }
+        
+6、对象气泡接口
+    方法名称：getObjDetailInfo
+    参数1)：objId，String，目标对象Id
+    参数2)：water_bady_id，String，
+    参数3)：searchType，String，
+    参数3)：period_id，String，目标对象Id
+    
+    返回值：String，JSON字符串，格式为
+        {
+            "success": true,//请求成功为true,登陆失败为false
+            "message": null,//不成功时的提示信息
+            "title": null,//提示信息标题
+            "attributes": {  //附带的内容
+              "targets":{  //目标对象
+                 "id": "" ,//目标对象ID
+                  "name":"" ,//目标对象名称
+                  "location":"", //目标对象地理位置
+                  "mapId":"xxxxx"
+                  "superObjId":"xxxx"
+		  "icoFlag":"1" //图标显示标志 0不显示，1显示
+		  "typeIDs":"x,xx,xxx" //对象类型表述 x- mainTypeID（重点水体、敏感目标）；xx 第一级类型，xxx 第二级类型 ... 以此类推
+
+                  "attributes":{  //属性Map,动态生成
+                      "对象属性1":"1000xxx",
+                      "对象属性2"："sdfd"
+                  }
+              }
+            }
+        }
+        

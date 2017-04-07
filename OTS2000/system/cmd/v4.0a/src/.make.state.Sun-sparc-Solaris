@@ -1,0 +1,30 @@
+.MAKE_VERSION:	VERSION-1.0
+/home/ems/system/cmd/v4.0a/lib:
+	mkdir -p /home/ems/system/cmd/v4.0a/lib
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/CmdProcess.o:	../../../dms/v4.0a/inc/dms_com.h ../../../dms/v4.0a/inc/os_type_def.h /usr/include/sys/types.h /usr/include/sys/feature_tests.h /usr/include/sys/ccompile.h /usr/include/sys/isa_defs.h /usr/include/sys/machtypes.h /usr/include/sys/int_types.h /usr/include/sys/select.h /usr/include/sys/time_impl.h /usr/include/sys/time.h /usr/include/time.h /usr/include/iso/time_iso.h /usr/include/sys/stat.h /usr/include/sys/stat_impl.h /usr/include/sys/utime.h /usr/include/fcntl.h
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/CmdProcess.o:	/usr/include/sys/fcntl.h /usr/include/stdio.h /usr/include/iso/stdio_iso.h /usr/include/sys/va_list.h /usr/include/stdio_tag.h /usr/include/stdio_impl.h /usr/include/iso/stdio_c99.h /usr/include/string.h /usr/include/iso/string_iso.h /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h /usr/include/iso/stdlib_c99.h /usr/include/sys/mman.h /usr/include/sys/signal.h /usr/include/sys/iso/signal_iso.h /usr/include/sys/unistd.h /usr/include/sys/siginfo.h
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/CmdProcess.o:	/usr/include/sys/machsig.h /usr/include/unistd.h /usr/include/utime.h /usr/include/strings.h ../../../dms/v4.0a/inc/dms_structure_def.h ../../../dms/v4.0a/inc/dms_std.h ../../../dms/v4.0a/inc/dms_data_def.h ../../../dms/v4.0a/inc/ems_init_def.h ../../../dms/v4.0a/inc/dms_util_def.h ../../../dms/v4.0a/inc/dms_functions.h ../../../dps/v4.0a/inc/dps_rec_def.h ../../../lan/v4.0a/inc/lan_common.h ../../../lan/v4.0a/inc/lan_os.h ../../../dps/v4.0a/inc/dps_type_def.h
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/CmdProcess.o:	../../../dps/v4.0a/inc/ipc_common.h ../../../plc/v4.0a/inc/lcu_data.h ../../../cmd/v4.0a/inc/cmd_def.h ../../../cmd/v4.0a/inc/cmd_functions.h ../../../lan/v4.0a/inc/common_head.h /usr/include/sys/socket.h /usr/include/sys/uio.h /usr/include/sys/socket_impl.h /usr/include/sys/un.h /usr/include/net/if_dl.h /usr/include/sys/netconfig.h /usr/include/netinet/in.h /usr/include/sys/stream.h /usr/include/sys/vnode.h /usr/include/sys/t_lock.h /usr/include/sys/machlock.h
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/CmdProcess.o:	/usr/include/sys/param.h /usr/include/sys/mutex.h /usr/include/sys/rwlock.h /usr/include/sys/semaphore.h /usr/include/sys/condvar.h /usr/include/sys/rwstlock.h /usr/include/sys/ksynch.h /usr/include/sys/cred.h /usr/include/sys/resource.h /usr/include/vm/seg_enum.h /usr/include/sys/poll.h /usr/include/sys/strmdep.h /usr/include/sys/model.h /usr/include/sys/strft.h /usr/include/sys/byteorder.h /usr/include/sys/errno.h /usr/include/netdb.h /usr/include/math.h
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/CmdProcess.o:	/usr/include/iso/math_iso.h /usr/include/iso/math_c99.h /usr/include/floatingpoint.h /usr/include/sys/ieeefp.h /usr/include/signal.h /usr/include/iso/signal_iso.h /usr/include/sys/procset.h /usr/include/xti.h /usr/include/sys/tpicommon.h /usr/include/sys/xti_xtiopt.h /usr/include/sys/xti_osi.h /usr/include/sys/xti_inet.h /usr/include/sys/shm.h /usr/include/sys/ipc.h /usr/include/sys/sem.h /usr/include/errno.h /usr/include/arpa/inet.h /usr/include/wait.h
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/CmdProcess.o:	/usr/include/sys/wait.h /usr/include/pthread.h /usr/include/sched.h /usr/include/thread.h /usr/include/synch.h /usr/include/sys/synch.h /usr/include/stropts.h /usr/include/sys/stropts.h /usr/include/sys/conf.h 
+	cc -g -xCC  -c  -I../inc -o /home/ems/system/cmd/v4.0a/lib/CmdProcess.o CmdProcess.c
+.BUILT_LAST_MAKE_RUN:
+/home/ems/system/cmd/v4.0a/lib/cmdlib.lib:
+	ar rv /home/ems/system/cmd/v4.0a/lib/cmdlib.lib /home/ems/system/cmd/v4.0a/lib/CmdProcess.o
+/home/ems/system/cmd/v4.0a/src:
+	mkdir -p /home/ems/system/cmd/v4.0a/src
+/home/ems/system/cmd/v4.0a/src/CmdProcess.o:	../../../dms/v4.0a/inc/dms_com.h ../../../dms/v4.0a/inc/os_type_def.h /usr/include/sys/types.h /usr/include/sys/feature_tests.h /usr/include/sys/ccompile.h /usr/include/sys/isa_defs.h /usr/include/sys/machtypes.h /usr/include/sys/int_types.h /usr/include/sys/select.h /usr/include/sys/time_impl.h /usr/include/sys/time.h /usr/include/time.h /usr/include/iso/time_iso.h /usr/include/sys/stat.h /usr/include/sys/stat_impl.h /usr/include/sys/utime.h /usr/include/fcntl.h
+/home/ems/system/cmd/v4.0a/src/CmdProcess.o:	/usr/include/sys/fcntl.h /usr/include/stdio.h /usr/include/iso/stdio_iso.h /usr/include/sys/va_list.h /usr/include/stdio_tag.h /usr/include/stdio_impl.h /usr/include/iso/stdio_c99.h /usr/include/string.h /usr/include/iso/string_iso.h /usr/include/stdlib.h /usr/include/iso/stdlib_iso.h /usr/include/iso/stdlib_c99.h /usr/include/sys/mman.h /usr/include/sys/signal.h /usr/include/sys/iso/signal_iso.h /usr/include/sys/unistd.h /usr/include/sys/siginfo.h
+/home/ems/system/cmd/v4.0a/src/CmdProcess.o:	/usr/include/sys/machsig.h /usr/include/unistd.h /usr/include/utime.h /usr/include/strings.h ../../../dms/v4.0a/inc/dms_structure_def.h ../../../dms/v4.0a/inc/dms_std.h ../../../dms/v4.0a/inc/dms_data_def.h ../../../dms/v4.0a/inc/ems_init_def.h ../../../dms/v4.0a/inc/dms_util_def.h ../../../dms/v4.0a/inc/dms_functions.h ../../../dps/v4.0a/inc/dps_rec_def.h ../../../lan/v4.0a/inc/lan_common.h ../../../lan/v4.0a/inc/lan_os.h ../../../dps/v4.0a/inc/dps_type_def.h
+/home/ems/system/cmd/v4.0a/src/CmdProcess.o:	../../../dps/v4.0a/inc/ipc_common.h ../../../plc/v4.0a/inc/lcu_data.h ../../../cmd/v4.0a/inc/cmd_def.h ../../../cmd/v4.0a/inc/cmd_functions.h 
+	cc -g -xCC  -c  -I../inc -o /home/ems/system/cmd/v4.0a/src/CmdProcess.o CmdProcess.c
+/home/ems/system/cmd/v4.0a/src/cmdlib.lib:
+	ar rv /home/ems/system/cmd/v4.0a/src/cmdlib.lib /home/ems/system/cmd/v4.0a/src/CmdProcess.o

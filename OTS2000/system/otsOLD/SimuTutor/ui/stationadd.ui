@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CStationAddTable</class>
+ <widget class="QDialog" name="CStationAddTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>409</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加工作站</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>主  机  名：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="editHostName"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>别      名：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="editOthName"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>A  网   IP：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="editIpA"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>B  网   IP：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="editIpB"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>工作站类型：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkStudent">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>学员站</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkTeacher">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>教员站</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkServer">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>模型服务器</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>模型服务器ID：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="editServerId"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <property name="spacing">
+      <number>40</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="buttonEnter">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonExit">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonApply">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>应用</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>editHostName</tabstop>
+  <tabstop>editOthName</tabstop>
+  <tabstop>editIpA</tabstop>
+  <tabstop>editIpB</tabstop>
+  <tabstop>checkStudent</tabstop>
+  <tabstop>checkTeacher</tabstop>
+  <tabstop>checkServer</tabstop>
+  <tabstop>editServerId</tabstop>
+  <tabstop>buttonApply</tabstop>
+  <tabstop>buttonEnter</tabstop>
+  <tabstop>buttonExit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonExit</sender>
+   <signal>clicked()</signal>
+   <receiver>CStationAddTable</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

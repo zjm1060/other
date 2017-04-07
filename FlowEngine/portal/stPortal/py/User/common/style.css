@@ -1,0 +1,397 @@
+/*style for 番禺门户*/
+BODY {
+	MARGIN: 0px;
+	scrollbar-face-color: #FFF1F1;
+	scrollbar-highlight-color: #BE0405;
+	scrollbar-shadow-color: #BE0405;
+	scrollbar-3dlight-color: #FFF1F1;
+	scrollbar-arrow-color:  #BE0405;
+	scrollbar-track-color: #CCCCCC;
+	scrollbar-darkshadow-color: #CCCCCC
+}
+
+TD {
+	FONT: 9pt  Verdana,Tahoma,宋体
+}
+
+a:link {
+	color: #D04B4B;
+	text-decoration: none
+}
+a:visited {
+	color: #D04B4B;
+	text-decoration: none
+}
+a:active {
+	color: #BE0405;
+	text-decoration: none
+}
+a:hover {
+	color: #CCCCCC;
+	text-decoration: underline
+}
+
+/*颜色字体*/
+
+#TxetR{
+	color: #FF0000
+}
+
+#TextR A:link {
+	color: #FF0000;
+	text-decoration: none
+}
+
+#TextR A:hover {
+	color: #D35455;
+	text-decoration: none
+}
+/*导航栏*/
+
+#RegionIdGraphic
+{
+    PADDING-LEFT: 7px
+}
+
+#GlobalToolbar {
+	PADDING-LEFT: 1px
+	FONT: 9pt  Verdana,Tahoma,宋体;
+}
+#GlobalToolbar A {
+    BORDER-RIGHT: #be0405 1px solid;
+    PADDING-RIGHT: 4px;
+    BORDER-TOP: #be0405 1px solid;
+    DISPLAY: block;
+    PADDING-LEFT: 4px;
+    BACKGROUND: #be0405;
+    PADDING-BOTTOM: 2px;
+    MARGIN: 0px;
+    BORDER-LEFT: #be0405 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #be0405 1px solid;
+    WHITE-SPACE: nowrap;
+	COLOR: #ffffff; 
+	TEXT-DECORATION: none
+}
+
+#GlobalToolbar A:hover {
+    BORDER-RIGHT: #ffe4e1 1px solid;
+    PADDING-RIGHT: 4px;
+    BORDER-TOP: #ffe4e1 1px solid;
+    DISPLAY: block;
+    PADDING-LEFT:4px;
+    BACKGROUND: #ff0000;
+    PADDING-BOTTOM: 2px;
+    MARGIN: 0px;
+    BORDER-LEFT: #ffe4e1 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #ffe4e1 1px solid
+}
+
+#GlobalSearch{
+	 FONT: 68% Verdana,Tahoma,宋体;
+	 COLOR: #ffffff; 
+	 PADDING-RIGHT: 8px
+}
+
+.BarTitle
+{
+    PADDING-LEFT: 1px
+    FONT: 9pt Verdana,Tahoma,宋体;
+	font-weight: bold
+}
+
+.gt0
+{
+    BORDER-RIGHT: #be0405 1px solid;
+    PADDING-RIGHT: 4px;
+    BORDER-TOP: #be0405 1px solid;
+    PADDING-LEFT: 4px;
+    FONT-SIZE: 100%;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #be0405 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #be0405 1px solid
+}
+.gt1
+{
+    BORDER-RIGHT: #ffe4e1 1px solid;
+    PADDING-RIGHT: 4px;
+    BORDER-TOP: #ffe4e1 1px solid;
+    PADDING-LEFT: 4px;
+    FONT-SIZE: 100%;
+    BACKGROUND: #ff0000;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #ffe4e1 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #ffe4e1 1px solid
+}
+.gtsep
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-BOTTOM: 2px;
+    FONT: 65% Verdana,Tahoma,宋体;
+    COLOR: #ffffff;
+    PADDING-TOP: 0px
+}
+#Banner
+{
+    TEXT-ALIGN: right
+}
+
+#LocalToolbar
+{
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: #999 1px solid;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 100%;
+    BACKGROUND: #f1f1f1;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #999 1px solid
+}
+#LocalToolbar TD
+{
+    FONT-SIZE: 100%
+}
+#LocalToolbar A
+{
+    FONT: 11pt Verdana,Tahoma,宋体;
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+.lt0
+{
+    BORDER-RIGHT: #f1f1f1 1px solid;
+    PADDING-RIGHT: 6px;
+    BORDER-TOP: #f1f1f1 1px solid;
+    PADDING-LEFT: 6px;
+    BACKGROUND: #f1f1f1;
+    PADDING-BOTTOM: 0px;
+    BORDER-LEFT: #f1f1f1 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #f1f1f1 1px solid
+}
+.lt1
+{
+    BORDER-RIGHT: #999 1px solid;
+    PADDING-RIGHT: 6px;
+    BORDER-TOP: #999 1px solid;
+    PADDING-LEFT: 6px;
+    BACKGROUND: #ccc;
+    PADDING-BOTTOM: 0px;
+    BORDER-LEFT: #999 1px solid;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #999 1px solid
+}
+.ltsep
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-BOTTOM: 0px;
+    FONT: 70% Verdana,Tahoma,宋体;
+    COLOR: #a9a9a9;
+    PADDING-TOP: 0px
+}
+.localToolbar FORM
+{
+    MARGIN: 0px
+}
+.localToolbar INPUT
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    FONT: 70% Tahoma, Helvetica,宋体;
+    MARGIN-RIGHT: 8px;
+    PADDING-TOP: 0px
+}
+
+#HomePageLink TD
+{
+    FONT-SIZE: 100%
+}
+#HomePageLink A
+{
+    BORDER-RIGHT: #f1f1f1 1px solid;
+    PADDING-RIGHT: 6px;
+    BORDER-TOP: #f1f1f1 1px solid;
+    DISPLAY: block;
+    PADDING-LEFT: 6px;
+    BACKGROUND: #f1f1f1;
+    PADDING-BOTTOM: 2px;
+    MARGIN: 0px;
+    BORDER-LEFT: #f1f1f1 1px solid;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #f1f1f1 1px solid;
+    WHITE-SPACE: nowrap
+}
+#HomePageLink A:hover
+{
+    BORDER-RIGHT: #999 1px solid;
+    PADDING-RIGHT: 6px;
+    BORDER-TOP: #999 1px solid;
+    DISPLAY: block;
+    PADDING-LEFT: 6px;
+    BACKGROUND: #ccc;
+    PADDING-BOTTOM: 2px;
+    MARGIN: 0px;
+    BORDER-LEFT: #999 1px solid;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #999 1px solid
+}
+
+#InfoBar
+{
+	PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 100%;
+    BACKGROUND: #fefefe;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #999 1px solid
+}
+
+/*底部*/
+#FootBar
+{
+	PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 100%;
+    BACKGROUND: #BE0405;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #999 1px solid
+}
+
+.FootBarTail {
+	height: 22px;
+	COLOR: #ffffff; 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#F7D2D2', EndColorStr='#BE0405'); 
+}
+
+.SubTitle
+{
+    PADDING-LEFT: 8px; 
+	HEIGHT: 22px;
+	BORDER-RIGHT: #999 1px solid;
+    PADDING-RIGHT: 6px;
+    BORDER-TOP: #999 1px solid;
+    PADDING-LEFT: 6px;
+    BACKGROUND: #f7f7f7;
+    PADDING-BOTTOM: 0px;
+    BORDER-LEFT: #999 1px solid;
+    PADDING-TOP: 0px
+}
+.SubTitleMid
+{
+    BACKGROUND: #ccc;
+ }
+
+
+/*红色导航*/
+
+.SubTitleRed, 
+.SubTitleRed2 {
+	BACKGROUND:#D35455;
+	COLOR: #ffffff; 
+	HEIGHT: 22px
+}
+
+.SubTitleRed {
+	PADDING-LEFT: 8px
+}
+
+.SubTitleTailRed {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#D35455', EndColorStr='#F0C6C6'); 
+}
+
+
+
+/*红色导航*/
+
+.SubTitleRed, 
+.SubTitleRed2 {
+	BACKGROUND:#D35455;
+	COLOR: #ffffff; 
+	HEIGHT: 22px
+}
+
+.SubTitleRed {
+	PADDING-LEFT: 8px
+}
+
+.SubTitleTailRed {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#D35455', EndColorStr='#F0C6C6'); 
+}
+
+/*模块框*/
+.subWebTab {
+	BORDER-RIGHT: #f1f1f1 1px outset; 
+	BORDER-TOP: #f1f1f1 1px outset; 
+	BORDER-LEFT: #f1f1f1 1px outset; 
+	PADDING-TOP: 2px; 
+	PADDING-BOTTOM: 2px; 
+	BORDER-BOTTOM: #f1f1f1 1px outset; 
+	BACKGROUND-COLOR: #ffffff
+}
+.subListTab{
+	height: 22px
+}
+
+.subTab{
+	line-height: 20px;
+    PADDING-LEFT: 8px
+}
+
+.Tabcell,
+.Tabcell1 {
+	BORDER-RIGHT: #cccccc 1px solid; 
+	BORDER-TOP: #cccccc 1px solid; 
+	FONT-FAMILY: Verdana,Tahoma,宋体;
+	BORDER-LEFT: #cccccc 1px solid; 
+	BORDER-BOTTOM: #cccccc 1px solid
+}
+
+.Tabcell {
+	height: 24px;
+    PADDING-LEFT: 20px;
+}
+
+#GoButton
+{
+    PADDING-RIGHT: 0.2em;
+    PADDING-LEFT: 0.2em;
+    PADDING-BOTTOM: 0em;
+    FONT: 110% Verdana,Tahoma,宋体;
+    MARGIN-LEFT: 6px;
+    PADDING-TOP: 0em;
+    POSITION: relative;
+    TOP: 1px
+}
+
+.GoBt {
+	width:40px;
+    FONT: 9pt Verdana,Tahoma,宋体;
+	color: #000000;
+	border: 1px #000000 solid;
+	cursor: hand;
+	MARGIN-RIGHT:10px
+}
+
+.textfield {
+    FONT: 10pt Verdana,Tahoma,宋体;
+	color: #000000;
+	border: 1px #000000 solid;
+	text-align: left
+}
+
+.textfield2 {
+    FONT: 10pt Verdana,Tahoma,宋体;
+	color: #000000;
+	border: 1px #999999 solid;
+	text-align: left
+}
+
+.fontw {  font-size: 9pt; color: #FFFFFF; text-decoration: none}

@@ -1,0 +1,47 @@
+body .x-panel {
+    margin-bottom:20px;
+}
+.icon-grid {
+    background-image:url(../shared/icons/fam/grid.png) !important;
+}
+#button-grid .x-panel-body {
+    border:1px solid #99bbe8;
+    border-top:0 none;
+}
+.add {
+    background-image:url(/xMIS/resources/images/add.gif) !important;
+}
+.option {
+    background-image:url(../shared/icons/fam/plugin.gif) !important;
+}
+.remove {
+    background-image:url(/xMIS/resources/images/delete.gif) !important;
+}
+.save {
+    background-image:url(../shared/icons/save.gif) !important;
+}
+.ok {
+    background-image:url(/xMIS/resources/images/accept.png) !important;
+}
+.cancel {
+    background-image:url(/xMIS/resources/images/accept.png) !important;
+}
+
+.condition {
+    background-image:url(/xMIS/resources/images/accept.png) !important;
+}
+.updateAttc{
+	background-image:url(/xMIS/resources/images/col-move-bottom.gif) !important;
+	
+}
+		
+
+.bg_repeat_x {
+	BACKGROUND-REPEAT: repeat-x
+}
+
+.red-td-data {
+	FONT-WEIGHT: bolder;
+	COLOR: #ff0000;
+	TEXT-ALIGN: left
+}

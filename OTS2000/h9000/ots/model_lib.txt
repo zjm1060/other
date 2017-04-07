@@ -1,0 +1,368 @@
+!******************************************************************
+!	MODEL:	Common Generator Model
+!	Model from 《电力系统的控制与稳定》P.211。
+!******************************************************************
+MODEL:	GENERATOR
+
+TIME_STEP: .001
+SIM_STEPS: 900
+TYPE:	   TEMPLATE	
+
+!*************************************************
+!	Generator
+!	K1-K6: refer to P206 of <PS Ctrl & Stablty. >
+!*************************************************
+TFB:	LOOP_K1
+!	LINEARITY:			PRE_NONLINEAR
+!	NLF_NAME:			NLF_RBLCU15R_K1
+	A:	1.	BS: 0.	C: LOOP_K1_C	DS: 0.
+	X0: 0	Y0: 0.
+
+TFB:	LOOP_K2
+	OUTPUT_DBNAME:		LOOP_K2_OUTPUT
+!	OUTPUT_LONGNAME:	电功率一 Teu
+	A:	1.	BS: 0.	C: LOOP_K2_C	DS: 0. 	
+!	A:	1.	BS: 0.	C: 1.2578	DS: 0. 	
+	X0: 0	Y0: 0.
+
+TFB:	LOOP_K3
+	INPUT_DBNAME:		LOOP_K3_INPUT
+!	INPUT_LONGNAME:		励磁电压
+	OUTPUT_DBNAME:		LOOP_K3_OUTPUT
+!	OUTPUT_LONGNAME:	定子电势Eq
+	A:	1.	BS: 1.813	C: 0.3072	DS: 0. 	
+	X0: 0	Y0: 0.
+
+TFB:	LOOP_K4
+	A:	1.	BS: 0.	C: LOOP_K4_C	DS: 0.
+!	A:	1.	BS: 0.	C: 1.7126	DS: 0.
+	X0: 0	Y0: 0.
+
+TFB:	LOOP_K5
+	A:	1.	BS: 0.	C: LOOP_K5_C	DS: 0.
+!	A:	1.	BS: 0.	C: -0.0409	DS: 0.
+	X0: 0	Y0: 0.
+
+TFB:	LOOP_K6
+	A:	1.	BS: 0.	C: LOOP_K6_C	DS: 0. 	
+!	A:	1.	BS: 0.	C: 0.4971	DS: 0. 	
+	X0: 0	Y0: 0.
+
+TFB:	LOOP_7
+!	Tj = 0.05
+	INPUT_DBNAME:		LOOP_K7_INPUT
+!	INPUT_LONGNAME:		机械转矩
+	OUTPUT_DBNAME:		LOOP_K7_OUTPUT
+!	OUTPUT_LONGNAME:	发电机转速
+	A:	0.	BS: 0.35	C: 1.	DS: 0. 	
+	X0: 0	Y0: 0.
+
+TFB:	LOOP_8
+	OUTPUT_DBNAME:		LOOP_K8_OUTPUT
+!	OUTPUT_LONGNAME:	发电机内功角
+	A:	0.	BS: 1.	C: 1.	DS: 0. 	
+	X0: 0	Y0: 0.
+
+TFB:	GEN_VT
+	OUTPUT_DBNAME:		GEN_VT_OUTPUT
+!	OUTPUT_LONGNAME:	发电机机端电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_DBNAME:		RB.LCU15R.ANA.LC_V_REF
+!	INPUT_LONGNAME:		励磁电压
+	OUTPUT_DBNAME:		EXCITATION_OUTPUT
+!	OUTPUT_LONGNAME:	励磁电压
+	A:	1.	BS: 0.10	C: 40.	DS: 0. 	
+	X0: 0	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: LOOP_8		TO: LOOP_K1		FACTOR: 1.0
+	FROM: LOOP_K3		TO: LOOP_K2		FACTOR: 1.0
+	FROM: LOOP_K4		TO: LOOP_K3		FACTOR: -1.0
+	FROM: EXCITATION	TO: LOOP_K3		FACTOR: 1.0
+	FROM: LOOP_8		TO: LOOP_K4		FACTOR: 1.0
+	FROM: LOOP_8		TO: LOOP_K5		FACTOR: 1.0
+	FROM: LOOP_K3		TO: LOOP_K6		FACTOR: 1.0
+	FROM: LOOP_K1		TO: LOOP_7		FACTOR: -1.0
+	FROM: LOOP_K2		TO: LOOP_7		FACTOR: -1.
+	FROM: LOOP_7		TO: LOOP_8		FACTOR: 1.
+	FROM: LOOP_K5		TO: GEN_VT		FACTOR: 1.
+	FROM: LOOP_K6		TO: GEN_VT		FACTOR: 1.
+
+!******************
+!	SX F1 Excitation
+!******************
+	FROM: GEN_VT		TO: EXCITATION		FACTOR: -1.
+
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	阀门模型，来自《simulog_manual》P49
+!******************************************************************
+MODEL:	VALVE
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+!	OUTPUT_LONGNAME:	Yd
+	A:	1.	BS: LOOP_K1_B	C: LOOP_K1_C	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		Xref
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	EXCITATION2
+	INPUT_DBNAME:		EXCITATION2_INPUT
+!	INPUT_LONGNAME:		Xt
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: EXCITATION2	TO: LOOP_K1		FACTOR: -1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	励磁系统模型，来自《simulog_manual》P46
+!******************************************************************
+MODEL:	EXCITATION
+
+TIME_STEP: .001
+SIM_STEPS: 900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+!	OUTPUT_LONGNAME:	Efd
+	A:	1.	BS: LOOP_K1_B	C: LOOP_K1_C	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		Vref
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	EXCITATION2
+	INPUT_DBNAME:		EXCITATION2_INPUT
+!	INPUT_LONGNAME:		Vt
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: EXCITATION2	TO: LOOP_K1		FACTOR: -1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	调速器模型，辅助接力器型，来自《水电站机组控制计算机仿真》P9
+!******************************************************************
+MODEL:	REGULATOR
+
+TIME_STEP: .001
+SIM_STEPS: 900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+!	OUTPUT_LONGNAME:	y
+	A:	0.	BS: LOOP_K1_B	C: 1	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K2
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	A:	1.	BS: LOOP_K2_B	C: 0	DS: LOOP_K2_D 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K3
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	A:	1.	BS: 0	C: LOOP_K1_B	DS: 0 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		x
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************	
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: LOOP_K1		TO: LOOP_K2		FACTOR: 1.0
+	FROM: LOOP_K1		TO: LOOP_K3		FACTOR: 1.0
+	FROM: LOOP_K2		TO: LOOP_K1		FACTOR: -1.0
+	FROM: LOOP_K3		TO: LOOP_K1		FACTOR: -1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	引水系统模型，考虑刚性水击，来自《simulog_manual》P47
+!******************************************************************
+MODEL:	CATCHWATERS
+
+TIME_STEP: .001
+SIM_STEPS: 900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+!	OUTPUT_LONGNAME:	水轮机输出功率
+	A:	1.	BS: LOOP_K1_B	C: 1	DS: LOOP_K1_D	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		y,接力器行程，等同于导叶开度
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************	
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	水轮机及引水系统模型，考虑刚性水击，同时系统系统与无穷大系统相连时
+!	来自《simulog_manual》P48
+!******************************************************************
+MODEL:	TURBINE
+
+TIME_STEP: .001
+SIM_STEPS: 900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+!	OUTPUT_LONGNAME:	ey
+	A:	1.	BS: 0	C: LOOP_K1_C	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K2
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+!	OUTPUT_LONGNAME:	eqy	
+	A:	1.	BS: 0	C: LOOP_K2_C	DS: 0
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K3
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+!	OUTPUT_LONGNAME:	-Tw	
+	A:	1.	BS: 0	C: 0	DS: LOOP_K3_D
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K4
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	A:	1.	BS: 0	C: LOOP_K4_C	DS: 0 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K5
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	A:	1.	BS: 0	C: LOOP_K5_C	DS: 0 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	TURBINE_MT
+!************************
+TFB:	TURBINE_MT
+	OUTPUT_DBNAME:		TURBINE_MT_OUTPUT
+!	outPUT_LONGNAME:	mt
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		y,接力器行程，等同于导叶开度
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************	
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: EXCITATION	TO: LOOP_K2		FACTOR: 1.0
+	FROM: LOOP_K1		TO: TURBINE_MT		FACTOR: 1.0
+	FROM: LOOP_K2		TO: LOOP_K3		FACTOR: 1.0
+	FROM: LOOP_K3		TO: LOOP_K4		FACTOR: 1.0
+	FROM: LOOP_K3		TO: LOOP_K5		FACTOR: 1.0
+	FROM: LOOP_K4		TO: TURBINE_MT		FACTOR: 1.0
+	FROM: LOOP_K5		TO: LOOP_K2		FACTOR: 1.0
+END_MODEL:
+

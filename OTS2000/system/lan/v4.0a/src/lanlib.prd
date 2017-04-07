@@ -1,0 +1,100 @@
+#
+# WorkShop Project File
+#
+# This file is machine generated, do not modify
+#
+
+projectid "/usr/ems/system/lan/v4.0a/src/lanlib.prd";
+projectver 6.0;
+
+project_t cset_z6PVHm0MK7Q0OzktHqXs = {
+
+    entities = {
+        {
+            name = "commonlib.c";
+            type = C;
+            path = "commonlib.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "lanlib.c";
+            type = C;
+            path = "lanlib.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "netudp.c";
+            type = C;
+            path = "netudp.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "udp.c";
+            type = C;
+            path = "udp.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/lan/v4.0a/lib/lan.lib";
+            type = AR;
+            path = "/usr/ems/system/lan/v4.0a/lib/lan.lib";
+            dependencies = {
+                "commonlib.c",
+                "lanlib.c",
+                "netudp.c",
+                "udp.c";
+            };
+            builder = AR_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+        };
+    };
+
+    globals = {
+        {
+            id = "C_Builder";
+            builder = C_Builder;
+            options = {
+                C_Builder<debug>,
+                C_Builder<sbrowser>,
+                C_Builder<cpp_comments>;
+            };
+        };
+    };
+
+    gendata = {
+        {
+            tag = projecttype;
+            type = string_t;
+            value ="archive";
+        },
+        {
+            tag = projectdir;
+            type = string_t;
+            value ="/usr/ems/system/lan/v4.0a/src";
+        };
+    };
+};

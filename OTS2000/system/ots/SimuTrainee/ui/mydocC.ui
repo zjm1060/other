@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mydoc</class>
+ <widget class="QWidget" name="Mydoc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>743</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>文档</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 14pt &quot;宋体&quot;;
+background-color: rgb(231, 240, 245);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>5</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 100), stop:0.5 rgba(224, 234, 245, 100), stop:1 rgba(255, 255, 255, 100));
+ border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    padding: 2px;</string>
+      </property>
+      <property name="title">
+       <string>选择学习文档</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTreeView" name="treeView_docdir">
+           <property name="styleSheet">
+            <string notr="true"> border:none;  </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="pushButtonStudy">
+             <property name="styleSheet">
+              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.520599, y1:1, x2:0.508, y2:0.142, stop:0 rgba(255, 255, 255, 255), stop:0.0564972 rgba(236, 241, 245, 255), stop:0.536723 rgba(236, 241, 245, 255), stop:1 rgba(255, 255, 255, 255));
+
+    border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    border-radius:2;
+    padding: 2px;
+ 
+font: 13pt &quot;汉仪中黑简&quot;;
+color: rgb(7, 100, 143);</string>
+             </property>
+             <property name="text">
+              <string>学习该文档</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>18</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_MystudyRec">
+             <property name="styleSheet">
+              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.520599, y1:1, x2:0.508, y2:0.142, stop:0 rgba(255, 255, 255, 255), stop:0.0564972 rgba(236, 241, 245, 255), stop:0.536723 rgba(236, 241, 245, 255), stop:1 rgba(255, 255, 255, 255));
+
+    border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    border-radius:2;
+    padding: 2px;
+ 
+font: 13pt &quot;汉仪中黑简&quot;;
+color: rgb(7, 100, 143);</string>
+             </property>
+             <property name="text">
+              <string>查看学习记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>773</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 100), stop:0.5 rgba(224, 234, 245, 100), stop:1 rgba(255, 255, 255, 100));
+ border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    padding: 2px;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_collapse">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>24</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>25</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.520599, y1:1, x2:0.508, y2:0.142, stop:0 rgba(255, 255, 255, 255), stop:0.0564972 rgba(236, 241, 245, 255), stop:0.536723 rgba(236, 241, 245, 255), stop:1 rgba(255, 255, 255, 255));
+
+    border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    border-radius:2;
+    padding: 2px;</string>
+             </property>
+             <property name="text">
+              <string>&lt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">font: 75 12pt &quot;新宋体&quot;;
+color: rgb(4, 30, 103);
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 0), stop:0.5 rgba(224, 234, 245, 0), stop:1 rgba(255, 255, 255, 0));
+    border-width:0px;
+
+</string>
+             </property>
+             <property name="text">
+              <string>文档名：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_docname">
+             <property name="styleSheet">
+              <string notr="true">font: 75 12pt &quot;新宋体&quot;;
+color: rgb(4, 30, 103);
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 0), stop:0.5 rgba(224, 234, 245, 0), stop:1 rgba(255, 255, 255, 0));
+    border-width:0px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="styleSheet">
+              <string notr="true">font: 75 12pt &quot;新宋体&quot;;
+color: rgb(4, 30, 103);
+background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 0), stop:0.5 rgba(224, 234, 245, 0), stop:1 rgba(255, 255, 255, 0));
+    border-width:0px;</string>
+             </property>
+             <property name="text">
+              <string>当前学习时间：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLCDNumber" name="lcdNumber_time">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: qradialgradient(spread:pad, cx:0.432, cy:0.589545, radius:1.722, fx:0.017, fy:0.0238737, stop:0.0734463 rgba(7, 100, 143, 255), stop:1 rgba(124, 210, 252, 255));
+color: rgb(31,217,242); </string>
+             </property>
+             <property name="smallDecimalPoint">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_finishdoc">
+             <property name="styleSheet">
+              <string notr="true">background-color: qlineargradient(spread:pad, x1:0.520599, y1:1, x2:0.508, y2:0.142, stop:0 rgba(255, 255, 255, 255), stop:0.0564972 rgba(236, 241, 245, 255), stop:0.536723 rgba(236, 241, 245, 255), stop:1 rgba(255, 255, 255, 255));
+
+    border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    border-radius:2;
+    padding: 2px;
+ 
+font: 13pt &quot;汉仪中黑简&quot;;
+color: rgb(7, 100, 143);</string>
+             </property>
+             <property name="text">
+              <string>关闭文档，完成学习</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0.528364, y1:1, x2:0.511, y2:0.0113636, stop:0 rgba(255, 255, 255, 100), stop:0.5 rgba(224, 234, 245, 100), stop:1 rgba(255, 255, 255, 100));
+ border-width: 1px;
+    border-color: rgb(150, 194, 219);
+    border-style: solid;
+    padding: 2px;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../SimuTrainee.qrc"/>
+ </resources>
+ <connections/>
+</ui>

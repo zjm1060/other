@@ -1,0 +1,1229 @@
+:: Reading the calcu def file \home\ems\h9000\def\CalcuFile1.def ...
+
+	01: BEGIN:
+
+	02: Space
+
+	03: INCLUDE		Calcu1.def
+
+  :: Now Loading \home\ems\h9000\def\Calcu1.def ...
+  1:BEGIN:
+  2:
+  3:	POINT:	D_CLEAR	3
+	<<No: 0 offset:0>>
+  4:		日备用小时数                        PBG.F1.CAL.HOUR_BY_D    
+<group:3 entry:1 gt:0 g_offset:0 et:0>
+  5:		日发电小时数                        PBG.F1.CAL.HOUR_FD_D    
+<group:3 entry:2 gt:0 g_offset:0 et:1>
+  6:		日可用小时数                        PBG.F1.CAL.HOUR_KY_D    
+<group:3 entry:3 gt:0 g_offset:0 et:2>
+  7:		日检修小时数                        PBG.F1.CAL.HOUR_JX_D    
+<group:3 entry:4 gt:0 g_offset:0 et:3>
+  8:		日空载小时数                        PBG.F1.CAL.HOUR_KZ_D    
+<group:3 entry:5 gt:0 g_offset:0 et:4>
+  9:		日空转小时数                        PBG.F1.CAL.HOUR_KZH_D   
+<group:3 entry:6 gt:0 g_offset:0 et:5>
+ 10:
+ 11:		日备用小时数                        PBG.F2.CAL.HOUR_BY_D    
+<group:3 entry:7 gt:0 g_offset:0 et:6>
+ 12:		日发电小时数                        PBG.F2.CAL.HOUR_FD_D    
+<group:3 entry:8 gt:0 g_offset:0 et:7>
+ 13:		日可用小时数                        PBG.F2.CAL.HOUR_KY_D    
+<group:3 entry:9 gt:0 g_offset:0 et:8>
+ 14:		日检修小时数                        PBG.F2.CAL.HOUR_JX_D    
+<group:3 entry:10 gt:0 g_offset:0 et:9>
+ 15:		日空载小时数                        PBG.F2.CAL.HOUR_KZ_D    
+<group:3 entry:11 gt:0 g_offset:0 et:10>
+ 16:		日空转小时数                        PBG.F2.CAL.HOUR_KZH_D   
+<group:3 entry:12 gt:0 g_offset:0 et:11>
+ 17:
+ 18:		日备用小时数                        PBG.F3.CAL.HOUR_BY_D    
+<group:3 entry:13 gt:0 g_offset:0 et:12>
+ 19:		日发电小时数                        PBG.F3.CAL.HOUR_FD_D    
+<group:3 entry:14 gt:0 g_offset:0 et:13>
+ 20:		日可用小时数                        PBG.F3.CAL.HOUR_KY_D    
+<group:3 entry:15 gt:0 g_offset:0 et:14>
+ 21:		日检修小时数                        PBG.F3.CAL.HOUR_JX_D    
+<group:3 entry:16 gt:0 g_offset:0 et:15>
+ 22:		日空载小时数                        PBG.F3.CAL.HOUR_KZ_D    
+<group:3 entry:17 gt:0 g_offset:0 et:16>
+ 23:		日空转小时数                        PBG.F3.CAL.HOUR_KZH_D   
+<group:3 entry:18 gt:0 g_offset:0 et:17>
+ 24:
+ 25:		日备用小时数                        PBG.F4.CAL.HOUR_BY_D    
+<group:3 entry:19 gt:0 g_offset:0 et:18>
+ 26:		日发电小时数                        PBG.F4.CAL.HOUR_FD_D    
+<group:3 entry:20 gt:0 g_offset:0 et:19>
+ 27:		日可用小时数                        PBG.F4.CAL.HOUR_KY_D    
+<group:3 entry:21 gt:0 g_offset:0 et:20>
+ 28:		日检修小时数                        PBG.F4.CAL.HOUR_JX_D    
+<group:3 entry:22 gt:0 g_offset:0 et:21>
+ 29:		日空载小时数                        PBG.F4.CAL.HOUR_KZ_D    
+<group:3 entry:23 gt:0 g_offset:0 et:22>
+ 30:		日空转小时数                        PBG.F4.CAL.HOUR_KZH_D   
+<group:3 entry:24 gt:0 g_offset:0 et:23>
+ 31:
+ 32:		日备用小时数                        PBG.F5.CAL.HOUR_BY_D    
+<group:3 entry:25 gt:0 g_offset:0 et:24>
+ 33:		日发电小时数                        PBG.F5.CAL.HOUR_FD_D    
+<group:3 entry:26 gt:0 g_offset:0 et:25>
+ 34:		日可用小时数                        PBG.F5.CAL.HOUR_KY_D    
+<group:3 entry:27 gt:0 g_offset:0 et:26>
+ 35:		日检修小时数                        PBG.F5.CAL.HOUR_JX_D    
+<group:3 entry:28 gt:0 g_offset:0 et:27>
+ 36:		日空载小时数                        PBG.F5.CAL.HOUR_KZ_D    
+<group:3 entry:29 gt:0 g_offset:0 et:28>
+ 37:		日空转小时数                        PBG.F5.CAL.HOUR_KZH_D   
+<group:3 entry:30 gt:0 g_offset:0 et:29>
+ 38:
+ 39:		日备用小时数                        PBG.F6.CAL.HOUR_BY_D    
+<group:3 entry:31 gt:0 g_offset:0 et:30>
+ 40:		日发电小时数                        PBG.F6.CAL.HOUR_FD_D    
+<group:3 entry:32 gt:0 g_offset:0 et:31>
+ 41:		日备用小时数                        PBG.F6.CAL.HOUR_BY_D    
+<group:3 entry:33 gt:0 g_offset:0 et:32>
+ 42:		日检修小时数                        PBG.F6.CAL.HOUR_JX_D    
+<group:3 entry:34 gt:0 g_offset:0 et:33>
+ 43:		日空载小时数                        PBG.F6.CAL.HOUR_KZ_D    
+<group:3 entry:35 gt:0 g_offset:0 et:34>
+ 44:		日空转小时数                        PBG.F6.CAL.HOUR_KZH_D   
+<group:3 entry:36 gt:0 g_offset:0 et:35>
+ 45:
+ 46:	POINT:	M_CLEAR	3
+	<<No: 1 offset:1>>
+ 47:		月备用小时数                        PBG.F1.CAL.HOUR_BY_M    
+<group:3 entry:1 gt:1 g_offset:36 et:36>
+ 48:		月发电小时数                        PBG.F1.CAL.HOUR_FD_M    
+<group:3 entry:2 gt:1 g_offset:36 et:37>
+ 49:		月可用小时数                        PBG.F1.CAL.HOUR_KY_M    
+<group:3 entry:3 gt:1 g_offset:36 et:38>
+ 50:		月检修小时数                        PBG.F1.CAL.HOUR_JX_M    
+<group:3 entry:4 gt:1 g_offset:36 et:39>
+ 51:		月空载小时数                        PBG.F1.CAL.HOUR_KZ_M    
+<group:3 entry:5 gt:1 g_offset:36 et:40>
+ 52:		月空转小时数                        PBG.F1.CAL.HOUR_KZH_M   
+<group:3 entry:6 gt:1 g_offset:36 et:41>
+ 53:
+ 54:		月备用小时数                        PBG.F2.CAL.HOUR_BY_M    
+<group:3 entry:7 gt:1 g_offset:36 et:42>
+ 55:		月发电小时数                        PBG.F2.CAL.HOUR_FD_M    
+<group:3 entry:8 gt:1 g_offset:36 et:43>
+ 56:		月可用小时数                        PBG.F2.CAL.HOUR_KY_M    
+<group:3 entry:9 gt:1 g_offset:36 et:44>
+ 57:		月检修小时数                        PBG.F2.CAL.HOUR_JX_M    
+<group:3 entry:10 gt:1 g_offset:36 et:45>
+ 58:		月空载小时数                        PBG.F2.CAL.HOUR_KZ_M    
+<group:3 entry:11 gt:1 g_offset:36 et:46>
+ 59:		月空转小时数                        PBG.F2.CAL.HOUR_KZH_M   
+<group:3 entry:12 gt:1 g_offset:36 et:47>
+ 60:
+ 61:		月备用小时数                        PBG.F3.CAL.HOUR_BY_M    
+<group:3 entry:13 gt:1 g_offset:36 et:48>
+ 62:		月发电小时数                        PBG.F3.CAL.HOUR_FD_M    
+<group:3 entry:14 gt:1 g_offset:36 et:49>
+ 63:		月可用小时数                        PBG.F3.CAL.HOUR_KY_M    
+<group:3 entry:15 gt:1 g_offset:36 et:50>
+ 64:		月检修小时数                        PBG.F3.CAL.HOUR_JX_M    
+<group:3 entry:16 gt:1 g_offset:36 et:51>
+ 65:		月空载小时数                        PBG.F3.CAL.HOUR_KZ_M    
+<group:3 entry:17 gt:1 g_offset:36 et:52>
+ 66:		月空转小时数                        PBG.F3.CAL.HOUR_KZH_M   
+<group:3 entry:18 gt:1 g_offset:36 et:53>
+ 67:
+ 68:		月备用小时数                        PBG.F4.CAL.HOUR_BY_M    
+<group:3 entry:19 gt:1 g_offset:36 et:54>
+ 69:		月发电小时数                        PBG.F4.CAL.HOUR_FD_M    
+<group:3 entry:20 gt:1 g_offset:36 et:55>
+ 70:		月可用小时数                        PBG.F4.CAL.HOUR_KY_M    
+<group:3 entry:21 gt:1 g_offset:36 et:56>
+ 71:		月检修小时数                        PBG.F4.CAL.HOUR_JX_M    
+<group:3 entry:22 gt:1 g_offset:36 et:57>
+ 72:		月空载小时数                        PBG.F4.CAL.HOUR_KZ_M    
+<group:3 entry:23 gt:1 g_offset:36 et:58>
+ 73:		月空转小时数                        PBG.F4.CAL.HOUR_KZH_M   
+<group:3 entry:24 gt:1 g_offset:36 et:59>
+ 74:
+ 75:		月备用小时数                        PBG.F5.CAL.HOUR_BY_M    
+<group:3 entry:25 gt:1 g_offset:36 et:60>
+ 76:		月发电小时数                        PBG.F5.CAL.HOUR_FD_M    
+<group:3 entry:26 gt:1 g_offset:36 et:61>
+ 77:		月可用小时数                        PBG.F5.CAL.HOUR_KY_M    
+<group:3 entry:27 gt:1 g_offset:36 et:62>
+ 78:		月检修小时数                        PBG.F5.CAL.HOUR_JX_M    
+<group:3 entry:28 gt:1 g_offset:36 et:63>
+ 79:		月空载小时数                        PBG.F5.CAL.HOUR_KZ_M    
+<group:3 entry:29 gt:1 g_offset:36 et:64>
+ 80:		月空转小时数                        PBG.F5.CAL.HOUR_KZH_M   
+<group:3 entry:30 gt:1 g_offset:36 et:65>
+ 81:
+ 82:		月备用小时数                        PBG.F6.CAL.HOUR_BY_M    
+<group:3 entry:31 gt:1 g_offset:36 et:66>
+ 83:		月发电小时数                        PBG.F6.CAL.HOUR_FD_M    
+<group:3 entry:32 gt:1 g_offset:36 et:67>
+ 84:		月备用小时数                        PBG.F6.CAL.HOUR_BY_M    
+<group:3 entry:33 gt:1 g_offset:36 et:68>
+ 85:		月检修小时数                        PBG.F6.CAL.HOUR_JX_M    
+<group:3 entry:34 gt:1 g_offset:36 et:69>
+ 86:		月空载小时数                        PBG.F6.CAL.HOUR_KZ_M    
+<group:3 entry:35 gt:1 g_offset:36 et:70>
+ 87:		月空转小时数                        PBG.F6.CAL.HOUR_KZH_M   
+<group:3 entry:36 gt:1 g_offset:36 et:71>
+ 88:
+ 89:	POINT:	Y_CLEAR	3
+	<<No: 2 offset:2>>
+ 90:		年备用小时数                        PBG.F1.CAL.HOUR_BY_Y    
+<group:3 entry:1 gt:2 g_offset:72 et:72>
+ 91:		年发电小时数                        PBG.F1.CAL.HOUR_FD_Y    
+<group:3 entry:2 gt:2 g_offset:72 et:73>
+ 92:		年可用小时数                        PBG.F1.CAL.HOUR_KY_Y    
+<group:3 entry:3 gt:2 g_offset:72 et:74>
+ 93:		年检修小时数                        PBG.F1.CAL.HOUR_JX_Y    
+<group:3 entry:4 gt:2 g_offset:72 et:75>
+ 94:		年空载小时数                        PBG.F1.CAL.HOUR_KZ_Y    
+<group:3 entry:5 gt:2 g_offset:72 et:76>
+ 95:		年空转小时数                        PBG.F1.CAL.HOUR_KZH_Y   
+<group:3 entry:6 gt:2 g_offset:72 et:77>
+ 96:
+ 97:		年备用小时数                        PBG.F2.CAL.HOUR_BY_Y    
+<group:3 entry:7 gt:2 g_offset:72 et:78>
+ 98:		年发电小时数                        PBG.F2.CAL.HOUR_FD_Y    
+<group:3 entry:8 gt:2 g_offset:72 et:79>
+ 99:		年可用小时数                        PBG.F2.CAL.HOUR_KY_Y    
+<group:3 entry:9 gt:2 g_offset:72 et:80>
+100:		年检修小时数                        PBG.F2.CAL.HOUR_JX_Y    
+<group:3 entry:10 gt:2 g_offset:72 et:81>
+101:		年空载小时数                        PBG.F2.CAL.HOUR_KZ_Y    
+<group:3 entry:11 gt:2 g_offset:72 et:82>
+102:		年空转小时数                        PBG.F2.CAL.HOUR_KZH_Y   
+<group:3 entry:12 gt:2 g_offset:72 et:83>
+103:
+104:		年备用小时数                        PBG.F3.CAL.HOUR_BY_Y    
+<group:3 entry:13 gt:2 g_offset:72 et:84>
+105:		年发电小时数                        PBG.F3.CAL.HOUR_FD_Y    
+<group:3 entry:14 gt:2 g_offset:72 et:85>
+106:		年可用小时数                        PBG.F3.CAL.HOUR_KY_Y    
+<group:3 entry:15 gt:2 g_offset:72 et:86>
+107:		年检修小时数                        PBG.F3.CAL.HOUR_JX_Y    
+<group:3 entry:16 gt:2 g_offset:72 et:87>
+108:		年空载小时数                        PBG.F3.CAL.HOUR_KZ_Y    
+<group:3 entry:17 gt:2 g_offset:72 et:88>
+109:		年空转小时数                        PBG.F3.CAL.HOUR_KZH_Y   
+<group:3 entry:18 gt:2 g_offset:72 et:89>
+110:
+111:		年备用小时数                        PBG.F4.CAL.HOUR_BY_Y    
+<group:3 entry:19 gt:2 g_offset:72 et:90>
+112:		年发电小时数                        PBG.F4.CAL.HOUR_FD_Y    
+<group:3 entry:20 gt:2 g_offset:72 et:91>
+113:		年可用小时数                        PBG.F4.CAL.HOUR_KY_Y    
+<group:3 entry:21 gt:2 g_offset:72 et:92>
+114:		年检修小时数                        PBG.F4.CAL.HOUR_JX_Y    
+<group:3 entry:22 gt:2 g_offset:72 et:93>
+115:		年空载小时数                        PBG.F4.CAL.HOUR_KZ_Y    
+<group:3 entry:23 gt:2 g_offset:72 et:94>
+116:		年空转小时数                        PBG.F4.CAL.HOUR_KZH_Y   
+<group:3 entry:24 gt:2 g_offset:72 et:95>
+117:
+118:		年备用小时数                        PBG.F5.CAL.HOUR_BY_Y    
+<group:3 entry:25 gt:2 g_offset:72 et:96>
+119:		年发电小时数                        PBG.F5.CAL.HOUR_FD_Y    
+<group:3 entry:26 gt:2 g_offset:72 et:97>
+120:		年可用小时数                        PBG.F5.CAL.HOUR_KY_Y    
+<group:3 entry:27 gt:2 g_offset:72 et:98>
+121:		年检修小时数                        PBG.F5.CAL.HOUR_JX_Y    
+<group:3 entry:28 gt:2 g_offset:72 et:99>
+122:		年空载小时数                        PBG.F5.CAL.HOUR_KZ_Y    
+<group:3 entry:29 gt:2 g_offset:72 et:100>
+123:		年空转小时数                        PBG.F5.CAL.HOUR_KZH_Y   
+<group:3 entry:30 gt:2 g_offset:72 et:101>
+124:
+125:		年备用小时数                        PBG.F6.CAL.HOUR_BY_Y    
+<group:3 entry:31 gt:2 g_offset:72 et:102>
+126:		年发电小时数                        PBG.F6.CAL.HOUR_FD_Y    
+<group:3 entry:32 gt:2 g_offset:72 et:103>
+127:		年备用小时数                        PBG.F6.CAL.HOUR_BY_Y    
+<group:3 entry:33 gt:2 g_offset:72 et:104>
+128:		年检修小时数                        PBG.F6.CAL.HOUR_JX_Y    
+<group:3 entry:34 gt:2 g_offset:72 et:105>
+129:		年空载小时数                        PBG.F6.CAL.HOUR_KZ_Y    
+<group:3 entry:35 gt:2 g_offset:72 et:106>
+130:		年空转小时数                        PBG.F6.CAL.HOUR_KZH_Y   
+<group:3 entry:36 gt:2 g_offset:72 et:107>
+131:
+132:	POINT:  日备用小时数 	PBG.F1.CAL.HOUR_BY_D     CALCU  	
+	<<No: 3 offset:3>>
+133:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   0        
+		<group:3 total_et:108 g_offset:108 e_num:1 layer:0/0 pt_gt:1 >
+134:	 =  日备用小时数                        PBG.F1.CAL.HOUR_BY_D     
+		<group:3 entry:2 g_offset:108 layer:0/0 pt_gt:1 total_et:109>
+135:	 +C 	0.050    		
+		<group:3 entry:3 g_offset:108 layer:0/0 pt_gt:1 total_et:110>
+136:
+137:	POINT:  日可用小时数 	PBG.F1.CAL.HOUR_KY_D     CALCU  	
+	<<No: 4 offset:4>>
+138:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   ~2       
+		<group:4 total_et:111 g_offset:111 e_num:1 layer:0/0 pt_gt:1 >
+139:	 =  日可用小时数                        PBG.F1.CAL.HOUR_KY_D     
+		<group:4 entry:2 g_offset:111 layer:0/0 pt_gt:1 total_et:112>
+140:	 +C 	0.050    		
+		<group:4 entry:3 g_offset:111 layer:0/0 pt_gt:1 total_et:113>
+141:
+142:	POINT:  日发电小时数 	PBG.F1.CAL.HOUR_FD_D     CALCU  	
+	<<No: 5 offset:5>>
+143:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   1        
+		<group:5 total_et:114 g_offset:114 e_num:1 layer:0/0 pt_gt:1 >
+144:	 =  日发电小时数                        PBG.F1.CAL.HOUR_FD_D     
+		<group:5 entry:2 g_offset:114 layer:0/0 pt_gt:1 total_et:115>
+145:	 +C 	0.050    		
+		<group:5 entry:3 g_offset:114 layer:0/0 pt_gt:1 total_et:116>
+146:
+147:	POINT:  日检修小时数 	PBG.F1.CAL.HOUR_JX_D     CALCU  	
+	<<No: 6 offset:6>>
+148:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   2        
+		<group:6 total_et:117 g_offset:117 e_num:1 layer:0/0 pt_gt:1 >
+149:	 =  日检修小时数                        PBG.F1.CAL.HOUR_JX_D     
+		<group:6 entry:2 g_offset:117 layer:0/0 pt_gt:1 total_et:118>
+150:	 +C 	0.050    		
+		<group:6 entry:3 g_offset:117 layer:0/0 pt_gt:1 total_et:119>
+151:
+152:	POINT:  日空转小时数 	PBG.F1.CAL.HOUR_KZH_D    CALCU  	
+	<<No: 7 offset:7>>
+153:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   4        
+		<group:7 total_et:120 g_offset:120 e_num:1 layer:0/0 pt_gt:1 >
+154:	 =  日空转小时数                        PBG.F1.CAL.HOUR_KZH_D    
+		<group:7 entry:2 g_offset:120 layer:0/0 pt_gt:1 total_et:121>
+155:	 +C 	0.050    		
+		<group:7 entry:3 g_offset:120 layer:0/0 pt_gt:1 total_et:122>
+156:
+157:	POINT:  日空载小时数 	PBG.F1.CAL.HOUR_KZ_D     CALCU  	
+	<<No: 8 offset:8>>
+158:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   5        
+		<group:8 total_et:123 g_offset:123 e_num:1 layer:0/0 pt_gt:1 >
+159:	 =  日空载小时数                        PBG.F1.CAL.HOUR_KZ_D     
+		<group:8 entry:2 g_offset:123 layer:0/0 pt_gt:1 total_et:124>
+160:	 +C 	0.050    		
+		<group:8 entry:3 g_offset:123 layer:0/0 pt_gt:1 total_et:125>
+161:
+162:	POINT:  月备用小时数 	PBG.F1.CAL.HOUR_BY_M     CALCU  	
+	<<No: 9 offset:9>>
+163:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   0        
+		<group:9 total_et:126 g_offset:126 e_num:1 layer:0/0 pt_gt:1 >
+164:	 =  月备用小时数                        PBG.F1.CAL.HOUR_BY_M     
+		<group:9 entry:2 g_offset:126 layer:0/0 pt_gt:1 total_et:127>
+165:	 +C 	0.050    		
+		<group:9 entry:3 g_offset:126 layer:0/0 pt_gt:1 total_et:128>
+166:
+167:	POINT:  月可用小时数 	PBG.F1.CAL.HOUR_KY_M     CALCU  	
+	<<No: 10 offset:10>>
+168:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   ~2       
+		<group:10 total_et:129 g_offset:129 e_num:1 layer:0/0 pt_gt:1 >
+169:	 =  月可用小时数                        PBG.F1.CAL.HOUR_KY_M     
+		<group:10 entry:2 g_offset:129 layer:0/0 pt_gt:1 total_et:130>
+170:	 +C 	0.050    		
+		<group:10 entry:3 g_offset:129 layer:0/0 pt_gt:1 total_et:131>
+171:
+172:	POINT:  月发电小时数 	PBG.F1.CAL.HOUR_FD_M     CALCU  	
+	<<No: 11 offset:11>>
+173:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   1        
+		<group:11 total_et:132 g_offset:132 e_num:1 layer:0/0 pt_gt:1 >
+174:	 =  月发电小时数                        PBG.F1.CAL.HOUR_FD_M     
+		<group:11 entry:2 g_offset:132 layer:0/0 pt_gt:1 total_et:133>
+175:	 +C 	0.050    		
+		<group:11 entry:3 g_offset:132 layer:0/0 pt_gt:1 total_et:134>
+176:
+177:	POINT:  月检修小时数 	PBG.F1.CAL.HOUR_JX_M     CALCU  	
+	<<No: 12 offset:12>>
+178:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   2        
+		<group:12 total_et:135 g_offset:135 e_num:1 layer:0/0 pt_gt:1 >
+179:	 =  月检修小时数                        PBG.F1.CAL.HOUR_JX_M     
+		<group:12 entry:2 g_offset:135 layer:0/0 pt_gt:1 total_et:136>
+180:	 +C 	0.050    		
+		<group:12 entry:3 g_offset:135 layer:0/0 pt_gt:1 total_et:137>
+181:
+182:	POINT:  月空转小时数 	PBG.F1.CAL.HOUR_KZH_M    CALCU  	
+	<<No: 13 offset:13>>
+183:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   4        
+		<group:13 total_et:138 g_offset:138 e_num:1 layer:0/0 pt_gt:1 >
+184:	 =  月空转小时数                        PBG.F1.CAL.HOUR_KZH_M    
+		<group:13 entry:2 g_offset:138 layer:0/0 pt_gt:1 total_et:139>
+185:	 +C 	0.050    		
+		<group:13 entry:3 g_offset:138 layer:0/0 pt_gt:1 total_et:140>
+186:
+187:	POINT:  月空载小时数 	PBG.F1.CAL.HOUR_KZ_M     CALCU  	
+	<<No: 14 offset:14>>
+188:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   5        
+		<group:14 total_et:141 g_offset:141 e_num:1 layer:0/0 pt_gt:1 >
+189:	 =  月空载小时数                        PBG.F1.CAL.HOUR_KZ_M     
+		<group:14 entry:2 g_offset:141 layer:0/0 pt_gt:1 total_et:142>
+190:	 +C 	0.050    		
+		<group:14 entry:3 g_offset:141 layer:0/0 pt_gt:1 total_et:143>
+191:
+192:	POINT:  年备用小时数 	PBG.F1.CAL.HOUR_BY_Y     CALCU  	
+	<<No: 15 offset:15>>
+193:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   0        
+		<group:15 total_et:144 g_offset:144 e_num:1 layer:0/0 pt_gt:1 >
+194:	 =  年备用小时数                        PBG.F1.CAL.HOUR_BY_Y     
+		<group:15 entry:2 g_offset:144 layer:0/0 pt_gt:1 total_et:145>
+195:	 +C 	0.050    		
+		<group:15 entry:3 g_offset:144 layer:0/0 pt_gt:1 total_et:146>
+196:
+197:	POINT:  年可用小时数 	PBG.F1.CAL.HOUR_KY_Y     CALCU  	
+	<<No: 16 offset:16>>
+198:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   ~2       
+		<group:16 total_et:147 g_offset:147 e_num:1 layer:0/0 pt_gt:1 >
+199:	 =  年可用小时数                        PBG.F1.CAL.HOUR_KY_Y     
+		<group:16 entry:2 g_offset:147 layer:0/0 pt_gt:1 total_et:148>
+200:	 +C 	0.050    		
+		<group:16 entry:3 g_offset:147 layer:0/0 pt_gt:1 total_et:149>
+201:
+202:	POINT:  年发电小时数 	PBG.F1.CAL.HOUR_FD_Y     CALCU  	
+	<<No: 17 offset:17>>
+203:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   1        
+		<group:17 total_et:150 g_offset:150 e_num:1 layer:0/0 pt_gt:1 >
+204:	 =  年发电小时数                        PBG.F1.CAL.HOUR_FD_Y     
+		<group:17 entry:2 g_offset:150 layer:0/1 pt_gt:1 total_et:151>
+205:	 +C 	0.050    		
+		<group:17 entry:3 g_offset:150 layer:0/0 pt_gt:1 total_et:152>
+206:
+207:	POINT:  年检修小时数 	PBG.F1.CAL.HOUR_JX_Y     CALCU  	
+	<<No: 18 offset:18>>
+208:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   2        
+		<group:18 total_et:153 g_offset:153 e_num:1 layer:0/0 pt_gt:1 >
+209:	 =  年检修小时数                        PBG.F1.CAL.HOUR_JX_Y     
+		<group:18 entry:2 g_offset:153 layer:0/1 pt_gt:1 total_et:154>
+210:	 +C 	0.050    		
+		<group:18 entry:3 g_offset:153 layer:0/1 pt_gt:1 total_et:155>
+211:
+212:	POINT:  年空转小时数 	PBG.F1.CAL.HOUR_KZH_Y    CALCU  	
+	<<No: 19 offset:19>>
+213:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   4        
+		<group:19 total_et:156 g_offset:156 e_num:1 layer:0/0 pt_gt:1 >
+214:	 =  年空转小时数                        PBG.F1.CAL.HOUR_KZH_Y    
+		<group:19 entry:2 g_offset:156 layer:0/0 pt_gt:1 total_et:157>
+215:	 +C 	0.050    		
+		<group:19 entry:3 g_offset:156 layer:0/1 pt_gt:1 total_et:158>
+216:
+217:	POINT:  年空载小时数 	PBG.F1.CAL.HOUR_KZ_Y     CALCU  	
+	<<No: 20 offset:20>>
+218:	 IF 机组状态                            PBG.F1.SYS.UNIT_STA      ?   5        
+		<group:20 total_et:159 g_offset:159 e_num:1 layer:0/0 pt_gt:1 >
+219:	 =  年空载小时数                        PBG.F1.CAL.HOUR_KZ_Y     
+		<group:20 entry:2 g_offset:159 layer:0/0 pt_gt:1 total_et:160>
+220:	 +C 	0.050    		
+		<group:20 entry:3 g_offset:159 layer:0/0 pt_gt:1 total_et:161>
+221:
+222:	POINT:  日备用小时数 	PBG.F2.CAL.HOUR_BY_D     CALCU  	
+	<<No: 21 offset:21>>
+223:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   0        
+		<group:21 total_et:162 g_offset:162 e_num:1 layer:0/0 pt_gt:1 >
+224:	 =  日备用小时数                        PBG.F2.CAL.HOUR_BY_D     
+		<group:21 entry:2 g_offset:162 layer:0/1 pt_gt:1 total_et:163>
+225:	 +C 	0.050    		
+		<group:21 entry:3 g_offset:162 layer:0/0 pt_gt:1 total_et:164>
+226:
+227:	POINT:  日可用小时数 	PBG.F2.CAL.HOUR_KY_D     CALCU  	
+	<<No: 22 offset:22>>
+228:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   ~2       
+		<group:22 total_et:165 g_offset:165 e_num:1 layer:0/0 pt_gt:1 >
+229:	 =  日可用小时数                        PBG.F2.CAL.HOUR_KY_D     
+		<group:22 entry:2 g_offset:165 layer:0/0 pt_gt:1 total_et:166>
+230:	 +C 	0.050    		
+		<group:22 entry:3 g_offset:165 layer:0/0 pt_gt:1 total_et:167>
+231:
+232:	POINT:  日发电小时数 	PBG.F2.CAL.HOUR_FD_D     CALCU  	
+	<<No: 23 offset:23>>
+233:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   1        
+		<group:23 total_et:168 g_offset:168 e_num:1 layer:0/0 pt_gt:1 >
+234:	 =  日发电小时数                        PBG.F2.CAL.HOUR_FD_D     
+		<group:23 entry:2 g_offset:168 layer:0/0 pt_gt:1 total_et:169>
+235:	 +C 	0.050    		
+		<group:23 entry:3 g_offset:168 layer:0/1 pt_gt:1 total_et:170>
+236:
+237:	POINT:  日检修小时数 	PBG.F2.CAL.HOUR_JX_D     CALCU  	
+	<<No: 24 offset:24>>
+238:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   2        
+		<group:24 total_et:171 g_offset:171 e_num:1 layer:0/0 pt_gt:1 >
+239:	 =  日检修小时数                        PBG.F2.CAL.HOUR_JX_D     
+		<group:24 entry:2 g_offset:171 layer:0/1 pt_gt:1 total_et:172>
+240:	 +C 	0.050    		
+		<group:24 entry:3 g_offset:171 layer:0/1 pt_gt:1 total_et:173>
+241:
+242:	POINT:  日空转小时数 	PBG.F2.CAL.HOUR_KZH_D    CALCU  	
+	<<No: 25 offset:25>>
+243:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   4        
+		<group:25 total_et:174 g_offset:174 e_num:1 layer:0/0 pt_gt:1 >
+244:	 =  日空转小时数                        PBG.F2.CAL.HOUR_KZH_D    
+		<group:25 entry:2 g_offset:174 layer:0/1 pt_gt:1 total_et:175>
+245:	 +C 	0.050    		
+		<group:25 entry:3 g_offset:174 layer:0/1 pt_gt:1 total_et:176>
+246:
+247:	POINT:  日空载小时数 	PBG.F2.CAL.HOUR_KZ_D     CALCU  	
+	<<No: 26 offset:26>>
+248:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   5        
+		<group:26 total_et:177 g_offset:177 e_num:1 layer:0/0 pt_gt:1 >
+249:	 =  日空载小时数                        PBG.F2.CAL.HOUR_KZ_D     
+		<group:26 entry:2 g_offset:177 layer:0/1 pt_gt:1 total_et:178>
+250:	 +C 	0.050    		
+		<group:26 entry:3 g_offset:177 layer:0/1 pt_gt:1 total_et:179>
+251:
+252:	POINT:  月备用小时数 	PBG.F2.CAL.HOUR_BY_M     CALCU  	
+	<<No: 27 offset:27>>
+253:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   0        
+		<group:27 total_et:180 g_offset:180 e_num:1 layer:0/0 pt_gt:1 >
+254:	 =  月备用小时数                        PBG.F2.CAL.HOUR_BY_M     
+		<group:27 entry:2 g_offset:180 layer:0/1 pt_gt:1 total_et:181>
+255:	 +C 	0.050    		
+		<group:27 entry:3 g_offset:180 layer:0/1 pt_gt:1 total_et:182>
+256:
+257:	POINT:  月可用小时数 	PBG.F2.CAL.HOUR_KY_M     CALCU  	
+	<<No: 28 offset:28>>
+258:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   ~2       
+		<group:28 total_et:183 g_offset:183 e_num:1 layer:0/0 pt_gt:1 >
+259:	 =  月可用小时数                        PBG.F2.CAL.HOUR_KY_M     
+		<group:28 entry:2 g_offset:183 layer:0/1 pt_gt:1 total_et:184>
+260:	 +C 	0.050    		
+		<group:28 entry:3 g_offset:183 layer:0/1 pt_gt:1 total_et:185>
+261:
+262:	POINT:  月发电小时数 	PBG.F2.CAL.HOUR_FD_M     CALCU  	
+	<<No: 29 offset:29>>
+263:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   1        
+		<group:29 total_et:186 g_offset:186 e_num:1 layer:0/0 pt_gt:1 >
+264:	 =  月发电小时数                        PBG.F2.CAL.HOUR_FD_M     
+		<group:29 entry:2 g_offset:186 layer:0/0 pt_gt:1 total_et:187>
+265:	 +C 	0.050    		
+		<group:29 entry:3 g_offset:186 layer:0/1 pt_gt:1 total_et:188>
+266:
+267:	POINT:  月检修小时数 	PBG.F2.CAL.HOUR_JX_M     CALCU  	
+	<<No: 30 offset:30>>
+268:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   2        
+		<group:30 total_et:189 g_offset:189 e_num:1 layer:0/0 pt_gt:1 >
+269:	 =  月检修小时数                        PBG.F2.CAL.HOUR_JX_M     
+		<group:30 entry:2 g_offset:189 layer:0/1 pt_gt:1 total_et:190>
+270:	 +C 	0.050    		
+		<group:30 entry:3 g_offset:189 layer:0/1 pt_gt:1 total_et:191>
+271:
+272:	POINT:  月空转小时数 	PBG.F2.CAL.HOUR_KZH_M    CALCU  	
+	<<No: 31 offset:31>>
+273:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   4        
+		<group:31 total_et:192 g_offset:192 e_num:1 layer:0/0 pt_gt:1 >
+274:	 =  月空转小时数                        PBG.F2.CAL.HOUR_KZH_M    
+		<group:31 entry:2 g_offset:192 layer:0/1 pt_gt:1 total_et:193>
+275:	 +C 	0.050    		
+		<group:31 entry:3 g_offset:192 layer:0/1 pt_gt:1 total_et:194>
+276:
+277:	POINT:  月空载小时数 	PBG.F2.CAL.HOUR_KZ_M     CALCU  	
+	<<No: 32 offset:32>>
+278:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   5        
+		<group:32 total_et:195 g_offset:195 e_num:1 layer:0/0 pt_gt:1 >
+279:	 =  月空载小时数                        PBG.F2.CAL.HOUR_KZ_M     
+		<group:32 entry:2 g_offset:195 layer:0/1 pt_gt:1 total_et:196>
+280:	 +C 	0.050    		
+		<group:32 entry:3 g_offset:195 layer:0/1 pt_gt:1 total_et:197>
+281:
+282:	POINT:  年备用小时数 	PBG.F2.CAL.HOUR_BY_Y     CALCU  	
+	<<No: 33 offset:33>>
+283:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   0        
+		<group:33 total_et:198 g_offset:198 e_num:1 layer:0/0 pt_gt:1 >
+284:	 =  年备用小时数                        PBG.F2.CAL.HOUR_BY_Y     
+		<group:33 entry:2 g_offset:198 layer:0/1 pt_gt:1 total_et:199>
+285:	 +C 	0.050    		
+		<group:33 entry:3 g_offset:198 layer:0/1 pt_gt:1 total_et:200>
+286:
+287:	POINT:  年可用小时数 	PBG.F2.CAL.HOUR_KY_Y     CALCU  	
+	<<No: 34 offset:34>>
+288:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   ~2       
+		<group:34 total_et:201 g_offset:201 e_num:1 layer:0/0 pt_gt:1 >
+289:	 =  年可用小时数                        PBG.F2.CAL.HOUR_KY_Y     
+		<group:34 entry:2 g_offset:201 layer:0/1 pt_gt:1 total_et:202>
+290:	 +C 	0.050    		
+		<group:34 entry:3 g_offset:201 layer:0/1 pt_gt:1 total_et:203>
+291:
+292:	POINT:  年发电小时数 	PBG.F2.CAL.HOUR_FD_Y     CALCU  	
+	<<No: 35 offset:35>>
+293:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   1        
+		<group:35 total_et:204 g_offset:204 e_num:1 layer:0/0 pt_gt:1 >
+294:	 =  年发电小时数                        PBG.F2.CAL.HOUR_FD_Y     
+		<group:35 entry:2 g_offset:204 layer:0/0 pt_gt:1 total_et:205>
+295:	 +C 	0.050    		
+		<group:35 entry:3 g_offset:204 layer:0/1 pt_gt:1 total_et:206>
+296:
+297:	POINT:  年检修小时数 	PBG.F2.CAL.HOUR_JX_Y     CALCU  	
+	<<No: 36 offset:36>>
+298:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   2        
+		<group:36 total_et:207 g_offset:207 e_num:1 layer:0/0 pt_gt:1 >
+299:	 =  年检修小时数                        PBG.F2.CAL.HOUR_JX_Y     
+		<group:36 entry:2 g_offset:207 layer:0/1 pt_gt:1 total_et:208>
+300:	 +C 	0.050    		
+		<group:36 entry:3 g_offset:207 layer:0/1 pt_gt:1 total_et:209>
+301:
+302:	POINT:  年空转小时数 	PBG.F2.CAL.HOUR_KZH_Y    CALCU  	
+	<<No: 37 offset:37>>
+303:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   4        
+		<group:37 total_et:210 g_offset:210 e_num:1 layer:0/0 pt_gt:1 >
+304:	 =  年空转小时数                        PBG.F2.CAL.HOUR_KZH_Y    
+		<group:37 entry:2 g_offset:210 layer:0/1 pt_gt:1 total_et:211>
+305:	 +C 	0.050    		
+		<group:37 entry:3 g_offset:210 layer:0/1 pt_gt:1 total_et:212>
+306:
+307:	POINT:  年空载小时数 	PBG.F2.CAL.HOUR_KZ_Y     CALCU  	
+	<<No: 38 offset:38>>
+308:	 IF 机组状态                            PBG.F2.SYS.UNIT_STA      ?   5        
+		<group:38 total_et:213 g_offset:213 e_num:1 layer:0/0 pt_gt:1 >
+309:	 =  年空转小时数                        PBG.F2.CAL.HOUR_KZH_Y    
+		<group:38 entry:2 g_offset:213 layer:0/1 pt_gt:1 total_et:214>
+310:	 +C 	0.050    		
+		<group:38 entry:3 g_offset:213 layer:0/1 pt_gt:1 total_et:215>
+311:
+312:	POINT:  日备用小时数 	PBG.F3.CAL.HOUR_BY_D     CALCU  	
+	<<No: 39 offset:39>>
+313:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   0        
+		<group:39 total_et:216 g_offset:216 e_num:1 layer:0/0 pt_gt:1 >
+314:	 =  日备用小时数                        PBG.F3.CAL.HOUR_BY_D     
+		<group:39 entry:2 g_offset:216 layer:0/1 pt_gt:1 total_et:217>
+315:	 +C 	0.050    		
+		<group:39 entry:3 g_offset:216 layer:0/1 pt_gt:1 total_et:218>
+316:
+317:	POINT:  日可用小时数 	PBG.F3.CAL.HOUR_KY_D     CALCU  	
+	<<No: 40 offset:40>>
+318:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   ~2       
+		<group:40 total_et:219 g_offset:219 e_num:1 layer:0/0 pt_gt:1 >
+319:	 =  日可用小时数                        PBG.F3.CAL.HOUR_KY_D     
+		<group:40 entry:2 g_offset:219 layer:0/1 pt_gt:1 total_et:220>
+320:	 +C 	0.050    		
+		<group:40 entry:3 g_offset:219 layer:0/1 pt_gt:1 total_et:221>
+321:
+322:	POINT:  日发电小时数 	PBG.F3.CAL.HOUR_FD_D     CALCU  	
+	<<No: 41 offset:41>>
+323:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   1        
+		<group:41 total_et:222 g_offset:222 e_num:1 layer:0/0 pt_gt:1 >
+324:	 =  日发电小时数                        PBG.F3.CAL.HOUR_FD_D     
+		<group:41 entry:2 g_offset:222 layer:0/0 pt_gt:1 total_et:223>
+325:	 +C 	0.050    		
+		<group:41 entry:3 g_offset:222 layer:0/1 pt_gt:1 total_et:224>
+326:
+327:	POINT:  日检修小时数 	PBG.F3.CAL.HOUR_JX_D     CALCU  	
+	<<No: 42 offset:42>>
+328:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   2        
+		<group:42 total_et:225 g_offset:225 e_num:1 layer:0/0 pt_gt:1 >
+329:	 =  日检修小时数                        PBG.F3.CAL.HOUR_JX_D     
+		<group:42 entry:2 g_offset:225 layer:0/1 pt_gt:1 total_et:226>
+330:	 +C 	0.050    		
+		<group:42 entry:3 g_offset:225 layer:0/1 pt_gt:1 total_et:227>
+331:
+332:	POINT:  日空转小时数 	PBG.F3.CAL.HOUR_KZH_D    CALCU  	
+	<<No: 43 offset:43>>
+333:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   4        
+		<group:43 total_et:228 g_offset:228 e_num:1 layer:0/0 pt_gt:1 >
+334:	 =  日空转小时数                        PBG.F3.CAL.HOUR_KZH_D    
+		<group:43 entry:2 g_offset:228 layer:0/1 pt_gt:1 total_et:229>
+335:	 +C 	0.050    		
+		<group:43 entry:3 g_offset:228 layer:0/1 pt_gt:1 total_et:230>
+336:
+337:	POINT:  日空载小时数 	PBG.F3.CAL.HOUR_KZ_D     CALCU  	
+	<<No: 44 offset:44>>
+338:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   5        
+		<group:44 total_et:231 g_offset:231 e_num:1 layer:0/0 pt_gt:1 >
+339:	 =  日空载小时数                        PBG.F3.CAL.HOUR_KZ_D     
+		<group:44 entry:2 g_offset:231 layer:0/1 pt_gt:1 total_et:232>
+340:	 +C 	0.050    		
+		<group:44 entry:3 g_offset:231 layer:0/1 pt_gt:1 total_et:233>
+341:
+342:	POINT:  月备用小时数 	PBG.F3.CAL.HOUR_BY_M     CALCU  	
+	<<No: 45 offset:45>>
+343:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   0        
+		<group:45 total_et:234 g_offset:234 e_num:1 layer:0/0 pt_gt:1 >
+344:	 =  月备用小时数                        PBG.F3.CAL.HOUR_BY_M     
+		<group:45 entry:2 g_offset:234 layer:0/1 pt_gt:1 total_et:235>
+345:	 +C 	0.050    		
+		<group:45 entry:3 g_offset:234 layer:0/1 pt_gt:1 total_et:236>
+346:
+347:	POINT:  月可用小时数 	PBG.F3.CAL.HOUR_KY_M     CALCU  	
+	<<No: 46 offset:46>>
+348:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   ~2       
+		<group:46 total_et:237 g_offset:237 e_num:1 layer:0/0 pt_gt:1 >
+349:	 =  月可用小时数                        PBG.F3.CAL.HOUR_KY_M     
+		<group:46 entry:2 g_offset:237 layer:0/1 pt_gt:1 total_et:238>
+350:	 +C 	0.050    		
+		<group:46 entry:3 g_offset:237 layer:0/1 pt_gt:1 total_et:239>
+351:
+352:	POINT:  月发电小时数 	PBG.F3.CAL.HOUR_FD_M     CALCU  	
+	<<No: 47 offset:47>>
+353:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   1        
+		<group:47 total_et:240 g_offset:240 e_num:1 layer:0/0 pt_gt:1 >
+354:	 =  月发电小时数                        PBG.F3.CAL.HOUR_FD_M     
+		<group:47 entry:2 g_offset:240 layer:0/0 pt_gt:1 total_et:241>
+355:	 +C 	0.050    		
+		<group:47 entry:3 g_offset:240 layer:0/1 pt_gt:1 total_et:242>
+356:
+357:	POINT:  月检修小时数 	PBG.F3.CAL.HOUR_JX_M     CALCU  	
+	<<No: 48 offset:48>>
+358:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   2        
+		<group:48 total_et:243 g_offset:243 e_num:1 layer:0/0 pt_gt:1 >
+359:	 =  月检修小时数                        PBG.F3.CAL.HOUR_JX_M     
+		<group:48 entry:2 g_offset:243 layer:0/1 pt_gt:1 total_et:244>
+360:	 +C 	0.050    		
+		<group:48 entry:3 g_offset:243 layer:0/1 pt_gt:1 total_et:245>
+361:
+362:	POINT:  月空转小时数 	PBG.F3.CAL.HOUR_KZH_M    CALCU  	
+	<<No: 49 offset:49>>
+363:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   4        
+		<group:49 total_et:246 g_offset:246 e_num:1 layer:0/0 pt_gt:1 >
+364:	 =  月空转小时数                        PBG.F3.CAL.HOUR_KZH_M    
+		<group:49 entry:2 g_offset:246 layer:0/1 pt_gt:1 total_et:247>
+365:	 +C 	0.050    		
+		<group:49 entry:3 g_offset:246 layer:0/1 pt_gt:1 total_et:248>
+366:
+367:	POINT:  月空载小时数 	PBG.F3.CAL.HOUR_KZ_M     CALCU  	
+	<<No: 50 offset:50>>
+368:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   5        
+		<group:50 total_et:249 g_offset:249 e_num:1 layer:0/0 pt_gt:1 >
+369:	 =  月空载小时数                        PBG.F3.CAL.HOUR_KZ_M     
+		<group:50 entry:2 g_offset:249 layer:0/1 pt_gt:1 total_et:250>
+370:	 +C 	0.050    		
+		<group:50 entry:3 g_offset:249 layer:0/1 pt_gt:1 total_et:251>
+371:
+372:	POINT:  年备用小时数 	PBG.F3.CAL.HOUR_BY_Y     CALCU  	
+	<<No: 51 offset:51>>
+373:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   0        
+		<group:51 total_et:252 g_offset:252 e_num:1 layer:0/0 pt_gt:1 >
+374:	 =  年备用小时数                        PBG.F3.CAL.HOUR_BY_Y     
+		<group:51 entry:2 g_offset:252 layer:0/1 pt_gt:1 total_et:253>
+375:	 +C 	0.050    		
+		<group:51 entry:3 g_offset:252 layer:0/1 pt_gt:1 total_et:254>
+376:
+377:	POINT:  年可用小时数 	PBG.F3.CAL.HOUR_KY_Y     CALCU  	
+	<<No: 52 offset:52>>
+378:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   ~2       
+		<group:52 total_et:255 g_offset:255 e_num:1 layer:0/0 pt_gt:1 >
+379:	 =  年可用小时数                        PBG.F3.CAL.HOUR_KY_Y     
+		<group:52 entry:2 g_offset:255 layer:0/1 pt_gt:1 total_et:256>
+380:	 +C 	0.050    		
+		<group:52 entry:3 g_offset:255 layer:0/1 pt_gt:1 total_et:257>
+381:
+382:	POINT:  年发电小时数 	PBG.F3.CAL.HOUR_FD_Y     CALCU  	
+	<<No: 53 offset:53>>
+383:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   1        
+		<group:53 total_et:258 g_offset:258 e_num:1 layer:0/0 pt_gt:1 >
+384:	 =  年发电小时数                        PBG.F3.CAL.HOUR_FD_Y     
+		<group:53 entry:2 g_offset:258 layer:0/0 pt_gt:1 total_et:259>
+385:	 +C 	0.050    		
+		<group:53 entry:3 g_offset:258 layer:0/1 pt_gt:1 total_et:260>
+386:
+387:	POINT:  年检修小时数 	PBG.F3.CAL.HOUR_JX_Y     CALCU  	
+	<<No: 54 offset:54>>
+388:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   2        
+		<group:54 total_et:261 g_offset:261 e_num:1 layer:0/0 pt_gt:1 >
+389:	 =  年检修小时数                        PBG.F3.CAL.HOUR_JX_Y     
+		<group:54 entry:2 g_offset:261 layer:0/1 pt_gt:1 total_et:262>
+390:	 +C 	0.050    		
+		<group:54 entry:3 g_offset:261 layer:0/1 pt_gt:1 total_et:263>
+391:
+392:	POINT:  年空转小时数 	PBG.F3.CAL.HOUR_KZH_Y    CALCU  	
+	<<No: 55 offset:55>>
+393:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   4        
+		<group:55 total_et:264 g_offset:264 e_num:1 layer:0/0 pt_gt:1 >
+394:	 =  年空转小时数                        PBG.F3.CAL.HOUR_KZH_Y    
+		<group:55 entry:2 g_offset:264 layer:0/1 pt_gt:1 total_et:265>
+395:	 +C 	0.050    		
+		<group:55 entry:3 g_offset:264 layer:0/1 pt_gt:1 total_et:266>
+396:
+397:	POINT:  年空载小时数 	PBG.F3.CAL.HOUR_KZ_Y     CALCU  	
+	<<No: 56 offset:56>>
+398:	 IF 机组状态                            PBG.F3.SYS.UNIT_STA      ?   5        
+		<group:56 total_et:267 g_offset:267 e_num:1 layer:0/0 pt_gt:1 >
+399:	 =  年空载小时数                        PBG.F3.CAL.HOUR_KZ_Y     
+		<group:56 entry:2 g_offset:267 layer:0/1 pt_gt:1 total_et:268>
+400:	 +C 	0.050    		
+		<group:56 entry:3 g_offset:267 layer:0/1 pt_gt:1 total_et:269>
+401:
+402:	POINT:  日备用小时数 	PBG.F4.CAL.HOUR_BY_D     CALCU  	
+	<<No: 57 offset:57>>
+403:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   0        
+		<group:57 total_et:270 g_offset:270 e_num:1 layer:0/0 pt_gt:1 >
+404:	 =  日备用小时数                        PBG.F4.CAL.HOUR_BY_D     
+		<group:57 entry:2 g_offset:270 layer:0/1 pt_gt:1 total_et:271>
+405:	 +C 	0.050    		
+		<group:57 entry:3 g_offset:270 layer:0/1 pt_gt:1 total_et:272>
+406:
+407:	POINT:  日可用小时数 	PBG.F4.CAL.HOUR_KY_D     CALCU  	
+	<<No: 58 offset:58>>
+408:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   ~2       
+		<group:58 total_et:273 g_offset:273 e_num:1 layer:0/0 pt_gt:1 >
+409:	 =  日可用小时数                        PBG.F4.CAL.HOUR_KY_D     
+		<group:58 entry:2 g_offset:273 layer:0/1 pt_gt:1 total_et:274>
+410:	 +C 	0.050    		
+		<group:58 entry:3 g_offset:273 layer:0/1 pt_gt:1 total_et:275>
+411:
+412:	POINT:  日发电小时数 	PBG.F4.CAL.HOUR_FD_D     CALCU  	
+	<<No: 59 offset:59>>
+413:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   1        
+		<group:59 total_et:276 g_offset:276 e_num:1 layer:0/0 pt_gt:1 >
+414:	 =  日发电小时数                        PBG.F4.CAL.HOUR_FD_D     
+		<group:59 entry:2 g_offset:276 layer:0/0 pt_gt:1 total_et:277>
+415:	 +C 	0.050    		
+		<group:59 entry:3 g_offset:276 layer:0/1 pt_gt:1 total_et:278>
+416:
+417:	POINT:  日检修小时数 	PBG.F4.CAL.HOUR_JX_D     CALCU  	
+	<<No: 60 offset:60>>
+418:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   2        
+		<group:60 total_et:279 g_offset:279 e_num:1 layer:0/0 pt_gt:1 >
+419:	 =  日检修小时数                        PBG.F4.CAL.HOUR_JX_D     
+		<group:60 entry:2 g_offset:279 layer:0/1 pt_gt:1 total_et:280>
+420:	 +C 	0.050    		
+		<group:60 entry:3 g_offset:279 layer:0/1 pt_gt:1 total_et:281>
+421:
+422:	POINT:  日空转小时数 	PBG.F4.CAL.HOUR_KZH_D    CALCU  	
+	<<No: 61 offset:61>>
+423:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   4        
+		<group:61 total_et:282 g_offset:282 e_num:1 layer:0/0 pt_gt:1 >
+424:	 =  日空转小时数                        PBG.F4.CAL.HOUR_KZH_D    
+		<group:61 entry:2 g_offset:282 layer:0/0 pt_gt:1 total_et:283>
+425:	 +C 	0.050    		
+		<group:61 entry:3 g_offset:282 layer:0/1 pt_gt:1 total_et:284>
+426:
+427:	POINT:  日空载小时数 	PBG.F4.CAL.HOUR_KZ_D     CALCU  	
+	<<No: 62 offset:62>>
+428:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   5        
+		<group:62 total_et:285 g_offset:285 e_num:1 layer:0/0 pt_gt:1 >
+429:	 =  日空载小时数                        PBG.F4.CAL.HOUR_KZ_D     
+		<group:62 entry:2 g_offset:285 layer:0/1 pt_gt:1 total_et:286>
+430:	 +C 	0.050    		
+		<group:62 entry:3 g_offset:285 layer:0/1 pt_gt:1 total_et:287>
+431:
+432:	POINT:  月备用小时数 	PBG.F4.CAL.HOUR_BY_M     CALCU  	
+	<<No: 63 offset:63>>
+433:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   0        
+		<group:63 total_et:288 g_offset:288 e_num:1 layer:0/0 pt_gt:1 >
+434:	 =  月备用小时数                        PBG.F4.CAL.HOUR_BY_M     
+		<group:63 entry:2 g_offset:288 layer:0/0 pt_gt:1 total_et:289>
+435:	 +C 	0.050    		
+		<group:63 entry:3 g_offset:288 layer:0/1 pt_gt:1 total_et:290>
+436:
+437:	POINT:  月可用小时数 	PBG.F4.CAL.HOUR_KY_M     CALCU  	
+	<<No: 64 offset:64>>
+438:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   ~2       
+		<group:64 total_et:291 g_offset:291 e_num:1 layer:0/0 pt_gt:1 >
+439:	 =  月可用小时数                        PBG.F4.CAL.HOUR_KY_M     
+		<group:64 entry:2 g_offset:291 layer:0/1 pt_gt:1 total_et:292>
+440:	 +C 	0.050    		
+		<group:64 entry:3 g_offset:291 layer:0/1 pt_gt:1 total_et:293>
+441:
+442:	POINT:  月发电小时数 	PBG.F4.CAL.HOUR_FD_M     CALCU  	
+	<<No: 65 offset:65>>
+443:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   1        
+		<group:65 total_et:294 g_offset:294 e_num:1 layer:0/0 pt_gt:1 >
+444:	 =  月发电小时数                        PBG.F4.CAL.HOUR_FD_M     
+		<group:65 entry:2 g_offset:294 layer:0/0 pt_gt:1 total_et:295>
+445:	 +C 	0.050    		
+		<group:65 entry:3 g_offset:294 layer:0/1 pt_gt:1 total_et:296>
+446:
+447:	POINT:  月检修小时数 	PBG.F4.CAL.HOUR_JX_M     CALCU  	
+	<<No: 66 offset:66>>
+448:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   2        
+		<group:66 total_et:297 g_offset:297 e_num:1 layer:0/0 pt_gt:1 >
+449:	 =  月检修小时数                        PBG.F4.CAL.HOUR_JX_M     
+		<group:66 entry:2 g_offset:297 layer:0/1 pt_gt:1 total_et:298>
+450:	 +C 	0.050    		
+		<group:66 entry:3 g_offset:297 layer:0/1 pt_gt:1 total_et:299>
+451:
+452:	POINT:  月空转小时数 	PBG.F4.CAL.HOUR_KZH_M    CALCU  	
+	<<No: 67 offset:67>>
+453:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   4        
+		<group:67 total_et:300 g_offset:300 e_num:1 layer:0/0 pt_gt:1 >
+454:	 =  月空转小时数                        PBG.F4.CAL.HOUR_KZH_M    
+		<group:67 entry:2 g_offset:300 layer:0/0 pt_gt:1 total_et:301>
+455:	 +C 	0.050    		
+		<group:67 entry:3 g_offset:300 layer:0/0 pt_gt:1 total_et:302>
+456:
+457:	POINT:  月空载小时数 	PBG.F4.CAL.HOUR_KZ_M     CALCU  	
+	<<No: 68 offset:68>>
+458:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   5        
+		<group:68 total_et:303 g_offset:303 e_num:1 layer:0/0 pt_gt:1 >
+459:	 =  月空载小时数                        PBG.F4.CAL.HOUR_KZ_M     
+		<group:68 entry:2 g_offset:303 layer:0/0 pt_gt:1 total_et:304>
+460:	 +C 	0.050    		
+		<group:68 entry:3 g_offset:303 layer:0/1 pt_gt:1 total_et:305>
+461:
+462:	POINT:  年备用小时数 	PBG.F4.CAL.HOUR_BY_Y     CALCU  	
+	<<No: 69 offset:69>>
+463:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   0        
+		<group:69 total_et:306 g_offset:306 e_num:1 layer:0/0 pt_gt:1 >
+464:	 =  年备用小时数                        PBG.F4.CAL.HOUR_BY_Y     
+		<group:69 entry:2 g_offset:306 layer:0/0 pt_gt:1 total_et:307>
+465:	 +C 	0.050    		
+		<group:69 entry:3 g_offset:306 layer:0/1 pt_gt:1 total_et:308>
+466:
+467:	POINT:  年可用小时数 	PBG.F4.CAL.HOUR_KY_Y     CALCU  	
+	<<No: 70 offset:70>>
+468:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   ~2       
+		<group:70 total_et:309 g_offset:309 e_num:1 layer:0/0 pt_gt:1 >
+469:	 =  年可用小时数                        PBG.F4.CAL.HOUR_KY_Y     
+		<group:70 entry:2 g_offset:309 layer:0/0 pt_gt:1 total_et:310>
+470:	 +C 	0.050    		
+		<group:70 entry:3 g_offset:309 layer:0/0 pt_gt:1 total_et:311>
+471:
+472:	POINT:  年发电小时数 	PBG.F4.CAL.HOUR_FD_Y     CALCU  	
+	<<No: 71 offset:71>>
+473:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   1        
+		<group:71 total_et:312 g_offset:312 e_num:1 layer:0/0 pt_gt:1 >
+474:	 =  年发电小时数                        PBG.F4.CAL.HOUR_FD_Y     
+		<group:71 entry:2 g_offset:312 layer:0/1 pt_gt:1 total_et:313>
+475:	 +C 	0.050    		
+		<group:71 entry:3 g_offset:312 layer:0/1 pt_gt:1 total_et:314>
+476:
+477:	POINT:  年检修小时数 	PBG.F4.CAL.HOUR_JX_Y     CALCU  	
+	<<No: 72 offset:72>>
+478:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   2        
+		<group:72 total_et:315 g_offset:315 e_num:1 layer:0/0 pt_gt:1 >
+479:	 =  年检修小时数                        PBG.F4.CAL.HOUR_JX_Y     
+		<group:72 entry:2 g_offset:315 layer:0/1 pt_gt:1 total_et:316>
+480:	 +C 	0.050    		
+		<group:72 entry:3 g_offset:315 layer:0/0 pt_gt:1 total_et:317>
+481:
+482:	POINT:  年空转小时数 	PBG.F4.CAL.HOUR_KZH_Y    CALCU  	
+	<<No: 73 offset:73>>
+483:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   4        
+		<group:73 total_et:318 g_offset:318 e_num:1 layer:0/0 pt_gt:1 >
+484:	 =  年空转小时数                        PBG.F4.CAL.HOUR_KZH_Y    
+		<group:73 entry:2 g_offset:318 layer:0/1 pt_gt:1 total_et:319>
+485:	 +C 	0.050    		
+		<group:73 entry:3 g_offset:318 layer:0/1 pt_gt:1 total_et:320>
+486:
+487:	POINT:  年空载小时数 	PBG.F4.CAL.HOUR_KZ_Y     CALCU  	
+	<<No: 74 offset:74>>
+488:	 IF 机组状态                            PBG.F4.SYS.UNIT_STA      ?   5        
+		<group:74 total_et:321 g_offset:321 e_num:1 layer:0/0 pt_gt:1 >
+489:	 =  年空载小时数                        PBG.F4.CAL.HOUR_KZ_Y     
+		<group:74 entry:2 g_offset:321 layer:0/1 pt_gt:1 total_et:322>
+490:	 +C 	0.050    		
+		<group:74 entry:3 g_offset:321 layer:0/0 pt_gt:1 total_et:323>
+491:
+492:	POINT:  日备用小时数 	PBG.F5.CAL.HOUR_BY_D     CALCU  	
+	<<No: 75 offset:75>>
+493:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   0        
+		<group:75 total_et:324 g_offset:324 e_num:1 layer:0/0 pt_gt:1 >
+494:	 =  日备用小时数                        PBG.F5.CAL.HOUR_BY_D     
+		<group:75 entry:2 g_offset:324 layer:0/1 pt_gt:1 total_et:325>
+495:	 +C 	0.050    		
+		<group:75 entry:3 g_offset:324 layer:0/1 pt_gt:1 total_et:326>
+496:
+497:	POINT:  日可用小时数 	PBG.F5.CAL.HOUR_KY_D     CALCU  	
+	<<No: 76 offset:76>>
+498:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   ~2       
+		<group:76 total_et:327 g_offset:327 e_num:1 layer:0/0 pt_gt:1 >
+499:	 =  日可用小时数                        PBG.F5.CAL.HOUR_KY_D     
+		<group:76 entry:2 g_offset:327 layer:0/1 pt_gt:1 total_et:328>
+500:	 +C 	0.050    		
+		<group:76 entry:3 g_offset:327 layer:0/0 pt_gt:1 total_et:329>
+501:
+502:	POINT:  日发电小时数 	PBG.F5.CAL.HOUR_FD_D     CALCU  	
+	<<No: 77 offset:77>>
+503:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   1        
+		<group:77 total_et:330 g_offset:330 e_num:1 layer:0/0 pt_gt:1 >
+504:	 =  日发电小时数                        PBG.F5.CAL.HOUR_FD_D     
+		<group:77 entry:2 g_offset:330 layer:0/1 pt_gt:1 total_et:331>
+505:	 +C 	0.050    		
+		<group:77 entry:3 g_offset:330 layer:0/1 pt_gt:1 total_et:332>
+506:
+507:	POINT:  日检修小时数 	PBG.F5.CAL.HOUR_JX_D     CALCU  	
+	<<No: 78 offset:78>>
+508:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   2        
+		<group:78 total_et:333 g_offset:333 e_num:1 layer:0/0 pt_gt:1 >
+509:	 =  日检修小时数                        PBG.F5.CAL.HOUR_JX_D     
+		<group:78 entry:2 g_offset:333 layer:0/1 pt_gt:1 total_et:334>
+510:	 +C 	0.050    		
+		<group:78 entry:3 g_offset:333 layer:0/0 pt_gt:1 total_et:335>
+511:
+512:	POINT:  日空转小时数 	PBG.F5.CAL.HOUR_KZH_D    CALCU  	
+	<<No: 79 offset:79>>
+513:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   4        
+		<group:79 total_et:336 g_offset:336 e_num:1 layer:0/0 pt_gt:1 >
+514:	 =  日空转小时数                        PBG.F5.CAL.HOUR_KZH_D    
+		<group:79 entry:2 g_offset:336 layer:0/1 pt_gt:1 total_et:337>
+515:	 +C 	0.050    		
+		<group:79 entry:3 g_offset:336 layer:0/1 pt_gt:1 total_et:338>
+516:
+517:	POINT:  日空载小时数 	PBG.F5.CAL.HOUR_KZ_D     CALCU  	
+	<<No: 80 offset:80>>
+518:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   5        
+		<group:80 total_et:339 g_offset:339 e_num:1 layer:0/0 pt_gt:1 >
+519:	 =  日空载小时数                        PBG.F5.CAL.HOUR_KZ_D     
+		<group:80 entry:2 g_offset:339 layer:0/0 pt_gt:1 total_et:340>
+520:	 +C 	0.050    		
+		<group:80 entry:3 g_offset:339 layer:0/1 pt_gt:1 total_et:341>
+521:
+522:	POINT:  月备用小时数 	PBG.F5.CAL.HOUR_BY_M     CALCU  	
+	<<No: 81 offset:81>>
+523:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   0        
+		<group:81 total_et:342 g_offset:342 e_num:1 layer:0/0 pt_gt:1 >
+524:	 =  月备用小时数                        PBG.F5.CAL.HOUR_BY_M     
+		<group:81 entry:2 g_offset:342 layer:0/1 pt_gt:1 total_et:343>
+525:	 +C 	0.050    		
+		<group:81 entry:3 g_offset:342 layer:0/0 pt_gt:1 total_et:344>
+526:
+527:	POINT:  月可用小时数 	PBG.F5.CAL.HOUR_KY_M     CALCU  	
+	<<No: 82 offset:82>>
+528:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   ~2       
+		<group:82 total_et:345 g_offset:345 e_num:1 layer:0/0 pt_gt:1 >
+529:	 =  月可用小时数                        PBG.F5.CAL.HOUR_KY_M     
+		<group:82 entry:2 g_offset:345 layer:0/1 pt_gt:1 total_et:346>
+530:	 +C 	0.050    		
+		<group:82 entry:3 g_offset:345 layer:0/1 pt_gt:1 total_et:347>
+531:
+532:	POINT:  月发电小时数 	PBG.F5.CAL.HOUR_FD_M     CALCU  	
+	<<No: 83 offset:83>>
+533:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   1        
+		<group:83 total_et:348 g_offset:348 e_num:1 layer:0/0 pt_gt:1 >
+534:	 =  月发电小时数                        PBG.F5.CAL.HOUR_FD_M     
+		<group:83 entry:2 g_offset:348 layer:0/1 pt_gt:1 total_et:349>
+535:	 +C 	0.050    		
+		<group:83 entry:3 g_offset:348 layer:0/1 pt_gt:1 total_et:350>
+536:
+537:	POINT:  月检修小时数 	PBG.F5.CAL.HOUR_JX_M     CALCU  	
+	<<No: 84 offset:84>>
+538:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   2        
+		<group:84 total_et:351 g_offset:351 e_num:1 layer:0/0 pt_gt:1 >
+539:	 =  月检修小时数                        PBG.F5.CAL.HOUR_JX_M     
+		<group:84 entry:2 g_offset:351 layer:0/0 pt_gt:1 total_et:352>
+540:	 +C 	0.050    		
+		<group:84 entry:3 g_offset:351 layer:0/1 pt_gt:1 total_et:353>
+541:
+542:	POINT:  月空转小时数 	PBG.F5.CAL.HOUR_KZH_M    CALCU  	
+	<<No: 85 offset:85>>
+543:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   4        
+		<group:85 total_et:354 g_offset:354 e_num:1 layer:0/0 pt_gt:1 >
+544:	 =  月空转小时数                        PBG.F5.CAL.HOUR_KZH_M    
+		<group:85 entry:2 g_offset:354 layer:0/1 pt_gt:1 total_et:355>
+545:	 +C 	0.050    		
+		<group:85 entry:3 g_offset:354 layer:0/0 pt_gt:1 total_et:356>
+546:
+547:	POINT:  月空载小时数 	PBG.F5.CAL.HOUR_KZ_M     CALCU  	
+	<<No: 86 offset:86>>
+548:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   5        
+		<group:86 total_et:357 g_offset:357 e_num:1 layer:0/0 pt_gt:1 >
+549:	 =  月空载小时数                        PBG.F5.CAL.HOUR_KZ_M     
+		<group:86 entry:2 g_offset:357 layer:0/1 pt_gt:1 total_et:358>
+550:	 +C 	0.050    		
+		<group:86 entry:3 g_offset:357 layer:0/1 pt_gt:1 total_et:359>
+551:
+552:	POINT:  年备用小时数 	PBG.F5.CAL.HOUR_BY_Y     CALCU  	
+	<<No: 87 offset:87>>
+553:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   0        
+		<group:87 total_et:360 g_offset:360 e_num:1 layer:0/0 pt_gt:1 >
+554:	 =  年备用小时数                        PBG.F5.CAL.HOUR_BY_Y     
+		<group:87 entry:2 g_offset:360 layer:0/1 pt_gt:1 total_et:361>
+555:	 +C 	0.050    		
+		<group:87 entry:3 g_offset:360 layer:0/1 pt_gt:1 total_et:362>
+556:
+557:	POINT:  年可用小时数 	PBG.F5.CAL.HOUR_KY_Y     CALCU  	
+	<<No: 88 offset:88>>
+558:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   ~2       
+		<group:88 total_et:363 g_offset:363 e_num:1 layer:0/0 pt_gt:1 >
+559:	 =  年可用小时数                        PBG.F5.CAL.HOUR_KY_Y     
+		<group:88 entry:2 g_offset:363 layer:0/0 pt_gt:1 total_et:364>
+560:	 +C 	0.050    		
+		<group:88 entry:3 g_offset:363 layer:0/1 pt_gt:1 total_et:365>
+561:
+562:	POINT:  年发电小时数 	PBG.F5.CAL.HOUR_FD_Y     CALCU  	
+	<<No: 89 offset:89>>
+563:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   1        
+		<group:89 total_et:366 g_offset:366 e_num:1 layer:0/0 pt_gt:1 >
+564:	 =  年发电小时数                        PBG.F5.CAL.HOUR_FD_Y     
+		<group:89 entry:2 g_offset:366 layer:0/1 pt_gt:1 total_et:367>
+565:	 +C 	0.050    		
+		<group:89 entry:3 g_offset:366 layer:0/1 pt_gt:1 total_et:368>
+566:
+567:	POINT:  年检修小时数 	PBG.F5.CAL.HOUR_JX_Y     CALCU  	
+	<<No: 90 offset:90>>
+568:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   2        
+		<group:90 total_et:369 g_offset:369 e_num:1 layer:0/0 pt_gt:1 >
+569:	 =  年检修小时数                        PBG.F5.CAL.HOUR_JX_Y     
+		<group:90 entry:2 g_offset:369 layer:0/1 pt_gt:1 total_et:370>
+570:	 +C 	0.050    		
+		<group:90 entry:3 g_offset:369 layer:0/0 pt_gt:1 total_et:371>
+571:
+572:	POINT:  年空转小时数 	PBG.F5.CAL.HOUR_KZH_Y    CALCU  	
+	<<No: 91 offset:91>>
+573:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   4        
+		<group:91 total_et:372 g_offset:372 e_num:1 layer:0/0 pt_gt:1 >
+574:	 =  年空转小时数                        PBG.F5.CAL.HOUR_KZH_Y    
+		<group:91 entry:2 g_offset:372 layer:0/0 pt_gt:1 total_et:373>
+575:	 +C 	0.050    		
+		<group:91 entry:3 g_offset:372 layer:0/1 pt_gt:1 total_et:374>
+576:
+577:	POINT:  年空载小时数 	PBG.F5.CAL.HOUR_KZ_Y     CALCU  	
+	<<No: 92 offset:92>>
+578:	 IF 机组状态                            PBG.F5.SYS.UNIT_STA      ?   5        
+		<group:92 total_et:375 g_offset:375 e_num:1 layer:0/0 pt_gt:1 >
+579:	 =  年空载小时数                        PBG.F5.CAL.HOUR_KZ_Y     
+		<group:92 entry:2 g_offset:375 layer:0/0 pt_gt:1 total_et:376>
+580:	 +C 	0.050    		
+		<group:92 entry:3 g_offset:375 layer:0/0 pt_gt:1 total_et:377>
+581:
+582:	POINT:  日备用小时数 	PBG.F6.CAL.HOUR_BY_D     CALCU  	
+	<<No: 93 offset:93>>
+583:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   0        
+		<group:93 total_et:378 g_offset:378 e_num:1 layer:0/0 pt_gt:1 >
+584:	 =  日备用小时数                        PBG.F6.CAL.HOUR_BY_D     
+		<group:93 entry:2 g_offset:378 layer:0/0 pt_gt:1 total_et:379>
+585:	 +C 	0.050    		
+		<group:93 entry:3 g_offset:378 layer:0/0 pt_gt:1 total_et:380>
+586:
+587:	POINT:  日可用小时数 	PBG.F6.CAL.HOUR_KY_D     CALCU  	
+	<<No: 94 offset:94>>
+588:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   ~2       
+		<group:94 total_et:381 g_offset:381 e_num:1 layer:0/0 pt_gt:1 >
+589:	 =  日可用小时数                        PBG.F6.CAL.HOUR_KY_D     
+		<group:94 entry:2 g_offset:381 layer:0/1 pt_gt:1 total_et:382>
+590:	 +C 	0.050    		
+		<group:94 entry:3 g_offset:381 layer:0/0 pt_gt:1 total_et:383>
+591:
+592:	POINT:  日发电小时数 	PBG.F6.CAL.HOUR_FD_D     CALCU  	
+	<<No: 95 offset:95>>
+593:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   1        
+		<group:95 total_et:384 g_offset:384 e_num:1 layer:0/0 pt_gt:1 >
+594:	 =  日发电小时数                        PBG.F6.CAL.HOUR_FD_D     
+		<group:95 entry:2 g_offset:384 layer:0/0 pt_gt:1 total_et:385>
+595:	 +C 	0.050    		
+		<group:95 entry:3 g_offset:384 layer:0/1 pt_gt:1 total_et:386>
+596:
+597:	POINT:  日检修小时数 	PBG.F6.CAL.HOUR_JX_D     CALCU  	
+	<<No: 96 offset:96>>
+598:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   2        
+		<group:96 total_et:387 g_offset:387 e_num:1 layer:0/0 pt_gt:1 >
+599:	 =  日检修小时数                        PBG.F6.CAL.HOUR_JX_D     
+		<group:96 entry:2 g_offset:387 layer:0/0 pt_gt:1 total_et:388>
+600:	 +C 	0.050    		
+		<group:96 entry:3 g_offset:387 layer:0/0 pt_gt:1 total_et:389>
+601:
+602:	POINT:  日空转小时数 	PBG.F6.CAL.HOUR_KZH_D    CALCU  	
+	<<No: 97 offset:97>>
+603:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   4        
+		<group:97 total_et:390 g_offset:390 e_num:1 layer:0/0 pt_gt:1 >
+604:	 =  日空转小时数                        PBG.F6.CAL.HOUR_KZH_D    
+		<group:97 entry:2 g_offset:390 layer:0/0 pt_gt:1 total_et:391>
+605:	 +C 	0.050    		
+		<group:97 entry:3 g_offset:390 layer:0/0 pt_gt:1 total_et:392>
+606:
+607:	POINT:  日空载小时数 	PBG.F6.CAL.HOUR_KZ_D     CALCU  	
+	<<No: 98 offset:98>>
+608:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   5        
+		<group:98 total_et:393 g_offset:393 e_num:1 layer:0/0 pt_gt:1 >
+609:	 =  日空载小时数                        PBG.F6.CAL.HOUR_KZ_D     
+		<group:98 entry:2 g_offset:393 layer:0/0 pt_gt:1 total_et:394>
+610:	 +C 	0.050    		
+		<group:98 entry:3 g_offset:393 layer:0/0 pt_gt:1 total_et:395>
+611:
+612:	POINT:  月备用小时数 	PBG.F6.CAL.HOUR_BY_M     CALCU  	
+	<<No: 99 offset:99>>
+613:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   0        
+		<group:99 total_et:396 g_offset:396 e_num:1 layer:0/0 pt_gt:1 >
+614:	 =  月备用小时数                        PBG.F6.CAL.HOUR_BY_M     
+		<group:99 entry:2 g_offset:396 layer:0/0 pt_gt:1 total_et:397>
+615:	 +C 	0.050    		
+		<group:99 entry:3 g_offset:396 layer:0/0 pt_gt:1 total_et:398>
+616:
+617:	POINT:  月可用小时数 	PBG.F6.CAL.HOUR_KY_M     CALCU  	
+	<<No: 100 offset:100>>
+618:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   ~2       
+		<group:100 total_et:399 g_offset:399 e_num:1 layer:0/0 pt_gt:1 >
+619:	 =  月可用小时数                        PBG.F6.CAL.HOUR_KY_M     
+		<group:100 entry:2 g_offset:399 layer:0/0 pt_gt:1 total_et:400>
+620:	 +C 	0.050    		
+		<group:100 entry:3 g_offset:399 layer:0/0 pt_gt:1 total_et:401>
+621:
+622:	POINT:  月发电小时数 	PBG.F6.CAL.HOUR_FD_M     CALCU  	
+	<<No: 101 offset:101>>
+623:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   1        
+		<group:101 total_et:402 g_offset:402 e_num:1 layer:0/0 pt_gt:1 >
+624:	 =  月发电小时数                        PBG.F6.CAL.HOUR_FD_M     
+		<group:101 entry:2 g_offset:402 layer:0/0 pt_gt:1 total_et:403>
+625:	 +C 	0.050    		
+		<group:101 entry:3 g_offset:402 layer:0/0 pt_gt:1 total_et:404>
+626:
+627:	POINT:  月检修小时数 	PBG.F6.CAL.HOUR_JX_M     CALCU  	
+	<<No: 102 offset:102>>
+628:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   2        
+		<group:102 total_et:405 g_offset:405 e_num:1 layer:0/0 pt_gt:1 >
+629:	 =  月检修小时数                        PBG.F6.CAL.HOUR_JX_M     
+		<group:102 entry:2 g_offset:405 layer:0/0 pt_gt:1 total_et:406>
+630:	 +C 	0.050    		
+		<group:102 entry:3 g_offset:405 layer:0/0 pt_gt:1 total_et:407>
+631:
+632:	POINT:  月空转小时数 	PBG.F6.CAL.HOUR_KZH_M    CALCU  	
+	<<No: 103 offset:103>>
+633:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   4        
+		<group:103 total_et:408 g_offset:408 e_num:1 layer:0/0 pt_gt:1 >
+634:	 =  月空转小时数                        PBG.F6.CAL.HOUR_KZH_M    
+		<group:103 entry:2 g_offset:408 layer:0/0 pt_gt:1 total_et:409>
+635:	 +C 	0.050    		
+		<group:103 entry:3 g_offset:408 layer:0/1 pt_gt:1 total_et:410>
+636:
+637:	POINT:  月空载小时数 	PBG.F6.CAL.HOUR_KZ_M     CALCU  	
+	<<No: 104 offset:104>>
+638:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   5        
+		<group:104 total_et:411 g_offset:411 e_num:1 layer:0/0 pt_gt:1 >
+639:	 =  月空载小时数                        PBG.F6.CAL.HOUR_KZ_M     
+		<group:104 entry:2 g_offset:411 layer:0/0 pt_gt:1 total_et:412>
+640:	 +C 	0.050    		
+		<group:104 entry:3 g_offset:411 layer:0/0 pt_gt:1 total_et:413>
+641:
+642:	POINT:  年备用小时数 	PBG.F6.CAL.HOUR_BY_Y     CALCU  	
+	<<No: 105 offset:105>>
+643:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   0        
+		<group:105 total_et:414 g_offset:414 e_num:1 layer:0/0 pt_gt:1 >
+644:	 =  年备用小时数                        PBG.F6.CAL.HOUR_BY_Y     
+		<group:105 entry:2 g_offset:414 layer:0/0 pt_gt:1 total_et:415>
+645:	 +C 	0.050    		
+		<group:105 entry:3 g_offset:414 layer:0/0 pt_gt:1 total_et:416>
+646:
+647:	POINT:  年可用小时数 	PBG.F6.CAL.HOUR_KY_Y     CALCU  	
+	<<No: 106 offset:106>>
+648:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   ~2       
+		<group:106 total_et:417 g_offset:417 e_num:1 layer:0/0 pt_gt:1 >
+649:	 =  年可用小时数                        PBG.F6.CAL.HOUR_KY_Y     
+		<group:106 entry:2 g_offset:417 layer:0/1 pt_gt:1 total_et:418>
+650:	 +C 	0.050    		
+		<group:106 entry:3 g_offset:417 layer:0/0 pt_gt:1 total_et:419>
+651:
+652:	POINT:  年发电小时数 	PBG.F6.CAL.HOUR_FD_Y     CALCU  	
+	<<No: 107 offset:107>>
+653:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   1        
+		<group:107 total_et:420 g_offset:420 e_num:1 layer:0/0 pt_gt:1 >
+654:	 =  年发电小时数                        PBG.F6.CAL.HOUR_FD_Y     
+		<group:107 entry:2 g_offset:420 layer:0/0 pt_gt:1 total_et:421>
+655:	 +C 	0.050    		
+		<group:107 entry:3 g_offset:420 layer:0/1 pt_gt:1 total_et:422>
+656:
+657:	POINT:  年检修小时数 	PBG.F6.CAL.HOUR_JX_Y     CALCU  	
+	<<No: 108 offset:108>>
+658:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   2        
+		<group:108 total_et:423 g_offset:423 e_num:1 layer:0/0 pt_gt:1 >
+659:	 =  年检修小时数                        PBG.F6.CAL.HOUR_JX_Y     
+		<group:108 entry:2 g_offset:423 layer:0/0 pt_gt:1 total_et:424>
+660:	 +C 	0.050    		
+		<group:108 entry:3 g_offset:423 layer:0/0 pt_gt:1 total_et:425>
+661:
+662:	POINT:  年空转小时数 	PBG.F6.CAL.HOUR_KZH_Y    CALCU  	
+	<<No: 109 offset:109>>
+663:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   4        
+		<group:109 total_et:426 g_offset:426 e_num:1 layer:0/0 pt_gt:1 >
+664:	 =  年空转小时数                        PBG.F6.CAL.HOUR_KZH_Y    
+		<group:109 entry:2 g_offset:426 layer:0/0 pt_gt:1 total_et:427>
+665:	 +C 	0.050    		
+		<group:109 entry:3 g_offset:426 layer:0/0 pt_gt:1 total_et:428>
+666:
+667:	POINT:  年空载小时数 	PBG.F6.CAL.HOUR_KZ_Y     CALCU  	
+	<<No: 110 offset:110>>
+668:	 IF 机组状态                            PBG.F6.SYS.UNIT_STA      ?   5        
+		<group:110 total_et:429 g_offset:429 e_num:1 layer:0/0 pt_gt:1 >
+669:	 =  年空载小时数                        PBG.F6.CAL.HOUR_KZ_Y     
+		<group:110 entry:2 g_offset:429 layer:0/0 pt_gt:1 total_et:430>
+670:	 +C 	0.050    		
+		<group:110 entry:3 g_offset:429 layer:0/0 pt_gt:1 total_et:431>
+671:
+
+	END reacked,Total pt=111 gt=111 et=432 close file now!
+
+	04: Space
+
+\home\ems\h9000\def\CalcuFile1.def END reacked, Total pt=111 gt=111 et=432 exit now!

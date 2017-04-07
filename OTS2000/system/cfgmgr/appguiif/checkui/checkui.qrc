@@ -1,0 +1,35 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+	<file>images/alarmevent.png</file>
+	<file>images/hisevent.png</file>
+	<file>images/realdata.png</file>
+	<file>images/realevent.png</file>
+	<file>images/hisdata.png</file>
+	<file>images/deactive.png</file>
+	<file>images/active.png</file>
+	<file>images/pane.png</file>
+	<file>images/operate.png</file>
+	<file>images/cardoperate.png</file>
+	<file>images/quit.png</file>
+	<file>images/snapshot.png</file>
+	<file>images/login.png</file>
+	<file>images/checkin.png</file>
+	<file>images/info.png</file>
+	<file>images/jiedi_ld.png</file>
+	<file>images/jiedi_rd.png</file>
+	<file>images/jiedi_lt.png</file>
+	<file>images/jiedi_rt.png</file>
+	<file>images/jiedi_tl.png</file>
+	<file>images/jiedi_dl.png</file>
+	<file>images/jiedi_dr.png</file>
+	<file>images/jiedi_tr.png</file>
+	<file>images/settime.png</file>
+	<file>images/checkdiff.png</file>
+	<file>images/cut.png</file>
+	<file>images/copy.png</file>
+	<file>images/new.png</file>
+	<file>images/open.png</file>
+	<file>images/paste.png</file>
+	<file>images/save.png</file>
+		</qresource>
+</RCC>

@@ -1,0 +1,306 @@
+﻿{
+	"message": "信息查询成功。",
+	"responseSts": 0,
+	
+	"surveyData": [
+	{"detailType": "detailInfo",
+		"label": "详细信息",
+		
+		"resultInfoDetailList": [
+		{
+			"name": "水库名称",
+			"value": "怀柔水库"
+		},
+
+		{
+			"name": "所在河流名称",
+			"value": "怀河"
+		},
+
+		{
+			"name": "工程规模",
+			"value": "大（2）型"
+		},
+
+		{
+			"name": "总库容(万m³)",
+			"value": "14400"
+		},
+
+		{
+			"name": "调洪库容(万m³)",
+			"value": "10450"
+		},
+
+		{
+			"name": "防洪库容(万m³)",
+			"value": "3350"
+		},
+
+		{
+			"name": "兴利库容(万m³)",
+			"value": "6550"
+		},
+
+		{
+			"name": "死库容(万m³)",
+			"value": "850"
+		},
+
+		{
+			"name": "正常蓄水位相应水面面积(km²)",
+			"value": "10"
+		},
+
+		{
+			"name": "校核洪水位(m)",
+			"value": "67.73"
+		},
+
+		{
+			"name": "设计洪水位(m)",
+			"value": "64.16"
+		},
+
+		{
+			"name": "防洪高水位(m)",
+			"value": "61.87"
+		},
+
+		{
+			"name": "正常蓄水位(m)",
+			"value": "62"
+		},
+
+		{
+			"name": "防洪限制水位(m)",
+			"value": "58"
+		},
+
+		{
+			"name": "死水位(m)",
+			"value": "52"
+		},
+
+		{
+			"name": "设计灌溉面积(万亩)",
+			"value": ""
+		},
+
+		{
+			"name": "水库类型",
+			"value": "山丘水库"
+		},
+
+		{
+			"name": "主要泄洪建筑物型式",
+			"value": "岸坡式"
+		},
+
+		{
+			"name": "生产安置人口(万人)",
+			"value": "0.26"
+		},
+
+		{
+			"name": "搬迁安置人口(万人)",
+			"value": ""
+		},
+
+		{
+			"name": "工程建设情况",
+			"value": "已建"
+		},
+
+		{
+			"name": "建成时间(年)",
+			"value": "1958"
+		},
+
+		{
+			"name": "建成时间(月)",
+			"value": "7"
+		},
+
+		{
+			"name": "水库调节性能",
+			"value": "季调节"
+		},
+
+		{
+			"name": "工程等别",
+			"value": "Ⅱ"
+		},
+
+		{
+			"name": "最大泄洪流量(m³/s)",
+			"value": "3036"
+		},
+
+		{
+			"name": "设计洪水标准［重现期］(年)",
+			"value": "100"
+		},
+
+		{
+			"name": "校核洪水标准［重现期］(年)",
+			"value": "2000"
+		},
+
+		{
+			"name": "重要保护对象",
+			"value": "城镇"
+		},
+
+		{
+			"name": "取水口数量(个)",
+			"value": "2"
+		},
+
+		{
+			"name": "供水对象",
+			"value": "城乡生活,工矿企业"
+		},
+
+		{
+			"name": "灌溉对象名称",
+			"value": ""
+		},
+
+		{
+			"name": "管理单位名称",
+			"value": "北京市京密引水管理处"
+		},
+
+		{
+			"name": "归口管理部门",
+			"value": "水利部门"
+		},
+
+		{
+			"name": "管理单位隶属关系",
+			"value": "省"
+		},
+
+		{
+			"name": "是否完成划界",
+			"value": "是"
+		},
+
+		{
+			"name": "是否完成确权",
+			"value": "否"
+		},
+
+		{
+			"name": "防洪",
+			"value": "2"
+		},
+
+		{
+			"name": "发电",
+			"value": ""
+		},
+
+		{
+			"name": "供水",
+			"value": "1"
+		},
+
+		{
+			"name": "灌溉",
+			"value": ""
+		},
+
+		{
+			"name": "航运",
+			"value": ""
+		},
+
+		{
+			"name": "养殖",
+			"value": ""
+		},
+
+		{
+			"name": "年份",
+			"value": ""
+		}],
+
+		"resultInfoHeaderList": [
+		{
+			"code": "name",
+			"colWidth": 0,
+			"decimalDigits": 0,
+			"showValue": "名称"
+		},
+
+		{
+			"code": "value",
+			"colWidth": 0,
+			"decimalDigits": 0,
+			"showValue": "内容"
+		}]
+	},
+		{"detailType": "linkDoc",
+		"label": "关联资料",
+		
+		"resultInfoDetailList": [{
+			
+"FILE_DESC": "",
+			"FILE_FORMAT": "jpg", --文件名后缀
+			"FILE_NAME": "网站_怀柔水库",--截取字符串，删掉uuid
+			"FILE_TYPE": "1", 	--图片
+			"PREVIEW_URL":    "http://10.1.3.141/WEGIS-00-RESOURCES/slpc/P201/110116000016/网站_怀柔水库.jpg",
+ --uuid_网站_怀柔水库.jpg  所有图片文件存放PIC目录下
+			"THEME": "",
+
+			"THUMBNAILS_URL": "http://10.1.3.141/WEGIS-00-RESOURCES/slpc/P201/110116000016/网站_怀柔水库.jpg"
+		
+		},
+{
+			
+"FILE_DESC": "",
+			"FILE_FORMAT": "mp4", --文件名后缀
+			"FILE_NAME": "网站_怀柔视频",--截取字符串，删掉uuid
+			"FILE_TYPE": "2", 	--视频
+			"PREVIEW_URL": "http://10.1.3.141/WEGIS-00-RESOURCES/slpc/P201/110116000016/网站_怀柔水库.mp4",
+ --uuid_网站_怀柔水库.MP4  所有视频文件存放avi目录下
+			"THEME": "",
+
+			"THUMBNAILS_URL": "http://10.1.3.141/WEGIS-00-RESOURCES/slpc/P201/110116000016/网站_怀柔水库.mp4"
+		
+		}],
+
+		"resultInfoHeaderList": [
+		{
+	"code": "FILE_NAME",
+
+			"colWidth": 0,
+
+			"decimalDigits": 0,
+
+			"showValue": "资料名称"
+	},
+
+		{
+	"code": "THEME",
+			"colWidth": 0,
+
+			"decimalDigits": 0,
+
+			"showValue": "资料类型"
+	},
+
+		{
+	"code": "FILE_DESC",
+
+			"colWidth": 0,
+
+			"decimalDigits": 0,
+
+			"showValue": "资料描述"
+		}]
+
+		}]
+}

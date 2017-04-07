@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[cmdlib.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/cmd/v4.0a/src", AFEAAAAA
+
+[cmdlib.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/cmd/v4.0a/src", AFEAAAAA

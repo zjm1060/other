@@ -1,0 +1,57 @@
+﻿<RCC>
+    <qresource prefix="/pic" >
+        <file>images/20071126111905477[1].PNG</file>
+        <file>images/20071126112015852[1].PNG</file>
+        <file>images/20071224091514244[1].PNG</file>
+        <file>images/20090119102024707.PNG</file>
+        <file>images/20090119102144587.PNG</file>
+        <file>images/20090318230122425[1].png</file>
+        <file>images/find_normal.png</file>
+        <file>images/forums_icon.gif</file>
+        <file>images/get_conn.gif</file>
+        <file>images/logo.png</file>
+        <file>images/logo1.png</file>
+        <file>images/media-pause-32.PNG</file>
+        <file>images/media-play-32.PNG</file>
+        <file>images/media-stop-32.PNG</file>
+        <file>images/ots03.PNG</file>
+        <file>images/ots06.PNG</file>
+        <file>images/ots08.PNG</file>
+        <file>images/ots09.PNG</file>
+        <file>images/ots16.PNG</file>
+        <file>images/ots20.PNG</file>
+        <file>images/quit.png</file>
+        <file>images/refresh-32.png</file>
+        <file>images/star.png</file>
+        <file>images/user1.png</file>
+        <file>images/user2.png</file>
+        <file>images/user3.png</file>
+        <file>images/user4.png</file>
+        <file>images/user5.png</file>
+        <file>images/user6.png</file>
+        <file>images/user7.png</file>
+        <file>images/user8.png</file>
+        <file>images/user9.png</file>
+        <file>images/厂站.PNG</file>
+        <file>images/参数设置1.PNG</file>
+        <file>images/图片.PNG</file>
+        <file>images/字体.PNG</file>
+        <file>images/晃动.PNG</file>
+        <file>images/白山.jpg</file>
+        <file>images/设备.PNG</file>
+        <file>images/颜色.PNG</file>
+        <file>main.ico</file>
+   
+
+<file>qss/default.qss</file>
+    <file>qss/pagefold.qss</file>
+    <file>qss/login.qss</file>
+    <file>qss/mdidialog.qss</file>
+
+<file>images/small/down_arrow.png</file>
+    <file>images/small/down_arrow_disabled.png</file>
+    <file>images/small/up_arrow.png</file>
+    <file>images/small/up_arrow_disabled.png</file>
+    
+   </qresource>
+</RCC>

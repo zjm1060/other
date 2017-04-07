@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.report.model">
+	<class name="DBConnect" table="rep_DBConnect">
+		<id column="id" name="id">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="name" name="name" type="string"/> 
+		<property column="dname" name="dname" type="string"/> 
+		<property column="driver" name="driver" type="string"/>
+		<property column="url" name="url" type="string"/>
+		<property column="username" name="username" type="string"></property>
+		<property column="password" name="password" type="string"></property>
+	</class>
+	<class name="Report" table="rep_Report">
+		<id column="id" name="id">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="name" name="name" type="string"/> 
+		<property column="title" name="title" type="string"/> 
+		<property column="dbName" name="dbName" type="string"/>
+		<property column="sql" name="sql" type="string"/>
+		<list name="columns" cascade="save-update">
+			<key column="reportId"></key>
+			<list-index column="sort"></list-index>
+			<one-to-many class="Column"></one-to-many>	
+		</list>
+	</class>
+	<class name="Column" table="rep_Column">
+		<id column="id" name="id">
+			<generator class="uuid.hex"/>
+		</id>
+		<property column="dname" name="dname" type="string"/> 
+		<property column="name" name="name" type="string"/> 
+		<property column="hidden" name="hidden" type="boolean"/> 
+		<property column="type" name="type" type="string"/> 
+		<property column="reportId" name="reportId" type="string"/>
+	</class>
+</hibernate-mapping>

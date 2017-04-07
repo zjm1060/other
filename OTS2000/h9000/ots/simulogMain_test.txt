@@ -1,0 +1,8 @@
+FILE_NAME:	SIMULOG_DESCRIPTION_FILE FOR PBG
+
+!SEQUENCE:
+!**********PBG F1******************
+INCLUDE:	test_seq.txt
+
+
+END_FILE:

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean name="/workflow" class="com.bitc.jk.xmis.workflow.web.WorkflowAction">
+		<property name="workflowService">
+			<ref local="workflowService"/>
+		</property>
+		<property name="attentionService">
+			<ref local="attentionService"/>
+		</property>
+	</bean>
+	<bean id="workflowService" class="com.bitc.jk.xmis.workflow.fire.WorkflowServiceFireImpl">
+		<property name="runtimeContext">
+			<ref bean="fireRuntimeContext"/>
+		</property>
+		<property name="wfCalendarDAO">
+			<ref local="wfCalendarDAO"/>
+		</property>
+		<property name="workflowDAO">
+			<ref local="workflowDAO"/>
+		</property>
+		<property name="todoDAO">
+			<ref local="todoDAO"/>
+		</property>
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl"/>
+		</property>
+	</bean>
+	<bean id="attentionService" class="com.bitc.jk.xmis.workflow.service.impl.AttentionServiceImpl">
+		<property name="attentionDAO">
+			<ref local="attentionDAO"/>
+		</property>
+	</bean>
+	<bean id="attentionDAO" class="com.bitc.jk.xmis.workflow.dao.AttentionDAO" parent="hibernateBaseDAO">
+	</bean>
+	<bean id="todoDAO" class="com.bitc.jk.xmis.workflow.dao.TodoDAO" parent="hibernateBaseDAO">
+	</bean>
+	<bean id="wfCalendarDAO" class="com.bitc.jk.xmis.workflow.dao.WfCalendarDAO" parent="hibernateBaseDAO">
+	</bean>
+	<bean id="workflowDAO" class="com.bitc.jk.xmis.workflow.dao.WorkflowDAO" parent="hibernateBaseDAO">
+		 <property name="jt">
+            <ref bean="JdbcTemplate" />
+        </property>
+	</bean>
+	<!-- AssignmentHandlers -->
+	<bean id="PreviousStepSpecifyAssignmentHandler" 
+		class="com.bitc.jk.xmis.workflow.fire.PreviousStepSpecifyAssignmentHandler"></bean>
+	<bean id="CurrentUserAssignmentHandler"
+		class="com.bitc.jk.xmis.workflow.fire.CurrentUserAssignmentHandler">
+	</bean>
+	<bean id="ExpressionAssignmentHandler" class="com.bitc.jk.xmis.workflow.fire.ExpressionAssignmentHandler"></bean>
+	<!-- ApplicantionHandlers -->
+	<bean id="PreviousorApplicationHandler" 
+		class="com.bitc.jk.xmis.workflow.fire.PreviousorApplicationHandler">
+		<property name="messageSender">
+			<ref bean="messageInfoSender"/>			
+		</property>
+		<property name="workflowDAO">
+			<ref bean="workflowDAO"/>			
+		</property>
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl"/>
+		</property>
+	</bean>
+	<!-- SystemUserAssignmentHandler -->
+	<bean id="SystemUserAssignmentHandler"
+		class="com.bitc.jk.xmis.workflow.fire.SystemUserAssignmentHandler">
+		<property name="workflowService">
+			<ref local="workflowService"/>
+		</property>
+		<property name="missAttendanceService">
+			<ref bean="missAttenceService"/>
+		</property>
+	</bean>
+	<!-- Listeners -->
+	<bean id="taskInstanceEventListener"
+		class="com.bitc.jk.xmis.workflow.fire.TaskInstanceEventListener">
+		<property name="todoDAO">
+			<ref local="todoDAO"/>
+		</property>
+		<property name="workflowDAO">
+			<ref local="workflowDAO"/>
+		</property>
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl"/>
+		</property>
+		<property name="emailAndPlatformMessageInfoSender">
+			<ref bean="emailAndPlatformMessageInfoSender" />
+		</property>			
+	</bean>
+	<bean id="calendarService"
+		class="com.bitc.jk.xmis.workflow.fire.CalendarService">
+		<property name="wfCalendarDAO">
+			<ref local="wfCalendarDAO"/>
+		</property>
+	</bean>
+	<bean id="formTaskInstanceRunner" class="com.bitc.jk.xmis.workflow.fire.FormTaskInstanceRunner">
+		<property name="workflowDAO">
+			<ref local="workflowDAO"/>
+		</property>
+		<property name="todoDAO">
+			<ref local="todoDAO"/>
+		</property>
+	</bean>
+	
+	<bean id="myTaskInstanceManager" class="com.bitc.jk.xmis.workflow.fire.TaskInstanceManager" parent="taskInstanceManager">
+	</bean>
+	<bean id="myToolTaskInstanceRunner" class="com.bitc.jk.xmis.workflow.fire.ToolTaskInstanceRunner"></bean>
+
+	 <!-- 2013-12工作流结束事件  Listeners -->
+	<bean id="sendMessageProcessInstanceEventListener" 
+		class="com.bitc.jk.xmis.workflow.fire.SendMessageProcessInstanceEventListener">
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl"/>
+		</property>	
+		<property name="emailAndPlatformMessageInfoSender">
+			<ref bean="emailAndPlatformMessageInfoSender" />
+		</property>	
+		<property name="workflowDAO">
+			<ref local="workflowDAO"/>
+		</property>	
+	</bean>
+	
+
+</beans>

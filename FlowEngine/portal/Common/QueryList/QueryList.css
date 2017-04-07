@@ -1,0 +1,149 @@
+.listBody{
+  background-color:#ffffff;
+}
+.listOutTd{
+  background-image:url('/SampleCover/Images/frame_bg.gif');
+  background-repeat:no-repeat;
+  background-position:bottom left;
+  background-color:#ffffff;
+}
+.listUtil{
+  height:300px;
+  overflow:auto;
+}
+.listTable{
+  font-size:9pt;
+  font-family:ËÎÌו;
+  background-color:white;
+  table-layout:fixed;
+}
+.hiddenCheckboxTd{
+  border-bottom:1px #e4e4e4 solid;
+  border-left:1px #646c94 solid;
+  text-align:center;
+}
+.hiddenCheckbox{
+  display:block;
+}
+.head_Tr{
+  height:25px;
+  background-color:#b8c4f4;
+}
+.head_firstTd{
+  border:1px #646c94 solid;
+  text-align:center;
+}
+.head_Td{
+  padding-top:5px;
+  border-top:1px #646c94 solid;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  text-align:center;
+}
+.select_Tr{
+  background-color:#fbf897;
+  cursor:hand;
+}
+.data_Tr1{
+  background-color:#fef8dd;
+  cursor:hand;
+}
+.data_Tr2{
+  background-color:white;
+  cursor:hand;
+}
+.data_firstTd_number{
+  padding-top:3px;
+  padding-right:8px;
+  padding-bottom:3px;
+  border-bottom:1px #e4e4e4 solid;
+  border-left:1px #646c94 solid;
+  text-align:right;
+  word-wrap:break-word;
+}
+.data_firstTd_char{
+  padding-top:3px;
+  padding-left:8px;
+  padding-bottom:3px;
+  border-bottom:1px #e4e4e4 solid;
+  border-left:1px #646c94 solid;
+  text-align:left;
+  word-wrap:break-word;
+}
+.data_Td_number{
+  padding-top:3px;
+  padding-right:8px;
+  padding-bottom:3px;
+  border-bottom:1px #e4e4e4 solid;
+  text-align:right;
+  word-wrap:break-word;
+}
+.data_Td_char{
+  padding-top:3px;
+  padding-left:8px;
+  padding-bottom:3px;
+  border-bottom:1px #e4e4e4 solid;
+  text-align:left;
+  word-wrap:break-word;
+}
+.data_lastTd_number{
+  padding-top:3px;
+  padding-right:8px;
+  padding-bottom:3px;
+  border-bottom:1px #e4e4e4 solid;
+  border-right:1px #646c94 solid;
+  text-align:right;
+  word-wrap:break-word;
+}
+.data_lastTd_char{
+  padding-top:3px;
+  padding-left:8px;
+  padding-bottom:3px;
+  border-bottom:1px #e4e4e4 solid;
+  border-right:1px #646c94 solid;
+  text-align:left;
+  word-wrap:break-word;
+}
+.tail_Tr{
+  height:23px;
+  background-color:#b8c4f4;
+}
+.tail_firstTd{
+  padding-top:5px;
+  padding-left:10px;
+  width:50%;
+  border-bottom:1px #646c94 solid;
+  border-left:1px #646c94 solid;
+}
+.tail_lastTd{
+  padding-right:10px;
+  width:50%;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  text-align:right;
+}
+.ListUtil_btnOut{
+  width:27px;
+  height:18px;
+  border:1px #bc8815 solid;
+}
+.ListUtil_btnIn{
+  width:25px;
+  height:16px;
+  border-top:2px white solid;
+  border-right:2px #e3d65f solid;
+  border-bottom:2px #e3d65f solid;
+  border-left:2px white solid;
+  background-color:#faeb6d;
+  text-align:center;
+  cursor:hand;
+}
+.ListUtil_inputSpan{
+  width:100px;
+  text-align:center;
+}
+.ListUtil_input{
+  width:30px;
+  height:18px;
+  border:1px #859bb5 solid;
+}

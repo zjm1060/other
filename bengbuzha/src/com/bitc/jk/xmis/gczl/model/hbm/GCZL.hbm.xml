@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.bitc.jk.xmis.gczl.model.FlexSeam" table="gczl_flex_seam_info">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="fs_code" type="java.lang.String">
+            <column name="fs_code" />
+        </property>
+        <property name="seam_width" type="java.math.BigDecimal">
+            <column name="seam_width" />
+        </property>
+        <property name="weather" type="java.math.BigDecimal">
+            <column name="weather" />
+        </property>
+        <property name="flag" type="java.lang.String">
+            <column name="flag" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="measure_man" />
+        </property>
+    </class>
+    	<class name="com.bitc.jk.xmis.gczl.model.Sink" table="gczl_sink_informatiom">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="sp_code" type="java.lang.String">
+            <column name="sp_code" />
+        </property>
+        <property name="s_point_code" type="java.lang.String">
+            <column name="s_point_code" />
+        </property>
+         <property name="s_point_name" type="java.lang.String">
+            <column name="s_point_name" />
+        </property>
+         <property name="high_degree" type="java.math.BigDecimal">
+            <column name="high_degree" />
+        </property>
+         <property name="ap_w_level" type="java.math.BigDecimal">
+            <column name="ap_w_level" />
+        </property>
+        <property name="bp_w_level" type="java.math.BigDecimal">
+            <column name="bp_w_level" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="measure_man" />
+        </property>
+    </class>
+    <class name="com.bitc.jk.xmis.gczl.model.weather" table="gczl_air_temperature_info">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="sky_status" type="java.lang.String">
+            <column name="sky_status" />
+        </property>
+        <property name="weather" type="java.math.BigDecimal">
+            <column name="weather" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="measure_man" />
+        </property>
+    </class>
+        <class name="com.bitc.jk.xmis.gczl.model.riverDm" table="gczl_river_dm_info">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="pillar_code" type="java.lang.String">
+            <column name="pillar_code" />
+        </property>
+        <property name="distance" type="java.math.BigDecimal">
+            <column name="distance" />
+        </property>
+         <property name="high_degree" type="java.math.BigDecimal">
+            <column name="high_degree" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="measure_man" />
+        </property>
+    </class>
+        <class name="com.bitc.jk.xmis.gczl.model.ConcreteCarb" table="gczl_concrete_carb_table">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="place_code" type="java.lang.String">
+            <column name="place_code" />
+        </property>
+        <property name="carbonize_depth" type="java.math.BigDecimal">
+            <column name="carbonize_depth" />
+        </property>
+         <property name="allow_carb_depth" type="java.math.BigDecimal">
+            <column name="allow_carb_depth" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="op_code" />
+        </property>
+    </class>
+    <class name="com.bitc.jk.xmis.gczl.model.SteelSCT" table="gczl_steel_stru_corr_tarnishing">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="place_code" type="java.lang.String">
+            <column name="place_code" />
+        </property>
+        <property name="tarnish_depth" type="java.math.BigDecimal">
+            <column name="tarnish_depth" />
+        </property>
+         <property name="steel_stru_thick" type="java.math.BigDecimal">
+            <column name="steel_stru_thick" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="op_code" />
+        </property>
+    </class>
+       <class name="com.bitc.jk.xmis.gczl.model.HorizontalShift" table="gczl_horizontal_shift_table">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="place_code" type="java.lang.String">
+            <column name="place_code" />
+        </property>
+        <property name="start_formula" type="java.math.BigDecimal">
+            <column name="start_formula" />
+        </property>
+         <property name="measured_value" type="java.math.BigDecimal">
+            <column name="measured_value" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="op_code" />
+        </property>
+    </class>
+      <class name="com.bitc.jk.xmis.gczl.model.OphContent" table="gczl_oph_content_table">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+         <property name="river_code" type="java.lang.String">
+            <column name="river_code" />
+        </property>
+        <property name="place_code" type="java.lang.String">
+            <column name="place_code" />
+        </property>
+         <property name="oph_content_qty" type="java.math.BigDecimal">
+            <column name="oph_content_qty" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="op_code" />
+        </property>
+    </class>
+       <class name="com.bitc.jk.xmis.gczl.model.ConcSeam" table="gczl_conc_seam_info">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+         <property name="conc_seam_code" type="java.lang.String">
+            <column name="conc_seam_code" />
+        </property>
+        <property name="conc_mp_code" type="java.lang.String">
+            <column name="conc_mp_code" />
+        </property>
+         <property name="weather" type="java.math.BigDecimal">
+            <column name="weather" />
+        </property>
+        <property name="seam_long" type="java.math.BigDecimal">
+            <column name="seam_long" />
+        </property>
+        <property name="seam_width" type="java.math.BigDecimal">
+            <column name="seam_width" />
+        </property>
+         <property name="xzms" type="java.lang.String">
+            <column name="xzms" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="remark" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="measure_man" />
+        </property>
+    </class>
+</hibernate-mapping>

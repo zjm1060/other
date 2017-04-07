@@ -1,0 +1,194 @@
+!************************************************************************************
+!	                                4F恢复开机
+!************************************************************************************
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZK3投至蓄电池
+!******************************************************************
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL4_ZK3_CLOSE
+
+
+
+STEP:		PBG.LCU7.ANA.GKDP1_MX_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 230
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL4_ZK3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	0
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZK3投至蓄电池切除
+!******************************************************************
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL4_ZK3_OPEN
+
+
+
+STEP:		PBG.LCU7.ANA.GKDP1_MX_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL4_ZK3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	0
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZK4投至蓄电池
+!******************************************************************
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL5_ZK4_STOP
+
+
+STEP:		PBG.LCU7.ANA.GKDP2_MX_AIV   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 230
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL5_ZK4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	0
+RESULT:  	2
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZK4投至蓄电池切除
+!******************************************************************
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL5_ZK4_OPEN
+
+
+STEP:		PBG.LCU7.ANA.GKDP2_MX_AIV   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL5_ZK4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——1号充电屏7M合闸
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL1_7M_CLOSE
+
+
+STEP:		PBG.LCU7.ANA.GDCP1_CDJ_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 2
+
+STEP:		PBG.LCU7.ANA.GDCP1_BAT_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 2
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL1_7M
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	0
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——1号充电屏7M分闸
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL1_7M_OPEN
+
+STEP:		PBG.LCU7.ANA.GDCP1_CDJ_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.ANA.GDCP1_BAT_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL1_7M
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	0
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——2号充电屏7M合闸
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL2_7M_CLOSE
+
+
+STEP:		PBG.LCU7.ANA.GDCP2_CDJ_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 2
+
+STEP:		PBG.LCU7.ANA.GDCP2_BAT_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 2
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL2_7M
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	0
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——2号充电屏7M分闸
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.SYS.S_JZ1ZL2_7M_OPEN
+
+
+STEP:		PBG.LCU7.ANA.GDCP2_CDJ_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.ANA.GDCP2_BAT_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.SYS.S_JZ1ZL2_7M
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	0
+RESULT:  	0
+
+END_SEQUENCE:
+

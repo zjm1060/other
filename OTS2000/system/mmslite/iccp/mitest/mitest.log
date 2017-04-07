@@ -1,0 +1,197 @@
+
+
+***********************************************************
+          LOGGING STARTED Wed Nov 29 18:37:20 2006
+***********************************************************
+
+00.000s SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+19.698s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 10 seconds.
+  MAY CAUSE UNEXPECTED TIMEOUTS, DISCONNECTS, ABORTS.
+
+52.138s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 4 seconds.
+
+60.448s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 5 seconds.
+
+69.288s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 5 seconds.
+
+81.788s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 9 seconds.
+
+101.838s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 8 seconds.
+
+106.288s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 3 seconds.
+
+288.788s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 5 seconds.
+
+582.088s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 293 seconds.
+
+846.502s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'AS1'
+      Association 'TGDC_RB_LINK'
+        Local AR 'RB_DCOM1'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'AS1', Asociation 'TGDC_RB_LINK'
+
+846.528s MILOG_NERR (mis.c 1047) 
+  MIS Domain name mismatch
+
+846.529s MILOG_NERR (mis.c 2260) 
+  MI Read ind: variable 'Bilateral_Table_ID' not found
+
+846.529s MILOG_NERR (mic.c 484) 
+  Bilateral Table ID Mismatch
+
+846.529s MILOG_NERR (mi.c 2313) 
+  Start Client confirm error: 0x0001, aborting
+
+856.533s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'AS1'
+      Association 'TGDC_RB_LINK'
+        Local AR 'RB_DCOM1'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'AS1', Asociation 'TGDC_RB_LINK'
+
+856.535s MILOG_NERR (mis.c 1047) 
+  MIS Domain name mismatch
+
+856.535s MILOG_NERR (mis.c 2260) 
+  MI Read ind: variable 'Bilateral_Table_ID' not found
+
+856.535s MILOG_NERR (mic.c 484) 
+  Bilateral Table ID Mismatch
+
+856.535s MILOG_NERR (mi.c 2313) 
+  Start Client confirm error: 0x0001, aborting
+
+866.533s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'AS1'
+      Association 'TGDC_RB_LINK'
+        Local AR 'RB_DCOM1'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'AS1', Asociation 'TGDC_RB_LINK'
+
+866.534s MILOG_NERR (mis.c 1047) 
+  MIS Domain name mismatch
+
+866.534s MILOG_NERR (mis.c 2260) 
+  MI Read ind: variable 'Bilateral_Table_ID' not found
+
+866.535s MILOG_NERR (mic.c 484) 
+  Bilateral Table ID Mismatch
+
+866.535s MILOG_NERR (mi.c 2313) 
+  Start Client confirm error: 0x0001, aborting
+
+876.533s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'AS1'
+      Association 'TGDC_RB_LINK'
+        Local AR 'RB_DCOM1'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'AS1', Asociation 'TGDC_RB_LINK'
+
+876.534s MILOG_NERR (mis.c 1047) 
+  MIS Domain name mismatch
+
+876.534s MILOG_NERR (mis.c 2260) 
+  MI Read ind: variable 'Bilateral_Table_ID' not found
+
+876.535s MILOG_NERR (mic.c 484) 
+  Bilateral Table ID Mismatch
+
+876.535s MILOG_NERR (mi.c 2313) 
+  Start Client confirm error: 0x0001, aborting
+
+886.533s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'AS1'
+      Association 'TGDC_RB_LINK'
+        Local AR 'RB_DCOM1'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'AS1', Asociation 'TGDC_RB_LINK'
+
+886.534s MILOG_NERR (mis.c 1047) 
+  MIS Domain name mismatch
+
+886.534s MILOG_NERR (mis.c 2260) 
+  MI Read ind: variable 'Bilateral_Table_ID' not found
+
+886.535s MILOG_NERR (mic.c 484) 
+  Bilateral Table ID Mismatch
+
+886.535s MILOG_NERR (mi.c 2313) 
+  Start Client confirm error: 0x0001, aborting
+
+896.533s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'AS1'
+      Association 'TGDC_RB_LINK'
+        Local AR 'RB_DCOM1'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'AS1', Asociation 'TGDC_RB_LINK'
+
+896.534s MILOG_NERR (mis.c 1047) 
+  MIS Domain name mismatch
+
+896.534s MILOG_NERR (mis.c 2260) 
+  MI Read ind: variable 'Bilateral_Table_ID' not found
+
+896.535s MILOG_NERR (mic.c 484) 
+  Bilateral Table ID Mismatch
+
+896.535s MILOG_NERR (mi.c 2313) 
+  Start Client confirm error: 0x0001, aborting
+
+906.533s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'AS1'
+      Association 'TGDC_RB_LINK'
+        Local AR 'RB_DCOM1'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'AS1', Asociation 'TGDC_RB_LINK'
+
+906.534s MILOG_NERR (mis.c 1047) 
+  MIS Domain name mismatch
+
+906.535s MILOG_NERR (mis.c 2260) 
+  MI Read ind: variable 'Bilateral_Table_ID' not found
+
+906.875s MILOG_NERR (mic.c 484) 
+  Bilateral Table ID Mismatch
+
+906.875s MILOG_NERR (mi.c 2313) 
+  Start Client confirm error: 0x0001, aborting

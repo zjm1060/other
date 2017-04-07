@@ -1,0 +1,223 @@
+#
+#************************************************************************/
+#* SISCO SOFTWARE MODULE HEADER *****************************************/
+#************************************************************************/
+#*			       
+#* MODULE NAME : mitest.mak                       
+#* PRODUCT(S)  : MMS-EASE-Lite
+#*			       
+#* MODULE DESCRIPTION :        
+#* This makefile is used by the HP-UX 'make' utility to build the MITEST
+#* example for MMS-EASE-Lite. All paths including header 
+#* files and object modules are relative to the current project directory 
+#* which makes this file as environment independent as possible.  
+#* Usage instructions are given below as well as a brief description of 
+#* each switch used in the process.  
+#*
+#* To make the SERVER executable, enter the following:
+#*
+#* 	make -f mitest.mak
+#*
+#* Description of HP aCC compiler options used:
+#*  -c       Suppress the link phase and retain object files
+#*  -v       Verbose mode
+#*  -g       Produce symbolic info in the object file for debugger
+#*  +Onoall  Generate non-optimized code sequences
+#*  +w       Warning output
+#*
+#* Description of HP-UX linker options used:
+#*  -o outfile   	Output file path for executable file
+#*
+#* MODIFICATION LOG:
+#*  Date     Who   Rev			Comments
+#* --------  ---  ------   -------------------------------------------
+#* 11/25/02   -     04     proAsset: HP-UX adaption, aCC compiler
+#* 07/22/02  GLB    03     Remove any reference to ml_init.c 
+#* 06/11/02  GLB    02     Updated
+#* 06/22/01  RKR    01     Created from server.mak
+#************************************************************************/
+
+#set the compiler
+CC         = aCC
+
+#************************************************************************/
+# Define directories here
+# assume: initial directory location is /mmslite/iccp/mitest
+
+ACSESRCDIR    = ../../mvl/src/acse
+ALIGNDIR      = ../../bin
+EXEDIR        = .
+FOUNDRYDIR    = ../../bin
+ICCPSRCDIR    = ../src
+ICCPUSRDIR    = ../usr
+INCDIR        = ../../inc
+INCDIR2       = .
+LIBDIR        = ../../lib
+MITESTDIR     = .
+MMSOPDIR      = .
+MMSSRCDIR     = ../../src
+MVLSRCDIR     = ../../mvl/src
+MVLUSRDIR     = ../../mvl/usr
+OBJDIR        = .
+SRCDIR        = ../../src
+USRSRCDIR     = ../../mvl/usr
+
+VPATH = $(MVLSRCDIR):$(ACSESRCDIR):$(USRSRCDIR):$(SRCDIR):$(ICCPSRCDIR)
+
+PROJ  = mitest	        
+OPT   =
+DEFS  =
+LIST  = >> cc.lst 2>&1
+
+#************************************************************************/
+# Define compiler/linker switches to use. These depend on the target ...
+
+CFLAGS = -c -v -g +w +Onoall $(OPT) -I$(INCDIR) -I$(INCDIR2) $(DEFS) \
+	 -DMOSI -DLEAN_T -I$(MMSOPDIR) -DDEBUG_SISCO \
+         -DMMS_LITE -DICCP_LITE -DETHERNET -DMLOG_ENABLE
+
+LIBS = $(LIBDIR)/mi_ld.a $(LIBDIR)/mlogl_ld.a $(LIBDIR)/mvl_ld.a \
+       $(LIBDIR)/mmsl_ld.a $(LIBDIR)/mmsle_ld.a $(LIBDIR)/mem_ld.a \
+       $(LIBDIR)/slog_ld.a $(LIBDIR)/mlogl_ld.a $(LIBDIR)/util_ld.a \
+       $(LIBDIR)/ositcpe_ld.a $(LIBDIR)/asn1l_ld.a
+
+EXE = $(EXEDIR)/$(PROJ)
+LFLAGS = -v -g -o $(EXE) 
+
+#************************************************************************/
+# Define includes dependancies
+
+INCLUDES = $(INCDIR)/icfg.h \
+           $(INCDIR)/mloguser.h \
+           $(INCDIR)/mi.h \
+           $(INCDIR)/mi_icfg.h \
+           $(INCDIR)/mi_log.h \
+           $(ICCPUSRDIR)/mics_cfg.h \
+           $(INCDIR)/glbtypes.h \
+	   $(INCDIR)/sysincs.h \
+	   $(INCDIR)/mmsdefs.h \
+	   $(INCDIR)/glberror.h \
+	   $(INCDIR)/gen_list.h \
+	   $(INCDIR)/mem_chk.h \
+	   $(INCDIR)/mms_pvar.h \
+	   $(INCDIR)/mms_mp.h \
+	   $(INCDIR)/asn1defs.h \
+	   $(INCDIR)/slog.h \
+	   $(INCDIR)/mms_vvar.h \
+	   $(INCDIR)/mms_err.h \
+	   $(INCDIR)/mms_def2.h \
+	   $(INCDIR)/mmsintr2.h \
+	   $(INCDIR)/mmsldefs.h \
+	   $(INCDIR)/mms_dfun.h \
+	   $(INCDIR)/mms_perr.h \
+	   $(INCDIR)/mms_log.h \
+	   $(INCDIR)/mmslog.h \
+	   $(INCDIR)/mms_pcon.h \
+	   $(INCDIR)/mms_pdom.h \
+	   $(INCDIR)/mms_pevn.h \
+	   $(INCDIR)/mms_pfil.h \
+	   $(INCDIR)/mms_pjou.h \
+	   $(INCDIR)/mms_pocs.h \
+	   $(INCDIR)/mms_pprg.h \
+	   $(INCDIR)/mms_psem.h \
+	   $(INCDIR)/mms_pvmd.h \
+	   $(INCDIR)/mmsefun.h \
+	   mmsop_en.h \
+	   miusrobj.h \
+	   mit_log.h \
+
+#************************************************************************/
+# Define objects used in the exectable
+
+OBJECTS = event.o \
+	  getval5.o \
+	  logcfgx.o \
+	  mit_devc.o \
+	  mit_imsg.o \
+	  mit_main.o \
+	  mit_misc.o \
+	  mit_ssoc.o \
+	  mit_tran.o \
+	  mit_usr.o \
+	  mit_util.o \
+	  mit_var.o \
+	  mit_xmlc.o \
+	  miusrobj.o \
+	  mmsop_en.o \
+	  mvlop_en.o \
+	  mvl_acse.o \
+	  ukey.o
+
+#************************************************************************/
+# The main target is the execcutable
+
+$(EXE):	$(OBJECTS) $(LIBS)
+	rm -f $(EXE)
+	$(CC) $(LFLAGS) \
+		$(OBJECTS) \
+		$(LIBS) $(LIST)
+	@echo "FINISHED GENERATING $(EXE) EXECUTABLE" $(LIST)
+	@echo "-----------------------------------------------------" $(LIST)
+	rm $(OBJDIR)/*.o
+
+#************************************************************************/
+# Here we create the 'C' files via the 'foundry' utility
+
+#srvrobj.c: srvrobj.odf 
+#	$(FOUNDRYDIR)/foundry -o -c$(ALIGNDIR)/align.cfg srvrobj.odf srvrobj.h $(LIST)
+
+#srvrobj.h: srvrobj.odf 
+#	$(FOUNDRYDIR)/foundry -o -c$(ALIGNDIR)/align.cfg srvrobj.odf srvrobj.h $(LIST)
+
+
+
+$(MITESTDIR)/miusrobj.c: $(MITESTDIR)/miusrobj.odf 
+	$(FOUNDRYDIR)/foundry -o -c$(FOUNDRYDIR)/align.cfg $(MITESTDIR)/miusrobj.odf $(MITESTDIR)/miusrobj.h $(LIST)
+
+$(MITESTDIR)/miusrobj.h: $(MITESTDIR)/miusrobj.odf 
+	$(FOUNDRYDIR)/foundry -o -c$(FOUNDRYDIR)/align.cfg $(MITESTDIR)/miusrobj.odf $(MITESTDIR)/miusrobj.h $(LIST)
+
+
+#************************************************************************/
+# Here is where we compile the C files into objects
+
+.c.o:
+	echo mitest.mak: $< $(LIST)
+	$(CC) $(CFLAGS) -o $*.o $< $(LIST)
+
+$(OBJDIR)/event.o:	$(USRSRCDIR)/event.c $(INCLUDES)
+
+$(OBJDIR)/getval5.o:	$(MMSSRCDIR)/getval5.c $(INCLUDES)
+
+$(OBJDIR)/logcfgx.o:	$(USRSRCDIR)/logcfgx.c $(INCLUDES)
+
+$(OBJDIR)/mit_devc.o:	$(MITESTDIR)/mit_devc.c $(INCLUDES)
+
+$(OBJDIR)/mit_imsg.o:	$(MITESTDIR)/mit_imsg.c $(INCLUDES)
+
+$(OBJDIR)/mit_main.o:	$(MITESTDIR)/mit_main.c $(INCLUDES)
+
+$(OBJDIR)/mit_misc.o:	$(MITESTDIR)/mit_misc.c $(INCLUDES)
+
+$(OBJDIR)/mit_ssoc.o:	$(MITESTDIR)/mit_ssoc.c $(INCLUDES)
+
+$(OBJDIR)/mit_tran.o:	$(MITESTDIR)/mit_tran.c $(INCLUDES)
+
+$(OBJDIR)/mit_usr.o:	$(MITESTDIR)/mit_usr.c $(INCLUDES)
+
+$(OBJDIR)/mit_util.o:	$(MITESTDIR)/mit_util.c $(INCLUDES)
+
+$(OBJDIR)/mit_var.o:	$(MITESTDIR)/mit_var.c $(INCLUDES)
+
+$(OBJDIR)/mit_xmlc.o:	$(MITESTDIR)/mit_xmlc.c $(INCLUDES)
+
+$(OBJDIR)/miusrobj.o:	$(MITESTDIR)/miusrobj.c $(INCLUDES)
+
+$(OBJDIR)/mmsop_en.o:	$(MMSSRCDIR)/mmsop_en.c $(INCLUDES)
+
+$(OBJDIR)/mvlop_en.o:	$(MVLSRCDIR)/mvlop_en.c $(INCLUDES)
+
+$(OBJDIR)/mvl_acse.o:	$(ACSESRCDIR)/mvl_acse.c $(INCLUDES)
+
+$(OBJDIR)/ukey.o:	$(MMSSRCDIR)/ukey.c $(INCLUDES)
+

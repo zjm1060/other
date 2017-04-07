@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[systemClear.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/systemClear", PQGAAAAA
+
+[systemClear.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/systemClear", PQGAAAAA

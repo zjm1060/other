@@ -1,0 +1,115 @@
+#
+# WorkShop Project File
+#
+# This file is machine generated, do not modify
+#
+
+projectid "/usr/ems/system/lan/v4.0a/src/lan_inb.prd";
+projectver 6.0;
+
+project_t cset_7UCTeEZThU2DkrfGHKOG = {
+
+    entities = {
+        {
+            name = "lan_inb.c";
+            type = C;
+            path = "lan_inb.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            buildable = false;
+        },
+        {
+            name = "netudp.c";
+            type = C;
+            path = "netudp.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            buildable = false;
+        },
+        {
+            name = "udp.c";
+            type = C;
+            path = "udp.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            type = AR;
+            path = "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/dps/v4.0a/lib/ipclib.a";
+            type = AR;
+            path = "/usr/ems/system/dps/v4.0a/lib/ipclib.a";
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/lan/v4.0a/lib/lan.lib";
+            type = AR;
+            path = "/usr/ems/system/lan/v4.0a/lib/lan.lib";
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/oix/v4.0a/lib/util.a";
+            type = AR;
+            path = "/usr/ems/system/oix/v4.0a/lib/util.a";
+            buildable = false;
+        },
+        {
+            name = "lan_inb.dxe";
+            type = EXE;
+            path = "lan_inb.dxe";
+            dependencies = {
+                "lan_inb.c",
+                "netudp.c",
+                "udp.c",
+                "/usr/ems/system/dms/v4.0a/lib/dblib.a",
+                "/usr/ems/system/dps/v4.0a/lib/ipclib.a",
+                "/usr/ems/system/lan/v4.0a/lib/lan.lib",
+                "/usr/ems/system/oix/v4.0a/lib/util.a";
+            };
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/lan/v4.0a/src";
+            options = {
+                C_Builder<link_library>.value="socket",
+                C_Builder<link_library>.value="nsl",
+                C_Builder<link_library>.value="thread",
+                C_Builder<link_library>.value="pthread",
+                C_Builder<link_library>.value="posix4";
+            };
+        };
+    };
+
+    globals = {
+        {
+            id = "C_Builder";
+            builder = C_Builder;
+            options = {
+                C_Builder<debug>,
+                C_Builder<mt>,
+                C_Builder<cpp_comments>;
+            };
+        };
+    };
+
+    gendata = {
+        {
+            tag = projecttype;
+            type = string_t;
+            value ="complex";
+        },
+        {
+            tag = projectdir;
+            type = string_t;
+            value ="/usr/ems/system/lan/v4.0a/src";
+        },
+        {
+            tag = mtmode;
+            type = string_t;
+            value ="posix";
+        };
+    };
+};

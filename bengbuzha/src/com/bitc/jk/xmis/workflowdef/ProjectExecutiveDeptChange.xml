@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="ProjectExecutiveDeptChange" Name="ProjectExecutiveDeptChange" DisplayName="变更执行部门/项目经理" ResourceFile="" ResourceManager="">
+    <fpdl:StartNode Id="ProjectExecutiveDeptChange.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="57"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="81"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="ProjectExecutiveDeptChange.ProjectExecutiveDeptChange" Name="ProjectExecutiveDeptChange" DisplayName="变更执行部门/项目经理" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="144"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="119"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="61"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectExecutiveDeptChange.ProjectExecutiveDeptChange.ExecutiveDeptChangeTask" Name="ExecutiveDeptChangeTask" DisplayName="变更执行部门/项目经理" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="当前用户">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="StartProjectExecutiveDeptChange" DisplayName="提交变更部门">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/taskAssignDeptChange.jsp?projectID={projectID}&amp;managerID={managerID}&amp;managerChangeReason={managerChangeReason}&amp;isChangeDept={isChangeDept}&amp;isChangeManager={isChangeManager}&amp;executiveDeptID={executiveDeptID}&amp;executiveDeptChangeReason={executiveDeptChangeReason}&amp;projectTaskId={projectTaskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目编码 &quot;+projectCode+&quot; | 项目名称 &quot;+projectName+&quot; | 信息变更被拒绝&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectExecutiveDeptChange.NoticeDeptDirector" Name="NoticeDeptDirector" DisplayName="部门主任确认" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="133"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="459"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="18"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectExecutiveDeptChange.NoticeDeptDirector.NoticeDeptDirectorTask" Name="NoticeDeptDirectorTask" DisplayName="部门主任接收通知" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptRole(19,executiveDeptID)" DisplayName="部门主任">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="getExecutiveDeptChangeNotice" DisplayName="接收执行部门变更通知">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/taskAssignDeptChange.jsp?projectID={projectID}&amp;executiveDeptID={executiveDeptID}&amp;executiveDeptChangeReason={executiveDeptChangeReason}&amp;projectTaskId={projectTaskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ViewForm Name="getExecutiveDeptChangeNotice" DisplayName="接收执行部门变更通知">
+                        <fpdl:Description>部门主任接到此通知的页面；</fpdl:Description>
+                        <fpdl:Uri>/project/taskAssignDeptChange.jsp?projectID={projectID}&amp;executiveDeptID={executiveDeptID}&amp;executiveDeptChangeReason={executiveDeptChangeReason}</fpdl:Uri>
+                    </fpdl:ViewForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目编码 &quot;+projectCode+&quot; | 项目名称 &quot;+projectName+&quot; | 执行部门变更为 &quot;+executiveDeptName"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectExecutiveDeptChange.NoticeManager" Name="NoticeManager" DisplayName="项目经理确认" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="134"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="462"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="140"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectExecutiveDeptChange.NoticeManager.NoticeManagerTask" Name="NoticeManagerTask" DisplayName="接收项目经理变更通知" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__manager" DisplayName="接收项目经理变更信息">
+                        <fpdl:Description>上一步指定项目经理；</fpdl:Description>
+                        <fpdl:AssignmentHandler>PreviousStepSpecifyAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="getExecutiveDeptChangeNotice" DisplayName="接收项目经理变更">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/taskAssignDeptChange.jsp?projectID={projectID}&amp;managerID={managerID}&amp;managerChangeReason={managerChangeReason}&amp;projectTaskId={projectTaskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ViewForm Name="getExecutiveDeptChangeNotice" DisplayName="接收项目经理变更">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/taskAssignDeptChange.jsp?projectID={projectID}&amp;managerID={managerID}&amp;managerChangeReason={managerChangeReason}</fpdl:Uri>
+                    </fpdl:ViewForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目编码 &quot;+projectCode+&quot; | 项目名称 &quot;+projectName+&quot; | 项目经理变更为 &quot;+managerName"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="ProjectExecutiveDeptChange.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="333"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="81"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="ProjectExecutiveDeptChange.EndNode1" Name="EndNode1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="694"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="84"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="ProjectExecutiveDeptChange.Transition1" From="ProjectExecutiveDeptChange.START_NODE" To="ProjectExecutiveDeptChange.ProjectExecutiveDeptChange" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectExecutiveDeptChange.Transition2" From="ProjectExecutiveDeptChange.ProjectExecutiveDeptChange" To="ProjectExecutiveDeptChange.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectExecutiveDeptChange.Transition3" From="ProjectExecutiveDeptChange.Synchronizer1" To="ProjectExecutiveDeptChange.NoticeDeptDirector" Name="Transition3" DisplayName="变更执行部门">
+            <fpdl:Condition>true==isChangeDept</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(409,65)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectExecutiveDeptChange.Transition4" From="ProjectExecutiveDeptChange.NoticeDeptDirector" To="ProjectExecutiveDeptChange.EndNode1" Name="Transition4" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectExecutiveDeptChange.Transition5" From="ProjectExecutiveDeptChange.Synchronizer1" To="ProjectExecutiveDeptChange.NoticeManager" Name="Transition5" DisplayName="变更项目经理">
+            <fpdl:Condition>true==isChangeManager</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectExecutiveDeptChange.Transition6" From="ProjectExecutiveDeptChange.NoticeManager" To="ProjectExecutiveDeptChange.EndNode1" Name="Transition6" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+</fpdl:WorkflowProcess>

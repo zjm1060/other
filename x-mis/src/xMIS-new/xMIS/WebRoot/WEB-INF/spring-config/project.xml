@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	
+    <bean name="/projectMain"
+        class="com.bitc.jk.xmis.web.action.ProjectAction">
+        <property name="projectService">
+            <ref local="projectServiceImpl" />
+        </property>
+        <property name="sysService">
+            <ref bean="sysService" />
+        </property>
+        <property name="loginService">
+            <ref bean="loginServiceImpl"/>
+        </property>
+        <property name="importExcelService">
+            <ref bean="importExcelServiceImpl"/>
+        </property>
+    </bean>
+    <bean id="projectServiceImpl"
+        class="com.bitc.jk.xmis.service.impl.ProjectServiceImpl">
+        <property name="projectDAO">
+            <ref local="projectDAOImpl" />
+        </property>
+        <property name="deviceDAO">
+            <ref bean="deviceDAOImpl" />
+        </property>
+        <property name="workflowContext">
+            <ref bean="fireRuntimeContext"/>
+        </property>
+        <property name="contractDAO">
+            <ref bean="contractDAOImpl" />
+        </property>
+        <property name="organizationDAO">
+			<ref bean="organizationDAOImpl" />
+		</property>
+        <property name="todoDAO">
+			<ref bean="todoDAO" />
+		</property>
+        <property name="workflowDAO">
+			<ref bean="workflowDAO" />
+		</property>
+		<property name="workflowService">
+			<ref bean="workflowService"/>
+		</property>
+    </bean>
+    <bean id="projectDAOImpl" parent="hibernateBaseDAO"
+        class="com.bitc.jk.xmis.dao.impl.ProjectDAOImpl">
+    	<property name="ht">
+            <ref bean="ht" />
+        </property>
+    	<property name="jt">
+            <ref bean="JdbcTemplate" />
+        </property>
+    </bean>	
+    
+    
+</beans>

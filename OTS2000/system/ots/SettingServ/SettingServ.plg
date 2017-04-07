@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SettingServ - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/NTServiceEventLogMsg.res" /d "NDEBUG" "E:\delta3d\富春江\SettingServ\NTServiceEventLogMsg.rc"" 
+Creating temporary file "C:\Temp\RSP39.tmp" with contents
+[
+/nologo /MT /w /W0 /GR /GX /Od /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/SettingServ.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\delta3d\富春江\SettingServ\NTService.cpp"
+"E:\delta3d\富春江\SettingServ\SettingServ.cpp"
+"E:\delta3d\富春江\SettingServ\SimComm_Teacher.cpp"
+]
+Creating command line "cl.exe @C:\Temp\RSP39.tmp" 
+Creating temporary file "C:\Temp\RSP3A.tmp" with contents
+[
+Netapi32.lib rtdb.lib /nologo /subsystem:console /incremental:no /pdb:"Release/SettingServ.pdb" /machine:I386 /out:"Release/SettingServ.exe" 
+".\Release\CRITSECT.OBJ"
+".\Release\main.obj"
+".\Release\NTService.obj"
+".\Release\RawSocket.obj"
+".\Release\RawSocketServerWorker.obj"
+".\Release\SettingServ.obj"
+".\Release\SimComm_Teacher.obj"
+".\Release\stdafx.obj"
+".\Release\ThreadDispatcher.obj"
+".\Release\NTServiceEventLogMsg.res"
+]
+Creating command line "link.exe @C:\Temp\RSP3A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+NTService.cpp
+SettingServ.cpp
+SimComm_Teacher.cpp
+Linking...
+LINK : warning LNK4089: all references to "SHELL32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "comdlg32.dll" discarded by /OPT:REF
+Creating temporary file "C:\Temp\RSP3C.tmp" with contents
+[
+/nologo /o"Release/SettingServ.bsc" 
+".\Release\CRITSECT.SBR"
+".\Release\main.sbr"
+".\Release\NTService.sbr"
+".\Release\RawSocket.sbr"
+".\Release\RawSocketServerWorker.sbr"
+".\Release\SettingServ.sbr"
+".\Release\SimComm_Teacher.sbr"
+".\Release\stdafx.sbr"
+".\Release\ThreadDispatcher.sbr"]
+Creating command line "bscmake.exe @C:\Temp\RSP3C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SettingServ.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

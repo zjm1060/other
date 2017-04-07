@@ -1,0 +1,624 @@
+RECORD      NAME = INT
+
+ENTRY      NAME	= SOE1
+           LONGNAME	= '10kV备自投I段母线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE2
+           LONGNAME	= '10kV备自投II段母线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE3
+           LONGNAME	= '10kV备自投装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE4
+           LONGNAME	= '10kV母联开关DL102合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE5
+           LONGNAME	= '10kV母联开关DL102控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080004
+           PNT_ADD	= 4
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE6
+           LONGNAME	= '10kVI母进线开关DLC1合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080005
+           PNT_ADD	= 5
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE7
+           LONGNAME	= '10kVI母外来进线开关DL181合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080006
+           PNT_ADD	= 6
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE8
+           LONGNAME	= '10kVII母进线开关DLC2合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080007
+           PNT_ADD	= 7
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE9
+           LONGNAME	= '10kVI段母线接地告警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080008
+           PNT_ADD	= 8
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE10
+           LONGNAME	= '10kVII段母线接地告警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080009
+           PNT_ADD	= 9
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE11
+           LONGNAME	= '10kVII母外来进线开关DL282合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080010
+           PNT_ADD	= 10
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE12
+           LONGNAME	= '10kV开关DL1411合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080011
+           PNT_ADD	= 11
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE13
+           LONGNAME	= '10kV开关DL1111合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080012
+           PNT_ADD	= 12
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE14
+           LONGNAME	= '10kV开关DL1121合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080013
+           PNT_ADD	= 13
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE15
+           LONGNAME	= '10kV开关DL1311合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080014
+           PNT_ADD	= 14
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE16
+           LONGNAME	= '10kV开关DL1211合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080015
+           PNT_ADD	= 15
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE17
+           LONGNAME	= '10kV开关DL2412合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080016
+           PNT_ADD	= 16
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE18
+           LONGNAME	= '10kV开关DL2112合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080017
+           PNT_ADD	= 17
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE19
+           LONGNAME	= '10kV开关DL2122合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080018
+           PNT_ADD	= 18
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE20
+           LONGNAME	= '10kV开关DL2312合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080019
+           PNT_ADD	= 19
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE21
+           LONGNAME	= '10kV开关DL2212合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080020
+           PNT_ADD	= 20
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE22
+           LONGNAME	= '10kV开关DL151合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080021
+           PNT_ADD	= 21
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE23
+           LONGNAME	= '10kV开关DL152合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080022
+           PNT_ADD	= 22
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE24
+           LONGNAME	= '10kV开关DL1440合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080023
+           PNT_ADD	= 23
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE25
+           LONGNAME	= '10kV开关DL254合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080024
+           PNT_ADD	= 24
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE26
+           LONGNAME	= '10kV开关DL253合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080025
+           PNT_ADD	= 25
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE27
+           LONGNAME	= '10kV开关DL103合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080026
+           PNT_ADD	= 26
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE28
+           LONGNAME	= '10kV开关DL1431合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080027
+           PNT_ADD	= 27
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE29
+           LONGNAME	= '10kV开关DL291合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080028
+           PNT_ADD	= 28
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE30
+           LONGNAME	= '10kV开关DL2432合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080029
+           PNT_ADD	= 29
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE31
+           LONGNAME	= '10kV开关DL203合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080030
+           PNT_ADD	= 30
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE32
+           LONGNAME	= '10KV开关消谐装置接地报警(613_9)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080031
+           PNT_ADD	= 31
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE33
+           LONGNAME	= '10KV开关消谐装置过压报警(613_10)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080032
+           PNT_ADD	= 32
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE34
+           LONGNAME	= '10KV开关消谐装置消谐报警(613_11)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080033
+           PNT_ADD	= 33
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE35
+           LONGNAME	= '10KV开关消谐装置异常报警(613_12)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080034
+           PNT_ADD	= 34
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE36
+           LONGNAME	= '10KV开关弧光保护装置(613_13)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080035
+           PNT_ADD	= 35
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE37
+           LONGNAME	= '10KV开关弧光保护装置故障报警(613_14)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080036
+           PNT_ADD	= 36
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE38
+           LONGNAME	= '10KV开关消谐装置接地报警(613_22)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080037
+           PNT_ADD	= 37
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE39
+           LONGNAME	= '10KV开关消谐装置过压报警(613_23)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080038
+           PNT_ADD	= 38
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE40
+           LONGNAME	= '10KV开关消谐装置消谐报警(613_24)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080039
+           PNT_ADD	= 39
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE41
+           LONGNAME	= '10KV开关消谐装置异常报警(613_25)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080040
+           PNT_ADD	= 40
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE42
+           LONGNAME	= '10KV开关弧光保护装置(613_26)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080041
+           PNT_ADD	= 41
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE43
+           LONGNAME	= '10KV开关弧光保护装置故障报警(613_27)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080042
+           PNT_ADD	= 42
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE44
+           LONGNAME	= '1#~2#机组1#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080043
+           PNT_ADD	= 43
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE45
+           LONGNAME	= '1#~2#机组1#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080044
+           PNT_ADD	= 44
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE46
+           LONGNAME	= '1#~2#机组2#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080045
+           PNT_ADD	= 45
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE47
+           LONGNAME	= '1#~2#机组2#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080046
+           PNT_ADD	= 46
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE48
+           LONGNAME	= '3#~4#机组1#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080047
+           PNT_ADD	= 47
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE49
+           LONGNAME	= '3#~4#机组1#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080048
+           PNT_ADD	= 48
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE50
+           LONGNAME	= '3#~4#机组2#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080049
+           PNT_ADD	= 49
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE51
+           LONGNAME	= '3#~4#机组2#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080050
+           PNT_ADD	= 50
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE52
+           LONGNAME	= '照明1#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080051
+           PNT_ADD	= 51
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE53
+           LONGNAME	= '照明1#厂用变温控箱故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080052
+           PNT_ADD	= 52
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE54
+           LONGNAME	= '照明1#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080053
+           PNT_ADD	= 53
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE55
+           LONGNAME	= '照明2#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080054
+           PNT_ADD	= 54
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE56
+           LONGNAME	= '照明2#厂用变温控箱故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080055
+           PNT_ADD	= 55
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE57
+           LONGNAME	= '照明2#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080056
+           PNT_ADD	= 56
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE58
+           LONGNAME	= '公用1#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080057
+           PNT_ADD	= 57
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE59
+           LONGNAME	= '公用1#厂用变温控箱故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080058
+           PNT_ADD	= 58
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE60
+           LONGNAME	= '公用1#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080059
+           PNT_ADD	= 59
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE61
+           LONGNAME	= '公用2#厂用变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080060
+           PNT_ADD	= 60
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE62
+           LONGNAME	= '公用2#厂用变温控箱故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080061
+           PNT_ADD	= 61
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE63
+           LONGNAME	= '公用2#厂用变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080062
+           PNT_ADD	= 62
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE64
+           LONGNAME	= '10kV1#高厂变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080063
+           PNT_ADD	= 63
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE65
+           LONGNAME	= '10kV1#高厂变温控箱故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080064
+           PNT_ADD	= 64
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE66
+           LONGNAME	= '10kV1#高厂变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080065
+           PNT_ADD	= 65
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE67
+           LONGNAME	= '10kV2#高厂变绕组温度过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080066
+           PNT_ADD	= 66
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE68
+           LONGNAME	= '10kV2#高厂变温控箱故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080067
+           PNT_ADD	= 67
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE69
+           LONGNAME	= '10kV2#高厂变绕组温度过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11080068
+           PNT_ADD	= 68
+           AOR_GRP	= GEN
+
+END

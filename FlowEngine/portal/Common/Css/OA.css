@@ -1,0 +1,45 @@
+A
+{
+    FONT-SIZE: 9pt;
+    COLOR: #999999;
+    LINE-HEIGHT: 14pt;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    CURSOR: hand;
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+.input_line
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: ËÎÌו;
+    HEIGHT: 20px
+}
+BODY
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    HEIGHT: 14pt
+}
+TABLE
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000000;
+    LINE-HEIGHT: 12pt
+}
+.buttons
+{
+    FONT-SIZE: 9pt;
+    WIDTH: 80px;
+    HEIGHT: 25px
+}
+.BGColor
+{
+    BACKGROUND-COLOR: #d4d0c8
+}
+.DisColor
+{
+    COLOR: #999999
+}

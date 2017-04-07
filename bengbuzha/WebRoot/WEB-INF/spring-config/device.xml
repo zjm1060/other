@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	
+    <bean name="/device"
+        class="com.bitc.jk.xmis.web.action.DeviceAction">
+        <property name="deviceService">
+            <ref bean="deviceServiceImpl" />
+        </property>
+    </bean>
+    <bean id="deviceServiceImpl"
+        class="com.bitc.jk.xmis.service.impl.DeviceServiceImpl">
+        <property name="deviceDAO">
+            <ref local="deviceDAOImpl" />
+        </property>
+        <property name="projectDAO">
+            <ref bean="projectDAOImpl" />
+        </property>
+         <property name="workflowContext">
+            <ref bean="fireRuntimeContext"/>
+        </property>
+    </bean>
+    <bean id="deviceDAOImpl"
+        class="com.bitc.jk.xmis.dao.impl.DeviceDAOImpl" parent="hibernateBaseDAO">
+    	<property name="jt">
+            <ref bean="JdbcTemplate" />
+        </property>
+    </bean>
+</beans>

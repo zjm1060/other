@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='GBK'?>
+<tree id="0">
+	<item text="监控系统事业部" id="MCDept" open="1" im0="tombs.gif" im1="tombs.gif" im2="iconSafe.gif" call="1" select="1">
+		<userdata name="file">http://#</userdata>
+		<item text="工程一部" id="EngDept1" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+			<item text="ABC" id="lb" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif">
+				<userdata name="file">http://#</userdata>
+				<item text="a" id="lb_1" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif">
+					<userdata name="file">http://#</userdata>
+				</item>
+				<item text="b" id="lb_2" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif">
+					<userdata name="file">http://#</userdata>
+				</item>
+				<item text="c" id="lb_3" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif">
+					<userdata name="file">http://#</userdata>
+				</item>
+			</item>
+		</item>
+		<item text="工程二部" id="EngDept2" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+		</item>
+		<item text="工程三部" id="EngDept3" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+		</item>
+		<item text="工程四部" id="EngDept4" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+		</item>
+		<item text="开发部" id="DevDept" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+			<item text="王峥瀛" id="DevDept_01" im0="01.gif" im1="01.gif" im2="01.gif">
+				<userdata name="file">http://www.sohu.com/</userdata>
+			</item>
+			<item text="李轩" id="DevDept_02" im0="01.gif" im1="01.gif" im2="01.gif">
+				<userdata name="file">http://www.sohu.com/</userdata>
+			</item>
+		</item>
+		<item text="项目管理部" id="ProDept" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+		</item>
+		<item text="质量管理部" id="QADept" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+		</item>
+		<item text="总工办" id="GenDept" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<userdata name="file">http://#</userdata>
+		</item>
+	</item>
+</tree> 

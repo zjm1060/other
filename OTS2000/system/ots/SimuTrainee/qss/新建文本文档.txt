@@ -1,0 +1,26 @@
+QWidget {
+font: 14pt ;
+background-image: url(:/pic/images/background/hostpagebackround.png);
+border-color: rgb(150 194,219);
+background-color: rgb(231, 240, 245);
+}
+QGroupBox {
+font: 75 16pt ;
+/*background-image: url(:/pic/images/background/Í¸Ã÷µ×Í¼1.png);*/
+color: rgb(255, 0, 0);
+}
+QFrame {
+/*background-image: url(:/pic/images/background/»¶Ó­½øÈëÎÄ×Ö.png);*/
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255,0));
+}
+QWidget#hostpage QWidget {
+font: 14pt "ËÎÌå";
+/*background-image: url(:/pic/images/background/hostpagebackround.png);*/
+border-color: rgb(150 194,219);
+background-color: rgb(231, 240, 245);
+}
+/*QWidget#hostpage QGroupBox {  */ 
+/*font: 75 16pt "ººÒÇÖÐºÚ¼ò";*/ 
+/*background-image: url(:/pic/images/background/Í¸Ã÷µ×Í¼1.png);*/ 
+/*/*color: rgb(255, 0, 0);*/ */ 
+/*}*/ 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="XMISDB"></property>
+		<property name="mappingResources">
+			<list>
+				<!-- value>com/bitc/jk/xmis/model/hbm/Security.hbm.xml</value-->				
+				<value>com/bitc/jk/xmis/model/hbm/AttachedFilesKZH.hbm.xml</value>				
+				<value>com/bitc/jk/xmis/model/hbm/System.hbm.xml</value>
+				<value>com/bitc/jk/xmis/model/hbm/Condition.hbm.xml</value>
+				<value>com/bitc/jk/xmis/model/hbm/Organization.hbm.xml</value>
+				<value>com/bitc/jk/xmis/model/hbm/Crm.hbm.xml</value>
+				<value>com/bitc/jk/xmis/model/hbm/Contract.hbm.xml</value>
+				<value>com/bitc/jk/xmis/model/hbm/Project.hbm.xml</value>
+                <value>com/bitc/jk/xmis/model/hbm/Device.hbm.xml</value>
+				<value>com/bitc/jk/xmis/report/model/report.hbm.xml</value>
+                <value>com/bitc/jk/xmis/workflow/model/workflow.hbm.xml</value>
+                <value>com/bitc/jk/xmis/model/hbm/MessageInfo.hbm.xml</value>
+                <value>com/bitc/jk/xmis/model/hbm/MissAttendanceObj.hbm.xml</value>
+                <value>com/bitc/jk/xmis/task/Task.hbm.xml</value>
+                <value>com/bitc/jk/xmis/model/hbm/DeviceSheetImportInfo.hbm.xml</value>
+                <value>com/bitc/jk/xmis/model/hbm/Bid.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties"> 
+			<props>
+				<prop key="dialect">org.hibernate.dialect.SQLServerDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+			</props>			
+		</property>
+		<property name="mappingJarLocations">
+			<list>
+				<value>
+					WEB-INF/lib/org-fireflow-engine-*.jar
+				</value>
+			</list>
+		</property>
+		<property name="mappingLocations">
+			<list>
+				<value>
+					classpath*:org/fireflow/example/**/*.hbm.xml
+				</value>
+			</list>
+		</property>
+         <property name="lobHandler" ref="lobHandler"/>
+	</bean>
+	<bean id="ht" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="hibernateBaseDAO" abstract="true">
+		<property name="ht">
+			<ref local="ht"/>			
+		</property>		
+	</bean>
+</beans>

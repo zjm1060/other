@@ -1,0 +1,290 @@
+TABLE      NAME = EQUIP
+
+STATION NAME   = PBG
+GROUP      NAME		= F1
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F1:'
+           COMMENT	= '1#机组'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 1
+
+GROUP      NAME		= F1_PRO
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F1_PRO:'
+           COMMENT	= '1#机组水机保护屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 2
+
+GROUP      NAME		= F1_RTD
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F1_RTD:'
+           COMMENT	= '1#机组RTD测温屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 3
+
+GROUP      NAME		= F2
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F2:'
+           COMMENT	= '2#机组'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 4
+
+GROUP      NAME		= F2_PRO
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F2_PRO'
+           COMMENT	= '2#机组水机保护屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 5
+
+GROUP      NAME		= F2_RTD
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F2_RTD:'
+           COMMENT	= '2#机组RTD测温屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 6
+
+GROUP      NAME		= F3
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= '3F:'
+           COMMENT	= '3#机组'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 7
+
+GROUP      NAME		= F3_PRO
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F3_PRO:'
+           COMMENT	= '3#机组水机保护屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 8
+
+GROUP      NAME		= F3_RTD
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F3_RTD:'
+           COMMENT	= '3#机组RTD测温屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 9
+
+GROUP      NAME		= F4
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= '4F:'
+           COMMENT	= '4#机组'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 10
+
+GROUP      NAME		= F4_PRO
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F4_PRO:'
+           COMMENT	= '4#机组水机保护屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 11
+
+GROUP      NAME		= F4_RTD
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F4_RTD:'
+           COMMENT	= '4#机组RTD测温屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 12
+
+GROUP      NAME		= F5
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= '5F:'
+           COMMENT	= '5#机组'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 13
+
+GROUP      NAME		= F5_PRO
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F5_PRO'
+           COMMENT	= '5#机组水机保护屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 14
+
+GROUP      NAME		= F5_RTD
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F5_RTD:'
+           COMMENT	= '5#机组RTD测温屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 15
+
+GROUP      NAME		= F6
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= '6F:'
+           COMMENT	= '6#机组'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 16
+
+GROUP      NAME		= F6_PRO
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F6_PRO:'
+           COMMENT	= '6#机组水机保护屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 17
+
+GROUP      NAME		= F6_RTD
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'F6_RTD:'
+           COMMENT	= '6#机组RTD测温屏'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 18
+
+GROUP      NAME		= LCU7
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'LCU7:'
+           COMMENT	= '副厂房公用'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 19
+
+GROUP      NAME		= LCU8
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'LCU8:'
+           COMMENT	= '安装间公用'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 20
+
+GROUP      NAME		= LCU9
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'LCU9:'
+           COMMENT	= '开关站'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 21
+
+GROUP      NAME		= LCU10
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'LCU10:'
+           COMMENT	= '地面副厂房公用'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 22
+
+GROUP      NAME		= LCU11
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'LCU11:'
+           COMMENT	= '进水口'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 23
+
+GROUP      NAME		= LCU12
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'LCU12:'
+           COMMENT	= '大坝闸门'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 24
+
+GROUP      NAME		= LCU13
+           RTU_TYPE	= ABCONTROL
+           LONGNAME	= 'LCU13:'
+           COMMENT	= '尼日河首部闸门'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 25
+
+GROUP      NAME		= SYS
+           RTU_TYPE	= SYS
+           LONGNAME	= 'SYS:'
+           COMMENT	= '监控系统'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           CONDITION_DEV	= 
+           CONDITION_TYPE	= 
+           CONDITION_ID	= 
+           DEV_ID	= 26
+
+END  TABLE

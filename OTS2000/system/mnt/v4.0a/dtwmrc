@@ -1,0 +1,457 @@
+####################################################################
+#
+#    Original copy: /usr/dt/config/C/sys.dtwmrc
+#
+#    The Resource Description File for the CDE Window Manager dtwm
+#
+#    (c) Copyright 1993, 1994 Hewlett-Packard Company.
+#    (c) Copyright 1993, 1994 International Business Machines Corp. 
+#    (c) Copyright 1993, 1994 Sun Microsystems, Inc.
+#    (c) Copyright 1993, 1994 Unix System Labs, Inc., a subsidiary
+#        of Novell, Inc.
+#
+#    $XConsortium: sys.dtwmrc.src /main/cde1_maint/3 1995/10/30 17:23:26 drk $
+#
+####################################################################
+
+###
+#
+#  Please make a COPY of this file before editing it.
+#
+#  Personalized copies typically exist as:
+#
+#       $HOME/.dt/dtwmrc
+#
+###
+
+###
+#
+# H9000 Menu Description
+#
+###
+Menu H9000Menu
+{
+    	"H9000工作区菜单"		f.title
+	no-label                    	f.separator
+	"启动H9000系统"              	f.exec "/home/ems/h9000/bin/sysmgr.dxe  > /dev/console"
+	no-label                    	f.separator
+	"启动画面(oix)"              	f.exec "/home/ems/h9000/bin/oix.dxe > /dev/console"
+	no-label                    	f.separator
+	"停止H9000系统"                 f.exec "/home/ems/h9000/bin/sysmgr.dxe > /dev/null"
+	no-label                    	f.separator
+	"音频控制"                      f.action SDtAudioControl
+	no-label                    	f.separator
+}
+
+###
+#
+# IWHR Menu Description
+#
+###
+Menu IWHRMenu
+{
+    	"IWHR工作区菜单"		f.title
+	no-label                    	f.separator
+	"控制台..."			f.action DttermConsole
+	no-label 			f.separator
+	"终端..."			f.action Terminal
+	no-label                    	f.separator
+	"Web浏览器..."			f.action WebBrowser	
+	no-label                    	f.separator
+	"文件管理程序..."		f.action DtfileHome
+	no-label                    	f.separator
+	"进程管理程序"           	f.action SDtProcess
+	no-label 			f.separator
+    	"打印管理程序..."               f.action DtPrintManager
+	no-label 			f.separator
+ 	"性能监视..."			f.action OWperfmeter
+
+
+}
+	
+###
+#
+# Root Menu Description
+#
+###
+
+Menu DtRootMenu
+{
+    "工作区菜单"	f.title
+
+     
+     "程序"			f.menu ProgramsMenu
+     "主机"			f.menu HostsMenu
+      no-label			f.separator
+
+     "窗口"			f.menu WindowsMenu
+      no-label			f.separator
+
+     "添加菜单项..."		f.action AddItemToMenu
+     "定制菜单..."         	f.action CustomizeWorkspaceMenu
+      no-label                   f.separator
+     
+     "锁屏"			f.action LockDisplay
+     "暂停系统..."		f.action SDTsuspend
+     "注销..."			f.action ExitSession
+}
+
+Menu WindowsMenu
+{
+    "窗口"				f.title
+    "上移"				f.circle_up
+    "下移"				f.circle_down
+    "刷新"				f.refresh
+    "整理图标"				f.pack_icons
+     no-label				f.separator
+    "最小化/恢复前端面板"		f.toggle_frontpanel
+    "重新启动工作区管理程序..."		f.restart
+    "更新工作区菜单"			f.action UpdateWorkspaceMenu
+     no-label				f.separator
+    "禁止访问控制"			f.action Xhost+
+    "允许访问控制"			f.action Xhost-
+     no-label				f.separator
+    "除去窗口..."			f.exec /usr/openwin/bin/xkill
+}
+
+Menu ProgramsMenu
+{
+    "程序"				f.title
+    "文件管理程序..."			f.action DtfileHome
+    "文本编辑程序..."			f.action TextEditor
+    "邮寄程序..."			f.action Dtmail
+    "日历..."				f.action Dtcm
+    "Web浏览器..."			f.action WebBrowser
+     no-label				f.separator
+    "终端..."				f.action Terminal
+    "控制台..."				f.action DttermConsole
+     no-label				f.separator
+    "时钟..."				f.action OWclock
+    "计算器..."				f.action Dtcalc
+    "性能监视..."			f.action OWperfmeter
+
+      "电源管理程序..."			f.action SDTpowermgr
+
+     "打印管理程序..."			f.action DtPrintManager
+    "音频..."				f.action SDTaudio
+     no-label				f.separator
+    "图像查看程序..."			f.action SDTimage
+    "快照..."				f.action SDTsnapshot
+    "图标编辑程序..."			f.action Dticon
+     no-label				f.separator
+    "式样管理程序..."			f.action Dtstyle
+    "应用管理程序..."			f.action Dtappmgr
+    "帮助..."				f.action Dthelpview
+    "AnswerBook2..."			f.action SDTab2
+}
+
+###
+#
+# Front panel Manu Description
+#
+###
+
+Menu DtPanelMenu
+{
+    恢复			_R	f.normalize
+    移动			_M	f.move
+    最小化			_n	f.minimize
+    降低			_L	f.lower
+    刷新			_f	f.refresh
+     no-label				f.separator
+    "注销..."			_o	f.action ExitSession
+}
+
+
+###
+#
+# Sample Window Menu Description
+# This menu description exists as a sample only.
+# The normal window manager menu is built in.
+#
+###
+
+Menu SampleWindowMenu
+{
+      "恢复"			_R			f.normalize
+    "移动"			_M			f.move
+    "大小"			_S			f.resize
+    "最小化"			_n			f.minimize
+    "最大化"			_x			f.maximize
+    "降低"			_L			f.lower
+     no-label						f.separator
+    "占用工作区..."		_O			f.workspace_presence
+    "占用所有工作区"		_A			f.occupy_all
+    "不占用工作区"		_U			f.remove
+     no-label						f.separator
+    "关闭"			_C	Alt<Key>F4	f.kill
+}
+
+###
+#
+# Alternate Window Menu Description without accelerators
+#
+###
+
+Menu NoAcceleratorWindowMenu
+{
+    "恢复"			_R	f.normalize
+    "移动"			_M	f.move
+    "大小"			_S	f.resize
+    "最小化"			_n	f.minimize
+    "最大化"			_x	f.maximize
+    "降低"			_L	f.lower
+     no-label				f.separator
+    "占用工作区..."		_O	f.workspace_presence
+    "占用所有工作区"		_A	f.occupy_all
+    "不占用工作区"		_U	f.remove
+     no-label				f.separator
+    "关闭"			_C	f.kill
+}
+
+###
+#
+# Key Bindings Description
+#
+###
+
+Keys DtKeyBindings
+{
+
+
+    #
+    # Global
+    #
+    #Alt<Key>Menu		root|icon|window	f.toggle_frontpanel 
+    Alt<Key>Tab			root|icon|window	f.next_key
+    Alt Shift<Key>Tab		root|icon|window	f.prev_key
+    Alt<Key>Escape		root|icon|window	f.next_key
+    Alt Shift<Key>Escape	root|icon|window	f.prev_key
+    Alt<Key>Down		root|icon|window	f.circle_down
+    Alt<Key>Up			root|icon|window	f.circle_up
+    Alt<Key>Left		root|icon|window	f.prev_workspace
+    Alt<Key>Right		root|icon|window	f.next_workspace
+    Alt Ctrl Shift<Key>exclam	root|icon|window	f.set_behavior
+    #
+    # Root
+    #
+    <Key>SunAgain		root|ifkey		f.pack_icons
+    <Key>SunProps		root|ifkey		f.version
+    <Key>SunUndo		root|ifkey		f.refresh
+    <Key>SunFront		root|ifkey		f.circle_up
+    Shift<Key>SunFront		root|ifkey		f.circle_down
+    <Key>Down			root			f.circle_down
+    <Key>Up			root			f.circle_up
+    <Key>Right			root			f.next_workspace
+    <Key>Left			root			f.prev_workspace
+    
+    #
+    <Key>SunAudioMute        root|icon|window|ifkey  f.exec /usr/dt/appconfig/sdtvolctl/muteVolume
+    <Key>SunAudioRaiseVolume root|icon|window|ifkey  f.exec /usr/dt/appconfig/sdtvolctl/volumeUp
+    <Key>SunAudioLowerVolume root|icon|window|ifkey  f.exec /usr/dt/appconfig/sdtvolctl/volumeDown
+    #
+    # Window/Icon
+    #
+    <Key>SunFront               window|icon|ifkey       f.raise_lower
+    <Key>SunOpen                window|ifkey            f.minimize
+    Shift<Key>Escape		window|icon		f.post_wmenu
+    Alt<Key>space		window|icon		f.post_wmenu
+    Alt<Key>F6  		window			f.next_key transient
+    Alt Shift<Key>F6		window			f.prev_key transient
+    Alt<Key>F4			window|icon|ifkey	f.kill
+    Alt<Key>SunProps		window|icon|ifkey	f.workspace_presence
+    Alt<Key>SunPaste		window|icon|ifkey	f.occupy_all
+    Alt<Key>SunCut		window|icon|ifkey	f.remove
+    Alt<Key>KP_Insert		window|icon		f.occupy_all
+    Alt<Key>Delete		window|icon		f.remove
+    Ctrl<Key>L2			window|ifkey		f.next_cmap
+    Ctrl<Key>L4			window|ifkey		f.prev_cmap
+    #
+    # Icon
+    #
+    <Key>SunOpen                icon|ifkey              f.restore
+    Alt<Key>F4	                icon|ifkey		f.kill
+    <Key>SunProps		icon|ifkey		f.workspace_presence
+    <Key>SunPaste		icon|ifkey		f.occupy_all
+    <Key>SunCut			icon|ifkey		f.remove
+    <Key>KP_Insert		icon|ifkey		f.occupy_all
+    <Key>Delete			icon|ifkey		f.remove
+   
+
+}
+
+###
+#
+# Mouse Button Bindings Description
+#
+###
+
+Buttons DtButtonBindings
+{
+
+    <Btn1Down>		root			f.marquee_selection
+#    <Btn2Click>	root			f.toggle_frontpanel
+    <Btn3Down>		root			f.menu  H9000Menu
+    Shift<Btn1Click>	frame|icon		f.lower
+    <Btn1Click>		frame|icon		f.raise
+    <Btn1Click2>	frame			f.maximize
+    <Btn1Click2>	icon			f.restore
+#   <Btn2Click>	frame|icon		f.raise_lower
+    <Btn3Down>		frame|icon		f.post_wmenu
+    Alt<Btn1Click>	frame|icon|window	f.raise
+    Alt<Btn1Click2>	frame|window		f.minimize
+    Alt<Btn1Click2>	icon			f.restore
+#   Alt<Btn2Click>	frame|icon|window	f.raise_lower
+    Alt<Btn1Down>	frame|icon|window	f.move
+    Alt<Btn3Down>	window			f.minimize
+#    <Btn2Click>         app             	f.nop
+    Alt Shift<Btn3Down>		root		f.menu  IWHRMenu
+}
+
+
+###
+#
+# Defaults:   Window menus, key bindings, and mouse button bindings
+#
+###
+
+Menu DefaultWindowMenu
+{
+    "恢复"	_R	Alt<Key>F5	f.normalize
+    "移动"	_M	Alt<Key>F7	f.move
+    "大小"	_S	Alt<Key>F8	f.resize
+    "最小化"	_n	Alt<Key>F9	f.minimize
+    "最大化"	_x	Alt<Key>F10	f.maximize
+    "降低"	_L	Alt<Key>F3	f.lower
+    no-label				f.separator
+    "关闭"	_C	Alt<Key>F4	f.kill
+}
+
+Keys DefaultKeyBindings
+{
+    Shift<Key>Escape		icon|window		f.post_wmenu
+    Alt<Key>space		icon|window		f.post_wmenu
+    Alt<Key>Tab			root|icon|window	f.next_key
+    Alt Shift<Key>Tab		root|icon|window	f.prev_key
+    Alt<Key>Escape		root|icon|window	f.next_key
+    Alt Shift<Key>Escape	root|icon|window	f.prev_key
+    Alt Ctrl Shift<Key>exclam	root|icon|window	f.set_behavior
+    Alt<Key>F6			window			f.next_key transient
+}
+
+Buttons DefaultButtonBindings
+{
+    <Btn1Down>		frame|icon	f.raise
+    <Btn3Down>		icon		f.post_wmenu
+}
+
+####################################################################
+
+Menu ApplicationsMenu
+{
+    "应用程序"			f.title
+    "应用管理程序"       	f.action Dtappmgr
+    "音频和视频"		f.action SDTjmplay
+    "音频控制"			f.action SDtAudioControl
+    "计算器"                	f.action Dtcalc
+    "日历"                  	f.action Dtcm
+    "图标编辑程序"		f.action Dticon
+    "图像查看程序"              f.action SDTimage
+    "OW时钟"			f.action OWclock
+    "快照"			f.action SDTsnapshot
+    "文本编辑程序"		f.action TextEditor
+    "文本提示"                 	f.action Note
+    "语音提示"                	f.action Record
+}
+
+Menu CardsMenu
+{
+    "卡片"                     f.title
+    "地址管理程序"           	f.action SDtName
+}
+
+Menu FilesMenu
+{
+    "文件"			f.title
+    "文件管理程序"		f.action Dtfile
+    "查找文件"			f.action SDtFind
+    "特性..."             	f.action FileProperties
+}
+
+Menu FoldersMenu
+{
+    "文件夹"                   	f.title
+    "清空废纸篓"           	f.action DtEmptyTrash
+    "文件管理程序 - 起始"       f.action DtfileHome
+    "打开软盘"  	 	f.action OpenFloppy
+    "可删除媒体管理程序"   	f.action Dtmediamgr
+    "废纸篓"                 	f.action Dttrash
+}
+
+Menu HelpMenu
+{
+    "帮助"                      f.title
+    "AnswerBook2"               f.action SDTab2
+    "桌面简介"      		f.action OpenDtIntro
+    "前端面板帮助"          	f.action FPHelp
+    "帮助查看程序"              f.action Dthelpview
+    "Solaris支持"           	f.action Open "/usr/dt/config/C/wsmenu/Help/Solaris_Support"
+    "SunSolve在线"           	f.action Open "/usr/dt/config/C/wsmenu/Help/SunSolve_Online"
+}
+
+Menu HostsMenu
+{
+    "主机"                     	f.title
+    "查找主机..."              	f.action HOST_Find
+    "性能监视"         		f.action SDtPerfmeter
+    "终端控制台"          	f.action DttermConsole
+    "本主机"                 	f.action Terminal "/usr/dt/config/C/wsmenu/Hosts/This_Host"
+    "工作站信息"          	f.action SDtWsinfo
+}
+
+Menu LinksMenu
+{
+    "链接"                     f.title
+    "查找Web页面"             f.action Open "/usr/dt/config/C/wsmenu/Links/Find_Web_Page"
+    "Web浏览器"               f.action WebBrowser
+}
+
+Menu MailMenu
+{
+    "邮寄"			f.title
+    "邮寄程序"			f.action Dtmail
+    "意见箱"            	f.action MailTo "/usr/dt/config/C/wsmenu/Mail/Suggestion_Box"
+}
+
+Menu ToolsMenu
+{
+    "工具"                     	f.title
+    "系统管理"                 	f.action SDTadmintool
+    "创建动作"             	f.action Dtcreate
+    "热键编辑器"             	f.action SDtHotkey
+    "电源管理程序"             	f.action SDTpowermgr
+    "打印管理程序"             	f.action DtPrintManager
+    "打印机管理程序"		f.action PrinterAdministratorDtspcd
+    "进程管理程序"           	f.action SDtProcess
+    "桌面控制"			f.action DtControls
+
+    "智能卡"			f.action SDTscgui
+
+    "终端"                  	f.action Terminal
+    "错误监察"              	f.action DttermErrorlog
+}
+
+###
+#
+# Designer Desktop Customization: $HOME/.dt/wsmenu.dtwmrc (if it exists)
+# User Customization: $HOME/.dt/user.dtwmrc (if it exists)
+#
+###
+
+INCLUDE
+{
+#    $HOME/.dt/$LANG/wsmenu.dtwmrc
+#    $HOME/.dt/user.dtwmrc
+}
+
+#################  End of the dtwmrc file   #####################

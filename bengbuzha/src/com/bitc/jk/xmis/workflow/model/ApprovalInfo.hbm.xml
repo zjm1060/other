@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-9-11 17:00:19 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.bitc.jk.xmis.workflow.model.ApprovalInfo" table="APPROVALINFO">
+        <id name="ID" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="serialVersionUID" type="long" access="field">
+            <column name="SERIALVERSIONUID" />
+        </property>
+        <property name="workItemID" type="java.lang.String">
+            <column name="WORKITEMID" />
+        </property>
+        <property name="isApproved" type="int">
+            <column name="ISAPPROVED" />
+        </property>
+        <property name="approvedTime" type="java.util.Date">
+            <column name="APPROVEDTIME" />
+        </property>
+        <property name="advice" type="java.lang.String">
+            <column name="ADVICE" />
+        </property>
+        <many-to-one name="approver" class="com.bitc.jk.xmis.model.SimpleEmployee" fetch="join">
+            <column name="APPROVER" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

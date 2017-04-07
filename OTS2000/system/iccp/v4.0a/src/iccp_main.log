@@ -1,0 +1,63 @@
+
+
+***********************************************************
+          LOGGING STARTED Fri Apr 13 09:36:30 2007
+***********************************************************
+
+00.000s SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+02.189s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'CDCS'
+      Association 'TGDC_RB_LINK_1'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+      Association 'TGDC_RB_LINK_2'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS2'
+          AP Title mismatch
+          Remote address match level 0
+  Matched: Remote 'CDCS', Asociation 'TGDC_RB_LINK_1'
+
+1117.853s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'CDCS'
+      Association 'TGDC_RB_LINK_1'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS1'
+          AP Title mismatch
+          Remote address match level 0
+      Association 'TGDC_RB_LINK_2'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS2'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'CDCS', Asociation 'TGDC_RB_LINK_2'
+
+1545.164s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 13 seconds.
+  MAY CAUSE UNEXPECTED TIMEOUTS, DISCONNECTS, ABORTS.
+
+1555.831s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'CDCS'
+      Association 'TGDC_RB_LINK_1'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS1'
+          AP Title mismatch
+          Remote address match level 0
+      Association 'TGDC_RB_LINK_2'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS2'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'CDCS', Asociation 'TGDC_RB_LINK_2'

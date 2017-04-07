@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ots - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\TAWZUE\AppData\Local\Temp\RSPEE7A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/otslib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\home\ems\system\ots\ots_hdb\src\load_SimuEngine_rtdb.c"
+"H:\home\ems\system\ots\ots_hdb\src\ots_lib.c"
+"H:\home\ems\system\ots\ots_hdb\src\SimuEngine_util.c"
+]
+Creating command line "cl.exe @C:\Users\TAWZUE\AppData\Local\Temp\RSPEE7A.tmp" 
+Creating command line "link.exe -lib /nologo /out:"..\lib\ots.lib"  .\Release\load_SimuEngine_rtdb.obj .\Release\ots_lib.obj .\Release\SimuEngine_util.obj "
+<h3>Output Window</h3>
+Compiling...
+load_SimuEngine_rtdb.c
+ots_lib.c
+SimuEngine_util.c
+Creating library...
+
+
+
+<h3>Results</h3>
+ots.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

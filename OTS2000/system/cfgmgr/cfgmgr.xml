@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfgmgr>
+	<mainwindow>
+		<fileTypeName>INTERLOCK,CALU,TEM,WATER,COMMU,DBIN</fileTypeName>
+	</mainwindow>
+	
+	<checkdbin>
+		<typelist>15F,16F,17F,18F,19F,20F,21F,22F,23F,24F,25F,26F,27F,28F,29F,30F,31F,32F,10kV,400V,GIS,Y1,Y2,YC,sx,zb</typelist>
+		<filepath>/home/ems/h9000/dsp</filepath>
+		<errfile>/home/ems/h9000/cfgmgr/def/DbinErr.log</errfile>
+	</checkdbin>
+	
+	<checkinterlock>
+		<interlockfile>/home/ems/h9000/cfgmgr/def/InterLockFile.def</interlockfile>
+		<errfile>/home/ems/h9000/cfgmgr/def/InterLockErr.log</errfile>
+		<filepath>/home/ems/h9000/cfgmgr/def</filepath>
+	</checkinterlock>
+	
+	<checktemp>
+		<tempfile>temp_eigenvalue.def</tempfile>
+		<errfile>/home/ems/h9000/cfgmgr/def/TempErr.log</errfile>
+		<filepath>/home/ems/h9000/cfgmgr/def</filepath>
+	</checktemp>
+	
+	<checkwater>
+		<waterfile>water_revert.def</waterfile>
+		<errfile>/home/ems/h9000/cfgmgr/def/TempErr.log</errfile>
+		<filepath>/home/ems/h9000/cfgmgr/def</filepath>
+	</checkwater>
+	
+	<checkcalcu>
+		<calcufile>/home/ems/h9000/cfgmgr/def/CalcuFile.def</calcufile>
+		<calcufile1>/home/ems/h9000/cfgmgr/def/CalcuFile1.def</calcufile1>
+		<errfile>/home/ems/h9000/cfgmgr/def/CalcuErr.log</errfile>
+		<filepath>/home/ems/h9000/cfgmgr/def</filepath>
+	</checkcalcu>
+	
+	<checkdcom>
+		<filelist>
+			<file filename="ICCP_ClientME_DATA.DEF" filetype="iccp" nameindex="1" checkrange="1" LO_RANGE="3" HI_RANGE="4" checkinterlock="0" InterlockIndex="-1"></file>
+			<file filename="ICCP_DP_DATA.DEF" filetype="iccp" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file>
+			<file filename="ICCP_ME_DATA.DEF" filetype="iccp" nameindex="1" checkrange="1" LO_RANGE="3" HI_RANGE="4" checkinterlock="0" InterlockIndex="-1"></file>
+			<file filename="ICCP_SC_CTRL.DEF" filetype="iccp" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="1" InterlockIndex="6"></file>
+			<file filename="ICCP_SE_CTRL.DEF" filetype="iccp" nameindex="1" checkrange="1" LO_RANGE="3" HI_RANGE="4" checkinterlock="1" InterlockIndex="7"></file>
+			<file filename="ICCP_SP_DATA.DEF" filetype="iccp" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file>
+			<file filename="ICCP_ClientDP_DATA.DEF" filetype="iccp" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file>	
+			<file filename="CC101S_ME_DATA.DEF" filetype="iec101,CC" nameindex="1" checkrange="1" LO_RANGE="2" HI_RANGE="3" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="CC101S_DP_DATA.DEF" filetype="iec101,CC" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND101S_DC_CTRL.DEF" filetype="iec101,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="1" InterlockIndex="5"></file >
+			<file filename="ND101S_DP_DATA.DEF" filetype="iec101,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND101S_ME_DATA.DEF" filetype="iec101,ND" nameindex="1" checkrange="1" LO_RANGE="2" HI_RANGE="3" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND101S_SC_CTRL.DEF" filetype="iec101,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND101S_SE_CTRL.DEF" filetype="iec101,ND" nameindex="1" checkrange="1" LO_RANGE="2" HI_RANGE="3" checkinterlock="1" InterlockIndex="6"></file >
+			<file filename="ND101S_SP_DATA.DEF" filetype="iec101,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >	
+			<file filename="CC104S_ME_DATA.DEF" filetype="iec104,CC" nameindex="1" checkrange="1" LO_RANGE="2" HI_RANGE="3" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="CC104S_DP_DATA.DEF" filetype="iec104,CC" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND104S_DC_CTRL.DEF" filetype="iec104,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="1" InterlockIndex="5"></file >
+			<file filename="ND104S_DP_DATA.DEF" filetype="iec104,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND104S_ME_DATA.DEF" filetype="iec104,ND" nameindex="1" checkrange="1" LO_RANGE="2" HI_RANGE="3" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND104S_SC_CTRL.DEF" filetype="iec104,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >
+			<file filename="ND104S_SE_CTRL.DEF" filetype="iec104,ND" nameindex="1" checkrange="1" LO_RANGE="2" HI_RANGE="3" checkinterlock="1" InterlockIndex="6"></file >
+			<file filename="ND104S_SP_DATA.DEF" filetype="iec104,ND" nameindex="1" checkrange="0" LO_RANGE="-1" HI_RANGE="-1" checkinterlock="0" InterlockIndex="-1"></file >
+		</filelist>
+		
+		<filepath>
+			<path filepath="/home/ems/h9000/cfgmgr/dcom/iccp" filetype="iccp" keyword="iccp"></path>
+			<path filepath="/home/ems/h9000/cfgmgr/dcom/iec101" filetype="iec101" keyword="101"></path>
+			<path filepath="/home/ems/h9000/cfgmgr/dcom/iec101" filetype="iec104" keyword="104"></path>
+			<path filepath="/home/ems/h9000/cfgmgr/dcom/iec103" filetype="iec103" keyword="103"></path>
+		</filepath>
+			
+			<errfile>/home/ems/h9000/cfgmgr/dcom/DcomErr.log</errfile>
+
+	</checkdcom>
+</cfgmgr>

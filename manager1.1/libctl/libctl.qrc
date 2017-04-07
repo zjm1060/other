@@ -1,0 +1,14 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+	<file>images/aix.png</file>
+	<file>images/contract.png</file>
+	<file>images/error.png</file>
+	<file>images/expand.png</file>
+	<file>images/home.png</file>
+	<file>images/process.png</file>
+	<file>images/solaris.png</file>
+	<file>images/stepup.png</file>
+	<file>images/windows7.png</file>
+	<file>images/windowsxp.png</file>
+</qresource>
+</RCC>

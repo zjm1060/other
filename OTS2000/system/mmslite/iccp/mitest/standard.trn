@@ -1,0 +1,108 @@
+##############################################################################
+# Systems Integration Specialists Company
+#
+# Standard Siemens ICCP Toolkit Conversion Control File
+#
+# The first column is the from translation string
+# The second column is the to translation string
+#
+# Translations are whole word match case sensitive exact replacement
+# spaces or tabs are used to delimit fields
+#
+##############################################################################
+
+#########################################
+# Toolkit base types
+
+icBoolean 		ST_BOOLEAN    
+icChar    		ST_CHAR        
+icUChar   		ST_UCHAR       
+icShort   		ST_INT16      
+icUShort  		ST_UINT16      
+icInt     		ST_INT        
+icUInt    		ST_UINT        	
+icLong    		ST_INT32      
+icULong   		ST_UINT32     
+icFloat   		ST_FLOAT      
+icDouble  		ST_DOUBLE     
+icGMTBasedSType	ST_INT32  
+
+icTrue           	SD_TRUE
+icFalse          	SD_FALSE 
+
+# These have to be replaced with the Studio or smart text editor
+# because they do not map 1 string to 1 string
+
+#icTypeId          	ST_VOID * 
+#icTimerId         	ST_VOID * 
+#icUserData        	ST_VOID * 
+#icRemoteId        	ST_VOID * 
+#icLinkId          	ST_VOID * 
+#icVariableId      	ST_VOID * 
+#icTransferId      	ST_VOID * 
+#icTransferGroupId 	ST_VOID *   
+#icTimeOfDay       	ST_VOID * 
+#icMsgId  	       	ST_VOID * 
+#icTAVariableId    	ST_VOID * 
+
+# Checkback ID
+
+icCheckbackID		ST_INT16
+
+# The two popular ICCP Scopes
+
+IC_SCOPE_VMD		VCC_SPEC
+IC_SCOPE_DOMAIN		ICC_SPEC
+
+# The ICCP Data Types
+
+icTypeState				Data_State_TDEF
+icTypeStateQ			Data_StateQ_TDEF
+icTypeStateQTimeTag		Data_StateQTimeTag_TDEF
+icTypeStateExtended		Data_StateExtended_TDEF
+icTypeDiscrete			Data_Discrete_TDEF	
+icTypeDiscreteQ			Data_DiscreteQ_TDEF
+icTypeDiscreteQTimeTag	Data_DiscreteQTimeTag_TDEF
+icTypeDiscreteQExtended	Data_DiscreteExtended_TDEF #their Q was redundant
+icTypeReal				Data_Real_TDEF
+icTypeRealQ				Data_RealQ_TDEF
+icTypeRealQTimeTag		Data_RealQTimeTag_TDEF
+icTypeRealExtended		Data_RealExtended_TDEF
+
+IC_TYPE_STATE				Data_State_TYPEID	
+IC_TYPE_STATE_Q				Data_StateQ_TYPEID
+IC_TYPE_STATE_Q_TIME_TAG	Data_StateQTimeTag_TYPEID
+IC_TYPE_STATE_EXTENDED		Data_StateExtended_TYPEID
+IC_TYPE_DISCRETE			Data_Discrete_TYPEID
+IC_TYPE_DISCRETE_Q			Data_DiscreteQ_TYPEID
+IC_TYPE_DISCRETE_Q_TIME_TAG	Data_DiscreteQTimeTag_TYPEID
+IC_TYPE_DISCRETE_Q_EXTENDED	Data_DiscreteExtended_TYPEID
+IC_TYPE_REAL				Data_Real_TYPEID
+IC_TYPE_REAL_Q				Data_RealQ_TYPEID
+IC_TYPE_REAL_Q_TIME_TAG		Data_RealQTimeTag_TYPEID
+IC_TYPE_REAL_EXTENDED		Data_RealExtended_TYPEID
+
+# Block 8 Types
+
+icPriceType					ST_FLOAT                  
+icAccountTypeCodeType		ST_INT16          
+icCommodityClassType		ST_INT16          
+icTransactionAmountType		ST_FLOAT          
+icTransSegCodeType			ST_INT16          
+icReferenceNumType			ST_INT32           
+icUtilityIdType				ST_INT32           
+icInterchangeIdType			ST_INT32           
+icScheduleTimeType			ST_INT32  
+icNumberType				ST_INT16          
+icMatrixId					ST_INT            
+
+icMessageStatus		ST_INT              
+icMessageType		ST_INT              
+#icMessageId		ST_VOID *              
+icReferenceId		ST_INT              
+icDestinationId		ST_INT         
+
+# there is no substitute for icPerror but this makes them easier to 
+# find in ported code
+
+icPerror			ic_Perror     

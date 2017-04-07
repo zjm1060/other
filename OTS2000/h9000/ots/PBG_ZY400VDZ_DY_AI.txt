@@ -1,0 +1,291 @@
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	1F 400V自用电I母线电压显示1
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.UC2_ZYD1-2-3_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.F1.POL.ZY_ZY11_DI11   ? CLOSE
+			&	PBG.F1.SYS.S_ZY11_GZ   ? CLOSE
+			&	PBG.F1.SYS.S_1FZY11_1QA		? CLOSE
+			&	PBG.LCU8.ANA.UC10kV_Ⅰ-10	> 5.5
+			+	PBG.F1.ANA.UC2_ZYD17	> 225
+			&	PBG.F1.POL.ZY_ZY13_DI11   ? CLOSE
+			&	PBG.F1.SYS.S_ZY13_GZ   ? CLOSE
+
+
+STEP:		PBG.F1.ANA.UC2_ZYD1
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F1.ANA.UC2_ZYD2
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F1.ANA.UC2_ZYD3
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	1F 400V自用电I母线电压无显示1
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.UC2_ZYD1-2-3_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.LCU8.ANA.UC10kV_Ⅰ-10	< 1
+			&	PBG.F1.ANA.UC2_ZYD17	< 1
+			+	PBG.F1.POL.ZY_ZY11_DI11   ? OPEN
+			&	PBG.F1.POL.ZY_ZY13_DI11   ? OPEN
+
+
+STEP:		PBG.F1.ANA.UC2_ZYD1
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+STEP:		PBG.F1.ANA.UC2_ZYD2
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+STEP:		PBG.F1.ANA.UC2_ZYD3
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	1F 400V自用电Ⅱ母线电压显示1
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.UC2_ZYD17-18-19_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.F1.POL.ZY_ZY12_DI11   ? CLOSE
+			&	PBG.F1.SYS.S_ZY12_GZ   ? CLOSE
+			&	PBG.F1.SYS.S_1FZY12_2QA		? CLOSE
+			&	PBG.LCU8.ANA.UC10KV-Ⅱ-10	> 5.5
+			+	PBG.F1.ANA.UC2_ZYD1	> 225
+			&	PBG.F1.POL.ZY_ZY13_DI11   ? CLOSE
+			&	PBG.F1.SYS.S_ZY13_GZ   ? CLOSE
+
+
+STEP:		PBG.F1.ANA.UC2_ZYD17
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F1.ANA.UC2_ZYD18
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F1.ANA.UC2_ZYD19
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	1F 400V自用电Ⅱ母线电压无显示1
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.UC2_ZYD17-18-19_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.LCU8.ANA.UC10KV-Ⅱ-10	< 1
+			&	PBG.F1.ANA.UC2_ZYD1	< 1
+			+	PBG.F1.POL.ZY_ZY12_DI11   ? OPEN
+			&	PBG.F1.POL.ZY_ZY13_DI11   ? OPEN
+
+
+STEP:		PBG.F1.ANA.UC2_ZYD17
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+STEP:		PBG.F1.ANA.UC2_ZYD18
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+STEP:		PBG.F1.ANA.UC2_ZYD19
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	4F 400V自用电I母线电压显示1
+!******************************************************************
+SEQUENCE:	PBG.F4.ANA.UC2_ZYD1-2-3_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.F4.POL.ZY_ZY41_DI11   ? CLOSE
+			&	PBG.F4.SYS.S_ZY41_GZ   ? CLOSE
+			&	PBG.F4.SYS.S_4FZY41_1QA		? CLOSE
+			&	PBG.LCU7.ANA.UC10kV_Ⅳ-10	> 5.5
+			+	PBG.F4.ANA.UC2_ZYD17	> 225
+			&	PBG.F4.POL.ZY_ZY43_DI11   ? CLOSE
+			&	PBG.F4.SYS.S_ZY43_GZ   ? CLOSE
+
+
+STEP:		PBG.F4.ANA.UC2_ZYD1
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F4.ANA.UC2_ZYD2
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F4.ANA.UC2_ZYD3
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	4F 400V自用电I母线电压无显示1
+!******************************************************************
+SEQUENCE:	PBG.F4.ANA.UC2_ZYD1-2-3_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.LCU7.ANA.UC10kV_Ⅳ-10	< 1
+			&	PBG.F4.ANA.UC2_ZYD17	< 1
+			+	PBG.F4.POL.ZY_ZY41_DI11   ? OPEN
+			&	PBG.F4.POL.ZY_ZY43_DI11   ? OPEN
+
+
+STEP:		PBG.F4.ANA.UC2_ZYD1
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+STEP:		PBG.F4.ANA.UC2_ZYD2
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+STEP:		PBG.F4.ANA.UC2_ZYD3
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	4F 400V自用电Ⅱ母线电压显示1
+!******************************************************************
+SEQUENCE:	PBG.F4.ANA.UC2_ZYD17-18-19_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.F4.POL.ZY_ZY42_DI11   ? CLOSE
+			&	PBG.F4.SYS.S_ZY42_GZ   ? CLOSE
+			&	PBG.F4.SYS.S_4FZY42_2QA		? CLOSE
+			&	PBG.LCU7.ANA.UC10KV-Ⅴ-10	> 5.5
+			+	PBG.F4.ANA.UC2_ZYD1	> 225
+			&	PBG.F4.POL.ZY_ZY43_DI11   ? CLOSE
+			&	PBG.F4.SYS.S_ZY43_GZ   ? CLOSE
+
+
+STEP:		PBG.F4.ANA.UC2_ZYD17
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F4.ANA.UC2_ZYD18
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+STEP:		PBG.F4.ANA.UC2_ZYD19
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  230
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	4F 400V自用电Ⅱ母线电压无显示1
+!******************************************************************
+SEQUENCE:	PBG.F4.ANA.UC2_ZYD17-18-19_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	 		
+	EQUATION:	=	PBG.LCU7.ANA.UC10KV-Ⅴ-10	< 1
+			&	PBG.F4.ANA.UC2_ZYD1	< 1
+			+	PBG.F4.POL.ZY_ZY42_DI11   ? OPEN
+			&	PBG.F4.POL.ZY_ZY43_DI11   ? OPEN
+
+
+STEP:		PBG.F4.ANA.UC2_ZYD17
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+STEP:		PBG.F4.ANA.UC2_ZYD18
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+STEP:		PBG.F4.ANA.UC2_ZYD19
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C  0
+
+
+END_SEQUENCE:
+

@@ -1,0 +1,245 @@
+BODY
+{
+}
+.Header
+{
+    BORDER-RIGHT: thin outset;
+    BORDER-TOP: thin outset;
+    MARGIN: 0pt;
+    BORDER-LEFT: thin outset;
+    BORDER-BOTTOM: thin outset;
+    BACKGROUND-COLOR: lightgrey
+}
+.MenuTitle
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: white;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: cornflowerblue;
+    TEXT-DECORATION: none
+}
+.Image
+{
+    CURSOR: hand
+}
+.Table
+{
+    FONT-SIZE: 9pt;
+    MARGIN: 0px;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: black;
+    TEXT-DECORATION: none
+}
+.Table_Normal
+{
+    BORDER-RIGHT: darkgray 2px outset;
+    BORDER-TOP: whitesmoke 2px outset;
+    FONT-SIZE: 9pt;
+    MARGIN: 0px;
+    BORDER-LEFT: whitesmoke 2px outset;
+    BORDER-BOTTOM: silver 2px outset;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: lightgrey;
+    TEXT-DECORATION: none
+}
+.Input_Normal
+{
+    FONT-SIZE: 9pt;
+    MARGIN: 0px;
+    FONT-FAMILY: 宋体;
+    TEXT-DECORATION: none
+}
+.TdHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: darkblue;
+    FONT-FAMILY: 宋体;
+    HEIGHT: 12pt;
+    BACKGROUND-COLOR: lightskyblue;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+.TdHeader1
+{
+    CLEAR: left;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: white;
+    FONT-FAMILY: 宋体;
+    HEIGHT: 14pt;
+    BACKGROUND-COLOR: darkblue;
+    TEXT-DECORATION: none
+}
+.Input_Button
+{
+    BORDER-RIGHT: thin outset;
+    BACKGROUND-POSITION: center center;
+    BORDER-TOP: thin outset;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: thin outset;
+    CURSOR: hand;
+    COLOR: black;
+    BORDER-BOTTOM: thin outset;
+    FONT-FAMILY: 宋体;
+    TEXT-DECORATION: none
+}
+.Input_ReadOnly
+{
+    FONT-SIZE: 9pt;
+    MARGIN: 0px;
+    COLOR: black;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: #c0c0c0;
+    TEXT-DECORATION: none
+}
+.Input_ButtonFlat
+{
+    BORDER-RIGHT: mediumturquoise thin solid;
+    BORDER-TOP: mediumturquoise thin solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: mediumturquoise thin solid;
+    COLOR: white;
+    BORDER-BOTTOM: mediumturquoise thin solid;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: black;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+.CustSectionRight
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: 宋体;
+    HEIGHT: 12pt;
+    TEXT-DECORATION: none
+}
+.CustCheckboxText
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: 宋体
+}
+.CustCheckbox
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: 宋体
+}
+.DrawSelect
+{
+    BORDER-RIGHT: antiquewhite thin solid;
+    BORDER-TOP: antiquewhite thin solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: antiquewhite thin solid;
+    BORDER-BOTTOM: antiquewhite thin solid;
+    FONT-FAMILY: 宋体;
+    TEXT-DECORATION: none
+}
+.InnerTable
+{
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: lightgrey
+}
+.Input_Label
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: transparent;
+    TEXT-DECORATION: none
+}
+.TextArea_Flat
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: medium none;
+    COLOR: black;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: lightgrey
+}
+.b
+{
+    FONT-SIZE: 12px;
+    COLOR: black;
+    LINE-HEIGHT: normal;
+    FONT-STYLE: normal;
+    FONT-FAMILY: "宋体", "宋体_GB2312";
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+.b:active
+{
+    FONT: bolder 9pt 宋体;
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+.b:hover
+{
+    FONT-SIZE: 9pt;
+    COLOR: burlywood;
+    LINE-HEIGHT: normal;
+    FONT-STYLE: normal;
+    FONT-FAMILY: 宋体;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+.Table_List
+{
+    BORDER-RIGHT: lightgrey 1pt;
+    BORDER-TOP: lightgrey 1pt;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: lightgrey 1pt;
+    BORDER-BOTTOM: lightgrey 1pt;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: white;
+    TEXT-DECORATION: none
+}
+.Grid_TR_Normal
+{
+    FONT-SIZE: 9pt;
+    CURSOR: hand;
+    FONT-FAMILY: 宋体;
+    TEXT-DECORATION: none
+}
+.3DTD
+{
+    BORDER-RIGHT: thin outset;
+    BORDER-TOP: thin outset;
+    BORDER-LEFT: thin outset;
+    BORDER-BOTTOM: thin outset;
+    BACKGROUND-COLOR: lightgrey
+}
+.Grid_TR_Active
+{
+    FONT-SIZE: 9pt;
+    CURSOR: hand;
+    COLOR: white;
+    FONT-FAMILY: 宋体;
+    BACKGROUND-COLOR: darkblue
+}
+.TrHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 9pt;
+    COLOR: white;
+    FONT-FAMILY: 宋体;
+    HEIGHT: 14pt;
+    BACKGROUND-COLOR: darkblue;
+    TEXT-DECORATION: none
+}
+.LoginInfo
+{
+    FONT-SIZE: 9pt;
+    WIDTH: 100%;
+    COLOR: white;
+    FONT-FAMILY: 宋体;
+    HEIGHT: 15pt;
+    BACKGROUND-COLOR: darkslateblue;
+    TEXT-DECORATION: none
+}

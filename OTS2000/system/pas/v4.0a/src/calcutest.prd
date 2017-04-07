@@ -1,0 +1,83 @@
+#
+# WorkShop Project File
+#
+# This file is machine generated, do not modify
+#
+
+projectid "/usr/ems/system/pas/v4.0a/src/calcutest.prd";
+projectver 6.0;
+
+project_t cset_s4ZstSfYJ9OszwluHptf = {
+
+    entities = {
+        {
+            name = "calcufn.c";
+            type = C;
+            path = "calcufn.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/pas/v4.0a/src";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "calcutest.c";
+            type = C;
+            path = "calcutest.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/pas/v4.0a/src";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            type = AR;
+            path = "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/pas/v4.0a/src/calcutest.dxe";
+            type = EXE;
+            path = "/usr/ems/system/pas/v4.0a/src/calcutest.dxe";
+            dependencies = {
+                "calcufn.c",
+                "calcutest.c",
+                "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            };
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/pas/v4.0a/src";
+            options = {
+                C_Builder<link_library>.value="m";
+            };
+        };
+    };
+
+    globals = {
+        {
+            id = "C_Builder";
+            builder = C_Builder;
+            options = {
+                C_Builder<debug>,
+                C_Builder<cpp_comments>;
+            };
+        };
+    };
+
+    gendata = {
+        {
+            tag = projecttype;
+            type = string_t;
+            value ="complex";
+        },
+        {
+            tag = projectdir;
+            type = string_t;
+            value ="/usr/ems/system/pas/v4.0a/src";
+        };
+    };
+};

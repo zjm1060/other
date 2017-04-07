@@ -1,0 +1,264 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>天气预报</title>
+<LINK href="weatherForecast.css" type=text/css rel=stylesheet>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+}
+-->
+</style>
+<script language="javascript">
+function getCookie(Name) {
+var search = Name + "=";
+if(document.cookie.length > 0) {
+offset = document.cookie.indexOf(search);
+if(offset != -1) {
+offset += search.length;
+end = document.cookie.indexOf(";", offset);
+if(end == -1) end = document.cookie.length;
+return unescape(document.cookie.substring(offset, end));
+}
+else return('');
+}
+else return('');
+}
+
+function setCookie(name,value) {
+//alert("name="+name+" value="+value);
+var today = new Date();
+var expires = new Date();
+expires.setTime(today.getTime() + 1000*60*60*24*365);
+document.cookie = name + "=" + escape(value) + ";path=/"+"; expires=" + expires.toGMTString();
+//alert("get name="+getCookie(name));
+}
+
+function setFavorites(){
+var sta = document.all.capital_city_select.value;
+
+setCookie("sta",sta);
+var r = getCookie("sta");
+
+var select = document.all.capital_city_select.selectedIndex;
+
+var name = document.all.capital_city_select[select].text;
+alert("您已经将 "+name+" 设为默认城市");
+
+}
+function getFavorites(name){
+return getCookie(name);
+}
+
+
+</script>
+<link href="weatherForecast.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="4" rightmargin="4" topmargin="0" marginwidth="4" marginheight="4" scroll="no">
+
+<script>
+
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+
+function submit_capital_forecast_form(){
+	capital_forecast_form.capital_city_name.value = capital_forecast_form.capital_city_select.options[capital_forecast_form.capital_city_select.selectedIndex].text;
+	capital_forecast_form.submit();
+}
+
+function go()
+ {
+	window.city_weather.submit();
+
+ }
+
+function openwin() { 
+//window.open ("/aboutus/thank.htm", "newwindow", "height=396, width=879, toolbar=no, menubar=no, scrollbars=no, resizable=yes, location=no, status=no") 
+}
+</script>
+<table leftmargin="4" rightmargin="4" topmargin="0" marginwidth="4" marginheight="4" scroll="no">
+     <TR>
+          <TD class=SubTitle height=2px><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <TR>
+          <TD valign="middle" ><img src="/STPublish/style/images/arrow_info.gif" width="15" height="15" border="0" align="absmiddle">
+          	天气预报
+
+		  <img src="/STPublish/style/images/arrow_more2.gif" width="9" height="9" align="absmiddle">
+     		<a class="more" href="http://www.weathercn.com/forecast/citydetail.jsp?sta_id=54511" target="_blank" id="cityhref">更多..</a>		 
+		  </TD>
+        </TR>
+          </table></TD>
+        </TR>
+  <SCRIPT LANGUAGE="JavaScript">
+<!--
+function changeCity(){
+
+window.capital_forecast_form.submit();
+}
+//-->
+</SCRIPT>
+
+  <tr>
+    <td class=SubTitle  valign="top"><table width="" height="" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+
+        <td width="" align="center" background="/indexxml/image/dz_center.GIF">
+        	<table width="" height="" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+		  <form action="if_yb.jsp" method="post" name="capital_forecast_form" id="capital_forecast_form">
+            <td width=""><select name="capital_city_select" class="shuru2" onChange="changeCity()">
+		   
+		   
+              <option value="54511" cityname="广州" province="广州" district="广州" description="广州天气">广州</option>
+              <option value="59287" cityname="北京" province="北京" district="北京" description="北京天气">北京</option>
+			        <option value="58367" cityname="上海" province="上海" district="上海" description="上海天气">上海</option>
+              <option value="54527" cityname="天津" province="天津" district="天津" description="天津天气">天津</option>
+              <option value="58238" cityname="南京" province="江苏" district="南京" description="南京天气">南京</option>
+              <option value="57494" cityname="武汉" province="湖北" district="武汉" description="武汉天气">武汉</option>
+              <option value="56294" cityname="成都" province="四川" district="成都" description="成都天气">成都</option>
+              <option value="57036" cityname="西安" province="陕西" district="西安" description="西安天气">西安</option>
+              <option value="54342" cityname="沈阳" province="辽宁" district="沈阳" description="沈阳天气">沈阳</option>
+              <option value="53698" cityname="石家庄" province="河北" district="石家庄" description="石家庄天气">石家庄</option>
+              <option value="54161" cityname="长春" province="吉林" district="长春" description="长春天气">长春</option>
+              <option value="50953" cityname="哈尔滨" province="黑龙江" district="哈尔滨" description="哈尔滨天气">哈尔滨</option>
+              <option value="57083" cityname="郑州" province="河南" district="郑州" description="郑州天气">郑州</option>
+              <option value="54823" cityname="济南" province="山东" district="济南" description="济南天气">济南</option>
+              <option value="58457" cityname="杭州" province="浙江" district="杭州" description="杭州天气">杭州</option>
+              <option value="58606" cityname="南昌" province="江西" district="南昌" description="南昌天气">南昌</option>
+              <option value="57679" cityname="长沙" province="湖南" district="长沙" description="长沙天气">长沙</option>
+              <option value="58847" cityname="福州" province="福建" district="福州" description="福州天气">福州</option>
+              <option value="57816" cityname="贵阳" province="贵州" district="贵阳" description="贵阳天气">贵阳</option>
+              <option value="53614" cityname="银川" province="宁夏" district="银川" description="银川天气">银川</option>
+              <option value="51463" cityname="乌鲁木齐" province="新疆" district="乌鲁木齐" description="乌鲁木齐天气">乌鲁木齐</option>
+              <option value="52866" cityname="西宁" province="青海" district="西宁" description="西宁天气">西宁</option>
+              <option value="53463" cityname="呼和浩特" province="内蒙古" district="呼和浩特" description="呼和浩特天气">呼和浩特</option>
+              <option value="55591" cityname="拉萨" province="西藏" district="拉萨" description="拉萨天气">拉萨</option>
+              <option value="52889" cityname="兰州" province="甘肃" district="兰州" description="兰州天气">兰州</option>
+              <option value="53772" cityname="太原" province="山西" district="太原" description="太原天气">太原</option>
+              <option value="57516" cityname="重庆" province="重庆" district="重庆" description="重庆天气">重庆</option>
+			  			<option value="59431" cityname="南宁" province="广西" district="南宁" description="南宁天气">南宁</option>
+              <option value="56778" cityname="昆明" province="云南" district="昆明" description="昆明天气">昆明</option>
+              <option value="59758" cityname="海口" province="海南" district="海口" description="海口天气">海口</option>
+              <option value="58321" cityname="合肥" province="安徽" district="合肥" description="合肥天气">合肥</option>
+              <option value="45005" cityname="香港" province="香港" district="香港" description="香港天气">香港</option>
+              <option value="45011" cityname="澳门" province="澳门" district="澳门" description="澳门天气">澳门</option>
+              <option value="58968" cityname="台北" province="台北" district="台北" description="台北天气">台北</option>
+			   
+          </select>
+            </td>
+			</form>
+            <td  scope="2"width="" align="right"><strong><a href="javascript:setFavorites();" class="font_black">订制为默认城市</a></strong></td>
+          </tr>
+        </table></td>
+        <td width="" background="/indexxml/image/dz_right.GIF">&nbsp;</td>
+      </tr>
+    </table>
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+          	<td width="60%">中国气象局、中央气象台</td>
+          </tr>
+          <tr>
+            <td>
+						   <SCRIPT LANGUAGE="JavaScript">
+									<!--
+									var cityname_z;
+									var district_z;
+									var province_z;			
+									
+									window.capital_forecast_form.capital_city_select.value=54511;				
+									for(i=0;i<window.capital_forecast_form.capital_city_select.length;i++){
+										if(window.capital_forecast_form.capital_city_select.value==window.capital_forecast_form.capital_city_select[i].value)
+										{
+											cityname_z=window.capital_forecast_form.capital_city_select[i].cityname
+											province_z=window.capital_forecast_form.capital_city_select[i].province
+											district_z=window.capital_forecast_form.capital_city_select[i].district
+										}				
+									}
+									document.all.cityhref.href="http://www.weathercn.com/forecast/citydetail.jsp?sta_id=54511";
+									// document.all.citydetil.innerText=cityname_z;
+									
+									//-->
+					   </SCRIPT>	
+			      </td>
+            
+          </tr>
+        </table>
+		
+      <table width="" height="" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left" background="/indexxml/image/yb.GIF"><table width="" height="" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="" class="yb_font">&nbsp;[04-30]</td>
+                  <td width="" align="center">
+                  	<table  border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+	                      <td width="" align="center"><img width="20" height="20" src="images/leizhenyu.gif"  alt="雷阵雨"></td>
+                        <td width="" align="center"><img width="20" height="20" src="images/zhenyu.gif"  alt="阵雨"></td>							 
+                      </tr>
+                    </table></td>
+                  <td>25℃～14℃</td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+				 
+      <table width="300" height="" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left" background="images/yb.GIF"><table width="" height="" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="" class="yb_font">&nbsp;[05-01]</td>
+                  <td width="" align="center">
+                  	<table border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+												<td width="" align="center"><img src="images/sun.gif" width="20" height="20" alt="晴"></td>
+												<td width="" align="center"><img src="images/sun.gif" width="20" height="20" alt="晴"></td>
+							        </tr>
+                  </table></td>
+                  <td>26℃～13℃</td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+				 
+      <table width="300" height="" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="left" background="images/yb.GIF"><table width="" height="" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="" class="yb_font">&nbsp;[05-02]</td>
+                  <td width="" align="center">
+                  	<table  border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+	                      <td width="" align="center"><img src="images/sun.gif" width="20" height="20" alt="晴"></td>
+                        <td width="" align="center"><img src="images/duoyun.gif" width="20" height="20" alt="多云"></td>
+							        </tr>
+                  </table></td>
+                  <td>26℃～16℃</td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+				 
+			 
+      <table width="" height="" border="0" cellpadding="0" cellspacing="0" background="images/ss_bj.gif">
+        <form name="form1" method="post" action="http://www.weathercn.com/search/search.jsp" target="_blank">
+		  <tr>
+            <td width="">城市搜索</td>
+            <td width=""><input name="searchname" type="text" class="search_input" size="20" value="广州"></td>
+      </tr>
+      <tr>
+            <td  scope="1"width=""><input name="submit1" type="image" id="submit12" src="images/button.gif"></td>
+      </tr>
+		  </form>
+      </table>      
+	  </td>
+  </tr>
+
+</table>
+</body>
+</html>

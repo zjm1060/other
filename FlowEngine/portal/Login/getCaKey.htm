@@ -1,0 +1,25 @@
+
+<form method="POST" action="">
+  caKey序列号为：<input type="text" value="" name="cakeyno" > <br>
+	<input type="button" value="获取" name="B1" onclick="getCaKeyNo()"> <br>
+</form>
+
+ 
+<object classid="clsid:6DD0675D-C9E8-4FB2-BB64-E443B269D4CE" id="AAX1" codebase="SZD31AX.ocx"></object>
+
+<script language="VBScript">
+dim vart
+dim data
+function bfun1() 
+	ret = aax1.Get_serialno(vart)
+	//msgbox(vart)
+	bfun1=vart
+end function
+</script>
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+function getCaKeyNo(){
+  var cakeyno=bfun1();
+  document.all.item("cakeyno").value=cakeyno;
+}
+</script>

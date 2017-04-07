@@ -1,0 +1,1 @@
+08:14:52:302	Fail to find variable QLT_ALM_TYPE

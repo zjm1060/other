@@ -1,0 +1,94 @@
+.12pt
+{
+    FONT-SIZE: 12pt
+}
+.10pt
+{
+    FONT-SIZE: 10.5pt
+}
+.9pt
+{
+    FONT-SIZE: 9pt
+}
+A:link
+{
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: black;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: red;
+    TEXT-DECORATION: none
+}
+INPUT
+{
+    FONT-SIZE: 9pt
+}
+SELECT
+{
+    FONT-SIZE: 9pt
+}
+TABLE
+{
+    CURSOR: default;
+    FONT-SIZE: 9pt
+}
+.normal
+{
+    BORDER-BOTTOM: 0px solid;
+    BORDER-LEFT: 0px solid;
+    BORDER-RIGHT: 0px solid;
+    BORDER-TOP: 0px solid
+}
+.over
+{
+    BORDER-BOTTOM: #808080 1px solid;
+    BORDER-LEFT: #ffffff 1px solid;
+    BORDER-RIGHT: #808080 1px solid;
+    BORDER-TOP: #ffffff 1px solid
+}
+.out
+{
+    BORDER-BOTTOM: 0px solid;
+    BORDER-LEFT: 0px solid;
+    BORDER-RIGHT: 0px solid;
+    BORDER-TOP: 0px solid
+}
+.down
+{
+    BORDER-BOTTOM: #ffffff 1px solid;
+    BORDER-LEFT: #808080 1px solid;
+    BORDER-RIGHT: #ffffff 1px solid;
+    BORDER-TOP: #808080 1px solid;
+    PADDING-LEFT: 2px;
+    PADDING-TOP: 2px
+}
+.up
+{
+    BORDER-BOTTOM: 0px solid;
+    BORDER-LEFT: 0px solid;
+    BORDER-RIGHT: 0px solid;
+    BORDER-TOP: 0px solid
+}
+.check
+{
+    BORDER-BOTTOM: #ffffff 1px solid;
+    BORDER-LEFT: #808080 1px solid;
+    BORDER-RIGHT: #ffffff 1px solid;
+    BORDER-TOP: #808080 1px solid; 
+}
+A
+{
+    CURSOR: default;
+    FONT-SIZE: 9pt
+}
+FORM
+{
+    MARGIN-BOTTOM: 0px;
+    MARGIN-TOP: 0px
+}

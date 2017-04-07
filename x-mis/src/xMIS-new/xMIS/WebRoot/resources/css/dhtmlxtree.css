@@ -1,0 +1,275 @@
+.defaultTreeTable 
+{
+	BORDER-TOP-WIDTH: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	BORDER-LEFT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px;
+	BORDER-RIGHT-WIDTH: 0px
+}
+.containerTableStyle 
+{
+	FONT-SIZE: 12px;
+	OVERFLOW: auto;
+	POSITION: relative;
+	TOP: 0px;
+	khtml-user-select: none
+}
+.containerTableStyleRTL SPAN 
+{
+	DIRECTION: rtl;
+	unicode-bidi: bidi-override
+}
+.containerTableStyleRTL 
+{
+	FONT-SIZE: 12px;
+	OVERFLOW: auto;
+	DIRECTION: rtl;
+	POSITION: relative;
+	TOP: 0px
+}
+.standartTreeRow 
+{
+	FONT-SIZE: 12px;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	moz-user-select: none
+}
+.selectedTreeRow 
+{
+	FONT-SIZE: 12px;
+	COLOR: white;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: navy;
+	moz-user-select: none
+}
+.dragAndDropRow 
+{
+	COLOR: white;
+	BACKGROUND-COLOR: navy
+}
+.standartTreeRow_lor 
+{
+	FONT-SIZE: 12px;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #fffff0;
+	TEXT-DECORATION: underline;
+	moz-user-select: none
+}
+.selectedTreeRow_lor 
+{
+	FONT-SIZE: 12px;
+	COLOR: white;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: navy;
+	TEXT-DECORATION: underline;
+	moz-user-select: none
+}
+.standartTreeImage 
+{
+	BORDER-TOP-WIDTH: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	BORDER-LEFT-WIDTH: 0px;
+	FONT-SIZE: 1px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	OVERFLOW: hidden;
+	WIDTH: 18px;
+	PADDING-TOP: 0px;
+	HEIGHT: 18px;
+	BORDER-RIGHT-WIDTH: 0px
+}
+.hiddenRow 
+{
+	OVERFLOW: hidden;
+	WIDTH: 1px
+}
+.dragSpanDiv 
+{
+	FONT-SIZE: 12px;
+	Z-INDEX: 999;
+	BACKGROUND-COLOR: white
+}
+.dragSpanDiv TD 
+{
+	FONT-SIZE: 12px;
+	Z-INDEX: 999;
+	BACKGROUND-COLOR: white
+}
+.a_dhx_hidden_input 
+{
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	LEFT: -1px;
+	WIDTH: 1px;
+	BORDER-TOP-STYLE: none;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	POSITION: absolute;
+	TOP: -1px;
+	HEIGHT: 1px;
+	BORDER-BOTTOM-STYLE: none
+}
+.a_dhx_hidden_input 
+{
+	BACKGROUND: none transparent scroll repeat 0% 0%;
+	LEFT: -1px;
+	WIDTH: 1px;
+	BORDER-TOP-STYLE: none;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-LEFT-STYLE: none;
+	POSITION: absolute;
+	TOP: -1px;
+	HEIGHT: 1px;
+	BORDER-BOTTOM-STYLE: none
+}
+.selectionBox 
+{
+	BACKGROUND-COLOR: #ffffcc
+}
+.selectionBar 
+{
+	Z-INDEX: 11;
+	OVERFLOW: hidden;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 2px;
+	BACKGROUND-COLOR: black
+}
+.intreeeditRow 
+{
+	BORDER-RIGHT: silver 1px solid;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: silver 1px solid;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 8pt;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-LEFT: silver 1px solid;
+	WIDTH: 100%;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: silver 1px solid;
+	HEIGHT: 16px;
+	khtml-user-select: text;
+	moz-user-select: text
+}
+.dhx_tree_textSign 
+{
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 8pt;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	WIDTH: 21px;
+	CURSOR: pointer;
+	COLOR: black;
+	PADDING-TOP: 0px;
+	FONT-FAMILY: monospace;
+	TEXT-ALIGN: center
+}
+.dhx_tree_opacity 
+{
+	FILTER: alpha(opacity=0);
+	opacity: 0;
+	moz-opacity: 0
+}
+.dhx_bg_img_fix 
+{
+	BACKGROUND-POSITION: center center;
+	WIDTH: 18px;
+	BACKGROUND-REPEAT: no-repeat;
+	HEIGHT: 18px
+}
+.dhxtree_dhx_black 
+{
+	BACKGROUND: white;
+	COLOR: black
+}
+.dhxtree_dhx_skyblue 
+{
+	BACKGROUND: white;
+	COLOR: black
+}
+ HTML .dhxtree_dhx_skyblue .standartTreeRow 
+{
+	BORDER-RIGHT: red 0px solid;
+	BORDER-LEFT: red 0px solid
+}
+ HTML .dhxtree_dhx_skyblue SPAN.standartTreeRow 
+{
+	MARGIN-LEFT: 1px
+}
+.dhxtree_dhx_skyblue .standartTreeRow 
+{
+	BORDER-RIGHT: transparent 1px solid;
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 11px! important;
+	PADDING-BOTTOM: 0px;
+	OVERFLOW: hidden;
+	BORDER-LEFT: transparent 1px solid;
+	PADDING-TOP: 0px;
+	FONT-FAMILY: Tahoma
+}
+.dhxtree_dhx_skyblue .standartTreeRow_lor 
+{
+	FONT-SIZE: 11px! important;
+	FONT-FAMILY: Tahoma
+}
+.dhxtree_dhx_skyblue .selectedTreeRow_lor 
+{
+	BORDER-RIGHT: #ffb951 1px solid;
+	BORDER-TOP: #ffb951 1px solid;
+	FONT-SIZE: 11px! important;
+	BACKGROUND-IMAGE: url(imgs/sky_blue_sel_tree.png);
+	OVERFLOW: hidden;
+	BORDER-LEFT: #ffb951 1px solid;
+	COLOR: black;
+	LINE-HEIGHT: 17px;
+	BORDER-BOTTOM: #ffb951 1px solid;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Tahoma;
+	BACKGROUND-COLOR: white
+}
+.dhxtree_dhx_skyblue .selectedTreeRow 
+{
+	BORDER-RIGHT: #ffb951 1px solid;
+	BORDER-TOP: #ffb951 1px solid;
+	FONT-SIZE: 11px! important;
+	BACKGROUND-IMAGE: url(imgs/sky_blue_sel_tree.png);
+	OVERFLOW: hidden;
+	BORDER-LEFT: #ffb951 1px solid;
+	COLOR: black;
+	LINE-HEIGHT: 17px;
+	BORDER-BOTTOM: #ffb951 1px solid;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Tahoma;
+	BACKGROUND-COLOR: white
+}
+UNKNOWN 
+{
+	PADDING-RIGHT: 0px;
+	DISPLAY: inline-block;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 1px;
+	LINE-HEIGHT: normal;
+	PADDING-TOP: 1px;
+	HEIGHT: 13px
+}
+UNKNOWN 
+{
+	PADDING-RIGHT: 0px;
+	DISPLAY: inline-block;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 1px;
+	PADDING-TOP: 0px;
+	HEIGHT: 13px
+}
+UNKNOWN 
+{
+	DISPLAY: inline-block;
+	HEIGHT: 14px
+}

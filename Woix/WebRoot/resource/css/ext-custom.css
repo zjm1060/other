@@ -1,0 +1,74 @@
+.main-head-logo-1 { 
+	background-repeat: no-repeat;
+	background-image: url("../images/top-title-logo-1.jpg");
+}
+.main-head-logo-2 { 
+	background-repeat: repeat-x;
+	background-image: url("../images/top-title-logo-2.jpg");
+}
+.main-head-logo-3 { 
+	background-repeat: no-repeat;
+	background-image: url("../images/top-title-logo-3.jpg");
+}
+
+/*!
+ * Ext JS Library 3.2.1
+ * Copyright(c) 2006-2010 Ext JS, Inc.
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+/**
+ tree-loader-css
+ */
+#details-panel .x-panel-body {
+	padding: 10px;
+	background: #eee;
+	color: #555;
+}
+
+#details-panel a:link,#details-panel a:visited {
+	color: #369;
+}
+
+#details-panel h2 {
+	color: #369;
+	font-size: 15px;
+}
+
+#details-panel p {
+	margin-bottom: 5px;
+}
+
+.author-m {
+	background-image: url(../shared/icons/fam/user.gif) !important;
+}
+
+.author-f {
+	background-image: url(../shared/icons/fam/user_female.gif) !important;
+}
+
+.book {
+	background-image: url(../shared/icons/fam/book.png) !important;
+}
+
+.ok {
+	background-image: url(../images/accept.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.tab-home {
+	background-image: url("../images/sy.png");
+}
+
+.excel {
+	background-image: url(../images/xls.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.main-foot-status {
+	background-repeat: repeat-x;
+	background-image: url("../images/top-title-logo-2.jpg");
+	text-align: bottom;
+}

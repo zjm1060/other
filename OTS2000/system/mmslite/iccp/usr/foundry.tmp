@@ -1,0 +1,213 @@
+##########################################################################
+# EXECUTION CONTROL
+
+# Include path, used to locate included ODF files
+#":CP", "/usr/gwaysw/mmslite/iccp/odf"
+":CP", "/home/ems/system/mmslite/iccp/odf"
+
+##########################################################################
+# INCLUDE FILE DEFINITION SECTION
+
+":I", "mi_usr.h"
+
+##########################################################################
+# TYPE CREATION SECTION
+
+# Include SISCO ICCP Object Definition Files
+":FS","iccp_obj.odf"
+":T", "MMSIdentifier", 		"Vstring32",	""
+":T", "Boolean",	 	"Bool",		""
+":T", "Unsigned8", 		"Ubyte",	""
+":T", "Unsigned16", 		"Ushort",	""
+":T", "Integer32", 		"Long",		""
+":T", "Integer16", 		"Short",	""
+":T", "TimeInterval16", 	"<Integer16>",	""
+
+#
+# IEC 870-6-503
+
+# 8.1.1
+
+":T", "Visible_String_32", 	"Vstring32",	""
+
+# 8.1.2
+
+":T", "MMSObjectName",
+  "{
+   (Scope)      <Unsigned8>,
+   (DomainName) <MMSIdentifier>,
+   (Name)       <MMSIdentifier>
+   }",	""
+
+# 8.1.3
+
+":T", "GMTBasedS", "<Integer32>",	""
+":T", "GMTBasedM", "<Integer32>",	""
+":T", "GMTBasedH", "<Integer32>",	""
+":T", "GMTBasedD", "<Integer32>",	""
+
+# 8.1.3
+
+":T", "TimeStampExtended", 
+  "{
+   (GMTBasedS)    <GMTBasedS>,
+   (Milliseconds) <TimeInterval16>
+   }",	""
+
+# 8.1.4
+
+":T", "TimeIntervalD", 		"<Integer16>",	""
+":T", "TimeIntervalH",  	"<Integer16>",	""
+":T", "TimeIntervalM",  	"<Integer16>",	""
+":T", "TimeIntervalS",  	"<Integer16>",	""
+":T", "TimeIntervalL16", 	"<Integer16>",	""
+":T", "TimeIntervalL32", 	"<Integer32>",	""
+
+# 8.1.6
+":T", "DSConditions", 		"Bstring5",	""
+
+# 8.1.5
+
+":T", "DSTransferSet",
+  "{
+   (DataSetName)           <MMSObjectName>,
+   (StartTime)             <GMTBasedS>,
+   (Interval)              <TimeIntervalS>,
+   (TLE)                   <TimeIntervalS>,
+   (BufferTime)            <TimeIntervalS>,
+   (IntegrityCheck)        <TimeIntervalS>,
+   (DSConditionsRequested) <DSConditions>,
+   (BlockData) 		   <Boolean>,
+   (Critical)		   <Boolean>,
+   (RBE)		   <Boolean>,
+   (Status)		   <Boolean>,
+   (EventCodeRequested)	   <Integer16>
+   }" ,	""
+
+":T", "IMTransferSet", 	"<Boolean>",	""
+
+# 8.1.7
+":T", "SupportedFeatures", 	"Bstring12",	""
+
+# 8.1.8
+
+":T", "TASE2Version",
+  "{
+   (MajorVersionNumber) <Integer16>,
+   (MinorVersionNumber) <Integer16>
+   }",	""
+
+#
+# IEC 870-6-802
+#
+
+# 6.1.1
+":T", "Data_Real", 		"Float",	""
+":TU", "Data_State", 		"Bstring8",	""
+":TU", "Data_Discrete", 		"<Integer32>",	""
+":T", "Data_Flags", 		"Bstring8",	""
+":T", "Data_TimeStamp", 	"<GMTBasedS>",	""
+":T", "COV_Counter", 		"<Unsigned16>",	""
+ 
+":T", "Data_RealQ"
+   "{
+    (Value) <Data_Real>,
+    (Flags) <Data_Flags>
+    }",	""
+
+":TU", "Data_StateQ", "<Data_State>",	""
+
+":T", "Data_DiscreteQ",
+  "{
+   (Value) <Data_Discrete>,
+   (Flags) <Data_Flags>
+   }",	""
+
+":T", "Data_RealQTimeTag",
+   "{
+    (Value) 	<Data_Real>,
+    (TimeStamp) <Data_TimeStamp>,
+    (Flags) 	<Data_Flags>
+    }",	""
+
+":T", "Data_StateQTimeTag",
+  "{
+   (TimeStamp) 	<Data_TimeStamp>,
+   (Flags) 	<Data_Flags>
+   }",	""
+
+
+":T", "Data_DiscreteQTimeTag", 
+  "{
+   (Value) 	<Data_Discrete>,
+   (TimeStamp) 	<Data_TimeStamp>,
+   (Flags) 	<Data_Flags>
+   }",	""
+
+":T", "Data_RealExtended",
+  "{
+   (Value) 	<Data_Real>,
+   (TimeStamp) 	<Data_TimeStamp>,
+   (Flags) 	<Data_Flags>,
+   (COV) 	<COV_Counter>
+   }",	""
+
+":T", "Data_StateExtended", 
+  "{
+   (TimeStamp) 	<Data_TimeStamp>,
+   (Flags) 	<Data_State>,
+   (COV) 	<COV_Counter>
+   }",	""
+
+":T", "Data_DiscreteExtended", 
+  "{
+   (Value) 	<Data_Discrete>,
+   (TimeStamp) 	<Data_TimeStamp>,
+   (Flags) 	<Data_Flags>,
+   (COV) 	<COV_Counter>
+   }",	""
+
+# 6.1.2
+
+":TU", "Control_Command", 		"Short", 	""
+":TU", "Control_Setpoint_Real", 	"Float", 	""
+":TU", "Control_Setpoint_Discrete", 	"Short", 	""
+
+":TU", "SBO_CheckBackName",		"Short",	""
+
+":T", "TextString", 	"Vstring255",	""
+":T", "TagFlags", 	"Bstring3"  ,	""
+
+":TU", "TagValue", 
+  "{
+   (Flags) 	<TagFlags>,
+   (Reason)	<TextString>
+   }",	""
+
+# ???
+":T", "Scope", "<Integer16>",	""
+
+":T", "User_Data", 
+  "{
+   <Integer16>,
+   Long
+   }",	""
+
+
+#6.4 Information Buffer Type Descriptions
+
+":T", "ReferenceNum",	"Long",	""
+":T", "Number",		"Long", ""
+
+":T", "InfoMessHeader",	
+  "{
+   (InfoReference)	<ReferenceNum>,
+   (LocalReference)	<ReferenceNum>,
+   (MessageId)		<ReferenceNum>,
+   (Size)		<Number>
+   }",	""
+
+":T", "InfoBuffXXX", "Ostring128", ""
+":FE","iccp_obj.odf"
+
+

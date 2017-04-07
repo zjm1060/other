@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CModelParamAddForm</class>
+ <widget class="QDialog" name="CModelParamAddForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>353</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>添加模型参数</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="2,2,2,2,3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>参 数 名：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="editName"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>参数类型：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="editType">
+       <item>
+        <property name="text">
+         <string>输入</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>输出</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>内部参数</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>数值或点名：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="editLogicalname"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>数据类型：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="editDataType">
+       <item>
+        <property name="text">
+         <string>H9000点名</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>常值</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="spacing">
+      <number>30</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="buttonEnter">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonExit">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonApply">
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>应用</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>editName</tabstop>
+  <tabstop>editType</tabstop>
+  <tabstop>editLogicalname</tabstop>
+  <tabstop>editDataType</tabstop>
+  <tabstop>buttonApply</tabstop>
+  <tabstop>buttonEnter</tabstop>
+  <tabstop>buttonExit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonExit</sender>
+   <signal>clicked()</signal>
+   <receiver>CModelParamAddForm</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

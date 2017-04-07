@@ -1,0 +1,248 @@
+ #定义EMS系统所属的主机名及顺序。以空格或换行区分不同主机名。定义格式如下：
+[HOST_NAME]
+"YANGYP" 	"PBG" 	"计算机室" 	"YES" 	"操作员工作站" 		"UNIX" 	
+"PBGOS2" 	"PBG" 	"计算机室" 	"YES" 	"操作员工作站" 		"UNIX" 	
+"PBGOS3" 	"PBG" 	"计算机室" 	"YES" 	"操作员工作站" 		"UNIX" 	
+"WX" 		"PBG" 	"计算机室" 	"YES" 	"操作员工作站" 		"WINDOWS" 	"F"	
+"PBGCOMS" 	"PBG" 	"计算机室" 	"YES" 	"厂内通讯服务" 		"WINDOWS" 	"D"
+"PBGMOS" 	"PBG" 	"计算机室" 	"YES" 	"移动工作站" 		"UNIX" 	
+"PBGES" 	"PBG" 	"计算机室" 	"YES" 	"工程师工作站" 		"UNIX" 	
+"PBGTS" 	"PBG" 	"计算机室" 	"YES" 	"培训工作站" 		"UNIX" 	
+"PBGAPS1" 	"PBG" 	"计算机室" 	"YES" 	"应用服务器1" 		"UNIX" 	
+"PBGAPS2" 	"PBG" 	"计算机室" 	"YES" 	"应用服务器2" 		"UNIX" 	
+"PBGDBS1" 	"PBG" 	"计算机室" 	"YES" 	"数据采集服务1" 	"UNIX" 	
+"PBGDBS2" 	"PBG" 	"计算机室" 	"YES" 	"数据采集服务2" 	"UNIX" 	
+"PBGDCOM1" 	"PBG" 	"计算机室" 	"YES" 	"调度通讯服务1" 	"WINDOWS" 	"D"
+"PBGDCOM2" 	"PBG" 	"计算机室" 	"YES" 	"调度通讯服务2" 	"WINDOWS" 	"D"
+"PBGGWCOM1" 	"PBG" 	"计算机室" 	"YES" 	"通讯网关机1" 		"WINDOWS" 	"D"
+"PBGGWCOM2" 	"PBG" 	"计算机室" 	"YES" 	"通讯网关机2" 		"WINDOWS" 	"D"
+"PBGGWCOM3" 	"PBG" 	"计算机室" 	"YES" 	"通讯网关机3" 		"WINDOWS" 	"D"
+"PBGGWCOM4" 	"PBG" 	"计算机室" 	"YES" 	"通讯网关机4" 		"WINDOWS" 	"D"
+"PBGTPAWS" 	"PBG" 	"计算机室" 	"YES" 	"电话语音报警工作站" 	"WINDOWS" 	"D"
+"PBGDLP" 	"PBG" 	"计算机室" 	"NO" 	"大屏幕控制器" 		"WINDOWS" 	"D"
+"HP9050A" 	"PBG" 	"计算机室" 	"NO" 	"HP9050A" 		"PRINTER" 	
+"HP9050B" 	"PBG" 	"计算机室" 	"NO" 	"HP9050B" 		"PRINTER" 	
+"HP5200A" 	"PBG" 	"计算机室" 	"NO" 	"HP5200A" 		"PRINTER" 	
+"HP5200B" 	"PBG" 	"计算机室" 	"NO" 	"HP5200B" 		"PRINTER" 	
+"HP5200C" 	"PBG" 	"计算机室" 	"NO" 	"HP5200C" 		"PRINTER" 	
+"HP5550" 	"PBG" 	"计算机室" 	"NO" 	"HP5550" 		"PRINTER" 	
+
+
+#定义服务器类型主机和操作员站类型主机
+[HOST_ROLE]
+"OPERATOR" 	"YANGYP" 	"PBGOS2" 	"PBGOS3" 	"PBGMOS"       "PBGES"		"WX"
+"SERVER" 	"PBGAPS1" 	"PBGAPS2" 	"PBGDBS1" 	"PBGDBS2" 	"PBGDCOM1" 	"PBGDCOM2"
+"APP_SERVER" 	"PBGAPS1" 	"PBGAPS2"
+"ALM_PRINTER" 	"HP5200A"       "HP5200B"
+"HCOPY_PRINTER" "HP5200A"       "HP5200B"
+"RPT_PRINTER" 	"HP5200A"       "HP5200B"
+
+#定义EMS系统所属的主机名及顺序。以空格或换行区分不同主机名。定义格式如下：
+#example:
+#SXOPD:		信息网ip1 信息网ip2 控制网ip1 控制网ip2	
+[HOST_IPADDR]
+"YANGYP" 	        "139.1.1.1"    	"139.1.2.1" 	
+"PBGOS2" 	"139.1.1.2" 	"139.1.2.2" 	
+"PBGOS3" 	"139.1.1.3" 	"139.1.2.3" 	
+"PBGMOS" 	"139.1.1.4" 	"139.1.2.4" 	
+"PBGES" 	"139.1.1.5" 	"139.1.2.5" 	
+"PBGTS" 	"139.1.1.6" 	"139.1.2.6" 	
+"PBGAPS1" 	"139.1.1.7" 	"139.1.2.7" 	
+"PBGAPS2" 	"139.1.1.8" 	"139.1.2.8" 	
+"PBGDBS1" 	"139.1.1.9" 	"139.1.2.9" 	
+"PBGDBS2" 	"139.1.1.10" 	"139.1.2.10" 	
+"PBGDCOM1" 	"139.1.1.11" 	"139.1.2.11" 	
+"PBGDCOM2" 	"139.1.1.12" 	"139.1.2.12" 	
+"PBGGWCOM1" 	"139.1.1.13" 	"139.1.2.13" 	
+"PBGGWCOM2" 	"139.1.1.14" 	"139.1.2.14" 	
+"PBGGWCOM3" 	"139.1.1.15" 	"139.1.2.15" 	
+"PBGGWCOM4" 	"139.1.1.16" 	"139.1.2.16" 	
+"PBGCOMS" 	"139.1.1.17" 	"139.1.2.17" 	
+"PBGTPAWS" 	"139.1.1.18" 	"139.1.2.18" 	
+"PBGDLP" 	"139.1.1.20" 	"139.1.2.20" 	
+"HP9050A" 	"139.1.1.51" 	
+"HP9050B" 	"139.1.1.52" 	
+"HP5200A" 	"139.1.1.53" 	
+"HP5200B" 	"139.1.1.54" 	
+"HP5200C" 	"139.1.2.55" 	
+"HP5550" 	"139.1.2.56" 	
+"WX"		"192.169.11.131"
+
+#广播地址
+[BROADCAST]
+127.0.0.1	192.169.11.255
+
+[LCU_IPADDR]
+PBG 	F1 	139.1.1.111 	139.1.2.111		
+PBG 	F1_RTD 	139.1.1.116 	139.1.2.116		
+PBG 	F1_PRO 	139.1.1.114 	139.1.2.114		
+PBG 	F2	139.1.1.121 	139.1.2.121		
+PBG 	F2_RTD 	139.1.1.126 	139.1.2.126		
+PBG 	F2_PRO 	139.1.1.124 	139.1.2.124		
+PBG 	F3 	139.1.1.131 	139.1.2.131		
+PBG 	F3_RTD 	139.1.1.136 	139.1.2.136		
+PBG 	F3_PRO 	139.1.1.134 	139.1.2.134		
+PBG 	F4	139.1.1.141 	139.1.2.141		
+PBG 	F4_RTD 	139.1.1.146 	139.1.2.146		
+PBG 	F4_PRO 	139.1.1.144 	139.1.2.144		
+PBG 	F5 	139.1.1.151 	139.1.2.151		
+PBG 	F5_RTD 	139.1.1.156 	139.1.2.156		
+PBG 	F5_PRO 	139.1.1.154 	139.1.2.154		
+PBG 	F6	139.1.1.161 	139.1.2.161		
+PBG 	F6_RTD 	139.1.1.166 	139.1.2.166		
+PBG 	F6_PRO 	139.1.1.164 	139.1.2.164		
+PBG 	LCU7 	139.1.1.171 	139.1.2.171		
+PBG 	LCU8 	139.1.1.181 	139.1.2.181		
+PBG 	LCU9 	139.1.1.191 	139.1.2.191		
+PBG 	LCU10 	139.1.1.201 	139.1.2.201		
+PBG 	LCU11 	139.1.1.211 	139.1.2.211		
+PBG 	LCU12 	139.1.1.221 	139.1.2.221		
+PBG 	LCU13 	139.1.1.231 	139.1.2.231	
+
+[BASE_PROCESS]
+lan_inb
+lan_outb
+dbwrite
+syshint
+
+#To define the process which will be started up by sysmgr.exe.
+#The starting sequcence for all process according to the definitionas below.
+[HOST_PROCESS]
+"YANGYP" 	
+"PBGOS2" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"sgzy" 	"trend_data_rec"   "oix" 
+"PBGOS3" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"sgzy" 	"trend_data_rec"   "oix" 
+"PBGMOS" 	"plccmd" 	"plcscan" 	"dpp" 	"alarmscan" 	"revertscan" 	"curvescan" 	"sgzy" 	"trend_data_rec"
+"PBGES" 	"plccmd" 	"plcscan" 	"dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"sgzy" 	"trend_data_rec"
+"PBGTS" 	"plccmd" 	"plcscan" 	"dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"sgzy" 	"trend_data_rec"
+"PBGAPS1" 	"plccmd" 	"plcscan" 	"dpp" 	"hdbwrite" 	"periodwrite" 	"curvewrite" 	"plcmon" "trend_data_rec" "alarmscan" 	"revertscan" 	"curvescan" 	"agc"
+"PBGAPS2" 	"plccmd" 	"plcscan" 	"dpp" 	"hdbwrite" 	"periodwrite" 	"curvewrite" 	"plcmon" "trend_data_rec" "alarmscan" 	"revertscan" 	"curvescan"	"agc"
+"PBGDCOM1" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"iec104s_com_sd_new"	
+"PBGDCOM2" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"iec104s_com_sd_new"
+"PBGGWCOM1" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"iec104s_com"
+"PBGGWCOM2" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"iec104s_com"
+"PBGGWCOM3" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"iec104_com"
+"PBGGWCOM4" 	"plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"iec104_com"	
+"PBGCOMS" 	"!plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	 	
+"PBGTPAWS" 	"!plccmd" 	"!plcscan" 	"!dpp" 	"!alarmscan" 	"!revertscan" 	"!curvescan" 	"!audAlm"
+"WX"	!hmgr	!faultTable
+
+[REMOTE_COPY]
+"PBGAPS2"
+"PBGAPS1"
+"YANGYP"
+"PBGOS2"
+"PBGOS3"
+
+#定义主/备机组。每行定义格式如下：
+#example:
+#FTOPA	  FTOPB
+[HOST_SWITCH]
+"PBGAPS1" 	"PBGAPS2"
+
+#定义时钟服务器。格式如下：
+#服务器主机名   服务器1网IP地址	 服务器2网IP地址  服务器通讯口	
+#其中通讯口类型包括如下类型：
+# WINDOWS: COM1, COM2;
+# UNIX:    //dev//ttya, //dev//ttyb, //dev//tty00  //dev//tty01
+[TIME_SERVER]
+
+#定义对特定LCU进行数据采集的主机之优先级。格式如下：
+#厂站名 	LCU设备名   主机1 主机2  主机3 主机4 主机5  主机6  主机7 主机8 主机9  主机10	
+[PLC_SCAN]
+"PBG" 	"F1" 		"PBGAPS2" 	"PBGAPS1" 	
+"PBG" 	"F1_RTD" 	"PBGAPS2" 	"PBGAPS1" 	
+"PBG" 	"F1_PRO" 	"PBGAPS2" 	"PBGAPS1"  	
+"PBG" 	"F2" 		"PBGAPS2"	"PBGAPS1" 	
+"PBG" 	"F2_RTD" 	"PBGAPS2"	"PBGAPS1" 	
+"PBG" 	"F2_PRO" 	"PBGAPS2"	"PBGAPS1"  	
+"PBG" 	"F3" 		"PBGAPS2"	"PBGAPS1"  	
+"PBG" 	"F3_RTD" 	"PBGAPS2"	"PBGAPS1" 	
+"PBG" 	"F3_PRO" 	"PBGAPS2"	"PBGAPS1" 	
+"PBG" 	"F4" 		"PBGAPS2"	"PBGAPS1" 	
+"PBG" 	"F4_RTD" 	"PBGAPS2"	"PBGAPS1"  	
+"PBG" 	"F4_PRO" 	"PBGAPS2"       "PBGAPS1" 	
+"PBG" 	"F5" 		"PBGAPS2"	"PBGAPS1"
+"PBG" 	"F5_RTD" 	"PBGAPS2"	"PBGAPS1" 
+"PBG" 	"F5_PRO" 	"PBGAPS2"       "PBGAPS1"
+"PBG" 	"F6" 		"PBGAPS2"  	"PBGAPS1"	
+"PBG" 	"F6_RTD" 	"PBGAPS2"       "PBGAPS1" 		
+"PBG" 	"F6_PRO" 	"PBGAPS2"       "PBGAPS1" 		
+"PBG" 	"LCU7" 		"PBGAPS2" 	"PBGAPS1"	
+"PBG" 	"LCU8" 		"PBGAPS2" 	"PBGAPS1"	
+"PBG" 	"LCU9" 		"PBGAPS2" 	"PBGAPS1"	
+"PBG" 	"LCU10" 	"PBGAPS2"	"PBGAPS1"
+"PBG" 	"LCU11" 	"PBGAPS2" 	"PBGAPS1"	
+"PBG" 	"LCU12" 	"PBGAPS2" 	"PBGAPS1"
+"PBG" 	"LCU13" 	"PBGAPS2" 	"PBGAPS1"	
+
+
+#CPUNETMODE:		网络配置类型。4:双机真双网；3:双机单网；2：单机双网；1：单机单网；
+#   			5：双机双网，但只有两个网络模块，同时连在主CPU上。	
+
+[PLC_MODE]
+"PBG" 	"F1" 			3
+"PBG" 	"F1_RTD" 		3
+"PBG" 	"F1_PRO" 		2
+"PBG" 	"F2" 			3
+"PBG" 	"F2_RTD" 		3
+"PBG" 	"F2_PRO"		2
+"PBG" 	"F3" 			3
+"PBG" 	"F3_RTD" 		3
+"PBG" 	"F3_PRO"		2
+"PBG" 	"F4" 			3
+"PBG" 	"F4_RTD" 		3
+"PBG" 	"F4_PRO" 		2
+"PBG" 	"F5" 			3
+"PBG" 	"F5_RTD" 		3
+"PBG" 	"F5_PRO" 		2
+"PBG" 	"F6" 			3
+"PBG" 	"F6_RTD" 		3
+"PBG" 	"F6_PRO" 		2
+"PBG" 	"LCU7" 			3
+"PBG" 	"LCU8" 			3
+"PBG" 	"LCU9" 			3
+"PBG" 	"LCU10" 		3
+"PBG" 	"LCU11" 		3
+"PBG" 	"LCU12" 		3
+"PBG" 	"LCU13" 		3
+
+#定义主机的命令区ID (1-13,14给工控机专用）
+[CMD_HOST]
+"YANGYP" 	1
+"PBGOS2" 	2
+"PBGOS3" 	3
+"PBGMOS" 	4
+"PBGDCOM1" 	5
+"PBGDCOM2" 	6
+"PBGCOMS" 	7
+"PBGAPS1"	8
+"PBGAPS2"	9
+"PBGGWCOM1" 	10
+"PBGGWCOM2" 	11
+"PBGGWCOM3" 	12
+"PBGES" 	13
+[EMS_PARAMETER]
+SYS_NET_NUM 	2
+CTRL_NET_NUM 	2
+
+[EMS_VARIABLE]
+HYEAR  1
+
+[EMS_STRING]
+GPS_PORT 	//dev//cua//b
+GPS_CLOCK 	IWHR_GPSCLOCK
+SAFE_DAY_NAME 	PBG.SYS.ANA.SAFE_DAY
+
+#系统标志
+[EMS_FLAG]
+"CTRL_NET_INDEPEND" 	"NO"
+"EVENT_FILE_LOG" 	"YES"
+"POWER_ADJ_LOG" 	"YES"
+"DEV_OBJ_DISABLE"	"NO"
+
+#梯调名称
+[CASCADE]
+
+
+END
+

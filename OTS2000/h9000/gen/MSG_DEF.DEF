@@ -1,0 +1,349 @@
+
+PROCTYPE      NAME = RELAY
+
+GROUP      NAME = 0
+STATE      0 复归 RESET
+STATE      1 动作 OPERATED
+
+GROUP      NAME = 1
+STATE      0 复归 RESET
+STATE      1
+
+GROUP      NAME = 2
+STATE      0 A套 A
+STATE      1 B套 B
+
+GROUP      NAME = 3
+STATE      0 无主机 NO HOST
+STATE      1 PBGOS1 PBGOS1
+STATE      2 PBGOS2 PBGOS2
+STATE      3 PBGOS3 PBGOS3
+STATE      4 PBGCOMS PBGCOMS
+STATE      5 PBGMOS PBGMOS
+STATE      6 PBGES PBGES
+STATE      7 PBGTS PBGTS
+STATE      8 PBGAPS1 PBGAPS1
+STATE      9 PBGAPS2 PBGAPS2
+
+GROUP      NAME = 4
+STATE      0
+STATE      1
+
+GROUP      NAME = 5
+STATE      1 复归
+STATE      0 动作
+
+GROUP      NAME = 6
+STATE      1 正常
+STATE      0 剪断
+
+PROCTYPE      NAME = BREAKER
+
+GROUP      NAME = 0
+STATE      0 分闸 OPEN
+STATE      1 合闸 CLOSE
+STATE      2 过渡 TRANSIT
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = SWITCH
+
+GROUP      NAME = 0
+STATE      0 分闸 OPEN
+STATE      1 合闸 CLOSE
+STATE      2 过渡 TRANSIT
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = VALVE
+
+GROUP      NAME = 0
+STATE      0 关闭 CLOSE
+STATE      1 开启 OPEN
+STATE      2 过渡 TRANSIT
+
+GROUP      NAME = 1
+STATE      0 复归
+STATE      1 投入
+STATE      2 过渡
+
+GROUP      NAME = 2
+STATE      0 停止
+STATE      1 运行
+STATE      2 过渡
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = DEVICE
+
+GROUP      NAME = 0
+STATE      0 退出 OFF
+STATE      1 投入 ON
+STATE      2 过渡 TRANSIT
+
+GROUP      NAME = 1
+STATE      0 禁止 PROHIBIT
+STATE      1 允许 ALLOW
+
+GROUP      NAME = 2
+STATE      0 投入 ON
+STATE      1 退出 OFF
+STATE      2 过渡 TRANSIT
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = GENSTA
+
+GROUP      NAME = 0
+STATE      0 备用 STANDBY
+STATE      1 发电运行 ONLINE GENERATE
+STATE      2 检修 MAINTENANCE
+STATE      3 调相 COMPENSATOR
+STATE      4 空转 IDLE SPINNING
+STATE      5 空载 NOLOAD SPINNING
+STATE      6 抽水 PUMP
+STATE      7 对拖发电 DRAGGEN
+STATE      8 变频启动高转速抽水 SFC HIGHSPEED PUMP
+STATE      9 变频启动低转速抽水 SFC LOWSPEED PUMP
+STATE      10 变频启动高转速水泵调相 SFC HIGHSPEED CMP
+STATE      11 变频启动低转速水泵调相 SFC LOWSPEED CMP
+STATE      12 对拖启动高转速抽水 DRAG HIGHSPEED PUMP
+STATE      13 对拖启动低转速抽水 DRAG LOWSPEED PUMP
+STATE      14 对拖启动高转速水泵调相 DRAG HIGHSPEED CMP
+STATE      15 对拖启动低转速水泵调相 DRAG LOWSPEED CMP
+
+GROUP      NAME = 1
+STATE      0 检修态
+STATE      1 停机态
+STATE      2 开机准备态
+STATE      3 空转态
+STATE      4 空载态
+STATE      5 发电态
+STATE      6 过渡态
+STATE      7 不定态
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = DEVMSG
+
+GROUP      NAME = 0
+STATE      0 正常 NORMAL
+STATE      1 故障 FAILURE
+
+GROUP      NAME = 1
+STATE      0 故障 FAILURE
+STATE      1 正常 NORMAL
+
+GROUP      NAME = 2
+STATE      0 停止 STOP
+STATE      1 运行 RUNNING
+STATE      2 备用 STANDBY
+STATE      3 异常 ABNORMAL
+
+GROUP      NAME = 3
+STATE      0 异常 ABNORMAL
+STATE      1 正常 NORMAL
+STATE      2 故障 FAILURE
+
+GROUP      NAME = 4
+STATE      0 REM
+STATE      1 RUN
+STATE      2 PROG
+
+PROCTYPE      NAME = STREAM
+
+GROUP      NAME = 0
+STATE      0 正常 NORMAL
+STATE      1 中断 BREAKOFF
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = NETMSG
+
+GROUP      NAME = 0
+STATE      0 A网 NETA
+STATE      1 B网 NETB
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = HOSTMSG
+
+GROUP      NAME = 0
+STATE      0 退出 EXIT
+STATE      1 主控 HOST
+STATE      2 备用 STANDBY
+
+GROUP      NAME = 1
+STATE      0 退出
+STATE      1 投入
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = SYSMODE
+
+GROUP      NAME = 0
+STATE      0 厂站 STATION CONTROL
+STATE      1 梯调 CASCADE DISPATCH
+STATE      2 国调 NATIONAL DISPATCH
+STATE      3 网调 NET DISPATCH
+STATE      4 省调 PROVINCE DISPATCH
+STATE      5 地调 REGION DISPATCH
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = ONOFFMSG
+
+GROUP      NAME = 0
+STATE      0 离线 OFFLINE
+STATE      1 在线 ONLINE
+
+GROUP      NAME = 1
+STATE      0 挂起 OFF
+STATE      1 执行 ON
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = AGCCMD
+
+GROUP      NAME = 0
+STATE      0 无操作 NO OPERATE
+STATE      1 开机 START
+STATE      2 停机 STOP
+STATE      3 调功 POWER SETPOINT
+STATE      4 调转发 CMP TO GENERATE
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = CTRLMODE
+
+GROUP      NAME = 0
+STATE      0 开环 OPEN LOOP
+STATE      1 半开环 HALF OPEN LOOP
+STATE      2 闭环 CLOSE LOOP
+
+GROUP      NAME = 1
+STATE      0 开环 OPEN LOOP
+STATE      1 闭环 CLOSE LOOP
+
+GROUP      NAME = 2
+STATE      0 厂站 STATION CONTROL
+STATE      1 成都集控 CASCADE DISPATCH
+STATE      2 四川省调 NATIONAL DISPATCH
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = AGCMODE
+
+GROUP      NAME = 0
+STATE      0 有功给定 ACTIVE POWER SETPOINT
+STATE      1 负荷曲线 LOAD CURVE
+STATE      2 调频 FREQ REGULATE
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = AVCMODE
+
+GROUP      NAME = 0
+STATE      0 电压给定 VOLT SETPOINT
+STATE      1 电压曲线 VOLT CURVE
+STATE      2 无功给定 REACTIVE POWER SET
+
+GROUP      NAME = 1
+STATE      0 I母
+STATE      1 II母
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = UNITMODE
+
+GROUP      NAME = 0
+STATE      0 单控 UNIT OFF JOINT CTRL
+STATE      1 联控 UNIT IN JOINT CTRL
+STATE      2 检修
+
+GROUP      NAME = 1
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = LCUMODE
+
+GROUP      NAME = 0
+STATE      0 本地 LOCAL CTRL
+STATE      1 远方 REMOTE CTRL
+
+GROUP      NAME = 1
+STATE      0 远方 REMOTE CTRL
+STATE      1 本地 LOCAL CTRL
+STATE      2 退出 OFF
+
+GROUP      NAME = 2
+
+GROUP      NAME = 3
+
+PROCTYPE      NAME = DEVMODE
+
+GROUP      NAME = 0
+STATE      0 功率给定 POWER SET
+STATE      1 开度给定 OPEN SET
+STATE      2 流量给定 FLUX SET
+
+GROUP      NAME = 1
+STATE      0 手动
+STATE      1 自动
+
+GROUP      NAME = 2
+STATE      0 A套主用
+STATE      1 B套主用
+STATE      2 C套主用
+
+GROUP      NAME = 3
+STATE      0 通道1主用
+STATE      1 通道2主用
+
+GROUP      NAME = 4
+STATE      0 方式1
+STATE      1 方式2
+
+GROUP      NAME = 5
+STATE      0 给定
+STATE      1 脉冲
+
+END

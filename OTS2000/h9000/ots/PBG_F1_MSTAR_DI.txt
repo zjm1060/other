@@ -1,0 +1,1346 @@
+
+	
+!******************************************************************
+!	除湿器控制 PBG.F1.OBJ.FZKP_CSQ_OBJ_OPEN
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.FZKP_CSQ_OBJ_OPEN
+
+STEP:		PBG.F1.OBJ.FZKP_CSQ_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.POL.FZKP_GCS_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	辅助设备控制 PBG.F1.OBJ.FDJ_FZSBKZ_OBJ_CLOSE
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.FDJ_FZSBKZ_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.FDJ_FZSBKZ_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.POL.FZKP_FCDJ_DI21		
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.POL.FZKP_SDYW_DI21	
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.POL.FZKP_TLYW_DI21		
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.POL.FZKP_XDYW_DI21	
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.POL.FZKP_GJR_DI21	
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	制动粉尘控制 PBG.F1.OBJ.FZKP_FC_OBJ_CLOSE
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.FZKP_FC_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.FZKP_FC_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.POL.FZKP_XCDJ_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	上导轴承吸雾装置切换把手手动
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FFS_SW2_STOP
+
+STEP:		PBG.F1.SYS.S_1FFS_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+
+STEP:		PBG.F1.POL.FZKP_SDYW_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	下导轴承吸雾装置切换把手手动
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FFS_SW3_STOP
+
+
+
+STEP:		PBG.F1.SYS.S_1FFS_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+
+STEP:		PBG.F1.POL.FZKP_XDYW_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	推力轴承吸雾装置切换把手手动
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FFS_SW4_STOP
+
+
+STEP:		PBG.F1.SYS.S_1FFS_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+
+STEP:		PBG.F1.POL.FZKP_TLYW_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	制动粉尘吸收装置切换把手手动
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FFS_SW1_STOP
+
+
+STEP:		PBG.F1.SYS.S_1FFS_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+
+STEP:		PBG.F1.POL.FZKP_XCDJ_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	碳刷粉尘吸收装置切换把手手动
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FFS_SW5_STOP
+
+STEP:		PBG.F1.SYS.S_1FFS_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+
+STEP:		PBG.F1.POL.FZKP_FCDJ_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	防潮加热器切换把手退出
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FFS_SW6_OPEN
+
+STEP:		PBG.F1.SYS.S_1FFS_SW6
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.POL.FZKP_GJR_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	防潮除湿机切换把手退出
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FFS_SW7_OPEN
+
+STEP:		PBG.F1.SYS.S_1FFS_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.POL.FZKP_GCS_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	机组技术供水系统投入(OBJ操作)
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.JSKP_GJS_OBJ_CLOSE
+
+
+STEP:		PBG.F1.OBJ.JSKP_GJS_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.F1.POL.FKJZ_LLCGQ_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.F1.POL.FKJZ_BKG_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	机组技术供水泵(现地操作)
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FJGK_1SB1_STOP
+
+STEP:		PBG.F1.SYS.S_1FJGK_1SB1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKJZ_LLCGQ_DI00
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FJGK_1SB2_STOP
+
+STEP:		PBG.F1.SYS.S_1FJGK_1SB2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKJZ_LLGG_DI61
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	机组技术供水泵阀(现地操作)
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FJGK_1SBF3_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FJGK_1SBF3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+EQUATION:	=	PBG.F1.SYS.S_1FJGK_1SBF1	?	2
+
+STEP:		PBG.F1.POL.FKJZ_BKG_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FJGK_1SBF4_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FJGK_1SBF4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+EQUATION:	=	PBG.F1.SYS.S_1FJGK_1SBF2	?	2
+
+STEP:		PBG.F1.POL.BY_1083
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	机组技术供水系统开启流量上升
+!******************************************************************
+SEQUENCE:	PBG.F1.POL.JSGS_LL_UP
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.POL.FKJZ_LLCGQ_DI00  	?  CLOSE
+			&	PBG.F1.SYS.S_1FJSGSLL_GZ 	?  OPEN
+			+	PBG.F1.POL.FKJZ_LLGG_DI61   	?  CLOSE	
+			&	PBG.F1.SYS.S_1FJSGSLL_GZ 	?  OPEN
+
+STEP:		PBG.F1.POL.FKJZ_LLCGQ_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.F1.POL.FKJZ_LLGG_DI61
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.F1.POL.GX1_SDSZD_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.POL.GX1_KLSZD1_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.POL.GX1_KLSZD2_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.POL.GX1_TLSZD_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.POL.GX1_XDSZD_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+
+GO_MODEL:	PBG.LCU1R.ANA.LIULIANG
+SPEED:          16
+
+GO_MODEL:	PBG.LCU1R.ANA.LIULIANG1
+SPEED:          16
+
+GO_MODEL:	PBG.LCU1R.ANA.LIULIANG2
+SPEED:          16
+
+GO_MODEL:	PBG.LCU1R.ANA.LIULIANG3
+SPEED:          16
+
+GO_MODEL:	PBG.LCU1R.ANA.LIULIANG4
+SPEED:          16
+
+GO_MODEL:	PBG.LCU1R.ANA.LIULIANG5
+SPEED:          16
+
+
+STEP:		PBG.F1.POL.GX1_XDSZD_DI00
+DELAY:		20
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STOP_MODEL:	PBG.LCU1R.ANA.LIULIANG
+
+STOP_MODEL:	PBG.LCU1R.ANA.LIULIANG1
+
+STOP_MODEL:	PBG.LCU1R.ANA.LIULIANG2
+
+STOP_MODEL:	PBG.LCU1R.ANA.LIULIANG3
+
+STOP_MODEL:	PBG.LCU1R.ANA.LIULIANG4
+
+STOP_MODEL:	PBG.LCU1R.ANA.LIULIANG5
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	!********蠕动装置退出**********
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.FDJ_RD_OBJ_OPEN
+
+STEP:		PBG.F1.OBJ.FDJ_RD_OBJ
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.OUS.GX1_RD_DO31
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+STEP:		PBG.F1.POL.GX1_RD_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+STEP:		PBG.F1.POL.GX1_RD_DI20
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	!********推力外循环操作控制**********
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.FKTL_OIL_OBJ_CLOSE
+
+STEP:		PBG.F1.OUS.TLKP_TLY_DO31
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_1JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_2JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_3JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_4JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_5JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_6JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_7JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.POL.FKTL_8JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	推力外循环油泵控制把手手动
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB1_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+STEP:		PBG.F1.POL.FKTL_1JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB2_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+STEP:		PBG.F1.POL.FKTL_2JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB3_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+STEP:		PBG.F1.POL.FKTL_3JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB4_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+STEP:		PBG.F1.POL.FKTL_4JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.POL.TLKP_4RUN_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB5_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+STEP:		PBG.F1.POL.FKTL_5JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB6_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB6
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+
+STEP:		PBG.F1.POL.FKTL_6JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB7_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+STEP:		PBG.F1.POL.FKTL_7JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTL_YB8_STOP
+
+STEP:		PBG.F1.SYS.S_1FTL_YB8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		2
+
+STEP:		PBG.F1.POL.FKTL_8JCQ_DI21   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!	!********围带操作投入**********
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.MFX_1TDK_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.MFX_1TDK_OBJ
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.OUS.MFX_1TDK_DO31
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+END_SEQUENCE:
+
+!******************************************************************
+!	!********围带操作退出**********
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.MFX_1TDK_OBJ_OPEN
+
+STEP:		PBG.F1.OBJ.MFX_1TDK_OBJ
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.OUS.MFX_1TDK_DO31
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	!********锁锭操作退出**********
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.JLQX_3DP_OBJ_OPEN
+
+STEP:		PBG.F1.OBJ.JLQX_3DP_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.POL.SLJX_SD_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+STEP:		PBG.F1.POL.SLJX_SD_DI20
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	!********锁锭退出（现场）**********
+!******************************************************************
+SEQUENCE:	PBG.F1.POL.SLJX_SD_DI21_OPEN
+
+STEP:		PBG.F1.OBJ.JLQX_3DP_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.POL.SLJX_SD_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+STEP:		PBG.F1.POL.SLJX_SD_DI20
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	!********调速器远方/现地切换把手**********
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FTSDQ_SW1_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FTSDQ_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.TSDP_TS_SOE71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.SYS.S_1FTSDQ_SW1_OPEN
+
+STEP:		PBG.F1.SYS.S_1FTSDQ_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.INT.TSDP_TS_SOE71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	导叶增把手
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FLCU_SW3_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FLCU_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.ANA.SLJX_WYB1_AIXC  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.F1.ANA.SLJX_WYB1_AIXC  
+		+C 1
+
+STEP:		PBG.F1.ANA.UAC_1F_AIF 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.F1.ANA.UAC_1F_AIF  
+		+C 0.01
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	!********励磁投入**********
+!*****************************************************************
+SEQUENCE:	PBG.F1.OBJ.EXIT_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.EXIT_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.F1.INT.LCP_LC_SOE21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+STEP:		PBG.F1.INT.LCP_LC_SOE20
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	开机：励磁投入（现地）
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.LCP_LC_SOE21_CLOSE
+
+
+STEP:		PBG.F1.INT.LCP_LC_SOE21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.LCP_LC_SOE20
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.OBJ.EXIT_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	!********励磁现地控制**********
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.LCP_LC_SOE70_CLOSE
+
+STEP:		PBG.F1.INT.LCP_LC_SOE70
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.LCP_LC_SOE71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		0
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.F1.INT.LCP_LC_SOE70_OPEN
+
+STEP:		PBG.F1.INT.LCP_LC_SOE70
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.INT.LCP_LC_SOE71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	10
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	监控合FCB	
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.LCP_FCB_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.LCP_FCB_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	!********现地合FCB**********
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.LCP_FCB_SOE11_CLOSE
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE10	
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+STEP:		PBG.F1.OBJ.LCP_FCB_OBJ	
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	发电机断路器控制合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.DLKP_DL1_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.DLKP_DL1_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE10	
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11	
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16	
+
+STEP:		PBG.F1.ANA.STRT_PSET_AI05
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 25
+			
+STEP:		PBG.F1.ANA.STRT_QSET_AI05
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 30
+
+GO_MODEL:	PBG.F1.ANA.LCU_G_AIPW_UNITSTA
+SPEED:		8
+
+GO_MODEL:	PBG.F1.ANA.LCU_G_AIQW_UNITSTA
+SPEED:		8
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11	
+DELAY:		10
+TYPE:		LOGICAL
+ALARM_DELAY:	600
+RESULT:		1
+EQUATION:	=	PBG.F1.ANA.LCU_G_AIPW	>	24.8
+		&	PBG.F1.ANA.LCU_G_AIQW	>	29.8
+
+STOP_MODEL:	PBG.F1.ANA.LCU_G_AIPW_UNITSTA
+
+STOP_MODEL:	PBG.F1.ANA.LCU_G_AIQW_UNITSTA
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	出口断路器现场合闸
+!******************************************************************
+
+SEQUENCE:	PBG.F1.INT.DLKP_DL1_SOE11_CLOSE
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.OBJ.DLKP_DL1_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16	
+
+STEP:		PBG.F1.ANA.STRT_PSET_AI05
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 25
+			
+STEP:		PBG.F1.ANA.STRT_QSET_AI05
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 30
+
+GO_MODEL:	PBG.F1.ANA.LCU_G_AIPW_UNITSTA
+SPEED:		8
+
+GO_MODEL:	PBG.F1.ANA.LCU_G_AIQW_UNITSTA
+SPEED:		8
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11	
+DELAY:		10
+TYPE:		LOGICAL
+ALARM_DELAY:	600
+RESULT:		1
+EQUATION:	=	PBG.F1.ANA.LCU_G_AIPW	>	24.8
+		&	PBG.F1.ANA.LCU_G_AIQW	>	29.8
+
+STOP_MODEL:	PBG.F1.ANA.LCU_G_AIPW_UNITSTA
+
+STOP_MODEL:	PBG.F1.ANA.LCU_G_AIQW_UNITSTA
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	开机：同期合GCB
+!******************************************************************
+!******************************************************************
+!	开机：投入手准
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FLCU_SW1_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FLCU_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.F1.ANA.UAC_1CB_AIF
+		*C 2.5
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIV   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.F1.ANA.UAC_1CBA_AIV
+
+
+STEP:		PBG.F1.ANA.UAC_1F_AIF 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.F1.ANA.UAC_1CB_AIF
+
+
+STEP:		PBG.F1.SYS.S_1F_TQTJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	开机：减机组电压把手
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FLCU_SW4_OPEN
+
+STEP:		PBG.F1.SYS.S_1FLCU_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIV
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.F1.ANA.UAC_1FA_AIV 
+		-C 0.01
+
+END_SEQUENCE:
+
+!******************************************************************
+!	开机：增机组电压把手
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FLCU_SW4_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FLCU_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIV 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.F1.ANA.UAC_1FA_AIV  
+		+C 0.1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	F1机组同期条件满足
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1F_TQTJ_CLOSE_AUTO
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.ANA.UAC_1CBA_AIV		==	PBG.F1.ANA.UAC_1FA_AIV	
+			&	PBG.F1.ANA.UAC_1CB_AIF		==	PBG.F1.ANA.UAC_1F_AIF	
+			&	PBG.F1.SYS.S_1FLCU_SW5		?	CLOSE
+			&	PBG.F1.SYS.S_1FLCU_SW1		?	CLOSE
+
+STEP:		PBG.F1.SYS.S_1F_TQTJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	F1机组同期信号消失
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1F_TQTJ_OPEN_AUTO
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FLCU_SW1	?	OPEN
+			+	PBG.F1.SYS.S_1FLCU_SW5	?	OPEN
+			+	PBG.F1.SYS.S_1FLCU_SW1	?	2
+
+STEP:		PBG.F1.SYS.S_1F_TQTJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	开机：现地同期合GCB
+!******************************************************************
+
+SEQUENCE:	PBG.F1.SYS.S_1FLCU_SW2_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FLCU_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.F1.OBJ.DLKP_DL1_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIA
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0.16	
+
+STEP:		PBG.F1.ANA.STRT_PSET_AI05
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 25
+			
+STEP:		PBG.F1.ANA.STRT_QSET_AI05
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 30
+
+GO_MODEL:	PBG.F1.ANA.LCU_G_AIPW_UNITSTA
+SPEED:		8
+
+GO_MODEL:	PBG.F1.ANA.LCU_G_AIQW_UNITSTA
+SPEED:		8
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11	
+DELAY:		10
+TYPE:		LOGICAL
+ALARM_DELAY:	600
+RESULT:		1
+EQUATION:	=	PBG.F1.ANA.LCU_G_AIPW	>	24.8
+		&	PBG.F1.ANA.LCU_G_AIQW	>	29.8
+
+STOP_MODEL:	PBG.F1.ANA.LCU_G_AIPW_UNITSTA
+
+STOP_MODEL:	PBG.F1.ANA.LCU_G_AIQW_UNITSTA
+
+
+END_SEQUENCE:

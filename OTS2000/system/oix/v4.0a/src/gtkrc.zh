@@ -1,0 +1,27 @@
+pixmap_path "/usr/include/X11R6/pixmaps:/home/imain/pixmaps"
+style "gtk_default-zh-cn" {
+       font_name = "NSimSun 20"  		
+       bg[PRELIGHT] = {0.9,0,0}  
+       bg[NORMAL] = {0.7,0.7,0.7}         
+}
+style "default" {
+       font_name = "FZHeiTi 10,\
+       		 Sans 10"  		
+       bg[PRELIGHT] = {0.9,0,0}  
+       bg[NORMAL] = {0.7,0.7,0.7}         
+}
+style "window" {
+       font = "-adobe-helvetica-medium-r-normal--62-*-*-*-*-*-iso8859-1,\
+                  -dt-song-medium-r-normal--32-*-*-*-*-*-*-*"
+       #bg[NORMAL] = {0,0,0}           
+}
+style "clist" {
+       font = "-adobe-helvetica-medium-r-normal--32-*-*-*-*-*-iso8859-1,\
+                  -dt-song-medium-r-normal--32-*-*-*-*-*-*-*"
+       bg[NORMAL] = {0,0,0}
+       fg[NORMAL] = {1.0,1.0,1.0}           
+}
+class "GtkWindow" style "window"
+class "GtkWidget" style "default"
+class "GdkWindow" style "window"
+

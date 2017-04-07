@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exhange>
+    <datasource>
+        <driver>com.sybase.jdbc3.jdbc.SybDriver</driver>
+        <url>jdbc:sybase:Tds:localhost:2638</url>
+        <user>dba</user>
+        <password>invest2008</password>
+    </datasource>
+    <tables>
+        <!--<table name="test">-->
+            <!--<pk name="id"></pk>-->
+            <!--<column name="name"></column>-->
+            <!--<column name="age"></column>-->
+        <!--</table>-->
+        <!--<table name="t_file">-->
+        <!--<pk name="c_id"></pk>-->
+        <!--<column name="c_groupid"></column>-->
+        <!--<column name="b_file" type="blob"></column>-->
+        <!--<column name="c_info"></column>-->
+        <!--<column name="c_filename"></column>-->
+        <!--<column name="d_create_time"></column>-->
+        <!--<where></where>-->
+        <!--<exists>overwrite</exists>-->
+        <!--</table>-->
+        <table name="DATACODE">
+            <pk name="TID"></pk>
+            <column name="KIND"></column>
+            <column name="CAPTION"></column>
+            <column name="LEVELS"></column>
+            <column name="CODE"></column>
+            <column name="NAME"></column>
+            <column name="FATHER"></column>
+            <column name="SERIES"></column>
+            <column name="AVAILABLE"></column>
+            <column name="BELONGKIND1"></column>
+            <column name="BELONGCODE1"></column>
+            <column name="BELONGKIND2"></column>
+            <column name="BELONGCODE2"></column>
+            <column name="BELONGKIND3"></column>
+            <column name="BELONGCODE3"></column>
+            <column name="REMARK"></column>
+        </table>
+    </tables>
+    <exists>skip</exists>
+    <output type="file"><![CDATA[
+D:/datacode.exchange
+    ]]></output>
+</exhange>

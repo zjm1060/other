@@ -1,0 +1,70 @@
+.treeDiv{
+  width:160px;
+  height:500px;
+  background-color:#f4f2f2;
+  border:1px solid #d0d1cf;
+}
+
+.normalL1{
+  border:1px #7786a7 solid;
+  height:25px;
+  background-image:url('../../images/tree_1bg_normal.gif');
+  background-repeat:repeat-x;
+  vertical-align:middle;
+  cursor:hand;
+}
+.normalL2{
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #9dabcb solid;
+  border-left:1px #9dabcb solid;
+  border-top:1px white solid;
+  height:25px;
+  background-color:#d8e3fc;
+  vertical-align:middle;
+  cursor:hand;
+}
+
+
+.normalL3{
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #ced6e9 solid;
+  border-left:1px #9dabcb solid;
+  height:25px;
+  background-color:#eff5fe;
+  vertical-align:middle;
+  cursor:hand;
+}
+
+.normalL4{
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #ced6e9 solid;
+  border-left:1px #9dabcb solid;
+  height:25px;
+  background-color:blue;
+  vertical-align:middle;
+  cursor:hand;
+}
+
+.normalL5{
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #ced6e9 solid;
+  border-left:1px #9dabcb solid;
+  height:25px;
+  background-color:red;
+  vertical-align:middle;
+  cursor:hand;
+}
+
+.breakL1{
+  background-color:#cdd9f5;
+  height:1px;
+}
+
+.selectL{
+  border:1px #60790c solid;
+  background-color:white;
+  height:25px;
+  vertical-align:middle;
+  color:#893705;
+
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="TaskAssignment" Name="TaskAssignment" DisplayName="TaskAssignment" ResourceFile="" ResourceManager="">
+    <fpdl:StartNode Id="TaskAssignment.START_NODE" Name="START_NODE" DisplayName=""/>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="TaskAssignment.TaskAssignment" Name="TaskAssignment" DisplayName="任务分配" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="80"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="59"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="TaskAssignment.TaskAssignment.AssignTask" Name="AssignTask" DisplayName="分配任务" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="receiver" DisplayName="接收人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>Assignment</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="TaskAssignment.ReceiveTask" Name="ReceiveTask" DisplayName="接收任务" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="310"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="60"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="TaskAssignment.ReceiveTask.Task2" Name="Task2" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO"/>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="TaskAssignment.Synchronizer1" Name="Synchronizer1">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="237"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="79"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="TaskAssignment.EndNode1" Name="EndNode1">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="501"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="81"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="TaskAssignment.Transition1" From="TaskAssignment.START_NODE" To="TaskAssignment.TaskAssignment" Name="Transition1"/>
+        <fpdl:Transition Id="TaskAssignment.Transition2" From="TaskAssignment.TaskAssignment" To="TaskAssignment.Synchronizer1" Name="Transition2"/>
+        <fpdl:Transition Id="TaskAssignment.Transition3" From="TaskAssignment.Synchronizer1" To="TaskAssignment.ReceiveTask" Name="Transition3"/>
+        <fpdl:Transition Id="TaskAssignment.Transition4" From="TaskAssignment.ReceiveTask" To="TaskAssignment.EndNode1" Name="Transition4"/>
+    </fpdl:Transitions>
+</fpdl:WorkflowProcess>

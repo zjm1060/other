@@ -1,0 +1,18 @@
+[PropertyInfo]
+allowPersonize,int,false,false, , ,false,<default>
+allowUse,int,false,false, , ,false,<default>
+dashboardImageLarge,String,false,false, , ,false,<default>
+dashboardImageSmall,String,false,false, , ,false,<default>
+dashboardOrder,int,false,false, , ,false,<default>
+description,String,false,false, , ,false,<default>
+isShowTree,int,false,false, , ,false,<default>
+moduleId,String,false,false, , ,false,<default>
+parentId,String,false,false, , ,false,<default>
+title,String,false,false, , ,false,<default>
+userCode,String,false,false, , ,false,<default>
+userType,int,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

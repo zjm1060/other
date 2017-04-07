@@ -1,0 +1,51 @@
+!******************************************************************
+!	SEQUENCE_NAME:	有功调节
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.LCU_G_AIPW
+
+
+	GO_MODEL:	PBG.F1.ANA.LCU_G_AIPW
+	DELAY:		0
+	SPEED:		2
+
+	STEP:		PBG.F1.ANA.FKTS_YG_AIP
+	DELAY:		1
+	TYPE:		CALC
+	EQUATION:	=	PBG.F1.ANA.FKTS_YG_AIP
+						-C	0.01	
+
+END_SEQUENCE:
+
+SEQUENCE:	PBG.F1.ANA.YGTJ_STOP
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.PAM.YG_GD  == PBG.F1.ANA.LCU_G_AIPW
+
+STOP_MODEL:		PBG.F1.ANA.LCU_G_AIPW
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	Regulate WG 
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.LCU_G_AIQW
+
+
+	GO_MODEL:	PBG.F1.ANA.LCU_G_AIQW
+	DELAY:		0
+	SPEED:		2
+
+
+END_SEQUENCE:
+
+SEQUENCE:	PBG.F1.ANA.WGTJ_STOP
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.PAM.WG_GD == PBG.F1.ANA.LCU_G_AIQW 
+
+STOP_MODEL:		PBG.F1.ANA.LCU_G_AIQW
+
+END_SEQUENCE:
+

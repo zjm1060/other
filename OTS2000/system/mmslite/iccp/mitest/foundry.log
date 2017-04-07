@@ -1,0 +1,16 @@
+
+
+***********************************************************
+          LOGGING STARTED Tue Apr  3 15:23:02 2007
+***********************************************************
+
+00.000s SLOGALWAYS (fo_main.c 194) 
+  Executing '../../bin/foundry'
+  Input TDL file    : './miusrobj.odf'
+  Configuration file: '../../bin/align.cfg'
+  Output 'C' file   : './miusrobj.c'
+  Output 'H' file   : './miusrobj.h'
+  Including file    : 'iccp_obj.odf'
+
+00.030s SLOGALWAYS (fo_write.c 1131) 
+  WRITING RUNTIME TYPES

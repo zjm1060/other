@@ -1,0 +1,40 @@
+{
+  "login": {
+    "success": true,
+    "message": null,
+    "title": null,
+    "attributes": {
+      "waterBodys": [
+        {
+          "id": "1",
+          "name": "太子河"
+        },
+        {
+          "id": "2",
+          "name": "于桥水库"
+        }
+      ],
+      "user": {
+        "id": "1",
+        "name": "某某某"
+      }
+    }
+  },
+  "getMainTypes": {
+    "success": true,
+    "message": null,
+    "title": null,
+    "attributes": {
+      "types": [
+        {
+          "id": "1",
+          "name": "重点水体"
+        },
+        {
+          "id": "2",
+          "name": "敏感目标"
+        }
+      ]
+    }
+  }
+}

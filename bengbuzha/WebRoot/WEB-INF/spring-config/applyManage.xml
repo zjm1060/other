@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	
+     <!--applyMeetingRoom -->
+     <bean name="/applyManageMaint"
+        class="com.bitc.jk.xmis.applymanage.web.ApplyManageAction">
+        <property name="applyMangeService">
+            <ref local="applyMangeServiceImpl" />
+        </property>
+		<property name="workflowService">
+			<ref bean="workflowService"/>
+		</property>        
+    </bean>
+    <bean id="applyMangeServiceImpl"
+        class="com.bitc.jk.xmis.applymanage.service.impl.ApplyManageServiceImpl">
+        <property name="applyManageDao">
+            <ref local="applyManageDaoImpl" />
+        </property>
+        <property name="workflowContext">
+            <ref bean="fireRuntimeContext"/>
+        </property>
+        <property name="organizationDAOImpl">
+            <ref bean="organizationDAOImpl" />
+        </property>
+        <property name="workflowDAO">
+			<ref bean="workflowDAO" />
+		</property>   
+		<property name="workflowService">
+			<ref bean="workflowService"/>
+		</property>     
+		<property name="messageSender">
+			<ref bean="messageInfoSender"/>			
+		</property>
+    </bean>
+  
+    <bean id="applyManageDaoImpl"  class="com.bitc.jk.xmis.applymanage.dao.impl.ApplyManageDaoImpl">
+    	<property name="ht">
+            <ref bean="ht" />
+        </property>
+    	<property name="jt">
+            <ref bean="JdbcTemplate" />
+        </property>
+    </bean>	
+    
+</beans>

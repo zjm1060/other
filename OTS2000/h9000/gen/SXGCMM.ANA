@@ -1,0 +1,15 @@
+RECORD      NAME = ANA
+
+ENTRY      NAME	= ANA1
+           LONGNAME	= '下游水位'
+           D_BAND	= 1
+           HDB_BAND	= 2
+           ENG_CVT	= 1
+           HI_RANGE	= 1
+           LO_RANGE	= 0
+           CMD_MSG	= 0
+           ID	= 11050000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+END

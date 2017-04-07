@@ -1,0 +1,17 @@
+SCC = This is a Source Code Control file
+
+[iec101.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/iechdb/v4.0a/src", WGFAAAAA
+
+[iec101_com.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/iechdb/v4.0a/src", WGFAAAAA
+
+[iec101_hdb.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/iechdb/v4.0a/src", WGFAAAAA
+
+[iec101_hdb.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/iechdb/v4.0a/src", WGFAAAAA

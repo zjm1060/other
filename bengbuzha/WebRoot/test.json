@@ -1,0 +1,23 @@
+{
+	"success" : "true",
+	"totalCount" : "2",
+	"rows" : [{
+				"form_id" : "40298bdf485cf6b901485d238f52000e",
+				"absent_type_id" : "2",
+				"reason" : "jhg",
+				"app_user_id" : "4008",
+				"app_user_name" : "俞斌",
+				"plan_begin_date" : "2014-09-10",
+				"plan_end_date" : "2014-10-07",
+				"type" : "1"
+			}, {
+				"form_id" : "40298bdf485cf6b901485d2349750002",
+				"absent_type_id" : "2",
+				"reason" : "jhgf",
+				"app_user_id" : "-1",
+				"app_user_name" : "Administrator",
+				"plan_begin_date" : "2014-09-11",
+				"plan_end_date" : "2014-09-30",
+				"type" : "1"
+			}]
+}

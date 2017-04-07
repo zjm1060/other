@@ -1,0 +1,105 @@
+.WebFX-ContextMenu
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    WIDTH: 10px;
+    BORDER-BOTTOM: 0px
+}
+.WebFX-ContextMenu-Body
+{
+    BORDER-RIGHT: 2px outset;
+    PADDING-RIGHT: 1px;
+    BORDER-TOP: 2px outset;
+    PADDING-LEFT: 1px;
+    PADDING-BOTTOM: 1px;
+    BORDER-LEFT: 2px outset;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: 2px outset;
+    BACKGROUND-COLOR: menu;
+    margins: 0px
+}
+.WebFX-ContextMenu-Item
+{
+    PADDING-RIGHT: 16px;
+    PADDING-LEFT: 16px;
+    PADDING-BOTTOM: 2px;
+    FONT: menu;
+    WIDTH: 100%;
+    CURSOR: default;
+    COLOR: menutext;
+    PADDING-TOP: 2px
+}
+.WebFX-ContextMenu-Over
+{
+    PADDING-RIGHT: 16px;
+    PADDING-LEFT: 16px;
+    PADDING-BOTTOM: 2px;
+    FONT: menu;
+    WIDTH: 100%;
+    CURSOR: default;
+    COLOR: white;
+    PADDING-TOP: 2px;
+    BACKGROUND-COLOR: highlight
+}
+.WebFX-ContextMenu-Disabled
+{
+    PADDING-RIGHT: 16px;
+    PADDING-LEFT: 16px;
+    PADDING-BOTTOM: 2px;
+    FONT: menu;
+    WIDTH: 100%;
+    CURSOR: default;
+    COLOR: graytext;
+    PADDING-TOP: 2px
+}
+.WebFX-ContextMenu-Disabled-Over
+{
+    PADDING-RIGHT: 16px;
+    PADDING-LEFT: 16px;
+    PADDING-BOTTOM: 2px;
+    FONT: menu;
+    WIDTH: 100%;
+    CURSOR: default;
+    COLOR: graytext;
+    PADDING-TOP: 2px;
+    BACKGROUND-COLOR: highlight
+}
+.WebFX-ContextMenu-Separator
+{
+    BORDER-RIGHT: 1px inset;
+    BORDER-TOP: 1px inset;
+    FONT-SIZE: 0pt;
+    MARGIN: 3px 1px;
+    OVERFLOW: hidden;
+    BORDER-LEFT: 1px inset;
+    BORDER-BOTTOM: 1px inset;
+    HEIGHT: 2px
+}
+.WebFX-ContextMenu-Disabled-Over .WebFX-ContextMenu-DisabledContainer
+{
+    DISPLAY: block;
+    WIDTH: 100%
+}
+.WebFX-ContextMenu-Disabled .WebFX-ContextMenu-DisabledContainer
+{
+    DISPLAY: block;
+    BACKGROUND: graytext;
+    FILTER: chroma(color=#010101) dropshadow(color=ButtonHighlight, offx=1, offy=1);
+    WIDTH: 100%
+}
+.WebFX-ContextMenu-Disabled .WebFX-ContextMenu-DisabledContainer .WebFX-ContextMenu-DisabledContainer
+{
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    FILTER: gray()
+						
+						chroma(color=#ffffff) chroma(color=#fefefe) chroma(color=#fdfdfd)
+						chroma(color=#fcfcfc) chroma(color=#fbfbfb) chroma(color=#fafafa)
+						chroma(color=#f9f9f9) chroma(color=#f8f8f8) chroma(color=#f7f7f7)
+						chroma(color=#f6f6f6) chroma(color=#f5f5f5) chroma(color=#f4f4f4)
+						chroma(color=#f3f3f3) 
+						mask(color=#010101)
+}
+.WebFX-ContextMenu-Disabled-Over .WebFX-ContextMenu-DisabledContainer .WebFX-ContextMenu-DisabledContainer
+{
+}

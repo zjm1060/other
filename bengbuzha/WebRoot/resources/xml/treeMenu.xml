@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding='GBK'?>
+<menu>
+	<item id="new" text="新建"></item>
+	<item id="delete" text="删除"></item>
+	<item id="save" text="保存"></item>	
+</menu>

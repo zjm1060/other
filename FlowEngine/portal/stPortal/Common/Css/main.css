@@ -1,0 +1,53 @@
+BODY {PADDING: 0px;MARGIN: 0px;TEXT-ALIGN: center;FONT-SIZE: 12px;FONT-FAMILY: Arial,"ËÎÌו";text-overflow :ellipsis }
+H1,H2,H3,H4,H5,H6{PADDING: 0px;MARGIN: 0px;}
+H1{LINE-HEIGHT:26px;font-size:14px;BACKGROUND: #ebf3fb;TEXT-ALIGN: left;PADDING-LEFT:18px;HEIGHT:26px;BORDER-BOTTOM: #ace 1px solid;}
+H2{LINE-HEIGHT:23px;font-size:12px;}
+H1 a{color:#000;text-decoration : none;}
+
+DIV,form{PADDING: 0px;MARGIN: 0px;}
+IMG{BORDER: 0px;}
+UL {PADDING: 0px; MARGIN: 0px; LIST-STYLE-TYPE: none}
+LI{FONT-SIZE: 12px; FLOAT: left; HEIGHT: 100%;}
+SELECT {BORDER-RIGHT: #000000 1px solid;  FONT: 12px Tahoma, Verdana;  COLOR: #003366; BACKGROUND-COLOR: #f4fbff;}
+INPUT {BORDER: #ace 1px solid;  COLOR: #003366; BACKGROUND-COLOR: #f4fbff;}
+TEXTAREA {BORDER: #ace 1px solid;FONT: 12px Tahoma, Verdana; COLOR: #003366;BACKGROUND-COLOR:#f4fbff;PADDING:1px;width:100%;height:45px; }
+TABLE{
+	font-size: 12px;
+	}
+a:link { color: #000; text-decoration:none;}
+a:visited { color: #000;text-decoration:none;}
+a:hover { color: #f60; text-decoration:underline;}
+a:active { color: #000;}
+.cRed,a.cRed:link,a.cRed:visited{ color:Red; }
+.cBlue,a.cBlue:link,a.cBlue:visited{ color:#1f3a87;}
+.cGreen,a.cGreen:link,a.cGreen:visited{ color:Green;}
+
+.w{width:96%;BORDER: #ace 1px solid;margin-top:10px;}
+.l{float:left;TEXT-ALIGN: left;width:60%;PADDING-LEFT:2%; }
+.r{float:right;TEXT-ALIGN: right;width:30%;PADDING-RIGHT:2%;}
+
+.c{BORDER: #ace 1px solid;}
+
+.m{width:96%;text-align:left;margin:3px;}
+.m1{width:10%;float:left;}
+.m2{width:89%;float:right;}
+.m3{width:80%;float:right;text-align:left;margin:5px;}
+.o{width:65%;text-align:left;}
+.o1{width:60%;}
+
+.p{font-size:14px;BACKGROUND: #f3f8ef;font-weight:800;LINE-HEIGHT:18px;float:right;width:102px;text-align:center;BORDER: #659b28 1px solid;PADDING-TOP:3px;margin-top:3px;margin-left:3px;}
+.p A:hover {BACKGROUND: #f3f8ef; COLOR: #004c7d;  TEXT-DECORATION: none}
+
+#top{height:80px;BORDER-BOTTOM: #ace 2px solid;width:96%;}
+#logo{margin-top:16px;width:350px;float:left;}
+#bar{margin-top:10px;width:468px;float:right;}
+
+#nav{height:28px;LINE-HEIGHT:26px;}
+#right{position :absolute;right:2%;bottom:108px;height:60%;width:26%;}
+#left{position :absolute;left:2%;bottom:108px;height:60%;width:68%;}
+
+#post{bottom:38px;left:2%;height:98%;width:96%;text-align:left;}
+#pl{float:left;TEXT-ALIGN: center;width:22%;margin-top:5px;}
+#pc{float:left;TEXT-ALIGN: left;width:57%;height:50px;margin-top:5px;}
+#pr{float:right;TEXT-ALIGN: left;width:20%;LINE-HEIGHT:24px;margin-top:5px;}
+#footer{position :absolute;bottom:0px;left:2%;margin-top:10px;BORDER-TOP:solid #ace 2px;text-align:right;width:96%;line-height:28px;}

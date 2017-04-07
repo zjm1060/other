@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+       <context:component-scan base-package="bitc.sz.wzEnv.action"></context:component-scan>
+       <aop:aspectj-autoproxy/>
+       <!--访问静态文件-->
+       <!--<mvc:resources location="/static/" mapping="/static/**"/>-->
+       <!-- 默认的注解映射的支持 -->
+       <!--<mvc:annotation-driven />-->
+       <!--
+        <mvc:annotation-driven /> 完成了以下工作
+       <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">-->
+              <!--<property name="interceptors">-->
+                     <!--<list>-->
+                            <!--<ref bean="logNDCInteceptor"/>   &lt;!&ndash; 日志拦截器，这是你自定义的拦截器 &ndash;&gt;-->
+                            <!--<ref bean="myRequestHelperInteceptor"/>   &lt;!&ndash; RequestHelper拦截器，这是你自定义的拦截器&ndash;&gt;-->
+                            <!--<ref bean="default-servlet-handler"/>  &lt;!&ndash; 权限拦截器，这是你自定义的拦截器&ndash;&gt;-->
+                            <!--<ref bean="myUserInfoInteceptor"/>  &lt;!&ndash; 用户信息拦截器，这是你自定义的拦截器&ndash;&gt;-->
+                     <!--</list>-->
+              <!--</property>-->
+       <!--</bean>-->
+       <!--<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">-->
+              <!--<property name="messageConverters">-->
+                     <!--<list>-->
+                            <!--<ref bean="byteArray_hmc" />-->
+                            <!--<ref bean="string_hmc" />-->
+                            <!--<ref bean="resource_hmc" />-->
+                            <!--<ref bean="source_hmc" />-->
+                            <!--<ref bean="xmlAwareForm_hmc" />-->
+                            <!--<ref bean="jaxb2RootElement_hmc" />-->
+                            <!--<ref bean="jackson_hmc" />-->
+                     <!--</list>-->
+              <!--</property>-->
+       <!--</bean>-->
+       <!--如果有文件下载之类的，输出byte，  要把这个 放到 josn处理的前面-->
+       <!--<bean id="byteArray_hmc" class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />&lt;!&ndash; 处理.. &ndash;&gt;-->
+       <!--<bean id="string_hmc" class="org.springframework.http.converter.StringHttpMessageConverter" />&lt;!&ndash; 处理.. &ndash;&gt;-->
+       <!--<bean id="resource_hmc" class="org.springframework.http.converter.ResourceHttpMessageConverter" />&lt;!&ndash; 处理.. &ndash;&gt;-->
+       <!--<bean id="source_hmc" class="org.springframework.http.converter.xml.SourceHttpMessageConverter" />&lt;!&ndash; 处理.. &ndash;&gt;-->
+       <!--<bean id="xmlAwareForm_hmc" class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter" />&lt;!&ndash; 处理.. &ndash;&gt;-->
+       <!--<bean id="jaxb2RootElement_hmc" class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter" />&lt;!&ndash; 处理.. &ndash;&gt;-->
+       <!--<bean id="jackson_hmc" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />-->
+
+       <mvc:annotation-driven>
+              <mvc:message-converters register-defaults="false">
+                     <!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
+                     <bean id="fastJsonHttpMessageConverter" class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                            <property name="supportedMediaTypes">
+                                   <list>
+                                          <!-- 这里顺序不能反，一定先写text/html,不然ie下出现下载提示 -->
+                                          <value>text/html;charset=UTF-8</value>
+                                          <value>application/json;charset=UTF-8</value>
+                                   </list>
+                            </property>
+                     </bean>
+              </mvc:message-converters>
+       </mvc:annotation-driven>
+
+       <!-- 注解映射的支持 -->
+       <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+              <property name="messageConverters">
+                     <list>
+                            <bean id="byteArray_hmc" class="org.springframework.http.converter.ByteArrayHttpMessageConverter" /><!-- 处理.. -->
+                            <ref bean="jackson_hmc" />
+                     </list>
+              </property>
+              <property name="customArgumentResolvers">
+                     <list>
+                            <bean class="bitc.sz.wzEnv.query.PagingInfoMethodArgumentResolver"/>
+                     </list>
+              </property>
+              <!--<property name="webBindingInitializer">-->
+                     <!--<bean class="com.bitc.spring.CustomWebBindingInitializer"></bean>-->
+              <!--</property>-->
+       </bean>
+       <!-- 处理json-->
+       <bean id="jackson_hmc" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" >
+       </bean>
+       <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+              <property name="interceptors">
+                     <list>
+                            <bean class="org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor">
+                                   <property name="sessionFactory" ref="sessionFactory"/>
+                            </bean>
+                     </list>
+              </property>
+       </bean>
+
+       <!-- 文件上传 -->
+       <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+              <property name="defaultEncoding" value="UTF-8" /> <!-- 默认编码 (ISO-8859-1) -->
+              <property name="maxInMemorySize" value="10240" /> <!-- 最大内存大小 (10240) -->
+              <property name="maxUploadSize" value="-1" /> <!-- 最大文件大小，-1为无限止(-1) -->
+       </bean>
+
+       <!-- 视图解释类 -->
+       <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+              <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+              <property name="prefix" value="/WEB-INF/jsp/"/>
+              <property name="suffix" value=".jsp"/><!--可为空,方便实现自已的依据扩展名来选择视图解释类的逻辑  -->
+       </bean>
+       <!-- 总错误处理 -->
+       <bean id="exceptionResolver" class="bitc.sz.wzEnv.sys.exception.ExceptionHandler"></bean>
+       <!-- 总错误处理
+           <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+               <property name="defaultErrorView">
+                   <value>error</value>
+               </property>
+               <property name="defaultStatusCode">
+                   <value>500</value>
+               </property>
+               <property name="warnLogCategory">
+                   <value>org.springframework.web.servlet.handler.SimpleMappingExceptionResolver</value>
+               </property>
+           </bean> -->
+
+</beans>

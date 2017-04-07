@@ -1,0 +1,673 @@
+BEGIN:
+
+POINT:  D_CLEAR        		3
+        PBG.F1.CAL.HOUR_BY_D
+        PBG.F1.CAL.HOUR_FD_D
+        PBG.F1.CAL.HOUR_KY_D
+	PBG.F1.CAL.HOUR_JX_D    	    	
+    	PBG.F1.CAL.HOUR_KZ_D
+	PBG.F1.CAL.HOUR_KZH_D
+	
+	PBG.F2.CAL.HOUR_BY_D	
+	PBG.F2.CAL.HOUR_FD_D
+	PBG.F2.CAL.HOUR_KY_D
+	PBG.F2.CAL.HOUR_JX_D	
+	PBG.F2.CAL.HOUR_KZ_D
+	PBG.F2.CAL.HOUR_KZH_D
+		
+	PBG.F3.CAL.HOUR_BY_D
+	PBG.F3.CAL.HOUR_FD_D
+	PBG.F3.CAL.HOUR_KY_D
+    	PBG.F3.CAL.HOUR_JX_D    	
+    	PBG.F3.CAL.HOUR_KZ_D
+	PBG.F3.CAL.HOUR_KZH_D
+		
+	PBG.F4.CAL.HOUR_BY_D
+	PBG.F4.CAL.HOUR_FD_D
+	PBG.F4.CAL.HOUR_KY_D
+	PBG.F4.CAL.HOUR_JX_D
+	PBG.F4.CAL.HOUR_KZ_D
+	PBG.F4.CAL.HOUR_KZH_D
+
+	PBG.F5.CAL.HOUR_BY_D
+	PBG.F5.CAL.HOUR_FD_D
+	PBG.F5.CAL.HOUR_KY_D   	
+    	PBG.F5.CAL.HOUR_JX_D
+    	PBG.F5.CAL.HOUR_KZ_D
+	PBG.F5.CAL.HOUR_KZH_D
+	
+	PBG.F6.CAL.HOUR_BY_D
+	PBG.F6.CAL.HOUR_FD_D	
+	PBG.F6.CAL.HOUR_BY_D    	
+    	PBG.F6.CAL.HOUR_JX_D
+    	PBG.F6.CAL.HOUR_KZ_D
+	PBG.F6.CAL.HOUR_KZH_D	
+
+POINT:  M_CLEAR                 3
+        PBG.F1.CAL.HOUR_BY_M
+        PBG.F1.CAL.HOUR_FD_M
+        PBG.F1.CAL.HOUR_KY_M
+	PBG.F1.CAL.HOUR_JX_M    	    	
+    	PBG.F1.CAL.HOUR_KZ_M
+	PBG.F1.CAL.HOUR_KZH_M
+	
+	PBG.F2.CAL.HOUR_BY_M	
+	PBG.F2.CAL.HOUR_FD_M
+	PBG.F2.CAL.HOUR_KY_M
+	PBG.F2.CAL.HOUR_JX_M	
+	PBG.F2.CAL.HOUR_KZ_M
+	PBG.F2.CAL.HOUR_KZH_M
+		
+	PBG.F3.CAL.HOUR_BY_M
+	PBG.F3.CAL.HOUR_FD_M
+	PBG.F3.CAL.HOUR_KY_M
+    	PBG.F3.CAL.HOUR_JX_M    	
+    	PBG.F3.CAL.HOUR_KZ_M
+	PBG.F3.CAL.HOUR_KZH_M
+		
+	PBG.F4.CAL.HOUR_BY_M
+	PBG.F4.CAL.HOUR_FD_M
+	PBG.F4.CAL.HOUR_KY_M
+	PBG.F4.CAL.HOUR_JX_M
+	PBG.F4.CAL.HOUR_KZ_M
+	PBG.F4.CAL.HOUR_KZH_M
+
+	PBG.F5.CAL.HOUR_BY_M
+	PBG.F5.CAL.HOUR_FD_M
+	PBG.F5.CAL.HOUR_KY_M   	
+    	PBG.F5.CAL.HOUR_JX_M
+    	PBG.F5.CAL.HOUR_KZ_M
+	PBG.F5.CAL.HOUR_KZH_M
+	
+	PBG.F6.CAL.HOUR_BY_M
+	PBG.F6.CAL.HOUR_FD_M	
+	PBG.F6.CAL.HOUR_BY_M    	
+    	PBG.F6.CAL.HOUR_JX_M
+    	PBG.F6.CAL.HOUR_KZ_M
+	PBG.F6.CAL.HOUR_KZH_M
+		     
+POINT:  Y_CLEAR                 3
+        PBG.F1.CAL.HOUR_BY_Y
+        PBG.F1.CAL.HOUR_FD_Y
+        PBG.F1.CAL.HOUR_KY_Y
+	PBG.F1.CAL.HOUR_JX_Y    	    	
+    	PBG.F1.CAL.HOUR_KZ_Y
+	PBG.F1.CAL.HOUR_KZH_Y
+	
+	PBG.F2.CAL.HOUR_BY_Y	
+	PBG.F2.CAL.HOUR_FD_Y
+	PBG.F2.CAL.HOUR_KY_Y
+	PBG.F2.CAL.HOUR_JX_Y	
+	PBG.F2.CAL.HOUR_KZ_Y
+	PBG.F2.CAL.HOUR_KZH_Y
+		
+	PBG.F3.CAL.HOUR_BY_Y
+	PBG.F3.CAL.HOUR_FD_Y
+	PBG.F3.CAL.HOUR_KY_Y
+    	PBG.F3.CAL.HOUR_JX_Y    	
+    	PBG.F3.CAL.HOUR_KZ_Y
+	PBG.F3.CAL.HOUR_KZH_Y
+		
+	PBG.F4.CAL.HOUR_BY_Y
+	PBG.F4.CAL.HOUR_FD_Y
+	PBG.F4.CAL.HOUR_KY_Y
+	PBG.F4.CAL.HOUR_JX_Y
+	PBG.F4.CAL.HOUR_KZ_Y
+	PBG.F4.CAL.HOUR_KZH_Y
+
+	PBG.F5.CAL.HOUR_BY_Y
+	PBG.F5.CAL.HOUR_FD_Y
+	PBG.F5.CAL.HOUR_KY_Y   	
+    	PBG.F5.CAL.HOUR_JX_Y
+    	PBG.F5.CAL.HOUR_KZ_Y
+	PBG.F5.CAL.HOUR_KZH_Y
+	
+	PBG.F6.CAL.HOUR_BY_Y
+	PBG.F6.CAL.HOUR_FD_Y	
+	PBG.F6.CAL.HOUR_BY_Y    	
+    	PBG.F6.CAL.HOUR_JX_Y
+    	PBG.F6.CAL.HOUR_KZ_Y
+	PBG.F6.CAL.HOUR_KZH_Y	
+               
+POINT:  PBG.F1.CAL.HOUR_BY_D		C
+        IF	PBG.F1.SYS.UNIT_STA       ? 0
+	=	PBG.F1.CAL.HOUR_BY_D	
+        +C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_KY_D          	C
+        IF	PBG.F1.SYS.UNIT_STA       ? ~2
+        =       PBG.F1.CAL.HOUR_KY_D 
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_FD_D		C
+        IF	PBG.F1.SYS.UNIT_STA      ? 1
+	=	PBG.F1.CAL.HOUR_FD_D
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_JX_D		C
+        IF	PBG.F1.SYS.UNIT_STA       ? 2
+	=	PBG.F1.CAL.HOUR_JX_D
+	+C      0.05
+	
+POINT:  PBG.F1.CAL.HOUR_KZH_D 		C
+	IF      PBG.F1.SYS.UNIT_STA  	? 4
+	=	PBG.F1.CAL.HOUR_KZH_D
+	+C      0.05 
+		
+POINT:  PBG.F1.CAL.HOUR_KZ_D 		C
+	IF      PBG.F1.SYS.UNIT_STA  	? 5
+	=	PBG.F1.CAL.HOUR_KZ_D
+	+C      0.05 
+	
+POINT:  PBG.F1.CAL.HOUR_BY_M         	C
+        IF	PBG.F1.SYS.UNIT_STA       ? 0
+        =       PBG.F1.CAL.HOUR_BY_M 
+	+C      0.05
+       
+POINT:  PBG.F1.CAL.HOUR_KY_M          	C
+        IF	PBG.F1.SYS.UNIT_STA       ? ~2
+        =       PBG.F1.CAL.HOUR_KY_M 
+	+C      0.05
+       
+POINT:  PBG.F1.CAL.HOUR_FD_M          	C
+        IF	PBG.F1.SYS.UNIT_STA       ? 1
+        =       PBG.F1.CAL.HOUR_FD_M 
+	+C      0.05
+	
+POINT:  PBG.F1.CAL.HOUR_JX_M 		C
+        IF	PBG.F1.SYS.UNIT_STA       ? 2
+	=	PBG.F1.CAL.HOUR_JX_M
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_KZH_M          	C
+        IF	PBG.F1.SYS.UNIT_STA       ? 4
+        =       PBG.F1.CAL.HOUR_KZH_M
+	+C      0.05
+        	
+POINT:  PBG.F1.CAL.HOUR_KZ_M          	C
+        IF	PBG.F1.SYS.UNIT_STA       ? 5
+        =       PBG.F1.CAL.HOUR_KZ_M
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_BY_Y   		C
+        IF	PBG.F1.SYS.UNIT_STA       ? 0
+        =       PBG.F1.CAL.HOUR_BY_Y
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_KY_Y		C
+        IF	PBG.F1.SYS.UNIT_STA       ? ~2
+        =       PBG.F1.CAL.HOUR_KY_Y
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_FD_Y            C
+        IF	PBG.F1.SYS.UNIT_STA       ? 1
+        =       PBG.F1.CAL.HOUR_FD_Y 
+	+C      0.05
+	
+POINT:  PBG.F1.CAL.HOUR_JX_Y		C
+        IF	PBG.F1.SYS.UNIT_STA       ? 2
+	=	PBG.F1.CAL.HOUR_JX_Y
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_KZH_Y            C
+        IF	PBG.F1.SYS.UNIT_STA       ? 4
+        =       PBG.F1.CAL.HOUR_KZH_Y
+	+C      0.05
+        
+POINT:  PBG.F1.CAL.HOUR_KZ_Y            C
+        IF	PBG.F1.SYS.UNIT_STA       ? 5
+        =       PBG.F1.CAL.HOUR_KZ_Y
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_BY_D		C
+        IF	PBG.F2.SYS.UNIT_STA       ? 0
+	=	PBG.F2.CAL.HOUR_BY_D
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_KY_D		C
+        IF	PBG.F2.SYS.UNIT_STA       ? ~2
+	=	PBG.F2.CAL.HOUR_KY_D
+	+C      0.05
+       
+POINT:  PBG.F2.CAL.HOUR_FD_D 		C
+        IF	PBG.F2.SYS.UNIT_STA      	? 1
+	=	PBG.F2.CAL.HOUR_FD_D
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_JX_D 		C
+        IF	PBG.F2.SYS.UNIT_STA       ? 2
+	=	PBG.F2.CAL.HOUR_JX_D
+	+C      0.05
+	
+POINT:  PBG.F2.CAL.HOUR_KZH_D 		C
+	IF      PBG.F2.SYS.UNIT_STA       ? 4
+	=	PBG.F2.CAL.HOUR_KZH_D
+	+C      0.05 
+		
+POINT:  PBG.F2.CAL.HOUR_KZ_D 		C
+	IF      PBG.F2.SYS.UNIT_STA       ? 5
+	=	PBG.F2.CAL.HOUR_KZ_D
+	+C      0.05 
+	
+POINT:  PBG.F2.CAL.HOUR_BY_M            C
+        IF	PBG.F2.SYS.UNIT_STA       ? 0
+        =       PBG.F2.CAL.HOUR_BY_M 
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_KY_M          	C
+        IF	PBG.F2.SYS.UNIT_STA       ? ~2
+        =       PBG.F2.CAL.HOUR_KY_M 
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_FD_M            C
+        IF	PBG.F2.SYS.UNIT_STA       ? 1
+        =       PBG.F2.CAL.HOUR_FD_M 
+	+C      0.05
+	
+POINT:  PBG.F2.CAL.HOUR_JX_M		C
+        IF	PBG.F2.SYS.UNIT_STA       ? 2
+	=	PBG.F2.CAL.HOUR_JX_M
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_KZH_M           	C
+        IF	PBG.F2.SYS.UNIT_STA       ? 4
+        =       PBG.F2.CAL.HOUR_KZH_M
+	+C      0.05
+        	
+POINT:  PBG.F2.CAL.HOUR_KZ_M           	C
+        IF	PBG.F2.SYS.UNIT_STA       ? 5
+        =       PBG.F2.CAL.HOUR_KZ_M
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_BY_Y 		C
+        IF	PBG.F2.SYS.UNIT_STA       ? 0
+        =       PBG.F2.CAL.HOUR_BY_Y
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_KY_Y		C
+        IF	PBG.F2.SYS.UNIT_STA       ? ~2
+        =       PBG.F2.CAL.HOUR_KY_Y
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_FD_Y           	C
+        IF	PBG.F2.SYS.UNIT_STA       ? 1
+        =       PBG.F2.CAL.HOUR_FD_Y 
+	+C      0.05
+	
+POINT:  PBG.F2.CAL.HOUR_JX_Y		C
+        IF	PBG.F2.SYS.UNIT_STA       ? 2
+	=	PBG.F2.CAL.HOUR_JX_Y
+	+C      0.05
+        
+POINT:  PBG.F2.CAL.HOUR_KZH_Y           	C
+        IF	PBG.F2.SYS.UNIT_STA       ? 4
+        =       PBG.F2.CAL.HOUR_KZH_Y
+	+C      0.05
+        	
+POINT:  PBG.F2.CAL.HOUR_KZ_Y           	C
+        IF	PBG.F2.SYS.UNIT_STA       ? 5
+        =       PBG.F2.CAL.HOUR_KZH_Y
+	+C      0.05
+ 
+POINT:  PBG.F3.CAL.HOUR_BY_D		C
+        IF	PBG.F3.SYS.UNIT_STA       ? 0
+	=	PBG.F3.CAL.HOUR_BY_D	
+        +C      0.05	
+
+POINT:  PBG.F3.CAL.HOUR_KY_D		C
+        IF	PBG.F3.SYS.UNIT_STA       ? ~2
+	=	PBG.F3.CAL.HOUR_KY_D
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_FD_D		C
+        IF	PBG.F3.SYS.UNIT_STA      ? 1
+	=	PBG.F3.CAL.HOUR_FD_D
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_JX_D		C
+        IF	PBG.F3.SYS.UNIT_STA       ? 2
+	=	PBG.F3.CAL.HOUR_JX_D
+	+C      0.05
+	
+POINT:  PBG.F3.CAL.HOUR_KZH_D 		C
+	IF      PBG.F3.SYS.UNIT_STA  	? 4
+	=	PBG.F3.CAL.HOUR_KZH_D
+	+C      0.05 
+		
+POINT:  PBG.F3.CAL.HOUR_KZ_D 		C
+	IF      PBG.F3.SYS.UNIT_STA  	? 5
+	=	PBG.F3.CAL.HOUR_KZ_D
+	+C      0.05 
+	
+POINT:  PBG.F3.CAL.HOUR_BY_M         	C
+        IF	PBG.F3.SYS.UNIT_STA       ? 0
+        =       PBG.F3.CAL.HOUR_BY_M 
+	+C      0.05
+       
+POINT:  PBG.F3.CAL.HOUR_KY_M          	C
+        IF	PBG.F3.SYS.UNIT_STA       ? ~2
+        =       PBG.F3.CAL.HOUR_KY_M 
+	+C      0.05
+       
+POINT:  PBG.F3.CAL.HOUR_FD_M          	C
+        IF	PBG.F3.SYS.UNIT_STA       ? 1
+        =       PBG.F3.CAL.HOUR_FD_M 
+	+C      0.05
+	
+POINT:  PBG.F3.CAL.HOUR_JX_M 		C
+        IF	PBG.F3.SYS.UNIT_STA       ? 2
+	=	PBG.F3.CAL.HOUR_JX_M
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_KZH_M          	C
+        IF	PBG.F3.SYS.UNIT_STA       ? 4
+        =       PBG.F3.CAL.HOUR_KZH_M
+	+C      0.05
+        	
+POINT:  PBG.F3.CAL.HOUR_KZ_M          	C
+        IF	PBG.F3.SYS.UNIT_STA       ? 5
+        =       PBG.F3.CAL.HOUR_KZ_M
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_BY_Y   		C
+        IF	PBG.F3.SYS.UNIT_STA       ? 0
+        =       PBG.F3.CAL.HOUR_BY_Y
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_KY_Y		C
+        IF	PBG.F3.SYS.UNIT_STA       ? ~2
+        =       PBG.F3.CAL.HOUR_KY_Y
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_FD_Y            C
+        IF	PBG.F3.SYS.UNIT_STA       ? 1
+        =       PBG.F3.CAL.HOUR_FD_Y 
+	+C      0.05
+	
+POINT:  PBG.F3.CAL.HOUR_JX_Y		C
+        IF	PBG.F3.SYS.UNIT_STA       ? 2
+	=	PBG.F3.CAL.HOUR_JX_Y
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_KZH_Y            C
+        IF	PBG.F3.SYS.UNIT_STA       ? 4
+        =       PBG.F3.CAL.HOUR_KZH_Y
+	+C      0.05
+        
+POINT:  PBG.F3.CAL.HOUR_KZ_Y            C
+        IF	PBG.F3.SYS.UNIT_STA       ? 5
+        =       PBG.F3.CAL.HOUR_KZ_Y
+	+C      0.05
+   
+POINT:  PBG.F4.CAL.HOUR_BY_D		C
+        IF	PBG.F4.SYS.UNIT_STA       ? 0
+	=	PBG.F4.CAL.HOUR_BY_D	
+        +C      0.05	
+
+POINT:  PBG.F4.CAL.HOUR_KY_D		C
+        IF	PBG.F4.SYS.UNIT_STA       ? ~2
+	=	PBG.F4.CAL.HOUR_KY_D
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_FD_D		C
+        IF	PBG.F4.SYS.UNIT_STA      ? 1
+	=	PBG.F4.CAL.HOUR_FD_D
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_JX_D		C
+        IF	PBG.F4.SYS.UNIT_STA       ? 2
+	=	PBG.F4.CAL.HOUR_JX_D
+	+C      0.05
+	
+POINT:  PBG.F4.CAL.HOUR_KZH_D 		C
+	IF      PBG.F4.SYS.UNIT_STA  	? 4
+	=	PBG.F4.CAL.HOUR_KZH_D
+	+C      0.05 
+		
+POINT:  PBG.F4.CAL.HOUR_KZ_D 		C
+	IF      PBG.F4.SYS.UNIT_STA  	? 5
+	=	PBG.F4.CAL.HOUR_KZ_D
+	+C      0.05 
+	
+POINT:  PBG.F4.CAL.HOUR_BY_M         	C
+        IF	PBG.F4.SYS.UNIT_STA       ? 0
+        =       PBG.F4.CAL.HOUR_BY_M 
+	+C      0.05
+       
+POINT:  PBG.F4.CAL.HOUR_KY_M          	C
+        IF	PBG.F4.SYS.UNIT_STA       ? ~2
+        =       PBG.F4.CAL.HOUR_KY_M 
+	+C      0.05
+       
+POINT:  PBG.F4.CAL.HOUR_FD_M          	C
+        IF	PBG.F4.SYS.UNIT_STA       ? 1
+        =       PBG.F4.CAL.HOUR_FD_M 
+	+C      0.05
+	
+POINT:  PBG.F4.CAL.HOUR_JX_M 		C
+        IF	PBG.F4.SYS.UNIT_STA       ? 2
+	=	PBG.F4.CAL.HOUR_JX_M
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_KZH_M          	C
+        IF	PBG.F4.SYS.UNIT_STA       ? 4
+        =       PBG.F4.CAL.HOUR_KZH_M
+	+C      0.05
+        	
+POINT:  PBG.F4.CAL.HOUR_KZ_M          	C
+        IF	PBG.F4.SYS.UNIT_STA       ? 5
+        =       PBG.F4.CAL.HOUR_KZ_M
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_BY_Y   		C
+        IF	PBG.F4.SYS.UNIT_STA       ? 0
+        =       PBG.F4.CAL.HOUR_BY_Y
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_KY_Y		C
+        IF	PBG.F4.SYS.UNIT_STA       ? ~2
+        =       PBG.F4.CAL.HOUR_KY_Y
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_FD_Y            C
+        IF	PBG.F4.SYS.UNIT_STA       ? 1
+        =       PBG.F4.CAL.HOUR_FD_Y 
+	+C      0.05
+	
+POINT:  PBG.F4.CAL.HOUR_JX_Y		C
+        IF	PBG.F4.SYS.UNIT_STA       ? 2
+	=	PBG.F4.CAL.HOUR_JX_Y
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_KZH_Y            C
+        IF	PBG.F4.SYS.UNIT_STA       ? 4
+        =       PBG.F4.CAL.HOUR_KZH_Y
+	+C      0.05
+        
+POINT:  PBG.F4.CAL.HOUR_KZ_Y            C
+        IF	PBG.F4.SYS.UNIT_STA       ? 5
+        =       PBG.F4.CAL.HOUR_KZ_Y
+	+C      0.05
+
+POINT:  PBG.F5.CAL.HOUR_BY_D		C
+        IF	PBG.F5.SYS.UNIT_STA       ? 0
+	=	PBG.F5.CAL.HOUR_BY_D	
+        +C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_KY_D          	C
+        IF	PBG.F5.SYS.UNIT_STA       ? ~2
+        =       PBG.F5.CAL.HOUR_KY_D 
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_FD_D		C
+        IF	PBG.F5.SYS.UNIT_STA      ? 1
+	=	PBG.F5.CAL.HOUR_FD_D
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_JX_D		C
+        IF	PBG.F5.SYS.UNIT_STA       ? 2
+	=	PBG.F5.CAL.HOUR_JX_D
+	+C      0.05
+	
+POINT:  PBG.F5.CAL.HOUR_KZH_D 		C
+	IF      PBG.F5.SYS.UNIT_STA  	? 4
+	=	PBG.F5.CAL.HOUR_KZH_D
+	+C      0.05 
+		
+POINT:  PBG.F5.CAL.HOUR_KZ_D 		C
+	IF      PBG.F5.SYS.UNIT_STA  	? 5
+	=	PBG.F5.CAL.HOUR_KZ_D
+	+C      0.05 
+	
+POINT:  PBG.F5.CAL.HOUR_BY_M         	C
+        IF	PBG.F5.SYS.UNIT_STA       ? 0
+        =       PBG.F5.CAL.HOUR_BY_M 
+	+C      0.05
+       
+POINT:  PBG.F5.CAL.HOUR_KY_M          	C
+        IF	PBG.F5.SYS.UNIT_STA       ? ~2
+        =       PBG.F5.CAL.HOUR_KY_M 
+	+C      0.05
+       
+POINT:  PBG.F5.CAL.HOUR_FD_M          	C
+        IF	PBG.F5.SYS.UNIT_STA       ? 1
+        =       PBG.F5.CAL.HOUR_FD_M 
+	+C      0.05
+	
+POINT:  PBG.F5.CAL.HOUR_JX_M 		C
+        IF	PBG.F5.SYS.UNIT_STA       ? 2
+	=	PBG.F5.CAL.HOUR_JX_M
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_KZH_M          	C
+        IF	PBG.F5.SYS.UNIT_STA       ? 4
+        =       PBG.F5.CAL.HOUR_KZH_M
+	+C      0.05
+        	
+POINT:  PBG.F5.CAL.HOUR_KZ_M          	C
+        IF	PBG.F5.SYS.UNIT_STA       ? 5
+        =       PBG.F5.CAL.HOUR_KZ_M
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_BY_Y   		C
+        IF	PBG.F5.SYS.UNIT_STA       ? 0
+        =       PBG.F5.CAL.HOUR_BY_Y
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_KY_Y		C
+        IF	PBG.F5.SYS.UNIT_STA       ? ~2
+        =       PBG.F5.CAL.HOUR_KY_Y
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_FD_Y            C
+        IF	PBG.F5.SYS.UNIT_STA       ? 1
+        =       PBG.F5.CAL.HOUR_FD_Y 
+	+C      0.05
+	
+POINT:  PBG.F5.CAL.HOUR_JX_Y		C
+        IF	PBG.F5.SYS.UNIT_STA       ? 2
+	=	PBG.F5.CAL.HOUR_JX_Y
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_KZH_Y            C
+        IF	PBG.F5.SYS.UNIT_STA       ? 4
+        =       PBG.F5.CAL.HOUR_KZH_Y
+	+C      0.05
+        
+POINT:  PBG.F5.CAL.HOUR_KZ_Y            C
+        IF	PBG.F5.SYS.UNIT_STA       ? 5
+        =       PBG.F5.CAL.HOUR_KZ_Y
+	+C      0.05
+
+POINT:  PBG.F6.CAL.HOUR_BY_D		C
+        IF	PBG.F6.SYS.UNIT_STA       ? 0
+	=	PBG.F6.CAL.HOUR_BY_D	
+        +C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_KY_D          	C
+        IF	PBG.F6.SYS.UNIT_STA       ? ~2
+        =       PBG.F6.CAL.HOUR_KY_D 
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_FD_D		C
+        IF	PBG.F6.SYS.UNIT_STA      ? 1
+	=	PBG.F6.CAL.HOUR_FD_D
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_JX_D		C
+        IF	PBG.F6.SYS.UNIT_STA       ? 2
+	=	PBG.F6.CAL.HOUR_JX_D
+	+C      0.05
+	
+POINT:  PBG.F6.CAL.HOUR_KZH_D 		C
+	IF      PBG.F6.SYS.UNIT_STA  	? 4
+	=	PBG.F6.CAL.HOUR_KZH_D
+	+C      0.05 
+		
+POINT:  PBG.F6.CAL.HOUR_KZ_D 		C
+	IF      PBG.F6.SYS.UNIT_STA  	? 5
+	=	PBG.F6.CAL.HOUR_KZ_D
+	+C      0.05 
+	
+POINT:  PBG.F6.CAL.HOUR_BY_M         	C
+        IF	PBG.F6.SYS.UNIT_STA       ? 0
+        =       PBG.F6.CAL.HOUR_BY_M 
+	+C      0.05
+       
+POINT:  PBG.F6.CAL.HOUR_KY_M          	C
+        IF	PBG.F6.SYS.UNIT_STA       ? ~2
+        =       PBG.F6.CAL.HOUR_KY_M 
+	+C      0.05
+       
+POINT:  PBG.F6.CAL.HOUR_FD_M          	C
+        IF	PBG.F6.SYS.UNIT_STA       ? 1
+        =       PBG.F6.CAL.HOUR_FD_M 
+	+C      0.05
+	
+POINT:  PBG.F6.CAL.HOUR_JX_M 		C
+        IF	PBG.F6.SYS.UNIT_STA       ? 2
+	=	PBG.F6.CAL.HOUR_JX_M
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_KZH_M          	C
+        IF	PBG.F6.SYS.UNIT_STA       ? 4
+        =       PBG.F6.CAL.HOUR_KZH_M
+	+C      0.05
+        	
+POINT:  PBG.F6.CAL.HOUR_KZ_M          	C
+        IF	PBG.F6.SYS.UNIT_STA       ? 5
+        =       PBG.F6.CAL.HOUR_KZ_M
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_BY_Y   		C
+        IF	PBG.F6.SYS.UNIT_STA       ? 0
+        =       PBG.F6.CAL.HOUR_BY_Y
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_KY_Y		C
+        IF	PBG.F6.SYS.UNIT_STA       ? ~2
+        =       PBG.F6.CAL.HOUR_KY_Y
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_FD_Y            C
+        IF	PBG.F6.SYS.UNIT_STA       ? 1
+        =       PBG.F6.CAL.HOUR_FD_Y 
+	+C      0.05
+	
+POINT:  PBG.F6.CAL.HOUR_JX_Y		C
+        IF	PBG.F6.SYS.UNIT_STA       ? 2
+	=	PBG.F6.CAL.HOUR_JX_Y
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_KZH_Y            C
+        IF	PBG.F6.SYS.UNIT_STA       ? 4
+        =       PBG.F6.CAL.HOUR_KZH_Y
+	+C      0.05
+        
+POINT:  PBG.F6.CAL.HOUR_KZ_Y            C
+        IF	PBG.F6.SYS.UNIT_STA       ? 5
+        =       PBG.F6.CAL.HOUR_KZ_Y
+	+C      0.05
+          
+END
+

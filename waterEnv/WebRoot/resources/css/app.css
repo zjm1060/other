@@ -1,0 +1,340 @@
+body {
+    background: white;
+}
+
+#loading {
+    width: 250px;
+    margin: 100px auto;
+    padding: 2px;
+    z-index: 20001;
+    height: auto;
+    background-color: darkgray;
+}
+
+#loading a {
+    color: #225588;
+}
+
+#loading .loading-indicator {
+    background: #e7e7e7;
+    color: #444;
+    font: bold 13px tahoma, arial, helvetica;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+}
+
+#loading-msg {
+    font: normal 12px arial, tahoma, sans-serif;
+    color: #b9b900;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix {
+    zoom: 1;
+}
+
+*:first-child + html .clearfix {
+    zoom: 1;
+}
+
+.app-header {
+    background-image: url(../image/header-bg.png)
+}
+
+.app-header-title {
+    padding: 15px 10px 10px 31px;
+    color: white;
+    font-size: 24px;
+    font-family: ËÎÌå;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #4e691f;
+    font-weight: bold;
+}
+
+.contact-group {
+    padding: 3px 3px 3px 3px;
+}
+
+.contact-group .title {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Î¢ÈíÑÅºÚ;
+    border-bottom: 1px solid #6593cf;
+    line-height: 20px;
+}
+
+.contact-group .contact {
+    padding: 3px;
+    width: 134px;
+}
+
+.contact-group .contact-wrap {
+    border: 1px solid #dddddd;
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 4px;
+}
+
+.contact-group .contact-wrap span {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contact-group .icon {
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+
+.contact-group .delete {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background-repeat: no-repeat;
+    margin: 8px 0 8px 0;
+    cursor: pointer;
+}
+
+.contact-group .text {
+    float: left;
+    width: 80px;
+    height: 32px;
+    text-align: center;
+    cursor: default;
+}
+
+.contact-group .x-view-over {
+    border: 1px solid #dddddd;
+    background-color: #efefef;
+    padding: 4px;
+}
+
+.contact-group .x-item-selected {
+    background: #DFEDFF;
+    border: 1px solid #6593cf;
+    padding: 4px;
+}
+
+.contact-group .x-item-selected .contact {
+    background: transparent;
+}
+
+.contact-group .x-item-selected span {
+    color: #1A4D8F;
+}
+
+.contact-groups {
+    padding: 3px 3px 3px 3px;
+}
+
+.contact-groups .group {
+    padding: 3px;
+    width: 64px;
+    text-align: center;
+}
+
+.contact-groups .group-wrap {
+    border: 1px solid #dddddd;
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-groups .icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 13px;
+}
+
+.contact-groups .text {
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Microsoft YaHei, "Î¢ÈíÑÅºÚ";
+}
+
+.contact-groups .x-view-over {
+    border: 1px solid #dddddd;
+    background-color: #efefef;
+    padding: 4px;
+}
+
+.contact-groups .x-item-selected {
+    background: #DFEDFF;
+    border: 1px solid #6593cf;
+    padding: 4px;
+}
+
+.contact-groups .x-item-selected .group {
+    background: transparent;
+}
+
+.contact-groups .x-item-selected span {
+    color: #1A4D8F;
+}
+
+.search-item {
+    height: 32px;
+}
+
+.search-item .text {
+    padding-left: 37px;
+}
+
+.search-item span {
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.x-nlg .x-grid-header-ct, .x-nlg .x-column-header {
+    background-repeat: repeat !important;
+}
+
+.text * {
+    font-size: 14px;
+    font-family: Microsoft YaHei, "Î¢ÈíÑÅºÚ";
+    line-height: 1.2em;
+}
+
+/**hide datepicker's today*/
+.x-hide-clip {
+    display: none;
+}
+
+.x-grid-cell-inner {
+    line-height: 20px;
+}
+
+/** table */
+.table {
+    width: 100%;
+    margin-bottom: 20px max-width : 100 %;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #ddd
+}
+
+.table th {
+    font-weight: bold
+}
+
+.table thead th {
+    vertical-align: bottom
+}
+
+.table caption + thead tr:first-child th, .table caption + thead tr:first-child td, .table colgroup + thead tr:first-child th, .table colgroup + thead tr:first-child td, .table thead:first-child tr:first-child th, .table thead:first-child tr:first-child td {
+    border-top: 0
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #ddd
+}
+
+.table .table {
+    background-color: #fff
+}
+
+.table-condensed th, .table-condensed td {
+    padding: 4px 5px
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    border-left: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px border-
+}
+
+.table-bordered th, .table-bordered td {
+    border-left: 1px solid #ddd
+}
+
+.table-bordered caption + thead tr:first-child th, .table-bordered caption + tbody tr:first-child th, .table-bordered caption + tbody tr:first-child td, .table-bordered colgroup + thead tr:first-child th, .table-bordered colgroup + tbody tr:first-child th, .table-bordered colgroup + tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+    border-top: 0
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child, .table-bordered tbody:first-child tr:first-child > td:first-child, .table-bordered tbody:first-child tr:first-child > th:first-child {
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px
+}
+
+.table-bordered thead:first-child tr:first-child > th:last-child, .table-bordered tbody:first-child tr:first-child > td:last-child, .table-bordered tbody:first-child tr:first-child > th:last-child {
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px
+}
+
+.table-bordered thead:last-child tr:last-child > th:first-child, .table-bordered tbody:last-child tr:last-child > td:first-child, .table-bordered tbody:last-child tr:last-child > th:first-child, .table-bordered tfoot:last-child tr:last-child > td:first-child, .table-bordered tfoot:last-child tr:last-child > th:first-child {
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomleft: 4px
+}
+
+.table-bordered thead:last-child tr:last-child > th:last-child, .table-bordered tbody:last-child tr:last-child > td:last-child, .table-bordered tbody:last-child tr:last-child > th:last-child, .table-bordered tfoot:last-child tr:last-child > td:last-child, .table-bordered tfoot:last-child tr:last-child > th:last-child {
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0
+}
+
+.table-bordered caption + thead tr:first-child th:first-child, .table-bordered caption + tbody tr:first-child td:first-child, .table-bordered colgroup + thead tr:first-child th:first-child, .table-bordered colgroup + tbody tr:first-child td:first-child {
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topleft: 4px
+}
+
+.table-bordered caption + thead tr:first-child th:last-child, .table-bordered caption + tbody tr:first-child td:last-child, .table-bordered colgroup + thead tr:first-child th:last-child, .table-bordered colgroup + tbody tr:first-child td:last-child {
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topright: 4px
+}
+
+/**table end*/
+
+.meeting-normal {
+
+}
+
+.meeting-canceled {
+    color: gray;
+}

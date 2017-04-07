@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-7-23 16:22:05 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.bitc.jk.xmis.model.MissAttendanceObj" table="xmis.attd_补报考勤单表">
+        <id name="id" type="java.lang.String">
+            <column name="考勤单ID" />
+            <generator class="uuid.hex" />
+        </id>
+        <many-to-one name="applicant" class="com.bitc.jk.xmis.model.SimpleEmployee" fetch="join">
+            <column name="申请人ID" />
+        </many-to-one>
+        <property name="registdate" type="timestamp">
+            <column name="申请日期" />
+        </property>
+        <property name="isAgent" type="int">
+            <column name="是否是代理" />
+        </property>
+        <property name="isOfficialTravel" type="int">
+            <column name="出差单标识" />
+        </property>
+        <property name="processInstanceId" type="string">
+            <column name="流程实例ID" />
+        </property>
+        <property name="content" type="java.lang.String">
+            <column name="备注" />
+        </property>
+        <many-to-one name="agent" class="com.bitc.jk.xmis.model.SimpleEmployee" fetch="join">
+            <column name="操作人ID" />
+        </many-to-one>
+        <bag name="members">
+        	<key column="ID"/>
+        	<one-to-many class="com.bitc.jk.xmis.model.MissAttendanceInfos"></one-to-many>
+        </bag>
+    </class>
+    
+    
+    <class name="com.bitc.jk.xmis.model.MissAttendanceInfos" table="xmis.attd_补报考勤内容表">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="missDate" type="timestamp">
+            <column name="缺勤日期" />
+        </property>
+        <property name="amorpm" type="int">
+            <column name="上下午" />
+        </property>
+        <property name="missDesc" type="java.lang.String">
+            <column name="事由" />
+        </property>
+           <property name="missAttendanceId" type="string">
+            <column name="所属考勤单ID" />
+        </property>
+        <property name="startDate" type="timestamp">
+            <column name="开始日期" />
+        </property>
+        <property name="stopDate" type="timestamp">
+            <column name="结束日期" />
+        </property>
+    </class>
+    
+</hibernate-mapping>

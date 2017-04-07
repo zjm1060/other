@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+	<file>images/computer.png</file>
+	<file>images/configure.png</file>
+	<file>images/disk.png</file>
+	<file>images/frame.png</file>
+	<file>images/hshow.png</file>
+	<file>images/process.png</file>
+	<file>images/system.png</file>
+	<file>images/trash.png</file>
+</qresource>
+</RCC>

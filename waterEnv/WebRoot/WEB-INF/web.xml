@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <description>cxf</description>
+
+    <display-name>Archetype Created Web Application</display-name>
+    <display-name>Apache-Axis</display-name>
+    <display-name>cxf</display-name>
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- shiro -->
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>
+            org.springframework.web.filter.DelegatingFilterProxy
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ExportExcelFilter</filter-name>
+        <filter-class>bitc.sz.wzEnv.action.export.ExportExcelFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ExportExcelFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>WebServiceContextFilter</filter-name>
+        <filter-class>bitc.sz.wzEnv.filter.WebServiceContextFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>WebServiceContextFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>SpringOpenSessionInViewFilter</filter-name>
+        <filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SpringOpenSessionInViewFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- Spring 服务层的配置文件 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:applicationContext.xml</param-value>
+    </context-param>
+    <!--Spring 容器启动监听器 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- Spring MVC Servlets -->
+    <servlet>
+        <servlet-name>waterEnv</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spring-mvc.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>waterEnv</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <description>Apache CXF Endpoint</description>
+        <display-name>cxf</display-name>
+        <servlet-name>cxf</servlet-name>
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cxf</servlet-name>
+        <url-pattern>/services/*</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>/prjEditDefault.jsp</welcome-file>
+    </welcome-file-list>
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+    <!-- PageOffice Begin -->
+    <servlet>
+        <servlet-name>poserver</servlet-name>
+        <servlet-class>com.zhuozhengsoft.pageoffice.poserver.Server</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/poserver.zz</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/poserver.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/pageoffice.cab</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/popdf.cab</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/sealsetup.exe</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>poserver</servlet-name>
+        <url-pattern>/posetup.exe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>adminseal</servlet-name>
+        <servlet-class>com.zhuozhengsoft.pageoffice.poserver.AdminSeal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminseal</servlet-name>
+        <url-pattern>/adminseal.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminseal</servlet-name>
+        <url-pattern>/loginseal.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>adminseal</servlet-name>
+        <url-pattern>/sealimage.do</url-pattern>
+    </servlet-mapping>
+    <mime-mapping>
+        <extension>mht</extension>
+        <mime-type>message/rfc822</mime-type>
+    </mime-mapping>
+    <context-param>
+        <param-name>adminseal-password</param-name>
+        <param-value>111111</param-value>
+    </context-param>
+</web-app>

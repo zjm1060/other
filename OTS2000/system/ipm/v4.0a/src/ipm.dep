@@ -1,0 +1,508 @@
+# Microsoft Developer Studio Generated Dependency File, included by ipm.mak
+
+.\ipm.rc : \
+	".\arrow_l.cur"\
+	".\arrow_m.cur"\
+	".\bmp_text.bmp"\
+	".\bmp_zoom.bmp"\
+	".\ipm.ico"\
+	".\lmove.cur"\
+	".\lnwdth1.bmp"\
+	".\lnwdth2.bmp"\
+	".\lnwdth3.bmp"\
+	".\lnwdth4.bmp"\
+	".\lnwdth5.bmp"\
+	".\lnwdth6.bmp"\
+	".\Pan_Grab.cur"\
+	".\Pan_Open.cur"\
+	".\pen_im.cur"\
+	".\SARROWS.CUR"\
+	".\tkarcd.bmp"\
+	".\tkarcu.bmp"\
+	".\tkcircled.bmp"\
+	".\tkcircleu.bmp"\
+	".\tkgifd.bmp"\
+	".\tkgifu.bmp"\
+	".\tklined.bmp"\
+	".\tklinedDash.bmp"\
+	".\tklineu.bmp"\
+	".\tklineuDash.bmp"\
+	".\tkplylnd.bmp"\
+	".\tkplylnu.bmp"\
+	".\tkrectd.bmp"\
+	".\tkrectu.bmp"\
+	".\tkselectd.bmp"\
+	".\tkselectu.bmp"\
+	".\tksymd.bmp"\
+	".\tksymu.bmp"\
+	".\tktextd.bmp"\
+	".\tktextu.bmp"\
+	".\TRCKNESW.CUR"\
+	".\TRCKNS.CUR"\
+	".\TRCKNWSE.CUR"\
+	".\TRCKWE.CUR"\
+	
+
+.\mc_attribute.c : \
+	"..\..\..\dms\v4.0a\inc\dms_com.h"\
+	"..\..\..\dms\v4.0a\inc\dms_data_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_functions.h"\
+	"..\..\..\dms\v4.0a\inc\dms_std.h"\
+	"..\..\..\dms\v4.0a\inc\dms_structure_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_util_def.h"\
+	"..\..\..\dms\v4.0a\inc\ems_init_def.h"\
+	"..\..\..\dms\v4.0a\inc\os_type_def.h"\
+	"..\inc\color_grp_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\dyn_form_def.h"\
+	"..\inc\dyn_prog_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\menu_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\pr.h"\
+	"..\inc\string_grp_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\symbol_grp_def.h"\
+	"..\inc\tmplt.h"\
+	"..\inc\toolkit.h"\
+	"..\inc\view_def.h"\
+	"..\inc\zoom_def.h"\
+	{$(INCLUDE)}"_ansi.h"\
+	{$(INCLUDE)}"cygwin\config.h"\
+	{$(INCLUDE)}"cygwin\signal.h"\
+	{$(INCLUDE)}"getopt.h"\
+	{$(INCLUDE)}"machine\ieeefp.h"\
+	{$(INCLUDE)}"newlib.h"\
+	{$(INCLUDE)}"strings.h"\
+	{$(INCLUDE)}"sys\_types.h"\
+	{$(INCLUDE)}"sys\cdefs.h"\
+	{$(INCLUDE)}"sys\config.h"\
+	{$(INCLUDE)}"sys\features.h"\
+	{$(INCLUDE)}"sys\lock.h"\
+	{$(INCLUDE)}"sys\mman.h"\
+	{$(INCLUDE)}"sys\select.h"\
+	{$(INCLUDE)}"sys\signal.h"\
+	{$(INCLUDE)}"sys\time.h"\
+	{$(INCLUDE)}"sys\unistd.h"\
+	{$(INCLUDE)}"unistd.h"\
+	
+
+.\mc_color_grp_p.c : \
+	"..\inc\color_def.h"\
+	"..\inc\color_grp_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_color_p.c : \
+	"..\inc\color_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\toolkit.h"\
+	
+
+.\mc_draw_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\grid_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\layer_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	"..\inc\text_edit_def.h"\
+	"..\inc\zoom_def.h"\
+	
+
+.\mc_draw_util.c : \
+	"..\inc\color_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\dyn_form_def.h"\
+	"..\inc\fill_bitmap.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\layer_def.h"\
+	"..\inc\pr.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	"..\inc\text_edit_def.h"\
+	"..\inc\zoom_def.h"\
+	
+
+.\mc_dyn_form_p.c : \
+	"..\inc\color_grp_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\dyn_form_def.h"\
+	"..\inc\dyn_prog_def.h"\
+	"..\inc\field_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\menu_def.h"\
+	"..\inc\string_grp_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\symbol_grp_def.h"\
+	"..\inc\tmplt.h"\
+	
+
+.\mc_dyn_handler.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\dyn_form_def.h"\
+	"..\inc\dyn_prog_def.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\menu_def.h"\
+	"..\inc\tmplt.h"\
+	
+
+.\mc_dyn_test.c : \
+	"..\..\..\dms\v4.0a\inc\dms_com.h"\
+	"..\..\..\dms\v4.0a\inc\dms_data_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_functions.h"\
+	"..\..\..\dms\v4.0a\inc\dms_std.h"\
+	"..\..\..\dms\v4.0a\inc\dms_structure_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_util_def.h"\
+	"..\..\..\dms\v4.0a\inc\ems_init_def.h"\
+	"..\..\..\dms\v4.0a\inc\os_type_def.h"\
+	"..\inc\draw_def.h"\
+	"..\INC\ipm_k_def.h"\
+	{$(INCLUDE)}"_ansi.h"\
+	{$(INCLUDE)}"cygwin\config.h"\
+	{$(INCLUDE)}"cygwin\signal.h"\
+	{$(INCLUDE)}"getopt.h"\
+	{$(INCLUDE)}"machine\ieeefp.h"\
+	{$(INCLUDE)}"newlib.h"\
+	{$(INCLUDE)}"strings.h"\
+	{$(INCLUDE)}"sys\_types.h"\
+	{$(INCLUDE)}"sys\cdefs.h"\
+	{$(INCLUDE)}"sys\config.h"\
+	{$(INCLUDE)}"sys\features.h"\
+	{$(INCLUDE)}"sys\lock.h"\
+	{$(INCLUDE)}"sys\mman.h"\
+	{$(INCLUDE)}"sys\select.h"\
+	{$(INCLUDE)}"sys\signal.h"\
+	{$(INCLUDE)}"sys\time.h"\
+	{$(INCLUDE)}"sys\unistd.h"\
+	{$(INCLUDE)}"unistd.h"\
+	
+
+.\mc_dyn_util.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\dyn_form_def.h"\
+	"..\inc\field_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	"..\inc\tmplt.h"\
+	
+
+.\mc_edit_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_file_p.c : \
+	"..\inc\cderr.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\dyn_form_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\layer_def.h"\
+	"..\inc\menu_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\sub_dsp_def.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_file_search.c : \
+	"..\..\..\dms\v4.0a\inc\dms_com.h"\
+	"..\..\..\dms\v4.0a\inc\dms_data_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_functions.h"\
+	"..\..\..\dms\v4.0a\inc\dms_std.h"\
+	"..\..\..\dms\v4.0a\inc\dms_structure_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_util_def.h"\
+	"..\..\..\dms\v4.0a\inc\ems_init_def.h"\
+	"..\..\..\dms\v4.0a\inc\os_type_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	{$(INCLUDE)}"_ansi.h"\
+	{$(INCLUDE)}"cygwin\config.h"\
+	{$(INCLUDE)}"cygwin\signal.h"\
+	{$(INCLUDE)}"getopt.h"\
+	{$(INCLUDE)}"machine\ieeefp.h"\
+	{$(INCLUDE)}"newlib.h"\
+	{$(INCLUDE)}"strings.h"\
+	{$(INCLUDE)}"sys\_types.h"\
+	{$(INCLUDE)}"sys\cdefs.h"\
+	{$(INCLUDE)}"sys\config.h"\
+	{$(INCLUDE)}"sys\features.h"\
+	{$(INCLUDE)}"sys\lock.h"\
+	{$(INCLUDE)}"sys\mman.h"\
+	{$(INCLUDE)}"sys\select.h"\
+	{$(INCLUDE)}"sys\signal.h"\
+	{$(INCLUDE)}"sys\time.h"\
+	{$(INCLUDE)}"sys\unistd.h"\
+	{$(INCLUDE)}"unistd.h"\
+	
+
+.\mc_fill_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\fill_bitmap.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_font_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\text_edit_def.h"\
+	
+
+.\mc_format_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\dyn_form_def.h"\
+	"..\inc\field_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\tmplt.h"\
+	
+
+.\mc_get_text_p.c : \
+	"..\inc\color_grp_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\menu_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\string_grp_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\symbol_grp_def.h"\
+	
+
+.\mc_grid_p.c : \
+	"..\inc\color_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\grid_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\sub_dsp_def.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_ipm.c : \
+	"..\..\..\dms\v4.0a\inc\dms_com.h"\
+	"..\..\..\dms\v4.0a\inc\dms_data_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_functions.h"\
+	"..\..\..\dms\v4.0a\inc\dms_std.h"\
+	"..\..\..\dms\v4.0a\inc\dms_structure_def.h"\
+	"..\..\..\dms\v4.0a\inc\dms_util_def.h"\
+	"..\..\..\dms\v4.0a\inc\ems_init_def.h"\
+	"..\..\..\dms\v4.0a\inc\os_type_def.h"\
+	"..\inc\color_def.h"\
+	"..\inc\color_grp_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\fill_bitmap.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\string_grp_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\symbol_grp_def.h"\
+	"..\inc\text_edit_def.h"\
+	"..\inc\toolkit.h"\
+	"..\inc\view_def.h"\
+	"..\inc\zoom_def.h"\
+	{$(INCLUDE)}"_ansi.h"\
+	{$(INCLUDE)}"cygwin\config.h"\
+	{$(INCLUDE)}"cygwin\signal.h"\
+	{$(INCLUDE)}"getopt.h"\
+	{$(INCLUDE)}"machine\ieeefp.h"\
+	{$(INCLUDE)}"newlib.h"\
+	{$(INCLUDE)}"strings.h"\
+	{$(INCLUDE)}"sys\_types.h"\
+	{$(INCLUDE)}"sys\cdefs.h"\
+	{$(INCLUDE)}"sys\config.h"\
+	{$(INCLUDE)}"sys\features.h"\
+	{$(INCLUDE)}"sys\lock.h"\
+	{$(INCLUDE)}"sys\mman.h"\
+	{$(INCLUDE)}"sys\select.h"\
+	{$(INCLUDE)}"sys\signal.h"\
+	{$(INCLUDE)}"sys\time.h"\
+	{$(INCLUDE)}"sys\unistd.h"\
+	{$(INCLUDE)}"unistd.h"\
+	
+
+.\mc_ipm_init.c : \
+	"..\inc\color_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\layer_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\text_edit_def.h"\
+	"..\inc\zoom_def.h"\
+	
+
+.\mc_ipmmenu.c : \
+	"..\inc\color_grp_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\menu_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\pr.h"\
+	"..\inc\string_grp_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\symbol_grp_def.h"\
+	"..\inc\toolkit.h"\
+	"..\inc\view_def.h"\
+	"..\inc\zoom_def.h"\
+	
+
+.\mc_layer_p.c : \
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\layer_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\zoom_def.h"\
+	
+
+.\mc_line_width_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\toolkit.h"\
+	
+
+.\mc_menu_edit_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\menu_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_parse_pattern.c : \
+	"..\inc\string_pattern.h"\
+	
+
+.\mc_pr.c : \
+	"..\inc\color_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\pr.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	"..\inc\text_edit_def.h"\
+	
+
+.\mc_read_tmplt_file.c : \
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\tmplt.h"\
+	
+
+.\mc_replace_p.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\field_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\string_pattern.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_string_grp_p.c : \
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\string_grp_def.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_sub_dsp_proc.c : \
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\sub_dsp_def.h"\
+	"..\inc\symbol_def.h"\
+	
+
+.\mc_symbol_grp_p.c : \
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	"..\inc\symbol_grp_def.h"\
+	
+
+.\mc_symbol_p.c : \
+	"..\inc\color_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\grid_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	"..\inc\toolkit.h"\
+	"..\inc\zoom_def.h"\
+	
+
+.\mc_text_edit.c : \
+	"..\inc\color_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\text_edit_def.h"\
+	
+
+.\mc_toolkit.c : \
+	"..\inc\draw_def.h"\
+	"..\inc\fill_bitmap.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\symbol_def.h"\
+	"..\inc\text_edit_def.h"\
+	"..\inc\toolkit.h"\
+	
+
+.\mc_view_p.c : \
+	"..\inc\color_def.h"\
+	"..\inc\draw_def.h"\
+	"..\inc\ipm.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\symbol_def.h"\
+	"..\inc\view_def.h"\
+	"..\inc\zoom_def.h"\
+	
+
+.\mc_zoom_p.c : \
+	"..\inc\draw_def.h"\
+	"..\INC\ipm_k_def.h"\
+	"..\inc\mode_def.h"\
+	"..\inc\SCALER.H"\
+	"..\inc\view_def.h"\
+	"..\inc\zoom_def.h"\
+	

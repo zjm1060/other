@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CTeacherManage</class>
+ <widget class="QMainWindow" name="CTeacherManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>860</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>OTS2000  教员站</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>18</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string>font: 12pt &quot;宋体&quot;;</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>50</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLogin"/>
+   <addaction name="actionExit"/>
+   <addaction name="actionLoginStatus"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionStudentInfo"/>
+   <addaction name="actionHistoryRec"/>
+   <addaction name="actionSetTask"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionModel"/>
+   <addaction name="actionStationConfig"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="actionOprManage"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>font: 10pt &quot;宋体&quot;;</string>
+   </property>
+   <widget class="QMenu" name="menu_user">
+    <property name="title">
+     <string>学员信息</string>
+    </property>
+    <addaction name="actionStudentInfo_menu"/>
+    <addaction name="actionLoginRec"/>
+    <addaction name="action_user_score"/>
+    <addaction name="actionPrivilege"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>帮助(Help)</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionContact"/>
+   </widget>
+   <widget class="QMenu" name="menuTrain">
+    <property name="title">
+     <string>培训任务管理</string>
+    </property>
+    <addaction name="actionSetTask_menu"/>
+    <addaction name="action_2"/>
+    <addaction name="actionSetScene"/>
+    <addaction name="actionSetFault"/>
+    <addaction name="actionLoginStudent"/>
+    <addaction name="actionTrainInfo"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionSendMessage_menu"/>
+    <addaction name="separator"/>
+    <addaction name="actionBrodcast"/>
+   </widget>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件(File)</string>
+    </property>
+    <addaction name="actionLogin_menu"/>
+    <addaction name="actionExit_menu"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_sys">
+    <property name="title">
+     <string>设置(Setting)</string>
+    </property>
+    <widget class="QMenu" name="menu_language">
+     <property name="title">
+      <string>语言切换（LANGUAGE）</string>
+     </property>
+     <addaction name="actionChinese"/>
+     <addaction name="actionEnglish"/>
+    </widget>
+    <addaction name="actionStationConfig_menu"/>
+    <addaction name="separator"/>
+    <addaction name="actionALL_reset"/>
+    <addaction name="actionSaveScene"/>
+    <addaction name="actionCallData"/>
+    <addaction name="actionSetPointMask"/>
+    <addaction name="menu_language"/>
+   </widget>
+   <widget class="QMenu" name="menu_exam">
+    <property name="title">
+     <string>专业知识考核</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>学习文档管理</string>
+     </property>
+     <addaction name="action_doc_manage"/>
+     <addaction name="action_doc_study_plan"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="actionExam"/>
+    <addaction name="menu_2"/>
+   </widget>
+   <widget class="QMenu" name="menuMdlLib">
+    <property name="title">
+     <string>工况与案例库</string>
+    </property>
+    <addaction name="actionModel_menu"/>
+    <addaction name="actionSequence"/>
+    <addaction name="separator"/>
+    <addaction name="actionFault"/>
+    <addaction name="actionTask"/>
+    <addaction name="separator"/>
+    <addaction name="actionScene"/>
+    <addaction name="actionRevert"/>
+    <addaction name="separator"/>
+    <addaction name="actionOprManage_menu"/>
+   </widget>
+   <widget class="QMenu" name="menuRecord">
+    <property name="title">
+     <string>历史记录</string>
+    </property>
+    <addaction name="actionHistoryRec_menu"/>
+    <addaction name="actionStudyRec"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>竞赛管理</string>
+    </property>
+    <addaction name="action_contestmanage"/>
+    <addaction name="action_sendcontest"/>
+    <addaction name="action_competetionscore"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_user"/>
+   <addaction name="menuTrain"/>
+   <addaction name="menuMdlLib"/>
+   <addaction name="menuRecord"/>
+   <addaction name="menu_exam"/>
+   <addaction name="menu"/>
+   <addaction name="menu_sys"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <action name="actionStudentInfo_menu">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20090119102024707.PNG</normaloff>
+     <normalon>../../../../../../Documents and Settings/lenovo/桌面/images/ots31.png</normalon>:/pic/images/20090119102024707.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>学员用户信息</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/media-stop-32.PNG</normaloff>:/pic/images/media-stop-32.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>停止</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/media-pause-32.PNG</normaloff>:/pic/images/media-pause-32.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>暂停</string>
+   </property>
+  </action>
+  <action name="actionGoOn">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/media-play-32.PNG</normaloff>:/pic/images/media-play-32.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>继续</string>
+   </property>
+  </action>
+  <action name="actionSetTask_menu">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/ots06.PNG</normaloff>:/pic/images/ots06.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>下发操作任务</string>
+   </property>
+  </action>
+  <action name="actionSendMessage_menu">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20071224091514244[1].PNG</normaloff>:/pic/images/20071224091514244[1].PNG</iconset>
+   </property>
+   <property name="text">
+    <string>发送提示信息</string>
+   </property>
+  </action>
+  <action name="actionLogin_menu">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20090119102144587.PNG</normaloff>:/pic/images/20090119102144587.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>登录    (CTRL+ENTER)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Return</string>
+   </property>
+  </action>
+  <action name="actionExit_menu">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/ots03.PNG</normaloff>
+     <normalon>:/images/quit.png</normalon>:/pic/images/ots03.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>注销    (ESC)</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/find_normal.png</normaloff>:/pic/images/find_normal.png</iconset>
+   </property>
+   <property name="text">
+    <string>教员管理系统帮助 (F1)</string>
+   </property>
+   <property name="toolTip">
+    <string>教员管理系统帮助</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/forums_icon.gif</normaloff>:/pic/images/forums_icon.gif</iconset>
+   </property>
+   <property name="text">
+    <string>关于我们</string>
+   </property>
+  </action>
+  <action name="actionContact">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/get_conn.gif</normaloff>:/pic/images/get_conn.gif</iconset>
+   </property>
+   <property name="text">
+    <string>联系我们</string>
+   </property>
+  </action>
+  <action name="actionStationConfig_menu">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/参数设置1.PNG</normaloff>:/pic/images/参数设置1.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>配置工作站</string>
+   </property>
+  </action>
+  <action name="actionSimSpeed">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/refresh-32.png</normaloff>:/images/refresh-32.png</iconset>
+   </property>
+   <property name="text">
+    <string>修改仿真速度</string>
+   </property>
+   <property name="toolTip">
+    <string>查询当前仿真速度</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20090119102144587.PNG</normaloff>:/pic/images/20090119102144587.PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>登陆</string>
+   </property>
+  </action>
+  <action name="actionStudentInfo">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20090119102024707.PNG</normaloff>:/pic/images/20090119102024707.PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>学员用户信息</string>
+   </property>
+  </action>
+  <action name="actionHistoryRec">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/ots16.PNG</normaloff>:/pic/images/ots16.PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>学员历史记录查询</string>
+   </property>
+  </action>
+  <action name="actionSetTask">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/ots06.PNG</normaloff>:/pic/images/ots06.PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>设置任务</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/ots03.PNG</normaloff>:/pic/images/ots03.PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>注销</string>
+   </property>
+  </action>
+  <action name="actionModel">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/ots08.PNG</normaloff>:/pic/images/ots08.PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>模型设置</string>
+   </property>
+  </action>
+  <action name="actionStationConfig">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/参数设置1.PNG</normaloff>:/pic/images/参数设置1.PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>配置工作站</string>
+   </property>
+  </action>
+  <action name="actionConfig_menu">
+   <property name="text">
+    <string>系统参数设置</string>
+   </property>
+  </action>
+  <action name="actionLoginStudent">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20090119102024707.PNG</normaloff>:/pic/images/20090119102024707.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>在线学员培训</string>
+   </property>
+  </action>
+  <action name="actionSendMessage">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20071224091514244[1].PNG</normaloff>:/pic/images/20071224091514244[1].PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>发送提示信息</string>
+   </property>
+  </action>
+  <action name="actionPaper_menu">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20071126111905477[1].PNG</normaloff>:/pic/images/20071126111905477[1].PNG</iconset>
+   </property>
+   <property name="text">
+    <string>任务管理</string>
+   </property>
+  </action>
+  <action name="actionOprManage">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/20071126111905477[1].PNG</normaloff>:/pic/images/20071126111905477[1].PNG</iconset>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="toolTip">
+    <string>在线操作库</string>
+   </property>
+  </action>
+  <action name="actionModel_menu">
+   <property name="text">
+    <string>模型设置</string>
+   </property>
+  </action>
+  <action name="actionSequence">
+   <property name="text">
+    <string>流程设置</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>变量表维护</string>
+   </property>
+  </action>
+  <action name="action_user_score">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>学员历史成绩</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>静态工况设置</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>工况再现设置</string>
+   </property>
+  </action>
+  <action name="actionFault">
+   <property name="text">
+    <string>故障库设置</string>
+   </property>
+  </action>
+  <action name="actionTask">
+   <property name="text">
+    <string>培训案例库</string>
+   </property>
+  </action>
+  <action name="actionScene">
+   <property name="text">
+    <string>静态工况库</string>
+   </property>
+  </action>
+  <action name="actionRevert">
+   <property name="text">
+    <string>工况再现库</string>
+   </property>
+  </action>
+  <action name="actionPrivilege">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>用户权限</string>
+   </property>
+  </action>
+  <action name="actionLoginStatus">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>未登录</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::AboutQtRole</enum>
+   </property>
+  </action>
+  <action name="actionHistoryRec_menu">
+   <property name="text">
+    <string>学员历史记录查询</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../SimuTutor.qrc">
+     <normaloff>:/pic/images/quit.png</normaloff>:/pic/images/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出    (CTRL+Q)</string>
+   </property>
+   <property name="toolTip">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionOprManage_menu">
+   <property name="text">
+    <string>在线操作库</string>
+   </property>
+  </action>
+  <action name="actionLoginRec">
+   <property name="text">
+    <string>学员登录历史记录</string>
+   </property>
+  </action>
+  <action name="actionTrainInfo">
+   <property name="text">
+    <string>培训信息管理</string>
+   </property>
+  </action>
+  <action name="actionChinese">
+   <property name="text">
+    <string>中文(CHINESE)</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>英文(ENGLISH)</string>
+   </property>
+  </action>
+  <action name="actionSubject_menu">
+   <property name="text">
+    <string>题库管理</string>
+   </property>
+  </action>
+  <action name="actionTestinfo_menu">
+   <property name="text">
+    <string>成绩管理</string>
+   </property>
+  </action>
+  <action name="actionALL_reset">
+   <property name="text">
+    <string>全厂工况初始</string>
+   </property>
+  </action>
+  <action name="actionCallData">
+   <property name="text">
+    <string>召唤监控数据</string>
+   </property>
+   <property name="toolTip">
+    <string>召唤监控数据</string>
+   </property>
+  </action>
+  <action name="actionSaveScene">
+   <property name="text">
+    <string>保存当前工况</string>
+   </property>
+   <property name="toolTip">
+    <string>保存当前工况</string>
+   </property>
+  </action>
+  <action name="actionExam">
+   <property name="text">
+    <string>专业知识考试</string>
+   </property>
+  </action>
+  <action name="actionSetScene">
+   <property name="text">
+    <string>设置工况</string>
+   </property>
+  </action>
+  <action name="actionSetFault">
+   <property name="text">
+    <string>设置故障</string>
+   </property>
+  </action>
+  <action name="actionSetPointMask">
+   <property name="text">
+    <string>设置屏蔽点</string>
+   </property>
+  </action>
+  <action name="actionStudyRec">
+   <property name="text">
+    <string>学员学习记录查询</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>下发学习任务</string>
+   </property>
+  </action>
+  <action name="action_contestmanage">
+   <property name="text">
+    <string>竞赛库管理</string>
+   </property>
+  </action>
+  <action name="action_competetionscore">
+   <property name="text">
+    <string>竞赛成绩查询</string>
+   </property>
+  </action>
+  <action name="action_sendcontest">
+   <property name="text">
+    <string>竞赛发布</string>
+   </property>
+  </action>
+  <action name="action_doc_manage">
+   <property name="text">
+    <string>文档库管理</string>
+   </property>
+  </action>
+  <action name="action_doc_study_plan">
+   <property name="text">
+    <string>学习计划管理</string>
+   </property>
+  </action>
+  <action name="actionBrodcast">
+   <property name="text">
+    <string>发送广播信息</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../SimuTutor.qrc"/>
+ </resources>
+ <connections/>
+</ui>

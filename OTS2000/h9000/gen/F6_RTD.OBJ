@@ -1,0 +1,84 @@
+RECORD      NAME = OBJ
+
+ENTRY      NAME	= DLKP_DL6_OBJ
+           LONGNAME	= '发电机断路器控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= LCP_FCB_OBJ
+           LONGNAME	= '发电机灭磁开关控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= TSDP_JTF_OBJ
+           LONGNAME	= '机组急停电磁阀控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SLJX_1DP_OBJ
+           LONGNAME	= '事故配压阀过速限制电磁阀控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= YTFKP_YTF_OBJ
+           LONGNAME	= '圆筒阀控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980004
+           PNT_ADD	= 4
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= JKP2_GZM_OBJ
+           LONGNAME	= '快速闸门控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980005
+           PNT_ADD	= 5
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SLJX_2DP_OBJ
+           LONGNAME	= '分段关闭电磁阀控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980006
+           PNT_ADD	= 6
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= ZDP_1GDKA_OBJ
+           LONGNAME	= '制动充气电磁空气阀控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980007
+           PNT_ADD	= 7
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= ZDP_2GDKA_OBJ
+           LONGNAME	= '复归腔排气电磁空气阀控制'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 7980008
+           PNT_ADD	= 8
+           AOR_GRP	= GEN
+
+END

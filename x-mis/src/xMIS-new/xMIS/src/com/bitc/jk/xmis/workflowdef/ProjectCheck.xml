@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="ProjectCheck" Name="ProjectCheck" DisplayName="内审" ResourceFile="" ResourceManager="">
+    <fpdl:Description>内部验收申请</fpdl:Description>
+    <fpdl:DataFields>
+        <fpdl:DataField Id="ProjectCheck.isManager" Name="isManager" DisplayName="是否是主任" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="ProjectCheck.isEngineer" Name="isEngineer" DisplayName="是否是总工" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="ProjectCheck.isAgree" Name="isAgree" DisplayName="是否同意" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="ProjectCheck.goon" Name="goon" DisplayName="" DataType="STRING" InitialValue=""/>
+    </fpdl:DataFields>
+    <fpdl:StartNode Id="ProjectCheck.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="0"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="112"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="ProjectCheck.Activity1" Name="Activity1" DisplayName="申请内部验收" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="54"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="93"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectCheck.Activity1.Task1" Name="Task1" DisplayName="提交验收模板" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="申请人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="StartInterCheck" DisplayName="启动内部验收">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri> /projectMain.do?method=showPage&amp;projectID={projectID}&amp;isAgree={isAgree}&amp;comment={comment}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目&quot;+projectCode+&quot;内部验收申请&quot;+goon"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.EngineerCheck" Name="EngineerCheck" DisplayName="总工审批" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="252"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="95"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectCheck.EngineerCheck.EngineerCheckTask" Name="EngineerCheckTask" DisplayName="审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="NONE">
+                    <fpdl:Performer Name="$join($post(empDeptId,8),$post(empDeptId,10))" DisplayName="总工">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="StartEngineerCheck" DisplayName="总工审批">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/interCheckToEngineer.jsp?&amp;projectID={projectID}&amp;checkDeptID={checkDeptID}&amp;applicant={applicant}&amp;comment={comment}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot; 项目&quot;+projectCode+&quot;内部验收申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.ManagerCheck" Name="ManagerCheck" DisplayName="主任审批" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="511"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="96"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectCheck.ManagerCheck.ManagerCheckTask" Name="ManagerCheckTask" DisplayName="审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="NONE">
+                    <fpdl:Performer Name="$join($join($post(empDeptId,6),$post(empDeptId,7)),$post(empDeptId,14))" DisplayName="主任">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="StartManagerCheck" DisplayName="主任审批">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/interCheckToEngineer.jsp?&amp;projectID={projectID}&amp;checkDeptID={checkDeptID}&amp;applicant={applicant}&amp;comment={comment}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot; 项目&quot;+projectCode+&quot;内部验收申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.DeptManagerAssign" Name="DeptManagerAssign" DisplayName="验收部门分配任务" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="106"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="730"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="95"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectCheck.DeptManagerAssign.DeptManagerAssignTask" Name="DeptManagerAssignTask" DisplayName="下派任务" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="NONE">
+                    <fpdl:Performer Name="$join($post(deptId,6),$post(deptId,7))" DisplayName="验收部门主任">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="StartDeptAssignCheck" DisplayName="验收部门下派任务">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/interCheckToEngineer.jsp?&amp;projectID={projectID}&amp;checkDeptID={checkDeptID}&amp;applicant={applicant}&amp;comment={comment}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot; 项目&quot;+projectCode+&quot;内部验收申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.AcceptorCheck" Name="AcceptorCheck" DisplayName="验收员验收" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="933"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="97"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectCheck.AcceptorCheck.AcceptorCheckTask" Name="AcceptorCheckTask" DisplayName="审批" Type="FORM" CompletionStrategy="ALL" DefaultView="EDITFORM" Priority="1" LoopStrategy="NONE">
+                    <fpdl:Performer Name="__acceptor" DisplayName="验收员">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>PreviousStepSpecifyAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="StartAcceptorCheck" DisplayName="验收员验收">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/interCheckToEngineer.jsp?&amp;projectID={projectID}&amp;checkDeptID={checkDeptID}&amp;applicant={applicant}&amp;projectTaskId={projectTaskId}&amp;checkDeptID={checkDeptID}&amp;applicant={applicant}&amp;comment={comment}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot; 项目&quot;+projectCode+&quot;内部验收任务&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.Activity14" Name="Activity14" DisplayName="验收部门主任审批" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="62"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="126"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="920"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="258"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectCheck.Activity14.Task6" Name="Task6" DisplayName="审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__checkManagerID" DisplayName="验收部门主任">
+                        <fpdl:Description>分配任务的主任 </fpdl:Description>
+                        <fpdl:AssignmentHandler>PreviousStepSpecifyAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="CheckDeptMangerTask" DisplayName="验收部门主任审批">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/interCheckToEngineer.jsp?&amp;projectID={projectID}&amp;checkDeptID={checkDeptID}&amp;applicant={applicant}&amp;checkDeptID={checkDeptID}&amp;isApproved={isApproved}&amp;comment={comment}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot; 项目&quot;+projectCode+&quot;内部验收申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.Activity15" Name="Activity15" DisplayName="通知事业部主任" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="110"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="741"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="349"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ProjectCheck.Activity15.Task7" Name="Task7" DisplayName="通知事业部主任" Type="TOOL" Execution="SYNCHR" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Application Name="PreviousorApplicationHandler" DisplayName="通知事业部主任">
+                        <fpdl:Description>Name 可修改；通知审批过此项目的事业部主任；</fpdl:Description>
+                        <fpdl:Handler>PreviousorApplicationHandler</fpdl:Handler>
+                    </fpdl:Application>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.Activity8" Name="Activity8" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="252"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="51"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ProjectCheck.Activity9" Name="Activity9" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="511"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="46"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="ProjectCheck.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="179"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="114"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ProjectCheck.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="406"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="115"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ProjectCheck.Synchronizer3" Name="Synchronizer3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="654"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="116"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ProjectCheck.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="874"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="116"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ProjectCheck.Synchronizer5" Name="Synchronizer5" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="974"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="197"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ProjectCheck.Synchronizer7" Name="Synchronizer7" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="787"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="279"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="ProjectCheck.EndNode2" Name="EndNode2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="927"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="370"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="ProjectCheck.Transition1" From="ProjectCheck.START_NODE" To="ProjectCheck.Activity1" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition2" From="ProjectCheck.Activity1" To="ProjectCheck.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition3" From="ProjectCheck.Synchronizer1" To="ProjectCheck.EngineerCheck" Name="Transition3" DisplayName="">
+            <fpdl:Condition>!isEngineer&amp;&amp;!isManager</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(231,278)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition5" From="ProjectCheck.EngineerCheck" To="ProjectCheck.Synchronizer2" Name="Transition5" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition6" From="ProjectCheck.Synchronizer2" To="ProjectCheck.ManagerCheck" Name="Transition6" DisplayName="">
+            <fpdl:Condition>isAgree||(isEngineer&amp;&amp;!isAgree)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition10" From="ProjectCheck.Synchronizer3" To="ProjectCheck.DeptManagerAssign" Name="Transition10" DisplayName="">
+            <fpdl:Condition>isAgree||(isManager)</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(1513,114)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition11" From="ProjectCheck.ManagerCheck" To="ProjectCheck.Synchronizer3" Name="Transition11" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition12" From="ProjectCheck.DeptManagerAssign" To="ProjectCheck.Synchronizer4" Name="Transition12" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(739,255)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition13" From="ProjectCheck.Synchronizer4" To="ProjectCheck.AcceptorCheck" Name="Transition13" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(781,251)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition17" From="ProjectCheck.AcceptorCheck" To="ProjectCheck.Synchronizer5" Name="Transition17" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition18" From="ProjectCheck.Synchronizer5" To="ProjectCheck.Activity14" Name="Transition18" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition14" From="ProjectCheck.Synchronizer7" To="ProjectCheck.Activity15" Name="Transition14" DisplayName="通过">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition15" From="ProjectCheck.Activity14" To="ProjectCheck.Synchronizer7" Name="Transition15"/>
+        <fpdl:Transition Id="ProjectCheck.Transition16" From="ProjectCheck.Activity15" To="ProjectCheck.EndNode2" Name="Transition16"/>
+        <fpdl:Transition Id="ProjectCheck.Transition19" From="ProjectCheck.Synchronizer1" To="ProjectCheck.Activity8" Name="Transition19">
+            <fpdl:Condition>isManager||isEngineer</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition20" From="ProjectCheck.Activity8" To="ProjectCheck.Synchronizer2" Name="Transition20"/>
+        <fpdl:Transition Id="ProjectCheck.Transition21" From="ProjectCheck.Synchronizer2" To="ProjectCheck.Activity9" Name="Transition21">
+            <fpdl:Condition>isManager</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ProjectCheck.Transition22" From="ProjectCheck.Activity9" To="ProjectCheck.Synchronizer3" Name="Transition22"/>
+    </fpdl:Transitions>
+    <fpdl:Loops>
+        <fpdl:Loop Id="ProjectCheck.Loop1" From="ProjectCheck.Synchronizer2" To="ProjectCheck.START_NODE" Name="Loop1">
+            <fpdl:Condition>!isAgree&amp;&amp;!isEngineer&amp;&amp;!isManager</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(345,235)(202,234)(80,232)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ProjectCheck.Loop2" From="ProjectCheck.Synchronizer3" To="ProjectCheck.START_NODE" Name="Loop2">
+            <fpdl:Condition>!isAgree&amp;&amp;!isManager</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(548,268)(86,268)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ProjectCheck.Loop3" From="ProjectCheck.Synchronizer7" To="ProjectCheck.START_NODE" Name="Loop3">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(73,300)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+    </fpdl:Loops>
+</fpdl:WorkflowProcess>

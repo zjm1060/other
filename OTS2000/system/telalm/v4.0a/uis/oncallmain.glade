@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--*- mode: xml -*-->
+<glade-interface>
+  <widget class="GtkWindow" id="oncallmainwindow">
+    <property name="width_request">980</property>
+    <property name="height_request">700</property>
+    <property name="icon">App.ico</property>
+    <property name="deletable">False</property>
+    <child>
+      <widget class="GtkFixed" id="mainlayout">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkHBox" id="main_hbox">
+            <property name="width_request">960</property>
+            <property name="height_request">650</property>
+            <property name="visible">True</property>
+            <property name="spacing">20</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <widget class="GtkVBox" id="vbox2">
+                <property name="width_request">340</property>
+                <property name="visible">True</property>
+                <property name="spacing">12</property>
+                <child>
+                  <widget class="GtkVBox" id="manusendhbox">
+                    <property name="height_request">118</property>
+                    <property name="visible">True</property>
+                    <property name="spacing">4</property>
+                    <child>
+                      <widget class="GtkHBox" id="hbox1">
+                        <property name="visible">True</property>
+                        <property name="spacing">40</property>
+                        <child>
+                          <widget class="GtkLabel" id="label2">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">手动短信发送队列信息</property>
+                            <property name="single_line_mode">True</property>
+                          </widget>
+                          <packing>
+                            <property name="expand">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="clearmanxendbufbt">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">清空手动发送短信队列</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkScrolledWindow" id="scrollmansendbuf">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <child>
+                          <widget class="GtkTextView" id="mansendbuftextview">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="border_width">1</property>
+                            <property name="editable">False</property>
+                            <property name="wrap_mode">GTK_WRAP_CHAR</property>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="manusendnuminputhbox">
+                    <property name="height_request">118</property>
+                    <property name="visible">True</property>
+                    <child>
+                      <widget class="GtkHBox" id="hbox2">
+                        <property name="visible">True</property>
+                        <child>
+                          <widget class="GtkLabel" id="label0">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">请输入姓名或手机号,以";"分隔</property>
+                            <property name="single_line_mode">True</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="namaclearbt">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">清空</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="namaselectbt">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">人员选择</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkScrolledWindow" id="scrollnamestr">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <child>
+                          <widget class="GtkTextView" id="namestrtextview">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="border_width">1</property>
+                            <property name="wrap_mode">GTK_WRAP_CHAR</property>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="manusendtextinputhbox">
+                    <property name="height_request">118</property>
+                    <property name="visible">True</property>
+                    <child>
+                      <widget class="GtkHBox" id="hbox3">
+                        <property name="visible">True</property>
+                        <property name="homogeneous">True</property>
+                        <child>
+                          <widget class="GtkLabel" id="label1">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">手动短信内容</property>
+                            <property name="single_line_mode">True</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="startsendbt">
+                            <property name="height_request">26</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">开始发送</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="cancelsendbt">
+                            <property name="height_request">26</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">取消发送</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkScrolledWindow" id="scrollmansendtext">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <child>
+                          <widget class="GtkTextView" id="mansendtexttextview">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="border_width">1</property>
+                            <property name="wrap_mode">GTK_WRAP_CHAR</property>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label5">
+                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">系统实时运行记录</property>
+                    <property name="single_line_mode">True</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkScrolledWindow" id="scrollmansendtext2">
+                    <property name="height_request">300</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <child>
+                      <widget class="GtkTextView" id="runinglogstexttextview">
+                        <property name="height_request">300</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="border_width">1</property>
+                        <property name="wrap_mode">GTK_WRAP_CHAR</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="padding">2</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkVBox" id="vbox3">
+                <property name="visible">True</property>
+                <child>
+                  <widget class="GtkVBox" id="timesendhbox">
+                    <property name="height_request">118</property>
+                    <property name="visible">True</property>
+                    <property name="border_width">2</property>
+                    <property name="spacing">4</property>
+                    <child>
+                      <widget class="GtkHButtonBox" id="hbuttonbox1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <child>
+                          <widget class="GtkLabel" id="label9">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">定时短信发送队列信息</property>
+                            <property name="single_line_mode">True</property>
+                          </widget>
+                          <packing>
+                            <property name="expand">False</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="cleartimingsendbufbt">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">清空定时发送短信队列</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkScrolledWindow" id="scrolltimesendbuf">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <child>
+                          <widget class="GtkTextView" id="timesendbuftextview">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="border_width">1</property>
+                            <property name="editable">False</property>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="autoalmsendhbox">
+                    <property name="height_request">118</property>
+                    <property name="visible">True</property>
+                    <property name="border_width">2</property>
+                    <property name="spacing">4</property>
+                    <child>
+                      <widget class="GtkHButtonBox" id="hbuttonbox3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <child>
+                          <widget class="GtkLabel" id="label6">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">自动报警短信发送队列信息</property>
+                            <property name="single_line_mode">True</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="clearautoalmsendbufbt">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">清空自动报警发送短信队列</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkScrolledWindow" id="scrolltimesendbuf2">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <child>
+                          <widget class="GtkTextView" id="autoalmsendbuftextview">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="border_width">1</property>
+                            <property name="editable">False</property>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="padding">2</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="padding">2</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkVBox" id="manualmsendhbox">
+                    <property name="height_request">118</property>
+                    <property name="visible">True</property>
+                    <property name="border_width">2</property>
+                    <property name="spacing">4</property>
+                    <child>
+                      <widget class="GtkHButtonBox" id="hbuttonbox4">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <child>
+                          <widget class="GtkLabel" id="label7">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">半自动报警短信发送队列信息</property>
+                            <property name="single_line_mode">True</property>
+                          </widget>
+                        </child>
+                        <child>
+                          <widget class="GtkButton" id="clearmanualmsendbufbt">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="label" translatable="yes">清空半自动报警发送短信队列</property>
+                            <property name="use_underline">True</property>
+                            <property name="response_id">0</property>
+                          </widget>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkScrolledWindow" id="scrolltimesendbuf3">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                        <child>
+                          <widget class="GtkTextView" id="manualmsendbuftextview">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="border_width">1</property>
+                            <property name="editable">False</property>
+                          </widget>
+                        </child>
+                      </widget>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="padding">2</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label10">
+                    <property name="height_request">37</property>
+                    <property name="visible">True</property>
+                    <property name="ypad">11</property>
+                    <property name="label" translatable="yes">硬件设备故障监测</property>
+                    <property name="single_line_mode">True</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkScrolledWindow" id="scrollmansendtext3">
+                    <property name="height_request">250</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <child>
+                      <widget class="GtkTextView" id="harddevicestattexttextview">
+                        <property name="height_request">250</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="border_width">1</property>
+                        <property name="wrap_mode">GTK_WRAP_CHAR</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkButton" id="exitbt">
+                    <property name="height_request">26</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="border_width">1</property>
+                    <property name="label" translatable="yes">退出系统</property>
+                    <property name="use_underline">True</property>
+                    <property name="response_id">0</property>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">5</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkVBox" id="vbox1">
+                <property name="width_request">100</property>
+                <property name="height_request">80</property>
+                <property name="visible">True</property>
+                <property name="spacing">5</property>
+                <child>
+                  <widget class="GtkHBox" id="hbox4">
+                    <property name="height_request">31</property>
+                    <property name="visible">True</property>
+                    <property name="spacing">60</property>
+                    <child>
+                      <widget class="GtkLabel" id="label13">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">电话报警设备选择</property>
+                        <property name="single_line_mode">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkCheckButton" id="selecttelalmdevcb">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="label" translatable="yes">全选</property>
+                        <property name="use_underline">True</property>
+                        <property name="response_id">0</property>
+                        <property name="draw_indicator">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkScrolledWindow" id="scrollselectalmdevtreeview">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <child>
+                      <widget class="GtkTreeView" id="selecttelalmdevtreeview">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="border_width">1</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkHBox" id="hbox5">
+                    <property name="height_request">31</property>
+                    <property name="visible">True</property>
+                    <property name="spacing">60</property>
+                    <child>
+                      <widget class="GtkLabel" id="label4">
+                        <property name="width_request">109</property>
+                        <property name="height_request">24</property>
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">短信报警设备选择</property>
+                        <property name="single_line_mode">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkCheckButton" id="selectsmsalmdevcb">
+                        <property name="width_request">55</property>
+                        <property name="height_request">20</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="label" translatable="yes">全选</property>
+                        <property name="use_underline">True</property>
+                        <property name="response_id">0</property>
+                        <property name="draw_indicator">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkScrolledWindow" id="scrollselectsmsalmdevtreeview">
+                    <property name="width_request">336</property>
+                    <property name="height_request">83</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <child>
+                      <widget class="GtkTreeView" id="selectsmsalmdevtreeview">
+                        <property name="width_request">100</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="border_width">1</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkHBox" id="hbox6">
+                    <property name="visible">True</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <widget class="GtkLabel" id="label11">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">短信报警发送确认</property>
+                        <property name="single_line_mode">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkCheckButton" id="selectmsgalmcb">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="label" translatable="yes">全选</property>
+                        <property name="use_underline">True</property>
+                        <property name="response_id">0</property>
+                        <property name="draw_indicator">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkButton" id="cancelselectmsgalmbt">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="label" translatable="yes">开始处理手动短信报警</property>
+                        <property name="use_underline">True</property>
+                        <property name="response_id">0</property>
+                      </widget>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkScrolledWindow" id="scrollselectmsgalm">
+                    <property name="width_request">339</property>
+                    <property name="height_request">106</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="border_width">1</property>
+                    <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <child>
+                      <widget class="GtkTreeView" id="selectmsgalmtreeview">
+                        <property name="width_request">100</property>
+                        <property name="height_request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="border_width">1</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">5</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkHBox" id="hbox7">
+                    <property name="visible">True</property>
+                    <property name="spacing">10</property>
+                    <child>
+                      <widget class="GtkLabel" id="label12">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">电话报警发送确认</property>
+                        <property name="single_line_mode">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkCheckButton" id="selecttelalmcb">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="label" translatable="yes">全选</property>
+                        <property name="use_underline">True</property>
+                        <property name="response_id">0</property>
+                        <property name="draw_indicator">True</property>
+                      </widget>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="GtkButton" id="cancelselecttelalmbt">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="label" translatable="yes">开始处理手动电话报警</property>
+                        <property name="use_underline">True</property>
+                        <property name="response_id">0</property>
+                      </widget>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkScrolledWindow" id="scrollselecttelalmtreeview">
+                    <property name="width_request">339</property>
+                    <property name="height_request">130</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="border_width">1</property>
+                    <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                    <child>
+                      <widget class="GtkTreeView" id="selecttelalmtreeview">
+                        <property name="width_request">100</property>
+                        <property name="height_request">100</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="border_width">1</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="position">7</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">10</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

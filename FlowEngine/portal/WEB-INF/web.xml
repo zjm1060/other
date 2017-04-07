@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID" version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>portal</display-name>
+    <context-param id="ContextParam_1072539341046">
+        <param-name>weblogic.httpd.inputCharset./*</param-name>
+        <param-value>GBK</param-value>
+    </context-param>
+    <listener id="Listener_1154287219024">
+        <listener-class>jbportal.OnlineUserAudit</listener-class>
+    </listener>
+    <servlet id="Servlet_1072539341048">
+        <servlet-name>PortalRedirectToUrl</servlet-name>
+        <servlet-class>jbportal.PortalRedirectToUrl</servlet-class>
+        <load-on-startup>100002</load-on-startup>
+    </servlet>
+    <servlet id="Servlet_1072539341047">
+        <servlet-name>portallogout</servlet-name>
+        <servlet-class>jbportal.PortalLogout</servlet-class>
+        <load-on-startup>100001</load-on-startup>
+    </servlet>
+    <servlet id="Servlet_1079526924937">
+        <servlet-name>genreport</servlet-name>
+        <servlet-class>com.minstone.report.GenReport</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BaseAdminSvl</servlet-name>
+        <servlet-class>com.minstone.baseadmin.servlet.MainServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BaseAdminSvl</servlet-name>
+        <url-pattern>/ApproveWeb/BaseAdminWeb/BaseAdminSvl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="ServletMapping_1079526924938">
+        <servlet-name>genreport</servlet-name>
+        <url-pattern>/report/genreport</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="ServletMapping_1072539341050">
+        <servlet-name>PortalRedirectToUrl</servlet-name>
+        <url-pattern>/stPortal/PortalRedirectToUrl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="ServletMapping_1072539341049">
+        <servlet-name>portallogout</servlet-name>
+        <url-pattern>/stPortal/portallogout</url-pattern>
+    </servlet-mapping>
+
+    <servlet id="Servlet_1072539341088">
+        <servlet-name>portalSvl</servlet-name>
+        <servlet-class>
+            com.minstone.portal.servlet.MainServlet
+        </servlet-class>
+        <load-on-startup>100003</load-on-startup>
+    </servlet>
+    <servlet-mapping id="ServletMapping_1072539341056">
+        <servlet-name>portalSvl</servlet-name>
+        <url-pattern>portalSvl</url-pattern>
+    </servlet-mapping>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <el-ignored>false</el-ignored>
+            <page-encoding>GB2312</page-encoding>
+            <scripting-invalid>false</scripting-invalid>
+        </jsp-property-group>
+    </jsp-config>
+
+    <session-config>
+        <session-timeout>-1</session-timeout>
+    </session-config>
+    <welcome-file-list id="WelcomeFileList_1072539341051">
+        <welcome-file>/stPortal/default.jsp</welcome-file>
+    </welcome-file-list>
+    <security-constraint id="SecurityConstraint_1075453973281">
+        <display-name>everyone</display-name>
+        <web-resource-collection id="WebResourceCollection_1075453973282">
+            <web-resource-name>AdminPages</web-resource-name>
+            <url-pattern>/stPortal/*</url-pattern>
+            <url-pattern>/stPortal/OnlineUser/*</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint id="SecurityConstraint_1075453973283">
+            <description>These are the roles who have access</description>
+            <role-name>everyone</role-name>
+        </auth-constraint>
+        <user-data-constraint id="UserDataConstraint_1075453973284">
+            <description>This is how the user data must be transmitted</description>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <form-login-config>
+            <form-login-page>/Login/enter.jsp</form-login-page>
+            <form-error-page>/Login/enterError.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role id="SecurityRole_1075455807265">
+        <description>everyone role</description>
+        <role-name>everyone</role-name>
+    </security-role>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/c.tld</taglib-location>
+        </taglib>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <el-ignored>false</el-ignored>
+            <page-encoding>GB2312</page-encoding>
+            <scripting-invalid>false</scripting-invalid>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>

@@ -1,0 +1,18 @@
+##########################################################################
+# EXECUTION CONTROL
+
+# Include path, used to locate included ODF files
+#":CP", "/usr/gwaysw/mmslite/iccp/odf"
+":CP", "/home/ems/system/mmslite/iccp/odf"
+
+##########################################################################
+# INCLUDE FILE DEFINITION SECTION
+
+#":I", "mi_usr.h"
+
+##########################################################################
+# TYPE CREATION SECTION
+
+# Include SISCO ICCP Object Definition Files
+":CI", "iccp_obj.odf"
+

@@ -1,0 +1,36 @@
+body{
+  background-color:white;
+  font-size:9pt;
+  font-family: ËÎÌו;
+  margin:0px 0px 0px 0px;  /*top right bottom left*/
+  padding:0px 0px 0px 0px;
+  scrollbar-face-color: #DEE3E7;
+  scrollbar-highlight-color: #FFFFFF;
+  scrollbar-shadow-color: #DEE3E7;
+  scrollbar-3dlight-color: #D1D7DC;
+  scrollbar-arrow-color:  #006699;
+  scrollbar-track-color: #EFEFEF;
+  scrollbar-darkshadow-color: #98AAB1;
+}
+td{
+  font-size:9pt;
+  color:black;
+  text-align:left;
+  vertical-align:top;
+}
+.standardBtn{
+  width:60px;
+  height:20px;
+  padding-top:1px;
+  border:1px #939eb2 solid;
+  background-image:url('/NewTree/Images/standardBtn_bg.gif');
+  background-repeat:repeat-x;
+  text-align:center;
+  cursor:hand;
+}
+.outerFrame{
+  background-color:#c2ceeb;
+}
+.innerFrame{
+  background-color:#e0e7f8;
+}

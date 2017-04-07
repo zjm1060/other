@@ -1,0 +1,2 @@
+心跳包相关代码未使用 原因解析符号出现莫名其妙问题 待定。在主程序LOGIN LOGOUT中均有涉及。（已解决）
+HISTORYREC中void CHistoryRecTable::print()以及void CHistoryRecTable::exportToExcel()函数中存在胡看书引用问题 暂时封掉。2.20

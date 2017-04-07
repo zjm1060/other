@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bitc.jk.xmis.model.DeviceSheetImportInfo" table="xmis.dev_设备清单导入Sheet">
+        <id name="sheetUuid" type="java.lang.String">
+            <column name="sheet_uuid" />
+            <generator class="uuid" />
+        </id>
+        <property name="fileId" type="int">
+            <column name="附件ID" />
+        </property>
+        <property name="sheetId" type="int">
+            <column name="sheet_id" />
+        </property>
+        <property name="sheetName" type="java.lang.String">
+            <column name="sheet_name" />
+        </property>
+        <property name="currencyUnit" type="java.lang.String">
+            <column name="currency_unit" />
+        </property>
+        <property name="currencyType" type="int">
+            <column name="currency_type" />
+        </property>
+        <property name="importFlag" type="int">
+            <column name="import_flag" />
+        </property>
+    </class>
+</hibernate-mapping>

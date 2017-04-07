@@ -1,0 +1,89 @@
+SCC = This is a Source Code Control file
+
+[audAlm.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[audAlm.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[audGen.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[audGen.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[dbwrite.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[dbwrite.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[dpslib.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[dpslib.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[faultTable.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[faultTable.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[ipclib.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[ipclib.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[jtaud.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[jtaud.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[msaud.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[msaud.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[read_shm.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[read_shm.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[sysmgr.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[sysmgr.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[sys_ini.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA
+
+[sys_ini.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dps/v4.0a/src", TOEAAAAA

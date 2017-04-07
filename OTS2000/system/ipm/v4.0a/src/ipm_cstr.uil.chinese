@@ -1,0 +1,151 @@
+
+value
+	IPM_CSTR_OK			:	"OK";
+	IPM_CSTR_CANCEL			:	"CANCEL";
+	IPM_CSTR_HELP			:	"帮助(H)";
+	IPM_CSTR_DELETE			:	"删除";
+	IPM_CSTR_NEW			:	"New";
+	IPM_CSTR_FILE			:	"文件(F)";
+	IPM_CSTR_OPEN_FILE		:	"打开文件(R)";
+	IPM_CSTR_SAVE			:	"Save";
+	IPM_CSTR_SAVE_AS		:	"Save as ...";
+	IPM_CSTR_SAVE_FILE		:	"Save File";
+	IPM_CSTR_INSTALL		:	"Install";
+	IPM_CSTR_ABORT			:	"Abort ...";
+	IPM_CSTR_PRINT			:	'Print(P)';
+	IPM_CSTR_EXIT			:	'Exit';
+	IPM_CSTR_OPTION			:	"任选项(O)";
+	IPM_CSTR_NONE			:	"None";
+
+	IPM_CSTR_VAL_OPT		:	"val_opt";
+	IPM_CSTR_ARRAY			:	"array";
+	IPM_CSTR_EDIT			:	"编辑";
+	IPM_CSTR_EDIT_OTHER		:	"其他编辑";
+	IPM_CSTR_CLEAR_SCREEN		:	"清屏";
+	IPM_CSTR_COPY			:	"拷贝(Y)";
+	IPM_CSTR_MOVE			:	"移动";
+	IPM_CSTR_CUT			:	"剪裁(C)";
+	IPM_CSTR_PASTE			:	"粘贴(P)";
+	IPM_CSTR_REPLACE		:	"替换(R)";
+	IPM_CSTR_ADD			:	"Add";
+	IPM_CSTR_RESIZE			:	"变换尺寸(S)";
+	IPM_CSTR_ARRANGE		:	"编排(A)";
+	IPM_CSTR_RESHAPE		:	"变换形状(P)";
+	IPM_CSTR_ALINE			:	"对齐(A)";
+	IPM_CSTR_MULTICONE		:	"组合多边形(L)";
+	IPM_CSTR_SEND_TO_FGROUND	:	"Send to Forground";
+	IPM_CSTR_SEND_TO_BGROUND	:	"Send To Background";
+	IPM_CSTR_TOOLBOX		:	"工具箱";
+	IPM_CSTR_BGROUND_PALETTE	:	"画板背景颜色";
+
+	IPM_CSTR_LAYER			:	"层次(L)";
+	IPM_CSTR_LAYER_SELECT		:	"层次选择";
+	IPM_CSTR_LAYER_1		:	"layer_1";
+	IPM_CSTR_LAYER_2		:	"layer_2";
+	IPM_CSTR_LAYER_3		:	"layer_3";
+	IPM_CSTR_LAYER_4		:	"layer_4";
+	IPM_CSTR_LAYER_5		:	"layer_5";
+	IPM_CSTR_LAYER_6		:	"layer_6";
+	IPM_CSTR_LAYER_7		:	"layer_7";
+	IPM_CSTR_LAYER_8		:	"layer_8";
+	IPM_CSTR_LAYER_9		:	"layer_9";
+	IPM_CSTR_LAYER_10		:	"layer_10";
+	IPM_CSTR_LAYER_11		:	"layer_11";
+	IPM_CSTR_LAYER_12		:	"layer_12";
+	IPM_CSTR_LAYER_13		:	"layer_13";
+	IPM_CSTR_LAYER_14		:	"layer_14";
+	IPM_CSTR_LAYER_15		:	"layer_15";
+	IPM_CSTR_LAYER_16		:	"layer_16";
+	IPM_CSTR_CLUTTER		:	"层次迭加";
+	IPM_CSTR_HIDE_LOCK		:	"Layer Hide/Lock...";
+	IPM_CSTR_LAYER_SETTING		:	"层次设置";
+	IPM_CSTR_VIEW			:	"View";
+
+	IPM_CSTR_DYNAMIC		:	"动态画面";
+	IPM_CSTR_ADD_DYNAMIC		:	"Add Dynamic Request...";
+	IPM_CSTR_DEL_DYNAMIC		:	"Delete Dynamic Request...";
+	IPM_CSTR_ADD_DISPLAY		:	"Add Display Request...";
+	IPM_CSTR_ADD_PROGRAM		:	"Add Program Request...";
+	IPM_CSTR_ADD_MENU		:	"Add Menu Request...";
+	IPM_CSTR_ADD_OPER_GUIDE		:	"Add OperGuide Request...";
+	IPM_CSTR_DEL_REQUEST		:	"Delete Request";
+	IPM_CSTR_ADD_DYNAMIC_COLOR	:	"Add Dynamic Color...";
+	IPM_CSTR_DEL_DYNAMIC_COLOR	:	"Delete Dynamic Color";
+	IPM_CSTR_DYNAMIC_TEST		:	"动态测试";
+	IPM_CSTR_REALTIME_DATA_TEST	:	"实时数据测试...";
+	IPM_CSTR_SHOW_ALL_DYNAMICS	:	"ShowAllDynamics";
+	IPM_CSTR_RT_CONTROL_TEST	:	"实时操作性质测试...";
+	IPM_CSTR_RT_SYMBOL_GRP_TEST	:	"实时符号组测试...";
+	IPM_CSTR_RT_STRING_GRP_TEST	:	"实时字符串组测试...";
+	IPM_CSTR_RT_CTRL_MENU_TEST	:	"实时控制菜单测试...";
+	IPM_CSTR_SUB_DSP		:	"Sub Displays";
+	IPM_CSTR_MESSAGE_BOX		:	"信息框";
+	IPM_CSTR_MESSAGE		:	"信息";
+	IPM_CSTR_NYI			:	"尚未开发";
+	IPM_CSTR_PALETTE		:	"调色板";
+	IPM_CSTR_BITMAP_SELECT		:	"贴砖选择";
+	IPM_CSTR_LINE_WIDTH_SELECT	:	"线宽选择";
+
+	IPM_CSTR_SYMBOL_LIB		:	"符号库";
+	IPM_CSTR_SYMBOL			:	"Symbol";
+	IPM_CSTR_SYMBOL_EDITOR		:	"符号编辑器";
+	IPM_CSTR_ADD_SYMBOL		:	"增加符号";
+	IPM_CSTR_EDIT_SYMBOL		:	"编辑符号";
+	IPM_CSTR_DEL_SYMBOL		:	"删除符号";
+	IPM_CSTR_ADD_CLASS		:	"增加类";
+	IPM_CSTR_DEL_CLASS		:	"删除类";
+
+	IPM_CSTR_NET			:	"网格(G)";
+	IPM_CSTR_NET_VISIBLE		:	"网格可见(V)";
+	IPM_CSTR_NET_ACTIVE		:	"网格有效(A)";
+	IPM_CSTR_TO_NET_ACTIVE		:	"to 网格有效(T)";
+	IPM_CSTR_FGROUND_NET		:	"前景网格";
+	IPM_CSTR_BGROUND_NET		:	"背景网格";
+	IPM_CSTR_NET_SET		:	"网格设置(S)";
+	IPM_CSTR_NET_WIDTH		:	"网格宽度";
+	IPM_CSTR_NET_HEIGHT		:	"网格高度";
+
+
+	IPM_CSTR_INPUT_STRING		:	"请输入字串:";
+
+	IPM_CSTR_LAYER_DATA_SETTING	:	"层次参数设置";
+	IPM_CSTR_LAYER_NAME		:	"层名:";
+	IPM_CSTR_VISIBLE_RANGE		:	"可见范围:";
+	IPM_CSTR_MIN_VALUE		:	"最小值:";
+	IPM_CSTR_MAX_VALUE		:	"最大值:";
+	IPM_CSTR_CURRENT_FACTOR		:	"当前缩放系数:";
+
+	IPM_CSTR_FILE_SELECT_BOX	:	"文件选择窗口";
+	IPM_CSTR_GIF_SELECT_BOX		:	"扫描照片文件选择窗口";
+	IPM_CSTR_DSP_FILE_NAME		:	"画面文件名";
+	IPM_CSTR_INPUT_NEW_FNAME	:	"输入新文件名：";
+
+	IPM_CSTR_SYMBOL_GRP		:	"Symbol Groups";
+	IPM_CSTR_SYMBOL_GRP_EDITOR	:	"Symbol Groups Editor";
+	IPM_CSTR_CTRL_MENU		:	"Control Menus";
+	IPM_CSTR_STRING_GRP		:	"String Groups";
+	IPM_CSTR_STRING_GRPSELECT	:	"String Group Selector";
+	IPM_CSTR_COLOR_GRP		:	"Color Groups";
+	IPM_CSTR_COLOR_GRP_EDITOR	:	"Color Groups Editor";
+	IPM_CSTR_INVERT			:	"Invert";
+	IPM_CSTR_NORMAL			:	"Normal";
+	IPM_CSTR_FLASH			:	"Flash";
+	IPM_CSTR_A_FLASH		:	"&Flash";
+	IPM_CSTR_STATIC_COLOR		:	"Static Colors";
+	IPM_CSTR_FLASH_COLOR		:	"Flashing Colors";
+
+	IPM_CSTR_FONT_SET		:	"字库";
+
+	IPM_CSTR_REVERT			:	"REVERT";
+	IPM_CSTR_VALIDATE		:	"VALIDATE";
+	IPM_CSTR_ACCEPT			:	"ACCEPT";
+
+	IPM_CSTR_FORMAT_TYPE		:	"Format Type";
+	IPM_CSTR_SELECT_TYPE		:	"Selection Type";
+	IPM_CSTR_DSP			:	"Display";
+	IPM_CSTR_PROGRAM		:	"Program";
+	IPM_CSTR_POPUP_MENU		:	"Pop-up menu";
+	IPM_CSTR_OPERGUIDE		:	"OperGuide display";
+
+
+

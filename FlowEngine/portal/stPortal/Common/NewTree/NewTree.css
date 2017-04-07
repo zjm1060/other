@@ -1,0 +1,81 @@
+/*＝＝＝＝＝＝＝＝＝*/
+.treeDiv{
+  width:160px;
+  height:500px;
+  background-color:#f4f2f2;
+  border:1px solid #d0d1cf;
+}
+/*第一层子栏目的配置*/
+.normalL1{
+  font-size:13px;
+  font-weight: ;
+  color:;
+  border:1px #7786a7 solid;
+  height:25px;
+  background-image:url('../../images/tree_1bg_normal.gif');
+  background-repeat:repeat-x;
+  vertical-align:middle;
+  cursor:hand;
+  
+}
+/*第2层子栏目的配置*/
+.normalL2{
+  font-size:13px;
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #9dabcb solid;
+  border-left:1px #9dabcb solid;
+  border-top:1px white solid;
+  height:25px;
+  background-color:#d8e3fc;
+  vertical-align:middle;
+  cursor:hand;
+}
+/*第3层子栏目的配置*/
+.normalL3{
+  font-size:13px;
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #ced6e9 solid;
+  border-left:1px #9dabcb solid;
+  height:25px;
+  background-color:#eff5fe;
+  vertical-align:middle;
+  cursor:hand;
+}
+/*第4层子栏目的配置*/
+.normalL4{
+  font-size:13px;
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #ced6e9 solid;
+  border-left:1px #9dabcb solid;
+  height:25px;
+  background-color:blue;
+  vertical-align:middle;
+  cursor:hand;
+}
+/*第5层子栏目的配置*/
+.normalL5{
+  font-size:13px;
+  border-right:1px #9dabcb solid;
+  border-bottom:1px #ced6e9 solid;
+  border-left:1px #9dabcb solid;
+  height:25px;
+  background-color:red;
+  vertical-align:middle;
+  cursor:hand;
+}
+/*菜单间隙*/
+.breakL1{
+  background-color:#cdd9f5;
+  height:1px;
+}
+
+
+/*被选中菜单*/
+.selectL{
+  font-size: 13px;
+  border:1px #cccccc solid;
+  background-color:f1f1f1;
+  height:25px;
+  vertical-align:middle;
+  color:#006600;
+}

@@ -1,0 +1,16 @@
+#format
+#Protocol：GCOM VIP
+#Device: 网卡名称，采用 sniffer -p 获得
+#Filter: 数据包筛选条件见wpcap文档 .docs\WinPcap Filtering expression syntax.htm
+#printToLogFile:数据包是否写入文件，YES NO
+[VIP]
+Protocol=VIP
+#Device=bge0
+Device=\Device\NPF_{E5E24778-F91C-479F-B74B-2D86B73B9F34}
+Filter=ip host 192.169.11.2
+PrintToLogFile=YES
+[GCOM]
+Protocol=GCOM
+Device=\Device\NPF_{E5E24778-F91C-479F-B74B-2D86B73B9F34}
+Filter=ip host 192.169.11.2
+PrintToLogFile=YES

@@ -1,0 +1,6679 @@
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP30_5064A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP30_5064A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP30_5064B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP30_5064B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP30_5064C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP30_5064C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP30_5064A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP30_5064A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP30_5064B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP30_5064B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP30_5064C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP30_5064C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50641现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP30_50641_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP30_50641_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50641现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP30_50641_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP30_50641_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50642现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP30_50642_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP30_50642_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50642现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP30_50642_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP30_50642_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506417现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP30_506417_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP30_506417_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506417现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP30_506417_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP30_506417_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506427现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP30_506427_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP30_506427_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506427现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP30_506427_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP30_506427_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP30_5064_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP30_5064_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP30_5064ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5064_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5064_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP30_5064ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP30柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP30_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5064_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5064_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5064_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP30_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP30柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP30_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5064_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5064_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5064_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP30_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP30柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP30_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5064_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5064_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP30_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP30柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP30_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5064_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5064_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP30_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5063断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP28_5063A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP28_5063A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP28_5063B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP28_5063B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP28_5063C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP28_5063C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5063断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP28_5063A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP28_5063A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP28_5063B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP28_5063B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP28_5063C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP28_5063C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50631现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP28_50631_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP28_50631_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50631现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP28_50631_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP28_50631_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50632现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP28_50632_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP28_50632_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50632现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP28_50632_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP28_50632_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506317现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP28_506317_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP28_506317_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506317现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP28_506317_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP28_506317_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506327现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP28_506327_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP28_506327_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506327现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP28_506327_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP28_506327_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5063操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP28_5063_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5063操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP28_5063_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5063刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP28_5063ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5063刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5063_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5063_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP28_5063ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP28柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP28_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5063_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5063_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5063_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP28_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP28柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP28_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5063_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5063_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5063_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP28_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP28柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP28_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5063_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5063_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP28_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP28柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP28_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5063_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5063_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP28_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP26_5062A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP26_5062A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP26_5062B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP26_5062B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP26_5062C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP26_5062C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP26_5062A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP26_5062A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP26_5062B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP26_5062B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP26_5062C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP26_5062C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50621现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP26_50621_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP26_50621_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50621现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP26_50621_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP26_50621_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50622现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP26_50622_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP26_50622_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50622现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP26_50622_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP26_50622_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506217现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP26_506217_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP26_506217_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506217现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP26_506217_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP26_506217_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506227现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP26_506227_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP26_506227_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506227现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP26_506227_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP26_506227_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP26_5062_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP26_5062_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP26_5062ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5062_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5062_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP26_5062ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP26柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP26_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5062_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5062_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5062_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP26_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP26柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP26_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5062_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5062_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5062_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP26_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP26柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP26_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5062_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5062_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP26_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP26柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP26_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5062_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5062_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP26_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP24_5061A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP24_5061A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP24_5061B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP24_5061B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP24_5061C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP24_5061C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP24_5061A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP24_5061A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP24_5061B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP24_5061B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP24_5061C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP24_5061C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50611现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP24_50611_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP24_50611_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50611现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP24_50611_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP24_50611_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50612现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP24_50612_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP24_50612_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50612现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP24_50612_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP24_50612_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506117现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP24_506117_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP24_506117_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506117现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP24_506117_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP24_506117_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506127现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP24_506127_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP24_506127_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506127现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP24_506127_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP24_506127_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP24_5061_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP24_5061_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP24_5061ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5061_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5061_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP24_5061ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP24柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP24_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5061_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5061_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5061_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP24_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP24柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP24_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5061_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5061_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5061_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP24_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP24柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP24_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5061_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5061_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP24_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP24柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP24_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5061_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5061_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP24_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP17_5054A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP17_5054A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP17_5054B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP17_5054B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP17_5054C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP17_5054C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP17_5054A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP17_5054A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP17_5054B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP17_5054B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP17_5054C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP17_5054C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50541现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP17_50541_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP17_50541_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50541现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP17_50541_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP17_50541_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50542现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP17_50542_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP17_50542_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50542现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP17_50542_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP17_50542_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505417现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP17_505417_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP17_505417_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505417现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP17_505417_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP17_505417_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505427现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP17_505427_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP17_505427_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505427现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP17_505427_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP17_505427_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP17_5054_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP17_5054_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP17_5054ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5054_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5054_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP17_5054ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP17柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP17_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5054_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5054_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5054_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP17_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP17柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP17_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5054_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5054_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5054_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP17_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP17柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP17_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5054_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5054_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP17_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP17柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP17_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5054_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5054_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP17_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5053断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP19_5053A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP19_5053A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP19_5053B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP19_5053B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP19_5053C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP19_5053C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5053断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP19_5053A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP19_5053A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP19_5053B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP19_5053B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP19_5053C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP19_5053C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50531现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP19_50531_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP19_50531_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50531现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP19_50531_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP19_50531_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50532现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP19_50532_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP19_50532_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50532现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP19_50532_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP19_50532_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505317现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP19_505317_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP19_505317_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505317现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP19_505317_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP19_505317_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505327现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP19_505327_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP19_505327_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505327现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP19_505327_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP19_505327_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5053操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP19_5053_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5053操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP19_5053_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5053刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP19_5053ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5053刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5053_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5053_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP19_5053ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP19柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP19_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5053_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5053_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5053_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP19_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP19柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP19_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5053_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5053_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5053_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP19_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP19柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP19_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5053_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5053_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP19_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP19柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP19_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5053_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5053_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP19_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP21_5052A_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP21_5052A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP21_5052B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP21_5052B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP21_5052C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP21_5052C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP21_5052A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP21_5052A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP21_5052B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP21_5052B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP21_5052C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP21_5052C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50521现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP21_50521_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP21_50521_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50521现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP21_50521_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP21_50521_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50522现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP21_50522_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP21_50522_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50522现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP21_50522_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP21_50522_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505217现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP21_505217_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP21_505217_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505217现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP21_505217_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP21_505217_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505227现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP21_505227_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP21_505227_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505227现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP21_505227_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP21_505227_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP22_5052_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP22_5052_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP22_5052ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5052_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5052_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP22_5052ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP21柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP21_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5052_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5052_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5052_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP21_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP21柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP21_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5052_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5052_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5052_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP21_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP21柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP21_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5052_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5052_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP21_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP21柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP21_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5052_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5052_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP21_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051断路器现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP23_5051A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP23_5051A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP23_5051B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP23_5051B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP23_5051C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.INT.LCP23_5051C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051断路器现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP23_5051A_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP23_5051A_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP23_5051B_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP23_5051B_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP23_5051C_SOE11
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.INT.LCP23_5051C_SOE10
+
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50511现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP23_50511_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP23_50511_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50511现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP23_50511_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP23_50511_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50512现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP23_50512_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP23_50512_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50512现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP23_50512_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP23_50512_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505117现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW5_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP23_505117_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP23_505117_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505117现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW5_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP23_505117_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP23_505117_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505127现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP23_505127_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP23_505127_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505127现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+STEP:		PBG.LCU9.POL.LCP23_505127_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP23_505127_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW7_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP23_5051_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW7_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW7
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP23_5051_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051刀闸操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW8_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP23_5051ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051刀闸操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5051_SW8_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5051_SW8
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP23_5051ALL_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP23柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP23_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5051_8A1      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5051_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5051_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP23_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP23柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP23_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5051_8A1      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5051_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5051_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP23_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP23柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP23_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5051_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5051_8D4      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP23_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP23柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP23_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5051_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5051_8D4      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP23_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50646现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP29_50646_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP29_50646_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP29_50646_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50646现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP29_50646_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP29_50646_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP29_50646_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506417现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP29_5064617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP29_5064617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.OBJ.LCP29_5064617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506417现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP29_5064617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP29_5064617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP29_5064617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506467现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP29_506467_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP29_506467_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP29_506467_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506467现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP29_506467_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP29_506467_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP29_506467_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064 6E操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP29_6EJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5064 6E操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6E_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6E_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP29_6EJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP29柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP29_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6E_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS6E_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP29_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP29柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP29_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6E_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS6E_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP29_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP29柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP29_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6E_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS6E_8D5      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP29_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP29柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP29_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6E_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS6E_8D5      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP29_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50626现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP27_50626_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP27_50626_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP27_50626_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50626现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP27_50626_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP27_50626_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP27_50626_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506217现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP27_5062617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP27_5062617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP27_5062617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506217现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP27_5062617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP27_5062617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP27_5062617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506267现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP27_506267_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP27_506267_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP27_506267_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506267现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP27_506267_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP27_506267_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.OBJ.LCP27_506267_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062 5E操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP27_5EJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5062 5E操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5E_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5E_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP27_5EJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP27柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP27_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5E_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5E_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP27_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP27柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP27_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5E_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5E_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP27_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP27柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP27_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5E_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5E_8D5      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP27_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP27柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP27_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5E_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5E_8D5      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP27_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50616现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP25_50616_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP25_50616_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP25_50616_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50616现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP25_50616_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP25_50616_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP25_50616_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061617现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP25_5061617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP25_5061617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP25_5061617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061617现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP25_5061617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP25_5061617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP25_5061617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506167现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP25_506167_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP25_506167_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP25_506167_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——506167现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP25_506167_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP25_506167_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.OBJ.LCP25_506167_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061 6B操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP25_6JXJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5061 6B操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS6B_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS6B_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP25_6JXJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP25柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP25_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6B_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS6B_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP25_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP25柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP25_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6B_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS6B_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP25_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP25柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP25_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6B_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS6B_8D5      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP25_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP25柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP25_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS6B_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS6B_8D5      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP25_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50546现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP18_50546_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP18_50546_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP18_50546_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50546现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP18_50546_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP18_50546_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP18_50546_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054617现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP18_5054617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP18_5054617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP18_5054617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054617现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP18_5054617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP18_5054617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP18_5054617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505467现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP18_505467_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP18_505467_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP18_505467_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505467现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP18_505467_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP18_505467_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.OBJ.LCP18_505467_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054 4B操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP18_4JXJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5054 4B操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4B_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4B_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP18_4JXJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP18柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP18_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4B_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS4B_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP18_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP18柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP18_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4B_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS4B_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP18_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP18柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP18_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4B_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS4B_8D5      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP18_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP18柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP18_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4B_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS4B_8D5      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP18_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50516现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP22_50516_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP22_50516_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP22_50516_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50516现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP22_50516_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP22_50516_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP22_50516_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051617现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP22_5051617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP22_5051617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP22_5051617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051617现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP22_5051617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP22_5051617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP22_5051617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505167现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP22_505167_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP22_505167_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP22_505167_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505167现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP22_505167_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP22_505167_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.OBJ.LCP22_505167_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051 5B操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP23_5JXJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5051 5B操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS5B_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS5B_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP23_5JXJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP22柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP22_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5B_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5B_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP22_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP22柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP22_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5B_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5B_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP22_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP22柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP22_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5B_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS5B_8D5      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP22_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP22柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP22_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS5B_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS5B_8D5      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP22_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50526现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW1_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP20_50526_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP20_50526_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP20_50526_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——50526现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW1_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP20_50526_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP20_50526_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP20_50526_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052617现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW3_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP20_5052617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP20_5052617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP20_5052617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052617现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW3_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP20_5052617_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP20_5052617_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP20_5052617_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505267现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW2_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP20_505267_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.POL.LCP20_505267_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP20_505267_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——505267现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW2_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP20_505267_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU9.POL.LCP20_505267_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU9.OBJ.LCP20_505267_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052 4E操作把手现地
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW4_CLOSE
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.POL.LCP21_4EJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——5052 4E操作把手远方
+!******************************************************************
+SEQUENCE:	PBG.LCU9.SYS.S_GIS4E_SW4_OPEN
+
+STEP:		PBG.LCU9.SYS.S_GIS4E_SW4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.POL.LCP21_4EJG_DI71
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP20柜交流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP20_PWAC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4E_8A2      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS4E_8A3      ? CLOSE
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP20_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP20柜交流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP20_PWAC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4E_8A2      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS4E_8A3      ? OPEN
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP20_PWAC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP20柜直流电源故障显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP20_PWDC_DI05_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4E_8D3      ? CLOSE
+			&	PBG.LCU9.SYS.S_GIS4E_8D5      ? CLOSE
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP20_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:  LCP20柜直流电源故障无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU9.POL.LCP20_PWDC_DI05_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU9.SYS.S_GIS4E_8D3      ? OPEN
+			+	PBG.LCU9.SYS.S_GIS4E_8D5      ? OPEN
+	
+		
+
+
+						
+STEP:		PBG.LCU9.POL.LCP20_PWDC_DI05
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+END_SEQUENCE:
+
+
+
+
+
+

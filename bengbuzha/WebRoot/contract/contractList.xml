@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ItemSearchResponse>
+    <OperationRequest>
+        <RequestId></RequestId>
+        <Arguments>
+            <Argument Name="Service" Value="AWSECommerceService"></Argument>
+            <Argument Name="AssociateTag" Value="ws"></Argument>
+            <Argument Name="SearchIndex" Value="Books"></Argument>
+            <Argument Name="Author" Value="Sidney Sheldon"></Argument>
+            <Argument Name="SubscriptionId" Value="1A7XKHR5BYD0WPJVQEG2"></Argument>
+            <Argument Name="Version" Value="2006-06-28"></Argument>
+            <Argument Name="Operation" Value="ItemSearch"></Argument>
+        </Arguments>
+        <RequestProcessingTime>1.05041599273682</RequestProcessingTime>
+    </OperationRequest>
+    <Items>
+        <TotalResults>203</TotalResults>
+        <TotalPages>21</TotalPages>
+        <Item>
+			<Name>五菱集控</Name>
+			<Vendor>五菱</Vendor>
+			<Money>1200</Money>
+			<Department>工程二部</Department>
+		</Item>
+	</Items>
+</ItemSearchResponse>

@@ -1,0 +1,60 @@
+#
+# WorkShop Project File
+#
+# This file is machine generated, do not modify
+#
+
+projectid "/usr/ems/system/cmd/v4.0a/src/cmd.prd";
+projectver 6.0;
+
+project_t cset_NDlUbrZ3OYSEsdeVSXbg = {
+
+    entities = {
+        {
+            name = "CmdProcess.c";
+            type = C;
+            path = "CmdProcess.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/cmd/v4.0a/lib";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "cmd.lib";
+            type = AR;
+            path = "cmd.lib";
+            dependencies = {
+                "CmdProcess.c";
+            };
+            builder = AR_Builder;
+            output_dir = "/usr/ems/system/cmd/v4.0a/lib";
+        };
+    };
+
+    globals = {
+        {
+            id = "C_Builder";
+            builder = C_Builder;
+            options = {
+                C_Builder<debug>,
+                C_Builder<cpp_comments>;
+            };
+        };
+    };
+
+    gendata = {
+        {
+            tag = projecttype;
+            type = string_t;
+            value ="archive";
+        },
+        {
+            tag = projectdir;
+            type = string_t;
+            value ="/usr/ems/system/cmd/v4.0a/src";
+        };
+    };
+};

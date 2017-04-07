@@ -1,0 +1,6 @@
+LIBRARY    funcui
+
+EXPORTS
+    FUNCAppInterface
+    CreateFUNCAppInterface
+    DeleteFUNCAppInterface

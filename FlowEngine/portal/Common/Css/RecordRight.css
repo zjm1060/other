@@ -1,0 +1,46 @@
+.cDivRender
+{
+    position:absolute;
+    width:135px;
+    height:304px;
+    top:11px;
+    left:10px;
+    border-top:2px solid #333366;
+    border-bottom:1px solid #eeeeee;
+    border-left:2px solid #333366;
+    border-right:1px solid  #eeeeee;
+    background-color: #FFFFFF;
+    overflow:auto;
+}
+.cUserCode
+{
+    position:absolute;
+    width:135px;
+    height:300px;
+    top:10px;
+    left:155px;
+}
+.cAction
+{
+    position:absolute;
+    width:135px;
+    height:300px;
+    top:10px;
+    left:310px;
+}
+.cBtn1
+{
+    position:absolute;
+    width:450px;
+    height:25px;
+    top:330px;
+    left:0px;
+}
+.cBtn2
+{
+    position:absolute;
+    width:450px;
+    height:25px;
+    top:365px;
+    left:0px;
+}

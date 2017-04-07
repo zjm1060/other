@@ -1,0 +1,119 @@
+BODY
+{
+	font-family:"宋体"; 
+	font-size: 12px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	scrollbar-face-color:DCE0E2;
+	scrollbar-shadow-color:687888;
+	scrollbar-highlight-color:ffffff;
+	scrollbar-3dlight-color:687888;
+	scrollbar-darkshadow-color:DCE0E2;
+	scrollbar-track-color:F4F4F0;
+	scrollbar-arrow-color:6E7E88;
+	overflow-x:no;
+	overflow-y:no;
+}
+Td {
+	font-size: 12px;
+}
+.Tableblock
+{
+	border-left:1px solid #ABA6A6;
+	border-right:1px solid #ABA6A6;
+	border-bottom:1px solid #ABA6A6;
+	background-color: #FFFFFF;
+}
+.Toptr
+{
+	height:20px;
+	background-repeat: repeat-y;
+	background-position: right bottom;
+	text-align:right;
+	padding-top:3px;
+	padding-right:5px;
+	background-color: #89AFF9;
+	background-image: url(../images/toptr.gif);
+	border-bottom:1px solid #817F7F;
+}
+.Topword
+{
+	color:black;
+	font-weight:bold;
+	text-decoration:none;
+}
+.Banner {
+	height: 44px;
+	vertical-align: top;
+	background-image: url(../images/bannerbg.gif);
+
+
+}
+
+/*导航条开始*/
+.Navbg {
+	background-color: #F1F1F1;
+	border-top:1px solid #817F7F;
+	background-image: url(../images/navbg.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	height: 31px;
+	padding-top:3px;
+	padding-bottom:4px;
+	vertical-align:top;
+}
+.DashNavCurDashArea
+{
+	padding-left:4px;
+	padding-top:2px;
+	padding-right:4px;
+	padding-bottom:2px;
+}
+.DashNavLink
+{
+	color:black;
+	font-size:11pt;
+	border:1px solid F1F1F1;
+	text-decoration:none;
+}
+A.DashNavLink:hover
+{
+	font-size:11pt;
+	border:1px solid #302D2B;
+	background-color:white;
+	text-decoration:none;
+}
+.DashNavChosen
+{
+	color:BE4505;
+	font-size:11pt;
+	text-decoration:none;
+	font-weight: bold;
+
+}
+.Dashline
+{
+	width:1px;
+	color:#686565;
+	font-size:11pt;
+}
+.Welcome {
+	font-size:10pt;
+	padding-top: 5px;
+	padding-bottom: 1px;
+	height:22px;
+	border-bottom:1px solid #817F7F;
+	text-align: center;
+
+}
+.Noticetd
+{
+	background-color:#F3F2F2;
+	height:23px;
+	color:#000000;
+}
+.Noticelink
+{
+	color:#0000ff;
+	text-decoration:none;
+}

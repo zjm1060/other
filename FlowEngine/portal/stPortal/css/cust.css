@@ -1,0 +1,271 @@
+BODY
+{
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: .68em;
+    MARGIN: 0px
+}
+TH
+{
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: .68em;
+    TEXT-ALIGN: left;
+    FONT-WEIGHT: 400;
+    COLOR: gray;
+}
+TD
+{
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: .68em;
+}
+TEXTAREA
+{
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 1em;
+}
+INPUT.CustButton
+{
+	BACKGROUND-COLOR: #cfd5e5;
+	HEIGHT: 2em;
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 1em;
+}
+INPUT
+{
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 1em;
+}
+SELECT
+{
+    FONT-FAMILY: Verdana, Arial;
+    FONT-SIZE: 1em;
+}
+HR 
+{
+   color: LightSlateGray;
+   height: 1px;
+}
+A:link
+{
+   color: LightSlateGray;
+   text-decoration: none;
+}
+A:hover {
+   color: #ff3300;
+   text-decoration: underline;
+}
+A:visited {
+   color: #000066;
+   text-decoration: none;
+}
+.CustLabel
+{
+    COLOR: gray;
+}
+.CustMaskAreaTop
+{
+	HEIGHT: 20px;
+}
+.CustMaskAreaRight
+{
+	WIDTH: 50px;
+}
+.CustOuterTable
+{
+	BACKGROUND-COLOR: #333366;
+	WIDTH: 100%;
+	HEIGHT: 100%;
+}
+.CustContentTable
+{
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	BACKGROUND-COLOR: white;
+	BORDER-LEFT: #cfd5e5 4px solid;
+	BORDER-TOP: #cfd5e5 4px solid;
+}
+.CustSpacer
+{
+	WIDTH: 8px;
+	HEIGHT: 1px;
+}
+.CustSidebarSpacer
+{
+    WIDTH: 110px;
+}
+.CustVerticalDots 
+{
+	background-color: white;
+	background-image: url("bluedot.gif");
+	background-repeat: repeat-y;
+	BACKGROUND-POSITION: top right;
+}
+.CustMediumRule 
+{
+	BACKGROUND-COLOR: LightSlateGray;
+	HEIGHT: 2px;
+}
+.CustThinRule 
+{
+	BACKGROUND-COLOR: LightSlateGray;
+	HEIGHT: 1px;
+}
+.CustHeading
+{
+    COLOR: LightSlateGray;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 1.60em;
+    FONT-WEIGHT: bold;
+}
+.CustCaption
+{
+	FONT-FAMILY: Arial;
+    FONT-SIZE: 1.80em;
+    FONT-WEIGHT: normal;
+}
+.CustSectionLeft
+{
+    BORDER-TOP: LightSlateGray 1px solid;
+    VERTICAL-ALIGN: top;
+    WIDTH: 40%;
+    PADDING-TOP: 10px;
+    PADDING-BOTTOM: 10px;
+    PADDING-RIGHT: 10px;
+}
+.CustButtonSectionLeft
+{
+    BORDER-TOP: LightSlateGray 2px solid;
+    VERTICAL-ALIGN: top;
+    PADDING-TOP: 10px;
+    PADDING-BOTTOM: 10px;
+    PADDING-RIGHT: 10px;
+}
+.CustSectionLeftNoBorder
+{
+    VERTICAL-ALIGN: top;
+    WIDTH: 40%;
+    PADDING-TOP: 10px;
+    PADDING-BOTTOM: 10px;
+    PADDING-RIGHT: 10px;
+}
+.CustSectionRight
+{
+    BACKGROUND-COLOR: whitesmoke;
+    BORDER-TOP: LightSlateGray 1px solid;
+    VERTICAL-ALIGN: top;
+    PADDING-TOP: 10px;
+    PADDING-BOTTOM: 10px;
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+}
+.CustButtonSectionRight
+{
+    BORDER-TOP: LightSlateGray 2px solid;
+    VERTICAL-ALIGN: top;
+    PADDING-TOP: 10px;
+    PADDING-BOTTOM: 10px;
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+}
+TD.CustTitleArea
+{
+	PADDING-TOP: 7px;
+	PADDING-BOTTOM: 7px;
+}
+TD.CustCheckbox
+{
+	VERTICAL-ALIGN: center;
+	WIDTH: 20px;
+}
+TD.CustCheckboxText
+{
+	VERTICAL-ALIGN: center;
+}
+
+.LayoutZonesContainer
+{
+    WIDTH: 80%;
+}
+.LayoutZones
+{
+    WIDTH: 100%;
+    HEIGHT: 4in;
+}
+.LayoutZoneTop
+{
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: top;
+    HEIGHT: 40px;
+		BORDER: 1px solid lightgray;
+}
+.LayoutZoneBottom
+{
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: top;
+    HEIGHT: 40px;
+		BORDER: 1px solid lightgray;
+}
+.LayoutZoneLeft
+{
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: top;
+		BORDER: 1px solid lightgray;
+    WIDTH: 25%
+}
+.LayoutZoneCenter
+{
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: top;
+		BORDER: 1px solid lightgray;
+}
+.LayoutZoneRight
+{
+    TEXT-ALIGN: left;
+    VERTICAL-ALIGN: top;
+		BORDER: 1px solid lightgray;
+    WIDTH: 25%
+}
+.LayoutDropZone
+{
+	border:1px solid #ffae31;
+}
+.LayoutWebPartFrame
+{
+	border:0px none;
+	width:100%;
+}
+.LayoutWebPart
+{
+	background-color:	#cfd5e5;
+	text-align:center;
+	cursor:hand;
+	border:1px solid LightSlateGray;
+}
+.LayoutIBeam
+{
+	display:none;
+	border-collapse: collapse;
+	table-layout:fixed;
+	height:20px;
+	width:50px;
+	position:absolute;
+}
+.LayoutIBeamTDTop
+{
+	border-left: 2px solid #ffae31;
+	border-right: 2px solid #ffae31;
+	border-bottom: 2px solid #ffae31;
+}
+.LayoutIBeamTDBottom
+{
+	border-left: 2px solid #ffae31;
+	border-right: 2px solid #ffae31;
+}
+.LayoutIBeamTR
+{
+	height: 5px;
+}
+
+
+
+
+

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SimuTrainee</class>
+ <widget class="QMainWindow" name="SimuTrainee">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>学员站</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../SimuTrainee.qrc">
+    <normaloff>:/pic/images/ICO/ots2.ico</normaloff>:/pic/images/ICO/ots2.ico</iconset>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks|QMainWindow::VerticalTabs</set>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>系统</string>
+    </property>
+    <widget class="QMenu" name="menu_8">
+     <property name="title">
+      <string>界面风格</string>
+     </property>
+     <addaction name="action_simpstyle"/>
+     <addaction name="action_elegantstyle"/>
+     <addaction name="action_defaultstyle"/>
+    </widget>
+    <addaction name="menu_8"/>
+    <addaction name="action_ontop"/>
+    <addaction name="action_CTRL_H"/>
+    <addaction name="action_CTRL_L"/>
+    <addaction name="action_logout"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>个人信息查询</string>
+    </property>
+    <addaction name="action_oprrecord"/>
+    <addaction name="action_studyrecord"/>
+    <addaction name="action_hisscoe"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>操作设置</string>
+    </property>
+    <addaction name="action_settask"/>
+    <addaction name="action_loadscene"/>
+    <addaction name="action_setfault"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>仿真运行控制</string>
+    </property>
+    <widget class="QMenu" name="menu_5">
+     <property name="title">
+      <string>仿真速度调节</string>
+     </property>
+     <addaction name="action0_125X"/>
+     <addaction name="action0_25X"/>
+     <addaction name="action0_5X"/>
+     <addaction name="action1X"/>
+     <addaction name="action2X"/>
+     <addaction name="action4X"/>
+     <addaction name="action8X"/>
+    </widget>
+    <addaction name="action_simustart"/>
+    <addaction name="action_simustop"/>
+    <addaction name="menu_5"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>操作选项</string>
+    </property>
+    <addaction name="action_taketool"/>
+    <addaction name="action_report"/>
+    <addaction name="action_otheropr"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <widget class="QMenu" name="menu_language">
+     <property name="title">
+      <string>语言设置</string>
+     </property>
+     <addaction name="action_Chinese"/>
+     <addaction name="action_English"/>
+    </widget>
+    <addaction name="action_OTS2000"/>
+    <addaction name="action_help"/>
+    <addaction name="menu_language"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_7"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>155</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>155</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <action name="action_logout">
+   <property name="icon">
+    <iconset resource="../SimuTrainee.qrc">
+     <normaloff>:/pic/images/background/退出登录.png</normaloff>:/pic/images/background/退出登录.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出登录        (Esc)</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="action_oprrecord">
+   <property name="icon">
+    <iconset resource="../SimuTrainee.qrc">
+     <normaloff>:/pic/images/background/操作记录.png</normaloff>:/pic/images/background/操作记录.png</iconset>
+   </property>
+   <property name="text">
+    <string>操作记录</string>
+   </property>
+  </action>
+  <action name="action_studyrecord">
+   <property name="text">
+    <string>学习记录</string>
+   </property>
+  </action>
+  <action name="action_hisscoe">
+   <property name="icon">
+    <iconset resource="../SimuTrainee.qrc">
+     <normaloff>:/pic/images/background/历史成绩.png</normaloff>:/pic/images/background/历史成绩.png</iconset>
+   </property>
+   <property name="text">
+    <string>历史成绩</string>
+   </property>
+  </action>
+  <action name="action_settask">
+   <property name="text">
+    <string>操作任务设置</string>
+   </property>
+  </action>
+  <action name="action_loadscene">
+   <property name="icon">
+    <iconset resource="../SimuTrainee.qrc">
+     <normaloff>:/pic/images/background/场景加载.png</normaloff>:/pic/images/background/场景加载.png</iconset>
+   </property>
+   <property name="text">
+    <string>工况加载</string>
+   </property>
+  </action>
+  <action name="action_setfault">
+   <property name="icon">
+    <iconset resource="../SimuTrainee.qrc">
+     <normaloff>:/pic/images/background/故障设置.png</normaloff>:/pic/images/background/故障设置.png</iconset>
+   </property>
+   <property name="text">
+    <string>故障加载</string>
+   </property>
+  </action>
+  <action name="action_simustart">
+   <property name="icon">
+    <iconset resource="../SimuTrainee.qrc">
+     <normaloff>:/pic/images/播放.PNG</normaloff>:/pic/images/播放.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>运行模型(CTRL+R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_simustop">
+   <property name="icon">
+    <iconset resource="../SimuTrainee.qrc">
+     <normaloff>:/pic/images/停止.PNG</normaloff>:/pic/images/停止.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>停止仿真(CTRL+S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action0_125X">
+   <property name="text">
+    <string>0.125X</string>
+   </property>
+  </action>
+  <action name="action0_25X">
+   <property name="text">
+    <string>0.25X</string>
+   </property>
+  </action>
+  <action name="action0_5X">
+   <property name="text">
+    <string>0.5X</string>
+   </property>
+  </action>
+  <action name="action1X">
+   <property name="text">
+    <string>1X</string>
+   </property>
+  </action>
+  <action name="action2X">
+   <property name="text">
+    <string>2X</string>
+   </property>
+  </action>
+  <action name="action4X">
+   <property name="text">
+    <string>4X</string>
+   </property>
+  </action>
+  <action name="action_taketool">
+   <property name="text">
+    <string>带工具</string>
+   </property>
+  </action>
+  <action name="action_report">
+   <property name="text">
+    <string>汇报</string>
+   </property>
+  </action>
+  <action name="action_otheropr">
+   <property name="text">
+    <string>其他操作</string>
+   </property>
+  </action>
+  <action name="action8X">
+   <property name="text">
+    <string>8X</string>
+   </property>
+  </action>
+  <action name="action_OTS2000">
+   <property name="text">
+    <string>关于OTS2000</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>帮助文档(F1)</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_simpstyle">
+   <property name="text">
+    <string>简洁</string>
+   </property>
+  </action>
+  <action name="action_elegantstyle">
+   <property name="text">
+    <string>典雅</string>
+   </property>
+  </action>
+  <action name="action_ontop">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>画面置顶</string>
+   </property>
+  </action>
+  <action name="action_defaultstyle">
+   <property name="text">
+    <string>系统默认</string>
+   </property>
+  </action>
+  <action name="action_CTRL_H">
+   <property name="text">
+    <string>收起/展开工具条 (CTRL+H)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_CTRL_L">
+   <property name="text">
+    <string>收起侧工具栏  (CTRL+L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_Chinese">
+   <property name="text">
+    <string>中文</string>
+   </property>
+  </action>
+  <action name="action_English">
+   <property name="text">
+    <string>english</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../SimuTrainee.qrc"/>
+ </resources>
+ <connections/>
+</ui>

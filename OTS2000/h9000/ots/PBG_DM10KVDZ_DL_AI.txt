@@ -1,0 +1,8161 @@
+!******************************************************************
+!	SEQUENCE_NAME:	10KV 7段母线电流
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.UC10kV_Ⅶ-4_XS
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.UC10kV_Ⅶ-1   > 170
+			&	PBG.LCU10.INT.CY_70011_SOE11  ? CLOSE
+
+
+STEP:		PBG.LCU10.ANA.UC10kV_Ⅶ-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.LCU10.ANA.UC10kV_Ⅶ-13
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-22
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-40
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-49
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-58
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-67
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-76
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-85
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-94
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-103
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-112
+
+STEP:		PBG.LCU10.ANA.UC10kV_Ⅶ-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.LCU10.ANA.UC10kV_Ⅶ-14
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-23
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-41
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-50
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-59
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-68
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-77
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-86
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-95
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-104
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-113
+
+STEP:		PBG.LCU10.ANA.UC10kV_Ⅶ-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	= PBG.LCU10.ANA.UC10kV_Ⅶ-15
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-24
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-42
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-51
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-60
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-69
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-78
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-87
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-96
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-105
+		+ PBG.LCU10.ANA.UC10kV_Ⅶ-114
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	10KV 7段母线电流
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.UC10kV_Ⅶ-4_WXS
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.UC10kV_Ⅶ-1   < 170
+			+	PBG.LCU10.INT.CY_70011_SOE11  ? OPEN
+
+
+STEP:		PBG.LCU10.ANA.UC10kV_Ⅶ-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU10.ANA.UC10kV_Ⅶ-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU10.ANA.UC10kV_Ⅶ-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流无显示
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_WXS
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     < 170
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4     < 0
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-5_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-6_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流无显示
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     < 170
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4     < 0
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-5_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-6_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     < 170
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4     < 0
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-5_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-6_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     < 170
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4     < 0
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-5_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示0
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-6_WXS0
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6     < 0
+
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3021_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3021_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示2
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3022_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示2
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3022_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示3
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3023_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示3
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3023_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示4
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3024_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示4
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3024_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示5
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3025_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示5
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3025_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示6
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3026_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示6
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3026_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示7
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3027_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示7
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3027_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示8
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3028_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示8
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3028_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示9
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3029_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示9
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3029_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示10
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS10
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30210_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示10
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS10
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30210_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示11
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_XS11
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30211_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示11
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-5-6_WXS11
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30211_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示21
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3031_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示21
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3031_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示22
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3032_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示22
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3032_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示23
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3033_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示23
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3033_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示24
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3034_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示24
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3034_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示25
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3035_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示25
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3035_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示26
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3036_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示26
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3036_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示27
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3037_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示27
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3037_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示28
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3038_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示28
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-45-6_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3038_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示31
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3041_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示31
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3041_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示32
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3042_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示32
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3042_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示33
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3043_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示33
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3043_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示34
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3044_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示34
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3044_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示35
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3045_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示35
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3045_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示36
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3046_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示36
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3046_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示37
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3047_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示37
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3047_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示38
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3048_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示38
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3048_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示39
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3049_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示39
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3049_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示310
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS10
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30410_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示310
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS10
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30410_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流显示311
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_XS11
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30411_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示311
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMI-4-56_WXS11
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM30411_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3061_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3061_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示2
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3062_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示2
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3062_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示3
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3063_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示3
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3063_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示4
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3064_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示4
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3064_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示5
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3065_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示5
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3065_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示6
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3066_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示6
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3066_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示7
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3067_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示7
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3067_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示8
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3068_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示8
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3068_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示9
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3069_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示9
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-4-5-6_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3069_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示21
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3071_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示21
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3071_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示22
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3072_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示22
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3072_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示23
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3073_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示23
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3073_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示24
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3074_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示24
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3074_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示25
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3075_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示25
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3075_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示26
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3076_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示26
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3076_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示27
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3077_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示27
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3077_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示28
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3078_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示28
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3078_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流显示29
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3079_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示29
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-ZMII-45-6_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-1     > 170
+			&	PBG.LCU10.POL.ZM3_ZM3079_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示1
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3021_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示21
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3021_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示2
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3022_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示22
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3022_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示3
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3023_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示23
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3023_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示4
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3024_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示24
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3024_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示5
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3025_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示25
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3025_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示6
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3026_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示26
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3026_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示7
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3027_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示27
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3027_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示8
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3028_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示28
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3028_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示9
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3029_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示29
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-45-6_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3029_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示21
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3031_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示221
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3031_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示22
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3032_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示222
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3032_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示23
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3033_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示223
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3033_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示24
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3034_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示224
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3034_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示25
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3035_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示225
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3035_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示26
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3036_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示226
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-5-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3036_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示31
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3041_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示321
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3041_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示32
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3042_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示322
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3042_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示33
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3043_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示323
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3043_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示34
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3044_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示324
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3044_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示35
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3045_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示325
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3045_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示36
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3046_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示326
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3046_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示37
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3047_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示327
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3047_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示38
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3048_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示328
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3048_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示39
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3049_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示329
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-4-56_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3049_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示31
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3071_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示321
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3071_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示32
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3072_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示322
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3072_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示33
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3073_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示323
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3073_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示34
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3074_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示324
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3074_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示35
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3075_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示325
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3075_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示36
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3076_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示326
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3076_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示37
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3077_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示327
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3077_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示38
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3078_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示328
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3078_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示39
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3079_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示329
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-4-5-6_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3079_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示31
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3081_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示321
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3081_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示32
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3082_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示322
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3082_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示33
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3083_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示323
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3083_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示34
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3084_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示324
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3084_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示35
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3085_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示325
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3085_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示36
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3086_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示326
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3086_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示37
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3087_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示327
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3087_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_II段电流显示38
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3088_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_III段电流无显示328
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYII-45-6_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3088_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示41
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3051_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示421
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3051_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示42
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3052_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示422
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3052_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示43
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3053_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示423
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3053_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示44
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3054_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示424
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS4
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3054_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示45
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3055_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示425
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS5
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3055_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示46
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3056_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示426
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS6
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3056_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示47
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3057_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示427
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS7
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3057_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示48
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3058_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_II段电流无显示428
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS8
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3058_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V_I段电流显示49
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_XS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3059_DI11     ? CLOSE
+
+
+
+
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		+C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		+C      10
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V_I段电流无显示429
+!******************************************************************
+SEQUENCE:	PBG.LCU10.ANA.(UC)400V-GYI-456_WXS9
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-1     > 170
+			&	PBG.LCU10.POL.GY3_GY3059_DI11     ? OPEN
+
+		
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5
+		-C      10
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6
+		-C      10
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+

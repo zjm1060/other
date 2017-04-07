@@ -1,0 +1,1360 @@
+!******************************************************************
+!	瀑布沟F1油压控制和顶盖排水控制
+!******************************************************************
+!******************************************************************
+!	瀑布沟F1油压控制和顶盖排水控制
+!******************************************************************
+
+
+
+!******************************************************************
+!	瀑布沟F1油压自动下降，测试用
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.FKTS_YG_AIP.AUTO
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+EQUATION:	=	PBG.F1.POL.FKTS_3DJ_DI21   ? OPEN
+			&	PBG.F1.POL.FKTS_1DJ_DI21   ? OPEN
+			&	PBG.F1.POL.FKTS_2DJ_DI21   ? OPEN			
+
+
+STEP:		PBG.F1.ANA.FKTS_YG_AIP
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=	PBG.F1.ANA.FKTS_YG_AIP
+						-C	0.01
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟F1油压跟随
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.TSKP_YG_AIP
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.F1.ANA.TSKP_YG_AIP
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.F1.ANA.FKTS_YG_AIP
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟F1油压装置小于6.2Mpa
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.FKTS_YG_AIP.LESS
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+EQUA_TYPE:	CHANGE		
+EQUATION:	=	PBG.F1.ANA.FKTS_YG_AIP   < 6.2
+			&	PBG.F1.ANA.FKTS_YG_AIP   > 6
+			
+STEP:		PBG.F1.POL.FKTS_3DJ_DI21 
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKTS_3DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.ANA.FKTS_YG_AIP
+DELAY:		60
+TYPE:		CALC
+EQUATION:	=C 6.3
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!	瀑布沟F1油压装置小于6Mpa
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.FKTS_YG_AIP.LEST
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+EQUA_TYPE:	CHANGE		
+EQUATION:	=	PBG.F1.ANA.FKTS_YG_AIP   < 6
+
+STEP:		PBG.F1.POL.FKTS_1DJ_DI79
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+
+			
+STEP:		PBG.F1.POL.FKTS_1DJ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKTS_1DJ_DI79  ? CLOSE
+
+
+!STEP:		PBG.F1.POL.FKTS_2DJ_DI21
+!DELAY:		1
+!TYPE:		LOGICAL
+!ALARM_DELAY:	6
+!RESULT:		1	
+!EQUATION:	=	PBG.F1.POL.FKTS_2DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.ANA.FKTS_YG_AIP
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 6.3
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟F1油压装置等于6.3Mpa
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.FKTS_YG_AIP.EQUAL
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+EQUA_TYPE:	CHANGE		
+EQUATION:	=	PBG.F1.ANA.FKTS_YG_AIP   >= 6.3
+	
+	
+STEP:		PBG.F1.POL.FKTS_3DJ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+			
+STEP:		PBG.F1.POL.FKTS_1DJ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+STEP:		PBG.F1.POL.FKTS_2DJ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟中压气压自动下降，测试用
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_44.AUTO
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+EQUATION:		=	PBG.LCU7.POL.FKDI_140   ? OPEN
+			&	PBG.LCU7.POL.FKDI_141   ? OPEN
+			&	PBG.LCU7.POL.FKDI_142   ? OPEN			
+
+
+STEP:		PBG.LCU7.ANA.FK_44
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_44
+						-C	0.01
+
+END_SEQUENCE:
+
+!******************************************************************
+!	瀑布沟中压气罐气压跟随
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_45
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.LCU7.ANA.FK_45
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_44
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.LCU7.ANA.FK_46
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.LCU7.ANA.FK_46
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_44
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟制动气压自动下降
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_28.AUTO
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+EQUATION:		=	PBG.LCU7.POL.FKDI_76   ? OPEN
+			&	PBG.LCU7.POL.FKDI_77   ? OPEN
+			&	PBG.LCU7.POL.FKDI_78   ? OPEN			
+
+
+STEP:		PBG.LCU7.ANA.FK_28
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_28
+						-C	0.01
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟制动气罐气压跟随
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_29
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.LCU7.ANA.FK_29
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_28
+
+END_SEQUENCE:
+
+
+SEQUENCE:	PBG.LCU7.ANA.FK_30
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.LCU7.ANA.FK_30
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_28
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟检修维护气压自动下降
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_08.AUTO
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+EQUATION:		=	PBG.LCU7.POL.FKDI_08   ? OPEN
+			&	PBG.LCU7.POL.FKDI_09   ? OPEN
+					
+
+STEP:		PBG.LCU7.ANA.FK_08
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_08
+						-C	0.01
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟检修维护气罐气压跟随
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_09
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.LCU7.ANA.FK_09
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_08
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位自动上升，测试用
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.AUTO
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.POL.FKDG_1JCQ_DI21   ? OPEN
+			&	PBG.F1.POL.FKDG_2JCQ_DI21   ? OPEN
+			&	PBG.F1.POL.FKDG_3JCQ_DI21   ? OPEN			
+			
+STOP_MODEL:	PBG.F1.ANA.DGCS_CS1_AIL_DOWN
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		3
+TYPE:		CALC
+EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL
+						+C	1
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位跟随
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS2_AIL
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.F1.ANA.DGCS_CS2_AIL
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位大于270mm
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.HIGH0
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   > 270
+			&	PBG.F1.ANA.DGCS_CS1_AIL   < 400
+			&	PBG.F1.POL.FKDG_1JCQ_DI21   ? CLOSE
+			+	PBG.F1.POL.FKDG_2JCQ_DI21   ? CLOSE
+			+	PBG.F1.POL.FKDG_3JCQ_DI21   ? CLOSE
+
+GO_MODEL:	PBG.F1.ANA.DGCS_CS1_AIL_DOWN
+SPEED:		2
+	
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位大于400mm
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.HIGH1
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   >= 400
+			&	PBG.F1.ANA.DGCS_CS1_AIL   < 500
+			
+STEP:		PBG.F1.POL.FKDG_1JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKDG_1DJ_DI79  ? CLOSE
+
+
+!STEP:		PBG.F1.POL.FKDG_2JCQ_DI21
+!DELAY:		1
+!TYPE:		LOGICAL
+!ALARM_DELAY:	6
+!RESULT:		1	
+!EQUATION:	=	PBG.F1.POL.FKDG_2DJ_DI79  ? CLOSE
+
+
+!STEP:		PBG.F1.POL.FKDG_3JCQ_DI21
+!DELAY:		1
+!TYPE:		LOGICAL
+!ALARM_DELAY:	6
+!RESULT:		1	
+!EQUATION:	=	PBG.F1.POL.FKDG_3DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 370
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 330
+
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 300
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 270
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位大于500mm
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.HIGH2
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   >= 500
+			&	PBG.F1.ANA.DGCS_CS1_AIL   < 620
+			
+STEP:		PBG.F1.POL.FKDG_1JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKDG_1DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.POL.FKDG_2JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKDG_2DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 450
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 400
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 350
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 300
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 270
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位大于620mm
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.HIGH3
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   >= 620
+			
+			
+STEP:		PBG.F1.POL.FKDG_1JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKDG_1DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.POL.FKDG_2JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKDG_2DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.POL.FKDG_3JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.F1.POL.FKDG_3DJ_DI79  ? CLOSE
+
+
+STEP:		PBG.F1.ANA.DGCS_CS1_AIL
+DELAY:		20
+TYPE:		CALC
+EQUATION:	=C 270
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位大于820mm（报警）
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.HIGH4
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   >= 820
+
+STEP:		PBG.F1.POL.FKDG_SWG_DI05
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位高报警复归
+!******************************************************************
+SEQUENCE:	PBG.F1.POL.FKDG_SWG_DI05-FG
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   < 820
+
+STEP:		PBG.F1.POL.FKDG_SWG_DI05
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位大于920mm（停机）
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.HIGH5
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   >= 920
+
+STEP:		PBG.F1.INT.SJBP_TTMXK_SOE00
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.F1.INT.SJBP_TTMCS1_SOE00  
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.F1.INT.SJBP_TTMCS2_SOE00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟F1顶盖水位等于270mm
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.DGCS_CS1_AIL.EQUAL
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.ANA.DGCS_CS1_AIL   <= 270
+			
+			
+STEP:		PBG.F1.POL.FKDG_1JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+
+STEP:		PBG.F1.POL.FKDG_2JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+STEP:		PBG.F1.POL.FKDG_3JCQ_DI21
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位自动上升
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_80.AUTO
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU7.POL.FKDI_300  ? OPEN
+			&	PBG.LCU7.POL.FKDI_301   ? OPEN
+			&	PBG.LCU7.POL.FKDI_302   ? OPEN			
+			
+STOP_MODEL:	PBG.LCU7.ANA.FK_80-0
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		3
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_80
+						+C	0.01
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位2跟随
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_81
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.LCU7.ANA.FK_81
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_80
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位大于9m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_80.HIGH1
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_80   >= 9
+			&	PBG.LCU7.ANA.FK_80   < 11
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC1   ?  OPEN
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC2   ?  OPEN	
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC3   ?  OPEN	
+		
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_294  ?  CLOSE
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 7
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 5
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 3
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位大于11m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_80.HIGH2
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_80   >= 11
+			&	PBG.LCU7.ANA.FK_80   < 13
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC1   ? OPEN
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC2   ? OPEN	
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC3   ? OPEN	
+			
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_294  ? CLOSE
+
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_295  ? CLOSE
+
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 8
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 5
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 3
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位大于13m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_80.HIGH3
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_80   >= 13
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC1   ? OPEN
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC2   ? OPEN	
+			&	PBG.LCU7.SYS.S_6KVSLJ_SWYC3   ? OPEN	
+		
+						
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_294  ? CLOSE
+
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_295  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_302
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_296  ? CLOSE
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 10
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 6
+
+
+STEP:		PBG.LCU7.ANA.FK_80
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 3
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位大于14m（报警）
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_80.HIGH4
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_80   >= 14
+
+STEP:		PBG.LCU7.POL.FKDI_312
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位高报警复归
+!******************************************************************
+SEQUENCE:	PBG.LCU7.POL.FKDI_312-FG
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_80   < 14
+
+
+STEP:		PBG.LCU7.POL.FKDI_312
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟渗漏集水井水位等于3m（停泵）
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_80.EQUAL
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_80   <= 3
+			
+			
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+STEP:		PBG.LCU7.POL.FKDI_302
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位自动上升
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_120.AUTO
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU7.POL.FKDI_398   ? OPEN
+			&	PBG.LCU7.POL.FKDI_399   ? OPEN
+			&	PBG.LCU7.POL.FKDI_400   ? OPEN			
+			&	PBG.LCU7.POL.FKDI_401   ? OPEN
+			&	PBG.LCU7.POL.FKDI_402   ? OPEN	
+		
+STOP_MODEL:	PBG.LCU7.ANA.FK_120-0
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		3
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_120
+						+C	0.01
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位2跟随
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_121
+
+SEQ_TYPE: 	LOGICAL
+
+STEP:		PBG.LCU7.ANA.FK_121
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=	PBG.LCU7.ANA.FK_120
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位大于3m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_120.HIGH0
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE
+	EQUATION:	=	PBG.LCU7.ANA.FK_120	 > 3
+			&	PBG.LCU7.ANA.FK_120 	< 7
+			&	PBG.LCU7.POL.FKDI_398   ? CLOSE
+			
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120-0
+SPEED:		2
+	
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位大于7m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_120.HIGH1
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_120	 >= 7
+			&	PBG.LCU7.ANA.FK_120 	< 11
+
+			
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_388  ? CLOSE
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 5
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 4
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 3
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位大于11m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_120.HIGH2
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_120	>= 11
+			&	PBG.LCU7.ANA.FK_120 	< 16
+
+			
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_388  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_389  ? CLOSE
+
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 8
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 5
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 3
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位大于16m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_120.HIGH3
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_120	>= 16
+			&	PBG.LCU7.ANA.FK_120 	< 18
+
+			
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_388  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_389  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_400
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_390  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_401
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_391  ? CLOSE
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 13
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 9
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 6
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 3
+
+END_SEQUENCE:
+
+!******************************************************************
+!	瀑布沟检修集水井水位大于18m
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_120.HIGH4
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_120	>= 18
+		
+			
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_388  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_389  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_400
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_390  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_401
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_391  ? CLOSE
+
+
+STEP:		PBG.LCU7.POL.FKDI_402
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_392  ? CLOSE
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 14
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 10
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 6
+
+
+STEP:		PBG.LCU7.ANA.FK_120
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 3
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位大于20m（报警）
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_80.HIGH5
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_120   >= 20
+
+
+STEP:		PBG.LCU7.POL.FKDI_414
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位高报警复归
+!******************************************************************
+SEQUENCE:	PBG.LCU7.POL.FKDI_414-FG
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_120   < 20
+
+STEP:		PBG.LCU7.POL.FKDI_414
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟检修集水井水位等于3m（停泵）
+!******************************************************************
+SEQUENCE:	PBG.LCU7.ANA.FK_120.EQUAL
+
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.LCU7.ANA.FK_120   <= 3
+			
+			
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+STEP:		PBG.LCU7.POL.FKDI_400
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+STEP:		PBG.LCU7.POL.FKDI_401
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0	
+
+
+STEP:		PBG.LCU7.POL.FKDI_402
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	转子电压测量显示
+!******************************************************************
+SEQUENCE:	PBG.F1.ANA.S_1FLCDY_XS_XS1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+		
+	EQUATION:	=	PBG.F1.SYS.S_1FLCDZ_SA61      ? OPEN
+			
+			
+					
+STEP:		PBG.F1.ANA.S_1FLCDY_XS
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=   PBG.F1.ANA.LCP_LC_AIV
+
+END_SEQUENCE:
+
+
+
+
+SEQUENCE:	PBG.F1.ANA.S_1FLCDY_XS_XS2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+			
+	EQUATION:	=	PBG.F1.SYS.S_1FLCDZ_SA61      ? CLOSE
+			
+			
+					
+STEP:		PBG.F1.ANA.S_1FLCDY_XS
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=   PBG.F1.ANA.S_1FLCDY_ZY
+
+END_SEQUENCE:
+
+
+
+
+SEQUENCE:	PBG.F1.ANA.S_1FLCDY_XS_XS3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+			
+	EQUATION:	=	PBG.F1.SYS.S_1FLCDZ_SA61      ? 2
+			
+			
+				
+STEP:		PBG.F1.ANA.S_1FLCDY_XS
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=   PBG.F1.ANA.S_1FLCDY_FY
+
+END_SEQUENCE:

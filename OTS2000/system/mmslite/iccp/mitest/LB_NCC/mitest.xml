@@ -1,0 +1,3628 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ICCP Local Control Center Configuration -->
+<!DOCTYPE LocalControlCenter SYSTEM "E:\mmslite\bin\IccpCfg.dtd">
+<LocalControlCenter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:\mmslite\bin\IccpCfg.xsd">
+	<Name>LB_1_DC1</Name>
+	<MaxDsTs>25</MaxDsTs>
+	<MaxDataSets>25</MaxDataSets>
+	<MaxMmsMsgSize>8192</MaxMmsMsgSize>
+	<Description>DC1_1 - Three Gorges Left Bank Power Station</Description>
+	<LocalObjects>
+		<LocalDataValues Count="320">
+			<Ldv>
+				<Name>LBP_ANA_0001</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0002</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0003</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0004</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0005</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0006</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0007</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0008</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0009</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0010</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0011</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0012</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0013</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0014</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0015</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0016</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0017</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0018</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0019</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0020</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0021</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0022</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0023</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0024</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0025</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0026</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0027</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0028</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0029</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0030</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0031</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0032</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0033</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0034</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0035</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0036</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0037</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0038</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0039</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0040</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0041</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0042</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0043</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0044</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0045</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0046</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0047</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0048</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0049</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0050</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0051</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0052</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0053</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0054</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0055</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0056</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0057</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0058</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0059</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0060</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0061</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0062</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0063</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0064</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0065</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_ANA_0066</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0001</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0002</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0003</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0004</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0005</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0006</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0007</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0008</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0009</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0010</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0011</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0012</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0013</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0014</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0015</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0016</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0017</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0018</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0019</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0020</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0021</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0022</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0023</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0024</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0025</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0026</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0027</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0028</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0029</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0030</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0031</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0032</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0033</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0034</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0035</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0036</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0037</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0038</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0039</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0040</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0041</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0042</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0043</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0044</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0045</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0046</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0047</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0048</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0049</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0050</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0051</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0052</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0053</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0054</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0055</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0056</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0057</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0058</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0059</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0060</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0061</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0062</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0063</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0064</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0065</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0066</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0067</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0068</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0069</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0070</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0071</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0072</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0073</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0074</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0075</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0076</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0077</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0078</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0079</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0080</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0081</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0082</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0083</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0084</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0085</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0086</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0087</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0088</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0089</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0090</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0091</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0092</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0093</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0094</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0095</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0096</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0097</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0098</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0099</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0100</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0101</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0102</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0103</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0104</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0105</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0106</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0107</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0108</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0109</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0110</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0111</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0112</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0113</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0114</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0115</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0116</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0117</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0118</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0119</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0120</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0121</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0122</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0123</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0124</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0125</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0126</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0127</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0128</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0129</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0130</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0131</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0132</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0133</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0134</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0135</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0136</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0137</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0138</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0139</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0140</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0141</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0142</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0143</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0144</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0145</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0146</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0147</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0148</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0149</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0150</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0151</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0152</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0153</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0154</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0155</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0156</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0157</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0158</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0159</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0160</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0161</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0162</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0163</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0164</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0165</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0166</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0167</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0168</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0169</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0170</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0171</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0172</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0173</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0174</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0175</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0176</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0177</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0178</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0179</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0180</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0181</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0182</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0183</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0184</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0185</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0186</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0187</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0188</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0189</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0190</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0191</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0192</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0193</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0194</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0195</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0196</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0197</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0198</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0199</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0200</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0201</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0202</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0203</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0204</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0205</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0206</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0207</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0208</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0209</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0210</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0211</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0212</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0213</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0214</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0215</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0216</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0217</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0218</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0219</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0220</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0221</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0222</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0223</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0224</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0225</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0226</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0227</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0228</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0229</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0230</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0231</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0232</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0233</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0234</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0235</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0236</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0237</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0238</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0239</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0240</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0241</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0242</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0243</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0244</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0245</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0246</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0247</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0248</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0249</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0250</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0251</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0252</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0253</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>LBP_STA_0254</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+		</LocalDataValues>
+		<LocalDevices Count="25">
+			<Ldev>
+				<DeviceName>LBP_CMD_001</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_002</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_003</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_004</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_005</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_006</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_007</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_008</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_009</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_010</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_011</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_012</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_013</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_014</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_015</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_016</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_017</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_018</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_019</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_020</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_021</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_022</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_023</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_024</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>LBP_CMD_025</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>0</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+		</LocalDevices>
+		<LocalInfoMsgs Count="1">
+			<Lim>
+				<InfoRef>10100</InfoRef>
+				<MaxSize>44</MaxSize>
+				<Description>SoE Message used for indications (on/off, opened/closed, etc.)</Description>
+			</Lim>
+		</LocalInfoMsgs>
+	</LocalObjects>
+	<RemoteControlCenters Count="1">
+		<RemoteControlCenter>
+			<Name>NDC_1_DC1</Name>
+			<Description>National Dispatch Center, net1</Description>
+			<BilateralTable>
+				<Name>NCC_LBP_B</Name>
+				<Id>LBP_NCC_B_ID_1</Id>
+				<LocalDomain>LBP_NCC</LocalDomain>
+				<RemoteDomain>NCC_LBP</RemoteDomain>
+				<ShortestInterval>1</ShortestInterval>
+				<Blocks>1,2,4,5</Blocks>
+				<Description>Data Exchange Left Bank Power Station, Gateway 1 / National Dispatch Center, net1</Description>
+				<RemDvValidation>CompareNames</RemDvValidation>
+				<RemDvGetConfig>None</RemDvGetConfig>
+				<RemDvExcludeInvalidFromDs>Y</RemDvExcludeInvalidFromDs>
+			</BilateralTable>
+			<Associations Count="1">
+				<Association>
+					<Name>NDC_LB_LINK</Name>
+					<LocalAr>LB_1_DC1</LocalAr>
+					<RemoteAr>net1</RemoteAr>
+					<ConnectRole>Called</ConnectRole>
+					<AssocRetryTime>10</AssocRetryTime>
+					<ServiceRole>Client</ServiceRole>
+					<ServiceRole>Server</ServiceRole>
+					<MaxMmsMsgSize>8192</MaxMmsMsgSize>
+					<MaxReqPend>5</MaxReqPend>
+					<MaxIndPend>5</MaxIndPend>
+					<MaxNest>5</MaxNest>
+					<Description>Communication Link Left Bank Power Station, Gateway 1 / Cascade Dispatch Center, net1</Description>
+				</Association>
+			</Associations>
+			<ServerObjects>
+				<NumVccDv>0</NumVccDv>
+				<NumVccDev>0</NumVccDev>
+				<NumVccInfoMsg>0</NumVccInfoMsg>
+				<NumVccDs>0</NumVccDs>
+				<NumIccDv>320</NumIccDv>
+				<NumIccDev>25</NumIccDev>
+				<NumIccInfoMsg>1</NumIccInfoMsg>
+				<NumIccDs>0</NumIccDs>
+				<ServerDataValues Count="320">
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0001</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0002</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0003</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0004</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0005</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0006</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0007</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0008</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0009</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0010</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0011</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0012</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0013</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0014</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0015</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0016</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0017</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0018</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0019</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0020</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0021</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0022</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0023</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0024</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0025</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0026</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0027</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0028</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0029</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0030</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0031</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0032</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0033</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0034</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0035</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0036</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0037</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0038</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0039</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0040</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0041</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0042</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0043</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0044</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0045</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0046</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0047</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0048</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0049</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0050</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0051</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0052</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0053</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0054</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0055</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0056</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0057</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0058</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0059</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0060</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0061</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0062</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0063</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0064</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0065</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_ANA_0066</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0001</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0002</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0003</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0004</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0005</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0006</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0007</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0008</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0009</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0010</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0011</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0012</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0013</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0014</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0015</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0016</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0017</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0018</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0019</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0020</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0021</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0022</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0023</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0024</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0025</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0026</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0027</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0028</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0029</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0030</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0031</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0032</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0033</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0034</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0035</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0036</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0037</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0038</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0039</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0040</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0041</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0042</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0043</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0044</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0045</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0046</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0047</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0048</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0049</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0050</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0051</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0052</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0053</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0054</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0055</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0056</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0057</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0058</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0059</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0060</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0061</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0062</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0063</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0064</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0065</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0066</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0067</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0068</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0069</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0070</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0071</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0072</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0073</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0074</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0075</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0076</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0077</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0078</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0079</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0080</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0081</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0082</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0083</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0084</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0085</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0086</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0087</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0088</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0089</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0090</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0091</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0092</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0093</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0094</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0095</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0096</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0097</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0098</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0099</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0100</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0101</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0102</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0103</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0104</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0105</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0106</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0107</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0108</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0109</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0110</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0111</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0112</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0113</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0114</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0115</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0116</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0117</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0118</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0119</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0120</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0121</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0122</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0123</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0124</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0125</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0126</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0127</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0128</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0129</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0130</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0131</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0132</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0133</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0134</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0135</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0136</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0137</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0138</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0139</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0140</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0141</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0142</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0143</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0144</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0145</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0146</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0147</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0148</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0149</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0150</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0151</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0152</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0153</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0154</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0155</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0156</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0157</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0158</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0159</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0160</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0161</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0162</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0163</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0164</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0165</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0166</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0167</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0168</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0169</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0170</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0171</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0172</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0173</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0174</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0175</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0176</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0177</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0178</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0179</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0180</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0181</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0182</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0183</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0184</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0185</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0186</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0187</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0188</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0189</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0190</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0191</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0192</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0193</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0194</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0195</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0196</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0197</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0198</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0199</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0200</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0201</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0201</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0202</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0203</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0204</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0205</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0206</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0207</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0208</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0209</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0210</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0211</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0212</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0213</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0214</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0215</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0216</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0217</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0218</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0219</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0220</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0221</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0222</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0223</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0224</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0225</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0226</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0227</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0228</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0229</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0231</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0232</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0233</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0234</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0235</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0236</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0237</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0238</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0239</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0240</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0241</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0242</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0243</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0244</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0245</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0246</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0247</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0248</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0249</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0250</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0251</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0252</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0253</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">LBP_STA_0254</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>Y</ReadOnly>
+					</Sdv>
+				</ServerDataValues>
+				<ServerDevices Count="25">
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_001</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_002</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_003</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_004</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_005</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_006</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_007</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_008</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_009</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_010</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_011</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_012</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_013</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_014</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_015</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_016</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_017</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_018</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_019</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_020</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_021</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_022</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_023</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_024</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">LBP_CMD_025</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+				</ServerDevices>
+				<ServerInfoMsgs Count="1">
+					<Sim>
+						<ObjInfoRef Scope="ICC">10100</ObjInfoRef>
+					</Sim>
+				</ServerInfoMsgs>
+				<ServerDataSets Count="0">
+				</ServerDataSets>
+			</ServerObjects>
+			<ClientObjects>
+				<NumVccDv>0</NumVccDv>
+				<NumVccDev>0</NumVccDev>
+				<NumVccInfoMsg>0</NumVccInfoMsg>
+				<NumIccDv>0</NumIccDv>
+				<NumIccDev>0</NumIccDev>
+				<NumIccInfoMsg>1</NumIccInfoMsg>
+				<NumDs>0</NumDs>
+				<NumDsTs>0</NumDsTs>
+				<ClientDataValues Count="0">
+				</ClientDataValues>
+				<ClientDevices Count="0">
+				</ClientDevices>
+				<ClientInfoMsgs Count="1">
+					<Cim>
+						<ObjInfoRef Scope="ICC">10100</ObjInfoRef>
+						<MaxSize>1</MaxSize>
+						<Description>Acknowledge message for a SoE message</Description>
+					</Cim>
+				</ClientInfoMsgs>
+				<ClientDataSets Count="0">
+				</ClientDataSets>
+				<ClientDataSetTransferSets Count="0">
+				</ClientDataSetTransferSets>
+			</ClientObjects>
+		</RemoteControlCenter>
+	</RemoteControlCenters>
+</LocalControlCenter>

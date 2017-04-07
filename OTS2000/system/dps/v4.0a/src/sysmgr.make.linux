@@ -1,0 +1,51 @@
+## -*- Makefile -*-
+##
+## User: ems
+## Time: 2006-6-29 15:41:24
+## Makefile created by Sun Studio.
+##
+## This file is generated automatically.
+##
+
+
+#### Compiler and tool definitions shared by all build targets #####
+CC = gcc
+BASICOPTS = -g
+CFLAGS = $(BASICOPTS) `pkg-config gtk+-2.0 --cflags --libs`
+
+
+# Define the target directories.
+TARGETDIR_sysmgr.dxe=.
+
+
+all: sysmgr.dxe
+
+## Target: sysmgr.dxe
+OBJS_sysmgr.dxe =  \
+	$(TARGETDIR_sysmgr.dxe)/sysmgr.o
+SYSLIBS_sysmgr.dxe = -lnsl -lpthread
+USERLIBS_sysmgr.dxe = ../../../dms/v4.0a/lib/dblib.lib ../lib/ipclib.lib ../../../lan/v4.0a/lib/lan.lib ../lib/dpslib.lib ../../../dms/v4.0a/lib/dblib.lib $(SYSLIBS_sysmgr.dxe) 
+DEPLIBS_sysmgr.dxe = ../../../dms/v4.0a/lib/dblib.lib  ../lib/ipclib.lib ../../../lan/v4.0a/lib/lan.lib ../lib/dpslib.lib  
+LDLIBS_sysmgr.dxe = $(USERLIBS_sysmgr.dxe)
+
+
+# Link or archive
+$(TARGETDIR_sysmgr.dxe)/sysmgr.dxe: $(TARGETDIR_sysmgr.dxe) $(OBJS_sysmgr.dxe) $(DEPLIBS_sysmgr.dxe)
+	$(LINK.c) $(CFLAGS_sysmgr.dxe) $(CPPFLAGS_sysmgr.dxe) -o $@ $(OBJS_sysmgr.dxe) $(LDLIBS_sysmgr.dxe)
+
+
+# Compile source files into .o files
+$(TARGETDIR_sysmgr.dxe)/sysmgr.o: $(TARGETDIR_sysmgr.dxe) sysmgr_linux.c
+	$(COMPILE.c) $(CFLAGS_sysmgr.dxe) $(CPPFLAGS_sysmgr.dxe) -o $@ sysmgr_linux.c
+
+
+
+#### Clean target deletes all generated files ####
+clean:
+	rm -f \
+		$(TARGETDIR_sysmgr.dxe)/sysmgr.dxe \
+		$(TARGETDIR_sysmgr.dxe)/sysmgr.o
+# Enable dependency checking
+.KEEP_STATE:
+.KEEP_STATE_FILE:.make.state.Sun-sparc-Solaris
+

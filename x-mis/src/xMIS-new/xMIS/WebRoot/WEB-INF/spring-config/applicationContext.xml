@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	<!-- JDBC-->
+	<jee:jndi-lookup id="XMISDB" jndi-name="java:comp/env/jdbc/xmis" />	
+	<import resource="hibernate.xml"/>
+	<import resource="system.xml"/>
+	<import resource="external.xml"/>
+	<import resource="contract.xml"/>
+	<import resource="fileUploadDownload.xml"/>
+	<import resource="project.xml"/>
+	<import resource="device.xml"/>
+	<import resource="report.xml"/>
+	<import resource="KZHB.xml"/>
+	<import resource="crm.xml"/>
+	<import resource="FireflowContext-flexfactory.xml"/>
+	<import resource="security.xml"/>
+	<import resource="developProgress.xml"/>
+	<import resource="financy.xml"/>
+	<import resource="workflow.xml"/>
+	<import resource="FireflowContext.xml"/>  
+	<import resource="message.xml"/>  
+	<import resource="missattendance.xml"/>  
+	<import resource="importExcel.xml"/>
+	<import resource="bid.xml"/>
+	
+	<bean id="JdbcTemplate" 
+		class="org.springframework.jdbc.core.JdbcTemplate"> 
+		<property name="dataSource"> 
+			<ref local="XMISDB"/> 
+		</property> 
+	</bean> 
+    
+	<!-- Base DAO -->
+	<bean id="baseDAO" abstract="true">
+		<property name="jt">
+			<ref local="JdbcTemplate" />
+		</property>
+	</bean>
+	
+	<!-- JtaTransactionManager -->	
+	<bean id="transactionManager"
+		class="org.springframework.transaction.jta.JtaTransactionManager" />
+	<!--bean id="hibernateTransactionManager"
+		class="org.springframework.orm.hibernate.HibernateTransactionManager" /-->
+	
+	<!-- Transaction Setting for advice mode -->
+	<aop:aspectj-autoproxy/>
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">  
+		<tx:attributes>  
+			<tx:method name="do*" rollback-for="Exception"/>  
+			<tx:method name="get*" read-only="true"/>  
+		</tx:attributes>  
+	</tx:advice>  
+
+	<aop:config proxy-target-class="true">
+		<aop:advisor pointcut="execution(* com.bitc.jk.xmis.service.impl.*.*(..))"
+			advice-ref="txAdvice"/>
+		<aop:advisor pointcut="execution(* com.bitc.jk.xmis.workflow.service.impl.*.*(..))"
+			advice-ref="txAdvice"/>    
+		<aop:advisor pointcut="execution(* com.bitc.jk.xmis.workflow.fire.WorkflowServiceFireImpl.*(..))"
+			advice-ref="txAdvice"/>
+		<aop:advisor pointcut="execution(* com.bitc.jk.xmis.report.core.ReportService.*(..))"
+			advice-ref="txAdvice"/>
+	</aop:config>
+    
+	<!--
+			<aop:config>
+				<aop:pointcut id="logpointcut" expression="execution(* com.bitc.jk.xmis.dao.impl.ProjectDAOImpl.getDeviceListByID(..))"/>
+				<aop:aspect id="log" ref="sysLogDAO">
+					<aop:before pointcut-ref="logpointcut" method="log"/>
+				</aop:aspect>
+			</aop:config>
+		  -->
+	<!-- aop:config proxy-target-class="true"> 
+			<aop:pointcut id="userOperation"  
+						  expression="execution(* com.bitc.jk.xmis.service.impl.*.*(..))"/>  
+			<aop:advisor advice-ref="txAdvice"  
+						 pointcut-ref="userOperation"/>  
+		</aop:config-->  
+    
+	<!-- Transcation Setting for annotation -->
+	<!-- tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/-->
+
+
+	
+	<!-- bean id="transactionFroxy"
+			class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+			<property name="transactionManager">
+				<ref bean="TransactionManager" />
+			</property>
+			<property name="target">
+				<ref local="organizationServiceImpl" />
+			</property>
+			<property name="transactionAttributes">
+				<props>
+					<prop key="do*">PROPAGATION_REQUIRED</prop>
+					<prop key="find*">PROPAGATION_SUPPORTS,readOnly</prop> 	
+					<prop key="get*">PROPAGATION_SUPPORTS,readOnly</prop> 				
+				</props>
+			</property>
+		</bean-->
+
+</beans>

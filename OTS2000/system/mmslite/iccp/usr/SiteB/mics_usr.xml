@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ICCP Local Control Center Configuration -->
+<!DOCTYPE LocalControlCenter SYSTEM "C:\Program Files\SISCO\axs4iccp\IccpCfg.dtd">
+<LocalControlCenter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Program Files\SISCO\axs4iccp\IccpCfg.xsd">
+	<Name>UtilitySiteB</Name>
+	<MaxDsTs>10</MaxDsTs>
+	<MaxDataSets>10</MaxDataSets>
+	<MaxMmsMsgSize>32000</MaxMmsMsgSize>
+	<Description>calling site</Description>
+	<LocalObjects>
+		<LocalDataValues Count="60">
+			<Ldv>
+				<Name>MEASUREMENT_D_01</Name>
+				<DataType>Discrete</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_D_02</Name>
+				<DataType>Discrete</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_D_03</Name>
+				<DataType>Discrete</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_D_04</Name>
+				<DataType>Discrete</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_D_05</Name>
+				<DataType>Discrete</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DE_01</Name>
+				<DataType>DiscreteExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DE_02</Name>
+				<DataType>DiscreteExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DE_03</Name>
+				<DataType>DiscreteExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DE_04</Name>
+				<DataType>DiscreteExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DE_05</Name>
+				<DataType>DiscreteExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQ_01</Name>
+				<DataType>DiscreteQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQ_02</Name>
+				<DataType>DiscreteQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQ_03</Name>
+				<DataType>DiscreteQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQ_04</Name>
+				<DataType>DiscreteQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQ_05</Name>
+				<DataType>DiscreteQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQTT_01</Name>
+				<DataType>DiscreteQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQTT_02</Name>
+				<DataType>DiscreteQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQTT_03</Name>
+				<DataType>DiscreteQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQTT_04</Name>
+				<DataType>DiscreteQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_DQTT_05</Name>
+				<DataType>DiscreteQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_R_01</Name>
+				<DataType>Real</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_R_02</Name>
+				<DataType>Real</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_R_03</Name>
+				<DataType>Real</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_R_04</Name>
+				<DataType>Real</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_R_05</Name>
+				<DataType>Real</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RE_01</Name>
+				<DataType>RealExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RE_02</Name>
+				<DataType>RealExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RE_03</Name>
+				<DataType>RealExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RE_04</Name>
+				<DataType>RealExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RE_05</Name>
+				<DataType>RealExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQ_01</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQ_02</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQ_03</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQ_04</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQ_05</Name>
+				<DataType>RealQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQTT_01</Name>
+				<DataType>RealQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQTT_02</Name>
+				<DataType>RealQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQTT_03</Name>
+				<DataType>RealQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQTT_04</Name>
+				<DataType>RealQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_RQTT_05</Name>
+				<DataType>RealQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_S_01</Name>
+				<DataType>State</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_S_02</Name>
+				<DataType>State</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_S_03</Name>
+				<DataType>State</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_S_04</Name>
+				<DataType>State</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_S_05</Name>
+				<DataType>State</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SE_01</Name>
+				<DataType>StateExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SE_02</Name>
+				<DataType>StateExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SE_03</Name>
+				<DataType>StateExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SE_04</Name>
+				<DataType>StateExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SE_05</Name>
+				<DataType>StateExtended</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQ_01</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQ_02</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQ_03</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQ_04</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQ_05</Name>
+				<DataType>StateQ</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQTT_01</Name>
+				<DataType>StateQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQTT_02</Name>
+				<DataType>StateQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQTT_03</Name>
+				<DataType>StateQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQTT_04</Name>
+				<DataType>StateQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+			<Ldv>
+				<Name>MEASUREMENT_SQTT_05</Name>
+				<DataType>StateQTimeTag</DataType>
+				<NormalSource>Telemetered</NormalSource>
+			</Ldv>
+		</LocalDataValues>
+		<LocalDevices Count="8">
+			<Ldev>
+				<DeviceName>COMMAND_DEV_1</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>30</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>DISCRETE_DEV_1</DeviceName>
+				<DeviceType>Discrete</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>30</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>REAL_DEV_1</DeviceName>
+				<DeviceType>Real</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>30</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>SBO_COMMAND_DEV_1</DeviceName>
+				<DeviceType>Command</DeviceType>
+				<Sbo>Y</Sbo>
+				<ChkBackId>11</ChkBackId>
+				<SelTime>45</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>SBO_DISCRETE_DEV_1</DeviceName>
+				<DeviceType>Discrete</DeviceType>
+				<Sbo>Y</Sbo>
+				<ChkBackId>10</ChkBackId>
+				<SelTime>45</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>SBO_REAL_DEV_1</DeviceName>
+				<DeviceType>Real</DeviceType>
+				<Sbo>Y</Sbo>
+				<ChkBackId>12</ChkBackId>
+				<SelTime>45</SelTime>
+				<TagEn>Y</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>UNTAGGED_CONTROL_1</DeviceName>
+				<DeviceType>Discrete</DeviceType>
+				<Sbo>N</Sbo>
+				<ChkBackId>0</ChkBackId>
+				<SelTime>30</SelTime>
+				<TagEn>N</TagEn>
+			</Ldev>
+			<Ldev>
+				<DeviceName>UNTAGGED_SBO_CONTROL_1</DeviceName>
+				<DeviceType>Discrete</DeviceType>
+				<Sbo>Y</Sbo>
+				<ChkBackId>120</ChkBackId>
+				<SelTime>45</SelTime>
+				<TagEn>N</TagEn>
+			</Ldev>
+		</LocalDevices>
+		<LocalInfoMsgs Count="5">
+			<Lim>
+				<InfoRef>2</InfoRef>
+				<MaxSize>2000</MaxSize>
+			</Lim>
+			<Lim>
+				<InfoRef>4</InfoRef>
+				<MaxSize>4000</MaxSize>
+			</Lim>
+			<Lim>
+				<InfoRef>6</InfoRef>
+				<MaxSize>6000</MaxSize>
+			</Lim>
+			<Lim>
+				<InfoRef>8</InfoRef>
+				<MaxSize>8000</MaxSize>
+			</Lim>
+			<Lim>
+				<InfoRef>10</InfoRef>
+				<MaxSize>10000</MaxSize>
+			</Lim>
+		</LocalInfoMsgs>
+	</LocalObjects>
+	<RemoteControlCenters Count="1">
+		<RemoteControlCenter>
+			<Name>UtilitySiteA</Name>
+			<Description>The site that Listens for the connect request</Description>
+			<BilateralTable>
+				<Name>BLT1</Name>
+				<Id>SiteA_SiteB</Id>
+				<LocalDomain>ICCP_B</LocalDomain>
+				<RemoteDomain>ICCP_A</RemoteDomain>
+				<ShortestInterval>1</ShortestInterval>
+				<Blocks>1,2,4,5</Blocks>
+				<RemDvValidation>CompareNames</RemDvValidation>
+				<RemDvGetConfig>None</RemDvGetConfig>
+				<RemDvExcludeInvalidFromDs>Y</RemDvExcludeInvalidFromDs>
+			</BilateralTable>
+			<Associations Count="1">
+				<Association>
+					<Name>PrimaryLink</Name>
+					<LocalAr>SiteB</LocalAr>
+					<RemoteAr>SiteA</RemoteAr>
+					<ConnectRole>Calling</ConnectRole>
+					<AssocRetryTime>10</AssocRetryTime>
+					<ServiceRole>Client</ServiceRole>
+					<ServiceRole>Server</ServiceRole>
+					<MaxMmsMsgSize>32000</MaxMmsMsgSize>
+					<MaxReqPend>5</MaxReqPend>
+					<MaxIndPend>5</MaxIndPend>
+					<MaxNest>5</MaxNest>
+				</Association>
+			</Associations>
+			<ServerObjects>
+				<NumVccDv>0</NumVccDv>
+				<NumVccDev>0</NumVccDev>
+				<NumVccInfoMsg>0</NumVccInfoMsg>
+				<NumVccDs>0</NumVccDs>
+				<NumIccDv>60</NumIccDv>
+				<NumIccDev>8</NumIccDev>
+				<NumIccInfoMsg>5</NumIccInfoMsg>
+				<NumIccDs>0</NumIccDs>
+				<ServerDataValues Count="60">
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_D_01</ObjName>
+						<DataType>Discrete</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_D_02</ObjName>
+						<DataType>Discrete</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_D_03</ObjName>
+						<DataType>Discrete</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_D_04</ObjName>
+						<DataType>Discrete</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_D_05</ObjName>
+						<DataType>Discrete</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DE_01</ObjName>
+						<DataType>DiscreteExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DE_02</ObjName>
+						<DataType>DiscreteExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DE_03</ObjName>
+						<DataType>DiscreteExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DE_04</ObjName>
+						<DataType>DiscreteExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DE_05</ObjName>
+						<DataType>DiscreteExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQ_01</ObjName>
+						<DataType>DiscreteQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQ_02</ObjName>
+						<DataType>DiscreteQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQ_03</ObjName>
+						<DataType>DiscreteQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQ_04</ObjName>
+						<DataType>DiscreteQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQ_05</ObjName>
+						<DataType>DiscreteQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQTT_01</ObjName>
+						<DataType>DiscreteQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQTT_02</ObjName>
+						<DataType>DiscreteQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQTT_03</ObjName>
+						<DataType>DiscreteQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQTT_04</ObjName>
+						<DataType>DiscreteQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_DQTT_05</ObjName>
+						<DataType>DiscreteQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_R_01</ObjName>
+						<DataType>Real</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_R_02</ObjName>
+						<DataType>Real</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_R_03</ObjName>
+						<DataType>Real</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_R_04</ObjName>
+						<DataType>Real</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_R_05</ObjName>
+						<DataType>Real</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RE_01</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RE_02</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RE_03</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RE_04</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RE_05</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQ_01</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQ_02</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQ_03</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQ_04</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQ_05</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQTT_01</ObjName>
+						<DataType>RealQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQTT_02</ObjName>
+						<DataType>RealQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQTT_03</ObjName>
+						<DataType>RealQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQTT_04</ObjName>
+						<DataType>RealQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_RQTT_05</ObjName>
+						<DataType>RealQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_S_01</ObjName>
+						<DataType>State</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_S_02</ObjName>
+						<DataType>State</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_S_03</ObjName>
+						<DataType>State</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_S_04</ObjName>
+						<DataType>State</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_S_05</ObjName>
+						<DataType>State</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SE_01</ObjName>
+						<DataType>StateExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SE_02</ObjName>
+						<DataType>StateExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SE_03</ObjName>
+						<DataType>StateExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SE_04</ObjName>
+						<DataType>StateExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SE_05</ObjName>
+						<DataType>StateExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQ_01</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQ_02</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQ_03</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQ_04</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQ_05</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQTT_01</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQTT_02</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQTT_03</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQTT_04</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+					<Sdv>
+						<ObjName Scope="ICC">MEASUREMENT_SQTT_05</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Sdv>
+				</ServerDataValues>
+				<ServerDevices Count="8">
+					<Sdev>
+						<ObjDeviceName Scope="ICC">COMMAND_DEV_1</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">DISCRETE_DEV_1</ObjDeviceName>
+						<DeviceType>Discrete</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">REAL_DEV_1</ObjDeviceName>
+						<DeviceType>Real</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">SBO_COMMAND_DEV_1</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">SBO_DISCRETE_DEV_1</ObjDeviceName>
+						<DeviceType>Discrete</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">SBO_REAL_DEV_1</ObjDeviceName>
+						<DeviceType>Real</DeviceType>
+						<TagEn>Y</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">UNTAGGED_CONTROL_1</ObjDeviceName>
+						<DeviceType>Discrete</DeviceType>
+						<TagEn>N</TagEn>
+					</Sdev>
+					<Sdev>
+						<ObjDeviceName Scope="ICC">UNTAGGED_SBO_CONTROL_1</ObjDeviceName>
+						<DeviceType>Discrete</DeviceType>
+						<TagEn>N</TagEn>
+					</Sdev>
+				</ServerDevices>
+				<ServerInfoMsgs Count="5">
+					<Sim>
+						<ObjInfoRef Scope="ICC">2</ObjInfoRef>
+					</Sim>
+					<Sim>
+						<ObjInfoRef Scope="ICC">4</ObjInfoRef>
+					</Sim>
+					<Sim>
+						<ObjInfoRef Scope="ICC">6</ObjInfoRef>
+					</Sim>
+					<Sim>
+						<ObjInfoRef Scope="ICC">8</ObjInfoRef>
+					</Sim>
+					<Sim>
+						<ObjInfoRef Scope="ICC">10</ObjInfoRef>
+					</Sim>
+				</ServerInfoMsgs>
+				<ServerDataSets Count="0">
+				</ServerDataSets>
+			</ServerObjects>
+			<ClientObjects>
+				<NumVccDv>0</NumVccDv>
+				<NumVccDev>0</NumVccDev>
+				<NumVccInfoMsg>0</NumVccInfoMsg>
+				<NumIccDv>18</NumIccDv>
+				<NumIccDev>7</NumIccDev>
+				<NumIccInfoMsg>5</NumIccInfoMsg>
+				<NumDs>1</NumDs>
+				<NumDsTs>1</NumDsTs>
+				<ClientDataValues Count="18">
+					<Cdv>
+						<ObjName Scope="ICC">ActualVoltage</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">GasOn</ObjName>
+						<DataType>StateExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">GasTurbineStatus</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">HourlyPlantMWH</ObjName>
+						<DataType>RealQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">Measurement_01</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">Measurement_02</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">Measurement_03</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">OverLimit_01</ObjName>
+						<DataType>DiscreteQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">OverLimit_02</ObjName>
+						<DataType>DiscreteQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">PlantStatus</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">Price_Rate_01</ObjName>
+						<DataType>RealQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">Price_Rate_02</ObjName>
+						<DataType>RealQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">SpareState_01</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">SpareState_02</ObjName>
+						<DataType>StateQ</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">SteamTurbineStatus</ObjName>
+						<DataType>StateQTimeTag</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">Temperature_01</ObjName>
+						<DataType>DiscreteExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">Temperature_02</ObjName>
+						<DataType>RealExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+					<Cdv>
+						<ObjName Scope="ICC">WaterOn</ObjName>
+						<DataType>StateExtended</DataType>
+						<ReadOnly>N</ReadOnly>
+					</Cdv>
+				</ClientDataValues>
+				<ClientDevices Count="7">
+					<Cdev>
+						<ObjDeviceName Scope="ICC">BreakerA</ObjDeviceName>
+						<DeviceType>Real</DeviceType>
+						<Sbo>N</Sbo>
+						<ChkBackId>0</ChkBackId>
+						<TagEn>Y</TagEn>
+					</Cdev>
+					<Cdev>
+						<ObjDeviceName Scope="ICC">BreakerB</ObjDeviceName>
+						<DeviceType>Discrete</DeviceType>
+						<Sbo>N</Sbo>
+						<ChkBackId>0</ChkBackId>
+						<TagEn>Y</TagEn>
+					</Cdev>
+					<Cdev>
+						<ObjDeviceName Scope="ICC">BreakerC</ObjDeviceName>
+						<DeviceType>Real</DeviceType>
+						<Sbo>N</Sbo>
+						<ChkBackId>0</ChkBackId>
+						<TagEn>Y</TagEn>
+					</Cdev>
+					<Cdev>
+						<ObjDeviceName Scope="ICC">DEV_1</ObjDeviceName>
+						<DeviceType>Discrete</DeviceType>
+						<Sbo>N</Sbo>
+						<ChkBackId>0</ChkBackId>
+						<TagEn>N</TagEn>
+					</Cdev>
+					<Cdev>
+						<ObjDeviceName Scope="ICC">DeviceA</ObjDeviceName>
+						<DeviceType>Discrete</DeviceType>
+						<Sbo>Y</Sbo>
+						<ChkBackId>1</ChkBackId>
+						<TagEn>Y</TagEn>
+					</Cdev>
+					<Cdev>
+						<ObjDeviceName Scope="ICC">DeviceB</ObjDeviceName>
+						<DeviceType>Command</DeviceType>
+						<Sbo>Y</Sbo>
+						<ChkBackId>2</ChkBackId>
+						<TagEn>Y</TagEn>
+					</Cdev>
+					<Cdev>
+						<ObjDeviceName Scope="ICC">DeviceC</ObjDeviceName>
+						<DeviceType>Real</DeviceType>
+						<Sbo>Y</Sbo>
+						<ChkBackId>3</ChkBackId>
+						<TagEn>Y</TagEn>
+					</Cdev>
+				</ClientDevices>
+				<ClientInfoMsgs Count="5">
+					<Cim>
+						<ObjInfoRef Scope="ICC">1</ObjInfoRef>
+						<MaxSize>1000</MaxSize>
+					</Cim>
+					<Cim>
+						<ObjInfoRef Scope="ICC">3</ObjInfoRef>
+						<MaxSize>3000</MaxSize>
+					</Cim>
+					<Cim>
+						<ObjInfoRef Scope="ICC">5</ObjInfoRef>
+						<MaxSize>5000</MaxSize>
+					</Cim>
+					<Cim>
+						<ObjInfoRef Scope="ICC">7</ObjInfoRef>
+						<MaxSize>7000</MaxSize>
+					</Cim>
+					<Cim>
+						<ObjInfoRef Scope="ICC">9</ObjInfoRef>
+						<MaxSize>9000</MaxSize>
+					</Cim>
+				</ClientInfoMsgs>
+				<ClientDataSets Count="1">
+					<Cds>
+						<Name>AllPoints</Name>
+						<Transfer_Set_Name>N</Transfer_Set_Name>
+						<Transfer_Set_Time_Stamp>N</Transfer_Set_Time_Stamp>
+						<DSConditions_Detected>N</DSConditions_Detected>
+						<Event_Code_Detected>N</Event_Code_Detected>
+						<CdsDvs Count="18">
+							<CdsDv Scope="ICC" Name="ActualVoltage"/>
+							<CdsDv Scope="ICC" Name="GasOn"/>
+							<CdsDv Scope="ICC" Name="GasTurbineStatus"/>
+							<CdsDv Scope="ICC" Name="HourlyPlantMWH"/>
+							<CdsDv Scope="ICC" Name="Measurement_01"/>
+							<CdsDv Scope="ICC" Name="Measurement_02"/>
+							<CdsDv Scope="ICC" Name="Measurement_03"/>
+							<CdsDv Scope="ICC" Name="OverLimit_01"/>
+							<CdsDv Scope="ICC" Name="OverLimit_02"/>
+							<CdsDv Scope="ICC" Name="PlantStatus"/>
+							<CdsDv Scope="ICC" Name="Price_Rate_01"/>
+							<CdsDv Scope="ICC" Name="Price_Rate_02"/>
+							<CdsDv Scope="ICC" Name="SpareState_01"/>
+							<CdsDv Scope="ICC" Name="SpareState_02"/>
+							<CdsDv Scope="ICC" Name="SteamTurbineStatus"/>
+							<CdsDv Scope="ICC" Name="Temperature_01"/>
+							<CdsDv Scope="ICC" Name="Temperature_02"/>
+							<CdsDv Scope="ICC" Name="WaterOn"/>
+						</CdsDvs>
+					</Cds>
+				</ClientDataSets>
+				<ClientDataSetTransferSets Count="1">
+					<Cdsts>
+						<DsName>AllPoints</DsName>
+						<AssocName>PrimaryLink</AssocName>
+						<Interval>5</Interval>
+						<Rbe>N</Rbe>
+						<BufferTime>2</BufferTime>
+						<Integrity>0</Integrity>
+						<StartTime>0</StartTime>
+						<Critical>N</Critical>
+						<Tle>60</Tle>
+						<DsCondInterval>Y</DsCondInterval>
+						<DsCondIntegrity>N</DsCondIntegrity>
+						<DsCondChange>N</DsCondChange>
+						<DsCondOperator>N</DsCondOperator>
+						<DsCondExternal>N</DsCondExternal>
+					</Cdsts>
+				</ClientDataSetTransferSets>
+			</ClientObjects>
+		</RemoteControlCenter>
+	</RemoteControlCenters>
+</LocalControlCenter>

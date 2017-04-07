@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+树形菜单   用Ext.app.TreeMenuLoader获取数据的xml配置文件
+<TREE>
+	<TREENODES Type="Display" Text="画面目录" NodeData="YC_HMSY.svg" ID="1">
+		<TREENODE Type="Display" Text="三峡电厂" NodeData="YC_HMSY.svg" ID="1-1">
+			<TREENODE Type="Display" Text="三峡左岸电厂" NodeData="sxza/sxza_fdbt.svg" Level="leaf" ID="1-1-1"/>
+			<TREENODE Type="Display" Text="三峡右岸电厂" NodeData="sxya/sxya_fdbt.svg" Level="leaf" ID="1-1-2"/>
+		</TREENODE>
+		<TREENODE Type="Display" Text="葛洲坝电厂" NodeData="sxya/sxya_zjx.svg" ID="1-2">
+			<TREENODE Type="Display" Text="葛洲坝左岸电厂" NodeData="sxza/sxza_fdbt.svg" Level="leaf" ID="1-2-1"/>
+			<TREENODE Type="Display" Text="葛洲坝右岸电厂" NodeData="sxya/sxya_fdbt.svg" Level="leaf" ID="1-2-2"/>
+		</TREENODE>
+	</TREENODES>
+	<TREENODES Type="Display" Text="报表目录"  ID="2">
+	</TREENODES>
+	<TREENODES Type="Display" Text="报警一览表"  ID="3" NodeData="http://192.169.11.189:8090/Woix/alarm.html">
+	</TREENODES>
+	<TREENODES Type="Display" Text="数据一览表"  ID="4">
+	</TREENODES>
+	<TREENODES Type="Display" Text="用户管理"  ID="5">
+	</TREENODES>
+	<TREENODES Type="Display" Text="帮助"  ID="6">
+	</TREENODES>
+</TREE>
+-->
+<!--
+<TREE>
+	<TREENODES Type="Display" Text="画面目录" NodeData="YC_HMSY.svg">
+		<TREENODE Type="Display" Text="三峡电厂" NodeData="YC_HMSY.svg">
+			<TREENODE Type="Display" Text="三峡左岸电厂" NodeData="sxza/sxza_fdbt.svg"/>
+			<TREENODE Type="Display" Text="三峡右岸电厂" NodeData="sxya/sxya_fdbt.svg"/>
+		</TREENODE>
+		<TREENODE Type="Display" Text="葛洲坝电厂" NodeData="sxya/sxya_zjx.svg">
+			<TREENODE Type="Display" Text="三峡左岸电厂" NodeData="sxza/sxza_fdbt.svg"/>
+			<TREENODE Type="Display" Text="三峡右岸电厂" NodeData="sxya/sxya_fdbt.svg"/>
+		</TREENODE>
+	</TREENODES>
+	<TREENODES Type="Display" Text="报表目录" >
+	</TREENODES>
+	<TREENODES Type="Display" Text="报警一览表" >
+	</TREENODES>
+	<TREENODES Type="Display" Text="数据一览表" >
+	</TREENODES>
+	<TREENODES Type="Display" Text="用户管理" >
+	</TREENODES>
+	<TREENODES Type="Display" Text="帮助" >
+		<TREENODE Type="Display" Text="三峡电厂" NodeData="YC_HMSY.svg">
+			<TREENODE Type="Display" Text="三峡左岸电厂" NodeData="sxza/sxza_fdbt.svg"/>
+			<TREENODE Type="Display" Text="三峡右岸电厂" NodeData="sxya/sxya_fdbt.svg"/>
+		</TREENODE>
+	</TREENODES>	
+</TREE>	
+-->
+<TREE>
+	<TREENODES Type="Display" Text="画面目录" NodeData="YC_HMSY.svg" ID="1">
+		<TREENODE Type="Display" Text="三峡电厂" NodeData="YC_HMSY.svg" ID="2">
+			<TREENODE Type="Display" Text="三峡左岸电厂" NodeData="sxza/sxza_fdbt.svg" ID="3"/>
+			<TREENODE Type="Display" Text="三峡右岸电厂" NodeData="sxya/sxya_fdbt.svg" ID="4"/>
+		</TREENODE>
+		<TREENODE Type="Display" Text="葛洲坝电厂" NodeData="sxya/sxya_zjx.svg" ID="5">
+			<TREENODE Type="Display" Text="三峡左岸电厂" NodeData="sxza/sxza_fdbt.svg" ID="6"/>
+			<TREENODE Type="Display" Text="三峡右岸电厂" NodeData="sxya/sxya_fdbt.svg" ID="7"/>
+		</TREENODE>
+	</TREENODES>
+	<TREENODES Type="Display" Text="报表目录"  ID="8">
+		<TREENODE Type="Display" Text="报表目录">
+		</TREENODE>
+	</TREENODES>
+	<TREENODES Type="Display" Text="报警一览表"  ID="9">
+		<TREENODE Type="Display" Text="报警一览表" Link="../WebRoot/alarm.html">
+		</TREENODE>
+	</TREENODES>
+	<TREENODES Type="Display" Text="数据一览表"  ID="10">
+		<TREENODE Type="Display" Text="数据一览表" Link="../WebRoot/pointTable.html">
+		</TREENODE>
+	</TREENODES>
+	<TREENODES Type="Display" Text="用户管理"  ID="11">
+		<TREENODE Type="Display" Text="用户管理">
+		</TREENODE>
+	</TREENODES>
+	<TREENODES Type="Display" Text="帮助"  ID="12">
+		<TREENODE Type="Display" Text="帮助">
+		</TREENODE>
+	</TREENODES>	
+</TREE>	

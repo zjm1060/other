@@ -1,0 +1,328 @@
+
+ Enable MIT Flow Debug Print (now OFF) ?
+
+ Reading in configuration file ...
+ Initalizing local name
+ Initalizing ACSE
+ Initalizing MI
+ Start all Associations (y:TRUE, n:FALSE) (default = TRUE) : 
+ Starting Association: 'TGDC_LB_LINK'
+
+
+
+************************************************************
+***      MMS-EASE Lite ICCP TASE.2 Test App V4.2150      ***
+***              (c) 1996-2002 SISCO, Inc.               ***
+***                   (586) 254-0020                     ***
+************************************************************
+
+	  ICCP Toolkit Test Application:  Main Menu 
+
+	  1  - Association Management
+	  2  - Remote Variables
+	  3  - Local Variables
+	  4  - Transfer Sets
+	  5  - Information Messages
+	  6  - Device Control
+	  7  - Display Configuration
+	  8  - Miscellaneous
+	  0  - Exit
+
+
+
+
+
+WARNING: stack not serviced for 4 seconds.
+MAY CAUSE UNEXPECTED TIMEOUTS, DISCONNECTS, ABORTS.
+Association Indication: find the target Remote/Association
+  Looking at Remote 'CDCS'
+    Association 'TGDC_LB_LINK'
+      Local AR 'LB_GATEWAY1'
+        Local address match level 2
+      Remote AR 'AS1'
+        Remote address match level 2
+      * Best association match so far
+Matched: Remote 'CDCS', Asociation 'TGDC_LB_LINK'
+ IM_Transfer_Set enabled for remote AR AS1
+Create DataSet 'ABB_DS' confirm error: 6a17
+ICCP Create DS 'ABB_DS' Error 27159
+ICCP Reorg Read DS Error 27159
+DSTS Start write confirm error: 6a17
+ICCP Start TS Error 27159
+ Device Set Tag for SDTOLBSETP01, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP02, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP03, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP04, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP05, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP06, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP07, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP08, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP09, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP10, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP11, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP12, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP13, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP14, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP15, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP16, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP17, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP18, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP19, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP20, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP21, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP22, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP23, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP24, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP25, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP26, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP27, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP28, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP29, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP30, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP31, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP32, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP33, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP34, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP35, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP36, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP37, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP38, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP39, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP40, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP41, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP42, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP43, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP44, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP45, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP46, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for SDTOLBSETP47, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5112, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5113, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5813, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5824, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5121, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5122, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5123, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5131, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5132, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5133, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5141, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5143, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5151, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5152, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5153, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5211, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5212, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5213, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5221, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5222, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5223, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5231, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5232, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5233, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL017, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL087, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL027, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL037, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL047, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL057, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL067, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL077, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL097, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL107, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL117, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL127, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL137, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL147, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+MI Write ind: variable 'TGLBSETPOINT01_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT02_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT03_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT04_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT05_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT06_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT07_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT08_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT09_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT11_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT12_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT13_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT14_TAG' not found
+MI Write ind: variable 'TGLBSETPOINT10_TAG' not found
+ Device Set Tag for TGL_P_SET, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGL_P1_SET, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGL_P2_SET, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGL_U_SET, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGL_U1_SET, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGL_U2_SET, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL1FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL2FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL3FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL4FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL10FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL11FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL12FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL13FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL14FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL10FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL11FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL12FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL13FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL14FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL1FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL2FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL3FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL4FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL6FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL7FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL8FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL9FSTART, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL5FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL6FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL7FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL8FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Set Tag for TGLBCTRL9FSTOP, send default response.
+ TagFlags = 0x0, Reason =                                                                                 
+ Device Get Tag for SDTOLBSETP01, send default response.
+ Device Get Tag for SDTOLBSETP02, send default response.
+ Device Get Tag for SDTOLBSETP03, send default response.
+ Device Get Tag for SDTOLBSETP04, send default response.
+ Device Get Tag for SDTOLBSETP05, send default response.
+ Device Get Tag for SDTOLBSETP06, send default response.
+ Device Get Tag for SDTOLBSETP07, send default response.
+ Device Get Tag for SDTOLBSETP08, send default response.
+ Device Get Tag for SDTOLBSETP09, send default response.
+ Device Get Tag for SDTOLBSETP10, send default response.
+ Device Get Tag for SDTOLBSETP11, send default response.
+ Device Get Tag for SDTOLBSETP12, send default response.
+ Device Get Tag for SDTOLBSETP13, send default response.
+ Device Get Tag for SDTOLBSETP14, send default response.
+ Device Get Tag for SDTOLBSETP15, send default response.
+ Device Get Tag for SDTOLBSETP16, send default response.
+ Device Get Tag for SDTOLBSETP17, send default response.
+
+
+
+ Really want to exit ? 
+ Modify Print Levels ? 
+
+ ICCP-LITE Demo Logging - 
+ Enable MIT Unrecoverable Errors Debug Print (now ON) ?CCCC

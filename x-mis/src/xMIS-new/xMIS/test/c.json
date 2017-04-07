@@ -1,0 +1,69 @@
+//相关地址
+{
+	"success" : true,
+	"totalCount" : 1,
+	"rows" : [{
+				"address" : {
+					"addressID" : "40298b3b3a0a6c2d013a0a9da4480002",
+					"addressInfo" : "\u516B\u697C\u4E09\u5355\u5143\u56DB\u53F7",
+					"city" : {
+						"abbreviation" : "",
+						"areaCode" : "",
+						"cityCode" : "",
+						"cityID" : 18,
+						"cityName" : "\u664B\u57CE",
+						"lastModified" : null,
+						"lastModifier" : null,
+						"province" : {
+							"abbreviation" : "\u664B",
+							"area" : {
+								"abbreviation" : "",
+								"areaCode" : "",
+								"areaID" : 1,
+								"areaName" : "\u534E\u5317",
+								"country" : {
+									"abbreviation" : "",
+									"countryCode" : "",
+									"countryID" : 1,
+									"countryName" : "\u4E2D\u56FD",
+									"currency" : null,
+									"internation" : {
+										"abbreviation" : "",
+										"internationCode" : "",
+										"internationID" : 1,
+										"internationName" : "\u4E9A\u6D32",
+										"lastModified" : null,
+										"lastModifier" : null
+									},
+									"lastModified" : null,
+									"lastModifier" : null,
+									"updateDate" : null,
+									"updateID" : 0
+								},
+								"lastModified" : null,
+								"lastModifier" : null
+							},
+							"lastModified" : null,
+							"lastModifier" : null,
+							"provinceCode" : "",
+							"provinceID" : 4,
+							"provinceName" : "\u5C71\u897F"
+						}
+					},
+					"district" : "\u533A\u53BF",
+					"lastModified" : null,
+					"lastModifier" : null,
+					"zipCode" : 111111
+				},
+				"companyId" : 1835,
+				"contactPersonA" : null,
+				"contactPersonB" : null,
+				"id" : "40298b3b3a0a6c2d013a0a9da43c0001",
+				"lastModified" : "2012-09-28 11:08:10",
+				"lastModifier" : {
+					"flag" : false,
+					"userID" : -1,
+					"userName" : "Administrator"
+				}
+			}]
+}

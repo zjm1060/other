@@ -1,0 +1,175 @@
+c_concl.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_concl.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_defvl.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_defvl.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_delvl.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_delvl.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_fclose.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_fclose.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_fdel.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_fdel.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_fdir.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_fdir.c", 第 60 行: 警告: 类型后的存储类将被废弃
+c_fget.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_fget.c", 第 41 行: 警告: 类型后的存储类将被废弃
+c_fopen.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_fopen.c", 第 54 行: 警告: 类型后的存储类将被废弃
+c_fread.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_fread.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_fren.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_fren.c", 第 48 行: 警告: 类型后的存储类将被废弃
+c_getdom.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_getdom.c", 第 52 行: 警告: 类型后的存储类将被废弃
+c_getnam.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_getnam.c", 第 52 行: 警告: 类型后的存储类将被废弃
+c_getvar.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_getvar.c", 第 52 行: 警告: 类型后的存储类将被废弃
+c_getvla.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_getvla.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_ident.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_ident.c", 第 51 行: 警告: 类型后的存储类将被废弃
+c_info.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_info.c", 第 52 行: 警告: 类型后的存储类将被废弃
+c_jinit.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_jinit.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_jread.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_jread.c", 第 56 行: 警告: 类型后的存储类将被废弃
+c_jstat.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_jstat.c", 第 53 行: 警告: 类型后的存储类将被废弃
+c_read.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_read.c", 第 60 行: 警告: 类型后的存储类将被废弃
+c_obtfi.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_obtfi.c", 第 42 行: 警告: 类型后的存储类将被废弃
+c_status.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_status.c", 第 52 行: 警告: 类型后的存储类将被废弃
+c_write.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"c_write.c", 第 70 行: 警告: 类型后的存储类将被废弃
+mvl_buf.c
+"mvl_buf.c", 第 24 行: 警告: 空转换单元
+mvl_dtyp.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_dtyp.c", 第 45 行: 警告: 类型后的存储类将被废弃
+mvl_obj.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_obj.c", 第 60 行: 警告: 类型后的存储类将被废弃
+mvl_objb.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_objb.c", 第 58 行: 警告: 类型后的存储类将被废弃
+"mvl_objb.c", 第 439 行: 警告: 语句执行不到
+"mvl_objb.c", 第 481 行: 警告: 语句执行不到
+"mvl_objb.c", 第 508 行: 警告: 语句执行不到
+"mvl_objb.c", 第 514 行: 警告: 语句执行不到
+mvl_ijou.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_ijou.c", 第 43 行: 警告: 类型后的存储类将被废弃
+mvl_send.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_send.c", 第 52 行: 警告: 类型后的存储类将被废弃
+mvl_serv.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_serv.c", 第 93 行: 警告: 类型后的存储类将被废弃
+mvl_typ2.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_typ2.c", 第 38 行: 警告: 类型后的存储类将被废弃
+mvl_type.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+mvl_var.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"mvl_var.c", 第 65 行: 警告: 类型后的存储类将被废弃
+s_cancel.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_cancel.c", 第 43 行: 警告: 类型后的存储类将被废弃
+s_concl.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_concl.c", 第 40 行: 警告: 类型后的存储类将被废弃
+s_defvl.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_defvl.c", 第 47 行: 警告: 类型后的存储类将被废弃
+s_delvl.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_delvl.c", 第 48 行: 警告: 类型后的存储类将被废弃
+s_fclose.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_fclose.c", 第 44 行: 警告: 类型后的存储类将被废弃
+s_fdel.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_fdel.c", 第 42 行: 警告: 类型后的存储类将被废弃
+s_fren.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_fren.c", 第 37 行: 警告: 类型后的存储类将被废弃
+s_fdir.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_fdir.c", 第 46 行: 警告: 类型后的存储类将被废弃
+s_fopen.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_fopen.c", 第 44 行: 警告: 类型后的存储类将被废弃
+s_fread.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_fread.c", 第 44 行: 警告: 类型后的存储类将被废弃
+s_getcl.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_getcl.c", 第 36 行: 警告: 类型后的存储类将被废弃
+s_getdom.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_getdom.c", 第 41 行: 警告: 类型后的存储类将被废弃
+s_getnam.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_getnam.c", 第 58 行: 警告: 类型后的存储类将被废弃
+s_getvaa.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_getvaa.c", 第 50 行: 警告: 类型后的存储类将被废弃
+s_getvla.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_getvla.c", 第 52 行: 警告: 类型后的存储类将被废弃
+s_ident.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_ident.c", 第 42 行: 警告: 类型后的存储类将被废弃
+s_info.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_info.c", 第 51 行: 警告: 类型后的存储类将被废弃
+s_jinit.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_jinit.c", 第 44 行: 警告: 类型后的存储类将被废弃
+s_jstat.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_jstat.c", 第 42 行: 警告: 类型后的存储类将被废弃
+s_obtfi.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_obtfi.c", 第 43 行: 警告: 类型后的存储类将被废弃
+s_read.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_read.c", 第 61 行: 警告: 类型后的存储类将被废弃
+"s_read.c", 第 215 行: 警告: 语句执行不到
+s_status.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_status.c", 第 42 行: 警告: 类型后的存储类将被废弃
+s_write.c
+"../../inc/mvl_defs.h", 第 165 行: 警告: 重新定义宏: ICCP_LITE_SUPP 
+"s_write.c", 第 60 行: 警告: 类型后的存储类将被废弃
+"s_write.c", 第 318 行: 警告: 语句执行不到
+ar: creating ../../lib/mvl_ld.a
+FINISHED CREATING ../../lib/mvl_ld.a LIBRARY
+-----------------------------------------------------

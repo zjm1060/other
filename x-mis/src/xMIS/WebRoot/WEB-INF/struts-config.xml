@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+  <data-sources />
+  <form-beans>
+	<form-bean name="loginForm" type="com.bitc.jk.xmis.web.form.LoginForm" />  
+  </form-beans>
+  <global-exceptions />
+  <global-forwards >
+      <forward name="loginFailed" path="/login.jsp" />
+  </global-forwards>
+  <action-mappings >
+    <action parameter="method" path="/console" type="org.springframework.web.struts.DelegatingActionProxy" validate="false">
+      <forward name="reLogin" path="/login.jsp" />
+    </action>  	
+    <action name="loginForm" parameter="method" path="/loginAction" type="org.springframework.web.struts.DelegatingActionProxy" validate="false">
+      <forward name="loginSuccessfully" path="/portal/bitcMain.jsp" />
+      <forward name="loginSuccessfully_ext" path="/extPortal/bitcMain.jsp" />
+    </action>  	
+    <action parameter="method" path="/logout" type="org.springframework.web.struts.DelegatingActionProxy" validate="false">
+      <forward name="reLogin" path="/login.jsp" />
+    </action>  	
+    <action parameter="method" path="/orgMaint" type="org.springframework.web.struts.DelegatingActionProxy" validate="false">
+      <forward name="org_maint" path="/portal/bitcMain.jsp" />
+      <forward name="deptTree" path="/portal/bitcMain.jsp"></forward>
+      <forward name="divisionTotalSummary" path="/organization/deptTotalSummary.jsp"></forward>
+      <forward name="deptTotalSummary" path="/organization/empTotalSummary.jsp"></forward>
+      <forward name="employee" path="/organization/employee.jsp"></forward>
+    </action>  	
+    <action parameter="method" path="/contractMain" type="org.springframework.web.struts.DelegatingActionProxy" validate="false">
+      <forward name="contractList" path="/portal/bitcMain.jsp"></forward>
+      <forward name="contractList_ext" path="/portal/operationPart.jsp"></forward>
+
+      <forward name="contract" path="/portal/bitcMain.jsp"></forward>
+      <forward name="contractExt" path="/contract/subMainContract.jsp"></forward>
+      <forward name="contractReadOnly" path="/contract/contractInfo.jsp"></forward>
+      <forward name="paymentListEdit" path="/portal/bitcMain.jsp"></forward>
+      <forward name="invoiceEdit" path="/portal/bitcMain.jsp"></forward>
+      <forward name="paymentOption" path="/contract/paymentOption.jsp"></forward>
+    </action> 	
+    <action parameter="method" path="/crmMaint" type="org.springframework.web.struts.DelegatingActionProxy" validate="false">
+    </action> 	
+    <action parameter="method" path="/projectMaint" type="org.springframework.web.struts.DelegatingActionProxy" validate="false">
+    </action> 	
+  </action-mappings>
+  <!-- message-resources parameter="com.bitc.jk.xmis.ApplicationResources" /-->
+</struts-config>
+

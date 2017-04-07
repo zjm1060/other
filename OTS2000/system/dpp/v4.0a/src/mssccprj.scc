@@ -1,0 +1,17 @@
+SCC = This is a Source Code Control file
+
+[dpp.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dpp/v4.0a/src", NJEAAAAA
+
+[dpp.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dpp/v4.0a/src", NJEAAAAA
+
+[dpplib.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dpp/v4.0a/src", NJEAAAAA
+
+[dpplib.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/dpp/v4.0a/src", NJEAAAAA

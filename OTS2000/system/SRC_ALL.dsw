@@ -1,0 +1,932 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "AlmClassGen"=.\telalm\v4.0a\src\AlmClassGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ReadGps"=.\ts\v4.0a\src\ReadGps.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RptGen"=.\pas\v4.0a\src\RptGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SgzyGen"=.\pas\v4.0a\src\SgzyGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SimuEngine"=.\ots\SimuEngine\src\SimuEngine.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TelAlm"=.\telalm\v4.0a\src\TelAlm.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name jtaud
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "agc"=.\agc\v4.0a\src\agc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "audAlm"=.\dps\v4.0a\src\audAlm.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name jtaud
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name msaud
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "audGen"=.\dps\v4.0a\src\audGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "avc"=.\avc\v4.0a\src\avc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "calcugenname"=.\pas\v4.0a\src\calcugenname.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cmdlib"=.\cmd\v4.0a\src\cmdlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "curvewrite"=.\hdb\v4.0a\src\curvewrite.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dblib"=.\dms\v4.0a\src\dblib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dbread"=.\dms\v4.0a\src\dbread.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dbwrite"=.\dps\v4.0a\src\dbwrite.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cmdlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dmsmon"=.\dms\v4.0a\src\dmsmon.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dpp"=.\dpp\v4.0a\src\dpp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dpplib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cmdlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name plclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dpplib"=.\dpp\v4.0a\src\dpplib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dpslib"=.\dps\v4.0a\src\dpslib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "event_search"=.\dps\v4.0a\src\event_search.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "faultTable"=.\dps\v4.0a\src\faultTable.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "hmgr"=.\hmgr\v4.0a\src\hmgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "interlockname"=.\pas\v4.0a\src\interlockname.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ipclib"=.\dps\v4.0a\src\ipclib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "jtaud"=.\dps\v4.0a\src\jtaud.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "lan_inb"=.\lan\v4.0a\src\lan_inb.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "lan_lib"=.\lan\v4.0a\src\lan_lib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "lan_outb"=.\lan\v4.0a\src\lan_outb.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mbxscan"=.\mbplus\v4.0a\src\mbxscan.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name plclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "msaud"=.\dps\v4.0a\src\msaud.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "netmon"=.\plc\v4.0a\src\netmon.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "oix"=.\oix\v4.0a\src\oix.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cmdlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "pdc"=.\pas\v4.0a\src\pdc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cmdlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpplib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "periodwrite"=.\hdb\v4.0a\src\periodwrite.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "plccmd"=.\plc\v4.0a\src\plccmd.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cmdlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name plclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "plclib"=.\plc\v4.0a\src\plclib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "plcmon"=.\plc\v4.0a\src\plcmon.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cmdlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name plclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "plcscan"=.\plc\v4.0a\src\plcscan.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name plclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "priv_mgr"=.\sms\v4.0a\src\priv_mgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "read_shm"=.\dps\v4.0a\src\read_shm.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "realwrite"=.\hdb\v4.0a\src\hdbwrite.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "relatepoint"=.\pas\v4.0a\src\relatepoint.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "revertscan"=.\hdb\v4.0a\src\revertscan.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sgzy"=.\pas\v4.0a\src\sgzy.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "simuGen"=.\ots\SimuGen\src\simuGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "simurec"=.\ots\v4.0a\src\simurec.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "strTextGen"=.\dms\v4.0a\src\strTextGen.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "syshint"=.\dps\v4.0a\src\syshint.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sysmgr"=.\dps\v4.0a\src\sysmgr.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "sysstop"=.\dps\v4.0a\src\sysstop.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "systemClear"=.\systemClear\systemClear.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "test"=.\lan\v4.0a\src\stest.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cmdlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dblib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpplib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dpslib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ipclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name lan_lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "trend_data_rec"=.\pas\v4.0a\src\trend_data_rec.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

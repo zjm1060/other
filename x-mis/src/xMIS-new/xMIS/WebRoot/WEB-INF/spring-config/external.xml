@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	<!-- MantisDataSource  Begin -->
+	<bean id="MantisDataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+		<property name="driver">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="driverUrl">
+			<value>jdbc:mysql://192.169.11.14:3306/mantis?useUnicode=true&amp;characterEncoding=utf-8</value>
+		</property>
+		<property name="user">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>root</value>
+		</property> 
+	</bean>
+	
+	<bean id="MantisJdbcTemplate" 
+		class="org.springframework.jdbc.core.JdbcTemplate"> 
+		<property name="dataSource"> 
+			<ref local="MantisDataSource"/> 
+		</property> 
+	</bean>
+	<bean id="bugdataImpl"  class="com.bitc.jk.xmis.dao.impl.BugdataImpl">
+		<property name="mjt">
+			<ref local="MantisJdbcTemplate" />
+		</property>
+	</bean>	
+	<!-- MantisDataSource  End-->
+	
+	<!-- ZentaoDataSource Begin-->
+	<!-- 
+	<bean id="ZentaoDataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+		<property name="driver">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="driverUrl">
+			<value>jdbc:mysql://192.169.11.27:3306/zentao?useUnicode=true&amp;characterEncoding=utf-8</value>
+		</property>
+		<property name="user">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>root</value>
+		</property>
+	</bean>
+	
+	<bean id="ZentaoJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" >
+		<property name="dataSource">
+			<ref local="ZentaoDataSource"/>
+		</property>
+	</bean>
+	
+	<bean id="zentaoDAOImpl" class="com.bitc.jk.xmis.dao.impl.ZentaoDAOImpl">
+		<property name="zjt">
+			<ref local="ZentaoJdbcTemplate"/>
+		</property>
+	</bean>
+	-->
+	<!-- ZentaoDataSource End-->
+	<bean id="fastMsg" class="com.bitc.jk.xmis.msg.fastmsg.FastMsg">
+		<constructor-arg>
+			<value>http://xmis.bitc.net.cn:5880/openapi/openapi.php</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>5DEDD10D2E434A139A05953BDB66CC68</value>
+		</constructor-arg>
+	</bean>
+</beans>

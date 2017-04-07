@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="ApplyBusinessEntertainment" Name="ApplyBusinessEntertainment" DisplayName="业务招待申报" ResourceFile="" ResourceManager="">
+    <fpdl:DataFields>
+        <fpdl:DataField Id="ApplyBusinessEntertainment.isForceStop" Name="isForceStop" DisplayName="" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="ApplyBusinessEntertainment.isAgree" Name="isAgree" DisplayName="" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="ApplyBusinessEntertainment.isOver" Name="isOver" DisplayName="" DataType="BOOLEAN" InitialValue="false"/>
+    </fpdl:DataFields>
+    <fpdl:StartNode Id="ApplyBusinessEntertainment.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="9"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="114"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.ApplicantApply" Name="ApplicantApply" DisplayName="部门经办人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="68"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="92"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyBusinessEntertainment.ApplicantApply.Task" Name="Task" DisplayName="部门经办人申请" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="部门经办人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="ApplicantApply" DisplayName="部门经办人申请">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/businessEntertainment/applyBusinessEntertainmentForm.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+mealsDate+&quot;业务招待申报&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.DeptManagerApproval" Name="DeptManagerApproval" DisplayName="部门负责人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="245"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="93"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyBusinessEntertainment.DeptManagerApproval.Task" Name="Task" DisplayName="部门负责人审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,0)" DisplayName="部门负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="DeptManagerApproval" DisplayName="部门负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/businessEntertainment/applyBusinessEntertainmentForm.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+mealsDate+&quot;业务招待申报&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.ChargeLeaderApproval" Name="ChargeLeaderApproval" DisplayName="分管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="486"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="88"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyBusinessEntertainment.ChargeLeaderApproval.Task" Name="Task" DisplayName="分管领导审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,1)" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="ChargeLeaderApproval" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/businessEntertainment/applyBusinessEntertainmentForm.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+mealsDate+&quot;业务招待申报&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.CanteenExecutorHandle" Name="CanteenExecutorHandle" DisplayName="食堂执行人员" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="804"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="93"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyBusinessEntertainment.CanteenExecutorHandle.Task" Name="Task" DisplayName="食堂执行人员处理" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(canteenexecutor_role)" DisplayName="食堂执行人员">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="CanteenExecutorHandle" DisplayName="食堂执行人员">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/businessEntertainment/applyBusinessEntertainmentForm.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+mealsDate+&quot;业务招待申报&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.OfficeManagerConfirm" Name="OfficeManagerConfirm" DisplayName="办公室负责人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1205"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="91"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyBusinessEntertainment.OfficeManagerConfirm.Task" Name="Task" DisplayName="办公室负责人确认" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(officemanager_role)" DisplayName="办公室负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="OfficeManagerConfirm" DisplayName="办公室负责人确认">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/businessEntertainment/applyBusinessEntertainmentForm.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+mealsDate+&quot;业务招待申报&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.MagenagerLeaderApprova" Name="MagenagerLeaderApprova" DisplayName="主管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="992"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="93"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyBusinessEntertainment.MagenagerLeaderApprova.Task" Name="Task" DisplayName="主管领导审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(magenagerleader_role)" DisplayName="主管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="MagenagerLeaderApproval" DisplayName="主管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/businessEntertainment/applyBusinessEntertainmentForm.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+mealsDate+&quot;业务招待申报&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.Activity8" Name="Activity8" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="993"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="34"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.Activity10" Name="Activity10" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="31"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="250"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="22"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyBusinessEntertainment.ForceStop" Name="ForceStop" DisplayName="强制结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="31"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="84"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="30"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="ApplyBusinessEntertainment.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="196"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="112"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyBusinessEntertainment.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="376"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="113"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyBusinessEntertainment.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="627"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="110"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyBusinessEntertainment.Synchronizer5" Name="Synchronizer5" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="930"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="113"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyBusinessEntertainment.Synchronizer6" Name="Synchronizer6" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1124"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="113"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="ApplyBusinessEntertainment.EndNode1" Name="EndNode1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1329"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="111"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+        <fpdl:EndNode Id="ApplyBusinessEntertainment.EndNode2" Name="EndNode2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="211"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="-1"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition1" From="ApplyBusinessEntertainment.START_NODE" To="ApplyBusinessEntertainment.ApplicantApply" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition2" From="ApplyBusinessEntertainment.ApplicantApply" To="ApplyBusinessEntertainment.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition3" From="ApplyBusinessEntertainment.Synchronizer1" To="ApplyBusinessEntertainment.DeptManagerApproval" Name="Transition3" DisplayName="">
+            <fpdl:Condition>(!isForceStop)&amp;&amp;(!isDeptManager)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition4" From="ApplyBusinessEntertainment.DeptManagerApproval" To="ApplyBusinessEntertainment.Synchronizer2" Name="Transition4" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition5" From="ApplyBusinessEntertainment.Synchronizer2" To="ApplyBusinessEntertainment.ChargeLeaderApproval" Name="Transition5" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition9" From="ApplyBusinessEntertainment.Synchronizer4" To="ApplyBusinessEntertainment.CanteenExecutorHandle" Name="Transition9" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition11" From="ApplyBusinessEntertainment.CanteenExecutorHandle" To="ApplyBusinessEntertainment.Synchronizer5" Name="Transition11" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition12" From="ApplyBusinessEntertainment.Synchronizer5" To="ApplyBusinessEntertainment.MagenagerLeaderApprova" Name="Transition12" DisplayName="超标">
+            <fpdl:Condition>isOver</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition13" From="ApplyBusinessEntertainment.Synchronizer5" To="ApplyBusinessEntertainment.Activity8" Name="Transition13" DisplayName="">
+            <fpdl:Condition>!isOver</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition14" From="ApplyBusinessEntertainment.Activity8" To="ApplyBusinessEntertainment.Synchronizer6" Name="Transition14" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition15" From="ApplyBusinessEntertainment.MagenagerLeaderApprova" To="ApplyBusinessEntertainment.Synchronizer6" Name="Transition15" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition16" From="ApplyBusinessEntertainment.OfficeManagerConfirm" To="ApplyBusinessEntertainment.EndNode1" Name="Transition16" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition17" From="ApplyBusinessEntertainment.Synchronizer6" To="ApplyBusinessEntertainment.OfficeManagerConfirm" Name="Transition17" DisplayName="">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(2539,102)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition20" From="ApplyBusinessEntertainment.Synchronizer1" To="ApplyBusinessEntertainment.Activity10" Name="Transition20" DisplayName="">
+            <fpdl:Condition>(!isForceStop)&amp;&amp;(isDeptManager)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition21" From="ApplyBusinessEntertainment.Activity10" To="ApplyBusinessEntertainment.Synchronizer2" Name="Transition21" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition19" From="ApplyBusinessEntertainment.ForceStop" To="ApplyBusinessEntertainment.EndNode2" Name="Transition19" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition18" From="ApplyBusinessEntertainment.Synchronizer1" To="ApplyBusinessEntertainment.ForceStop" Name="Transition18" DisplayName="">
+            <fpdl:Condition>isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyBusinessEntertainment.Transition22" From="ApplyBusinessEntertainment.ChargeLeaderApproval" To="ApplyBusinessEntertainment.Synchronizer4" Name="Transition22" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:Loops>
+        <fpdl:Loop Id="ApplyBusinessEntertainment.Loop1" From="ApplyBusinessEntertainment.Synchronizer2" To="ApplyBusinessEntertainment.START_NODE" Name="Loop1" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(345,191)(214,191)(87,190)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ApplyBusinessEntertainment.Loop3" From="ApplyBusinessEntertainment.Synchronizer4" To="ApplyBusinessEntertainment.START_NODE" Name="Loop3" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(623,235)(432,238)(81,238)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ApplyBusinessEntertainment.Loop4" From="ApplyBusinessEntertainment.Synchronizer6" To="ApplyBusinessEntertainment.START_NODE" Name="Loop4" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(1001,255)(76,261)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+    </fpdl:Loops>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+    <fpdl:ExtendedAttributes>
+        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+mealsDate+&quot;业务招待申报&quot;"/>
+    </fpdl:ExtendedAttributes>
+</fpdl:WorkflowProcess>

@@ -1,0 +1,324 @@
+#定义EMS系统所属的主机名及顺序。以空格或换行区分不同主机名。定义格式如下：
+[HOST_NAME]
+JKKFJ 	RB 	右岸中控室 	YES 	操作员工作站1 	UNIX 	
+RBOS2 	RB 	右岸中控室 	YES 	操作员工作站2 	UNIX 	
+RBOS3 	RB 	右岸中控室 	YES 	操作员工作站3 	UNIX 	
+RBOS4 	RB 	左岸中控室 	YES 	操作员工作站4 	UNIX 	
+RBOS5 	RB 	左岸中控室 	YES 	操作员工作站5 	UNIX 	
+RBMOS1 	RB 	监控机房 	YES 	移动工作站1 	UNIX 	
+RBMOS2 	RB 	监控机房 	YES 	移动工作站2 	UNIX 	
+RBMOS3 	RB 	监控机房 	YES 	移动工作站3 	UNIX 	
+RBES1 	RB 	监控机房 	YES 	工程师工作站1 	UNIX 	
+RBES2 	RB 	监控机房 	YES 	工程师工作站2 	UNIX 	
+RBTS 	RB 	监控机房 	YES 	培训工作站 	UNIX 	
+RBDBS1 	RB 	监控机房 	YES 	数据采集服务1 	UNIX 	
+RBDBS2 	RB 	监控机房 	YES 	数据采集服务2 	UNIX 	
+RBDBS3 	RB 	监控机房 	YES 	数据采集服务3 	UNIX 	
+RBDBS4 	RB 	监控机房 	YES 	数据采集服务4 	UNIX 	
+RBAPWS1 	RB 	监控机房 	YES 	应用服务器1 	UNIX 	
+RBAPWS2 	RB 	监控机房 	YES 	应用服务器2 	UNIX 	
+RBDCOM1 	RB 	监控机房 	YES 	调度通讯服务1 	UNIX 	
+RBDCOM2 	RB 	监控机房 	YES 	调度通讯服务2 	UNIX 	
+RBDLP 	RB 	右岸中控室 	NO 	大屏幕控制器 	WINDOWS 	D
+RBRPTS 	RB 	监控机房 	NO 	报表工作站 	WINDOWS 	D
+RBTPAWS 	RB 	监控机房 	YES 	电话语音报警工作站 	WINDOWS 	D
+RBCOMS 	RB 	监控机房 	YES 	厂内通讯服务器 	WINDOWS 	D
+RBHDBS1 	RB 	监控机房 	YES 	历史数据服务器1 	UNIX 	
+RBHDBS2 	RB 	监控机房 	YES 	历史数据服务器2 	UNIX 	
+RBSTERM1 	RB 	右岸中控室 	YES 	查询终端1 	WINDOWS 	D
+RBSTERM2 	RB 	左岸中控室 	YES 	查询终端2 	WINDOWS 	D
+RBWEBS1 	RB 	监控机房 	NO 	Web发布服务器1 	WINDOWS 	D
+RBWEBS2 	RB 	监控机房 	NO 	Web发布服务器2 	WINDOWS 	D
+RBWEBDBS 	RB 	监控机房 	NO 	Web数据服务器 	WINDOWS 	D
+HP5100A 	RB 	监控机房 	NO 	打印机 	PRINTER 	
+HP5100B 	RB 	监控机房 	NO 	打印机 	PRINTER 	
+HP5200 	RB 	监控机房 	NO 	打印机 	PRINTER 	
+HP5500 	RB 	监控机房 	NO 	打印机 	COLOR_PRT 	
+RBIPC15R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC16R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC17R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC18R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC19R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC20R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC21R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC22R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC23R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC24R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC25R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC26R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC27R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC28R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC29R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC30R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC31R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC32R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC33R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC34R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC35R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC36R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC37R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+RBIPC38R 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+AEC-DELL2 	RB 	监控机房 	NO 	工控机 	WIN_ISLAND 	D
+
+#定义服务器类型主机和操作员站类型主机
+[HOST_ROLE]
+OPERATOR 	JKKFJ 	RBOS2 	RBOS3 	RBOS4 	RBOS5 	RBMOS1 	RBMOS2 	RBMOS3
+SERVER 		RBDBS1 	RBDBS2 	RBDBS3 	RBDBS4 	
+ALM_PRINTER 	HP5100A HP5100B
+HCOPY_PRINTER 	HP5500  HP5100A 	
+RPT_PRINTER 	HP5100A 	HP5100B 	
+GW_SERVER 	RBDCOM1 	RBDCOM2
+APP_SERVER 	RBAPWS1 	RBAPWS2
+
+#定义EMS系统所属的主机名及顺序。以空格或换行区分不同主机名。定义格式如下：
+#example:
+#SXOPD:		信息网ip1 信息网ip2 控制网ip1 控制网ip2	
+[HOST_IPADDR]
+JKKFJ 	139.1.1.101 	139.1.2.101 	138.1.1.101 	138.1.2.101
+RBOS2 	139.1.1.102 	139.1.2.102 	138.1.1.102 	138.1.2.102
+RBOS3 	139.1.1.103 	139.1.2.103 	138.1.1.103 	138.1.2.103
+RBOS4 	139.1.1.104 	139.1.2.104 	138.1.1.104 	138.1.2.104
+RBOS5 	139.1.1.105 	139.1.2.105 	138.1.1.105 	138.1.2.105
+RBES1 	139.1.1.106 	139.1.2.106 	138.1.1.106 	138.1.2.106
+RBES2 	139.1.1.107 	139.1.2.107 	138.1.1.107 	138.1.2.107
+RBTS 	139.1.1.108 	139.1.2.108 	138.1.1.108 	138.1.2.108
+RBDBS1 	139.1.1.109 	139.1.2.109 	138.1.1.109 	138.1.2.109
+RBDBS2 	139.1.1.110 	139.1.2.110 	138.1.1.110 	138.1.2.110
+RBDBS3 	139.1.1.111 	139.1.2.111 	138.1.1.111 	138.1.2.111
+RBDBS4 	139.1.1.112 	139.1.2.112 	138.1.1.112 	138.1.2.112
+RBAPWS1 139.1.1.113 	139.1.2.113 	138.1.1.113 	138.1.2.113
+RBAPWS2 139.1.1.114 	139.1.2.114 	138.1.1.114 	138.1.2.114
+RBDCOM1 139.1.1.115 	139.1.2.115 	138.1.1.115 	138.1.2.115
+RBDCOM2 139.1.1.116 	139.1.2.116 	138.1.1.116 	138.1.2.116
+RBDLP 	139.1.1.117 	139.1.2.117 	
+RBRPTS 	139.1.1.118 	139.1.2.118 	
+RBTPAWS 139.1.1.119 	139.1.2.119 	
+RBCOMS 	139.1.1.120 	139.1.2.120 	
+RBMOS1 	139.1.1.121 	139.1.2.121 	138.1.1.121 	138.1.2.121
+RBMOS2 	139.1.1.122 	139.1.2.122 	138.1.1.122 	138.1.2.122
+RBMOS3 	139.1.1.123 	139.1.2.123 	138.1.1.123 	138.1.2.123
+RBHDBS1 139.1.1.124 	139.1.2.124 	
+RBHDBS2 139.1.1.125 	139.1.2.125 	
+RBSTERM1 139.1.1.126 	139.1.2.126 	
+AEC-DELL2 139.1.1.127 	139.1.2.127
+	 	
+
+#广播地址
+[BROADCAST]
+139.1.1.255 	139.1.2.255	138.1.1.255	138.1.2.255
+
+[LCU_IPADDR]
+RB 	LCU15R 	138.1.1.1 	138.1.2.1 	138.1.1.2 	138.1.2.2
+RB 	LCU16R 	138.1.1.3 	138.1.2.3 	138.1.1.4 	138.1.2.4
+RB 	LCU17R 	138.1.1.5 	138.1.2.5 	138.1.1.6 	138.1.2.6
+RB 	LCU18R 	138.1.1.7 	138.1.2.7 	138.1.1.8 	138.1.2.8
+RB 	LCU19R 	138.1.1.9 	138.1.2.9 	138.1.1.10 	138.1.2.10
+RB 	LCU20R 	138.1.1.11 	138.1.2.11 	138.1.1.12 	138.1.2.12
+RB 	LCU21R 	138.1.1.13 	138.1.2.13 	138.1.1.14 	138.1.2.14
+RB 	LCU22R 	138.1.1.15 	138.1.2.15 	138.1.1.16 	138.1.2.16
+RB 	LCU23R 	138.1.1.17 	138.1.2.17 	138.1.1.18 	138.1.2.18
+RB 	LCU24R 	138.1.1.19 	138.1.2.19 	138.1.1.20 	138.1.2.20
+RB 	LCU25R 	138.1.1.21 	138.1.2.21 	138.1.1.22 	138.1.2.22
+RB 	LCU26R 	138.1.1.23 	138.1.2.23 	138.1.1.24 	138.1.2.24
+RB 	LCU33R 	138.1.1.25 	138.1.2.25 	138.1.1.26 	138.1.2.26
+RB 	LCU34R 	138.1.1.27 	138.1.2.27 	138.1.1.28 	138.1.2.28
+RB 	LCU35R 	138.1.1.29 	138.1.2.29 	138.1.1.30 	138.1.2.30
+RB 	LCU36R 	138.1.1.31 	138.1.2.31 	138.1.1.32 	138.1.2.32
+RB 	LCU37R 	138.1.1.33 	138.1.2.33 	138.1.1.34 	138.1.2.34
+RB 	LCU38R 	138.1.1.35 	138.1.2.35 	138.1.1.36 	138.1.2.36
+
+[BASE_PROCESS]
+lan_inb
+lan_outb
+dbwrite
+
+
+#To define the process which will be started up by sysmgr.exe.
+#The starting sequcence for all process according to the definitionas below.
+[HOST_PROCESS]
+JKKFJ 	hmgr plccmd faultTable 	logwrite !pdc !alarmscan !revertscan !curvescan !sgzy !oix
+RBOS2 	hmgr plccmd faultTable	logwrite pdc alarmscan revertscan curvescan sgzy oix 	
+RBOS3 	hmgr plccmd faultTable	logwrite pdc alarmscan revertscan curvescan sgzy oix
+RBOS4 	hmgr plccmd faultTable	logwrite pdc alarmscan revertscan curvescan sgzy oix
+RBOS5 	hmgr plccmd faultTable	logwrite pdc alarmscan revertscan curvescan sgzy oix
+RBES1 	hmgr plccmd faultTable	logwrite pdc alarmscan revertscan curvescan sgzy	
+RBES2 	hmgr plccmd faultTable	logwrite pdc alarmscan revertscan curvescan sgzy
+	
+RBDBS1 	
+RBDBS2 	hmgr plccmd faultTable	logwrite pdc plcscan dpp plcmon
+RBDBS3 	hmgr plccmd faultTable	logwrite pdc plcscan dpp plcmon
+RBDBS4 	hmgr plccmd faultTable	logwrite pdc plcscan dpp plcmon
+RBMOS1 	plccmd faultTable hmgr	logwrite pdc plcscan  dpp alarmscan revertscan curvescan sgzy
+RBMOS2 	plccmd faultTable hmgr	logwrite pdc plcscan  dpp alarmscan revertscan curvescan sgzy
+RBMOS3 	plccmd faultTable hmgr	logwrite pdc plcscan  dpp alarmscan revertscan curvescan sgzy
+RBAPWS1 hmgr plccmd faultTable	logwrite pdc waterRevert  agc avc			
+RBAPWS2 hmgr plccmd faultTable	logwrite pdc waterRevert  agc avc		
+RBDCOM1	hmgr plccmd faultTable	logwrite pdc curvewrite hdbwrite periodwrite alarmscan revertscan curvescan cc_iec101s_com iccp_main iec101s_com iec104s_com
+RBDCOM2	hmgr plccmd faultTable	logwrite pdc curvewrite hdbwrite periodwrite alarmscan revertscan curvescan cc_iec101s_com iccp_main iec101s_com iec104s_com
+RBWEBDBS faultTable logwrite pdc curvewrite hdbwrite periodwrite alarmscan revertscan curvescan
+RBTS 	hmgr plccmd faultTable logwrite pdc alarmscan revertscan curvescan
+RBTPAWS hmgr faultTable logwrite pdc telalm
+RBSTERM2  faultTable  logwrite pdc dpp
+RBSTERM2  faultTable  logwrite pdc dpp
+RBCOMS  hmgr faultTable logwrite pdc mbs
+RBIPC15R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC16R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC17R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC18R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC19R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC20R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC21R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC22R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC23R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC24R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC25R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC26R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC27R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC28R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC29R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC30R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC31R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC32R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC33R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC34R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC35R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC36R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC37R  faultTable  logwrite pdc dpp mbxscan readgps
+RBIPC38R  faultTable  logwrite pdc dpp mbxscan readgps
+AEC-DELL2 
+[REMOTE_COPY]
+RBDBS1
+RBDBS2
+RBDBS3
+RBDBS4
+JKKFJ
+RBOS2
+RBOS3
+RBOS4
+RBOS5
+
+#定义主/备机组。每行定义格式如下：
+#example:
+#FTOPA	  FTOPB
+[HOST_SWITCH]
+RBAPWS1 	RBAPWS2
+RBDCOM1		RBDCOM2
+
+#定义时钟服务器。格式如下：
+#服务器主机名   服务器1网IP地址	 服务器2网IP地址  服务器通讯口	
+#其中通讯口类型包括如下类型：
+# WINDOWS: COM1, COM2;
+# UNIX:    //dev//ttya, //dev//ttyb, //dev//tty00  //dev//tty01
+[TIME_SERVER]
+RBDBS1		//dev//ttya	IWHRGPS
+
+#定义对特定LCU进行数据采集的主机之优先级。格式如下：
+#厂站名 	LCU设备名   主机1 主机2  主机3 主机4 主机5  主机6  主机7 主机8 主机9  主机10	
+[PLC_SCAN]
+RB 	LCU15R 	RBDBS1 	RBDBS2 	RBDBS3 	RBDBS4
+RB 	LCU16R 	RBDBS1 	RBDBS2 	RBDBS3 	RBDBS4 	
+RB 	LCU17R 	RBDBS1 	RBDBS2 	RBDBS3 	RBDBS4 	
+RB 	LCU18R 	RBDBS1 	RBDBS2 	RBDBS3 	RBDBS4
+RB 	LCU19R 	RBDBS1 	RBDBS2 	RBDBS3 	RBDBS4
+RB 	LCU20R 	RBDBS2 	RBDBS1 	RBDBS4 	RBDBS3
+RB 	LCU21R 	RBDBS2 	RBDBS1 	RBDBS4  RBDBS3
+RB 	LCU22R 	RBDBS2 	RBDBS1 	RBDBS4  RBDBS3
+RB 	LCU23R 	RBDBS2 	RBDBS1 	RBDBS4 	RBDBS3
+RB 	LCU24R 	RBDBS2 	RBDBS1 	RBDBS4 	RBDBS3
+RB 	LCU25R 	RBDBS3 	RBDBS4 	RBDBS1 	RBDBS2
+RB 	LCU26R 	RBDBS3 	RBDBS4 	RBDBS1 	RBDBS2
+RB 	LCU33R  RBDBS3 	RBDBS4 	RBDBS1 	RBDBS2
+RB 	LCU34R 	RBDBS3 	RBDBS4 	RBDBS1 	RBDBS2
+RB 	LCU35R 	RBDBS1 	RBDBS3 	RBDBS2 	RBDBS1
+RB 	LCU36R 	RBDBS1 	RBDBS3 	RBDBS2 	RBDBS1
+RB 	LCU37R 	RBDBS4 	RBDBS3 	RBDBS2 	RBDBS1
+RB 	LCU38R 	RBDBS4 	RBDBS3 	RBDBS2 	RBDBS1
+
+[PLC_DOUBLECPU]
+RB 	LCU15R
+RB 	LCU16R
+RB 	LCU17R
+RB 	LCU18R
+RB 	LCU19R
+RB 	LCU20R
+RB 	LCU21R
+RB 	LCU22R
+RB 	LCU23R
+RB 	LCU24R
+RB 	LCU25R
+RB 	LCU26R
+RB 	LCU33R
+RB 	LCU34R
+RB 	LCU35R
+RB 	LCU36R
+RB 	LCU37R
+RB 	LCU38R
+
+#定义主机的命令区ID (1-13,14给工控机专用）
+[CMD_HOST]
+JKKFJ 	1
+RBOS2 	2
+RBOS3 	3
+RBOS4 	4
+RBOS5 	5
+RBAPWS1	6
+RBAPWS2	7
+RBDCOM1	8
+RBDCOM2	9
+RBES1	10
+RBES2	11
+RBMOS1	12
+RBMOS2	12
+RBMOS3	12
+RBDBS1	12
+
+[EMS_PARAMETER]
+SYS_NET_NUM 	2
+CTRL_NET_NUM 	2
+
+[EMS_VARIABLE]
+HYEAR  1
+
+[EMS_STRING]
+GPS_PORT 	//dev//cua//b
+GPS_CLOCK 	IWHR_GPSCLOCK
+SAFE_DAY_NAME 	RB.RB_SYS.ANA.SAFE_DAY
+JC0_JRFHQX_SD 	RB.RB_SYS.CUR.JC0_JRFHQX_SD
+JC0_MRFHQX_SD 	RB.RB_SYS.CUR.JC0_MRFHQX_SD
+JC0_JRFHQX_XZ 	RB.RB_SYS.CUR.JC0_JRFHQX_XZ
+JC0_MRFHQX_XZ 	RB.RB_SYS.CUR.JC0_MRFHQX_XZ
+JC1_JRFHQX_SD 	RB.RB_SYS.CUR.JC1_JRFHQX_SD
+JC1_MRFHQX_SD 	RB.RB_SYS.CUR.JC1_MRFHQX_SD
+JC1_JRFHQX_XZ 	RB.RB_SYS.CUR.JC1_JRFHQX_XZ
+JC1_MRFHQX_XZ 	RB.RB_SYS.CUR.JC1_MRFHQX_XZ
+JC2_JRFHQX_SD 	RB.RB_SYS.CUR.JC2_JRFHQX_SD
+JC2_MRFHQX_SD 	RB.RB_SYS.CUR.JC2_MRFHQX_SD
+JC2_JRFHQX_XZ 	RB.RB_SYS.CUR.JC2_JRFHQX_XZ
+JC2_MRFHQX_XZ 	RB.RB_SYS.CUR.JC2_MRFHQX_XZ
+JC0_JRDYQX 	RB.RB_SYS.CUR.JC0_JRDYQX
+JC0_MRDYQX 	RB.RB_SYS.CUR.JC0_MRDYQX
+JC1_JRDYQX 	RB.RB_SYS.CUR.JC1_JRDYQX
+JC1_MRDYQX 	RB.RB_SYS.CUR.JC1_MRDYQX
+JC2_JRDYQX 	RB.RB_SYS.CUR.JC2_JRDYQX
+JC2_MRDYQX 	RB.RB_SYS.CUR.JC2_MRDYQX
+TD0_MRFHQX_SD	RB.RB_SYS.CUR.TD0_MRFHQX_SD
+TD0_MRFHQX_XZ	RB.RB_SYS.CUR.TD0_MRFHQX_XZ
+TD0_MRDYQX	RB.RB_SYS.CUR.TD0_MRDYQX
+TD1_MRFHQX_SD	RB.RB_SYS.CUR.TD1_MRFHQX_SD
+TD1_MRFHQX_XZ	RB.RB_SYS.CUR.TD1_MRFHQX_XZ
+TD1_MRDYQX	RB.RB_SYS.CUR.TD1_MRDYQX
+TD2_MRFHQX_SD	RB.RB_SYS.CUR.TD2_MRFHQX_SD
+TD2_MRFHQX_XZ	RB.RB_SYS.CUR.TD2_MRFHQX_XZ
+TD2_MRDYQX	RB.RB_SYS.CUR.TD2_MRDYQX
+
+#系统标志
+[EMS_FLAG]
+CTRL_NET_INDEPEND 	YES
+EVENT_FILE_LOG 	YES
+POWER_ADJ_LOG 	YES
+
+#梯调名称
+[CASCADE]
+
+END
+

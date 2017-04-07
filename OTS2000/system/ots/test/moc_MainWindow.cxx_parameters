@@ -1,0 +1,12 @@
+-IG:/delta3d-2.5/inc
+-IG:/delta3d-2.5/ext/inc
+-IG:/delta3d-2.5/ext/inc
+-IG:/delta3d-2.5/ext/inc
+-IG:/delta3d-2.5/ext/inc
+-D_SCL_SECURE_NO_WARNINGS
+-D_CRT_SECURE_NO_DEPRECATE
+-DNOMINMAX
+-DWIN32
+-o
+G:/delta3d-2.5/examples/testQt/moc_MainWindow.cxx
+G:/delta3d-2.5/examples/testQt/MainWindow.h

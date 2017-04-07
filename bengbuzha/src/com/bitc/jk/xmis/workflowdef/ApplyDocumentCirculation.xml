@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="ApplyDocumentCirculation" Name="ApplyDocumentCirculation" DisplayName="公文流转" ResourceFile="" ResourceManager="">
+    <fpdl:DataFields>
+        <fpdl:DataField Id="ApplyDocumentCirculation.isForceStop" Name="isForceStop" DisplayName="是否强制结束" DataType="BOOLEAN" InitialValue="false"/>
+    </fpdl:DataFields>
+    <fpdl:StartNode Id="ApplyDocumentCirculation.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="14"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="142"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="ApplyDocumentCirculation.ApplicantApply" Name="ApplicantApply" DisplayName="部门信息员" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="123"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="69"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="123"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyDocumentCirculation.ApplicantApply.Task" Name="Task" DisplayName="部门信息员申请" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="部门经办人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyDocument.jsp" DisplayName="applyDocument.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/officialdocument/applyDocument.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;申请公文流转&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.DeptManagerApproval" Name="DeptManagerApproval" DisplayName="部门负责人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="295"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="121"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyDocumentCirculation.DeptManagerApproval.Task" Name="Task" DisplayName="部门负责人签字" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,0)" DisplayName="部门负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyDocument.jsp" DisplayName="applyDocument.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/officialdocument/applyDocument.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;申请公文流转&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.ChargeLeaderApproval" Name="ChargeLeaderApproval" DisplayName="分管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="514"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="123"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyDocumentCirculation.ChargeLeaderApproval.Task" Name="Task" DisplayName="分管领导签字" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,1)" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyDocument.jsp" DisplayName="applyDocument.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/officialdocument/applyDocument.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;申请公文流转&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.OfficeDirectorApproval" Name="OfficeDirectorApproval" DisplayName="主管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="735"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="122"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyDocumentCirculation.OfficeDirectorApproval.Task" Name="Task" DisplayName="主管领导签字" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(magenagerleader_role) " DisplayName="主管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="applyDocument.jsp" DisplayName="applyDocument.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/officialdocument/applyDocument.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;申请公文流转&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.SuppliesManagerConfirm" Name="SuppliesManagerConfirm" DisplayName="下行文处理人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1094"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="177"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyDocumentCirculation.SuppliesManagerConfirm.Task" Name="Task" DisplayName="下行文处理人确认" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(officemanager_role)" DisplayName="下行文处理人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:ViewForm Name="applyDocument.jsp" DisplayName="applyDocument.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/officialdocument/applyDocument.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:ViewForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicant_name+&quot;申请公文流转&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.ForceStop" Name="ForceStop" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="282"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="47"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.Activity7" Name="Activity7" DisplayName="上行文处理人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="947"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="113"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="ApplyDocumentCirculation.Activity7.Task" Name="Task" DisplayName="上行文处理人接收" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(document_upper_role)" DisplayName="上行文处理人员">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:ViewForm Name="applyDocument.jsp" DisplayName="applyDocument.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/officialdocument/applyDocument.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:ViewForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.忽略" Name="忽略" DisplayName="" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="944"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="204"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="ApplyDocumentCirculation.Activity9" Name="Activity9" DisplayName="强制结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="31"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="109"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="48"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="ApplyDocumentCirculation.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="221"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="142"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyDocumentCirculation.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="432"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="142"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyDocumentCirculation.Synchronizer3" Name="Synchronizer3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="663"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="143"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyDocumentCirculation.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="859"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="141"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="ApplyDocumentCirculation.Synchronizer5" Name="Synchronizer5" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1064"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="207"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="ApplyDocumentCirculation.EndNode2" Name="EndNode2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="225"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="16"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+        <fpdl:EndNode Id="ApplyDocumentCirculation.EndNode3" Name="EndNode3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1134"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="129"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition1" From="ApplyDocumentCirculation.START_NODE" To="ApplyDocumentCirculation.ApplicantApply" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition2" From="ApplyDocumentCirculation.ApplicantApply" To="ApplyDocumentCirculation.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition3" From="ApplyDocumentCirculation.Synchronizer1" To="ApplyDocumentCirculation.DeptManagerApproval" Name="Transition3" DisplayName="">
+            <fpdl:Condition>(!isForceStop)&amp;&amp;(!isDeptManager)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition4" From="ApplyDocumentCirculation.DeptManagerApproval" To="ApplyDocumentCirculation.Synchronizer2" Name="Transition4" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition5" From="ApplyDocumentCirculation.Synchronizer2" To="ApplyDocumentCirculation.ChargeLeaderApproval" Name="Transition5" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition6" From="ApplyDocumentCirculation.ChargeLeaderApproval" To="ApplyDocumentCirculation.Synchronizer3" Name="Transition6" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition7" From="ApplyDocumentCirculation.Synchronizer3" To="ApplyDocumentCirculation.OfficeDirectorApproval" Name="Transition7" DisplayName="同意">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition8" From="ApplyDocumentCirculation.OfficeDirectorApproval" To="ApplyDocumentCirculation.Synchronizer4" Name="Transition8" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition11" From="ApplyDocumentCirculation.Synchronizer1" To="ApplyDocumentCirculation.ForceStop" Name="Transition11" DisplayName="部门负责人">
+            <fpdl:Condition>(!isForceStop)&amp;&amp;(isDeptManager)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition17" From="ApplyDocumentCirculation.Synchronizer5" To="ApplyDocumentCirculation.SuppliesManagerConfirm" Name="Transition17" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition16" From="ApplyDocumentCirculation.忽略" To="ApplyDocumentCirculation.Synchronizer5" Name="Transition16" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition15" From="ApplyDocumentCirculation.Synchronizer4" To="ApplyDocumentCirculation.忽略" Name="Transition15" DisplayName="非上行文">
+            <fpdl:Condition>isAgree&amp;&amp;type!=3</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition19" From="ApplyDocumentCirculation.Synchronizer4" To="ApplyDocumentCirculation.Activity7" Name="Transition19" DisplayName="上行文">
+            <fpdl:Condition>isAgree&amp;&amp;type==3</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition20" From="ApplyDocumentCirculation.ForceStop" To="ApplyDocumentCirculation.Synchronizer2" Name="Transition20" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition21" From="ApplyDocumentCirculation.Synchronizer1" To="ApplyDocumentCirculation.Activity9" Name="Transition21" DisplayName="强制结束">
+            <fpdl:Condition>isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition22" From="ApplyDocumentCirculation.Activity9" To="ApplyDocumentCirculation.EndNode2" Name="Transition22" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition18" From="ApplyDocumentCirculation.Activity7" To="ApplyDocumentCirculation.EndNode3" Name="Transition18" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="ApplyDocumentCirculation.Transition23" From="ApplyDocumentCirculation.SuppliesManagerConfirm" To="ApplyDocumentCirculation.EndNode3" Name="Transition23" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:Loops>
+        <fpdl:Loop Id="ApplyDocumentCirculation.Loop1" From="ApplyDocumentCirculation.Synchronizer2" To="ApplyDocumentCirculation.START_NODE" Name="Loop1" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(399,220)(246,221)(91,225)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ApplyDocumentCirculation.Loop2" From="ApplyDocumentCirculation.Synchronizer3" To="ApplyDocumentCirculation.START_NODE" Name="Loop2" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(586,259)(387,261)(97,264)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="ApplyDocumentCirculation.Loop3" From="ApplyDocumentCirculation.Synchronizer4" To="ApplyDocumentCirculation.START_NODE" Name="Loop3" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(769,300)(532,301)(87,304)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+    </fpdl:Loops>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+</fpdl:WorkflowProcess>

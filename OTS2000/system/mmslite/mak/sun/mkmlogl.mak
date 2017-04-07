@@ -1,0 +1,472 @@
+#########################################################################
+# SISCO SOFTWARE MODULE HEADER ###########################################
+##########################################################################
+#			       						 #
+# MODULE NAME : mkmlogl.mak                       			 #
+# PRODUCT(S)  : MMS-EASE-Lite						 #
+#			       						 #
+# MODULE DESCRIPTION :        						 #
+# This makefile is used by the HP-UX 'make' utility to build the         #
+# MLOG library for MMS-EASE-Lite.  All paths including header 		 #
+# files and object modules are relative to the current project directory #
+# which makes this file as environment independent as possible.  Both 	 #
+# the DEBUG and Non DEBUG versions of the library are made with this 	 #
+# script.  								 #
+#									 #
+# To make the DEBUG library (mlogld.lib), enter the following:		 #
+#									 #
+# 	make -f mkmlogl.mak OPT=-g DEFS=-DDEBUG_SISCO PROJ=mlogld 	 #
+#									 #
+# To make the Non-DEBUG library (mlogl.lib), enter the following:	 #
+#			       						 #
+# Description of HP aCC compiler options used:				 #
+#			       						 #
+#  -c       Suppress the link phase and retain object files		 #
+#  -v       Verbose mode                                                 #
+#  -g       Produce symbolic info in the object file for debugger        #
+#  +Onoall  Generate non-optimized code sequences			 #
+#  +w       Warning output	                 			 #
+#			       						 #
+# 	make -f mkmlogl.mak						 #
+#									 #
+# MODIFICATION LOG :	       						 #
+#  Date     Who   Rev			Comments			 #
+# --------  ---  ------   -------------------------------------------	 #
+# 11/25/02   -     07     proAsset: HP-UX adaption, aCC compiler         #
+# 08/06/01  RKR    06     Removed S_THISFILE				 #
+# 07/26/01  JRB    06     Deleted whitespace chars.                      #
+# 08/15/00  GLB    05     Added VPATH macro to work with new "make"      #
+# 12/03/99  GLB    04     Print build file name on screen during build   #
+# 10/15/99  GLB    03     Added file Rename and Obtain File              #
+# 09/24/99  JRB    02     added:  .c.o:                                  #
+# 11/02/98  JRB    01     Created from DOS version			 #
+##########################################################################
+
+#set the compiler
+#CC         = aCC
+CC = cc
+
+# set the library, object, and include file path names
+LIBDIR = ../../lib
+OBJDIR = .
+INCDIR = ../../inc
+SRCDIR = ../../src
+
+VPATH  = $(SRCDIR)
+
+PROJ  = mlogl
+OPT   =
+DEFS  =
+LIST  = >> cc.lst 2>&1
+
+# set compiler flags
+CFLAGS = -c -v +w +Onoall $(OPT) -I$(INCDIR) $(DEFS) -DMMS_LITE
+
+LIBRARY = $(LIBDIR)/$(PROJ).a
+
+.PRECIOUS:	$(LIBRARY)
+
+# setup the dependencies for the source files
+INCLUDES = $(INCDIR)/glbtypes.h \
+	$(INCDIR)/sysincs.h \
+	$(INCDIR)/mmsdefs.h \
+	$(INCDIR)/glberror.h \
+	$(INCDIR)/gen_list.h \
+	$(INCDIR)/mem_chk.h \
+	$(INCDIR)/mms_pvar.h \
+	$(INCDIR)/mms_mp.h \
+	$(INCDIR)/asn1defs.h \
+	$(INCDIR)/slog.h \
+	$(INCDIR)/mms_vvar.h \
+	$(INCDIR)/mms_err.h \
+	$(INCDIR)/mms_def2.h \
+	$(INCDIR)/mmsintr2.h \
+	$(INCDIR)/mmsldefs.h \
+	$(INCDIR)/mms_dfun.h \
+	$(INCDIR)/mms_perr.h \
+	$(INCDIR)/mms_log.h \
+	$(INCDIR)/mmslog.h \
+	$(INCDIR)/mms_pcon.h \
+	$(INCDIR)/mms_pdom.h \
+	$(INCDIR)/mms_pevn.h \
+	$(INCDIR)/mms_pfil.h \
+	$(INCDIR)/mms_pjou.h \
+	$(INCDIR)/mms_pocs.h \
+	$(INCDIR)/mms_pprg.h \
+	$(INCDIR)/mms_psem.h \
+	$(INCDIR)/mms_pvmd.h \
+	$(INCDIR)/mmsefun.h
+
+# These are the objects that belong in the library
+OBJECTS = mlogl.o \
+	mlogaevn.o \
+	mlogafil.o \
+	mlogavar.o \
+	mlogmisc.o \
+	ml_ackev.o \
+	ml_altec.o \
+	ml_altee.o \
+	ml_cancl.o \
+	ml_concl.o \
+	ml_crepi.o \
+	ml_defea.o \
+	ml_defec.o \
+	ml_defee.o \
+	ml_defsc.o \
+	ml_defse.o \
+	ml_defty.o \
+	ml_defva.o \
+	ml_defvl.o \
+	ml_deldo.o \
+	ml_delea.o \
+	ml_delec.o \
+	ml_delee.o \
+	ml_delpi.o \
+	ml_delse.o \
+	ml_delty.o \
+	ml_delva.o \
+	ml_delvl.o \
+	ml_downl.o \
+	ml_evnot.o \
+	ml_fclos.o \
+	ml_fdele.o \
+	ml_frena.o \
+	ml_fdir.o \
+	ml_fopen.o \
+	ml_fread.o \
+	ml_getae.o \
+	ml_getas.o \
+	ml_getcl.o \
+	ml_getdo.o \
+	ml_getea.o \
+	ml_getec.o \
+	ml_getee.o \
+	ml_getpi.o \
+	ml_getsc.o \
+	ml_getty.o \
+	ml_getva.o \
+	ml_getvl.o \
+	ml_ident.o \
+	ml_info.o \
+	ml_init.o \
+	ml_initd.o \
+	ml_initu.o \
+	ml_input.o \
+	ml_jcrea.o \
+	ml_jdele.o \
+	ml_jinit.o \
+	ml_jread.o \
+	ml_jstat.o \
+	ml_jwrit.o \
+	ml_kill.o \
+	ml_loadd.o \
+	ml_namel.o \
+	ml_obtfi.o \
+	ml_outpu.o \
+	ml_rddwn.o \
+	ml_rdupl.o \
+	ml_read.o \
+	ml_relct.o \
+	ml_renam.o \
+	ml_repea.o \
+	ml_repec.o \
+	ml_repee.o \
+	ml_reset.o \
+	ml_resum.o \
+	ml_rsent.o \
+	ml_rspoo.o \
+	ml_rssta.o \
+	ml_start.o \
+	ml_stat.o \
+	ml_stop.o \
+	ml_store.o \
+	ml_takec.o \
+	ml_termd.o \
+	ml_termu.o \
+	ml_trige.o \
+	ml_uploa.o \
+	ml_ustat.o \
+	ml_write.o
+
+# Main target is the library
+# If any objects have changed, delete and recreate it.
+# NOTE: The lib commands are broken up due to a problem with very long
+# parameter list for lib. There is no other reason for this grouping.
+$(LIBRARY): $(OBJECTS)
+	rm -f $(LIBRARY)
+	ar -q $(LIBRARY) \
+		mlogl.o\
+		mlogaevn.o\
+		mlogafil.o\
+		mlogavar.o\
+		mlogmisc.o\
+		ml_ackev.o\
+		ml_altec.o\
+		ml_altee.o\
+		ml_cancl.o\
+		ml_concl.o\
+		ml_crepi.o\
+		ml_defea.o\
+		ml_defec.o\
+		ml_defee.o\
+		ml_defsc.o\
+		ml_defse.o\
+		ml_defty.o\
+		ml_defva.o\
+		ml_defvl.o\
+		ml_deldo.o\
+		ml_delea.o\
+		ml_delec.o\
+		ml_delee.o\
+		ml_delpi.o\
+		ml_delse.o\
+		ml_delty.o\
+		ml_delva.o\
+		ml_delvl.o\
+		ml_downl.o\
+		ml_evnot.o\
+		ml_fclos.o\
+		ml_fdele.o\
+		ml_frena.o\
+		ml_fdir.o\
+		ml_fopen.o\
+		ml_fread.o\
+		ml_getae.o\
+		ml_getas.o\
+		ml_getcl.o\
+		ml_getdo.o\
+		ml_getea.o\
+		ml_getec.o\
+		ml_getee.o\
+		ml_getpi.o\
+		ml_getsc.o\
+		ml_getty.o\
+		ml_getva.o\
+		ml_getvl.o\
+		ml_ident.o\
+		ml_info.o\
+		ml_init.o\
+		ml_initd.o\
+		ml_initu.o\
+		ml_input.o\
+		ml_jcrea.o\
+		ml_jdele.o\
+		ml_jinit.o\
+		ml_jread.o\
+		ml_jstat.o\
+		ml_jwrit.o\
+		ml_kill.o\
+		ml_loadd.o\
+		ml_namel.o\
+		ml_obtfi.o\
+		ml_outpu.o\
+		ml_rddwn.o\
+		ml_rdupl.o\
+		ml_read.o\
+		ml_relct.o\
+		ml_renam.o\
+		ml_repea.o\
+		ml_repec.o\
+		ml_repee.o\
+		ml_reset.o\
+		ml_resum.o\
+		ml_rsent.o\
+		ml_rspoo.o\
+		ml_rssta.o\
+		ml_start.o\
+		ml_stat.o\
+		ml_stop.o\
+		ml_store.o\
+		ml_takec.o\
+		ml_termd.o\
+		ml_termu.o\
+		ml_trige.o\
+		ml_uploa.o\
+		ml_ustat.o\
+		ml_write.o $(LIST)
+	rm *.o
+	@echo "FINISHED CREATING $(LIBRARY) LIBRARY" $(LIST)
+	@echo "-----------------------------------------------------" $(LIST)
+.c.o:
+	echo mkmlogl.mak: $< $(LIST)
+	$(CC) $(CFLAGS) -o $*.o $< $(LIST)
+
+# do the compile
+mlogl.o: mlogl.c $(INCLUDES)
+
+mlogaevn.o: mlogaevn.c $(INCLUDES)
+
+mlogafil.o: mlogafil.c $(INCLUDES)
+
+mlogavar.o: mlogavar.c $(INCLUDES)
+
+mlogmisc.o: mlogmisc.c $(INCLUDES)
+
+ml_ackev.o: ml_ackev.c $(INCLUDES)
+
+ml_altec.o: ml_altec.c $(INCLUDES)
+
+ml_altee.o: ml_altee.c $(INCLUDES)
+
+ml_cancl.o: ml_cancl.c $(INCLUDES)
+
+ml_concl.o: ml_concl.c $(INCLUDES)
+
+ml_crepi.o: ml_crepi.c $(INCLUDES)
+
+ml_defea.o: ml_defea.c $(INCLUDES)
+
+ml_defec.o: ml_defec.c $(INCLUDES)
+
+ml_defee.o: ml_defee.c $(INCLUDES)
+
+ml_defsc.o: ml_defsc.c $(INCLUDES)
+
+ml_defse.o: ml_defse.c $(INCLUDES)
+
+ml_defty.o: ml_defty.c $(INCLUDES)
+
+ml_defva.o: ml_defva.c $(INCLUDES)
+
+ml_defvl.o: ml_defvl.c $(INCLUDES)
+
+ml_deldo.o: ml_deldo.c $(INCLUDES)
+
+ml_delea.o: ml_delea.c $(INCLUDES)
+
+ml_delec.o: ml_delec.c $(INCLUDES)
+
+ml_delee.o: ml_delee.c $(INCLUDES)
+
+ml_delpi.o: ml_delpi.c $(INCLUDES)
+
+ml_delse.o: ml_delse.c $(INCLUDES)
+
+ml_delty.o: ml_delty.c $(INCLUDES)
+
+ml_delva.o: ml_delva.c $(INCLUDES)
+
+ml_delvl.o: ml_delvl.c $(INCLUDES)
+
+ml_downl.o: ml_downl.c $(INCLUDES)
+
+ml_evnot.o: ml_evnot.c $(INCLUDES)
+
+ml_fclos.o: ml_fclos.c $(INCLUDES)
+
+ml_fdele.o: ml_fdele.c $(INCLUDES)
+
+ml_frena.o: ml_frena.c $(INCLUDES)
+
+ml_fdir.o: ml_fdir.c $(INCLUDES)
+
+ml_fopen.o: ml_fopen.c $(INCLUDES)
+
+ml_fread.o: ml_fread.c $(INCLUDES)
+
+ml_getae.o: ml_getae.c $(INCLUDES)
+
+ml_getas.o: ml_getas.c $(INCLUDES)
+
+ml_getcl.o: ml_getcl.c $(INCLUDES)
+
+ml_getdo.o: ml_getdo.c $(INCLUDES)
+
+ml_getea.o: ml_getea.c $(INCLUDES)
+
+ml_getec.o: ml_getec.c $(INCLUDES)
+
+ml_getee.o: ml_getee.c $(INCLUDES)
+
+ml_getpi.o: ml_getpi.c $(INCLUDES)
+
+ml_getsc.o: ml_getsc.c $(INCLUDES)
+
+ml_getty.o: ml_getty.c $(INCLUDES)
+
+ml_getva.o: ml_getva.c $(INCLUDES)
+
+ml_getvl.o: ml_getvl.c $(INCLUDES)
+
+ml_ident.o: ml_ident.c $(INCLUDES)
+
+ml_info.o: ml_info.c $(INCLUDES)
+
+ml_init.o: ml_init.c $(INCLUDES)
+
+ml_initd.o: ml_initd.c $(INCLUDES)
+
+ml_initu.o: ml_initu.c $(INCLUDES)
+
+ml_input.o: ml_input.c $(INCLUDES)
+
+ml_jcrea.o: ml_jcrea.c $(INCLUDES)
+
+ml_jdele.o: ml_jdele.c $(INCLUDES)
+
+ml_jinit.o: ml_jinit.c $(INCLUDES)
+
+ml_jread.o: ml_jread.c $(INCLUDES)
+
+ml_jstat.o: ml_jstat.c $(INCLUDES)
+
+ml_jwrit.o: ml_jwrit.c $(INCLUDES)
+
+ml_kill.o: ml_kill.c $(INCLUDES)
+
+ml_loadd.o: ml_loadd.c $(INCLUDES)
+
+ml_namel.o: ml_namel.c $(INCLUDES)
+
+ml_obtfi.o: ml_obtfi.c $(INCLUDES)
+
+ml_outpu.o: ml_outpu.c $(INCLUDES)
+
+ml_rddwn.o: ml_rddwn.c $(INCLUDES)
+
+ml_rdupl.o: ml_rdupl.c $(INCLUDES)
+
+ml_read.o: ml_read.c $(INCLUDES)
+
+ml_relct.o: ml_relct.c $(INCLUDES)
+
+ml_renam.o: ml_renam.c $(INCLUDES)
+
+ml_repea.o: ml_repea.c $(INCLUDES)
+
+ml_repec.o: ml_repec.c $(INCLUDES)
+
+ml_repee.o: ml_repee.c $(INCLUDES)
+
+ml_reset.o: ml_reset.c $(INCLUDES)
+
+ml_resum.o: ml_resum.c $(INCLUDES)
+
+ml_rsent.o: ml_rsent.c $(INCLUDES)
+
+ml_rspoo.o: ml_rspoo.c $(INCLUDES)
+
+ml_rssta.o: ml_rssta.c $(INCLUDES)
+
+ml_start.o: ml_start.c $(INCLUDES)
+
+ml_stat.o: ml_stat.c $(INCLUDES)
+
+ml_stop.o: ml_stop.c $(INCLUDES)
+
+ml_store.o: ml_store.c $(INCLUDES)
+
+ml_takec.o: ml_takec.c $(INCLUDES)
+
+ml_termd.o: ml_termd.c $(INCLUDES)
+
+ml_termu.o: ml_termu.c $(INCLUDES)
+
+ml_trige.o: ml_trige.c $(INCLUDES)
+
+ml_uploa.o: ml_uploa.c $(INCLUDES)
+
+ml_ustat.o: ml_ustat.c $(INCLUDES)
+
+ml_write.o: ml_write.c $(INCLUDES)
+

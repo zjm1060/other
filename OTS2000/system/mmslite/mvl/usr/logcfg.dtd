@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 (http://www.xmlspy.com) (SISCO, Inc)      -->
+<!-- ****************************************************************** -->
+<!-- * SISCO MODULE HEADER ******************************************** -->
+<!-- ****************************************************************** -->
+<!-- *   (c) Copyright Systems Integration Specialists Company, Inc.,   -->
+<!-- *                      2001, All Rights Reserved                   -->
+<!-- *                                                                  -->
+<!-- * MODULE NAME : LogCfg.dtd                                         -->
+<!-- * PRODUCT(S)  : MMS-Lite                                           -->
+<!-- *                                                                  -->
+<!-- * MODULE DESCRIPTION :                                             -->
+<!-- *                                                                  -->
+<!-- *    Document Type Definition (DTD) File for MMS-Lite              -->
+<!-- *    Logging Configuration Files.  This module can be              -->
+<!-- *    utilized by any MMS-Lite Logging Configuration                -->
+<!-- *    File in XML format, such as 'LogCfg.xml'.                     -->
+<!-- *                                                                  -->
+<!-- *    Comment works like this ...                                   -->
+<!-- *    ? == zero or one elements                                     -->
+<!-- *    + == one or more                                              -->
+<!-- *    * == zero or more elements                                    -->
+<!-- *    no comment == one element                                     -->
+<!-- *                                                                  -->
+<!-- * MODIFICATION LOG :                                               -->
+<!-- *  Date     Who   Rev  Comments                                    -->
+<!-- * =======  =====  === ==========================                   -->
+<!-- * 01/23/02  GLB    12  Made everything but LogControl optional	-->
+<!-- * 01/08/02  GLB    11  Update to reflect XML file changes          -->
+<!-- * 11/05/01  GLB    10  Added MITEST_...,  ICFG_...,                -->
+<!-- *                      CLNP_LOG_ENC_DEC & CLNP_LOG_LLC_ENC_DEC     -->
+<!-- * 11/01/01  GLB    09  Updated header                              -->
+<!-- * 10/15/01  GLB    08  Updated to XML Spy v4.0                     -->
+<!-- * 03/09/01  GLB    06  Made all groups & masks in groups optional  -->
+<!-- * 03/13/01  GLB    05  Added SX_LOG_... masks                      -->
+<!-- * 02/22/01  GLB    04  Added MVLULOG_... masks                     -->
+<!-- * 01/04/01  GLB    03  Added for MARBEN stack:                     -->
+<!-- *                            ACSE_ERR_PRINT, ACSE_NERR_PRINT       -->
+<!-- * 11/29/00  GLB    02  Change logMemoryItems to logMemorySize      -->
+<!-- * 11/17/00  GLB    01  Created                                     -->
+<!-- ****************************************************************** -->
+
+<!-- ****************************************************************** -->
+<!-- *  LOG_CFG                                                    * -->
+<!-- ****************************************************************** -->
+<!ELEMENT LOG_CFG (SxLogMasks?, 
+                   LogControl, 
+                   UserLogMasks?, 
+                   Asn1LogMasks?, 
+                   MmsLogMasks?, 
+                   MvlLogMasks?, 
+                   AcseLogMasks?, 
+                   Tp4LogMasks?, 
+                   ClnpLogMasks?, 
+                   AdlcLogMasks?, 
+                   SmpLogMasks?, 
+                   IcfgLogMasks?,
+                   MiLogMasks?,
+                   MemLogMasks?, 
+                   MemAllocDbgCtrl?)>
+
+<!-- ****************************************************************** -->
+<!-- *  SxLogMasks                                                    * -->
+<!-- ****************************************************************** -->
+<!ELEMENT SxLogMasks (SX_LOG_NERR?, 
+                      SX_LOG_DEC?, 
+                      SX_LOG_ENC?, 
+                      SX_LOG_FLOW?, 
+                      SX_LOG_DEBUG?)>
+<!ELEMENT SX_LOG_NERR (#PCDATA)>
+<!ELEMENT SX_LOG_DEC (#PCDATA)>
+<!ELEMENT SX_LOG_ENC (#PCDATA)>
+<!ELEMENT SX_LOG_FLOW (#PCDATA)>
+<!ELEMENT SX_LOG_DEBUG (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  LogControl                                                    * -->
+<!-- ****************************************************************** -->
+<!ELEMENT LogControl (LogFileAttributes, 
+                      LogMemoryAttributes, 
+                      MiscControlFlags)>
+<!-- ****************************************************************** -->
+<!-- *  LogFileAttributes                                           * -->
+<!ELEMENT LogFileAttributes (LogFileEnable, 
+                             LogFileSize, 
+                             LogFileName)>
+<!ELEMENT LogFileEnable (#PCDATA)>
+<!ELEMENT LogFileSize (#PCDATA)>
+<!ELEMENT LogFileName (#PCDATA)>
+<!-- ****************************************************************** -->
+<!-- *  LogMemoryAttributes                                           * -->
+<!ELEMENT LogMemoryAttributes (LogMemoryEnable, 
+                               LogMemoryItems, 
+                               MemoryFileName, 
+                               MemoryFileDump)>
+<!ELEMENT LogMemoryEnable (#PCDATA)>
+<!ELEMENT LogMemoryItems (#PCDATA)>
+<!ELEMENT MemoryFileName (#PCDATA)>
+<!ELEMENT MemoryFileDump (#PCDATA)>
+<!-- ****************************************************************** -->
+<!-- *  MiscControlFlags                                              * -->
+<!-- ****************************************************************** -->
+<!ELEMENT MiscControlFlags (TimeEnable, 
+                            DestroyOldFile, 
+                            Setbuf, 
+                            MsgHeader, 
+                            Wipe, 
+                            Wrap, 
+                            HardFlush, 
+                            HeaderCr, 
+                            HeaderFilename, 
+                            HeaderLogType)>
+<!ELEMENT TimeEnable (#PCDATA)>
+<!ELEMENT DestroyOldFile (#PCDATA)>
+<!ELEMENT Setbuf (#PCDATA)>
+<!ELEMENT MsgHeader (#PCDATA)>
+<!ELEMENT Wipe (#PCDATA)>
+<!ELEMENT Wrap (#PCDATA)>
+<!ELEMENT HardFlush (#PCDATA)>
+<!ELEMENT HeaderCr (#PCDATA)>
+<!ELEMENT HeaderFilename (#PCDATA)>
+<!ELEMENT HeaderLogType (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  UserLogMasks                                                  * -->
+<!-- ****************************************************************** -->
+<!ELEMENT UserLogMasks (USER_LOG_CLIENT?, 
+                        USER_LOG_SERVER?)>
+<!ELEMENT USER_LOG_CLIENT (#PCDATA)>
+<!ELEMENT USER_LOG_SERVER (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  Asn1LogMasks                                                  * -->
+<!-- ****************************************************************** -->
+<!ELEMENT Asn1LogMasks (ASN1_LOG_NERR?, 
+                        ASN1_LOG_DEC?, 
+                        ASN1_LOG_ENC?)>
+<!ELEMENT ASN1_LOG_NERR (#PCDATA)>
+<!ELEMENT ASN1_LOG_DEC (#PCDATA)>
+<!ELEMENT ASN1_LOG_ENC (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  MmsLogMasks                                                   * -->
+<!-- ****************************************************************** -->
+<!ELEMENT MmsLogMasks (MMS_LOG_NERR?, 
+                       MMS_LOG_DEC?, 
+                       MMS_LOG_ENC?, 
+                       MMS_LOG_RT?, 
+                       MMS_LOG_RTAA?, 
+                       MMS_LOG_AA?)>
+<!ELEMENT MMS_LOG_NERR (#PCDATA)>
+<!ELEMENT MMS_LOG_DEC (#PCDATA)>
+<!ELEMENT MMS_LOG_ENC (#PCDATA)>
+<!ELEMENT MMS_LOG_RT (#PCDATA)>
+<!ELEMENT MMS_LOG_RTAA (#PCDATA)>
+<!ELEMENT MMS_LOG_AA (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  MvlLogMasks                                                   * -->
+<!-- ****************************************************************** -->
+<!ELEMENT MvlLogMasks (MVLLOG_NERR?, 
+                       MVLLOG_ACSE?, 
+                       MVLLOG_ACSEDATA?, 
+                       MVLULOG_FLOW?, 
+                       MVLULOG_DEBUG?, 
+                       MVLULOG_TIMING?)>
+<!ELEMENT MVLLOG_NERR (#PCDATA)>
+<!ELEMENT MVLLOG_ACSE (#PCDATA)>
+<!ELEMENT MVLLOG_ACSEDATA (#PCDATA)>
+<!ELEMENT MVLULOG_FLOW (#PCDATA)>
+<!ELEMENT MVLULOG_DEBUG (#PCDATA)>
+<!ELEMENT MVLULOG_TIMING (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  AcseLogMasks                                                  * -->
+<!-- ****************************************************************** -->
+<!ELEMENT AcseLogMasks (ACSE_LOG_ENC?, 
+                        ACSE_LOG_DEC?, 
+                        ACSE_NERR_PRINT?, 
+                        ACSE_IND_PRINT?, 
+                        ACSE_CNF_PRINT?, 
+                        ACSE_DEC_PRINT?, 
+                        ACSE_ABORT_PRINT?, 
+                        ACSE_DEC_PRINT?, 
+                        ACSE_ABORT_PRINT?)>
+<!ELEMENT ACSE_LOG_ENC (#PCDATA)>
+<!ELEMENT ACSE_LOG_DEC (#PCDATA)>
+<!ELEMENT ACSE_NERR_PRINT (#PCDATA)>
+<!ELEMENT ACSE_IND_PRINT (#PCDATA)>
+<!ELEMENT ACSE_CNF_PRINT (#PCDATA)>
+<!ELEMENT ACSE_DEC_PRINT (#PCDATA)>
+<!ELEMENT ACSE_ABORT_PRINT (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  Tp4LogMasks                                                   * -->
+<!-- ****************************************************************** -->
+<!ELEMENT Tp4LogMasks (TP4_LOG_FLOWUP?, 
+                       TP4_LOG_FLOWDOWN?)>
+<!ELEMENT TP4_LOG_FLOWDOWN (#PCDATA)>
+<!ELEMENT TP4_LOG_FLOWUP (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  ClnpLogMasks                                                   * -->
+<!-- ****************************************************************** -->
+<!ELEMENT ClnpLogMasks (CLNP_LOG_NERR?, 
+                        CLNP_LOG_REQ?, 
+                        CLNP_LOG_IND?, 
+                        CLNP_LOG_ENC_DEC?, 
+                        CLNP_LOG_LLC_ENC_DEC?, 
+                        CLSNS_LOG_REQ?, 
+                        CLSNS_LOG_IND?)>
+<!ELEMENT CLNP_LOG_NERR (#PCDATA)>
+<!ELEMENT CLNP_LOG_REQ (#PCDATA)>
+<!ELEMENT CLNP_LOG_IND (#PCDATA)>
+<!ELEMENT CLNP_LOG_ENC_DEC (#PCDATA)>
+<!ELEMENT CLNP_LOG_LLC_ENC_DEC (#PCDATA)>
+<!ELEMENT CLSNS_LOG_REQ (#PCDATA)>
+<!ELEMENT CLSNS_LOG_IND (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  AdlcLogMasks                                                  * -->
+<!-- ****************************************************************** -->
+<!ELEMENT AdlcLogMasks (ADLC_LOG_NERR?, 
+                        ADLC_LOG_FLOW?, 
+                        ADLC_LOG_IO?, 
+                        ADLC_LOG_HEXIO?, 
+                        ADLC_LOG_SM?, 
+                        ADLC_LOG_HEXSM?, 
+                        ADLC_LOG_USER?, 
+                        ADLC_LOG_HEXUSER?)>
+<!ELEMENT ADLC_LOG_NERR (#PCDATA)>
+<!ELEMENT ADLC_LOG_FLOW (#PCDATA)>
+<!ELEMENT ADLC_LOG_IO (#PCDATA)>
+<!ELEMENT ADLC_LOG_HEXIO (#PCDATA)>
+<!ELEMENT ADLC_LOG_SM (#PCDATA)>
+<!ELEMENT ADLC_LOG_HEXSM (#PCDATA)>
+<!ELEMENT ADLC_LOG_USER (#PCDATA)>
+<!ELEMENT ADLC_LOG_HEXUSER (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  SmpLogMasks                                                   * -->
+<!-- ****************************************************************** -->
+<!ELEMENT SmpLogMasks (SMP_LOG_REQ?, 
+                       SMP_LOG_IND?)>
+<!ELEMENT SMP_LOG_IND (#PCDATA)>
+<!ELEMENT SMP_LOG_REQ (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  IcfgLogMasks                                                  * -->
+<!-- ****************************************************************** -->
+<!ELEMENT IcfgLogMasks (ICFG_LOG_NERR?, 
+                        ICFG_LOG_FLOW?)>
+<!ELEMENT ICFG_LOG_NERR (#PCDATA)>
+<!ELEMENT ICFG_LOG_FLOW (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  MiLogMasks                                                   * -->
+<!-- ****************************************************************** -->
+<!ELEMENT MiLogMasks (MI_LOG_NERR?, 
+                      MI_LOG_FLOW?, 
+                      MI_LOG_DEBUG?)>
+<!ELEMENT MI_LOG_NERR (#PCDATA)>
+<!ELEMENT MI_LOG_FLOW (#PCDATA)>
+<!ELEMENT MI_LOG_DEBUG (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  MemLogMasks                                                   * -->
+<!-- ****************************************************************** -->
+<!ELEMENT MemLogMasks (MEM_LOG_CALLOC?, 
+                       MEM_LOG_MALLOC?, 
+                       MEM_LOG_REALLOC?, 
+                       MEM_LOG_FREE?)>
+<!ELEMENT MEM_LOG_CALLOC (#PCDATA)>
+<!ELEMENT MEM_LOG_MALLOC (#PCDATA)>
+<!ELEMENT MEM_LOG_REALLOC (#PCDATA)>
+<!ELEMENT MEM_LOG_FREE (#PCDATA)>
+
+<!-- ****************************************************************** -->
+<!-- *  MemAllocDbgCtrl                                               * -->
+<!-- ****************************************************************** -->
+<!ELEMENT MemAllocDbgCtrl (MemFillEnable?, 
+                           MemHeapCheck?, 
+                           CheckListEnable?, 
+                           FindNodeEnable?, 
+                           TrackPrevFree?, 
+                           ListDebugSel?, 
+                           NoReallocSmaller?)>
+<!ELEMENT MemFillEnable (#PCDATA)>
+<!ELEMENT MemHeapCheck (#PCDATA)>
+<!ELEMENT CheckListEnable (#PCDATA)>
+<!ELEMENT FindNodeEnable (#PCDATA)>
+<!ELEMENT TrackPrevFree (#PCDATA)>
+<!ELEMENT ListDebugSel (#PCDATA)>
+<!ELEMENT NoReallocSmaller (#PCDATA)>

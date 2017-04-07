@@ -1,0 +1,410 @@
+
+CMDTYPE      NAME = C_UNIT
+
+GROUP      NAME = 0
+STATE      1 发电 START
+STATE      2 停机 STOP
+STATE      3 开停机手动复归令 RESET
+STATE      4 单步操作令 STEP
+STATE      5 跳转令 JUMP
+STATE      6 空转 IDLE SPINNING
+STATE      7 空载 NOLOAD SPINNING
+STATE      8 机组黑启动 BLACK START
+STATE      9 机组调相令 CMP START
+STATE      10 紧急停机 EMERGENCY SHUTDOWN
+STATE      11 解列 OPEN
+STATE      12 开机准备 READY TO START
+STATE      13 主变空载(开机假并网令) TRANSFO NOLOAD START
+STATE      14 零起升压   ZEROVOLT RUN
+STATE      15 带主变零起升压 TRANFO ZEROVOLT RUN
+STATE      16 零起升压转备用 ZEROVOLT RUN TO STANDBY
+STATE      20 开机至冷却水令 START TO COOLING WATER
+STATE      21 开机至空转令 START TO IDLE SPINNING
+STATE      22 开机至空载令 START TO NOLOAD SPINNING
+STATE      23 开机至并网令 START TO ONLINE
+STATE      24 停机至空载令 STOP TO NOLOAD SPINNING
+STATE      25 停机至空转令 STOP TO IDLE SPIN
+STATE      26 停机至冷却水令 STOP TO COOLING WATER
+STATE      27 停机至全停令 STOP TO STANDBY
+STATE      28 单步开机启动流程令 START BY STEP
+STATE      29 单步停机启动流程令 STOP BY STEP
+STATE      30 单步紧急停机启动流程令 EMERGENCY SHUTDOWN BY STEP
+STATE      31 单步快速停机启动流程令 FAST STOP BY STEP
+STATE      32 开泵  PUMP START
+STATE      33 停泵  PUMP STOP
+STATE      34 对拖发电  DRAG START
+STATE      35 变频启动高转速抽水 SFC HIGHSPEED START
+STATE      36 变频启动低转速抽水 SFC LOWSPEED START
+STATE      37 变频启动高转速水泵调相 SFC HIGHSPEED CMP
+STATE      38 变频启动低转速水泵调相 SFC LOWSPEED CMP
+STATE      39 对拖启动高转速抽水 DRAG HIGHSPEED START
+STATE      40 对拖启动低转速抽水 DRAG LOWSPEEDS TART
+STATE      41 对拖启动高转速水泵调相 DRAG HIGHSPEED CMP
+STATE      42 对拖启动低转速水泵调相 DRAG LOWSPEED CMP
+STATE      43 抽水转发电  PUMP TO GEN
+STATE      44 发电转抽水  GEN TO PUMP
+
+CMDTYPE      NAME = C_BREAKER
+
+GROUP      NAME = 0
+STATE      0 故障复归  RESET
+STATE      1 分闸  OPEN
+STATE      2 合闸  CLOSE
+STATE      3 I母对线路充电合 LINE CHARGE FROM BUS 1
+STATE      4 II母对线路充电合 LINE CHARGE FROM BUS 2
+STATE      5 线路对I母充电合 BUS 1 CHARGE FROM LINE
+STATE      6 线路对II母充电合 BUS 2 CHARGE FROM LINE
+STATE      7 变压器对I母充电合 BUS 1 CHARGE FROM TRANSFORMER
+STATE      8 变压器对II母充电合 BUS 2 CHARGE FROM TRANSFORMER
+STATE      9 I母对变压器充电合 TRANSFO CHARGE FROM BUS 1
+STATE      10 II母对变压器充电合 TRANSFO CHARGE FROM BUS 2
+STATE      11 试验合  TEST CLOSE
+STATE      12 同期退出  CANCELSYNC
+STATE      13 环网合  LOOP CLOSE
+STATE      14 充电合  CHARGE CLOSE
+STATE      15 无压合  NO VOLT CLOSE
+
+GROUP      NAME = 1
+STATE      0 故障复归  RESET
+STATE      1 分闸  OPEN
+STATE      2 合闸  CLOSE
+STATE      3 试验分闸  TEST OPEN
+STATE      4 试验合闸  TEST CLOSE
+STATE      5 退同期装置
+
+CMDTYPE      NAME = C_SWITCH
+
+GROUP      NAME = 0
+STATE      0 故障复归 RESET
+STATE      1 分闸 OPEN
+STATE      2 合闸 CLOSE
+STATE      3 试验分闸 TEST OPEN
+STATE      4 试验合闸 TEST CLOSE
+
+CMDTYPE      NAME = C_APOWER
+
+GROUP      NAME = 0
+STATE      0 功率调节 APOWER SETPOINT
+STATE      1 开度调节 OPEN SETPOINT
+STATE      2 流量调节 FLUX SETPOINT
+
+GROUP      NAME = 1
+STATE      0 有功功率调节 APOWER SETPOINT
+STATE      1 开度调节 OPEN SETPOINT
+STATE      2 流量调节 FLUX SETPOINT
+
+CMDTYPE      NAME = C_RPOWER
+
+GROUP      NAME = 0
+STATE      0 功率调节  RPOWER SETPOINT
+STATE      1 电压给定  VOLT SETPOINT
+STATE      2 功率因数给定 POWER FACTOR SETPOINT
+
+GROUP      NAME = 1
+STATE      0 无功功率调节 RPOWER SETPOINT
+STATE      1 电压给定 VOLT SETPOINT
+STATE      2 功率因数给定 POWER FACTOR SETPOINT
+
+CMDTYPE      NAME = C_DEVICE
+
+GROUP      NAME = 0
+STATE      0 故障复归 RESET
+STATE      1 设备退出 OFF
+STATE      2 设备投入 ON
+
+GROUP      NAME = 1
+STATE      0 故障复归 RESET
+STATE      1 设备投入 ON
+STATE      2 设备退出 OFF
+
+GROUP      NAME = 2
+STATE      0 故障复归 RESET
+STATE      1 停止 STOP
+STATE      2 启动 RUN
+
+GROUP      NAME = 3
+STATE      0 故障复归 RESET
+STATE      1 关闭 CLOSE
+STATE      2 开启 OPEN
+
+GROUP      NAME = 4
+STATE      0 故障复归 RESET
+STATE      1 分闸 OPEN
+STATE      2 合闸 CLOSE
+
+CMDTYPE      NAME = C_GATE
+
+GROUP      NAME = 0
+STATE      0 故障复归 RESET
+STATE      1 开闸门 OPEN
+STATE      2 关闸门 CLOSE
+STATE      3 停止操作 STOP
+STATE      4 提升(高度) UP
+STATE      5 下降(高度) DOWN
+STATE      6 快速开闸门 FAST OPEN
+STATE      7 快速关闸门 FAST CLOSE
+STATE      8 步进提升(固定高度) STEP UP
+STATE      9 步进下降(固定高度) STEP DOWN
+STATE      10 前移 FORWARD
+STATE      11 后撤 BACKWARD
+STATE      12 控制调零设定 ZERO SET
+STATE      13 流量设定 FLUX SET
+STATE      14 手动平压 MANUAL BALANCE PRESS
+
+GROUP      NAME = 1
+STATE      0 故障复归 RESET
+STATE      1 开闸门 OPEN
+STATE      2 关闸门 CLOSE
+STATE      3 停止操作 STOP
+STATE      13 开度设定 FLUX SET
+STATE      14 手动平压 MANUAL BALANCE PRESS
+
+CMDTYPE      NAME = C_TRANS
+
+GROUP      NAME = 0
+STATE      0 故障复归 RESET
+STATE      1 上升 RAISE
+STATE      2 下降 DOWN
+STATE      3 停止操作 STOP
+STATE      4 上升至(抽头位置) RAISE TO
+STATE      5 下降至(抽头位置) DOWN TO
+
+CMDTYPE      NAME = C_VOLT_STEP
+
+GROUP      NAME = 0
+STATE      1 单步降压 STEP DECREASE VOLT
+STATE      2 单步升压 STEP RAISE VOLT
+
+CMDTYPE      NAME = C_SPEED_STEP
+
+GROUP      NAME = 0
+STATE      1 单步降频 STEP DECREASE FREQ
+STATE      2 单步升频 STEP RAISE FREQ
+
+CMDTYPE      NAME = C_ONOFF_FORCE
+
+GROUP      NAME = 0
+STATE      0 解除强置 RESET FORCE
+STATE      1 强置分 FORCE OPEN
+STATE      2 强置合 FORCE CLOSE
+
+CMDTYPE      NAME = C_ANA_FORCE
+
+GROUP      NAME = 0
+STATE      0 解除强置 RESET FORCE
+STATE      1 强置模出值 FORCE
+
+CMDTYPE      NAME = C_IO_CTRL_BLOCK
+
+GROUP      NAME = 0
+STATE      0 IO控制恢复 RESET CTRL BLOCK
+STATE      1 IO控制退出 CTRL BLOCK DROP OUT
+
+CMDTYPE      NAME = C_DEV_MODE
+
+GROUP      NAME = 0
+STATE      0 退出 OFF
+STATE      1 投入 ON
+STATE      2 投入运行方式2 ON2
+STATE      3 投入运行方式3  ON3
+
+CMDTYPE      NAME = C_SIGNAL_RESET
+
+GROUP      NAME = 0
+STATE      1 事故信号复归 FAULT RESET
+STATE      2 故障信号复归 FAIL RESET
+
+CMDTYPE      NAME = C_LCU_ONOFF
+
+GROUP      NAME = 0
+STATE      1 设备离线 OFFLINE
+STATE      2 设备在线 ONLINE
+
+CMDTYPE      NAME = TIME_SYNC
+
+GROUP      NAME = 0
+STATE      0 时钟同步 TIMESYNC
+
+CMDTYPE      NAME = C_HOST_SYS
+
+GROUP      NAME = 0
+STATE      1 切至主系统 HOST
+STATE      2 切至辅系统 STANDBY
+
+CMDTYPE      NAME = C_PLC_SWITCH
+
+GROUP      NAME = 0
+STATE      1 切至主CPU HOST CPU
+STATE      2 切至备CPU STANDBY CPU
+
+CMDTYPE      NAME = C_NET_SWITCH
+
+GROUP      NAME = 0
+STATE      1 切至A#网 NETA
+STATE      2 切至B#网 NETB
+STATE      3 切至C#网 NETC
+
+CMDTYPE      NAME = C_OP_VALUE_SET
+
+GROUP      NAME = 0
+STATE      0 实时值 RTVALUE
+
+CMDTYPE      NAME = C_SYS_MODE_SET
+
+GROUP      NAME = 0
+STATE      0 退出 OFF
+STATE      1 投入 ON
+STATE      2 投入方式2 ON2
+STATE      3 投入方式3 ON3
+
+GROUP      NAME = 1
+STATE      0 开环
+STATE      1 半开环
+STATE      2 闭环
+
+GROUP      NAME = 2
+STATE      0 厂站
+STATE      1 成都集控
+STATE      2 四川省调
+
+GROUP      NAME = 4
+STATE      0 开环
+STATE      1 闭环
+
+GROUP      NAME = 5
+STATE      0 退出
+STATE      1 半自动
+STATE      2 全自动
+
+GROUP      NAME = 6
+STATE      0 按日期
+STATE      1 按周期
+
+CMDTYPE      NAME = C_DATA_POLLING
+
+GROUP      NAME = 0
+STATE      0 召唤数据 DATA POLLING
+
+CMDTYPE      NAME = C_LCU_PARAM
+
+GROUP      NAME = 0
+STATE      1 下传LCU参数 LCU PARAM DOWNLOAD
+
+CMDTYPE      NAME = ANA_PARAM_SET
+
+GROUP      NAME = 0
+STATE      0 死区值  DEADBAND
+STATE      1 上上限值  HIGH ALARM LIMIT
+STATE      2 上限值  HIGH WARN LIMIT
+STATE      3 下限值  LOW WARN LIMIT
+STATE      4 下下限值  LOW ALARM LIMIT
+STATE      5 上复限死区值 HIGH RECOVER DEADBAND
+STATE      6 下复限死区值 LOW RECOVER DEADBAND
+STATE      7 工程量转换系数 RATE
+STATE      8 上量程  HIGH RANGE
+STATE      9 下量程  LOW RANGE
+STATE      10 零点值(基值) BASE VALUE
+STATE      11 补偿值  COMPENSATION VALUE
+STATE      12 趋势越限值 TREND LIMIT
+STATE      13 趋势复限死区值 TREND RECOVER DEADBAND
+STATE      14 原码上量程 HIGH CODE RANGE
+STATE      15 原码下量程 LOW CODE RANGE
+
+CMDTYPE      NAME = IMP_PARAM_SET
+
+GROUP      NAME = 0
+STATE      0    脉冲累加值        IMPULSE ACCUM
+STATE      1    电度表读数        METER ACCUM
+STATE      2    日峰值        DAYPEAK
+STATE      3    月峰值        MONTHPEAK
+STATE      4    年峰值        YEARPEAK
+STATE      5    日谷值        DAYVALLEY
+STATE      6    月谷值        MONTHVALLEY
+STATE      7    年谷值        YEARVALLEY
+STATE      8    日平值        DAYNORMAL
+STATE      9    月平值        MONTHNORMAL
+STATE      10   年平值        YEARNORMAL
+STATE      11   日总值        DAYSUM
+STATE      12   月总值        MONTHSUM
+STATE      13   年总值        YEARSUM
+STATE      14   日尖峰值        DAYPPEAK
+STATE      15   月尖峰值        MONTHPPEAK
+STATE      16   年尖峰值        YEARPPEAK
+STATE      17   日总初值        DAYSUMINIT
+STATE      18   月总初值        MONTHSUMINIT
+STATE      19   年总初值        YEARSUMINIT
+STATE      20   工程转换系数       RATE
+STATE      21   PT变比系数       PT RATE
+STATE      22   CT变比系数       CT RATE
+STATE      23   归零翻转值        OVERFLOW
+STATE      24   脉冲基值       BASE VALUE
+
+CMDTYPE      NAME = C_ONOFF_SET
+
+GROUP      NAME = 0
+STATE      1 正常分闸次数 OPEN TOTAL
+STATE      2 正常合闸次数 CLOSE TOTAL
+STATE      3 事故分闸次数 FAULT TRIP TOTAL
+STATE      4 事故合闸次数 FAULT CLOSE TOTAL
+
+CMDTYPE      NAME = IOST_SET
+
+GROUP      NAME = 0
+STATE      1 扫查使能/禁止 DATASCAN ENABLE/DISABLE
+STATE      2 报警使能/禁止 ALARM ENABLE/DISABLE
+STATE      3 报警确认  ALARM ACK
+STATE      4 操作锁定标志 CTRL LOCK
+STATE      5 未更新标志  UPDATE FAIL
+STATE      6 重复报警标志 REPEAT ALARM
+STATE      7 标牌操作  TAG
+
+CMDTYPE      NAME = IOATTR_SET
+
+GROUP      NAME = 0
+STATE      0 历史库转存周期 HDB PERIOD
+STATE      1 接点类型  PROTOTYPE
+STATE      2 报警闭锁点  ALARM CONDITION CHECK
+STATE      3 统计计算点  STATISTIC PT
+STATE      4 事故点  FAULT PT
+STATE      5 故障点  FAIL PT
+STATE      6 控制点  CTRL PT
+STATE      7 事件顺序记录点 SOE PT
+STATE      8 趋势报警点  TREND ALARM PT
+STATE      9 重要信号  KEY SIGNAL PT
+STATE      10 事故追忆点 FAULT REC PT
+STATE      11 语音报警  AUDIO ALARM PT
+STATE      12 开关量常闭接点 NORM CLOSE PT
+STATE      13 开关量双接点 DOUBLE POINT
+STATE      14 上位机虚拟点 SYS VIRTUAL PT
+STATE      15 LCU虚拟点  LCU VIRTUAL PT
+STATE      16 送梯调点  SEND TO CASCADE DISPATCH PT
+STATE      17 存历史库点  HDB RECORD PT
+STATE      18 历史库秒级数据记录点 HDB CURVE PT
+STATE      19 接点ON状态产生事件 ON BRING ALARM
+STATE      20 接点OFF状态产生事件 OFF BRING ALARM
+STATE      21 接点常态   NORM
+
+CMDTYPE      NAME = IO_GROUP_SET
+
+GROUP      NAME = 0
+STATE      0 I/O点组号 IOGROUP
+
+CMDTYPE      NAME = MAN_VALUE_SET
+
+GROUP      NAME = 0
+STATE      0 实时值  REALTIME VALUE
+STATE      1 LCU参数值  LCU PARAM
+
+CMDTYPE      NAME = MAN_STAT_SET
+
+GROUP      NAME = 0
+STATE      0 设置分 SET OPEN
+STATE      1 设置合 SET CLOSE
+STATE      2 设置过渡 SET TRANSIT
+
+CMDTYPE      NAME = MAN_CURVE_SET
+
+GROUP      NAME = 0
+STATE      0 实时值 REALTIME VALUE
+
+END

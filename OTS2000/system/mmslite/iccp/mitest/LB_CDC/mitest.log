@@ -1,0 +1,14 @@
+
+
+***********************************************************
+          LOGGING STARTED Mon Nov 27 17:46:27 2006
+***********************************************************
+
+00.000s SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+03.461s CLNP_LOG_ERR (tp0_sock.c 150) 
+  Error 13 binding to RFC1006 port
+
+03.461s MVLLOG_ERR (mvl_acse.c 464) 
+  Error: copp_initialize returned error '0x1'

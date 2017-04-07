@@ -1,0 +1,25 @@
+SCC = This is a Source Code Control file
+
+[mbpscan.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/mbplus/v4.0a/src", XRFAAAAA
+
+[mbpscan.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/mbplus/v4.0a/src", XRFAAAAA
+
+[mbxscan.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/mbplus/v4.0a/src", XRFAAAAA
+
+[mbxscan.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/mbplus/v4.0a/src", XRFAAAAA
+
+[mod_test1.dsp]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/mbplus/v4.0a/src", XRFAAAAA
+
+[mod_test1.dsw]
+SCC_Aux_Path = "E:\vss"
+SCC_Project_Name = "$/H9000/SYSTEM/mbplus/v4.0a/src", XRFAAAAA

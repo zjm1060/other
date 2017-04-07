@@ -1,0 +1,18 @@
+
+STATION    NAME	= PBG
+           GROUP_MAX	= 30
+           LONGNAME	= ''
+           COMMENT	= 'ÆÙ²¼¹µ'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           STN_ID	= 1
+
+STATION    NAME	= SXG
+           GROUP_MAX	= 8
+           LONGNAME	= ''
+           COMMENT	= 'ÉîÏª¹µ'
+           EXLONGNAME	= ''
+           EXCOMMENT	= ''
+           STN_ID	= 2
+
+END

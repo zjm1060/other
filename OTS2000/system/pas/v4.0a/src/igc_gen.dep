@@ -1,0 +1,5 @@
+# Microsoft Developer Studio Generated Dependency File, included by IGC_GEN.mak
+
+.\IGC_GEN.c : \
+	"..\inc\IGC.h"\
+	

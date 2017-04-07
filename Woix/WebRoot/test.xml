@@ -1,0 +1,563 @@
+<stations>
+	<station id="1" comment="成都调控">
+		<group id="1" comment="成都调控">
+			<type id="1" comment="模拟量" entry="180" />
+			<type id="5" comment="扫查开入量" entry="58" />
+			<type id="6" comment="综合信息量" entry="599" />
+		</group>
+		<group id="2" comment="机房动环">
+			<type id="1" comment="模拟量" entry="672" />
+			<type id="5" comment="扫查开入量" entry="328" />
+		</group>
+		<group id="3" comment="三峡梯调">
+			<type id="1" comment="模拟量" entry="437" />
+			<type id="5" comment="扫查开入量" entry="291" />
+			<type id="6" comment="综合信息量" entry="56" />
+		</group>
+		<group id="4" comment="三峡水情通信">
+			<type id="1" comment="模拟量" entry="324" />
+			<type id="5" comment="扫查开入量" entry="172" />
+			<type id="6" comment="综合信息量" entry="13" />
+		</group>
+	</station>
+	<station id="2" comment="向家坝电站">
+		<group id="1" comment="1#机组">
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="2" />
+		</group>
+		<group id="2" comment="2#机组">
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="2" />
+		</group>
+		<group id="3" comment="3#机组">
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="2" />
+		</group>
+		<group id="4" comment="4#机组">
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="2" />
+		</group>
+		<group id="5" comment="5#机组">
+			<type id="1" comment="模拟量" entry="1120" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="1488" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="224" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="20" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="6" comment="6#机组">
+			<type id="1" comment="模拟量" entry="1113" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="1713" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="224" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="20" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="7" comment="7#机组">
+			<type id="1" comment="模拟量" entry="1113" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="1713" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="224" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="20" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="8" comment="8#机组">
+			<type id="1" comment="模拟量" entry="1113" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="1713" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="224" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="20" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="9" comment="左岸开关站">
+			<type id="6" comment="综合信息量" entry="512" />
+		</group>
+		<group id="10" comment="左岸厂用电">
+			<type id="6" comment="综合信息量" entry="512" />
+		</group>
+		<group id="11" comment="左岸公用">
+			<type id="6" comment="综合信息量" entry="512" />
+		</group>
+		<group id="12" comment="右岸开关站">
+			<type id="1" comment="模拟量" entry="288" />
+			<type id="4" comment="中断开入量" entry="192" />
+			<type id="5" comment="扫查开入量" entry="864" />
+			<type id="6" comment="综合信息量" entry="512" />
+			<type id="8" comment="开关输出量" entry="32" />
+			<type id="14" comment="设备对象" entry="127" />
+		</group>
+		<group id="13" comment="右岸厂用电">
+			<type id="1" comment="模拟量" entry="400" />
+			<type id="4" comment="中断开入量" entry="256" />
+			<type id="5" comment="扫查开入量" entry="1600" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="8" comment="开关输出量" entry="192" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="14" comment="右岸公用">
+			<type id="1" comment="模拟量" entry="192" />
+			<type id="4" comment="中断开入量" entry="32" />
+			<type id="5" comment="扫查开入量" entry="896" />
+			<type id="6" comment="综合信息量" entry="512" />
+			<type id="8" comment="开关输出量" entry="128" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="15" comment="坝顶">
+			<type id="1" comment="模拟量" entry="270" />
+			<type id="5" comment="扫查开入量" entry="1504" />
+			<type id="6" comment="综合信息量" entry="549" />
+			<type id="7" comment="模拟输出量" entry="128" />
+			<type id="8" comment="开关输出量" entry="1056" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="14" comment="设备对象" entry="25" />
+		</group>
+		<group id="16" comment="模拟屏">
+			<type id="1" comment="模拟量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="512" />
+			<type id="6" comment="综合信息量" entry="512" />
+			<type id="7" comment="模拟输出量" entry="64" />
+			<type id="8" comment="开关输出量" entry="544" />
+		</group>
+		<group id="17" comment="左岸GIS通讯" />
+		<group id="18" comment="右岸GIS通讯">
+			<type id="1" comment="模拟量" entry="81" />
+			<type id="5" comment="扫查开入量" entry="2113" />
+			<type id="6" comment="综合信息量" entry="249" />
+			<type id="14" comment="设备对象" entry="80" />
+		</group>
+		<group id="19" comment="监控系统">
+			<type id="1" comment="模拟量" entry="358" />
+			<type id="5" comment="扫查开入量" entry="321" />
+			<type id="6" comment="综合信息量" entry="821" />
+			<type id="10" comment="曲线点" entry="32" />
+			<type id="12" comment="整定值" entry="18" />
+		</group>
+		<group id="20" comment="右岸厂内通信">
+			<type id="1" comment="模拟量" entry="978" />
+			<type id="5" comment="扫查开入量" entry="90" />
+		</group>
+	</station>
+	<station id="3" comment="溪洛渡电站">
+		<group id="1" comment="1#机组">
+			<type id="1" comment="模拟量" entry="704" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="1865" />
+			<type id="6" comment="综合信息量" entry="673" />
+			<type id="7" comment="模拟输出量" entry="16" />
+			<type id="8" comment="开关输出量" entry="320" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="2" comment="2#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="3" comment="3#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="4" comment="4#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="5" comment="5#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="6" comment="6#机组">
+			<type id="1" comment="模拟量" entry="1076" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2352" />
+			<type id="6" comment="综合信息量" entry="519" />
+			<type id="7" comment="模拟输出量" entry="32" />
+			<type id="8" comment="开关输出量" entry="352" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="19" />
+			<type id="14" comment="设备对象" entry="110" />
+		</group>
+		<group id="7" comment="7#机组">
+			<type id="1" comment="模拟量" entry="632" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2320" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="16" />
+			<type id="8" comment="开关输出量" entry="288" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="8" comment="8#机组">
+			<type id="1" comment="模拟量" entry="1028" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2352" />
+			<type id="6" comment="综合信息量" entry="519" />
+			<type id="7" comment="模拟输出量" entry="32" />
+			<type id="8" comment="开关输出量" entry="320" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="128" />
+		</group>
+		<group id="9" comment="9#机组">
+			<type id="1" comment="模拟量" entry="1028" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2352" />
+			<type id="6" comment="综合信息量" entry="519" />
+			<type id="7" comment="模拟输出量" entry="32" />
+			<type id="8" comment="开关输出量" entry="320" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="128" />
+		</group>
+		<group id="10" comment="10#机组">
+			<type id="1" comment="模拟量" entry="1195" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2384" />
+			<type id="6" comment="综合信息量" entry="519" />
+			<type id="7" comment="模拟输出量" entry="32" />
+			<type id="8" comment="开关输出量" entry="304" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="16" />
+			<type id="14" comment="设备对象" entry="128" />
+		</group>
+		<group id="11" comment="11#机组">
+			<type id="1" comment="模拟量" entry="1195" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2384" />
+			<type id="6" comment="综合信息量" entry="519" />
+			<type id="7" comment="模拟输出量" entry="32" />
+			<type id="8" comment="开关输出量" entry="304" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="16" />
+			<type id="14" comment="设备对象" entry="128" />
+		</group>
+		<group id="12" comment="12#机组">
+			<type id="1" comment="模拟量" entry="1195" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2384" />
+			<type id="6" comment="综合信息量" entry="519" />
+			<type id="7" comment="模拟输出量" entry="32" />
+			<type id="8" comment="开关输出量" entry="304" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="16" />
+			<type id="14" comment="设备对象" entry="128" />
+		</group>
+		<group id="13" comment="13#机组">
+			<type id="1" comment="模拟量" entry="1195" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="128" />
+			<type id="5" comment="扫查开入量" entry="2384" />
+			<type id="6" comment="综合信息量" entry="519" />
+			<type id="7" comment="模拟输出量" entry="32" />
+			<type id="8" comment="开关输出量" entry="304" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="40" />
+			<type id="13" comment="温度特征值" entry="16" />
+			<type id="14" comment="设备对象" entry="128" />
+		</group>
+		<group id="14" comment="14#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="15" comment="15#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="16" comment="16#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="17" comment="17#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="18" comment="18#机组">
+			<type id="1" comment="模拟量" entry="983" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1680" />
+			<type id="6" comment="综合信息量" entry="659" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="256" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="83" />
+		</group>
+		<group id="19" comment="左岸开关站">
+			<type id="1" comment="模拟量" entry="443" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="768" />
+			<type id="5" comment="扫查开入量" entry="1216" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="192" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="19" />
+			<type id="14" comment="设备对象" entry="43" />
+		</group>
+		<group id="20" comment="右岸开关站">
+			<type id="1" comment="模拟量" entry="528" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="800" />
+			<type id="5" comment="扫查开入量" entry="1232" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="160" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="48" />
+		</group>
+		<group id="21" comment="左岸公用A">
+			<type id="1" comment="模拟量" entry="304" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="416" />
+			<type id="5" comment="扫查开入量" entry="720" />
+			<type id="6" comment="综合信息量" entry="673" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="224" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="64" />
+		</group>
+		<group id="22" comment="左岸公用B">
+			<type id="1" comment="模拟量" entry="320" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="480" />
+			<type id="5" comment="扫查开入量" entry="736" />
+			<type id="6" comment="综合信息量" entry="499" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="160" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="62" />
+		</group>
+		<group id="23" comment="左岸公用C">
+			<type id="1" comment="模拟量" entry="320" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="416" />
+			<type id="5" comment="扫查开入量" entry="1232" />
+			<type id="6" comment="综合信息量" entry="673" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="224" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="133" />
+		</group>
+		<group id="24" comment="右岸公用A">
+			<type id="1" comment="模拟量" entry="304" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="416" />
+			<type id="5" comment="扫查开入量" entry="720" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="224" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="62" />
+		</group>
+		<group id="25" comment="右岸公用B">
+			<type id="1" comment="模拟量" entry="304" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="480" />
+			<type id="5" comment="扫查开入量" entry="784" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="513" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="113" />
+		</group>
+		<group id="26" comment="右岸公用C">
+			<type id="1" comment="模拟量" entry="240" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="416" />
+			<type id="5" comment="扫查开入量" entry="1122" />
+			<type id="6" comment="综合信息量" entry="513" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="192" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="130" />
+		</group>
+		<group id="27" comment="大坝">
+			<type id="1" comment="模拟量" entry="144" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1696" />
+			<type id="6" comment="综合信息量" entry="539" />
+			<type id="7" comment="模拟输出量" entry="8" />
+			<type id="8" comment="开关输出量" entry="288" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="96" />
+		</group>
+		<group id="28" comment="模拟返回屏">
+			<type id="1" comment="模拟量" entry="256" />
+			<type id="3" comment="脉冲量" entry="32" />
+			<type id="4" comment="中断开入量" entry="96" />
+			<type id="5" comment="扫查开入量" entry="1360" />
+			<type id="6" comment="综合信息量" entry="512" />
+			<type id="7" comment="模拟输出量" entry="112" />
+			<type id="8" comment="开关输出量" entry="1120" />
+			<type id="9" comment="计算量" entry="21" />
+			<type id="10" comment="曲线点" entry="1" />
+			<type id="12" comment="整定值" entry="38" />
+			<type id="13" comment="温度特征值" entry="13" />
+			<type id="14" comment="设备对象" entry="5" />
+		</group>
+		<group id="29" comment="左岸GIS" />
+		<group id="30" comment="右岸GIS" />
+		<group id="31" comment="监控系统">
+			<type id="1" comment="模拟量" entry="971" />
+			<type id="5" comment="扫查开入量" entry="476" />
+			<type id="6" comment="综合信息量" entry="1046" />
+			<type id="10" comment="曲线点" entry="50" />
+			<type id="12" comment="整定值" entry="18" />
+		</group>
+	</station>
+</stations>

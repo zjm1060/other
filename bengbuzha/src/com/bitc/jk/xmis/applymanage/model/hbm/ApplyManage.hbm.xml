@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-6-11 9:09:32 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.bitc.jk.xmis.applymanage.model.ApplyMeetingRoomForm"
+		table="t_meetingroom_app_form">
+		<id name="id">
+			<column name="id" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="room_id" type="java.lang.String">
+			<column name="room_id" />
+		</property>
+		<property name="priority" type="int">
+			<column name="priority" />
+		</property>
+		<property name="sponsor_id" type="int">
+			<column name="sponsor_id" />
+		</property>
+		<property name="reason" type="java.lang.String">
+			<column name="reason" />
+		</property>
+		<property name="begin_datetime" type="timestamp">
+			<column name="begin_datetime" />
+		</property>
+		<property name="end_datetime" type="timestamp">
+			<column name="end_datetime" />
+		</property>
+		<property name="app_datetime" type="timestamp">
+			<column name="app_datetime" />
+		</property>
+		<property name="number_people" type="int">
+			<column name="number_people" />
+		</property>
+		<property name="app_user_id" type="int">
+			<column name="app_user_id" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark" />
+		</property>
+		<property name="assigned_id" type="int">
+			<column name="assigned_id" />
+		</property>
+		<property name="assigned_datetime" type="timestamp">
+			<column name="assigned_datetime" />
+		</property>
+		<property name="status_id" type="int">
+			<column name="status_id" />
+		</property>
+	</class>
+
+	<class name="com.bitc.jk.xmis.applymanage.model.ApplyCarForm"
+		table="t_car_app_form">
+		<id name="form_id">
+			<column name="form_id" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="priority" type="int">
+			<column name="priority" />
+		</property>
+		<property name="reason" type="java.lang.String">
+			<column name="reason" />
+		</property>
+		<property name="begin_datetime" type="timestamp">
+			<column name="begin_datetime" />
+		</property>
+		<property name="end_datetime" type="timestamp">
+			<column name="end_datetime" />
+		</property>
+		<property name="app_datetime" type="timestamp">
+			<column name="app_datetime" />
+		</property>
+		<property name="app_user_id" type="int">
+			<column name="app_user_id" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark" />
+		</property>
+		<property name="assigned_id" type="int">
+			<column name="assigned_id" />
+		</property>
+		<property name="assigned_datetime" type="timestamp">
+			<column name="assigned_datetime" />
+		</property>
+		<property name="status_id" type="int">
+			<column name="status_id" />
+		</property>
+	</class>
+
+	<class name="com.bitc.jk.xmis.applymanage.model.ApplyOfficialSuppliesForm"
+		table="t_offices_supplies_app_form_detail">
+		<composite-id>
+			<key-property name="form_id" column="form_id" />
+			<key-property name="supplies_id" column="supplies_id" />
+		</composite-id>
+
+		<property name="priority" type="int">
+			<column name="priority" />
+		</property>
+		<property name="reason" type="java.lang.String">
+			<column name="reason" />
+		</property>
+		<property name="qty" type="integer">
+			<column name="qty" />
+		</property>
+		<property name="app_datetime" type="timestamp">
+			<column name="app_datetime" />
+		</property>
+		<property name="app_user_id" type="int">
+			<column name="app_user_id" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark" />
+		</property>
+	</class>
+
+	<class
+		name="com.bitc.jk.xmis.applymanage.model.ApplyOfficialSuppliesRepairForm"
+		table="t_offices_supplies_app_form_repair_detail">
+		<composite-id>
+			<key-property name="form_id" column="form_id" />
+			<key-property name="supplies_id" column="supplies_id" />
+		</composite-id>
+
+		<property name="priority" type="int">
+			<column name="priority" />
+		</property>
+		<property name="reason" type="java.lang.String">
+			<column name="reason" />
+		</property>
+		<property name="qty" type="integer">
+			<column name="qty" />
+		</property>
+		<property name="app_datetime" type="timestamp">
+			<column name="app_datetime" />
+		</property>
+		<property name="app_user_id" type="int">
+			<column name="app_user_id" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark" />
+		</property>
+	</class>
+
+	<class name="com.bitc.jk.xmis.applymanage.model.BusinessEntertainment"
+		table="T_Business_Entertainment_Expenses_Form">
+		<id name="form_id" type="java.lang.String">
+			<column name="form_id" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="visitor_company_name" type="java.lang.String">
+			<column name="visitor_company_name" />
+		</property>
+		<property name="visitor_qty" type="int">
+			<column name="visitor_qty" />
+		</property>
+		<property name="meals_date" type="timestamp">
+			<column name="meals_date" />
+		</property>
+		<property name="meals_type" type="int">
+			<column name="meals_type" />
+		</property>
+		<property name="meals_fee_budget" type="java.math.BigDecimal">
+			<column name="meals_fee_budget" />
+		</property>
+		<property name="accompany_qty" type="int">
+			<column name="accompany_qty" />
+		</property>
+		<property name="cost" type="java.math.BigDecimal">
+			<column name="cost" />
+		</property>
+		<property name="profit" type="java.math.BigDecimal">
+			<column name="profit" />
+		</property>
+		<property name="cigarettes_wine_amt" type="java.math.BigDecimal">
+			<column name="cigarettes_wine_amt" />
+		</property>
+		<property name="total_amt" type="java.math.BigDecimal">
+			<column name="total_amt" />
+		</property>
+		<property name="app_datetime" type="timestamp">
+			<column name="app_datetime" />
+		</property>
+		<property name="app_user_id" type="int">
+			<column name="app_user_id" />
+		</property>
+		<property name="app_deptment" type="int">
+			<column name="app_deptment" />
+		</property>
+		<property name="sign_No" type="java.lang.String">
+			<column name="sign_No" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark" />
+		</property>
+		<property name="is_worked" type="int">
+			<column name="is_worked" />
+		</property>
+	</class>
+
+	<class name="com.bitc.jk.xmis.applymanage.model.AbsentForm"
+		table="T_Absent_Form_Detail">
+		<id name="form_id" type="java.lang.String">
+			<column name="form_id" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="absent_type_id" type="int">
+			<column name="absent_type_id" />
+		</property>
+		<property name="plan_begin_date" type="timestamp">
+			<column name="plan_begin_date" />
+		</property>
+		<property name="plan_end_date" type="timestamp">
+			<column name="plan_end_date" />
+		</property>
+		<property name="actual_begin_date" type="timestamp">
+			<column name="actual_begin_date" />
+		</property>
+		<property name="actual_end_date" type="timestamp">
+			<column name="actual_end_date" />
+		</property>
+		<property name="leavetime" type="timestamp">
+			<column name="leavetime" />
+		</property>
+		<property name="reason" type="java.lang.String">
+			<column name="reason" />
+		</property>
+		<property name="actual_sum" type="java.lang.String">
+			<column name="actual_sum" />
+		</property>
+		<property name="plan_sum" type="java.lang.String">
+			<column name="plan_sum" />
+		</property>
+		<property name="app_datetime" type="timestamp">
+			<column name="app_datetime" />
+		</property>
+		<property name="app_user_id" type="int">
+			<column name="app_user_id" />
+		</property>
+	</class>
+
+	<class name="com.bitc.jk.xmis.applymanage.model.DocumentAppFormDetail"
+		table="T_Document_App_Form_Detail">
+		<id name="form_id" type="java.lang.String">
+			<column name="form_id" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="document_type_id" type="integer">
+			<column name="document_type_id" />
+		</property>
+		<property name="priority" type="integer">
+			<column name="priority" />
+		</property>
+		<property name="file_no" type="integer">
+			<column name="file_no" />
+		</property>
+		<property name="file_flag" type="java.lang.String">
+			<column name="file_flag" />
+		</property>
+		<property name="title" type="java.lang.String">
+			<column name="title" />
+		</property>
+		<property name="external_name" type="java.lang.String">
+			<column name="external_name" />
+		</property>
+		<property name="document_code" type="java.lang.String">
+			<column name="document_code" />
+		</property>
+		<property name="summary" type="java.lang.String">
+			<column name="summary" />
+		</property>
+		<property name="app_datetime" type="timestamp">
+			<column name="app_datetime" />
+		</property>
+		<property name="app_user_id" type="integer">
+			<column name="app_user_id" />
+		</property>
+		<property name="app_dept_id" type="integer">
+			<column name="app_dept_id" />
+		</property>
+		<property name="app_dept_leader_id" type="integer">
+			<column name="app_dept_leader_id" />
+		</property>
+		<property name="app_dept_approved_datetime" type="timestamp">
+			<column name="app_dept_approved_datetime" />
+		</property>
+		<property name="app_dept_approved_reason" type="java.lang.String">
+			<column name="app_dept_approved_reason" />
+		</property>
+		<property name="app_spec_leader_id" type="integer">
+			<column name="app_spec_leader_id" />
+		</property>
+		<property name="app_spec_approved_datetime" type="timestamp">
+			<column name="app_spec_approved_datetime" />
+		</property>
+		<property name="app_spec_approved_reason" type="java.lang.String">
+			<column name="app_spec_approved_reason" />
+		</property>
+		<property name="app_direc_leader_id" type="integer">
+			<column name="app_direc_leader_id" />
+		</property>
+		<property name="app_direc_approved_datetime" type="timestamp">
+			<column name="app_direc_approved_datetime" />
+		</property>
+		<property name="app_direc_approved_reason" type="java.lang.String">
+			<column name="app_direc_approved_reason" />
+		</property>
+	</class>
+
+
+	<class name="com.bitc.jk.xmis.applymanage.model.DocumentCiculatedInstances"
+		table="T_Document_Circulated_Instances">
+		<composite-id>
+			<key-property name="instanc_id" type="string" column='instanc_id'></key-property>
+			<key-property name="form_id" type="string" column='form_id'></key-property>
+			<key-property name="from_id" type="integer" column='from_id'></key-property>
+			<key-property name="to_id" type="integer" column='to_id'></key-property>
+		</composite-id>
+		<property name="from_datetime" type="timestamp">
+			<column name="from_datetime" />
+		</property>
+		<property name="comments" type="java.lang.String">
+			<column name="comments" />
+		</property>
+	</class>
+	
+	<class name="com.bitc.jk.xmis.applymanage.model.EarlyPlans"
+		table="T_Workplan_Form_Detail_EarlyPlans">
+		<id name="formId" type="java.lang.String">
+			<column name="form_id" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="typeId" type="int">
+			<column name="type_id" />
+		</property>
+		<property name="workMonth" type="java.lang.String">
+			<column name="work_month" />
+		</property>
+		<property name="planAssignComments" type="java.lang.String">
+			<column name="plan_assign_comments" />
+		</property>
+		<property name="planComments" type="java.lang.String">
+			<column name="plan_comments" />
+		</property>
+		<property name="planAssignedId" type="int">
+			<column name="plan_assigned_id" />
+		</property>
+		<property name="planAssignedDate" type="timestamp">
+			<column name="plan_assigned_date" />
+		</property>
+		<property name="appUserId" type="int">
+			<column name="app_user_id" />
+		</property>
+		<property name="appDeptId" type="int">
+			<column name="app_dept_id" />
+		</property>
+		<property name="appDate" type="timestamp">
+			<column name="app_date" />
+		</property>
+	</class>
+	<class name="com.bitc.jk.xmis.applymanage.model.TheEndOfThePlanned"
+		table="T_Workplan_Form_Detail_EndOfPlanned">
+		<id name="formId" type="java.lang.String">
+			<column name="form_id" />
+		</id>
+		<property name="excutedComments" type="java.lang.String">
+			<column name="excuted_comments" />
+		</property>
+		<property name="unfinishedComments" type="java.lang.String">
+			<column name="unfinished_comments" />
+		</property>
+		<property name="excutedAssignedComments" type="java.lang.String">
+			<column name="excuted_assigned_comments" />
+		</property>
+		<property name="excutedAssignedId" type="int">
+			<column name="excuted_assigned_id" />
+		</property>
+		<property name="excuteAssignedDate" type="timestamp">
+			<column name="excute_assigned_date" />
+		</property>
+	</class>
+	
+	
+		<class name="com.bitc.jk.xmis.applymanage.model.GczlInfo" table="gczl_water_level_info">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="ap_w_level" type="java.math.BigDecimal">
+            <column name="ap_w_level" />
+        </property>
+        <property name="bp_w_level" type="java.math.BigDecimal">
+            <column name="bp_w_level" />
+        </property>
+        <property name="gate_open_num_1" type="int">
+            <column name="gate_open_num_1" />
+        </property>
+        <property name="gate_open_num_2" type="int">
+            <column name="gate_open_num_2" />
+        </property>
+        <property name="gate_open_degree_1" type="java.lang.String">
+            <column name="gate_open_degree_1" />
+        </property>
+        <property name="gate_open_degree_2" type="java.lang.String">
+            <column name="gate_open_degree_2" />
+        </property>
+        <property name="elec_machine" type="int">
+            <column name="elec_machine" />
+        </property>
+        <property name="flow_qty" type="int">
+            <column name="flow_qty" />
+        </property>
+        <property name="w_level_chan" type="java.math.BigDecimal">
+            <column name="w_level_chan" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="measure_man" />
+        </property>
+    </class>
+
+<class name="com.bitc.jk.xmis.applymanage.model.CeyaInfo" table="gczl_measure_press_tube_informatiom">
+        <id name="tab_seed" type="int">
+            <column name="tab_seed" />
+            <generator class="assigned" />
+        </id>
+        <property name="unit_code" type="java.lang.String">
+            <column name="unit_code" />
+        </property>
+        <property name="measure_date" type="timestamp">
+            <column name="measure_date" />
+        </property>
+        <property name="mptp_code" type="java.lang.String">
+            <column name="mptp_code" />
+        </property>
+        <property name="mpt_code" type="java.lang.String">
+            <column name="mpt_code" />
+        </property>
+        <property name="tubo_w_level" type="java.math.BigDecimal">
+            <column name="tubo_w_level" />
+        </property>
+        <property name="ap_w_level" type="java.math.BigDecimal">
+            <column name="ap_w_level" />
+        </property>
+        <property name="bp_w_level" type="java.math.BigDecimal">
+            <column name="bp_w_level" />
+        </property>
+        <property name="flag" type="java.lang.String">
+            <column name="flag" />
+        </property>
+        <property name="memo" type="java.lang.String">
+            <column name="memo" />
+        </property>
+        <property name="mpt_name" type="java.lang.String">
+            <column name="mpt_name" />
+        </property>
+        <property name="measure_man" type="int">
+            <column name="measure_man" />
+        </property>
+    </class>
+</hibernate-mapping>

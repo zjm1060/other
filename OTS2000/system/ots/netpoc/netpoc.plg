@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: netpoc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\zwj11\AppData\Local\Temp\RSP1F1D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"../output/netpoc/Debug/netpoc.pch" /Yu"stdafx.h" /Fo"../output/netpoc/Debug/" /Fd"../output/netpoc/Debug/" /FD /GZ /c 
+"F:\home\ems\system\ots\netpoc\netpocDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\zwj11\AppData\Local\Temp\RSP1F1D.tmp" 
+Creating temporary file "C:\Users\zwj11\AppData\Local\Temp\RSP1F1E.tmp" with contents
+[
+\home\ems\system\dms\v4.0a\lib\dblib.lib \home\ems\system\dps\v4.0a\lib\dpslib.lib \home\ems\system\dps\v4.0a\lib\ipclib.lib wsock32.lib \home\ems\system\lan\v4.0a\lib\lan.lib ws2_32.lib /nologo /subsystem:windows /incremental:yes /pdb:"../output/netpoc/Debug/netpoc.pdb" /debug /machine:I386 /out:"F:\home\ems\system\ots\netpoc\debug\netpoc.exe" /pdbtype:sept 
+\home\ems\system\ots\output\netpoc\Debug\netpoc.obj
+\home\ems\system\ots\output\netpoc\Debug\netpocDlg.obj
+\home\ems\system\ots\output\netpoc\Debug\StdAfx.obj
+\home\ems\system\ots\output\netpoc\Debug\netpoc.res
+]
+Creating command line "link.exe @C:\Users\zwj11\AppData\Local\Temp\RSP1F1E.tmp"
+<h3>Output Window</h3>
+Compiling...
+netpocDlg.cpp
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(255) : warning C4101: 'pfvs' : unreferenced local variable
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(257) : warning C4101: 'num' : unreferenced local variable
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(256) : warning C4101: 'pivs' : unreferenced local variable
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(254) : warning C4101: 'pChr' : unreferenced local variable
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(482) : warning C4244: 'argument' : conversion from 'long' to 'short', possible loss of data
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(456) : warning C4101: 'index' : unreferenced local variable
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(619) : warning C4018: '<' : signed/unsigned mismatch
+F:\home\ems\system\ots\netpoc\netpocDlg.cpp(667) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+Linking...
+
+
+
+<h3>Results</h3>
+netpoc.exe - 0 error(s), 8 warning(s)
+</pre>
+</body>
+</html>

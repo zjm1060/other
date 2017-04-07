@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ICCP Local Control Center Configuration -->
+<!DOCTYPE LocalControlCenter SYSTEM "E:\mmslite\bin\IccpCfg.dtd">
+<LocalControlCenter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:\mmslite\bin\IccpCfg.xsd">
+	<Name>TGDC</Name>
+	<MaxDsTs>10</MaxDsTs>
+	<MaxDataSets>10</MaxDataSets>
+	<MaxMmsMsgSize>8192</MaxMmsMsgSize>
+	<Description>Cascade Dispatch Center</Description>
+	<LocalObjects>
+		<LocalDataValues Count="0">
+		</LocalDataValues>
+		<LocalDevices Count="0">
+		</LocalDevices>
+		<LocalInfoMsgs Count="2">
+			<Lim>
+				<InfoRef>10100</InfoRef>
+				<MaxSize>1</MaxSize>
+				<Description>Acknowledge Message for a SoE MEssage</Description>
+			</Lim>
+			<Lim>
+				<InfoRef>10101</InfoRef>
+				<MaxSize>8192</MaxSize>
+				<Description>Power Schedule Message</Description>
+			</Lim>
+		</LocalInfoMsgs>
+	</LocalObjects>
+	<RemoteControlCenters Count="1">
+		<RemoteControlCenter>
+			<Name>LB</Name>
+			<Description>Three Gorges Left Bank Power Station</Description>
+			<BilateralTable>
+				<Name>LB_TGDC_B</Name>
+				<Id>LB_TGDC_B_ID_1</Id>
+				<LocalDomain>LB_TGDC</LocalDomain>
+				<RemoteDomain>TGDC_LB</RemoteDomain>
+				<ShortestInterval>1</ShortestInterval>
+				<Blocks>1,2,4,5</Blocks>
+				<RemDvValidation>CompareNames</RemDvValidation>
+				<RemDvGetConfig>None</RemDvGetConfig>
+				<RemDvExcludeInvalidFromDs>Y</RemDvExcludeInvalidFromDs>
+			</BilateralTable>
+			<Associations Count="1">
+				<Association>
+					<Name>TGDC_LB_LINK</Name>
+					<LocalAr>AS1</LocalAr>
+					<RemoteAr>LB_GATEWAY1</RemoteAr>
+					<ConnectRole>Calling</ConnectRole>
+					<AssocRetryTime>10</AssocRetryTime>
+					<ServiceRole>Client</ServiceRole>
+					<ServiceRole>Server</ServiceRole>
+					<MaxMmsMsgSize>8192</MaxMmsMsgSize>
+					<MaxReqPend>5</MaxReqPend>
+					<MaxIndPend>5</MaxIndPend>
+					<MaxNest>5</MaxNest>
+				</Association>
+			</Associations>
+			<ServerObjects>
+				<NumVccDv>0</NumVccDv>
+				<NumVccDev>0</NumVccDev>
+				<NumVccInfoMsg>0</NumVccInfoMsg>
+				<NumVccDs>0</NumVccDs>
+				<NumIccDv>0</NumIccDv>
+				<NumIccDev>0</NumIccDev>
+				<NumIccInfoMsg>0</NumIccInfoMsg>
+				<NumIccDs>0</NumIccDs>
+				<ServerDataValues Count="0">
+				</ServerDataValues>
+				<ServerDevices Count="0">
+				</ServerDevices>
+				<ServerInfoMsgs Count="0">
+				</ServerInfoMsgs>
+				<ServerDataSets Count="0">
+				</ServerDataSets>
+			</ServerObjects>
+			<ClientObjects>
+				<NumVccDv>0</NumVccDv>
+				<NumVccDev>0</NumVccDev>
+				<NumVccInfoMsg>0</NumVccInfoMsg>
+				<NumIccDv>0</NumIccDv>
+				<NumIccDev>0</NumIccDev>
+				<NumIccInfoMsg>0</NumIccInfoMsg>
+				<NumDs>0</NumDs>
+				<NumDsTs>0</NumDsTs>
+				<ClientDataValues Count="0">
+				</ClientDataValues>
+				<ClientDevices Count="0">
+				</ClientDevices>
+				<ClientInfoMsgs Count="0">
+				</ClientInfoMsgs>
+				<ClientDataSets Count="0">
+				</ClientDataSets>
+				<ClientDataSetTransferSets Count="0">
+				</ClientDataSetTransferSets>
+			</ClientObjects>
+		</RemoteControlCenter>
+	</RemoteControlCenters>
+</LocalControlCenter>

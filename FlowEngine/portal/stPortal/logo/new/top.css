@@ -1,0 +1,56 @@
+@charset "gb2312";
+body{
+	margin:0px;
+}
+
+.banner{
+   background-image:url(images/banner_bg.png);
+   background-repeat:repeat-x;
+   background-position:left;
+   height:66px;
+   }
+.banner_logo{
+   background-image:url(images/logo.gif);
+   background-repeat:no-repeat;
+   background-position:left;
+   height:66px;
+   }
+.banner_right{
+   background-image:url(images/banner_right.png);
+   background-repeat:no-repeat;
+   background-position:right;
+   height:66px;
+   }
+   
+.degin_table{
+   background-image:url(images/degin_bg.gif);
+   height:21px;
+   background-repeat:repeat-x;
+   background-position:right;
+   width:145px;
+   margin-top:15px;
+   margin-right:11px; 
+
+   }
+      
+.degin_text{
+   line-height:20px;
+   font-size:12px;
+   padding-top:3px;
+
+   }
+.degin_text a{
+   font-size:12px;
+   text-decoration:none;
+   color:#000000;
+   }
+.degin_text a:hover{
+   font-size:12px;
+   text-decoration:underline;
+
+   color:blue;
+
+   }
+
+
+

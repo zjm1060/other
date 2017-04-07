@@ -1,0 +1,60 @@
+{
+	'action' : true,
+	'message' : '',
+	'dataUrl' : 'projectMain.do?method=getProjectList',
+	'sortInfo' : {
+		field : 'projectCode',
+		direction : 'DESC'
+	},
+	gridConfig : {
+		autoExpandColumn : 'proName'
+	},
+	'columnModle' : [{
+				header : '项目ID',
+				dataIndex : 'projectID',
+				hidden : true
+			}, {
+				header : '项目编码',
+				dataIndex : 'projectCode',
+				width : 150
+			}, {
+				id : 'proName',
+				header : '项目名称',
+				dataIndex : 'projectName'
+			}, {
+				header : '项目启动日期',
+				dataIndex : 'startDate',
+				width : 100,
+				align : 'center'
+			}],
+	'fieldsNames' : [{
+				name : 'projectID',
+				type : 'string'
+			}, {
+				name : 'projectCode',
+				type : 'string'
+			}, {
+				name : 'projectName',
+				type : 'string'
+			}, {
+				name : 'startDate',
+				type : 'string'
+			}],
+	'searchBar' : true,
+	'searchFieldConfig' : {
+		width : 120,
+		tooltip : {
+			title : '模糊查询',
+			text : '输入项目名称或项目编码进行查询。'
+		},
+		inklings : [{
+					name : 'projectCode',
+					op : 'like',
+					type : 'string'
+				}, {
+					name : 'projectName',
+					op : 'like',
+					type : 'string'
+				}]
+	}
+}

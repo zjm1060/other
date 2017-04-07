@@ -1,0 +1,130 @@
+
+void process(u_char *useless,const struct pcap_pkthdr* pkthdr,const u_char* packet)
+{
+	int i;
+	u_int eth_length=pkthdr->len; /* the lenght of grabbed ethernet packet */
+	u_int ip_length=eth_length-sizeof(struct ether_header); /* the lenght of grabbed ip packet */
+
+	const struct iphdr* ip;
+	u_int hlen,off,version;
+	int len;
+	
+	const struct tcphdr* tcp;
+	
+	union identity id;
+	u_long source,destine,*spoint,*dpoint;
+
+	char query[1024];
+	char time[25];
+	/* print the packet head 54 Byte */
+	int ptotal;
+	for(ptotal=0;ptotal<55;ptotal++)
+	{
+		printf("%2x ",*(packet+ptotal));
+		if(ptotal%16==15) printf("\n");
+	}
+	printf("\n");
+	
+	/* handle ethernet packet */	
+	printf("The lenght of grabbed packet is %d,\n",eth_length);
+	printf("Recieved at ..... %s",ctime((const time_t*)&pkthdr->ts.tv_sec));
+	
+	
+	/* handle ip packet */
+	/* jump pass the ethernet header */
+	ip = (struct iphdr*)(packet + sizeof(struct ether_header));
+
+	len     = ntohs(ip->ip_len);
+	hlen    = IP_HL(ip); /* header length */
+	version = IP_V(ip);/* ip version */
+	
+
+	/* Check to see if we have the first fragment */
+	off = ntohs(ip->ip_off);
+	if((off & 0x1fff) == 0)/* aka no 1's in first 13 bits */
+	{
+		printf("IP: Header length:%u Version:%u ",hlen,version);
+		printf("Type of service:0x%x Total length:%u Identification:%u\n",ip->ip_tos,ntohs(ip->ip_len),ntohs(ip->ip_id));
+		printf("Flags:0x%x ",ntohs(ip->ip_off));
+		if(ntohs(ip->ip_off)&IP_DF) printf("don't fragment ");
+		if(ntohs(ip->ip_off)&IP_MF) printf("more fragments ");
+		printf("time to live:%u protocol:%u checksum:0x%x\n",ip->ip_ttl,ip->ip_p,ntohs(ip->ip_sum));
+		if(ip->ip_p == 6)
+		{
+			tcp = (struct tcphdr*)(packet + sizeof(struct ether_header) + sizeof(struct iphdr));
+			
+			printf("**************************************\n");
+			printf("TCP: src:%s.%u ",inet_ntoa(ip->ip_src),ntohs(tcp->th_sport));
+			printf("dst:%s.%u\n",inet_ntoa(ip->ip_dst),ntohs(tcp->th_dport));
+			printf("SEQ:%u NES:%u ACK:%u\n",ntohl(tcp->th_seq),ntohl(tcp->th_seq)+len-40,ntohl(tcp->th_ack));
+			printf("headlen:%u flag:0x%x ",TH_OFF(tcp),tcp->th_flags);
+
+			if(tcp->th_flags&TH_FIN) printf("fin ");
+			if(tcp->th_flags&TH_SYN) printf("syn ");
+			if(tcp->th_flags&TH_RST) printf("rst ");
+			if(tcp->th_flags&TH_PUSH) printf("psh ");
+			if(tcp->th_flags&TH_ACK) printf("ack ");
+			if(tcp->th_flags&TH_URG) printf("urg ");
+			
+			printf("\nwindow:%u checksum:0x%x Urgent pointer:0x%x\n",ntohs(tcp->th_win),ntohs(tcp->th_sum),ntohs(tcp->th_urp));
+			
+			// identity 
+			spoint=&(ip->ip_src);
+			dpoint=&(ip->ip_dst);
+			source=*spoint;
+			destine=*dpoint;
+			if(source > destine)
+			{
+				id.a=source;
+				id.b=tcp->th_sport;
+				id.c=destine;
+				id.d=tcp->th_dport;
+			}
+			else if(source < destine)
+			{
+				id.a=destine;
+				id.b=tcp->th_dport;
+				id.c=source;
+				id.d=tcp->th_sport;
+			}
+			else
+			{
+				if(tcp->th_sport>tcp->th_dport)
+				{
+					id.a=source;
+					id.b=tcp->th_sport;
+					id.c=destine;
+					id.d=tcp->th_dport;
+				}
+				else
+				{
+					id.a=destine;
+					id.b=tcp->th_dport;
+					id.c=source;
+					id.d=tcp->th_sport;
+				}
+			}
+			printf("identity:");
+			for(i=0;i<12;i++)
+				printf("%2x ",id.temp[i]);
+			strncpy(time,ctime((const time_t*)&pkthdr->ts.tv_sec),24);
+			time[24]='\0';
+			//sprintf(query,"insert into raw_data values(%u,\'%s\',%u,%u,%u,%u,%u,%u,%u,%u,\'%s\',%u,\'%s\',%u,%u,%u,%u,%u,%u,%u,%u,\'%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x\')",eth_length,time,hlen,version,ip->ip_tos,ntohs(ip->ip_len),ntohs(ip->ip_id),ntohs(ip->ip_off),ip->ip_ttl,ip->ip_p,inet_ntoa(ip->ip_src),ntohs(tcp->th_sport),inet_ntoa(ip->ip_dst),ntohs(tcp->th_dport),ntohl(tcp->th_seq),ntohl(tcp->th_seq)+len-40,ntohl(tcp->th_ack),TH_OFF(tcp),tcp->th_flags,ntohs(tcp->th_win),ntohs(tcp->th_urp),id.temp[0],id.temp[1],id.temp[2],id.temp[3],id.temp[4],id.temp[5],id.temp[6],id.temp[7],id.temp[8],id.temp[9],id.temp[10],id.temp[11]);
+			sprintf(query,"insert into raw_data values(%u,\'%s\',%u,%u,%u,%u,%u,%u,%u,%u,\'%s\',%u,",eth_length,time,hlen,version,ip->ip_tos,ntohs(ip->ip_len),ntohs(ip->ip_id),ntohs(ip->ip_off),ip->ip_ttl,ip->ip_p,inet_ntoa(ip->ip_src),ntohs(tcp->th_sport));
+			sprintf(query,"%s\'%s\',%u,%u,%u,%u,%u,%u,%u,%u,\'%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x%2x\')",query,inet_ntoa(ip->ip_dst),ntohs(tcp->th_dport),ntohl(tcp->th_seq),ntohl(tcp->th_seq)+len-40,ntohl(tcp->th_ack),TH_OFF(tcp),tcp->th_flags,ntohs(tcp->th_win),ntohs(tcp->th_urp),id.temp[0],id.temp[1],id.temp[2],id.temp[3],id.temp[4],id.temp[5],id.temp[6],id.temp[7],id.temp[8],id.temp[9],id.temp[10],id.temp[11]);
+			printf("\n%s\n",query);
+		}
+		else if(ip->ip_p == 17)
+		{
+			//printf("UDP\n");
+		}
+		else if(ip->ip_p == 1)
+		{
+			//printf("ICMP\n");
+		}
+		else
+		{
+			//printf("unknown protocol\n");
+		}
+	}
+}

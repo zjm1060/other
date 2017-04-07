@@ -1,0 +1,182 @@
+Body
+{
+  background-color:#d4d0c8;
+  font-size:9pt;
+}
+
+Table
+{
+  font-size:9pt;
+}
+
+.cOutFrame
+{
+  position:absolute;
+  width:325px;
+  height:165px;
+  top:5px;
+  left:10px;
+  border-top:2px solid #eeeeee;
+  border-bottom:2px solid #333366;
+  border-left:2px solid #eeeeee;
+  border-right:2px solid  #333366;
+}
+.MustInput
+{
+  COLOR: #ff0000
+}
+.cBtnFrame
+{
+  position:absolute;
+  width:325px;
+  height:30px;
+  top:175px;
+  left:10px;
+}
+.cOutFrameEx
+{
+  position:absolute;
+  width:380px;
+  height:517px;
+  top:5px;
+  left:10px;
+  border-top:2px solid #eeeeee;
+  border-bottom:2px solid #333366;
+  border-left:2px solid #eeeeee;
+  border-right:2px solid  #333366;
+}
+.cBtnFrameEx
+{
+  position:absolute;
+  width:325px;
+  height:20px;
+  top:525px;
+  left:40px;
+}
+.cDivRender
+{
+    position:absolute;
+    width:135px;
+    height:304px;
+    top:11px;
+    left:10px;
+    border-top:2px solid #333366;
+    border-bottom:1px solid #eeeeee;
+    border-left:2px solid #333366;
+    border-right:1px solid  #eeeeee;
+    background-color: #FFFFFF;
+    overflow:auto;
+}
+.cUserCode
+{
+    position:absolute;
+    width:135px;
+    height:300px;
+    top:10px;
+    left:155px;
+}
+.cAction
+{
+    position:absolute;
+    width:135px;
+    height:300px;
+    top:10px;
+    left:310px;
+}
+.cBtn1
+{
+    position:absolute;
+    width:450px;
+    height:25px;
+    top:330px;
+    left:0px;
+}
+.cBtn2
+{
+    position:absolute;
+    width:450px;
+    height:25px;
+    top:365px;
+    left:0px;
+}
+.cOutFrameField
+{
+    position:absolute;
+    width:575px;
+    height:280px;
+    top:10px;
+    left:10px;
+    border-top:2px solid #eeeeee;
+    border-bottom:2px solid #333366;
+    border-left:2px solid #eeeeee;
+    border-right:2px solid  #333366;
+}
+
+.cBtnFrameField
+{
+    position:absolute;
+    width:575px;
+    height:30px;
+    top:295px;
+    left:10px;
+}
+
+.cOutFrameFieldEx
+{
+    position:absolute;
+    width:575px;
+    height:270px;
+    top:10px;
+    left:10px;
+    border-top:2px solid #eeeeee;
+    border-bottom:2px solid #333366;
+    border-left:2px solid #eeeeee;
+    border-right:2px solid  #333366;
+}
+
+.cBtnFrameFieldEx
+{
+    position:absolute;
+    width:575px;
+    height:30px;
+    top:290px;
+    left:10px;
+}
+
+.cFolderTrueUtil
+{
+  position:absolute;
+  width:200px;
+  height:220px;
+  top:15px;
+  left:25px;
+  background-color:red;
+  border-top:2px solid #333366;
+  border-bottom:2px solid #eeeeee;
+  border-left:2px solid #333366;
+  border-right:2px solid  #eeeeee;
+  overflow:auto;
+}
+.Grid_TR_Normal
+{
+    FONT-SIZE: 9pt;
+    CURSOR: hand;
+    FONT-FAMILY: ËÎÌו;
+    TEXT-DECORATION: none
+}
+.3DTD
+{
+    BORDER-RIGHT: thin outset;
+    BORDER-TOP: thin outset;
+    BORDER-LEFT: thin outset;
+    BORDER-BOTTOM: thin outset;
+    BACKGROUND-COLOR: lightgrey
+}
+.Grid_TR_Active
+{
+    FONT-SIZE: 9pt;
+    CURSOR: hand;
+    COLOR: white;
+    FONT-FAMILY: ËÎÌו;
+    BACKGROUND-COLOR: darkblue
+}

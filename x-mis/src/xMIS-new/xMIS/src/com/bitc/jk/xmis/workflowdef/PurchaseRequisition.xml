@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="PurchaseRequisition" Name="PurchaseRequisition" DisplayName="采购申请" ResourceFile="" ResourceManager="">
+    <fpdl:StartNode Id="PurchaseRequisition.START_NODE" Name="START_NODE" DisplayName="申请">
+        <fpdl:Description>项目人员申请</fpdl:Description>
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="35"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="68"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="PurchaseRequisition.ProjectManagerApproval" Name="ProjectManagerApproval" DisplayName="项目经理" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="58"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="303"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="15"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="PurchaseRequisition.ProjectManagerApproval.Approve" Name="Approve" DisplayName="审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$ids(managerId)" DisplayName="项目经理">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="pr.jsp" DisplayName="pr.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/device/pr.jsp?requestId={requestId}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="PurchaseRequisition.Requition" Name="Requition" DisplayName="申请人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="91"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="49"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="PurchaseRequisition.Requition.Task" Name="Task" DisplayName="填写申请" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="creater" DisplayName="申请人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="purchaseForm" DisplayName="填写申请">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/device/pr.jsp?requestId={requestId}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="PurchaseRequisition.SupervisorApproval" Name="SupervisorApproval" DisplayName="主管领导审批" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="475"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="48"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="PurchaseRequisition.SupervisorApproval.Task" Name="Task" DisplayName="审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$join($post(deptId,6),$post(deptId,14))" DisplayName="主管领导审批">
+                        <fpdl:Description>事业部主任</fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="pr.jsp" DisplayName="pr.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/device/pr.jsp?requestId={requestId}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="PurchaseRequisition.DeptPurchaseAssign" Name="DeptPurchaseAssign" DisplayName="部门采购" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="767"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="102"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="PurchaseRequisition.DeptPurchaseAssign.Task" Name="Task" DisplayName="分配" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptRole(deptId,16)" DisplayName="部门采购负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="pr.jsp" DisplayName="pr.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/device/pr.jsp?requestId={requestId}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="PurchaseRequisition.CompPurchaseAssign" Name="CompPurchaseAssign" DisplayName="公司采购" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="764"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="11"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="PurchaseRequisition.CompPurchaseAssign.Task" Name="Task" DisplayName="分配" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(15)" DisplayName="公司采购负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="pr.jsp" DisplayName="pr.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/device/pr.jsp?requestId={requestId}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="PurchaseRequisition.pass" Name="pass" DisplayName="略过" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="31"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="308"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="110"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="PurchaseRequisition.CompPurchaserConfirm" Name="CompPurchaserConfirm" DisplayName="公司采购" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="927"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="12"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="PurchaseRequisition.CompPurchaserConfirm.Task" Name="Task" DisplayName="接收" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$ids(purchaser)" DisplayName="公司采购人员">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="pr.jsp" DisplayName="pr.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/device/pr.jsp?requestId={requestId}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="PurchaseRequisition.DeptPurchaserConfirm" Name="DeptPurchaserConfirm" DisplayName="部门采购" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="931"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="104"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="PurchaseRequisition.DeptPurchaserConfirm.Task" Name="Task" DisplayName="接收" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$ids(purchaser)" DisplayName="部门采购人员">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="pr.jsp" DisplayName="pr.jsp">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/device/pr.jsp?requestId={requestId}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="PurchaseRequisition.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="224"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="70"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="PurchaseRequisition.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="425"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="69"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="PurchaseRequisition.Synchronizer3" Name="Synchronizer3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="598"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="69"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="PurchaseRequisition.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="886"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="31"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="PurchaseRequisition.Synchronizer5" Name="Synchronizer5" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="889"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="123"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="PurchaseRequisition.EndNode1" Name="EndNode1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1086"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="84"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="PurchaseRequisition.Transition1" From="PurchaseRequisition.START_NODE" To="PurchaseRequisition.Requition" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition2" From="PurchaseRequisition.Requition" To="PurchaseRequisition.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition3" From="PurchaseRequisition.Synchronizer1" To="PurchaseRequisition.ProjectManagerApproval" Name="Transition3" DisplayName="">
+            <fpdl:Condition>creatId!=managerId</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition4" From="PurchaseRequisition.ProjectManagerApproval" To="PurchaseRequisition.Synchronizer2" Name="Transition4" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition5" From="PurchaseRequisition.Synchronizer2" To="PurchaseRequisition.SupervisorApproval" Name="Transition5" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition6" From="PurchaseRequisition.SupervisorApproval" To="PurchaseRequisition.Synchronizer3" Name="Transition6" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition7" From="PurchaseRequisition.Synchronizer3" To="PurchaseRequisition.DeptPurchaseAssign" Name="Transition7" DisplayName="">
+            <fpdl:Condition>amt&lt;100000</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition9" From="PurchaseRequisition.Synchronizer3" To="PurchaseRequisition.CompPurchaseAssign" Name="Transition9" DisplayName="采购金额大于10万">
+            <fpdl:Condition>amt&gt;100000</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(689,63)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition11" From="PurchaseRequisition.Synchronizer1" To="PurchaseRequisition.pass" Name="Transition11" DisplayName="项目经理申请">
+            <fpdl:Condition>creatId==managerId</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value=""/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition12" From="PurchaseRequisition.pass" To="PurchaseRequisition.Synchronizer2" Name="Transition12" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition13" From="PurchaseRequisition.CompPurchaseAssign" To="PurchaseRequisition.Synchronizer4" Name="Transition13" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition14" From="PurchaseRequisition.DeptPurchaseAssign" To="PurchaseRequisition.Synchronizer5" Name="Transition14" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition15" From="PurchaseRequisition.CompPurchaserConfirm" To="PurchaseRequisition.EndNode1" Name="Transition15" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition16" From="PurchaseRequisition.DeptPurchaserConfirm" To="PurchaseRequisition.EndNode1" Name="Transition16" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition17" From="PurchaseRequisition.Synchronizer4" To="PurchaseRequisition.CompPurchaserConfirm" Name="Transition17" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="PurchaseRequisition.Transition18" From="PurchaseRequisition.Synchronizer5" To="PurchaseRequisition.DeptPurchaserConfirm" Name="Transition18" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+</fpdl:WorkflowProcess>

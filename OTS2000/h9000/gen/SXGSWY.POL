@@ -1,0 +1,813 @@
+RECORD      NAME = POL
+
+ENTRY      NAME	= DI1
+           LONGNAME	= '1B低压侧1B2YH柜PT断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI2
+           LONGNAME	= '2B低压侧2B2YH柜PT断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI3
+           LONGNAME	= '1BA相在线监测装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI4
+           LONGNAME	= '1BB相在线监测装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI5
+           LONGNAME	= '1BC相在线监测装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250004
+           PNT_ADD	= 4
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI6
+           LONGNAME	= '2BA相在线监测装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250005
+           PNT_ADD	= 5
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI7
+           LONGNAME	= '2BB相在线监测装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250006
+           PNT_ADD	= 6
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI8
+           LONGNAME	= '2BC相在线监测装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250007
+           PNT_ADD	= 7
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI9
+           LONGNAME	= '能量计费装置电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250008
+           PNT_ADD	= 8
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI10
+           LONGNAME	= '1E2YH二次回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250009
+           PNT_ADD	= 9
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI11
+           LONGNAME	= '2E2YH二次回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250010
+           PNT_ADD	= 10
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI12
+           LONGNAME	= '同期装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250011
+           PNT_ADD	= 11
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI13
+           LONGNAME	= '自准方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250012
+           PNT_ADD	= 12
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI14
+           LONGNAME	= 'LCU远方控制方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250013
+           PNT_ADD	= 13
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI15
+           LONGNAME	= 'DL5001无压合闸确认'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250014
+           PNT_ADD	= 14
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI16
+           LONGNAME	= 'DL5002无压合闸确认'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250015
+           PNT_ADD	= 15
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI17
+           LONGNAME	= 'DL5003无压合闸确认'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250016
+           PNT_ADD	= 16
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI18
+           LONGNAME	= 'DL5004无压合闸确认'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250017
+           PNT_ADD	= 17
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI19
+           LONGNAME	= '1E线路检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250018
+           PNT_ADD	= 18
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI20
+           LONGNAME	= '2E线路检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250019
+           PNT_ADD	= 19
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI21
+           LONGNAME	= '1B检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250020
+           PNT_ADD	= 20
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI22
+           LONGNAME	= '2B检修标志'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250021
+           PNT_ADD	= 21
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI23
+           LONGNAME	= '枕深线1E线路同期送电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250022
+           PNT_ADD	= 22
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI24
+           LONGNAME	= '枕深线1E线路停电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250023
+           PNT_ADD	= 23
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI25
+           LONGNAME	= '布深线2E线路同期送电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250024
+           PNT_ADD	= 24
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI26
+           LONGNAME	= '布深线2E线路停电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250025
+           PNT_ADD	= 25
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI27
+           LONGNAME	= '1B充电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250026
+           PNT_ADD	= 26
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI28
+           LONGNAME	= '1B停电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250027
+           PNT_ADD	= 27
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI29
+           LONGNAME	= '2B充电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250028
+           PNT_ADD	= 28
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI30
+           LONGNAME	= '2B停电流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250029
+           PNT_ADD	= 29
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI31
+           LONGNAME	= '1B充电确认1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250030
+           PNT_ADD	= 30
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI32
+           LONGNAME	= '1B充电确认2'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250031
+           PNT_ADD	= 31
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI33
+           LONGNAME	= '1B充电确认3'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250032
+           PNT_ADD	= 32
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI34
+           LONGNAME	= '1B充电确认4'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250033
+           PNT_ADD	= 33
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI35
+           LONGNAME	= '1B充电确认5'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250034
+           PNT_ADD	= 34
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI36
+           LONGNAME	= '1B充电确认6'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250035
+           PNT_ADD	= 35
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI37
+           LONGNAME	= '2B充电确认1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250036
+           PNT_ADD	= 36
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI38
+           LONGNAME	= '2B充电确认2'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250037
+           PNT_ADD	= 37
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI39
+           LONGNAME	= '2B充电确认3'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250038
+           PNT_ADD	= 38
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI40
+           LONGNAME	= '2B充电确认4'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250039
+           PNT_ADD	= 39
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI41
+           LONGNAME	= '2B充电确认5'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250040
+           PNT_ADD	= 40
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI42
+           LONGNAME	= '2B充电确认6'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250041
+           PNT_ADD	= 41
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI43
+           LONGNAME	= '1E送电确认1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250042
+           PNT_ADD	= 42
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI44
+           LONGNAME	= '1E送电确认2'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250043
+           PNT_ADD	= 43
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI45
+           LONGNAME	= '1E送电确认3'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250044
+           PNT_ADD	= 44
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI46
+           LONGNAME	= '1E送电确认4'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250045
+           PNT_ADD	= 45
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI47
+           LONGNAME	= '1E送电确认5'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250046
+           PNT_ADD	= 46
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI48
+           LONGNAME	= '1E送电确认6'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250047
+           PNT_ADD	= 47
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI49
+           LONGNAME	= '2E送电确认1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250048
+           PNT_ADD	= 48
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI50
+           LONGNAME	= '2E送电确认2'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250049
+           PNT_ADD	= 49
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI51
+           LONGNAME	= '2E送电确认3'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250050
+           PNT_ADD	= 50
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI52
+           LONGNAME	= '2E送电确认4'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250051
+           PNT_ADD	= 51
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI53
+           LONGNAME	= '2E送电确认5'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250052
+           PNT_ADD	= 52
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI54
+           LONGNAME	= '2E送电确认6'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250053
+           PNT_ADD	= 53
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO1
+           LONGNAME	= '合G50011'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250054
+           PNT_ADD	= 54
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO2
+           LONGNAME	= '分G50011'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250055
+           PNT_ADD	= 55
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO3
+           LONGNAME	= '合G50012'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250056
+           PNT_ADD	= 56
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO4
+           LONGNAME	= '分G50012'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250057
+           PNT_ADD	= 57
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO5
+           LONGNAME	= '合G50021'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250058
+           PNT_ADD	= 58
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO6
+           LONGNAME	= '分G50021'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250059
+           PNT_ADD	= 59
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO7
+           LONGNAME	= '合G50022'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250060
+           PNT_ADD	= 60
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO8
+           LONGNAME	= '分G50022'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250061
+           PNT_ADD	= 61
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO9
+           LONGNAME	= '合G50031'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250062
+           PNT_ADD	= 62
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO10
+           LONGNAME	= '分G50031'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250063
+           PNT_ADD	= 63
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO11
+           LONGNAME	= '合G50032'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250064
+           PNT_ADD	= 64
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO12
+           LONGNAME	= '分G50032'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250065
+           PNT_ADD	= 65
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO13
+           LONGNAME	= '合G50041'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250066
+           PNT_ADD	= 66
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO14
+           LONGNAME	= '分G50041'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250067
+           PNT_ADD	= 67
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO15
+           LONGNAME	= '合G50042'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250068
+           PNT_ADD	= 68
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO16
+           LONGNAME	= '分G50042'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250069
+           PNT_ADD	= 69
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO17
+           LONGNAME	= '合G50016'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250070
+           PNT_ADD	= 70
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO18
+           LONGNAME	= '分G50016'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250071
+           PNT_ADD	= 71
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO19
+           LONGNAME	= '合G50026'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250072
+           PNT_ADD	= 72
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO20
+           LONGNAME	= '分G50026'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250073
+           PNT_ADD	= 73
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO21
+           LONGNAME	= '合G50036'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250074
+           PNT_ADD	= 74
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO22
+           LONGNAME	= '分G50036'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250075
+           PNT_ADD	= 75
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO23
+           LONGNAME	= '合G50046'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250076
+           PNT_ADD	= 76
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO24
+           LONGNAME	= '分G50046'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250077
+           PNT_ADD	= 77
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO25
+           LONGNAME	= '合DL5001断路器（无压合闸）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250078
+           PNT_ADD	= 78
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO26
+           LONGNAME	= '合DL5002断路器（无压合闸）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250079
+           PNT_ADD	= 79
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO27
+           LONGNAME	= '合DL5003断路器（无压合闸）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250080
+           PNT_ADD	= 80
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO28
+           LONGNAME	= '合DL5004断路器（无压合闸）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250081
+           PNT_ADD	= 81
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO29
+           LONGNAME	= 'DL5001送电(判同期）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250082
+           PNT_ADD	= 82
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO30
+           LONGNAME	= 'DL5001停电'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250083
+           PNT_ADD	= 83
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO31
+           LONGNAME	= 'DL5002送电(判同期）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250084
+           PNT_ADD	= 84
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO32
+           LONGNAME	= 'DL5002停电'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250085
+           PNT_ADD	= 85
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO33
+           LONGNAME	= 'DL5003送电(判同期）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250086
+           PNT_ADD	= 86
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO34
+           LONGNAME	= 'DL5003停电'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250087
+           PNT_ADD	= 87
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO35
+           LONGNAME	= 'DL5004送电(判同期）'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250088
+           PNT_ADD	= 88
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DO36
+           LONGNAME	= 'DL5004停电'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11250089
+           PNT_ADD	= 89
+           AOR_GRP	= GEN
+
+END

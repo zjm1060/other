@@ -1,0 +1,6671 @@
+!************************************************************************************
+!	                                倒闸流程1
+!************************************************************************************
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源1ZK至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL4_1ZK_OPEN
+
+STEP:		PBG.LCU10.ANA.MDLP1_BAT1_AIA  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU10.SYS.S_BHSZL4_1ZK
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源1ZK至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL4_1ZK_CLOSE
+
+STEP:		PBG.LCU10.ANA.MDLP1_BAT1_AIA  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 2
+
+STEP:		PBG.LCU10.SYS.S_BHSZL4_1ZK
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源2ZK至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL5_2ZK_OPEN
+
+STEP:		PBG.LCU10.ANA.MDLP2_BAT2_AIA  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU10.SYS.S_BHSZL5_2ZK
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源2ZK至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL5_2ZK_CLOSE
+
+STEP:		PBG.LCU10.ANA.MDLP2_BAT2_AIA  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 2
+
+STEP:		PBG.LCU10.SYS.S_BHSZL5_2ZK
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL883至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV883_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV883_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.CY_DL883_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL883至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV883_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV883_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL883_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL883至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV883_SW2_CLOSE2
+
+STEP:		PBG.LCU10.OBJ.CY_DL883_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL883至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV883_SW2_OPEN2
+
+STEP:		PBG.LCU10.OBJ.CY_DL883_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8232至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8232_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8232_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.CY_DL8232_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8232至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8232_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8232_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8232_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8232至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8232_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8232_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.CY_DL8232_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8232至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8232_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8232_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8232_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8422至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8422_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8422_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8422_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8422至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8422_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8422_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8422_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8422至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8422_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8422_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.CY_DL8422_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8422至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8422_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8422_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8422_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8432至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8432_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8432_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8432_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8432至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8432_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8432_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8432_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8432至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8432_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8432_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.CY_DL8432_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8432至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8432_SW2_OPEN2
+
+
+STEP:		PBG.LCU10.SYS.S_10KV8432_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8432_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8332至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8332_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8332_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8332_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8332至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8332_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8332_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8332_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8332至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8332_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8332_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.CY_DL8332_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源DL8332至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8332_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8332_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8332_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE11   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE10   
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+END_SEQUENCE:
+
+!******************************************************************
+!SEQUENCE_NAME:	(3号公用Ⅱ段)2号恒温恒湿空调室外机组电源GY308-1至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.GY3_GY3081_DI11_OPEN
+
+STEP:		PBG.LCU10.POL.GY3_GY3081_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0					
+
+END_SEQUENCE:
+
+!******************************************************************
+!SEQUENCE_NAME:(3号公用Ⅱ段)2号恒温恒湿空调室外机组电源GY308-1至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.GY3_GY3081_DI11_CLOSE
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	3
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	3
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	3
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-7
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	5
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-8
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	2
+
+STEP:		PBG.LCU10.ANA.UC10KV-Ⅷ-49
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	3
+
+STEP:		PBG.LCU10.ANA.UC10KV-Ⅷ-50
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	3
+
+STEP:		PBG.LCU10.ANA.UC10KV-Ⅷ-51
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	3
+
+STEP:		PBG.LCU10.ANA.UC10KV-Ⅷ-52
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	5
+
+STEP:		PBG.LCU10.ANA.UC10KV-Ⅷ-53
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	2
+
+STEP:		PBG.LCU10.ANA.X232B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	25
+
+STEP:		PBG.LCU10.ANA.X232B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	25
+
+STEP:		PBG.LCU10.ANA.X232B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=C	25
+
+
+STEP:		PBG.LCU10.POL.GY3_GY3081_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源GY3079至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_GY3079_OPEN
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4 
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5 
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6 
+
+STEP:		PBG.LCU10.ANA.X232B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X232B_ARZ_AIW 
+
+STEP:		PBG.LCU10.ANA.X232B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X232B_BRZ_AIW 
+			
+STEP:		PBG.LCU10.ANA.X232B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X232B_CRZ_AIW 
+
+STEP:		PBG.LCU10.POL.GY3_GY3079_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源GY3079至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_GY3079_CLOSE
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-4 
+				+C	3
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-5 
+						+C	3
+STEP:		PBG.LCU10.ANA.(UC)400V-GYII-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYII-6 
+						+C	3
+STEP:		PBG.LCU10.ANA.X232B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X232B_ARZ_AIW
+						+C	5
+STEP:		PBG.LCU10.ANA.X232B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X232B_BRZ_AIW 
+						+C	5
+STEP:		PBG.LCU10.ANA.X232B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X232B_CRZ_AIW 
+						+C	5
+STEP:		PBG.LCU10.POL.GY3_GY3079_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源GY3028至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_GY3028_OPEN
+
+INITIALIZE:
+
+!         PBG.LCU10.ANA.UC10KV-Ⅷ-55      = 0
+!         PBG.LCU10.ANA.UC10KV-Ⅷ-56      = 0
+!         PBG.LCU10.ANA.UC10KV-Ⅷ-57      = 0
+
+END_INITIALIZE:
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4 
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5 
+
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6 
+
+
+STEP:		PBG.LCU10.ANA.X231B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X231B_ARZ_AIW 
+
+
+STEP:		PBG.LCU10.ANA.X231B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X231B_BRZ_AIW 
+						
+
+STEP:		PBG.LCU10.ANA.X231B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X231B_CRZ_AIW
+
+
+STEP:		PBG.LCU10.POL.GY3_GY3028_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+					
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源GY3028至合闸
+!******************************************************************
+
+SEQUENCE:	PBG.LCU10.10KV_GY3028_CLOSE
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-4 
+						+C	3
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-5 
+						+C	3
+
+STEP:		PBG.LCU10.ANA.(UC)400V-GYI-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-GYI-6 
+						+C	3
+
+STEP:		PBG.LCU10.ANA.X231B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X231B_ARZ_AIW 
+						+C	5
+
+STEP:		PBG.LCU10.ANA.X231B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X231B_BRZ_AIW 
+						+C	5						
+STEP:		PBG.LCU10.ANA.X231B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X231B_CRZ_AIW
+						+C	5
+
+STEP:		PBG.LCU10.POL.GY3_GY3028_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源ZM3065至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_ZM3065_OPEN
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4 
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5 
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6 
+
+STEP:		PBG.LCU10.ANA.X332B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X332B_ARZ_AIW 
+
+STEP:		PBG.LCU10.ANA.X332B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X332B_BRZ_AIW 
+	
+STEP:		PBG.LCU10.ANA.X332B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X332B_CRZ_AIW
+
+STEP:		PBG.LCU10.POL.ZM3_ZM3065_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+					
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源ZM3065至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_ZM3065_CLOSE
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-4 
+						+C	3
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-5 
+						+C	3
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMII-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMII-6 
+						+C	3
+STEP:		PBG.LCU10.ANA.X332B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X332B_ARZ_AIW 
+						+C	5
+STEP:		PBG.LCU10.ANA.X332B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X332B_BRZ_AIW 
+						+C	5						
+STEP:		PBG.LCU10.ANA.X332B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X332B_CRZ_AIW
+						+C	5
+
+STEP:		PBG.LCU10.POL.ZM3_ZM3065_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+				
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源ZM33至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_ZM33_OPEN
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源ZM33至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_ZM33_CLOSE
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10   
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源ZM30210至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_ZM30210_OPEN
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+
+STEP:		PBG.LCU10.ANA.X331B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X331B_ARZ_AIW 
+
+STEP:		PBG.LCU10.ANA.X331B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X331B_BRZ_AIW 
+				
+STEP:		PBG.LCU10.ANA.X331B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X331B_CRZ_AIW
+
+STEP:		PBG.LCU10.POL.ZM3_ZM30210_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+				
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——直流电源ZM30210至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.10KV_ZM30210_CLOSE
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-4
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-4
+						+C	3
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-5
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-5
+						+C	3
+
+STEP:		PBG.LCU10.ANA.(UC)400V-ZMI-6
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.(UC)400V-ZMI-6
+						+C	3
+
+STEP:		PBG.LCU10.ANA.X331B_ARZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X331B_ARZ_AIW 
+						+C	5
+
+STEP:		PBG.LCU10.ANA.X331B_BRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X331B_BRZ_AIW 
+						+C	5
+						
+STEP:		PBG.LCU10.ANA.X331B_CRZ_AIW
+DELAY:		1
+TYPE:		CALC
+EQUATION:	=	PBG.LCU10.ANA.X331B_CRZ_AIW
+						+C	5
+
+STEP:		PBG.LCU10.POL.ZM3_ZM30210_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+				
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——刀闸ZK3至切除
+!******************************************************************
+SEQUENCE:	PBG.LCU7.10KV_ZK3_OPEN
+
+STEP:		PBG.LCU7.ANA.XDLP_BAT1_AIV   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.SYS.S_DXZL3_ZK3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——刀闸ZK3至蓄电池
+!******************************************************************
+SEQUENCE:	PBG.LCU7.10KV_ZK3_STOP
+
+STEP:		PBG.LCU7.ANA.XDLP_BAT1_AIV   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 230
+
+STEP:		PBG.LCU7.SYS.S_DXZL3_ZK3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	2
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——刀闸ZK4至切除
+!******************************************************************
+SEQUENCE:	PBG.LCU7.10KV_ZK4_OPEN
+
+STEP:		PBG.LCU7.ANA.XDLP_BAT2_AIV   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU7.SYS.S_DXZL3_ZK4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——刀闸ZK4至切除蓄电池
+!******************************************************************
+SEQUENCE:	PBG.LCU7.10KV_ZK4_STOP
+
+STEP:		PBG.LCU7.ANA.XDLP_BAT2_AIV   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 230
+
+STEP:		PBG.LCU7.SYS.S_DXZL3_ZK4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	2
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7001至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7001_SW2_OPEN
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7001_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_10KV7001_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7001至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7001_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7001_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7001_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7001至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7001_SW2_OPEN2
+
+STEP:		PBG.LCU10.OBJ.CY_DL7001_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_10KV7001_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7001至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7001_SW2_CLOSE2
+
+STEP:		PBG.LCU10.OBJ.CY_DL7001_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.SYS.S_10KV7001_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	01
+
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7411至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7411_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7411_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7411_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL74111至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7411_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7411_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7411_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7411至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7411_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7411_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7411_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL74111至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7411_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7411_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7411_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7421至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7421_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7421_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7421_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7421至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7421_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7421_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7421_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7421至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7421_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7421_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL7421_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7421至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7421_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7421_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7421_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL702至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV702_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV702_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL702_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL702至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV702_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV702_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL702_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL702至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV702_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV702_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL702_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL702至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV702_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV702_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL702_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7431至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7431_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7431_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7431_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7431至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7431_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7431_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7431_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7431至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7431_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7431_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7431_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7431至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7431_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7431_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7431_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL791至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV791_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV791_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL791_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL791至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV791_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV791_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL791_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL791至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV791_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV791_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL791_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL791至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV791_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV791_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL791_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7231至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7231_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7231_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7231_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7231至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7231_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7231_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7231_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7231至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7231_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7231_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL7231_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7231至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7231_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7231_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7231_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7331至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7331_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7331_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7331_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7331至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7331_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7331_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7331_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7331至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7331_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7331_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7331_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7331至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7331_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7331_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7331_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7511至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7511_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7511_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7511_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7511至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7511_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7511_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7511_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7511至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7511_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7511_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7511_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7511至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7511_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7511_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7511_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7440至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7440_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7440_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7440_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+ 
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7440至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7440_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7440_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7440_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7440至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7440_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7440_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7440_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7440至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7440_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7440_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7440_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7251至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7251_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7251_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7251_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7251至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7251_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7251_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7251_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7251至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7251_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7251_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7251_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7251至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7251_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7251_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL7251_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7261至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7261_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV7261_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7261_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7261至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7261_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7261_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7261_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7261至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7261_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV7261_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7261_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7261至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7261_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV7261_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL7261_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL792至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV792_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV792_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL792_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL792至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV792_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV792_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL792_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL792至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV792_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV792_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL792_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL792至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV792_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV792_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL792_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL708至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV708_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV708_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL708_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL708至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV708_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV708_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL708_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL708至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV708_SW2_OPEN2
+
+
+STEP:		PBG.LCU10.SYS.S_10KV708_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL708_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL708至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV708_SW2_CLOSE2
+
+
+STEP:		PBG.LCU10.SYS.S_10KV708_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL708_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL892至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV892_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV892_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL892_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL892至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV892_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV892_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL892_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL892至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV892_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV892_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL892_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL892至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV892_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV892_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL892_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8262至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8262_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8262_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8262_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8262至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8262_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8262_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL8262_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8262至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8262_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8262_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8262_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8262至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8262_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8262_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8262_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8252至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8252_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8252_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8252_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8252至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8252_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8252_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL8252_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8252至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8252_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8252_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8252_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8252至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8252_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8252_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8252_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8450至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8450_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8450_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8450_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8450至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8450_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8450_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL8450_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8450至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8450_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8450_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8450_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8450至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8450_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8450_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8450_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8512至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8512_SW2_OPEN
+
+
+STEP:		PBG.LCU10.SYS.S_10KV8512_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8512_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8512至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8512_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8512_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL8512_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8512至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8512_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8512_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8512_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8512至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8512_SW2_CLOSE2
+
+
+STEP:		PBG.LCU10.SYS.S_10KV8512_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL8512_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL891至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV891_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV891_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL891_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL891至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV891_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV891_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL891_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL891至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV891_SW2_OPEN2
+
+
+STEP:		PBG.LCU10.SYS.S_10KV891_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL891_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL891至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV891_SW2_CLOSE2
+
+
+
+STEP:		PBG.LCU10.SYS.S_10KV891_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL891_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL805至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV805_SW2_OPEN
+
+
+
+
+STEP:		PBG.LCU10.OBJ.CY_DL805_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_10KV805_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL805至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV805_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV805_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL805_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL805至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV805_SW2_OPEN2
+
+STEP:		PBG.LCU10.OBJ.CY_DL805_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_10KV805_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL805至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV805_SW2_CLOSE2
+
+STEP:		PBG.LCU10.OBJ.CY_DL805_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.SYS.S_10KV805_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8412至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8412_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_10KV8412_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.OBJ.CY_DL8412_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8412至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8412_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8412_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL8412_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8412至分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8412_SW2_OPEN2
+
+STEP:		PBG.LCU10.SYS.S_10KV8412_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.CY_DL8412_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8412至合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8412_SW2_CLOSE2
+
+STEP:		PBG.LCU10.SYS.S_10KV8412_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.OBJ.CY_DL8412_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1 
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0 
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY31现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY31_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_GY31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.GY3_GY31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY31现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY31_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_GY31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.GY3_GY31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY31监控合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.GY3_GY31_OBJ_CLOSE
+
+STEP:		PBG.LCU10.OBJ.GY3_GY31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.SYS.S_GY31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY31监控分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.GY3_GY31_OBJ_OPEN
+
+STEP:		PBG.LCU10.OBJ.GY3_GY31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_GY31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY31储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY31_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_GY31_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY31储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY31_SW3_OPEN
+
+STEP:		PBG.LCU10.SYS.S_GY31_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY32现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY32_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_GY32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.GY3_GY32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY32现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY32_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_GY32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.GY3_GY32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY32监控合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.GY3_GY32_OBJ_CLOSE
+
+STEP:		PBG.LCU10.OBJ.GY3_GY32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+STEP:		PBG.LCU10.SYS.S_GY32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY32监控分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.GY3_GY32_OBJ_OPEN
+
+STEP:		PBG.LCU10.OBJ.GY3_GY32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_GY32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY32储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY32_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_GY32_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY32储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY32_SW3_OPEN
+
+STEP:		PBG.LCU10.SYS.S_GY32_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY33现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY33_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+STEP:		PBG.LCU10.OBJ.GY3_GY33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY33现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY33_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.OBJ.GY3_GY33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY33监控合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.GY3_GY33_OBJ_CLOSE
+
+STEP:		PBG.LCU10.OBJ.GY3_GY33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY33监控分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.GY3_GY33_OBJ_OPEN
+
+STEP:		PBG.LCU10.OBJ.GY3_GY33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY33储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY33_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——GY33储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_GY33_SW3_OPEN
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM31现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM31_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_ZM31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM31现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM31_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_ZM31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM31监控合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.ZM3_ZM31_OBJ_CLOSE
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.SYS.S_ZM31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM31监控分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.ZM3_ZM31_OBJ_OPEN
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM31_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_ZM31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM31储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM31_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_ZM31_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM31储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM31_SW3_OPEN
+
+STEP:		PBG.LCU10.SYS.S_ZM31_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM32现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM32_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_ZM32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM32现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM32_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_ZM32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM32监控合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.ZM3_ZM32_OBJ_CLOSE
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.SYS.S_ZM32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM32监控分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.ZM3_ZM32_OBJ_OPEN
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM32_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_ZM32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM32储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM32_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_ZM32_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM32储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM32_SW3_OPEN
+
+STEP:		PBG.LCU10.SYS.S_ZM32_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM33现地合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM33_SW2_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM33现地分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM33_SW2_OPEN
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM33监控合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.ZM3_ZM33_OBJ_CLOSE
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM33监控分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.OBJ.ZM3_ZM33_OBJ_OPEN
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM33储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM33_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZM33储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_ZM33_SW3_OPEN
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK1至切除
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL1_ZK1_OPEN
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_ZK1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJMXKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJBATKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK1至母线侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL1_ZK1_STOP
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_ZK1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	2
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJMXKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJBATKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK1至蓄电池侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL1_ZK1_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_ZK1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJMXKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJBATKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK2至切除
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL2_ZK2_OPEN
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL2_ZK2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP2_CDJMXKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP2_CDJBATKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK2至母线侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL2_ZK2_CLOSE
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL2_ZK2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDCP2_CDJMXKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDCP2_CDJBATKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK2至蓄电池侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL2_ZK2_STOP
+
+STEP:		PBG.LCU10.SYS.S_BHSZL2_ZK2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	2
+
+STEP:		PBG.LCU10.POL.MDCP2_CDJMXKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP2_CDJBATKG_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK3至切除
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL4_ZK3_OPEN
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL4_ZK3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDLP1_MLKG2D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDLP1_MLKG1D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK3至2#母线侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL4_ZK3_CLOSE
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL4_ZK3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDLP1_MLKG2D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDLP1_MLKG1D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK3至1#蓄电池侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL4_ZK3_STOP
+
+STEP:		PBG.LCU10.SYS.S_BHSZL4_ZK3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	2
+
+STEP:		PBG.LCU10.POL.MDLP1_MLKG2D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDLP1_MLKG1D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK4至切除
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL5_ZK4_OPEN
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL5_ZK4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDLP2_MLKG1D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDLP2_MLKG2D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK4至1#母线侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL5_ZK4_CLOSE
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL5_ZK4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDLP2_MLKG1D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDLP2_MLKG2D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK4至2#蓄电池侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL5_ZK4_STOP
+
+STEP:		PBG.LCU10.SYS.S_BHSZL5_ZK4
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	2
+
+STEP:		PBG.LCU10.POL.MDLP2_MLKG1D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDLP2_MLKG2D_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK5至切除
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL3_ZK5_OPEN
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL3_ZK5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP3_T1D_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP3_T2D_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK5至1#蓄电池侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL3_ZK5_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_BHSZL3_ZK5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDCP3_T1D_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.MDCP3_T2D_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	地面直流刀闸ZK5至2#蓄电池侧
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL3_ZK5_STOP
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL3_ZK5
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	2
+
+STEP:		PBG.LCU10.POL.MDCP3_T1D_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.MDCP3_T2D_DI21
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7001储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7001_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7001_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7001_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7411储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7411_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7411_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7411_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7421储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7421_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7421_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7421_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL702储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV702_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV702_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL702_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7431储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7431_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7431_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7431_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL791储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV791_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV791_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL791_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7231储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7231_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7231_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7231_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7331储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7331_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7331_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7331_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7511储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7511_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7511_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7511_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7440储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7440_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7440_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7440_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7251储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7251_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7251_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7251_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL7261储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV7261_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV7261_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL7261_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL792储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV792_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV792_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL792_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL708储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV708_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV708_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL708_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8412储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8412_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8412_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8412_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8422储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8422_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8422_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8422_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL805储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV805_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV805_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL805_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8432储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8432_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8432_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8432_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL891储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV891_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV891_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL891_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8232储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8232_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8232_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8232_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8332储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8332_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8332_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8332_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8512储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8512_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8512_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8512_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8450储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8450_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8450_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8450_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8252储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8252_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8252_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8252_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL8262储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV8262_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV8262_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL8262_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL892储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV892_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV892_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL892_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——DL883储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_10KV883_SW3_CLOSE
+
+STEP:		PBG.LCU10.SYS.S_10KV883_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.INT.CY_DL883_SOE07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	进水口直流刀闸ZK1投入
+!******************************************************************
+SEQUENCE:	PBG.LCU11.SYS.S_JSKZL_ZK1_CLOSE
+
+
+STEP:		PBG.LCU11.SYS.S_JSKZL_ZK1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU11.POL.JDYP_CDJSWH_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	进水口直流刀闸ZK1断开
+!******************************************************************
+SEQUENCE:	PBG.LCU11.SYS.S_JSKZL_ZK1_OPEN
+
+
+STEP:		PBG.LCU11.SYS.S_JSKZL_ZK1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU11.POL.JDYP_CDJSWH_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	进水口直流刀闸ZK2投入
+!******************************************************************
+SEQUENCE:	PBG.LCU11.SYS.S_JSKZL_ZK2_CLOSE
+
+
+STEP:		PBG.LCU11.SYS.S_JSKZL_ZK2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU11.POL.JDYP_BATSWH_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	进水口直流刀闸ZK2断开
+!******************************************************************
+SEQUENCE:	PBG.LCU11.SYS.S_JSKZL_ZK2_OPEN
+
+
+STEP:		PBG.LCU11.SYS.S_JSKZL_ZK2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU11.POL.JDYP_BATSWH_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!dzy
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V的备自投装置动作GY31、GY32
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.GY3_BZT_TR
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+ 	EQUA_TYPE:	CHANGE 	
+	EQUATION:	=	PBG.LCU10.POL.GY3_GY33_DI11	?	OPEN
+			&	PBG.LCU10.SYS.S_GY33_GZ		?	CLOSE
+			&	PBG.LCU10.SYS.S_GY31_1LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY31_1LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY32_2LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY32_2LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP3	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_7QA	?	CLOSE
+			&	PBG.LCU10.POL.GY3_BZTGJ_DI61	?	OPEN
+			&	PBG.LCU10.POL.GY3_BZT_DI13	?	OPEN
+			&	PBG.LCU10.POL.GY3_GY31_DI11	?	OPEN
+			&	PBG.LCU10.POL.GY3_GY32_DI11	?	CLOSE
+			&	PBG.LCU10.ANA.(UC)400V-GYII-1   >   	220
+			+	PBG.LCU10.POL.GY3_GY33_DI11	?	OPEN
+			&	PBG.LCU10.SYS.S_GY33_GZ		?	CLOSE
+			&	PBG.LCU10.SYS.S_GY31_1LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY31_1LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY32_2LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY32_2LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP3	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_7QA	?	CLOSE
+			&	PBG.LCU10.POL.GY3_BZTGJ_DI61	?	OPEN
+			&	PBG.LCU10.POL.GY3_BZT_DI13	?	OPEN
+			&	PBG.LCU10.POL.GY3_GY31_DI11	?	CLOSE
+			&	PBG.LCU10.POL.GY3_GY32_DI11	?	OPEN
+			&	PBG.LCU10.ANA.(UC)400V-GYI-1  	>   	220
+
+
+
+STEP:		PBG.LCU10.POL.GY3_BZT_DI13
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.OBJ.GY3_GY33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号公用400V的备自投装置动作恢复
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.GY31_BZT_TC
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 
+	EQUATION:	=	PBG.LCU10.POL.GY3_BZT_DI13	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP4	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY31_3QA	?	CLOSE
+			&	PBG.LCU10.INT.CY_DL7231_SOE11	?	CLOSE
+			&	PBG.LCU10.POL.GY3_GY31_DI11	?	OPEN
+			
+
+STEP:		PBG.LCU10.OBJ.GY3_GY33_OBJ
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.OBJ.GY3_GY31_OBJ
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.SYS.S_GY31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_BZT_DI13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+SEQUENCE:	PBG.LCU10.POL.GY32_BZT_TC
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 	
+	EQUATION:	=	PBG.LCU10.POL.GY3_BZT_DI13	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY33_3LP4	?	CLOSE
+			&	PBG.LCU10.SYS.S_GY32_4QA	?	CLOSE
+			&	PBG.LCU10.INT.CY_DL8232_SOE11	?	CLOSE
+			&	PBG.LCU10.POL.GY3_GY32_DI11	?	OPEN
+		
+
+STEP:		PBG.LCU10.OBJ.GY3_GY33_OBJ
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.GY3_GY33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.SYS.S_GY33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.OBJ.GY3_GY32_OBJ
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_GY32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_GY32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.GY3_BZT_DI13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V的备自投装置动作ZM31、ZM32
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.ZM3_BZT_TR
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 	
+	EQUATION:	=	PBG.LCU10.POL.ZM3_ZM33_DI11	?	OPEN
+			&	PBG.LCU10.SYS.S_ZM33_GZ		?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM31_1LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM31_1LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM32_2LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM32_2LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP3	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_7QA	?	CLOSE
+			&	PBG.LCU10.POL.ZM3_BZT_DI00	?	OPEN
+			&	PBG.LCU10.POL.ZM3_BZT_DI13	?	OPEN
+			&	PBG.LCU10.POL.ZM3_ZM31_DI11	?	OPEN
+			&	PBG.LCU10.POL.ZM3_ZM32_DI11	?	CLOSE
+			&	PBG.LCU10.ANA.(UC)400V-ZMII-1   > 	220
+			+	PBG.LCU10.POL.ZM3_ZM33_DI11	?	OPEN
+			&	PBG.LCU10.SYS.S_ZM33_GZ		?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM31_1LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM31_1LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM32_2LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM32_2LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP1	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP2	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP3	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_7QA	?	CLOSE
+			&	PBG.LCU10.POL.ZM3_BZT_DI00	?	OPEN
+			&	PBG.LCU10.POL.ZM3_BZT_DI13	?	OPEN
+			&	PBG.LCU10.POL.ZM3_ZM31_DI11	?	CLOSE
+			&	PBG.LCU10.POL.ZM3_ZM32_DI11	?	OPEN
+			&	PBG.LCU10.ANA.(UC)400V-ZMI-1    > 	220
+
+
+
+STEP:		PBG.LCU10.POL.ZM3_BZT_DI13
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM33_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	3号照明400V的备自投装置动作恢复
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.ZM31_BZT_TC
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 	
+	EQUATION:	=	PBG.LCU10.POL.ZM3_BZT_DI13	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP4	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM31_3QA	?	CLOSE
+			&	PBG.LCU10.INT.CY_DL7331_SOE11	?	CLOSE
+			&	PBG.LCU10.POL.ZM3_ZM31_DI11	?	OPEN
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM33_OBJ
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM31_OBJ
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM31_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_ZM31_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_BZT_DI13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+SEQUENCE:	PBG.LCU10.POL.ZM32_BZT_TC
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 	
+	EQUATION:	=	PBG.LCU10.POL.ZM3_BZT_DI13	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM33_3LP4	?	CLOSE
+			&	PBG.LCU10.SYS.S_ZM32_4QA	?	CLOSE
+			&	PBG.LCU10.INT.CY_DL8332_SOE11	?	CLOSE
+			&	PBG.LCU10.POL.ZM3_ZM32_DI11	?	OPEN
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM33_OBJ
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.POL.ZM3_ZM33_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.SYS.S_ZM33_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU10.OBJ.ZM3_ZM32_OBJ
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU10.POL.ZM3_ZM32_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU10.SYS.S_ZM32_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.ZM3_BZT_DI13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+

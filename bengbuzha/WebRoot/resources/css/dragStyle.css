@@ -1,0 +1,101 @@
+body {
+	font-size: 12px;
+}
+
+#header {
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+	filter: Alpha(Opacity = 50);
+	
+}
+
+#header p {
+	margin: 0px;
+}
+
+#container {
+	width: 100%;
+	margin: 0px auto;
+	text-align: left;
+	TOP: 130px;
+}
+
+ul#tabs,ul#tabs li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul#tabs li {
+	float: left;
+	padding: 5px;
+	margin-left: 10px;
+	border: solid 1px #CCCCCC;
+	background: #FCFCFC;
+	cursor: pointer;
+	display: none;
+}
+
+ul#tabs li.tabSelected {
+	background: #CCCCCC;
+	color: White;
+}
+
+ul#tabs li.tabHover {
+	background: #999999;
+	color: White;
+}
+
+#pages {
+	clear: both;
+}
+
+.columns {
+	clear: both;
+	display: none;
+}
+
+.column {
+	border: solid 0px #CCCCCC;;
+	background: #FCFCFC;;
+	padding: 0px;;
+	float: left;;
+	margin: 10px;;
+	display: inline;
+}
+
+.item {
+	text-align: center;;
+	padding: 0px;;
+	margin: 10px;;
+	border: solid 1px #CCCCCC;;
+	background: white;;
+	width: auto;
+}
+
+.item h3 {
+	margin: 0px;;
+	height: 20px;;
+	border-bottom: solid 1px #CCCCCC;;
+	color: #0066CC;;
+	cursor: move;
+}
+
+
+.page1 {
+	background-color: #EBF7FA;
+	text-align: left;
+}
+
+.page2 {
+	background-color: Blue;
+}
+
+.page3 {
+	background-color: Black;
+}
+
+.page4 {
+	background-color: #CCCCCC;
+}

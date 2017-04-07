@@ -1,0 +1,103 @@
+<html id=DashboardMenu>
+
+	<head>
+		<base id="bseHref">
+		<link id="lnkStylesheet" rel="stylesheet" href="">
+	</head>
+
+
+	<script type="text/javascript">
+
+		public_description = new DashboardMenuScriptlet;
+
+		/*----------------------------------------------------------------------
+		  DashboardMenuScriptlet
+
+		  Creates and initializes the scriptlet.
+		----------------------------------------------------------------------*/
+		function DashboardMenuScriptlet()
+		{
+			this.get_NaturalHeight = GetNaturalHeight;
+			this.get_NaturalWidth = GetNaturalWidth;
+			this.put_DBBaseHref = PutBaseHref;
+			this.put_DBStylesheetLink = PutStylesheetLink;
+			this.AddMenuItem = DoAddMenuItem;
+			this.SizeTableToFit = DoSizeTableToFit;
+		}
+
+		/*----------------------------------------------------------------------
+		  PutBaseHref
+
+		  Creates and initializes the scriptlet.
+		----------------------------------------------------------------------*/
+		function PutBaseHref(strBaseHref)
+		{
+			bseHref.href = strBaseHref;
+		}
+
+		function PutStylesheetLink(strStylesheetLink)
+		{
+			lnkStylesheet.href = strStylesheetLink;
+		}
+
+		/*----------------------------------------------------------------------
+		  DoAddMenuItem
+
+		  Adds a new menu item to the menu.
+		----------------------------------------------------------------------*/
+		function DoAddMenuItem(strName, strHref, strImg)
+		{
+
+			var strHTML;
+			var tr;
+			var td;
+
+			// Create a new row with one cell in it.
+			tr = tblMenu.insertRow();
+			td = tr.insertCell();
+
+			// Build up some HTML for a new table row, using the
+			// passed in arguments.
+			strHTML = "<a class=\"DashNavLink\" href=\"" + strHref + "\"><nobr>";
+			if (strImg != "")
+			{
+				strHTML = strHTML + "<img border=\"0\" src=\"" + strImg + "\">"
+			}
+			strHTML = strHTML + strName;
+			strHTML = strHTML + "</nobr></a>";
+
+			// Initialize the cell.
+			td.style.className = "DashNavChildMenuItem";
+			td.innerHTML = strHTML;
+		}
+
+		/*----------------------------------------------------------------------
+		  DoSizeTableToFit
+
+		  Sets the width of the table to 100% so that it fills the container.
+		----------------------------------------------------------------------*/
+		function DoSizeTableToFit()
+		{
+			tblMenu.style.width = "100%"
+		}
+
+		function GetNaturalHeight()
+		{
+			return tblMenu.offsetHeight;
+		}
+
+		function GetNaturalWidth()
+		{
+			return tblMenu.offsetWidth;
+		}
+
+	</script>
+
+	<body style="margin: 0in">
+
+		<table id="tblMenu" class="DashNavChildMenu" border=0 cellSpacing=0>
+		</table>
+
+	</body>
+
+</html>

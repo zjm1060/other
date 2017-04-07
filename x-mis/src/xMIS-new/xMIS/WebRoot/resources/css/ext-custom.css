@@ -1,0 +1,790 @@
+.icon-grid {
+	background-image: url(../shared/icons/fam/grid.png) !important;
+}
+
+#button-grid .x-panel-body {
+	border: 1px solid #99bbe8;
+	border-top: 0 none;
+}
+
+.add {
+	background-image: url(../images/add.gif) !important;
+}
+
+.addIcon {
+	background-image: url(../images/add.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.delIcon {
+	background-image: url(../images/split-false.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.up {
+	background-image: url(../images/up.gif) !important;
+}
+
+.delete {
+	background-image: url(../images/delete.gif) !important;
+}
+
+.download {
+	background-image: url(../images/download.png) !important;
+}
+
+.delete2 {
+	background-image: url(../images/delete.gif) !important;
+}
+
+.deleteIcon {
+	background-image: url(../images/delete.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.option {
+	background-image: url(../shared/icons/fam/plugin.gif) !important;
+}
+
+.refresh {
+	background-image: url(../images/refresh.gif) !important;
+}
+
+.edit {
+	background-image: url(../images/edit.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.tree {
+	background-image: url(../images/tree.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.deptUnsaved {
+	background-image: url(../images/application.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.dept {
+	background-image: url(../images/application_side_boxes.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.comp {
+	background-image: url(../images/application_double.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.xls {
+	background-image: url(../images/xls.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.folder_image {
+	background-image: url(../images/folder_image.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.cogAdd_image {
+	background-image: url(../images/cog_add.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.application_put {
+	background-image: url(../images/application_put.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.remove {
+	background-image: url(../images/delete.gif) !important;
+}
+
+.save {
+	background-image: url(../images/save.gif) !important;
+}
+
+.ok {
+	background-image: url(../images/accept.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.cancel {
+	background-image: url(../images/delete.gif) !important;
+}
+
+.close {
+	background-image: url(../images/cross-circle.png) !important;
+}
+
+.prev {
+	background-image: url(../images/prev.gif) !important;
+}
+
+.next {
+	background-image: url(../images/next.gif) !important;
+}
+
+.document {
+	background-image: url("../images/document.gif") !important;
+}
+
+.attatchment {
+	background-image: url("../images/attatchment.gif") !important;
+}
+
+.star {
+	background-image: url(../images/star.gif) !important;
+}
+
+.condition {
+	background-image: url(../images/accept.png) !important;
+}
+
+.updateAttc {
+	background-image: url(../images/col-move-bottom.gif) !important;
+}
+
+.diagram {
+	background-image: url("../images/diagrams.png") !important;
+	width: 16px;
+	height: 16px;
+}
+
+.task {
+	background-image: url("../images/task.gif") !important;
+}
+
+.main-head-logo {
+	background-repeat: no-repeat;
+	background-image: url("../images/top-title-logo.jpg");
+}
+
+.main-head-loginfo {
+	background-repeat: repeat-x;
+	background-image: url("../images/top-title-loginfo.jpg");
+}
+
+.main-foot-status {
+	background-repeat: repeat-x;
+	background-image: url("../images/bottom-statebar.jpg");
+	text-align: bottom;
+}
+
+.tab-loading {
+	background-image: url(../images/loading.gif);
+}
+
+.tab-sy {
+	background-image: url("../images/sy.png");
+}
+
+.left-menu-document {
+	background-image: url("../images/document.gif");
+}
+
+.menu-contract-edit {
+	background-image: url("../images/menu-contract-edit.png") !important;
+}
+
+.menu-contract-manager {
+	background-image: url("../images/menu-contract-manager.png") !important;
+}
+
+.menu-human-res-manager {
+	background-image: url("../images/menu-human-res-manager.png") !important;
+}
+
+.menu-password-edit {
+	background-image: url("../images/menu-password-lock.gif") !important;
+}
+
+.bg_repeat_x {
+	BACKGROUND-REPEAT: repeat-x
+}
+
+.red-td-data {
+	FONT-WEIGHT: bolder;
+	COLOR: #ff0000;
+	TEXT-ALIGN: left
+}
+
+.x-grid-group-body-floatcontainer:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.x-grid-group-body-floatcontainer {
+	display: inline-block;
+}
+
+/* Hides from IE Mac \*/
+* html .x-grid-group-body-floatcontainer {
+	height: 1%;
+}
+
+.x-grid-group-body-floatcontainer {
+	display: block;
+}
+
+/* End Hack */
+.ux-explorerview-item {
+	float: left;
+	display: block;
+	border: none;
+}
+
+/* Large Icons */
+.ux-explorerview-large-item {
+	width: 100px;
+	height: 100px;
+	margin: 5px 0 0 5px;
+	-moz-user-select: none;
+}
+
+.ux-explorerview-large-item .ux-explorerview-icon {
+	width: 100px;
+	height: 80px;
+}
+
+.ux-explorerview-large-item .ux-explorerview-icon td {
+	padding-top: 8px;
+}
+
+.ux-explorerview-large-item .ux-explorerview-text {
+	text-align: center;
+	padding: 0 5px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Medium Icons */
+.ux-explorerview-medium-item {
+	width: 80px;
+	height: 80px;
+	margin: 5px 0 0 5px;
+	-moz-user-select: none;
+}
+
+.ux-explorerview-medium-item .ux-explorerview-icon {
+	width: 80px;
+	height: 60px;
+}
+
+.ux-explorerview-medium-item .ux-explorerview-icon td {
+	padding-top: 8px;
+}
+
+.ux-explorerview-medium-item .ux-explorerview-text {
+	text-align: center;
+	padding: 0 5px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Small Icons */
+.ux-explorerview-small-item {
+	width: 180px;
+	height: 18px;
+	margin: 5px 0 0 5px;
+	-moz-user-select: none;
+}
+
+.ux-explorerview-small-item .ux-explorerview-icon {
+	float: left;
+	width: 20px;
+	height: 18px;
+}
+
+.ux-explorerview-small-item .ux-explorerview-text {
+	float: left;
+	width: 150px;
+	padding-top: 2px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Tiles */
+.ux-explorerview-tiles-item {
+	width: 180px;
+	height: 48px;
+	margin: 5px 0 0 5px;
+	-moz-user-select: none;
+}
+
+.ux-explorerview-tiles-item .ux-explorerview-icon {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+.ux-explorerview-tiles-item .ux-explorerview-text {
+	float: left;
+	width: 120px;
+	padding-top: 8px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ux-explorerview-tiles-item .ux-explorerview-text span {
+	color: #777;
+}
+
+.x-selectable, .x-selectable * {
+	-moz-user-select: text ! important;
+	-khtml-user-select: text ! important;
+}
+
+.personPic {
+	background-image: url(../images/person.png) !important;
+}
+
+.male {
+	background-image: url(../images/user-green.png) !important;
+}
+
+.female {
+	background-image: url(../images/user-green-female.png) !important;
+}
+
+.users {
+	background-image: url(../images/users.png) !important;
+}
+
+.ux-cell-value {
+	position: relative;
+	zoom: 1;
+	height: 16px;
+}
+
+.ux-cell-actions {
+	position: absolute;
+	right: 0;
+	top: 0px;
+}
+
+.ux-cell-actions-left {
+	left: 0;
+	top: 0px;
+}
+
+.ux-cell-action {
+	width: 16px;
+	height: 16px;
+	float: left;
+	cursor: pointer;
+	margin: 0 0 0 4px;
+}
+
+.ux-cell-actions-left .ux-cell-action {
+	margin: 0 4px 0 0;
+}
+
+.x-grid3-body .x-grid3-td-cnumberer {
+	background: transparent repeat-y right;
+}
+
+.x-grid3-body .x-grid3-td-cnumberer .x-grid3-cell-inner {
+	padding: 3px 5px 0 0 !important;
+	text-align: right;
+}
+
+.x-grid3-body .x-grid3-row-selected .x-grid3-td-cnumberer {
+	background: transparent repeat-y right;
+}
+
+.x-grid3-body .x-grid3-td-cnumberer {
+	background-image: url(../images/default/grid/grid3-special-col-bg.gif);
+}
+
+.x-grid3-body .x-grid3-row-selected .x-grid3-td-cnumberer {
+	background-image:
+		url(../images/default/grid/grid3-special-col-sel-bg.gif);
+}
+
+.x-grid3-body .x-grid3-td-cnumberer .x-grid3-cell-inner {
+	color: #444;
+}
+
+table.info {
+	width: 600px;
+	margin-top: 5px;
+}
+
+table.info tr {
+	height: 22px;
+}
+
+table.info tr td {
+	vertical-align: middle;
+}
+
+.table {
+	table-layout: fixed;
+	empty-cells: show;
+	border-collapse: collapse;
+	margin: 0 auto;
+	border: 1px solid #cad9ea;
+	color: #666;
+}
+
+.table td {
+	height:20px;
+}
+
+
+.table th {
+	background-repeat: repeat-x;
+	text-align: center;
+	height:20px;
+}
+
+.table td, .table th {
+	border: 1px solid #cad9ea;
+	padding: 0 1em 0;
+}
+
+.table tr.alter {
+	background-color: #f5fafe;
+}
+
+tr.tr1 {
+	
+}
+
+tr.tr2 {
+	
+}
+
+th.name,td.name {
+	padding-right: 5px;
+	width: 120px;
+	font-size: 12px;
+	background-color: #f1f2f4;
+	border: solid 1px #d0d0d0;
+}
+td.name{
+	text-align: right;
+}
+th.value,td.value {
+	padding: 0px 10px 0px 10px;
+	font-size: 14px;
+	background-color: #ffffff;
+	border: solid 1px #d0d0d0;
+}
+
+/* MuiltiSelect.css */
+.ux-mselect {
+	overflow: auto;
+	background: white;
+	position: relative; /* for calculating scroll offsets */
+	zoom: 1;
+	overflow: auto;
+}
+
+.ux-mselect-item {
+	font: normal 12px tahoma, arial, helvetica, sans-serif;
+	padding: 2px;
+	border: 1px solid #fff;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.ux-mselect-selected {
+	border: 1px dotted #a3bae9 !important;
+	background: #DFE8F6;
+	cursor: pointer;
+}
+
+.x-view-drag-insert-above {
+	border-top: 1px dotted #3366cc;
+}
+
+.x-view-drag-insert-below {
+	border-bottom: 1px dotted #3366cc;
+}
+
+/*MuiltiSelect.css End*/
+/**GroupSummary.css Start**/
+.x-grid3-summary-row {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	color: #333;
+	background: #f1f2f4;
+}
+
+.x-grid3-summary-row .x-grid3-cell-inner {
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.x-grid3-cell-first .x-grid3-cell-inner {
+	padding-left: 16px;
+}
+
+.x-grid-hide-summary .x-grid3-summary-row {
+	display: none;
+}
+
+.x-grid3-summary-msg {
+	padding: 4px 16px;
+	font-weight: bold;
+}
+
+/**GroupSummary.css End**/
+.reload {
+	background-image: url("../images/refresh.gif") !important;
+}
+
+/** add by WZM 锟斤拷头锟斤拷锟斤拷 锟斤拷锟斤拷ext-all.css锟斤拷锟斤拷锟斤拷锟斤拷锟�/
+.x-grid3-cell-inner,.x-grid3-hd-inner {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	padding: 3px 3px 3px 5px;
+}
+
+/** add by WZM 锟斤拷头锟斤拷锟斤拷 锟斤拷锟斤拷ext-all.css锟斤拷锟斤拷锟斤拷锟斤拷锟�/
+.x-grid3-hd-inner {
+	position: relative;
+	cursor: inherit;
+	padding: 4px 3px 4px 5px;
+	white-space: normal !important;
+}
+
+/** add by WZM 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟�锟斤拷锟斤拷ext-all.css锟斤拷锟斤拷锟斤拷锟斤拷锟�/
+.x-grid3-cell-inner,.x-grid3-hd-inner {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	padding: 3px 3px 3px 5px;
+	white-space: nowrap;
+	/** 锟斤拷锟捷癸拷锟斤拷锟斤拷 */
+white-space
+:
+ 
+normal
+ 
+!
+important
+;
+
+
+}
+.nowrap .x-grid3-cell-inner {
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	padding: 3px 3px 3px 5px;
+	white-space: nowrap !important;
+}
+/* styles for RowAction */
+.ux-row-action-cell .x-grid3-cell-inner {
+	padding: 1px 0 0 0;
+}
+
+.ux-row-action-item {
+	float: left;
+	min-width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	margin: 0 3px 0 2px;
+	/*	margin: 1px 5px 0 2px; */
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.ext-ie .ux-row-action-item {
+	width: 16px;
+}
+
+.ext-ie .ux-row-action-text {
+	width: auto;
+}
+
+.ux-row-action-item span {
+	vertical-align: middle;
+	padding: 0 0 0 20px;
+	line-height: 18px;
+}
+
+.ext-ie .ux-row-action-item span {
+	width: auto;
+}
+
+/* styles for groups */
+.x-grid-group-hd div {
+	position: relative;
+	height: 16px;
+}
+
+.ux-grow-action-item {
+	min-width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: 0 50% ! important;
+	margin: 0 0 0 4px;
+	padding: 0 ! important;
+	cursor: pointer;
+	float: left;
+}
+
+.ext-ie .ux-grow-action-item {
+	width: 16px;
+}
+
+.ux-action-right {
+	float: right;
+	margin: 0 3px 0 2px;
+	padding: 0 ! important;
+}
+
+.ux-grow-action-text {
+	padding: 0 ! important;
+	margin: 0 ! important;
+	background: transparent none ! important;
+	float: left;
+}
+
+/* eof */
+/** background colors**/
+.background-lightgray {
+	background: #D3D3D3;
+}
+
+.grid-contract-total-list-yellow td {
+	background-color: #FFFF8E;
+}
+
+.font-lightgreen td {
+	color: green;
+}
+
+.font-lightyellow td {
+	color: green;
+}
+
+.font-color-red {
+	color: red;
+}
+
+.font-color-green {
+	color: green;
+}
+
+.searchIcon {
+	background-image: url(../images/menu-contract-incomeAssistSearch.png)
+		!important;
+}
+
+.comboBackColor {
+	background-image: url("") !important;
+	background-color: #99CCFF !important;
+}
+
+.incomeMakeSure {
+	background-image: url(../images/edit.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.payed {
+	background-image: url(../images/accept.png) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.unPayed {
+	background-image: url(../images/edit.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.remove2 {
+	background-image: url(../images/delete.gif) !important;
+	width: 16px;
+	height: 16px;
+}
+
+.email {
+	background-image: url(../images/email.png) !important;
+}
+
+.menu-contract-incomeAssistSearch {
+	background-image: url("../images/menu-contract-incomeAssistSearch.png")
+		!important;
+}
+
+.menu-financy-runningAccountSearch {
+	background-image: url("../images/menu-contract-incomeAssistSearch.png")
+		!important;
+}
+
+.menu-financy-manager {
+	background-image: url("../images/menu-financy-manager.png") !important;
+}
+
+table.detail th {
+	padding: 3px 3px 3px 3px;
+	font-size: 12px;
+	text-align: center;
+}
+
+table.detail td {
+	padding: 3px 3px 3px 3px;
+	font-size: 12px;
+}
+
+.ux-grid-hd-group-cell {
+	background: url(../images/default/grid/grid3-hrow.gif) repeat-x bottom;
+}
+
+.ux-tour-tip {
+	font-size: 14px;
+	padding: 5px 5px 5px 5px;
+	text-indent: 28px;
+	line-heigth: 24px;
+}
+
+.video {
+	background-image: url(../images/video.gif) !important;
+}
+
+.announcement {
+	background-image: url(../images/announcement.png) !important;
+}
+
+.sms {
+	background-image: url(../images/shortmessage.png) !important;
+}
+
+.personal_message {
+	background-image: url(../images/personal_message.png) !important;
+}
+
+.search {
+	background-image: url(../images/menu-contract-incomeAssistSearch.png)
+		!important;
+	width: 16px;
+	height: 16px;
+}
+
+.chart_bar {
+	background-image: url(../images/chart_bar.png) !important;
+}

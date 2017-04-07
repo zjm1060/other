@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	
+	<!--new missAttendance -->
+	<bean name="/attdMaint"
+		class="com.bitc.jk.xmis.web.action.MissAttendanceAction">
+		<property name="missAttenceService">
+			<ref local="missAttenceService" />
+		</property>
+		<property name="workflowService">
+			<ref bean="workflowService"/>
+		</property>
+	</bean>
+	<bean id="missAttenceService"
+		class="com.bitc.jk.xmis.service.impl.MissAttendanceServiceImpl">
+		<property name="missAttendanceDAO">
+			<ref local="missAttendanceDAO" />
+		</property>
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl" />
+		</property>
+		<property name="organizationService">
+			<ref bean="organizationServiceImpl" />
+		</property>
+		<property name="workflowContext">
+			<ref bean="fireRuntimeContext"/>
+		</property>
+		<property name="workflowDAO">
+			<ref bean="workflowDAO" />
+		</property>
+		<property name="taskDAO">
+			<ref bean="taskDAO"/>
+		</property>
+		<property name="todoDAO">
+			<ref bean="todoDAO"/>
+		</property>
+		<property name="wfCalendarDAO">
+			<ref bean="wfCalendarDAO2"/>
+		</property>
+		<property name="emailAndPlatformMessageInfoSender">
+			<ref bean="emailAndPlatformMessageInfoSender" />
+		</property>
+		<property name="workflowService">
+			<ref bean="workflowService"/>
+		</property>
+	</bean>
+	<bean id="wfCalendarDAO2" class="com.bitc.jk.xmis.workflow.dao.WfCalendarDAO" parent="hibernateBaseDAO">
+	</bean>
+	<bean id="missAttendanceDAO" 
+		class="com.bitc.jk.xmis.dao.impl.MissAttendanceDAOImpl">
+		<property name="ht">
+			<ref bean="ht" />
+		</property>
+		<property name="jt">
+			<ref bean="JdbcTemplate" />
+		</property>        
+	</bean>
+	
+	<bean id="missAttendanceTask" 
+		class="com.bitc.jk.xmis.task.impl.WorkItemDelayCompleteTask">
+		<property name="workflowDAO">
+			<ref bean="workflowDAO" />
+		</property>
+	</bean>
+	<bean id="taskDAO" class="com.bitc.jk.xmis.task.TaskDAO">
+		<property name="ht">
+			<ref bean="ht" />
+		</property>
+	</bean>
+	
+	<bean id="missAttendanceDirectorAssignTaskListener"
+		class="com.bitc.jk.xmis.workflow.tasklistener.MissAttendanceDirectorAssignTaskListener">
+		<property name="todoDAO">
+			<ref bean="todoDAO"/>
+		</property>
+		<property name="missAttendanceService">
+			<ref local="missAttenceService" />
+		</property>
+		<property name="workflowDAO">
+			<ref bean="workflowDAO" />
+		</property>
+		<property name="organizationDAO">
+			<ref bean="organizationDAOImpl"/>
+		</property>	
+		<property name="emailAndPlatformMessageInfoSender">
+			<ref bean="emailAndPlatformMessageInfoSender" />
+		</property>
+	</bean>
+	
+</beans>

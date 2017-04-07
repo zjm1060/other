@@ -1,0 +1,3405 @@
+RECORD      NAME = INT
+
+ENTRY      NAME	= SOE1
+           LONGNAME	= '1B主变第一套保护装置差动保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE2
+           LONGNAME	= '1B主变第一套保护装置高压侧后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE3
+           LONGNAME	= '1B主变第一套保护装置高压侧接地后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE4
+           LONGNAME	= '1B主变第一套保护装置断路器闪络保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE5
+           LONGNAME	= '1B主变第一套保护装置高压厂变1TLA过流'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240004
+           PNT_ADD	= 4
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE6
+           LONGNAME	= '1B主变第一套保护装置过激磁跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240005
+           PNT_ADD	= 5
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE7
+           LONGNAME	= '1B主变第一套保护装置装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240006
+           PNT_ADD	= 6
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE8
+           LONGNAME	= '1B主变第一套保护装置装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240007
+           PNT_ADD	= 7
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE9
+           LONGNAME	= '1B主变第一套保护装置TA断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240008
+           PNT_ADD	= 8
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE10
+           LONGNAME	= '1B主变第一套保护装置TV断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240009
+           PNT_ADD	= 9
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE11
+           LONGNAME	= '1B主变第一套保护装置高压侧过负荷'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240010
+           PNT_ADD	= 10
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE12
+           LONGNAME	= '1B主变第一套保护装置低压侧零序电压报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240011
+           PNT_ADD	= 11
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE13
+           LONGNAME	= '1B主变第一套保护装置过激磁报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240012
+           PNT_ADD	= 12
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE14
+           LONGNAME	= '1B主变非电量保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240013
+           PNT_ADD	= 13
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE15
+           LONGNAME	= '1B主变非电量保护装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240014
+           PNT_ADD	= 14
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE16
+           LONGNAME	= '1B主变非电量延时跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240015
+           PNT_ADD	= 15
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE17
+           LONGNAME	= '1B主变冷却器故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240016
+           PNT_ADD	= 16
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE18
+           LONGNAME	= '1B主变油温过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240017
+           PNT_ADD	= 17
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE19
+           LONGNAME	= '1B主变重瓦斯动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240018
+           PNT_ADD	= 18
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE20
+           LONGNAME	= '1B主变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240019
+           PNT_ADD	= 19
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE21
+           LONGNAME	= '1B主变压力释放动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240020
+           PNT_ADD	= 20
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE22
+           LONGNAME	= '1#厂变温度过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240021
+           PNT_ADD	= 21
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE23
+           LONGNAME	= '1B主变轻瓦斯动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240022
+           PNT_ADD	= 22
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE24
+           LONGNAME	= '开关站备用1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240023
+           PNT_ADD	= 23
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE25
+           LONGNAME	= '1B主变油温报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240024
+           PNT_ADD	= 24
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE26
+           LONGNAME	= '1B主变第二套保护装置差动保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240025
+           PNT_ADD	= 25
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE27
+           LONGNAME	= '1B主变第二套保护装置高压侧后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240026
+           PNT_ADD	= 26
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE28
+           LONGNAME	= '1B主变第二套保护装置高压侧接地后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240027
+           PNT_ADD	= 27
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE29
+           LONGNAME	= '1B主变第二套保护装置断路器闪络保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240028
+           PNT_ADD	= 28
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE30
+           LONGNAME	= '1B主变第二套保护装置高压厂变1TLA过流'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240029
+           PNT_ADD	= 29
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE31
+           LONGNAME	= '1B主变第二套保护装置过激磁跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240030
+           PNT_ADD	= 30
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE32
+           LONGNAME	= '1B主变第二套保护装置装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240031
+           PNT_ADD	= 31
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE33
+           LONGNAME	= '1B主变第二套保护装置装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240032
+           PNT_ADD	= 32
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE34
+           LONGNAME	= '1B主变第二套保护装置TA断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240033
+           PNT_ADD	= 33
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE35
+           LONGNAME	= '1B主变第二套保护装置TV断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240034
+           PNT_ADD	= 34
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE36
+           LONGNAME	= '1B主变第二套保护装置高压侧过负荷'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240035
+           PNT_ADD	= 35
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE37
+           LONGNAME	= '1B主变第二套保护装置低压侧零序电压报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240036
+           PNT_ADD	= 36
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE38
+           LONGNAME	= '1B主变第二套保护装置过激磁报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240037
+           PNT_ADD	= 37
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE39
+           LONGNAME	= '2B主变第一套保护装置差动保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240038
+           PNT_ADD	= 38
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE40
+           LONGNAME	= '2B主变第一套保护装置高压侧后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240039
+           PNT_ADD	= 39
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE41
+           LONGNAME	= '2B主变第一套保护装置高压侧接地后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240040
+           PNT_ADD	= 40
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE42
+           LONGNAME	= '2B主变第一套保护装置断路器闪络保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240041
+           PNT_ADD	= 41
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE43
+           LONGNAME	= '2B主变第一套保护装置高压厂变1TLA过流'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240042
+           PNT_ADD	= 42
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE44
+           LONGNAME	= '2B主变第一套保护装置过激磁跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240043
+           PNT_ADD	= 43
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE45
+           LONGNAME	= '2B主变第一套保护装置装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240044
+           PNT_ADD	= 44
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE46
+           LONGNAME	= '2B主变第一套保护装置装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240045
+           PNT_ADD	= 45
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE47
+           LONGNAME	= '2B主变第一套保护装置TA断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240046
+           PNT_ADD	= 46
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE48
+           LONGNAME	= '2B主变第一套保护装置TV断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240047
+           PNT_ADD	= 47
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE49
+           LONGNAME	= '2B主变第一套保护装置高压侧过负荷'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240048
+           PNT_ADD	= 48
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE50
+           LONGNAME	= '2B主变第一套保护装置低压侧零序电压报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240049
+           PNT_ADD	= 49
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE51
+           LONGNAME	= '2B主变第一套保护装置过激磁报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240050
+           PNT_ADD	= 50
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE52
+           LONGNAME	= '2B主变非电量保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240051
+           PNT_ADD	= 51
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE53
+           LONGNAME	= '2B主变非电量保护装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240052
+           PNT_ADD	= 52
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE54
+           LONGNAME	= '2B主变非电量延时跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240053
+           PNT_ADD	= 53
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE55
+           LONGNAME	= '2B主变冷却器故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240054
+           PNT_ADD	= 54
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE56
+           LONGNAME	= '2B主变油温过高跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240055
+           PNT_ADD	= 55
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE57
+           LONGNAME	= '2B主变重瓦斯动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240056
+           PNT_ADD	= 56
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE58
+           LONGNAME	= '2B主变绕组温度高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240057
+           PNT_ADD	= 57
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE59
+           LONGNAME	= '2B主变压力释放动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240058
+           PNT_ADD	= 58
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE60
+           LONGNAME	= '2#厂变温度过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240059
+           PNT_ADD	= 59
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE61
+           LONGNAME	= '2B主变轻瓦斯动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240060
+           PNT_ADD	= 60
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE62
+           LONGNAME	= '2B主变油位异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240061
+           PNT_ADD	= 61
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE63
+           LONGNAME	= '2B主变油温报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240062
+           PNT_ADD	= 62
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE64
+           LONGNAME	= '2B主变第二套保护装置差动保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240063
+           PNT_ADD	= 63
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE65
+           LONGNAME	= '2B主变第二套保护装置高压侧后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240064
+           PNT_ADD	= 64
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE66
+           LONGNAME	= '2B主变第二套保护装置高压侧接地后备跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240065
+           PNT_ADD	= 65
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE67
+           LONGNAME	= '2B主变第二套保护装置断路器闪络保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240066
+           PNT_ADD	= 66
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE68
+           LONGNAME	= '2B主变第二套保护装置高压厂变2TLA过流'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240067
+           PNT_ADD	= 67
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE69
+           LONGNAME	= '2B主变第二套保护装置过激磁跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240068
+           PNT_ADD	= 68
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE70
+           LONGNAME	= '2B主变第二套保护装置装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240069
+           PNT_ADD	= 69
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE71
+           LONGNAME	= '2B主变第二套保护装置装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240070
+           PNT_ADD	= 70
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE72
+           LONGNAME	= '2B主变第二套保护装置TA断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240071
+           PNT_ADD	= 71
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE73
+           LONGNAME	= '2B主变第二套保护装置TV断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240072
+           PNT_ADD	= 72
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE74
+           LONGNAME	= '2B主变第二套保护装置高压侧过负荷'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240073
+           PNT_ADD	= 73
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE75
+           LONGNAME	= '2B主变第二套保护装置低压侧零序电压报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240074
+           PNT_ADD	= 74
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE76
+           LONGNAME	= '2B主变第二套保护装置过激磁报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240075
+           PNT_ADD	= 75
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE77
+           LONGNAME	= '1E线路T区A套保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240076
+           PNT_ADD	= 76
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE78
+           LONGNAME	= '1E线路T区A套保护起动远跳'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240077
+           PNT_ADD	= 77
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE79
+           LONGNAME	= '1E线路T区A套保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240078
+           PNT_ADD	= 78
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE80
+           LONGNAME	= '1E线路T区A套保护装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240079
+           PNT_ADD	= 79
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE81
+           LONGNAME	= '1E线路T区B套保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240080
+           PNT_ADD	= 80
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE82
+           LONGNAME	= '1E线路T区B套保护起动远跳'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240081
+           PNT_ADD	= 81
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE83
+           LONGNAME	= '1E线路T区B套保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240082
+           PNT_ADD	= 82
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE84
+           LONGNAME	= '1E线路T区B套保护装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240083
+           PNT_ADD	= 83
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE85
+           LONGNAME	= '2E线路T区A套保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240084
+           PNT_ADD	= 84
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE86
+           LONGNAME	= '2E线路T区A套保护起动远跳'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240085
+           PNT_ADD	= 85
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE87
+           LONGNAME	= '2E线路T区A套保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240086
+           PNT_ADD	= 86
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE88
+           LONGNAME	= '2E线路T区A套保护装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240087
+           PNT_ADD	= 87
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE89
+           LONGNAME	= '2E线路T区B套保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240088
+           PNT_ADD	= 88
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE90
+           LONGNAME	= '2E线路T区B套保护起动远跳'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240089
+           PNT_ADD	= 89
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE91
+           LONGNAME	= '2E线路T区B套保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240090
+           PNT_ADD	= 90
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE92
+           LONGNAME	= '2E线路T区B套保护装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240091
+           PNT_ADD	= 91
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE93
+           LONGNAME	= '断路器DL5001位置不一致或非全相运行'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240092
+           PNT_ADD	= 92
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE94
+           LONGNAME	= '断路器DL5001保护柜第一组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240093
+           PNT_ADD	= 93
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE95
+           LONGNAME	= '断路器DL5001保护柜第二组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240094
+           PNT_ADD	= 94
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE96
+           LONGNAME	= '断路器DL5001保护柜第一组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240095
+           PNT_ADD	= 95
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE97
+           LONGNAME	= '断路器DL5001保护柜第二组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240096
+           PNT_ADD	= 96
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE98
+           LONGNAME	= '断路器DL5001压力降低禁止重合'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240097
+           PNT_ADD	= 97
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE99
+           LONGNAME	= '断路器DL5001保护柜第一组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240098
+           PNT_ADD	= 98
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE100
+           LONGNAME	= '断路器DL5001保护柜第二组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240099
+           PNT_ADD	= 99
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE101
+           LONGNAME	= '断路器DL5002位置不一致或非全相运行'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240100
+           PNT_ADD	= 100
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE102
+           LONGNAME	= '断路器DL5002保护柜第一组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240101
+           PNT_ADD	= 101
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE103
+           LONGNAME	= '断路器DL5002保护柜第二组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240102
+           PNT_ADD	= 102
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE104
+           LONGNAME	= '断路器DL5002保护柜第一组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240103
+           PNT_ADD	= 103
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE105
+           LONGNAME	= '断路器DL5002保护柜第二组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240104
+           PNT_ADD	= 104
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE106
+           LONGNAME	= '断路器DL5002压力降低禁止重合'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240105
+           PNT_ADD	= 105
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE107
+           LONGNAME	= '断路器DL5002保护柜第一组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240106
+           PNT_ADD	= 106
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE108
+           LONGNAME	= '断路器DL5002保护柜第二组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240107
+           PNT_ADD	= 107
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE109
+           LONGNAME	= '断路器DL5003位置不一致或非全相运行'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240108
+           PNT_ADD	= 108
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE110
+           LONGNAME	= '断路器DL5003保护柜第一组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240109
+           PNT_ADD	= 109
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE111
+           LONGNAME	= '断路器DL5003保护柜第二组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240110
+           PNT_ADD	= 110
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE112
+           LONGNAME	= '断路器DL5003保护柜第一组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240111
+           PNT_ADD	= 111
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE113
+           LONGNAME	= '断路器DL5003保护柜第二组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240112
+           PNT_ADD	= 112
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE114
+           LONGNAME	= '断路器DL5003压力降低禁止重合'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240113
+           PNT_ADD	= 113
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE115
+           LONGNAME	= '断路器DL5003保护柜第一组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240114
+           PNT_ADD	= 114
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE116
+           LONGNAME	= '断路器DL5003保护柜第二组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240115
+           PNT_ADD	= 115
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE117
+           LONGNAME	= '断路器DL5004位置不一致或非全相运行'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240116
+           PNT_ADD	= 116
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE118
+           LONGNAME	= '断路器DL5004保护柜第一组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240117
+           PNT_ADD	= 117
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE119
+           LONGNAME	= '断路器DL5004保护柜第二组控制回路断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240118
+           PNT_ADD	= 118
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE120
+           LONGNAME	= '断路器DL5004保护柜第一组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240119
+           PNT_ADD	= 119
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE121
+           LONGNAME	= '断路器DL5004保护柜第二组操作电源断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240120
+           PNT_ADD	= 120
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE122
+           LONGNAME	= '断路器DL5004压力降低禁止重合'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240121
+           PNT_ADD	= 121
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE123
+           LONGNAME	= '断路器DL5004保护柜第一组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240122
+           PNT_ADD	= 122
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE124
+           LONGNAME	= '断路器DL5004保护柜第二组出口跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240123
+           PNT_ADD	= 123
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE125
+           LONGNAME	= '1E线路第一套线路保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240124
+           PNT_ADD	= 124
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE126
+           LONGNAME	= '1E线路第一套线路保护装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240125
+           PNT_ADD	= 125
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE127
+           LONGNAME	= '1E线路第一套线路保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240126
+           PNT_ADD	= 126
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE128
+           LONGNAME	= '1E线路第一套过电压保护装置跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240127
+           PNT_ADD	= 127
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE129
+           LONGNAME	= '1E线路第一套过电压保护装置装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240128
+           PNT_ADD	= 128
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE130
+           LONGNAME	= '1E线路第一套过电压保护装置装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240129
+           PNT_ADD	= 129
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE131
+           LONGNAME	= '1E线路第二套线路保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240130
+           PNT_ADD	= 130
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE132
+           LONGNAME	= '1E线路第二套线路保护装置动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240131
+           PNT_ADD	= 131
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE133
+           LONGNAME	= '1E线路第二套线路保护装置告警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240132
+           PNT_ADD	= 132
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE134
+           LONGNAME	= '1E线路第二套线路保护装置PT断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240133
+           PNT_ADD	= 133
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE135
+           LONGNAME	= '1E线路第二套线路保护远跳装置远跳动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240134
+           PNT_ADD	= 134
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE136
+           LONGNAME	= '1E线路第二套线路保护远跳判别装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240135
+           PNT_ADD	= 135
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE137
+           LONGNAME	= '1E线路第二套线路保护远判别装置过压动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240136
+           PNT_ADD	= 136
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE138
+           LONGNAME	= '1E线路第二套线路保护远跳判别装置PT断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240137
+           PNT_ADD	= 137
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE139
+           LONGNAME	= '1E线路第二套线路保护远跳判别直流消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240138
+           PNT_ADD	= 138
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE140
+           LONGNAME	= '2E线路第一套线路保护跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240139
+           PNT_ADD	= 139
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE141
+           LONGNAME	= '2E线路第一套线路保护装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240140
+           PNT_ADD	= 140
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE142
+           LONGNAME	= '2E线路第一套线路保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240141
+           PNT_ADD	= 141
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE143
+           LONGNAME	= '2E线路第一套过电压保护装置跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240142
+           PNT_ADD	= 142
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE144
+           LONGNAME	= '2E线路第一套过电压保护装置装置异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240143
+           PNT_ADD	= 143
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE145
+           LONGNAME	= '2E线路第一套过电压保护装置装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240144
+           PNT_ADD	= 144
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE146
+           LONGNAME	= '2E线路第二套线路保护装置闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240145
+           PNT_ADD	= 145
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE147
+           LONGNAME	= '2E线路第二套线路保护装置动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240146
+           PNT_ADD	= 146
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE148
+           LONGNAME	= '2E线路第二套线路保护装置告警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240147
+           PNT_ADD	= 147
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE149
+           LONGNAME	= '2E线路第二套线路保护装置PT断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240148
+           PNT_ADD	= 148
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE150
+           LONGNAME	= '2E线路第二套线路保护远跳判别装置远跳'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240149
+           PNT_ADD	= 149
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE151
+           LONGNAME	= '2E线路第二套线路保护远跳判别装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240150
+           PNT_ADD	= 150
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE152
+           LONGNAME	= '2E线路第二套线路保护远跳判别装置过压'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240151
+           PNT_ADD	= 151
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE153
+           LONGNAME	= 'G50026合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240152
+           PNT_ADD	= 152
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE154
+           LONGNAME	= 'G500267合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240153
+           PNT_ADD	= 153
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE155
+           LONGNAME	= 'G5002617合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240154
+           PNT_ADD	= 154
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE156
+           LONGNAME	= '1E1YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240155
+           PNT_ADD	= 155
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE157
+           LONGNAME	= '1#间隔(1E)报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240156
+           PNT_ADD	= 156
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE158
+           LONGNAME	= '1#间隔(1E)报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240157
+           PNT_ADD	= 157
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE159
+           LONGNAME	= '隔离开关50026远方操作位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240158
+           PNT_ADD	= 158
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE160
+           LONGNAME	= '1E隔刀、地刀控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240159
+           PNT_ADD	= 159
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE161
+           LONGNAME	= '1E隔刀、地刀电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240160
+           PNT_ADD	= 160
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE162
+           LONGNAME	= '1#间隔(1E)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240161
+           PNT_ADD	= 161
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE163
+           LONGNAME	= '1#间隔(1E)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240162
+           PNT_ADD	= 162
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE164
+           LONGNAME	= '断路器DL5002A相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240163
+           PNT_ADD	= 163
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE165
+           LONGNAME	= '断路器DL5002A相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240164
+           PNT_ADD	= 164
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE166
+           LONGNAME	= '断路器DL5002B相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240165
+           PNT_ADD	= 165
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE167
+           LONGNAME	= '断路器DL5002B相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240166
+           PNT_ADD	= 166
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE168
+           LONGNAME	= '断路器DL5002C相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240167
+           PNT_ADD	= 167
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE169
+           LONGNAME	= '断路器DL5002C相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240168
+           PNT_ADD	= 168
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE170
+           LONGNAME	= 'G50022合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240169
+           PNT_ADD	= 169
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE171
+           LONGNAME	= 'G500227合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240170
+           PNT_ADD	= 170
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE172
+           LONGNAME	= 'G50021合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240171
+           PNT_ADD	= 171
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE173
+           LONGNAME	= 'G500217合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240172
+           PNT_ADD	= 172
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE174
+           LONGNAME	= 'CB气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240173
+           PNT_ADD	= 173
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE175
+           LONGNAME	= 'CB气室SF6压力降低闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240174
+           PNT_ADD	= 174
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE176
+           LONGNAME	= '断路器DL5002A相油压低闭锁分合报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240175
+           PNT_ADD	= 175
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE177
+           LONGNAME	= '断路器DL5002B相油压低闭锁分合报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240176
+           PNT_ADD	= 176
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE178
+           LONGNAME	= '断路器DL5002C相油压低闭锁分合报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240177
+           PNT_ADD	= 177
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE179
+           LONGNAME	= '断路器DL5002A相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240178
+           PNT_ADD	= 178
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE180
+           LONGNAME	= '断路器DL5002B相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240179
+           PNT_ADD	= 179
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE181
+           LONGNAME	= '断路器DL5002C相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240180
+           PNT_ADD	= 180
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE182
+           LONGNAME	= '断路器DL5002三相不同期报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240181
+           PNT_ADD	= 181
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE183
+           LONGNAME	= 'G50022、G500227气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240182
+           PNT_ADD	= 182
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE184
+           LONGNAME	= 'G50021、G500217气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240183
+           PNT_ADD	= 183
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE185
+           LONGNAME	= '2#间隔(DL5002)报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240184
+           PNT_ADD	= 184
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE186
+           LONGNAME	= '2#间隔(DL5002)报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240185
+           PNT_ADD	= 185
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE187
+           LONGNAME	= '断路器DL5002远方操作位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240186
+           PNT_ADD	= 186
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE188
+           LONGNAME	= 'G50021、G50022远方位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240187
+           PNT_ADD	= 187
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE189
+           LONGNAME	= '2#间隔(DL5002)DS、ES控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240188
+           PNT_ADD	= 188
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE190
+           LONGNAME	= '2#间隔(DL5002)DS、ES电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240189
+           PNT_ADD	= 189
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE191
+           LONGNAME	= '2#间隔(DL5002)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240190
+           PNT_ADD	= 190
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE192
+           LONGNAME	= '2#间隔(DL5002)电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240191
+           PNT_ADD	= 191
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE193
+           LONGNAME	= '2#间隔(DL5002)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240192
+           PNT_ADD	= 192
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE194
+           LONGNAME	= 'G50016合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240193
+           PNT_ADD	= 193
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE195
+           LONGNAME	= 'G500167合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240194
+           PNT_ADD	= 194
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE196
+           LONGNAME	= 'G5001617合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240195
+           PNT_ADD	= 195
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE197
+           LONGNAME	= '1B1YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240196
+           PNT_ADD	= 196
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE198
+           LONGNAME	= '1BBL气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240197
+           PNT_ADD	= 197
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE199
+           LONGNAME	= '1B1YH气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240198
+           PNT_ADD	= 198
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE200
+           LONGNAME	= '1B高压侧DS、ES气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240199
+           PNT_ADD	= 199
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE201
+           LONGNAME	= '1B高压侧CT气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240200
+           PNT_ADD	= 200
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE202
+           LONGNAME	= '3#间隔(G50016)报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240201
+           PNT_ADD	= 201
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE203
+           LONGNAME	= '3#间隔(G50016)报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240202
+           PNT_ADD	= 202
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE204
+           LONGNAME	= 'G50016远方操作位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240203
+           PNT_ADD	= 203
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE205
+           LONGNAME	= '3#间隔(G50016)控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240204
+           PNT_ADD	= 204
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE206
+           LONGNAME	= '3#间隔(G50016)电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240205
+           PNT_ADD	= 205
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE207
+           LONGNAME	= '3#间隔(G50016)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240206
+           PNT_ADD	= 206
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE208
+           LONGNAME	= '3#间隔(G50016)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240207
+           PNT_ADD	= 207
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE209
+           LONGNAME	= '断路器DL5001A相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240208
+           PNT_ADD	= 208
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE210
+           LONGNAME	= '断路器DL5001A相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240209
+           PNT_ADD	= 209
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE211
+           LONGNAME	= '断路器DL5001B相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240210
+           PNT_ADD	= 210
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE212
+           LONGNAME	= '断路器DL5001B相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240211
+           PNT_ADD	= 211
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE213
+           LONGNAME	= '断路器DL5001C相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240212
+           PNT_ADD	= 212
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE214
+           LONGNAME	= '断路器DL5001C相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240213
+           PNT_ADD	= 213
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE215
+           LONGNAME	= 'G50012合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240214
+           PNT_ADD	= 214
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE216
+           LONGNAME	= 'G500127合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240215
+           PNT_ADD	= 215
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE217
+           LONGNAME	= 'G50011合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240216
+           PNT_ADD	= 216
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE218
+           LONGNAME	= 'G500117合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240217
+           PNT_ADD	= 217
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE219
+           LONGNAME	= '断路器DL5001气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240218
+           PNT_ADD	= 218
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE220
+           LONGNAME	= '断路器DL5001气室SF6压力降低闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240219
+           PNT_ADD	= 219
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE221
+           LONGNAME	= '断路器DL5001A相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240220
+           PNT_ADD	= 220
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE222
+           LONGNAME	= '断路器DL5001B相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240221
+           PNT_ADD	= 221
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE223
+           LONGNAME	= '断路器DL5001C相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240222
+           PNT_ADD	= 222
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE224
+           LONGNAME	= '断路器DL5001A相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240223
+           PNT_ADD	= 223
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE225
+           LONGNAME	= '断路器DL5001B相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240224
+           PNT_ADD	= 224
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE226
+           LONGNAME	= '断路器DL5001C相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240225
+           PNT_ADD	= 225
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE227
+           LONGNAME	= '断路器DL5001三相不同期信号'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240226
+           PNT_ADD	= 226
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE228
+           LONGNAME	= 'G50012、G500127气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240227
+           PNT_ADD	= 227
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE229
+           LONGNAME	= 'G50011、G500117气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240228
+           PNT_ADD	= 228
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE230
+           LONGNAME	= '4#间隔报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240229
+           PNT_ADD	= 229
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE231
+           LONGNAME	= '4#间隔报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240230
+           PNT_ADD	= 230
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE232
+           LONGNAME	= '断路器DL5001远方位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240231
+           PNT_ADD	= 231
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE233
+           LONGNAME	= 'G50011、G50012远方位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240232
+           PNT_ADD	= 232
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE234
+           LONGNAME	= '4#间隔(DL5001)DS、ES控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240233
+           PNT_ADD	= 233
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE235
+           LONGNAME	= '4#间隔(DL5001)DS、ES电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240234
+           PNT_ADD	= 234
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE236
+           LONGNAME	= '4#间隔(DL5001)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240235
+           PNT_ADD	= 235
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE237
+           LONGNAME	= 'DL5001电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240236
+           PNT_ADD	= 236
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE238
+           LONGNAME	= '4#间隔(DL5001)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240237
+           PNT_ADD	= 237
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE239
+           LONGNAME	= 'G50046合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240238
+           PNT_ADD	= 238
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE240
+           LONGNAME	= 'G500467合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240239
+           PNT_ADD	= 239
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE241
+           LONGNAME	= 'G5004617合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240240
+           PNT_ADD	= 240
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE242
+           LONGNAME	= '2E1YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240241
+           PNT_ADD	= 241
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE243
+           LONGNAME	= '2E1YH气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240242
+           PNT_ADD	= 242
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE244
+           LONGNAME	= '2E隔刀、地刀气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240243
+           PNT_ADD	= 243
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE245
+           LONGNAME	= '2E出线CT气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240244
+           PNT_ADD	= 244
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE246
+           LONGNAME	= '5#间隔(2E)报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240245
+           PNT_ADD	= 245
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE247
+           LONGNAME	= '5#间隔(2E)报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240246
+           PNT_ADD	= 246
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE248
+           LONGNAME	= 'G50046远方操作位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240247
+           PNT_ADD	= 247
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE249
+           LONGNAME	= '2E隔刀、地刀控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240248
+           PNT_ADD	= 248
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE250
+           LONGNAME	= '2E隔刀、地刀电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240249
+           PNT_ADD	= 249
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE251
+           LONGNAME	= '5#间隔(2E)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240250
+           PNT_ADD	= 250
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE252
+           LONGNAME	= '5#间隔(2E)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240251
+           PNT_ADD	= 251
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE253
+           LONGNAME	= '24VDC控制回路电源监视1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240252
+           PNT_ADD	= 252
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE254
+           LONGNAME	= '220VAC控制回路电源监视1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240253
+           PNT_ADD	= 253
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE255
+           LONGNAME	= '220VDC控制回路电源监视1'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240254
+           PNT_ADD	= 254
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE256
+           LONGNAME	= '断路器DL5004A相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240255
+           PNT_ADD	= 255
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE257
+           LONGNAME	= '断路器DL5004A相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240256
+           PNT_ADD	= 256
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE258
+           LONGNAME	= '断路器DL5004B相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240257
+           PNT_ADD	= 257
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE259
+           LONGNAME	= '断路器DL5004B相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240258
+           PNT_ADD	= 258
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE260
+           LONGNAME	= '断路器DL5004C相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240259
+           PNT_ADD	= 259
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE261
+           LONGNAME	= '断路器DL5004C相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240260
+           PNT_ADD	= 260
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE262
+           LONGNAME	= 'G50042合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240261
+           PNT_ADD	= 261
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE263
+           LONGNAME	= 'G500427合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240262
+           PNT_ADD	= 262
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE264
+           LONGNAME	= 'G50041合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240263
+           PNT_ADD	= 263
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE265
+           LONGNAME	= 'G500417合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240264
+           PNT_ADD	= 264
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE266
+           LONGNAME	= '断路器DL5004气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240265
+           PNT_ADD	= 265
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE267
+           LONGNAME	= '断路器DL5004气室SF6压力降低闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240266
+           PNT_ADD	= 266
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE268
+           LONGNAME	= '断路器DL5004A相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240267
+           PNT_ADD	= 267
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE269
+           LONGNAME	= '断路器DL5004B相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240268
+           PNT_ADD	= 268
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE270
+           LONGNAME	= '断路器DL5004C相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240269
+           PNT_ADD	= 269
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE271
+           LONGNAME	= '断路器DL5004A相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240270
+           PNT_ADD	= 270
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE272
+           LONGNAME	= '断路器DL5004B相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240271
+           PNT_ADD	= 271
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE273
+           LONGNAME	= '断路器DL5004C相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240272
+           PNT_ADD	= 272
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE274
+           LONGNAME	= '断路器DL5004三相不同期信号'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240273
+           PNT_ADD	= 273
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE275
+           LONGNAME	= 'G50042、G500427气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240274
+           PNT_ADD	= 274
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE276
+           LONGNAME	= 'G50041、G500417气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240275
+           PNT_ADD	= 275
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE277
+           LONGNAME	= '6#间隔(DL5004)报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240276
+           PNT_ADD	= 276
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE278
+           LONGNAME	= '6#间隔(DL5004)报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240277
+           PNT_ADD	= 277
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE279
+           LONGNAME	= '断路器DL5004远方操作位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240278
+           PNT_ADD	= 278
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE280
+           LONGNAME	= 'G50041、G50042远方位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240279
+           PNT_ADD	= 279
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE281
+           LONGNAME	= '6#间隔(DL5004)DS、ES控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240280
+           PNT_ADD	= 280
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE282
+           LONGNAME	= '6#间隔(DL5004)DS、ES电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240281
+           PNT_ADD	= 281
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE283
+           LONGNAME	= '6#间隔(DL5004)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240282
+           PNT_ADD	= 282
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE284
+           LONGNAME	= 'DL5004电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240283
+           PNT_ADD	= 283
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE285
+           LONGNAME	= '6#间隔(DL5004)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240284
+           PNT_ADD	= 284
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE286
+           LONGNAME	= 'G50036合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240285
+           PNT_ADD	= 285
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE287
+           LONGNAME	= 'G500367合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240286
+           PNT_ADD	= 286
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE288
+           LONGNAME	= 'G5003617合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240287
+           PNT_ADD	= 287
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE289
+           LONGNAME	= '2B1YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240288
+           PNT_ADD	= 288
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE290
+           LONGNAME	= '2BBL气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240289
+           PNT_ADD	= 289
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE291
+           LONGNAME	= '2B1YH气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240290
+           PNT_ADD	= 290
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE292
+           LONGNAME	= '1B高压侧DS、ES气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240291
+           PNT_ADD	= 291
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE293
+           LONGNAME	= '1B高压侧CT气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240292
+           PNT_ADD	= 292
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE294
+           LONGNAME	= '7#间隔(G50036)报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240293
+           PNT_ADD	= 293
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE295
+           LONGNAME	= '7#间隔(G50036)报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240294
+           PNT_ADD	= 294
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE296
+           LONGNAME	= 'G50036远方位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240295
+           PNT_ADD	= 295
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE297
+           LONGNAME	= '7#间隔(G50036)控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240296
+           PNT_ADD	= 296
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE298
+           LONGNAME	= '7#间隔(G50036)电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240297
+           PNT_ADD	= 297
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE299
+           LONGNAME	= '7#间隔(G50036)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240298
+           PNT_ADD	= 298
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE300
+           LONGNAME	= '7#间隔(G50036)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240299
+           PNT_ADD	= 299
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE301
+           LONGNAME	= '断路器DL5003A相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240300
+           PNT_ADD	= 300
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE302
+           LONGNAME	= '断路器DL5003A相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240301
+           PNT_ADD	= 301
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE303
+           LONGNAME	= '断路器DL5003B相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240302
+           PNT_ADD	= 302
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE304
+           LONGNAME	= '断路器DL5003B相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240303
+           PNT_ADD	= 303
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE305
+           LONGNAME	= '断路器DL5003C相分闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240304
+           PNT_ADD	= 304
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE306
+           LONGNAME	= '断路器DL5003C相合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240305
+           PNT_ADD	= 305
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE307
+           LONGNAME	= 'G50032合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240306
+           PNT_ADD	= 306
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE308
+           LONGNAME	= 'G500327合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240307
+           PNT_ADD	= 307
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE309
+           LONGNAME	= 'G50031合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240308
+           PNT_ADD	= 308
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE310
+           LONGNAME	= 'G500317合闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240309
+           PNT_ADD	= 309
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE311
+           LONGNAME	= '断路器DL5003气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240310
+           PNT_ADD	= 310
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE312
+           LONGNAME	= '断路器DL5003气室SF6压力降低闭锁'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240311
+           PNT_ADD	= 311
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE313
+           LONGNAME	= '断路器DL5003A相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240312
+           PNT_ADD	= 312
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE314
+           LONGNAME	= '断路器DL5003B相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240313
+           PNT_ADD	= 313
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE315
+           LONGNAME	= '断路器DL5003C相油压低闭锁合分报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240314
+           PNT_ADD	= 314
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE316
+           LONGNAME	= '断路器DL5003A相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240315
+           PNT_ADD	= 315
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE317
+           LONGNAME	= '断路器DL5003B相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240316
+           PNT_ADD	= 316
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE318
+           LONGNAME	= '断路器DL5003C相电机过流，过时报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240317
+           PNT_ADD	= 317
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE319
+           LONGNAME	= '断路器DL5003三相不同期信号'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240318
+           PNT_ADD	= 318
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE320
+           LONGNAME	= 'G50032、G500327气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240319
+           PNT_ADD	= 319
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE321
+           LONGNAME	= 'G50031、G500317气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240320
+           PNT_ADD	= 320
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE322
+           LONGNAME	= '母线2#气室SF6压力降低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240321
+           PNT_ADD	= 321
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE323
+           LONGNAME	= '8#间隔(DL5003)报警电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240322
+           PNT_ADD	= 322
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE324
+           LONGNAME	= '8#间隔(DL5003)报警主机故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240323
+           PNT_ADD	= 323
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE325
+           LONGNAME	= '断路器DL5003远方操作位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240324
+           PNT_ADD	= 324
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE326
+           LONGNAME	= 'G50031、G50032远方位置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240325
+           PNT_ADD	= 325
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE327
+           LONGNAME	= '8#间隔(DL5003)控制电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240326
+           PNT_ADD	= 326
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE328
+           LONGNAME	= '8#间隔(DL5003)DS、ES电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240327
+           PNT_ADD	= 327
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE329
+           LONGNAME	= '8#间隔(DL5003)报警电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240328
+           PNT_ADD	= 328
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE330
+           LONGNAME	= 'DL5003电机电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240329
+           PNT_ADD	= 329
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE331
+           LONGNAME	= '8#间隔(DL5003)交流电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240330
+           PNT_ADD	= 330
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE332
+           LONGNAME	= '1BA相压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240331
+           PNT_ADD	= 331
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE333
+           LONGNAME	= '1BB相压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240332
+           PNT_ADD	= 332
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE334
+           LONGNAME	= '1BC相压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240333
+           PNT_ADD	= 333
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE335
+           LONGNAME	= '1B低压盒压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240334
+           PNT_ADD	= 334
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE336
+           LONGNAME	= '1B1#突发压力继电器动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240335
+           PNT_ADD	= 335
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE337
+           LONGNAME	= '1B2#突发压力继电器动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240336
+           PNT_ADD	= 336
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE338
+           LONGNAME	= '1B3#突发压力继电器动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240337
+           PNT_ADD	= 337
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE339
+           LONGNAME	= '1B低油位报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240338
+           PNT_ADD	= 338
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE340
+           LONGNAME	= '1B高油位报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240339
+           PNT_ADD	= 339
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE341
+           LONGNAME	= '1BA相1#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240340
+           PNT_ADD	= 340
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE342
+           LONGNAME	= '1BA相2#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240341
+           PNT_ADD	= 341
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE343
+           LONGNAME	= '1BB相1#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240342
+           PNT_ADD	= 342
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE344
+           LONGNAME	= '1BB相2#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240343
+           PNT_ADD	= 343
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE345
+           LONGNAME	= '1BC相1#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240344
+           PNT_ADD	= 344
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE346
+           LONGNAME	= '1BC相2#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240345
+           PNT_ADD	= 345
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE347
+           LONGNAME	= '1BA相绕组温度一级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240346
+           PNT_ADD	= 346
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE348
+           LONGNAME	= '1BA相绕组温度二级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240347
+           PNT_ADD	= 347
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE349
+           LONGNAME	= '1BB相绕组温度一级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240348
+           PNT_ADD	= 348
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE350
+           LONGNAME	= '1BB相绕组温度二级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240349
+           PNT_ADD	= 349
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE351
+           LONGNAME	= '1BC相绕组温度一级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240350
+           PNT_ADD	= 350
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE352
+           LONGNAME	= '1BC相绕组温度二级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240351
+           PNT_ADD	= 351
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE353
+           LONGNAME	= '2BA相压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240352
+           PNT_ADD	= 352
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE354
+           LONGNAME	= '2BB相压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240353
+           PNT_ADD	= 353
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE355
+           LONGNAME	= '2BC相压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240354
+           PNT_ADD	= 354
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE356
+           LONGNAME	= '2B低压盒压力释放阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240355
+           PNT_ADD	= 355
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE357
+           LONGNAME	= '2B1#突发压力继电器动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240356
+           PNT_ADD	= 356
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE358
+           LONGNAME	= '2B2#突发压力继电器动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240357
+           PNT_ADD	= 357
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE359
+           LONGNAME	= '2B3#突发压力继电器动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240358
+           PNT_ADD	= 358
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE360
+           LONGNAME	= '2B低油位报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240359
+           PNT_ADD	= 359
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE361
+           LONGNAME	= '2B高油位报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240360
+           PNT_ADD	= 360
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE362
+           LONGNAME	= '2BA相1#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240361
+           PNT_ADD	= 361
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE363
+           LONGNAME	= '2BA相2#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240362
+           PNT_ADD	= 362
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE364
+           LONGNAME	= '2BB相1#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240363
+           PNT_ADD	= 363
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE365
+           LONGNAME	= '2BB相2#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240364
+           PNT_ADD	= 364
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE366
+           LONGNAME	= '2BC相1#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240365
+           PNT_ADD	= 365
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE367
+           LONGNAME	= '2BC相2#油温高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240366
+           PNT_ADD	= 366
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE368
+           LONGNAME	= '2BA相绕组温度一级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240367
+           PNT_ADD	= 367
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE369
+           LONGNAME	= '2BA相绕组温度二级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240368
+           PNT_ADD	= 368
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE370
+           LONGNAME	= '2BB相绕组温度一级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240369
+           PNT_ADD	= 369
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE371
+           LONGNAME	= '2BB相绕组温度二级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240370
+           PNT_ADD	= 370
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE372
+           LONGNAME	= '2BC相绕组温度一级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240371
+           PNT_ADD	= 371
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE373
+           LONGNAME	= '2BC相绕组温度二级报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240372
+           PNT_ADD	= 372
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE374
+           LONGNAME	= '开关站故障录波装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240373
+           PNT_ADD	= 373
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE375
+           LONGNAME	= '安控装置电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240374
+           PNT_ADD	= 374
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE376
+           LONGNAME	= '安控装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240375
+           PNT_ADD	= 375
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE377
+           LONGNAME	= '高周解列动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240376
+           PNT_ADD	= 376
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= SOE378
+           LONGNAME	= '事故切机动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 11240377
+           PNT_ADD	= 377
+           AOR_GRP	= GEN
+
+END

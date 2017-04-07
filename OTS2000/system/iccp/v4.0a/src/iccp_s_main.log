@@ -1,0 +1,150 @@
+
+
+***********************************************************
+          LOGGING STARTED Fri Apr 13 09:36:30 2007
+***********************************************************
+
+00.000s SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+02.189s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'CDCS'
+      Association 'TGDC_RB_LINK_1'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS1'
+          Remote address match level 2
+        * Best association match so far
+      Association 'TGDC_RB_LINK_2'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS2'
+          AP Title mismatch
+          Remote address match level 0
+  Matched: Remote 'CDCS', Asociation 'TGDC_RB_LINK_1'
+
+1117.853s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'CDCS'
+      Association 'TGDC_RB_LINK_1'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS1'
+          AP Title mismatch
+          Remote address match level 0
+      Association 'TGDC_RB_LINK_2'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS2'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'CDCS', Asociation 'TGDC_RB_LINK_2'
+
+1545.164s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 13 seconds.
+  MAY CAUSE UNEXPECTED TIMEOUTS, DISCONNECTS, ABORTS.
+
+1555.831s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'CDCS'
+      Association 'TGDC_RB_LINK_1'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS1'
+          AP Title mismatch
+          Remote address match level 0
+      Association 'TGDC_RB_LINK_2'
+        Local AR 'RB_GATEWAY2'
+          Local address match level 2
+        Remote AR 'AS2'
+          Remote address match level 2
+        * Best association match so far
+  Matched: Remote 'CDCS', Asociation 'TGDC_RB_LINK_2'
+
+***********************************************************
+          LOGGING STARTED Wed Jan  5 16:03:39 2011
+***********************************************************
+
+Wed Jan  5 16:03:39 2011 SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+Wed Jan  5 16:23:55 2011 MILOG_FLOW (mi.c 207) 
+  MI terminate
+
+Wed Jan  5 16:23:55 2011 MEM_LOG_DUMP (mem_chks.c 1185) 
+  DYNAMIC MEMORY POINTER TABLE 
+  -----------------------------  
+  Ptr 021e3e10  Size     1  File : iccp_main.c  #0395
+  Ptr 0204de98  Size    40  File : miusrobj.c   #0370
+  Ptr 02045698  Size    40  File : miusrobj.c   #0343
+  Ptr 02045640  Size    40  File : miusrobj.c   #0343
+  Ptr 020455e8  Size    40  File : miusrobj.c   #0316
+  Ptr 02045590  Size    40  File : miusrobj.c   #0289
+  Ptr 021c4158  Size    40  File : miusrobj.c   #0289
+  Ptr 0204dcc8  Size   420  File : miusrobj.c   #0387
+  Ptr 021c4100  Size    44  File : miusrobj.c   #0236
+  Ptr 021c40a8  Size    44  File : miusrobj.c   #0236
+  Ptr 0204cf30  Size  1272  File : mvl_acse.c   #0453
+  Ptr 02046e58  Size  8202  File : mvl_acse.c   #0349
+  Ptr 0204ce38  Size   200  File : mvl_acse.c   #0388
+  Ptr 021c4078  Size     4  File : ../../uca/leant/osicfgx.c #1599
+  Ptr 021c1c60  Size     4  File : ../../uca/leant/osicfgx.c #1599
+  Ptr 021b7d20  Size   256  File : ../../uca/leant/osicfgx.c #1572
+  Ptr 021c42a0  Size    12  File : ../../uca/leant/osicfgx.c #1599
+  Ptr 021b7c70  Size   128  File : ../../uca/leant/osicfgx.c #1556
+  Ptr 021c4e00  Size 110020  File : mit_misc.c   #0281
+  Ptr 021c3c28  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c3b00  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c39d8  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c38b0  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c3788  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c3660  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c3538  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c3410  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c32e8  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c31c0  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c3098  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2f70  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2e48  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2d20  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2bf8  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2ad0  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c29a8  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2858  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2730  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2608  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c24e0  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c23b8  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2290  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2168  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c2040  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c1f18  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c1de8  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c1cb0  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c1a88  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c1a00  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c1980  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c18f8  Size    16  File : ../../iccp/src/mic.c #0211
+  Ptr 021c15d8  Size   688  File : ../../iccp/src/mic.c #0132
+  Ptr 021c15a0  Size     8  File : ../../iccp/src/mic.c #0128
+  Ptr 021bf450  Size    16  File : ../../iccp/src/mic.c #0120
+  Ptr 021c1500  Size   112  File : ../../iccp/src/mic.c #0116
+  Ptr 021c1458  Size   120  File : ../../iccp/src/mic.c #0107
+  Ptr 021bf258  Size   316  File : ../../iccp/src/misb5.c #0339
+  Ptr 021bf0b0  Size   375  File : ../../iccp/src/mis.c #0547
+  Ptr 021be018  Size  4200  File : ../../iccp/src/mis.c #0538
+  Ptr 021b8200  Size   100  File : ../../iccp/src/mis.c #0534
+  Ptr 021b89e0  Size 22028  File : ../../iccp/src/mis.c #0526
+  Ptr 021b81c8  Size     8  File : ../../iccp/src/mis.c #0521
+  Ptr 021b8118  Size   132  File : ../../iccp/src/mis.c #0515
+  Ptr 021b4378  Size   164  File : ../../iccp/src/mi.c #0222
+  Ptr 021aeba8  Size 22436  File : ../../iccp/src/misb5.c #0104
+  Ptr 02045708  Size   316  File : ../../iccp/src/misb5.c #0101
+  Ptr 02054488  Size 66108  File : ../../iccp/src/mis.c #0284
+  Ptr 0204ee48  Size 22036  File : ../../iccp/src/mis.c #0281
+  Ptr 02045550  Size    20  File : mit_xmlc.c   #0117
+  Total number of allocated pointers:   69
+  Total amount of memory allocated:     260542 bytes 
+  Maximum number of pointers allocated: 11493
+  Maximum amount of memory allocated:   1140297 bytes

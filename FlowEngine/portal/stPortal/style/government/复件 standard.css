@@ -1,0 +1,635 @@
+BODY
+{
+	font-family:"宋体"; 
+	font-size: 11px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 0px;
+	scrollbar-face-color:DCE0E2;
+	scrollbar-shadow-color:687888;
+	scrollbar-highlight-color:ffffff;
+	scrollbar-3dlight-color:687888;
+	scrollbar-darkshadow-color:DCE0E2;
+	scrollbar-track-color:F4F4F0;
+	scrollbar-arrow-color:6E7E88;
+}
+TD {
+	FONT: 9pt  Verdana,Tahoma,宋体
+}
+.Tableblock
+{
+	border-left:1px solid #ABA6A6;
+	border-right:1px solid #ABA6A6;
+	background-color: #FFFFFF;
+}
+.Toptr
+{
+	height:20px;
+	background-repeat: repeat-y;
+	background-position: right bottom;
+	text-align:right;
+	padding-top:3px;
+	padding-right:5px;
+	background-color: #89AFF9;
+	background-image: url(./images/toptr.gif);
+	border-bottom:1px solid #817F7F;
+}
+.Topword
+{
+	color:black;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:midden
+}
+.Banner {
+	height: 44px;
+	vertical-align: top;
+	background-image: url(./images/bannerbg.gif);
+}
+/*导航条开始＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.Navbg {
+	background-color: #F1F1F1;
+	border-top:1px solid #817F7F;
+	background-image: url(../images/navbg.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	height: 25px;
+	padding-top:3px;
+	padding-bottom:3px;
+	vertical-align:top;
+}
+/*点击选中的栏目*/
+.DashNavCurDashArea
+{
+	font-weight: bold;
+  padding-left:0px;/*间隔*/
+	padding-top:0px;
+	padding-right:0px;
+	padding-bottom:0px;
+}
+.DashNavChosen
+{
+	color:BE4505;/*点击选择栏目的颜色*/
+	font-size:11pt;
+	text-decoration:none;
+}
+.DashNavDashArea
+{
+  PADDING-RIGHT: 0px;
+  MARGIN-TOP: 2px;
+  PADDING-LEFT: 0px;
+  FONT-SIZE: 9pt;
+  MARGIN-BOTTOM: 2px;
+  PADDING-BOTTOM: 2px;
+  BORDER-LEFT: silver 1px solid;
+  PADDING-TOP: 2px;
+  FONT-FAMILY: verdana;
+}
+/*没选择到的栏目字体*/
+.DashNavLink
+{
+	color:black;
+	font-size:11pt;
+	border:1px solid F1F1F1;
+	text-decoration:none;
+	font-weight: bold;	
+}
+/*没选择到的栏目字体,当鼠标移到的响应*/
+A.DashNavLink:hover
+{
+	font-size:11pt;
+	border:1px solid #302D2B;
+	background-color:white;
+	text-decoration:none;
+	
+	BORDER-RIGHT: #999 1px solid;
+	BORDER-TOP: #999 1px solid;
+	BORDER-LEFT: #999 1px solid;
+	BORDER-BOTTOM: #999 1px solid;
+	
+	BACKGROUND: #ccc;
+	COLOR: black;
+	TEXT-DECORATION: none
+}
+.DashNavLink:visited
+{
+	COLOR: black;
+	TEXT-DECORATION: none
+}
+
+.DashNavLink:active
+{
+	COLOR:black;
+	TEXT-DECORATION: none
+}
+
+/*首页栏目字体＝＝＝＝＝＝＝over＝＝＝＝＝＝＝＝*/
+
+/*栏目隔栏字体*/
+.Dashline
+{
+	width:1px;
+	color:#686565;
+	font-size:11pt;
+}
+/*导航条结束*/
+.Welcome {
+	font-size:11pt;
+	background-color: #F4ECC8;
+	padding-top: 4px;
+	padding-bottom: 1px;
+	height:20px;
+	border-bottom:1px solid #817F7F;
+}
+.Noticetd
+{
+	background-color:#F3F2F2;
+	height:23px;
+	color:#000000;
+}
+.Noticelink
+{
+	color:#0000ff;
+	text-decoration:none;
+}
+/*左边列开始*/
+.Left
+{
+	width:200px;
+}
+.BlockTitlebg1
+{
+	background-image: url(../images/titlebg1.gif);
+	background-repeat: no-repeat;
+	height: 21px;
+	border:1px solid #B0AFAF;
+	padding-left:5px;
+	padding-top:2px;
+	vertical-align:top;
+}
+.ListBlock1
+{
+	border-left:1px solid #B0AFAF;
+	border-right:1px solid #B0AFAF;
+	border-bottom:1px solid #B0AFAF;	
+	padding-left:3px;
+	padding-right:3px;
+}
+/*--左边列结束*/
+/*待办事宜开始*/
+.Titlebg2 {
+	background-image: url(../images/titlebg2.gif);
+	background-repeat: repeat-x;
+	height: 22px;
+	background-color:#C6D9FB;
+	border-left:1px solid #B3C2DD;
+	border-bottom:1px solid #B3C2DD;	
+}
+.Title2
+{
+	font-weight:bold;
+	color:#3B4660;
+	padding-left:5px;
+	padding-top:5px;
+	width:200px;
+}
+.Titlehead
+{
+	font-weight:bold;
+	height:22px;
+	background-color:#E3E8F3;
+	padding-top:4px;
+	padding-left:3px;
+}
+.Toolbar
+{
+	background-color:#F2EFEF;
+	height:21px;
+	padding-left:5px;
+	border-left:1px solid #B3C2DD;
+	border-right:1px solid #B3C2DD;
+}
+.TitlecontentTr1
+{
+	padding-top:3px;
+	padding-left:3px;
+	height:20px;
+}
+.TitlecontentTr2
+{
+	padding-top:3px;
+	padding-left:3px;
+	height:20px;
+	background-color:#FEF8DD;
+}
+.Block2
+{
+	border-left:1px solid #B3C2DD;
+	border-right:1px solid #B3C2DD;
+}
+.Moretd1
+{
+	background-color:#F2EFEF;
+	border-left:1px solid #B3C2DD;
+	border-right:1px solid #B3C2DD;
+	border-bottom:1px solid #B3C2DD;
+	height:20px;
+	padding-right:2px;
+	padding-top:3px;
+	text-align:right;	
+}
+/*--待办事宜结束*/
+/*下中部块开始*/
+.Titlebg3 {
+	background-image: url(../images/titleleft3.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left:45px;
+	height:22px;
+	padding-top:5px;
+	border:1px solid #B3C2DD;
+}
+.Block3
+{
+	border-left:1px solid #B3C2DD;
+	border-right:1px solid #B3C2DD;
+	border-bottom:1px solid #B3C2DD;
+	padding-left:2px;
+}
+.Imgtd
+{
+	padding-top:5px;
+	text-align:center;
+	vertical-align:top;
+	width:90px;
+}
+/*下中部块结束*/
+.Middle
+{
+	padding-left:10px;
+	padding-right:10px;
+}
+.Dot
+{
+	color:#FF6600;
+}
+.Titletd
+{
+	padding-top:3px;
+	padding-bottom:2px;
+	line-height:15px;	
+}
+.Titleword1
+{
+	color:#3B4660;
+}
+.Icontd
+{
+	padding-bottom:2px;
+	padding-right:3px;
+}
+.Titlelink
+{
+	color:black;
+	text-decoration:none;
+}
+.MoreTd
+{
+	text-align:right;
+	height:20px;
+}
+.Moreword
+{
+	color:black;	
+	text-decoration:none;
+}
+.Date
+{
+	color:#666666;
+}
+
+.PartTitleLeft
+{
+	vertical-align:bottom;
+	background-color:#BAC8E3;
+	border-left:#7392C6 1px solid;
+	border-right:#7392C6 0px solid;
+	border-top:#7392C6 1px solid;
+	border-bottom:#7392C6 1px solid;
+	color:#394963;
+	padding-left:3px;
+	height:20px;
+}
+.PartTitleMiddle
+{
+	background-color:#BAC8E3;
+	border-left:#7392C6 0px solid;
+	border-right:#7392C6 0px solid;
+	border-top:#7392C6 1px solid;
+	border-bottom:#7392C6 1px solid;
+	text-align:right;
+	width:90px;
+}
+.PartIFrame{
+	border-left:#7392C6 1px solid;
+	border-right:#7392C6 1px solid;
+	border-top:#7392C6 0px solid;
+	border-bottom:#7392C6 1px solid;
+	vertical-align:top;
+	padding-left:3px;
+	padding-top:2px;
+	padding-right:2px;;
+}
+.PartRightCornerImage
+{
+	background-color:#BAC8E3;
+	border-left:#7392C6 0px solid;
+	border-right:#7392C6 0px solid;
+	border-top:#7392C6 0px solid;
+	border-bottom:#7392C6 1px solid;
+	text-align:right;
+	width:6px;
+}
+.DashTitleRight
+{
+}
+.DashTitleBackground
+{
+    background-image: url(topbanner.jpg);
+    background-repeat: repeat-x;
+    HEIGHT: 44px;
+}
+.TreeNode
+{
+    FONT-SIZE: 1.2em;
+    COLOR: blue;
+    FONT-FAMILY: 宋体
+}
+.TreeNodeSelected
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 1.2em;
+    COLOR: yellow;
+    FONT-FAMILY: 宋体
+}
+.DashNavNode
+{
+    FONT-SIZE: 1.2em;
+    COLOR: white;
+    FONT-FAMILY: 宋体
+    BACKGROUND-COLOR: transparent
+}
+.DashNavArea
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    COLOR: black;
+    PADDING-TOP: 0px;
+    BACKGROUND-COLOR: #003399
+}
+
+.DashNavDropDownArea
+{
+    PADDING-RIGHT: 15px;
+    BACKGROUND-POSITION: left center;
+    BACKGROUND-IMAGE: url(dropdown.gif);
+    BACKGROUND-REPEAT: no-repeat
+}
+.DashNavCurDropDownArea
+{
+    PADDING-RIGHT: 15px;
+    BACKGROUND-POSITION: left center;
+    BACKGROUND-IMAGE: url(dropdown.gif);
+    BACKGROUND-REPEAT: no-repeat
+}
+.HBar{
+	height:4px;
+	width:100%;
+	BACKGROUND-COLOR:#D8E3FC;
+}
+.DashNavUpArea
+{
+    PADDING-RIGHT: 25px;
+    BACKGROUND-POSITION: center center;
+    BACKGROUND-IMAGE: url(up.gif);
+    CURSOR: hand;
+    BACKGROUND-REPEAT: no-repeat
+}
+.DashNavChildMenu
+{
+    BORDER-RIGHT: #cfd5e5 1px solid;
+    PADDING-RIGHT: 4px;
+    BORDER-TOP: #cfd5e5 1px solid;
+    PADDING-LEFT: 4px;
+    PADDING-BOTTOM: 2px;
+    BORDER-LEFT: #cfd5e5 1px solid;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #cfd5e5 1px solid;
+    FONT-FAMILY: verdana;
+    BACKGROUND-COLOR: lightgrey
+}
+.DashNavChildMenuItem
+{
+}
+.DashLayoutTable
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    WIDTH: 100%;
+    PADDING-TOP: 0px
+}
+.DashZoneTop
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    VERTICAL-ALIGN: top;
+    HEIGHT: 2%;
+    PADDING-TOP: 0px;
+    TEXT-ALIGN: left
+}
+.DashZoneBottom
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    VERTICAL-ALIGN: top;
+    HEIGHT: 2%;
+    PADDING-TOP: 0px;
+    TEXT-ALIGN: left
+}
+.DashZoneLeft
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    VERTICAL-ALIGN: top;
+    WIDTH: 20px;
+    PADDING-TOP: 0px;
+    TEXT-ALIGN: left
+}
+.DashZoneCenter
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    VERTICAL-ALIGN: top;
+    PADDING-TOP: 0px;
+    TEXT-ALIGN: left
+}
+.DashZoneRight
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    VERTICAL-ALIGN: top;
+    WIDTH: 20px;
+    PADDING-TOP: 0px;
+    TEXT-ALIGN: left
+}
+.DashPartFrame
+{
+    BORDER-RIGHT: #cfd5e5 1px solid;
+    BORDER-TOP: #cfd5e5 1px solid;
+    BORDER-LEFT: #cfd5e5 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #cfd5e5 1px solid
+    BACKGROUND-COLOR: #A8BCCF;
+}
+.DashPartTitle
+{
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 0.8em;
+    COLOR:#0033CC;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 2px;
+    FONT-FAMILY: arial, verdana;
+    BACKGROUND-COLOR: #A8BCCF;
+    TEXT-ALIGN: left
+}
+.DashPartCommandsArea
+{
+    PADDING-RIGHT: 4px;
+    PADDING-LEFT: 4px;
+    BACKGROUND-COLOR:#A8BCCF;
+    TEXT-ALIGN: right
+}
+.DashPartSpacing
+{
+    HEIGHT: 6px
+}
+.DashPartBody
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px
+}
+.UserShadedRegion
+{
+    BACKGROUND-COLOR: whitesmoke
+}
+.UserCaption
+{
+    COLOR: white;
+    BACKGROUND-COLOR: lightslategray
+}
+.DashTitleTable
+{
+    BORDER-RIGHT: 2px;
+    BORDER-TOP: 2px;
+    MARGIN-BOTTOM: 0px;
+    BORDER-LEFT: 2px;
+    BORDER-BOTTOM: 2px;
+}
+.DashTitleArea
+{
+    BORDER-RIGHT: #666699 1px solid;
+    BORDER-TOP: #666699 1px solid;
+    BACKGROUND-IMAGE: url(topbanner.gif);
+    BORDER-LEFT: #666699 1px solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: #666699 1px solid;
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-COLOR: transparent
+}
+.DashTitle
+{
+    PADDING-RIGHT: 4px;
+    PADDING-LEFT: 4px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 1.25em;
+    WIDTH: 100px;
+    COLOR: white;
+    FONT-FAMILY: Verdana
+}
+.DashTitleImage
+{
+    BACKGROUND-POSITION: left top;
+    BACKGROUND-ATTACHMENT: fixed;
+   	background-image: url(./images/logo.gif);
+    BACKGROUND-REPEAT: no-repeat;
+    HEIGHT: 60px
+}
+
+.DashTitleImage1
+{
+    BACKGROUND-POSITION: right top;
+    BACKGROUND-ATTACHMENT: fixed;   
+	background-image: url(./images/banner.gif);
+    BACKGROUND-REPEAT: no-repeat;
+    HEIGHT: 60px
+}
+.PartTitleLeft
+{
+	vertical-align:bottom;
+	background-color:#BAC8E3;
+	border-left:#7392C6 1px solid;
+	border-right:#7392C6 0px solid;
+	border-top:#7392C6 1px solid;
+	border-bottom:#7392C6 1px solid;
+	color:#394963;
+	padding-left:3px;
+	height:20px;
+}
+.PartTitleMiddle
+{
+	background-color:#BAC8E3;
+	border-left:#7392C6 0px solid;
+	border-right:#7392C6 0px solid;
+	border-top:#7392C6 1px solid;
+	border-bottom:#7392C6 1px solid;
+	text-align:right;
+	width:90px;
+}
+.PartIFrame{
+	border-left:#7392C6 1px solid;
+	border-right:#7392C6 1px solid;
+	border-top:#7392C6 0px solid;
+	border-bottom:#7392C6 1px solid;
+	vertical-align:top;
+	padding-left:3px;
+	padding-top:2px;
+	padding-right:2px;;
+}
+.PartRightCornerImage
+{
+	background-color:#BAC8E3;
+	border-left:#7392C6 0px solid;
+	border-right:#7392C6 0px solid;
+	border-top:#7392C6 0px solid;
+	border-bottom:#7392C6 1px solid;
+	text-align:right;
+	width:6px;
+}
+.DashTitleRight
+{
+}
+.DashTitleBackground
+{
+    background-image: url(topbanner_bg.gif);
+    background-repeat: repeat-x;
+    HEIGHT: 44px;
+}

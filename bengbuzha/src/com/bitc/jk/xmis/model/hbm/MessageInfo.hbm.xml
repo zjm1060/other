@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model">
+	<class name="MessageInfo" table="msg_消息">
+		<id column="id" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<many-to-one name="receiver" column="接收人" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.SimpleEmployee"></many-to-one>
+		<many-to-one name="sender" column="发送人" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.SimpleEmployee"></many-to-one>
+		<property column="标题" name="title" type="string" />
+		<property column="内容" name="content" type="string" />
+		<property column="发送时间" name="sendTime" type="timestamp" />
+		<property column="是否已读" name="state" type="int" />
+	</class>
+</hibernate-mapping>

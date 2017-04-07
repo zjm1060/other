@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<columns>
+	<columnOne><!--40-->
+		<column><!--序号-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--部门-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--deptId-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--在研项目数-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--项目编号-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--合同名称-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--合同或预算金额-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--到款率-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--标识-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--经费类别-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--项目结余-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当年到款-->
+			<header>''</header>
+			<colspan>6</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当前累计支出-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'当前累计支出\',\'#3300FF\',\'17,39\',1,\'17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39\');\" &gt;&lt;font color=#3300FF&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;当前累计支出&lt;/font&gt;&lt;/a&gt;'</header>
+			<colspan>24</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--已开发票金额-->
+			<header>''</header>
+			<colspan>4</colspan>
+			<align>'center'</align>
+		</column>
+	</columnOne>
+	<columnTwo><!--40-->
+		<column><!--序号-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--部门-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--deptId-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--在研项目数-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--项目编号-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--合同名称-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--合同或预算金额-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--到款率-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--标识-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--经费类别-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--项目结余-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当前累计到款-->
+			<!--<header>'&lt;font color=#3300FF&gt;当前累计到款&lt;/font&gt;'</header>-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'当前累计到款\',\'#3300FF\',\'11,15\',1,\'11,12,13,14,15\');\" &gt;&lt;font color=#3300FF&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;当前累计到款&lt;/font&gt;&lt;/a&gt;'</header>
+			<colspan>6</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--上年累计支出-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当年支出-->
+			<!--<header>'&lt;font color=#FF4500&gt;当年支出&lt;/font&gt;'</header>-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'当年支出\',\'#FF4500\',\'26,30,38\',1,\'18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38\');\" &gt;&lt;font color=#FF4500&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;当年支出&lt;/font&gt;&lt;/a&gt;'</header>
+			<colspan>22</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当前累计支出小计-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--已开发票金额-->
+			<header>''</header>
+			<colspan>4</colspan>
+			<align>'center'</align>
+		</column>
+	</columnTwo>	
+	<columnThree>
+		<column><!--序号-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--部门-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--deptId-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--在研项目数-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--项目编号-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--合同名称-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--合同或预算金额-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--到款率-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--标识-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--经费类别-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--项目结余-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--累计到款-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当年到款-->
+			<!--<header>'&lt;font color=#8A2BE2&gt;当年到款 &lt;/font&gt;'</header>-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'当年到款\',\'#8A2BE2\',\'12,13,14\',2);\" &gt;&lt;font color=#8A2BE2&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;当年到款 &lt;/font&gt;&lt;/a&gt;'</header>
+			<colspan>4</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当前累计到款-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--累计支出-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当年支出-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'主要业务经费支出\',\'#008000\',\'18,19,20,21,22,23,24,25\',2);\" &gt;&lt;font color=#008000&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;主要业务经费支出&lt;/font&gt;&lt;/a&gt;'</header>
+			<colspan>9</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当年支出-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'其他支出\',\'#CC0066\',\'27,28,29\',2);\" &gt;&lt;font color=#CC0066&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;其他支出&lt;/font&gt;&lt;/a&gt;'</header>
+			<colspan>4</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当年支出-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'计提支出\',\'#0066FF\',\'31,32,33,34,35,36,37\',2);\" &gt;&lt;font color=#0066FF&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;计提支出&lt;/font&gt; &lt;/a&gt;'</header>
+			<colspan>8</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当年支出-->
+			<header>'&lt;font color=#FF00FF&gt;当年支出小计&lt;/font&gt;'</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--当前累计支出-->
+			<header>''</header>
+			<colspan>1</colspan>
+			<align>'center'</align>
+		</column>
+		<column><!--已开发票金额-->
+			<!--<header>'&lt;font color=#996633&gt;已开发票金额&lt;/font&gt;'</header>-->
+			<header>'&lt;a href=\"javascript:;\"  onclick=\"javascript:hiddenColumn(\'已开发票金额\',\'#996633\',\'41,42,43\',2);\" &gt;&lt;font color=#996633&gt;&lt;img src=\"'+__cxtPath+ '/resources/images/default/grid/group-expand.gif\" style=\"vertical-align:middle;\" /&gt;已开发票金额&lt;/font&gt;&lt;/a&gt;'</header>
+			<colspan>4</colspan>
+			<align>'center'</align>
+		</column>
+	</columnThree>
+		
+	<columnModel>
+		<!--序号在js中加-->
+		<column><!--1-->
+			<header>'部门'</header>
+			<dataIndex>'部门'</dataIndex>
+			<align>'left'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>150</width>
+			<css>'background: #f1f2f4;'</css>
+			<renderer>function(value,cellmeta,record){if(value!=null){value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:linkDeptStore(\'"+value+"\');\" &gt;"+value+" &lt;/a&gt;"}  return value;}</renderer>
+		</column>
+		<column><!--2-->
+			<header>'deptId'</header>
+			<dataIndex>'deptId'</dataIndex>
+			<align>'left'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+		</column>
+		<column><!--3-->
+			<header>'在研项目数'</header>
+			<dataIndex>'在研项目数'</dataIndex>
+			<align>'right'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<css>'background: #f1f2f4;'</css>
+		</column>
+		<column><!--4-->
+			<header>'项目编号'</header>
+			<dataIndex>'项目编号'</dataIndex>
+			<align>'left'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>150</width>
+			<css>'background: #f1f2f4;'</css>
+			<!--<renderer>function(value,cellmeta,record){if(value==null||value==""){if(record.get('项目编号')==null || record.get('项目编号')==""){value ="";}else{value = record.get('项目编号')+'(财)'}} return value;}</renderer>-->
+		</column>
+		<column><!--5-->
+			<header>'合同名称'</header>
+			<dataIndex>'合同名称'</dataIndex>
+			<align>'left'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>150</width>
+			<css>'background: #f1f2f4;'</css>
+		</column>
+		<column><!--6-->
+			<header>'合同金额'</header>
+			<dataIndex>'合同或预算金额'</dataIndex>
+			<align>'right'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>120</width>
+			<renderer>function(value){return formatAmt(value) }</renderer>
+		</column>
+		<column><!--7-->
+			<header>'合同额到款率'</header>
+			<dataIndex>'到款率'</dataIndex>
+			<align>'right'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>120</width>
+			<renderer>function(value){return (value*100).toFixed(0)+"%" }</renderer>
+		</column>
+		<column><!--8-->
+			<header>'标识'</header>
+			<dataIndex>'标识'</dataIndex>
+			<align>'center'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+		</column>
+		<column><!--9-->
+			<header>'经费类别'</header>
+			<dataIndex>'经费类别'</dataIndex>
+			<align>'center'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+		</column>
+		
+		<column><!--10-->
+			<header>'项目结余'</header>
+			<dataIndex>'项目结余'</dataIndex>
+			<align>'right'</align>
+			<hidden>false</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value){return formatAmt(value) }</renderer>
+		</column>
+		<column><!--11-->
+			<header>'上年累计到款'</header>
+			<dataIndex>'以前年度累计到款'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>120</width>
+			<renderer>function(value){return formatAmt(value) }</renderer>
+			
+		</column>
+		<column><!--12-->
+			<header>'&lt;font color=#8A2BE2&gt;合同到款 &lt;/font&gt;'</header>
+			<dataIndex>'合同到款'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;" }else {value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'合同到款\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'合同到款\',\'"+record.data['合同到款']+"\');\" &gt;  &lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--13-->
+			<header>'&lt;font color=#8A2BE2&gt;退税收入&lt;/font&gt;'</header>
+			<dataIndex>'退税收入'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;" }else {value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'退税收入\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'退税收入\',\'"+record.data['退税收入']+"\');\" &gt;  &lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--14-->
+			<header>'&lt;font color=#8A2BE2&gt;转账收入&lt;/font&gt;'</header>
+			<dataIndex>'转账收入'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;" }else {value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'转账收入\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'转账收入\',\'"+record.data['转账收入']+"\');\" &gt;  &lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#8A2BE2&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--15-->
+			<header>'&lt;font color=#FF00FF&gt;当年到款小计&lt;/font&gt;'</header>
+			<dataIndex>'当年到款'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>false</sortable>
+			<width>100</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt = value=new Number(record.data['合同到款'])+new Number(record.data['退税收入'])+new Number(record.data['转账收入']);     if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#FF00FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else {value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'合同到款,退税收入,转账收入\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'当年到款小计\',\'"+amt+"\');\" &gt;  &lt;font color=#FF00FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;" }} return value;}</renderer>
+		</column>
+		<column><!--16-->
+			<header>'&lt;font color=#3300FF&gt;当前累计到款合计&lt;/font&gt;'</header>
+			<dataIndex>'当年到款'</dataIndex>
+			<align>'right'</align>
+			<hidden>false</hidden>
+			<sortable>false</sortable>
+			<width>120</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt = value=new Number(record.data['以前年度累计到款']+record.data['合同到款'])+new Number(record.data['退税收入'])+new Number(record.data['转账收入']);     if(value!=null){value ="&lt;font color=#3300FF&gt;"+formatAmt(value)+"&lt;/font&gt;" } return value;}</renderer>
+		</column>
+		<column><!--17-->
+			<header>'上年累计支出'</header>
+			<dataIndex>'以前年度累计支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>120</width>
+			<renderer>function(value){return formatAmt(value) }</renderer>
+		</column>
+		<column><!--18-->
+			<header>'&lt;font color=#008000&gt;人员经费&lt;/font&gt;'</header>
+			<dataIndex>'人员经费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else {value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'人员经费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'人员经费\',\'"+record.data['人员经费']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--19-->
+			<header>'&lt;font color=#008000&gt;采购支出&lt;/font&gt;'</header>
+			<dataIndex>'采购支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'采购支出\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'采购支出\',\'"+record.data['采购支出']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--20-->
+			<header>'&lt;font color=#008000&gt;外加工费&lt;/font&gt;'</header>
+			<dataIndex>'外加工费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'外加工费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'外加工费\',\'"+record.data['外加工费']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--21-->
+			<header>'&lt;font color=#008000&gt;技术服务费&lt;/font&gt;'</header>
+			<dataIndex>'技术服务费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'技术服务费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'技术服务费\',\'"+record.data['技术服务费']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--22-->
+			<header>'&lt;font color=#008000&gt;外拨款&lt;/font&gt;'</header>
+			<dataIndex>'外拨款'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'外拨款\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'外拨款\',\'"+record.data['外拨款']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--23-->
+			<header>'&lt;font color=#008000&gt;业务招待费&lt;/font&gt;'</header>
+			<dataIndex>'业务招待费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'业务招待费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'业务招待费\',\'"+record.data['业务招待费']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--24-->
+			<header>'&lt;font color=#008000&gt;会议差旅费&lt;/font&gt;'</header>
+			<dataIndex>'会议差旅费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'会议差旅费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'会议差旅费\',\'"+record.data['会议差旅费']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--25-->
+			<header>'&lt;font color=#008000&gt;车辆使用&lt;/font&gt;'</header>
+			<dataIndex>'车辆使用'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'车辆使用\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'车辆使用\',\'"+record.data['车辆使用']+"\');\" &gt;  &lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#008000&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--26-->
+			<header>'&lt;font color=#FF4500&gt;小计&lt;/font&gt;'</header>
+			<dataIndex>'主要业务经费支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>false</sortable>
+			<width>120</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt= value=new Number(record.data['人员经费'])+new Number(record.data['采购支出'])+new Number(record.data['外加工费'])+new Number(record.data['技术服务费'])+new Number(record.data['外拨款'])+new Number(record.data['业务招待费'])+new Number(record.data['会议差旅费'])+new Number(record.data['车辆使用']);    if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#FF4500&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'人员经费,采购支出,外加工费,技术服务费,外拨款,业务招待费,会议差旅费,车辆使用\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'主要业务经费支出小计\',\'"+amt+"\');\" &gt;  &lt;font color=#FF4500&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;" }} return value;}</renderer>
+		</column>
+		<column><!--27-->
+			<header>'&lt;font color=#CC0066&gt;研发支出&lt;/font&gt;'</header>
+			<dataIndex>'研发支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'研发支出\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'研发支出\',\'"+record.data['研发支出']+"\');\" &gt;  &lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--28-->
+			<header>'&lt;font color=#CC0066&gt;应交增值税&lt;/font&gt;'</header>
+			<dataIndex>'应交增值税'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'应交增值税\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'应交增值税\',\'"+record.data['应交增值税']+"\');\" &gt;  &lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--29-->
+			<header>'&lt;font color=#CC0066&gt;其他支出&lt;/font&gt;'</header>
+			<dataIndex>'其他支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'其他支出\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'其他支出\',\'"+record.data['其他支出']+"\');\" &gt;  &lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#CC0066&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--30-->
+			<header>'&lt;font color=#FF4500&gt;小计&lt;/font&gt;'</header>
+			<dataIndex>'其他'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>false</sortable>
+			<width>100</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt = value=new Number(record.data['研发支出'])+new Number(record.data['应交增值税'])+new Number(record.data['其他支出']);    if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#FF4500&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'研发支出,应交增值税,其他支出\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'其他支出小计\',\'"+amt+"\');\" &gt;  &lt;font color=#FF4500&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;" }} return value;}</renderer>
+		</column>
+		<column><!--31-->
+			<header>'&lt;font color=#0066FF&gt;计提研发费&lt;/font&gt;'</header>
+			<dataIndex>'计提研发费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提研发费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提研发费\',\'"+record.data['计提研发费']+"\');\" &gt;  &lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--32-->
+			<header>'&lt;font color=#0066FF&gt;计提项目管理费&lt;/font&gt;'</header>
+			<dataIndex>'计提项目管理费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>120</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提项目管理费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提项目管理费\',\'"+record.data['计提项目管理费']+"\');\" &gt;  &lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--33-->
+			<header>'&lt;font color=#0066FF&gt;计提工资管理费&lt;/font&gt;'</header>
+			<dataIndex>'计提工资管理费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提工资管理费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提工资管理费\',\'"+record.data['计提工资管理费']+"\');\" &gt;  &lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--34-->
+			<header>'&lt;font color=#0066FF&gt;计提绩效管理费&lt;/font&gt;'</header>
+			<dataIndex>'计提绩效管理费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提绩效管理费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提绩效管理费\',\'"+record.data['计提绩效管理费']+"\');\" &gt;  &lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--35-->
+			<header>'&lt;font color=#0066FF&gt;计提福利费&lt;/font&gt;'</header>
+			<dataIndex>'计提福利费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提福利费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提福利费\',\'"+record.data['计提福利费']+"\');\" &gt;  &lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--36-->
+			<header>'&lt;font color=#0066FF&gt;计提教育经费&lt;/font&gt;'</header>
+			<dataIndex>'计提教育经费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提教育经费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提教育经费\',\'"+record.data['计提教育经费']+"\');\" &gt;  &lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--37-->
+			<header>'&lt;font color=#0066FF&gt;计提工会经费&lt;/font&gt;'</header>
+			<dataIndex>'计提工会经费'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提工会经费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提工会经费\',\'"+record.data['计提工会经费']+"\');\" &gt;  &lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#0066FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--38-->
+			<header>'&lt;font color=#FF4500&gt;小计&lt;/font&gt;'</header>
+			<dataIndex>'计提支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>false</sortable>
+			<width>100</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt = value=new Number(record.data['计提研发费'])+new Number(record.data['计提项目管理费'])+new Number(record.data['计提工资管理费'])+new Number(record.data['计提绩效管理费'])+new Number(record.data['计提福利费'])+new Number(record.data['计提教育经费'])+new Number(record.data['计提工会经费']);  if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#FF4500&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'计提研发费,计提项目管理费,计提工资管理费,计提绩效管理费,计提福利费,计提教育经费,计提工会经费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'计提支出小计\',\'"+amt+"\');\" &gt;  &lt;font color=#FF4500&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;" }} return value; }</renderer>
+		</column>
+		<column><!--39-->
+			<header>'&lt;font color=#FF00FF&gt;小计&lt;/font&gt;'</header>
+			<dataIndex>'当年支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>false</sortable>
+			<width>100</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt = value=new Number(record.data['人员经费'])+new Number(record.data['采购支出'])+new Number(record.data['外加工费'])+new Number(record.data['技术服务费'])+new Number(record.data['外拨款'])+new Number(record.data['业务招待费'])+new Number(record.data['会议差旅费'])+new Number(record.data['车辆使用'])+new Number(record.data['研发支出'])+new Number(record.data['应交增值税'])+new Number(record.data['其他支出'])+new Number(record.data['计提研发费'])+new Number(record.data['计提项目管理费'])+new Number(record.data['计提工资管理费'])+new Number(record.data['计提绩效管理费'])+new Number(record.data['计提福利费'])+new Number(record.data['计提教育经费'])+new Number(record.data['计提工会经费']);  if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#FF00FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'人员经费,采购支出,外加工费,技术服务费,外拨款,业务招待费,会议差旅费,车辆使用,研发支出,应交增值税,其他支出,计提研发费,计提项目管理费,计提工资管理费,计提绩效管理费,计提福利费,计提教育经费,计提工会经费\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'当年支出小计\',\'"+amt+"\');\" &gt;  &lt;font color=#FF00FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;" }} return value; }</renderer>
+		</column>
+		<column><!--40-->
+			<header>'&lt;font color=#3300FF&gt;当前累计支出合计&lt;/font&gt;'</header>
+			<dataIndex>'当年支出'</dataIndex>
+			<align>'right'</align>
+			<hidden>false</hidden>
+			<sortable>false</sortable>
+			<width>120</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt = value=new Number(record.data['以前年度累计支出'])+new Number(record.data['人员经费'])+new Number(record.data['采购支出'])+new Number(record.data['外加工费'])+new Number(record.data['技术服务费'])+new Number(record.data['外拨款'])+new Number(record.data['业务招待费'])+new Number(record.data['会议差旅费'])+new Number(record.data['车辆使用'])+new Number(record.data['研发支出'])+new Number(record.data['应交增值税'])+new Number(record.data['其他支出'])+new Number(record.data['计提研发费'])+new Number(record.data['计提项目管理费'])+new Number(record.data['计提工资管理费'])+new Number(record.data['计提绩效管理费'])+new Number(record.data['计提福利费'])+new Number(record.data['计提教育经费'])+new Number(record.data['计提工会经费']);  if(value!=null){value ="&lt;font color=#3300FF&gt;"+formatAmt(value)+"&lt;/font&gt;" } return value; }</renderer>
+		</column>
+		<column><!--41-->
+			<header>'&lt;font color=#996633&gt;硬件&lt;/font&gt;'</header>
+			<dataIndex>'硬件'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'硬件\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'硬件\',\'"+record.data['硬件']+"\');\" &gt;  &lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--42-->
+			<header>'&lt;font color=#996633&gt;软件&lt;/font&gt;'</header>
+			<dataIndex>'软件'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'软件\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'软件\',\'"+record.data['软件']+"\');\" &gt;  &lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--43-->
+			<header>'&lt;font color=#996633&gt;其他&lt;/font&gt;'</header>
+			<dataIndex>'其他'</dataIndex>
+			<align>'right'</align>
+			<hidden>true</hidden>
+			<sortable>true</sortable>
+			<width>100</width>
+			<renderer>function(value,cellmeta,record){if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'其他\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'其他\',\'"+record.data['其他']+"\');\" &gt;  &lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;"}}  return value;}</renderer>
+			<!--<renderer>function(value){return value = "&lt;font color=#996633&gt;"+formatAmt(value)+"&lt;/font&gt;" }</renderer>-->
+		</column>
+		<column><!--44-->
+			<header>'&lt;font color=#FF00FF&gt;已开发票金额小计&lt;/font&gt;'</header>
+			<dataIndex>'已开发票金额'</dataIndex>
+			<align>'right'</align>
+			<hidden>false</hidden>
+			<sortable>false</sortable>
+			<width>100</width>
+			<renderer>function(value,cellMeta,record,rowIndex,columnIndex){var amt = value = record.data['硬件']+record.data['软件']+record.data['其他'];  if(value!=null){if(record.data['部门']==null){value ="&lt;font color=#FF00FF&gt;"+formatAmt(value)+"&lt;/font&gt;" }else{value=" &lt;a href=\"javascript:;\"  onclick=\"javascript:showDetailsWin(\'硬件,软件,其他\',\'"+record.data['project_code']+"\',\'"+record.data['citem_id']+"\',\'"+record.data['部门']+"\',\'已开发票金额小计\',\'"+amt+"\');\" &gt; &lt;font color=#FF00FF&gt;"+formatAmt(value)+"&lt;/font&gt;  &lt;/a&gt;" }} return value; }</renderer>
+		</column>
+	</columnModel>
+</columns>

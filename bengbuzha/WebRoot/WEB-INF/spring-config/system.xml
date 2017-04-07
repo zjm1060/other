@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+	<!-- Organization & Login -->
+	<bean name="/loginAction"
+		class="com.bitc.jk.xmis.web.action.LoginAction">
+		<property name="organizationService">
+			<ref local="organizationServiceImpl" />
+		</property>
+		<property name="loginService">
+			<ref local="loginServiceImpl" />
+		</property>
+	</bean>
+
+	<bean name="/logout"
+		class="com.bitc.jk.xmis.web.action.LogoutAction">
+		<property name="loginService">
+			<ref local="loginServiceImpl" />
+		</property>
+	</bean>
+
+	<bean name="/orgMaint"
+		class="com.bitc.jk.xmis.web.action.OrganizationAction">
+		<property name="organizationService">
+			<ref local="organizationServiceImpl" />
+		</property>
+	</bean>
+    
+	<bean name="/export" class="com.bitc.jk.xmis.export.web.ExportAction">
+		<property name="exportService">
+			<ref local="exportService"></ref>
+		</property>
+	</bean>
+	
+	<bean name="/sys" class="com.bitc.jk.xmis.web.action.SysAction">
+		<property name="sysService">
+			<ref local="sysService"></ref>
+		</property>
+	</bean>
+
+	<bean id="organizationServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.OrganizationServiceImpl">
+		<property name="organizationDAO">
+			<ref local="organizationDAOImpl" />
+		</property>
+		<property name="crmDAO">
+			<ref bean="crmDAOImpl" />
+		</property>
+		<!-- 2013-11-06 zentao代码注释
+		<property name="zentaoDAO">
+			<ref bean="zentaoDAOImpl" />
+		</property>
+		-->
+	</bean>
+
+	<bean id="loginServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.LoginServiceImpl">
+		<property name="organizationDAO">
+			<ref local="organizationDAOImpl" />
+		</property>
+		<property name="userHabitDAO">
+			<ref local="userHabitDAOImpl" />
+		</property>
+		<property name="sysLogDAO">
+			<ref local="sysLogDAO" />
+		</property>
+		<property name="contractDAO" >
+			<ref bean="contractDAOImpl" />
+		</property>
+	</bean>
+
+	<bean id="organizationDAOImpl" parent="baseDAO"
+		class="com.bitc.jk.xmis.dao.impl.OrganizationDAOImpl">
+		<property name="ht">
+			<ref bean="ht"/>
+		</property>
+	</bean>
+	
+	<bean id="sysLogDAO" parent="hibernateBaseDAO"
+		class="com.bitc.jk.xmis.dao.impl.SysLogDAOImpl">
+	</bean>
+	
+	<bean id="userHabitDAOImpl" parent="hibernateBaseDAO"
+		class="com.bitc.jk.xmis.dao.impl.UserHabitDAOImpl">
+	</bean>
+	
+	<bean id="conditionDAO" parent="hibernateBaseDAO"
+		class="com.bitc.jk.xmis.dao.impl.ConditionDAOImpl">
+	</bean>
+    
+	<bean id="sysDAO" parent="hibernateBaseDAO"
+		class="com.bitc.jk.xmis.dao.impl.SysDAOImpl">
+	</bean>
+
+	
+	<bean id="sysService" 
+		class="com.bitc.jk.xmis.service.impl.SysServiceImpl">
+		<property name="conditionDAO">
+			<ref local="conditionDAO"></ref>
+		</property>
+		<property name="sysDAO">
+			<ref local="sysDAO"></ref>
+		</property>
+	</bean>
+	<bean id="exportService" 
+		class="com.bitc.jk.xmis.export.service.impl.ExportServiceImpl">
+	</bean>
+	<bean id="treeNodeEmailAttributor" 
+		class="com.bitc.jk.xmis.web.response.TreeNodeEmailAttributor">
+		<property name="organizationDAO">
+			<ref local="organizationDAOImpl" />
+		</property>
+	</bean>
+</beans>

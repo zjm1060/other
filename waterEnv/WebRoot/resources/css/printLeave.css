@@ -1,0 +1,69 @@
+@media print {
+    body, .x-body {
+        background: #ffffff;
+        color: #000000;
+    }
+
+    #tip {
+        display: none;
+    }
+}
+
+@page {
+    size: A4 landscape;
+}
+
+body {
+    font-family: "宋体", "Times New Roman", Arial, sans-serif;;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.title {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 28pt;
+    font-family: "宋体", Arial, sans-serif;
+    font-weight: bold;
+}
+
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    border: none;
+}
+
+td {
+    border: solid #000000 2px;
+    padding: 5px;
+    text-align: center;
+    font-family: "仿宋";
+    font-size: 18pt;
+}
+
+th {
+    border: solid #000000 2px;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 18pt;
+    font-family: '黑体';
+    font-weight: bold;
+}
+
+p {
+    font-family: "仿宋";
+    font-size: 16pt;
+}
+
+#tip {
+    color: #00c213;
+    text-align: center;
+}
+
+#tip button {
+    width: 400px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    font-size: 16pt;
+}

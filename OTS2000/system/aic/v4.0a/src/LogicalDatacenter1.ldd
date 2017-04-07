@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Visual Studio 生成的基于系统定义模型(SDM)的文件。-->
+<!--建议不要手动编辑此文件，这可能会导致错误。-->
+<SystemDefinitionModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="LogicalDatacenter1" Version="1.0.0.0" Culture="zh-CN" DocumentLanguage="zh-CN" xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1">
+  <Import Alias="System" Name="System" Version="1.0.50729.0" />
+  <Import Alias="MicrosoftDatacenter" Name="Microsoft.Datacenter" Version="1.0.50729.0" />
+  <DesignData>
+    <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+      <ModelElement Id="ce7be13391624a828810d61419507149" Type="Microsoft.VisualStudio.EnterpriseTools.LogicalInfrastructureDesign.Modeling.HostLayerDocument">
+        <Property Name="DocumentType" Value="VirtualDataCenter" />
+        <Property Name="Version" Value="1" />
+      </ModelElement>
+    </VisualStudio>
+  </DesignData>
+  <SystemDefinition Name="LogicalDatacenter1" Extends="MicrosoftDatacenter:HostLayer" SimulationRoot="false">
+    <DesignData>
+      <VisualStudio xmlns="http://schemas.microsoft.com/SystemDefinitionModel/2005/1/DesignData/VisualStudio">
+        <ModelElement Type="Microsoft.VisualStudio.EnterpriseTools.LogicalInfrastructureDesign.Modeling.VirtualDataCenterType">
+          <ModelElement Id="a0581914ab114b66a22532af3acccff5" Type="Microsoft.VisualStudio.EnterpriseTools.LogicalInfrastructureDesign.Modeling.Diagrams.HostLayerDiagram">
+            <Property Name="IsExpanded" Value="true" />
+            <Property Name="AbsoluteBounds" Value="0, 0, 11, 8.5" />
+            <Property Name="DiagramId" Value="a9ccc07a-3e5c-45b4-bd80-81528794a334" />
+            <Property Name="Name" Value="LogicalDatacenter1" />
+            <Property Name="BaseFontName" Value="宋体" />
+            <Property Name="BaseFontSize" Value="0.125" />
+            <Relationship Id="08e8aca6e04344afbafa91417a9529cb" Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Role1="LogicalDatacenter1" RoleType1="Microsoft.VisualStudio.Modeling.SubjectHasPresentation.Subject" />
+          </ModelElement>
+        </ModelElement>
+      </VisualStudio>
+    </DesignData>
+  </SystemDefinition>
+</SystemDefinitionModel>

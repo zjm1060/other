@@ -1,0 +1,1296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<versions >
+
+    <version >
+
+        <version-number >
+V0.5.19.8
+        </version-number>
+
+        <version-date >
+20120724
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改excel功能
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+修改文件上传功能
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+增加合同质保期限输入限制，只能输入整数且最小值为0
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.5.19.10
+        </version-number>
+
+        <version-date >
+20120817
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改合同综合查询时段财务实收等4列数据不显示的BUG
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.5.19.11
+        </version-number>
+
+        <version-date >
+20120831
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改合同综合查询支出合同查询合同编码不显示的BUG
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.5.19.12
+        </version-number>
+
+        <version-date >
+20120831
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改付款计划的BUG
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.5.19.13
+        </version-number>
+
+        <version-date >
+20120913
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改合同列表排序不正确的问题
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+修改合同列表上付款计划不显示问题
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.6.19.13
+        </version-number>
+
+        <version-date >
+20121026
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+财务流水账模块(来款，支出)
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+合同，收入合同由科质部统一创建
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+资质管理，金额拆分
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+合同信息未完成提示
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+群发邮件
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+CRM客户关系管理模块
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.6.19.14
+        </version-number>
+
+        <version-date >
+20121029
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+BUG 合同金额拆分导致支出合同无法保存
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+首页 ‘上次登录日期null时不显示’
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+BUG 合同列表排序
+                </cons>
+
+                <author >
+吴志明
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+BUG 合同列表进入项目无法多标签显示
+                </cons>
+
+                <author >
+吴志明
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.20.15
+        </version-number>
+
+        <version-date >
+20121212
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+80万合同资质表
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+修改刘佳无权限问题
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+登录次数统计周报上线
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.20.16
+        </version-number>
+
+        <version-date >
+20121214
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+companyTree.js生日和入职时间无法修改
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+
+            <content >
+
+                <cons >
+修改支出合同自动获取后三位序列码的sql
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.20.17
+        </version-number>
+
+        <version-date >
+20121214
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+为财务流水账增加excel导出功能
+                </cons>
+
+                <author >
+刘鸿洋
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.21.17
+        </version-number>
+
+        <version-date >
+20121220
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+合同页面、合同业务数据查询、合同综合信息查询添加其它财务来款信息，财务信息均添加导出Excel功能
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+支出合同主合同信息变更时，子合同也做信息变更
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改获取支出合同对应收入合同列表SQL （getRelatedContractListPayout）
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+收入合同项目编码前缀"BITC"从数据库中取
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+Excel导出修改Formater接口添加row参数；增加金额格式的实现方法
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+extra.js 增加复杂表头的导出
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.22.17
+        </version-number>
+
+        <version-date >
+20130104
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+科质部文件管理
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+计算机信息系统集成项目汇总表 加 未分解金额的合同名称置红
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+变更当前项目经理、变更项目经理双击显示详细信息资料卡
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.23.17
+        </version-number>
+
+        <version-date >
+20130109
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+科质部，收入、支出合同添加、补充人员基本信息卡片
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改连续点击人员姓名，人员基本信息卡片错误
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+合同列表加两列，财务对账差异、项目是否结束
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.24.17
+        </version-number>
+
+        <version-date >
+20130115
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+支出合同新建加入人员部门特殊情况判断
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V0.7.25.17
+        </version-number>
+
+        <version-date >
+20130506
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+群发邮件自定义组
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+companyTree.js 增加名片正反面的上传；禁用原因；区号的添加；电话、传真的样式；上传的面板；增加附件非本人按钮的隐藏；相关地址列表双击后区号的联动；整体布局变化；工具栏按钮位置固定；按钮隐藏按钮；
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+crelation.js 数据源换了；加导出；
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+companyInfo.js  联系人窗口在tab切换后显示；联系人双击树节点的选中；组织机构tab的出发后load;电话传真格式；区号的显示；布局上修改，公司缩写的设置条件；
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+内审代码、消息代码上传，按钮隐藏；
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V1.7.26.17
+        </version-number>
+
+        <version-date >
+20130521
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+bug系统用户账号同步
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V1.7.27.17
+        </version-number>
+
+        <version-date >
+20130614
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+消息平台
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V1.7.27.18
+        </version-number>
+
+        <version-date >
+20130705
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+项目启动提交时，增加项目经理所在部门与执行部门不一致的提示；
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V1.7.27.18
+        </version-number>
+
+        <version-date >
+20130705
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+新建合同时初始执行部门，值同乙方部门id，以解决未设定执行部门在合同列表中无法查看该合同的bug。
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V1.8.27.18
+        </version-number>
+
+        <version-date >
+20130827
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+合同业务查询、综合查询合并
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+新建收入、支出合同获取项目编码、合同编号后三位序列号bug修复
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+人员树添加事业部级管理员权限配置
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+人员信息增加“紧急联系人方式”
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V1.9.27.18
+        </version-number>
+
+        <version-date >
+20131122
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+点击首页的姓名可以进入组织结构的个人信息页面
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+项目启动工作流版本更新
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+考勤补报工作流上线
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V2.9.27.18
+        </version-number>
+
+        <version-date >
+20140109
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+财资处管理项目结余表
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+当前执行人列增加触发器修改上一版本sql慢的问题
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+生成新的任务发邮件、和消息平台通知提醒
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+所有工作流程结束后，发邮件、和消息平台通知流程的发起人
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+已提交的考勤单内容的查询按钮
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+任务查询修改
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+考勤截止日期提醒（注释打开）;任务的异常提示;
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V2.10.27.18
+        </version-number>
+
+        <version-date >
+20140221
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+老自动化所权限
+                </cons>
+
+                <author >
+李轩
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+添加代理人信息显示；工作流页面增加“处理时间”；签收处理；授权、撤销授权功能；考勤流程下一步任务接收人的提示；
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+支出合同编号/Q,-ZC做下拉款选择处理
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+项目结余表默认查询日期取消判断结转标志，更改结转标志未完成的提示
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V3.10.27.18
+        </version-number>
+
+        <version-date >
+20140423
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+到库登记
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+物资存放地址信息
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+项目启动角色的添加
+                </cons>
+
+                <author >
+李颖
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+添加修改采购清单明细
+                </cons>
+
+                <author >
+朱传豪
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+新增物资
+                </cons>
+
+                <author >
+朱传豪
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+物资列表
+                </cons>
+
+                <author >
+朱传豪
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+修改首页合同状态80万分解bug
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+
+        <version-number >
+V3.11.27.18
+        </version-number>
+
+        <version-date >
+20140523
+        </version-date>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+财资处管理资金流量收支统计表及柱状图
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+
+        <version-contents >
+
+            <content >
+
+                <cons >
+财资处管理管理费收支统计表
+                </cons>
+
+                <author >
+代美佳
+                </author>
+            </content>
+        </version-contents>
+    </version>
+
+    <version >
+        <version-number>V3.12.27.18</version-number>
+
+        <version-date>20150715</version-date>
+
+        <version-contents>
+            <content>
+                <cons>投标信息查询 </cons>
+                <author>李轩、翟仕召</author>
+            </content>
+        </version-contents>
+    </version>
+    <version >
+        <version-number>V3.13.27.18</version-number>
+
+        <version-date>20151023</version-date>
+
+        <version-contents>
+            <content>
+                <cons>科质部任务书下达 </cons>
+                <author>李轩、李慧</author>
+            </content>
+        </version-contents>
+    </version>
+    <version >
+        <version-number>V3.13.27.19</version-number>
+
+        <version-date>20160226</version-date>
+
+        <version-contents>
+            <content>
+                <cons>支出合同负责人录入勾选处理 </cons>
+                <author>李轩、翟仕召</author>
+            </content>
+        </version-contents>
+    </version>
+
+</versions>

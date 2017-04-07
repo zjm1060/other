@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.workflow.model">
+	<class name="Todo" table="wf_待办">
+		<id name="id" type="string">
+			<column name="ID" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="model" type="string" column="模块" />
+		<property name="appId" type="string" column="应用ID" />
+		<property name="userID" type="string" column="用户ID" />
+		<property name="text" type="string" column="标题" />
+		<property name="url" type="string" column="链接地址" />
+		<property name="script" type="string" column="脚本" />
+		<property name="createTime" type="timestamp" column="创建时间" />
+		<property name="priority" type="int" column="优先级" />
+		<property name="state" type="int" column="状态" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="发送人" fetch="join" name="sender" lazy="false"/>
+		<property name="sendTime" type="timestamp" column="发送时间" />
+		<property name="description" type="string" column="描述" />
+		<property name="isVisible" type="int" column="是否显示" />
+	</class>
+	<class name="Attention" table="wf_关注">
+		<id name="id" type="string">
+			<column name="ID" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="model" type="string" column="模块" />
+		<property name="appId" type="string" column="应用ID" />
+		<property name="userID" type="string" column="用户ID" />
+		<property name="text" type="string" column="标题" />
+		<property name="url" type="string" column="链接地址" />
+		<property name="createTime" type="time" column="创建时间" />
+	</class>
+	<class name="WfCalendar" table="wf_日历">
+		<id name="id" type="string">
+			<column name="ID" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="date" type="string" column="日期" />
+		<property name="dayOfWeek" type="int" column="星期" />
+		<property name="type" type="int" column="类型" />
+		<property name="amS" type="string" column="上午上班" />
+		<property name="amE" type="string" column="上午下班" />
+		<property name="pmS" type="string" column="下午上班" />
+		<property name="pmE" type="string" column="下午下班" />
+
+	</class>
+	<class name="ProcessWithKeyword" table="wf_流程关键字表">
+		<id name="id" type="string">
+			<column name="ID" />
+			<generator class="uuid.hex" />
+		</id>
+ 		<property name="processInstanceId" type="string" column="流程实例ID" />
+		<property name="keyword" type="string" column="关键字" />
+
+	</class>
+	
+	<class name="WorkItemHistory" table="wf_历史">
+		<id name="id" type="string">
+			<column name="ID" />
+			<generator class="assigned" />
+		</id>
+		<property name="processId" type="string" column="流程ID" />
+		<property name="processName" type="string" column="流程名称" />
+		<property name="processInstanceId" type="string" column="流程实例ID" />
+		<property name="activityId" type="string" column="步骤ID" />
+		<property name="activityName" type="string" column="步骤名称" />
+		<property name="taskId" type="string" column="任务ID" />
+		<property name="taskName" type="string" column="任务名称" />
+		<property name="taskInstanceId" type="string" column="任务实例ID" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="任务人ID" fetch="join" name="actor" lazy="false" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="发送人ID" fetch="join" name="sender" lazy="false" />
+		<property name="state" type="integer" column="状态" />
+		<property name="comments" type="string" column="备注"></property>
+		<property name="createdTime" type="timestamp" column="创建时间" />
+		<property name="claimedTime" type="timestamp" column="签收时间" />
+		<property name="endTime" type="timestamp" column="完成时间" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="代理人ID" fetch="join" name="agent" lazy="false" />
+			
+		<property name="authorizeeName" type="string" >
+			<formula>( xmis.f_getAuthorizeeByUserIDAndProcessID(任务人ID, 流程ID,GETDATE()))</formula>
+		</property>
+			
+			
+	</class>
+	
+    <class name="WorkflowApprovalInfo" table="wf_审批表">
+        <id name="ID" type="java.lang.String">
+            <column name="ID" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="workItemID" type="java.lang.String">
+            <column name="WORKITEMID" />
+        </property>
+        <property name="isApproved" type="int">
+            <column name="是否通过" />
+        </property>
+        <property name="approvedTime" type="timestamp">
+            <column name="审批时间" />
+        </property>
+        <property name="advice" type="java.lang.String">
+            <column name="审批意见" />
+        </property>
+        <many-to-one name="approver" class="com.bitc.jk.xmis.model.SimpleEmployee" lazy="false">
+            <column name="审批人ID" />
+        </many-to-one>
+        <property name="processinstanceID" type="java.lang.String">
+            <column name="processinstanceID" />
+        </property>
+    </class>
+	
+    <class name="AuthorizeInfo" table="wf_授权记录表">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="uuid.hex" />
+        </id>
+        <property name="processId" type="java.lang.String">
+            <column name="process_ID" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="创建时间" />
+        </property>
+        <property name="availableDate" type="timestamp">
+            <column name="生效时间" />
+        </property>
+        <property name="cancelDate" type="timestamp">
+            <column name="撤销时间" />
+        </property>
+        <property name="result" type="java.lang.String">
+            <column name="授权原因" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="备注" />
+        </property>
+        <many-to-one name="authorizee" class="com.bitc.jk.xmis.model.SimpleEmployee" lazy="false">
+            <column name="被授权人ID" />
+        </many-to-one>
+        <many-to-one name="authorizer" class="com.bitc.jk.xmis.model.SimpleEmployee" lazy="false">
+            <column name="授权人ID" />
+        </many-to-one>
+    </class>
+
+	<query name="findTodoByUserId"> 
+		<![CDATA[from Todo t where t.userID=? and t.state<10 order by t.priority,t.createTime desc]]>
+	</query>
+	<query name="findCalByDate"> 
+		<![CDATA[from WfCalendar t where t.date=?]]>
+	</query>
+</hibernate-mapping>

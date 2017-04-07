@@ -1,0 +1,31 @@
+11:00:46:280	calcufn.c: pt_num:111 gt_num:111 et_num:432
+
+11:00:46:288	calcufn.c: pt_num:319 gt_num:2573 et_num:3589
+
+11:00:46:290	calcufn.c:file \home\ems\h9000\dat\CalcuGen.dat read entry error
+
+11:00:46:291	Fail to load calcu 0 file
+11:00:48:058	calcufn.c: pt_num:319 gt_num:2573 et_num:3589
+
+11:00:48:061	calcufn.c:file \home\ems\h9000\dat\CalcuGen.dat read entry error
+
+11:00:48:062	Fail to load calcu 0 file
+11:00:50:127	calcufn.c: pt_num:319 gt_num:2573 et_num:3589
+
+11:00:50:128	calcufn.c: pt_num:111 gt_num:111 et_num:432
+
+11:00:50:132	calcufn.c:file \home\ems\h9000\dat\CalcuGen.dat read entry error
+
+11:00:50:138	Fail to load calcu 0 file
+11:00:52:637	calcufn.c: pt_num:319 gt_num:2573 et_num:3589
+
+11:00:52:640	calcufn.c: pt_num:111 gt_num:111 et_num:432
+
+11:00:52:640	calcufn.c:file \home\ems\h9000\dat\CalcuGen.dat read entry error
+
+11:00:52:644	Fail to load calcu 0 file
+11:00:55:100	calcufn.c: pt_num:319 gt_num:2573 et_num:3589
+
+11:00:55:113	calcufn.c:file \home\ems\h9000\dat\CalcuGen.dat read entry error
+
+11:00:55:114	Fail to load calcu 0 file

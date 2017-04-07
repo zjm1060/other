@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+              <property name="securityManager" ref="securityManager" />
+              <property name="loginUrl" value="/login.jsp" />
+              <property name="successUrl" value="/prjEditDefault.jsp" />
+              <property name="unauthorizedUrl" value="/login.jsp" />
+              <property name="filterChainDefinitions">
+                     <value>
+                            /login.do = anon
+                            /error.jsp = anon
+                            /unauthc.jsp = anon
+                            /**/*.js = anon
+                            /**/*.css = anon
+                            /**/*.png = anon
+                            /**/*.gif = anon
+                            /** = anon
+                            <!--/course/** = authc, roles[admin]-->
+                     </value>
+              </property>
+       </bean>
+       <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+              <property name="realm" ref="myRealm" />
+
+       </bean>
+       <bean id="myRealm" class="bitc.sz.wzEnv.sys.spring.DatabaseRealm">
+              <!--<property name="credentialsMatcher" ref="credentialsMatcher"></property>-->
+       </bean>
+       <!--<bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">-->
+              <!--&lt;!&ndash;<property name="hashAlgorithmName" value="MD5"></property>&ndash;&gt;-->
+              <!--&lt;!&ndash;<property name="hashIterations" value="1"></property>&ndash;&gt;-->
+       <!--</bean>-->
+</beans>

@@ -1,0 +1,441 @@
+!******************************************************************
+!	
+!	简单模型,生成上升曲线,一阶无超调，结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_UP_1D
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:			PRE_NONLINEAR
+!	NLF_NAME:			NLF_RBLCU15R_K1
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	0.	BS: 1.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K2
+
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		励磁电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: LOOP_K2		TO: LOOP_K1		FACTOR: -1.0
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: LOOP_K1		TO: LOOP_K2		FACTOR: 1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	简单模型,生成上升曲线,一阶无超调，适用于单步调节,从初始值增加
+!	指定数值
+!	结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_UP_1D_STEP
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	A:	0.	BS: 1.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K2
+
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K3
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	OUTPUT_DBNAME:		LOOP_K3_OUTPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		励磁电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION2
+	INPUT_DBNAME:		EXCITATION_INPUT2
+!	INPUT_LONGNAME:		励磁电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: LOOP_K2		TO: LOOP_K1		FACTOR: -1.0
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: LOOP_K1		TO: LOOP_K2		FACTOR: 1.0
+	FROM: LOOP_K1		TO: LOOP_K3		FACTOR: 1.0
+	FROM: EXCITATION2	TO: LOOP_K3		FACTOR: 1.0
+END_MODEL:
+
+
+
+
+!******************************************************************
+!	
+!	简单模型,适用于有功无功调节,从初始值调节到目标值
+!	结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_1D_FROM_ORG_TO_DST
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+	A:	1.	BS: 1.	C: -1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K2
+	OUTPUT_DBNAME:		LOOP_K2_OUTPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT_ORG
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION2
+	INPUT_DBNAME:		EXCITATION_INPUT_DST
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: EXCITATION	TO: LOOP_K2		FACTOR: 1.0
+	FROM: LOOP_K1		TO: LOOP_K2		FACTOR: 1.0
+	FROM: EXCITATION2	TO: LOOP_K1		FACTOR: -1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	简单模型,生成上升曲线,二阶有超调，阻尼比$为0.5,结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_UP_2D_LACK
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+	ORDER:			2
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	1.	BS: 1.	C: 0.	DS: 1. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+END_MODEL:
+
+
+!******************************************************************
+!	
+!	简单模型,生成上升曲线,二阶无超调，阻尼比$为1，结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_UP_2D_ONE
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+	ORDER:			2
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	2.	BS: 1.	C: 0.	DS: 1. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+END_MODEL:
+
+
+!******************************************************************
+!	
+!	简单模型,生成周期振荡曲线, 结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_UP_2D_ZERO
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+	ORDER:			2
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	0.	BS: 1.	C: 0.	DS: 1. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+END_MODEL:
+
+
+!******************************************************************
+!	
+!	简单模型,生成上升曲线,二阶无超调，阻尼比$为2，结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_UP_2D_TWO
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+	ORDER:			2
+!	LINEARITY:		PRE_NONLINEAR
+!	NLF_NAME:		NLF_RBLCU15R_K1
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	4.	BS: 1.	C: 0.	DS: 1. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		励磁电压
+!	OUTPUT_DBNAME:		EXCITATION_OUTPUT
+!	OUTPUT_LONGNAME:	励磁电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	简单模型,生成下降曲线,一阶无超调，结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_DOWN_1D
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:			PRE_NONLINEAR
+!	NLF_NAME:			NLF_RBLCU15R_K1
+	A:	1.	BS: 1.	C: -1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K2
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K3
+
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		励磁电压
+!	OUTPUT_DBNAME:		EXCITATION_OUTPUT
+!	OUTPUT_LONGNAME:	励磁电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: LOOP_K1		TO: LOOP_K2		FACTOR: 1.0
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: EXCITATION	TO: LOOP_K3		FACTOR: 1.0
+	FROM: LOOP_K3		TO: LOOP_K2		FACTOR: 1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	简单模型,生成下降曲线,一阶无超调，适用于单步调节,从初始值调节到目标值
+!	结构图见Template.mdl
+!******************************************************************
+MODEL:	SIMPLE_DOWN_1D_STEP
+
+TIME_STEP: .001
+SIM_STEPS: 		900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+!	LINEARITY:			PRE_NONLINEAR
+!	NLF_NAME:			NLF_RBLCU15R_K1
+	A:	1.	BS: 1.	C: -1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K2
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K3
+
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB:	LOOP_K4
+
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+!	INPUT_LONGNAME:		励磁电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!	Kf = 40		Tf = 0.1
+!************************
+TFB:	EXCITATION2
+	INPUT_DBNAME:		EXCITATION2_INPUT
+!	INPUT_LONGNAME:		励磁电压
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: LOOP_K1		TO: LOOP_K2		FACTOR: 1.0
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+	FROM: EXCITATION	TO: LOOP_K3		FACTOR: 1.0
+	FROM: EXCITATION2	TO: LOOP_K1		FACTOR: -1.0
+	FROM: EXCITATION2	TO: LOOP_K3		FACTOR: -1.0
+	FROM: EXCITATION2	TO: LOOP_K2		FACTOR: -1.0
+	FROM: LOOP_K3		TO: LOOP_K2		FACTOR: 1.0
+END_MODEL:
+
+
+
+!******************************************************************
+!	
+!	线性相关模型,两个不同量之间的线性对应关系，即比例环节
+!******************************************************************
+MODEL:	SIMPLE_K
+
+TIME_STEP: .001
+SIM_STEPS:  900
+TYPE:	TEMPLATE
+
+TFB:	LOOP_K1
+	OUTPUT_DBNAME:		LOOP_K1_OUTPUT
+	A:	1.	BS: 0.	C: LOOP_K1_C	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+!************************
+!	Excitation
+!************************
+TFB:	EXCITATION
+	INPUT_DBNAME:		EXCITATION_INPUT
+	A:	1.	BS: 0.	C: 1.	DS: 0. 	
+	X0: 0.	Y0: 0.
+
+TFB_CONNECTION:
+!******************
+!	SX F1 Generator
+!******************
+	FROM: EXCITATION	TO: LOOP_K1		FACTOR: 1.0
+END_MODEL:

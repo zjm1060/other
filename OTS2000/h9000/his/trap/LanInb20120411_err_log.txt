@@ -1,0 +1,2 @@
+11:14:36:671	pkg may be lost: src_id=4, last_pkg_num=1000, cur_pkg_num=21221
+

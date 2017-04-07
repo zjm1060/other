@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model.crm">
+	<class name="Address" table="xmis.add_地址">
+		<id name="addressID" column="地址ID" unsaved-value="null">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="district" column="区县" type="string" />
+		<property name="zipCode" column="邮编" type="integer" />
+		<property name="addressInfo" column="详细地址" type="string" />
+		<many-to-one name="city" column="城市ID" not-found="ignore"
+			class="City" lazy="no-proxy"></many-to-one>
+
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" name="lastModifier" />
+	</class>
+
+
+	<class name="City" table="xmis.add_城市">
+		<id name="cityID" column="城市ID">
+			<generator class="assigned" />
+		</id>
+		<property name="cityName" column="城市名称" type="string" />
+		<property name="cityCode" column="城市编码" type="string" />
+		<property name="abbreviation" column="城市简称" type="string" />
+		<property name="areaCode" column="区号" type="string" />
+		<many-to-one name="province" column="省ID" not-found="ignore"
+			class="Province" lazy="no-proxy"></many-to-one>
+	</class>
+
+
+	<class name="Province" table="xmis.add_省" lazy="true">
+		<id name="provinceID" column="省ID">
+			<generator class="assigned" />
+		</id>
+		<property name="provinceCode" column="省编码" type="string" />
+		<property name="provinceName" column="省名称" type="string" />
+		<property name="abbreviation" column="省简称" type="string" />
+		<many-to-one name="area" column="地区ID" not-found="ignore"
+			class="Area" lazy="no-proxy"></many-to-one>
+	</class>
+
+	<class name="Area" table="xmis.add_地区" lazy="true">
+		<id name="areaID" column="地区ID">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="areaCode" column="编码" type="string" />
+		<property name="areaName" column="名称" type="string" />
+		<property name="abbreviation" column="简称" type="string" />
+		<many-to-one name="country" column="国家ID" not-found="ignore"
+			class="Country" lazy="no-proxy"></many-to-one>
+	</class>
+
+	<class name="Country" table="xmis.add_国家及地区">
+		<id name="countryID" column="国家ID">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="countryCode" column="编码" type="string" />
+		<property name="areaCode" column="区号" type="string" />
+		<property name="countryName" column="名称" type="string" />
+		<property name="abbreviation" column="简称" type="string" />
+		<many-to-one name="internation" column="洲际ID" not-found="ignore"
+			class="Internation" lazy="no-proxy"></many-to-one>
+
+		<many-to-one name="currency" column="货币ID"
+			class="com.bitc.jk.xmis.model.sys.Currency" lazy="no-proxy"></many-to-one>
+	</class>
+
+	<class name="Internation" table="xmis.add_洲际表">
+		<id name="internationID" column="洲际ID">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="internationCode" column="编码" type="string" />
+		<property name="internationName" column="名称" type="string" />
+		<property name="abbreviation" column="简称" type="string" />
+	</class>
+
+	<class name="CompanyScale" table="xmis.org_公司规模">
+		<id name="companyScaleID" column="公司规模ID">
+			<generator class="assigned" />
+		</id>
+		<property name="companyScaleName" column="名称" type="string" />
+		<property name="companyScaleDefinition" column="描述" type="string" />
+
+	</class>
+
+	<class name="CreditLevel" table="xmis.org_信用等级">
+		<id name="creditLevelID" column="信用等级ID">
+			<generator class="assigned" />
+		</id>
+		<property name="creditLevelName" column="名称" type="string" />
+		<property name="creditLevelDefinition" column="描述" type="string" />
+		<!-- <property name="updateDate" column="修改时间" type="date" /> <property 
+			name="updateID" column="修改人ID" type="integer" /> -->
+
+	</class>
+
+	<class name="CustomerLevel" table="xmis.org_客户级别">
+		<id name="customerLevelID" column="客户级别ID">
+			<generator class="assigned" />
+		</id>
+		<property name="customerLevelName" column="名称" type="string" />
+		<property name="customerLevelDefinition" column="描述" type="string" />
+		<!-- <property name="updateDate" column="修改时间" type="date" /> <property 
+			name="updateID" column="修改人ID" type="integer" /> -->
+
+	</class>
+
+
+	<class name="BusinessRelation" table="xmis.org_业务关系">
+		<id name="businessRelationID" column="业务关系ID">
+			<generator class="assigned" />
+		</id>
+		<property name="businessRelationName" column="关系名称" type="string" />
+		<property name="businessRelationDesc" column="关系描述" type="string" />
+		<!-- <property column="最后修改日期" name="lastModified" type="timestamp" /> 
+			<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee" column="最后修改人ID" 
+			name="lastModifier" /> -->
+
+	</class>
+	
+	<class name="RelativeAddress" table="xmis.org_公司相关地址表">
+		<id name="id" column="ID" unsaved-value="null">
+			<generator class="uuid.hex" />
+		</id>
+		<!-- 
+		<many-to-one name="companyId" column="公司ID" lazy="false" class="com.bitc.jk.xmis.model.CompanyObj"/>
+		 -->
+		 <property name="companyId" column="公司ID" lazy="false" ></property>
+		
+		<many-to-one name="address" column="地址ID" lazy="false" 
+			class="Address" cascade="save-update"></many-to-one>
+		<many-to-one name="contactPersonA" column="联系人1ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.SimpleEmployee"></many-to-one>
+		<many-to-one name="contactPersonB" column="联系人2ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.SimpleEmployee"></many-to-one>
+
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" name="lastModifier" />
+	</class>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</hibernate-mapping>

@@ -1,0 +1,297 @@
+BEGIN:
+
+POINT:  D_CLEAR        		3
+	RB.LCU15R.CAL.HOUR_BY_D
+    	RB.LCU15R.CAL.HOUR_FD_D
+    	RB.LCU15R.CAL.HOUR_JX_D
+    	RB.LCU15R.CAL.HOUR_KZ_D
+	RB.LCU15R.CAL.HOUR_KZH_D        
+	RB.LCU16R.CAL.HOUR_BY_D
+	RB.LCU16R.CAL.HOUR_FD_D
+	RB.LCU16R.CAL.HOUR_JX_D
+	RB.LCU16R.CAL.HOUR_KZ_D
+	RB.LCU16R.CAL.HOUR_KZH_D
+		
+
+POINT:  M_CLEAR                 3
+        RB.LCU15R.CAL.HOUR_BY_M
+        RB.LCU15R.CAL.HOUR_FD_M
+        RB.LCU15R.CAL.HOUR_JX_M
+        RB.LCU15R.CAL.HOUR_KZ_M
+	RB.LCU15R.CAL.HOUR_KZH_M
+        RB.LCU16R.CAL.HOUR_BY_M
+        RB.LCU16R.CAL.HOUR_FD_M
+        RB.LCU16R.CAL.HOUR_JX_M
+        RB.LCU16R.CAL.HOUR_KZ_M
+	RB.LCU16R.CAL.HOUR_KZH_M       
+       
+
+POINT:  Y_CLEAR                 3
+        RB.LCU15R.CAL.HOUR_BY_Y
+        RB.LCU15R.CAL.HOUR_FD_Y
+        RB.LCU15R.CAL.HOUR_JX_Y
+        RB.LCU15R.CAL.HOUR_KZ_Y
+	RB.LCU15R.CAL.HOUR_KZH_Y
+        RB.LCU16R.CAL.HOUR_BY_Y
+        RB.LCU16R.CAL.HOUR_FD_Y
+        RB.LCU16R.CAL.HOUR_JX_Y
+        RB.LCU16R.CAL.HOUR_KZ_Y
+	RB.LCU16R.CAL.HOUR_KZH_Y
+               
+
+POINT:  RB.LCU15R.CAL.HOUR_BY_D		C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 0
+	=	RB.LCU15R.CAL.HOUR_BY_D
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_KY_D		C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? ~2
+	=	RB.LCU15R.CAL.HOUR_KY_D
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_FD_D		C
+        IF	RB.LCU15R.SYS.UNIT_STA      ? 1
+	=	RB.LCU15R.CAL.HOUR_FD_D
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_JX_D		C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 2
+	=	RB.LCU15R.CAL.HOUR_JX_D
+	*C	60
+	+C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_KZH_D 		C
+	IF      RB.LCU15R.SYS.UNIT_STA  	? 4
+	=	RB.LCU15R.CAL.HOUR_KZH_D
+	*C	60 
+	+C      3
+	/C      60
+	
+POINT:  RB.LCU15R.CAL.HOUR_KZ_D 		C
+	IF      RB.LCU15R.SYS.UNIT_STA  	? 5
+	=	RB.LCU15R.CAL.HOUR_KZ_D
+	*C	60 
+	+C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_BY_M         	C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 0
+        =       RB.LCU15R.CAL.HOUR_BY_M 
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_KY_M          	C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? ~2
+        =       RB.LCU15R.CAL.HOUR_KY_M 
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_FD_M          	C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 1
+        =       RB.LCU15R.CAL.HOUR_FD_M 
+	*C	60
+	+C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_JX_M 		C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 2
+	=	RB.LCU15R.CAL.HOUR_JX_M
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_KZH_M          	C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 4
+        =       RB.LCU15R.CAL.HOUR_KZH_M
+	*C	60
+        +C      3
+	/C      60
+	
+POINT:  RB.LCU15R.CAL.HOUR_KZ_M          	C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 5
+        =       RB.LCU15R.CAL.HOUR_KZ_M
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_BY_Y   		C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 0
+        =       RB.LCU15R.CAL.HOUR_BY_Y
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_KY_Y		C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? ~2
+        =       RB.LCU15R.CAL.HOUR_KY_Y
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_FD_Y            C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 1
+        =       RB.LCU15R.CAL.HOUR_FD_Y 
+	*C	60
+	+C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_JX_Y		C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 2
+	=	RB.LCU15R.CAL.HOUR_JX_Y
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_KZH_Y            C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 4
+        =       RB.LCU15R.CAL.HOUR_KZH_Y
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU15R.CAL.HOUR_KZ_Y            C
+        IF	RB.LCU15R.SYS.UNIT_STA       ? 5
+        =       RB.LCU15R.CAL.HOUR_KZ_Y
+	*C	60
+        +C      3
+	/C      60
+
+
+POINT:  RB.LCU16R.CAL.HOUR_BY_D		C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 0
+	=	RB.LCU16R.CAL.HOUR_BY_D
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_KY_D		C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? ~2
+	=	RB.LCU16R.CAL.HOUR_KY_D
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_FD_D 		C
+        IF	RB.LCU16R.SYS.UNIT_STA      	? 1
+	=	RB.LCU16R.CAL.HOUR_FD_D
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_JX_D 		C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 2
+	=	RB.LCU16R.CAL.HOUR_JX_D
+	*C	60
+	+C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_KZH_D 		C
+	IF      RB.LCU16R.SYS.UNIT_STA       ? 4
+	=	RB.LCU16R.CAL.HOUR_KZH_D
+	*C	60 
+	+C      3
+	/C      60
+	
+POINT:  RB.LCU16R.CAL.HOUR_KZ_D 		C
+	IF      RB.LCU16R.SYS.UNIT_STA       ? 5
+	=	RB.LCU16R.CAL.HOUR_KZ_D
+	*C	60 
+	+C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_BY_M            C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 0
+        =       RB.LCU16R.CAL.HOUR_BY_M 
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_KY_M          	C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? ~2
+        =       RB.LCU16R.CAL.HOUR_KY_M 
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_FD_M            C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 1
+        =       RB.LCU16R.CAL.HOUR_FD_M 
+	*C	60
+	+C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_JX_M		C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 2
+	=	RB.LCU16R.CAL.HOUR_JX_M
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_KZH_M           	C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 4
+        =       RB.LCU16R.CAL.HOUR_KZH_M
+	*C	60
+        +C      3
+	/C      60
+	
+POINT:  RB.LCU16R.CAL.HOUR_KZ_M           	C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 5
+        =       RB.LCU16R.CAL.HOUR_KZ_M
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_BY_Y 		C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 0
+        =       RB.LCU16R.CAL.HOUR_BY_Y
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_KY_Y		C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? ~2
+        =       RB.LCU16R.CAL.HOUR_KY_Y
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_FD_Y           	C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 1
+        =       RB.LCU16R.CAL.HOUR_FD_Y 
+	*C	60
+	+C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_JX_Y		C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 2
+	=	RB.LCU16R.CAL.HOUR_JX_Y
+	*C	60
+        +C      3
+	/C      60
+
+POINT:  RB.LCU16R.CAL.HOUR_KZH_Y           	C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 4
+        =       RB.LCU16R.CAL.HOUR_KZH_Y
+	*C	60
+        +C      3
+	/C      60
+	
+POINT:  RB.LCU16R.CAL.HOUR_KZ_Y           	C
+        IF	RB.LCU16R.SYS.UNIT_STA       ? 5
+        =       RB.LCU16R.CAL.HOUR_KZ_Y
+	*C	60
+        +C      3
+	/C      60      
+
+
+END
+

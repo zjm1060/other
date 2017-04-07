@@ -1,0 +1,133 @@
+.listBody{
+  background-color:white;
+}
+.listUtil{
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:white;
+}
+.listTable{
+  font-size:9pt;
+  font-family:ËÎÌו;
+  background-color:white;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  border-left:1px #646c94 solid;
+  border-top:1px #646c94 solid;
+}
+.head_Td{
+  font-size:10pt;
+  height:22px;
+  background-color:#b8c4f4;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  border-left:1px while solid;
+  text-align:center;
+  vertical-align:middle;
+  padding-left:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.head_Td_up{
+  font-size:10pt;
+  height:22px;
+  background-color:#b8c4f4;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  border-left:1px while solid;
+  text-align:center;
+  vertical-align:middle;
+  padding-left:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+  background-image:url('/PublicQueryDemo/Common/Images/order_up.gif');
+  background-repeat:no-repeat;
+  background-position:bottom right;
+}
+
+.head_Td_down{
+  font-size:10pt;
+  height:22px;
+  background-color:#b8c4f4;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  border-left:1px while solid;
+  text-align:center;
+  vertical-align:middle;
+  padding-left:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+  background-image:url('/PublicQueryDemo/Common/Images/order_down.gif');
+  background-repeat:no-repeat;
+  background-position:bottom right;
+}
+
+
+
+.data_Tr1{
+  background-color:white;
+  cursor:hand;
+ }
+.data_Tr2{
+  background-color:#fef8dd;
+  cursor:hand;
+  }
+.data_Td{
+  font-size:9pt;
+  height:22px;
+  padding-left:4px;
+	padding-top:1px;
+	padding-bottom:0px;
+  border-bottom:1px #e4e4e4 solid;
+  word-wrap:break-word;
+  vertical-align:middle;
+}
+.tail_Td1{
+  font-size:9pt;
+  height:20px;
+  background-color:#b8c4f4;
+  border-bottom:1px #646c94 solid;
+  border-left:1px #646c94 solid;
+}
+.tail_Td2{
+  font-size:9pt;
+  height:20px;
+  background-color:#b8c4f4;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+}
+.ListUtil_btnOut{
+  width:35px;
+  height:18px;
+  border:1px #bc8815 solid;
+}
+.ListUtil_btnIn{
+  width:33px;
+  height:16px;
+  border-top:2px white solid;
+  border-right:2px #e3d65f solid;
+  border-bottom:2px #e3d65f solid;
+  border-left:2px white solid;
+  background-color:#faeb6d;
+  text-align:center;
+  cursor:hand;
+}
+.ListUtil_inputSpan{
+  width:120px;
+  text-align:center;
+}
+.ListUtil_input{
+  width:30px;
+  height:18px;
+  border:1px #859bb5 solid;
+}
+.ListUtil_NavText{
+  cursor:hand;
+}
+.selectData_Td
+{
+  height:20px;
+  background-color:#fbf897;
+  cursor:hand;
+}

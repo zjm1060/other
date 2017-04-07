@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="StartProject" Name="StartProject" DisplayName="项目启动" ResourceFile="" ResourceManager="">
+    <fpdl:StartNode Id="StartProject.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="23"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="87"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="StartProject.TaskAssignment" Name="TaskAssignment" DisplayName="任务分配" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="99"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="66"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="StartProject.TaskAssignment.AssignTask" Name="AssignTask" DisplayName="分配任务" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="当前用户">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="startproject" DisplayName="启动项目">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/projectMain.do?method=startProject&amp;show=true&amp;projectID={projectID}&amp;projectName={projectName}&amp;projectCode={projectCode}&amp;step={$taskId}&amp;deptTaskDesc={deptTaskDesc}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目编码 &quot;+projectCode+&quot;  项目名称 &quot;+projectName"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="StartProject.memberConfirm" Name="memberConfirm" DisplayName="项目成员确认" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="161"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="596"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="122"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="StartProject.memberConfirm.confirm" Name="confirm" DisplayName="确认任务" Type="FORM" CompletionStrategy="ALL" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__receive_ids" DisplayName="上一步指定">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>PreviousStepSpecifyAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="projectInfo" DisplayName="项目信息">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/project/startProjectConfirm.jsp?projectID={projectID}&amp;projectTaskId={projectTaskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目编码 &quot;+projectCode+&quot;  项目名称 &quot;+projectName"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="StartProject.Manager" Name="Manager" DisplayName="项目经理确认" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="162"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="595"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="29"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="StartProject.Manager.confirm" Name="confirm" DisplayName="确认任务/添加项目成员" Type="FORM" CompletionStrategy="ALL" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__manager" DisplayName="__manager">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>PreviousStepSpecifyAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="projectInfo" DisplayName="项目信息">
+                        <fpdl:Description>/projectMain.do?method=getProjectInfo&amp;projectID={projectID}&amp;step={$taskId}&amp;processInstanceId={$processInstanceId}</fpdl:Description>
+                        <fpdl:Uri>/project/startProjectConfirm.jsp?projectID={projectID}&amp;projectTaskId={projectTaskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目编码 &quot;+projectCode+&quot;  项目名称 &quot;+projectName"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="StartProject.DirectorAssign" Name="DirectorAssign" DisplayName="主任分配任务" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="351"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="32"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="StartProject.DirectorAssign.AssignTask" Name="AssignTask" DisplayName="分配任务" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$join($post(taskDeptId,11),$post(taskDeptId,12))" DisplayName="主任、副主任">
+                        <fpdl:Description>部门的主任或者副主任</fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="assignTask" DisplayName="分配任务">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/projectMain.do?method=startProject&amp;show=true&amp;projectID={projectID}&amp;projectName={projectName}&amp;projectCode={projectCode}&amp;step={$taskId}&amp;deptTaskDesc={deptTaskDesc}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="&quot;项目编码 &quot;+projectCode+&quot;  项目名称 &quot;+projectName"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="StartProject.Activity5" Name="Activity5" DisplayName="略过" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="350"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="134"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="StartProject.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="232"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="85"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="StartProject.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="504"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="81"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="StartProject.EndNode1" Name="EndNode1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="815"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="83"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="StartProject.Transition1" From="StartProject.START_NODE" To="StartProject.TaskAssignment" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition2" From="StartProject.TaskAssignment" To="StartProject.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition3" From="StartProject.Synchronizer1" To="StartProject.DirectorAssign" Name="Transition3" DisplayName="分配到部门">
+            <fpdl:Condition>taskDeptId!=null</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition4" From="StartProject.DirectorAssign" To="StartProject.Synchronizer2" Name="Transition4" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition5" From="StartProject.Synchronizer2" To="StartProject.Manager" Name="Transition5" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition9" From="StartProject.Synchronizer1" To="StartProject.Activity5" Name="Transition9" DisplayName="">
+            <fpdl:Condition>taskDeptId==null</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition10" From="StartProject.Activity5" To="StartProject.Synchronizer2" Name="Transition10" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition11" From="StartProject.Synchronizer2" To="StartProject.memberConfirm" Name="Transition11" DisplayName="项目成员数&gt;0">
+            <fpdl:Condition>memeberSize&gt;0</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition12" From="StartProject.Manager" To="StartProject.EndNode1" Name="Transition12" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="StartProject.Transition13" From="StartProject.memberConfirm" To="StartProject.EndNode1" Name="Transition13" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+</fpdl:WorkflowProcess>

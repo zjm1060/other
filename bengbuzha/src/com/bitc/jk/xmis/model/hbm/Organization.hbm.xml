@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model">
+	<class name="SimpleEmployee" table="hr_人员">
+		<id name="userID" column="人员ID">
+			<generator class="assigned" />
+		</id>
+		<property name="userName" formula="rtrim(姓氏)+rtrim(名字) " type="string" />
+		<property name="flag" column="禁用" type="boolean" />
+	</class>
+
+	<class name="EmployeeObj" table="hr_人员">
+		<id name="userID" column="人员ID">
+			<generator class="assigned" />
+		</id>
+		<property name="userName" formula="rtrim(姓氏)+rtrim(名字) " type="string" />
+		<property name="firstName" column="名字" type="string" />
+		<property name="lastName" column="姓氏" type="string" />
+		<many-to-one name="sex" column="性别ID"
+			class="com.bitc.jk.xmis.model.sys.Sex" lazy="false"></many-to-one>
+		<many-to-one name="marStat" column="婚姻状态ID"
+			class="com.bitc.jk.xmis.model.sys.MaritalStatus" lazy="false"></many-to-one>
+		<many-to-one name="issSex" column="子女性别"
+			class="com.bitc.jk.xmis.model.sys.Sex" lazy="false"></many-to-one>
+		<many-to-one name="edu" column="学历ID"
+			class="com.bitc.jk.xmis.model.sys.Education" lazy="false" not-found="ignore"></many-to-one>
+		<many-to-one name="polStat" column="政治面貌ID"
+			class="com.bitc.jk.xmis.model.sys.PoliticalStatus" lazy="false"></many-to-one>
+		<many-to-one name="address" column="办公地址ID" lazy="false" 
+			class="com.bitc.jk.xmis.model.crm.Address" cascade="save-update"></many-to-one>
+			
+		<property name="positionEdit" column="职务" type="string" />
+
+		<property name="loginName" column="登录名" type="string" />
+		<property name="password" column="密码" type="string" />
+		<property name="faxNo" column="传真号码" type="string" />
+		<property name="webPage" column="主页" type="string" />
+		<property name="homeTelNo" column="住宅电话" type="string" />
+		<property name="homeAddress" column="家庭地址" type="string" />
+		<property name="emailAddress" column="电子邮件" type="string" />
+		<property name="extNo" column="单位分机" type="string" />
+		<property name="mobileNo" column="移动电话" type="string" />
+		<property name="switchboardNo" column="单位电话" type="string" />
+		<property name="issueName" column="孩子姓名" type="string" />
+		<property name="spouseName" column="配偶姓名" type="string" />
+		<property name="hobby" column="爱好" type="string" />
+		<property name="specialty" column="特长" type="string" />
+		<property name="urgentinfo" column="紧急联系方式" type="string" />
+		<property name="nativePlace" column="家乡" type="string" />
+		<property name="remark" column="附注" type="string" />
+		<property name="imgName" column="照片文件名" type="string" />
+		<property name="postCardName" column="名片正面名字" type="string" />
+		<property name="postCardBackName" column="名片背面名字" type="string" />
+		<property name="birthday" column="出生日期" type="date" />
+		<property name="joinDate" column="入职日期" type="date" />
+		<property name="IDCard" column="身份证号" type="string" />
+		<property name="zipCode" column="家庭邮编" type="string" />
+		<property name="flag" column="禁用" type="boolean" />
+		<property name="disabledReason" column="禁用原因" type="string" />
+		<property name="disabledDate" column="禁用时间" type="date" />
+		<property name="officeAddress" column="办公地址" type="string" />
+		
+		
+		<property name="createDate" column="修改时间" type="date" />
+		<many-to-one name="createPerson" column="修改人ID" lazy="false"
+			not-found="ignore" class="SimpleEmployee"></many-to-one>
+		<property column="最后修改日期" name="updateDate" type="date" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			lazy="false" column="最后修改人ID" name="updatePerson" />		
+
+		<bag name="postList" inverse="true">
+			<key column="人员ID"></key>
+			<one-to-many class="EmployeePost"></one-to-many>
+		</bag>
+		
+		
+		<property name="nation" type="java.lang.String">
+            <column name="民族" />
+        </property>
+        <property name="getqualificationtime" type="date">
+            <column name="资格取得时间" />
+        </property>
+        <property name="wagelevel" type="java.lang.Integer">
+            <column name="工资级别" />
+        </property>
+        <property name="joinworkdate" type="date">
+            <column name="参加工作年月"  />
+        </property>
+        <property name="joinpartydate" type="date">
+            <column name="入党年月"  />
+        </property>
+        <property name="joingroupdate" type="date">
+            <column name="入团年月"  />
+        </property>
+        <property name="retirementdate" type="date">
+            <column name="退休时间"  />
+        </property>
+        <property name="thetimeandschoolandprofessional" type="java.lang.String">
+            <column name="何时何校何专业毕业" />
+        </property>
+        <property name="text1" type="date">
+            <column name="字段1" />
+        </property>
+        <property name="remark1" type="java.lang.String">
+            <column name="备注1" />
+        </property>
+        <property name="remark2" type="java.lang.String">
+            <column name="备注2" />
+        </property>
+        <property name="remark3" type="java.lang.String">
+            <column name="备注3" />
+        </property>
+        
+		<many-to-one name="dutylevel" column="职务级别"
+			class="com.bitc.jk.xmis.model.sys.DutyLevel" lazy="false"></many-to-one>        
+		<many-to-one name="identity" column="身份"
+			class="com.bitc.jk.xmis.model.sys.IdentityObj" lazy="false"></many-to-one>        
+		<many-to-one name="echnicalposition" column="技术职务"
+			class="com.bitc.jk.xmis.model.sys.Echnicalposition" lazy="false"></many-to-one>        
+		<many-to-one name="professionallevel" column="专业技术级别"
+			class="com.bitc.jk.xmis.model.sys.ProfessionalLevel" lazy="false"></many-to-one>
+		<many-to-one name="degree" column="现有文化程度"
+			class="com.bitc.jk.xmis.model.sys.Degree" lazy="false"></many-to-one>
+		<many-to-one name="worktype" column="工种"
+			class="com.bitc.jk.xmis.model.sys.WorkType" lazy="false"></many-to-one>
+		<many-to-one name="type" column="在职类型"
+			class="com.bitc.jk.xmis.model.sys.InServiceType" lazy="false"></many-to-one>
+	</class>
+
+	<class name="CompanySimpleObj" table="org_公司">
+		<id name="companyID" column="公司ID">
+			<generator class="assigned" />
+		</id>
+		<property name="companyName" column="公司名称" type="string" />
+		<property name="companyAbb" column="名称缩写" type="string" />
+		<bag name="depts" table="org_部门归属公司表" where="是否直属='1'">
+			<key column="公司ID"></key>
+			<many-to-many column="部门ID" class="DepartmentObj"></many-to-many>
+		</bag>
+	</class>
+
+	<class name="SimpleDeptObj" table="org_部门">
+		<id name="departmentID" column="部门ID">
+			<generator class="assigned" />
+		</id>
+		<property name="departmentName" column="部门名称" type="string" />
+		<property name="disabled" column="禁用" type="boolean" />
+
+	</class>
+
+	<class name="DepartmentObj" table="org_部门">
+		<id name="departmentID" column="部门ID">
+			<generator class="assigned" />
+		</id>
+		<property name="departmentName" column="部门名称" type="string" />
+		<property name="abbreviation" column="名称缩写" type="string" />
+		<property name="disabled" column="禁用" type="boolean" />
+
+		<bag name="posts" inverse="true" batch-size="4">
+			<key column="部门ID"></key>
+			<one-to-many class="EmployeePost"></one-to-many>
+		</bag>
+		<bag name="depts" table="org_部门归属部门表" inverse="true">
+			<key column="父部门ID"></key>
+			<many-to-many column="部门ID" class="DepartmentObj"></many-to-many>
+		</bag>
+		<many-to-one column="部门ID" name="parent" class="DeptDept"
+			property-ref="child" insert="false" update="false"></many-to-one>
+	</class>
+
+	<class name="DeptDept" table="org_部门归属部门表">
+		<composite-id>
+			<key-property name="parentId" column="父部门ID"></key-property>
+			<key-property name="childId" column="部门ID"></key-property>
+		</composite-id>
+		<many-to-one name="parent" class="DepartmentObj" column="父部门ID"
+			insert="false" update="false"></many-to-one>
+		<many-to-one name="child" class="DepartmentObj" column="部门ID"
+			insert="false" update="false"></many-to-one>
+		<property name="index" column="排序" type="integer"></property>
+	</class>
+	<class name="EmployeePost" table="hr_人员部门关系表">
+		<id name="id" column="ID" type="string">
+			<generator class="uuid.hex" />
+		</id>
+		<many-to-one name="department" column="部门ID" class="DepartmentObj"
+			lazy="false"></many-to-one>
+		<many-to-one name="employee" column="人员ID" class="SimpleEmployee"
+			lazy="false"></many-to-one>
+		<many-to-one name="post" column="职务"
+			class="com.bitc.jk.xmis.model.sys.Post" lazy="false" />
+	</class>
+	<class name="Role" table="sec_角色">
+		<id name="id" column="角色ID" type="integer">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="name" column="角色名称" type="string"></property>
+		<property name="description" column="角色描述" type="string"></property>
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" name="lastModifier" />
+	</class>
+
+	<class name="EmployeeRole" table="sec_人员角色">
+		<id name="id" column="ID" type="string">
+			<generator class="uuid.hex"></generator>
+		</id>
+		<many-to-one name="employee" column="人员ID" class="SimpleEmployee"
+			lazy="false"></many-to-one>
+		<many-to-one name="role" column="角色ID" class="Role" lazy="false"></many-to-one>
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" name="lastModifier" />
+	</class>
+	<class name="SupplierInformation" table="org_供方评定调查表">
+		<id name="ID" column="公司ID">
+		</id>
+		<property name="managerID" column="经理ID" type="integer" />
+		<property name="addressID" column="地址ID" type="string" />
+		<property name="industryAssessment" column="行业评定情况" type="string"/>
+		<property name="qualification" column="资质情况" type="string"/>
+		<property name="generalTaxpayer" column="是否为一般纳税人" type="int"/>
+		<property name="headOfUnit" column="主管单位" type="string"/>
+		<property name="productsProduction" column="主导产品及产量" type="string"/>
+		<property name="standard" column="采用标准" type="string"/>
+		<property name="ancillaryProducts" column="为中水科配套产品" type="string"/>
+		<property name="introductionLine" column="是否引进线" type="int"/>
+		<property name="Yield" column="成品率" type="string"/>
+		<property name="qualityAssurance" column="质量保证体系情况" type="string"/>
+		<property name="newupdateDate" column="登记日期" type="date"/>
+		<property name="lastModified" column="最后修改日期" type="date"/>
+		
+		
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="登记人ID" fetch="join" name="newregisterID" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="lastModifier" />
+	</class>
+	
+	<class name="QualificationObj" table="org_资质管理表"> 
+		<id name="id" column="id" type="string">
+			<generator class="uuid.hex"></generator>
+		</id>
+		<property name="companyID" column="公司ID" type="integer"/>
+		<property name="qualificationName" column="资质名称" type="string"/>
+		<property name="departmentName" column="管理部门" type="string"/>
+		<property name="contactID" column="联系人ID" type="integer"/>
+		<property name="contactMode" column="联系方式" type="string"/>
+		<property name="certificateValidQi" column="证书有效期起" type="date"/>
+		<property name="certificateValidZhi" column="证书有效期止" type="date"/>
+		<property name="certificateNo" column="证书号" type="string"/>
+		<property name="examined" column="是否年审" type="integer"/>
+		<property name="remark" column="备注" type="string"/>
+		<property name="subscriberDate" column="登记日期" type="date"/>
+		<property name="lastModified" column="最后修改日期" type="date"/>
+		
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="登记人ID" fetch="join" name="subscriberID" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="lastModifier" />
+	</class>
+	
+	<class name="ProjectQualification" table="org_资质使用部门表">
+		<id name="id" column="ID">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="applicationSectorsID" column="申请部门ID" type="integer"></property>
+		<property name="ziID" column="资质名称对应ID" type="string"></property>
+		<property name="projectID" column="使用项目ID" type="string"></property>
+		<property name="applicantID" column="申请人ID" type="integer"></property>
+		<property name="applicationDate" column="申请日期" type="date"></property>
+		<property name="applicationReasons" column="申请原因" type="string"></property>
+		<property name="applicationNewupdateDate" column="登记日期" type="date"></property>
+		<property name="applicationLastModified" column="最后修改日期" type="date"></property>
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="登记人ID" fetch="join" name="applicationNewregisterName" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="applicationLastModifierName" />
+	</class>
+	
+	
+	<class name="PatentInformation" table="org_公司专利表">
+		<id name="sjid" column="ID">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="companyID" column="公司ID" type="integer"></property>
+		<property name="patentName" column="专利名称" type="string"></property>
+		<property name="patentsCategory" column="类别" type="string"></property>
+		<property name="patentedDesignPeopleID1" column="设计人1ID" type="integer"></property>
+		<property name="patentedDesignPeopleID2" column="设计人2ID" type="integer"></property>
+		<property name="patentedDesignPeopleID3" column="设计人3ID" type="integer"></property>
+
+		
+		
+		<property name="patentRightPeopleID1" column="专利权人1ID" type="integer"></property>
+		<property name="patentRightPeopleID2" column="专利权人2ID" type="integer"></property>
+		<property name="patentRightPeopleID3" column="专利权人3ID" type="integer"></property>
+		<property name="patentRightPeopleID4" column="专利权人4ID" type="integer"></property>
+		<property name="patentRightPeopleID5" column="专利权人5ID" type="integer"></property>
+		
+		<property name="patentNumber" column="专利号" type="string"></property>
+		<property name="applicationTime" column="申请日" type="date"></property>
+		<property name="authorizeTime" column="授权公告日" type="date"></property>
+		
+		<property name="patentCertificateNo" column="证书号" type="string"></property>
+		<property name="validFrom" column="有效期起" type="date"></property>
+		<property name="validOnly" column="有效期止" type="date"></property>
+		<property name="patentupdateDate" column="登记日期" type="date"></property>
+		<property name="patentlastModified" column="最后修改日期" type="date"></property>
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="登记人ID" fetch="join" name="patentregisterName" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="patentlastModifierName" />
+	</class>
+	
+	
+	<class name="CompanyObj" table="org_公司">
+		<id name="companyID" column="公司ID">
+			<generator class="assigned" />
+		</id>
+		<property name="companyName" column="公司名称" type="string" />
+		<property name="abbreviation" column="名称缩写" type="string" />
+		<property name="telephoneNo1" column="电话1" type="string" />
+		<property name="telephoneNo2" column="电话2" type="string" />
+		<property name="faxNo1" column="传真1" type="string" />
+		<property name="faxNo2" column="传真2" type="string" />
+		<property name="webSite" column="网址" type="string" />
+		<property name="emailAddress" column="邮箱" type="string" />
+		<property name="bankName" column="开户银行" type="string" />
+		<property name="accountNo" column="账号" type="string" />
+		<property name="taxNo" column="税号" type="string" />
+		<many-to-one name="address" column="地址ID" lazy="false" 
+			class="com.bitc.jk.xmis.model.crm.Address" cascade="save-update"></many-to-one>
+		<!-- 
+		 -->
+		<set name="otherAddress" inverse="true">
+			<key column="公司ID"></key>
+			<one-to-many class="com.bitc.jk.xmis.model.crm.RelativeAddress" />
+		</set>
+		<many-to-one name="businessRelation" column="业务关系ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.crm.BusinessRelation"></many-to-one>
+
+		<many-to-one name="companyScale" column="公司规模ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.crm.CompanyScale"></many-to-one>
+
+		<many-to-one name="customerLevel" column="客户级别ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.crm.CustomerLevel"></many-to-one>
+		<many-to-one name="creditLevel" column="信用等级ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.crm.CreditLevel"></many-to-one>
+		<many-to-one name="legalRepresentative" column="法人代表ID"
+			lazy="false" not-found="ignore" class="SimpleEmployee"></many-to-one>
+		<many-to-one name="contactPerson" column="联系人ID" lazy="false"
+			not-found="ignore" class="SimpleEmployee"></many-to-one>
+		<property name="organizationCode" column="机构代码" type="string" />
+		<property name="registeredCapital" column="注册资金" type="string" />
+		<property name="remark" column="备注" type="string" />
+		<property name="updateDate" column="修改时间" type="timestamp" />
+		<many-to-one name="updatePerson" column="修改人ID" lazy="false"
+			not-found="ignore" class="SimpleEmployee"></many-to-one>
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			lazy="false" column="最后修改人ID" name="lastModifier" />
+		<many-to-one name="currency" column="货币ID" lazy="false"
+			not-found="ignore" class="com.bitc.jk.xmis.model.sys.Currency"></many-to-one>
+		<!-- <property name="customerSourceID" column="客户来源ID" type="integer" /> 
+			<property name="securityLevelID" column="保密级别" type="integer" /> -->
+
+
+	</class>
+	<!-- 会议室管理 -->
+	<class name="MeetingRoomInformation" table="xmis.T_MeetingRoom_Info">
+		<id name="room_id" column="room_id">
+		 <generator class="uuid.hex"/>
+		</id>
+	   <property name="room_No" column="room_No" lazy="false" type ="string"></property>
+		<property name="room_name" column="room_name" lazy="false" type ="string"></property>
+		<property name="floor" column="floor" lazy="false" type ="string"></property>
+		<property name="address" column="address" lazy="false" type ="string"></property>
+		<property name="remark" column="remark" lazy="false" type ="string"></property>
+		<property name="number_people" column="number_people" lazy="false" type ="integer"></property>
+		
+	</class>
+
+	<class name="OfficeSuppliesDetails" table="xmis.T_Office_Supplies_Info">
+		<id name="supplies_id" column="supplies_id">
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="supplies_type_id" column="supplies_type_id" lazy="false" type ="string"></property>
+		<property name="supplies_name" column="supplies_name" lazy="false" type ="string"></property>
+		<property name="supplies_brand" column="supplies_brand" lazy="false" type ="string"></property>
+		<property name="supplies_model" column="supplies_model" lazy="false" type ="string"></property>
+		<property name="purchase_date" column="purchase_date" lazy="false" type ="date"></property>
+		<property name="remark" column="remark" lazy="false" type ="string"></property>
+		<property name="qty" column="qty" lazy="false" type ="integer"></property>
+	</class>
+		<!-- 车辆管理 -->
+	<class name="VehicleManagement" table="xmis.T_Car_Info">
+		<id name="car_id" column="car_id">
+		<generator class="uuid.hex"/>
+		</id>
+		<property name="car_No" column="car_No" lazy="false" type ="string"></property>
+		<property name="car_brand" column="car_brand" lazy="false" type ="string"></property>
+		<property name="car_type" column="car_type" lazy="false" type ="string"></property>
+		<property name="remark" column="remark" lazy="false" type ="string"></property>
+		<property name="purchase_date" column="purchase_date" lazy="false" type ="date"></property>
+		<property name="capacity" column="capacity" lazy="false" type ="integer"></property>
+	</class>
+
+		<!-- 值班人员管理 -->
+		
+		<class name="T_OnWatch_schedule" table="xmis.T_OnWatch_schedule">
+		<id name="id" column="id" type="string">
+		<generator class="uuid.hex"/>
+		</id>
+		<property name="jobTypeId" column="job_type_id" lazy="false" type ="integer"></property>
+		<property name="onWatchId" column="on_watch_id" lazy="false" type ="integer"></property>
+		<property name="onWatchDate" column="on_watch_date" lazy="false" type ="string"></property>
+		<property name="beginTime" column="begin_time" lazy="false" type ="string"></property>
+		<property name="endDate" column="end_date" lazy="false" type ="string"></property>
+		<property name="endTime" column="end_time" lazy="false" type ="string"></property>
+		<property name="Reason" column="Reason" lazy="false" type ="string"></property>
+		<property name="scheduledDatetime" column="scheduled_datetime" lazy="false" type ="string"></property>
+		<property name="scheduledId" column="scheduled_id" lazy="false" type ="integer"></property>
+		<property name="lastUpdatedId" column="last_updated_id" lazy="false" type ="integer"></property>
+		<property name="lastUpdatedDatetime" column="last_updated_datetime" lazy="false" type ="string"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,177 @@
+//数据库更新记录
+*****2012-11-09 *** Wu ************
+--调整项目组合查询
+ UPDATE [xmis].[sys_条件选项] SET 名称='项目名称' WHERE 选项ID=9
+  UPDATE [xmis].[sys_条件选项] SET 名称='项目编码' WHERE 选项ID=10
+  DELETE xmis.sys_条件选项对应表 WHERE 选项ID=16
+*****2012-11-06 *** Wu ************
+--dev_采购申请增加列
+alter table dev_采购申请  add 申请流程实例ID nvarchar(50)
+*****2012-11-01 *** Wu ************
+--prj_项目增加列 执行部门
+alter table prj_项目 add 执行部门 int
+--填充执行部门字段
+UPDATE xmis.prj_项目 SET 项目经理ID=c.合同负责人
+  FROM [xmis].[xmis].[prj_项目] p
+  LEFT JOIN xmis.con_合同 c ON p.项目ID = c.项目ID
+  WHERE p.项目经理ID IS NULL AND c.合同负责人 IS NOT NULL
+  AND c.父合同ID IS NULL AND c.合同类型ID=1
+--填充执行部门字段  
+UPDATE xmis.prj_项目  SET 执行部门=ed.部门ID
+FROM xmis.prj_项目 p 
+LEFT JOIN xmis.hr_人员部门关系表 ed ON p.项目经理ID=ed.人员ID
+WHERE ed.是否兼职=1
+*****2012-10-31 *** Wu ************
+--增加人员角色  黄凤珍  事业部级采购负责人
+INSERT INTO sec_人员角色(ID, 人员ID, 角色ID) VALUES('x-genaretor-39-106','39','106')
+--增加子模块
+ INSERT INTO xmis.sec_业务子模块表
+          ( 业务子模块ID ,
+            业务子模块名称 ,
+            业务子模块url ,
+            业务子模块描述 ,
+            业务子模块图标说明 ,
+            业务子模块标识
+          )
+  VALUES  ( 38 , -- 业务子模块ID - int
+            N'采购清单查询' , -- 业务子模块名称 - nvarchar(50)
+            N'device/pList.jsp' , -- 业务子模块url - nvarchar(200)
+            N'采购清单查询页面' , -- 业务子模块描述 - nvarchar(50)
+            N'menu-device-p-list' , -- 业务子模块图标说明 - nvarchar(50)
+            N'device-p-list' -- 业务子模块标识 - nvarchar(50)
+          
+          )
+  INSERT INTO xmis.sec_业务模块对应表
+          ( 业务模块ID ,
+            业务子模块ID ,
+            业务子模块排列顺序
+          )
+  VALUES  ( 6 , -- 业务模块ID - int
+            38 , -- 业务子模块ID - int
+            10  -- 业务子模块排列顺序 - int
+           
+          )
+          
+  INSERT INTO xmis.sec_业务功能表
+          ( 业务功能ID ,
+            业务功能名称 ,
+            业务功能url ,
+            业务功能描述 ,
+            业务功能标识 ,
+            bizFunctionID
+          )
+  VALUES  ( 26 , -- 业务功能ID - int
+            N'查询采购清单' , -- 业务功能名称 - nvarchar(50)
+            N'device/pList.jsp' , -- 业务功能url - nvarchar(200)
+            N'查询采购清单' , -- 业务功能描述 - nvarchar(50)
+            N'device-p-list' , -- 业务功能标识 - nvarchar(50)
+            31 -- bizFunctionID - int
+          
+          )
+    INSERT INTO xmis.sec_业务模块功能对应表
+          ( 业务子模块ID, 业务功能ID)
+  VALUES  ( 38, -- 业务子模块ID - int
+            26 -- 业务功能ID - int
+            )
+--增加权限定义（菜单）
+insert into sec_角色用户操作权限定义表(ID,角色或人员ID,业务模块ID,业务子模块ID,业务功能ID,操作权限ID,是否是角色定义) values(93,105,6,15,21,5,1)
+insert into sec_角色用户操作权限定义表(ID,角色或人员ID,业务模块ID,业务子模块ID,业务功能ID,操作权限ID,是否是角色定义) values(94,2,6,15,21,5,1)
+insert into sec_角色用户操作权限定义表(ID,角色或人员ID,业务模块ID,业务子模块ID,业务功能ID,操作权限ID,是否是角色定义) values(95,106,6,15,21,5,1)
+insert into sec_角色用户操作权限定义表(ID,角色或人员ID,业务模块ID,业务子模块ID,业务功能ID,操作权限ID,是否是角色定义) values(96,5,6,12,17,5,1)
+insert into sec_角色用户操作权限定义表(ID,角色或人员ID,业务模块ID,业务子模块ID,业务功能ID,操作权限ID,是否是角色定义) values(97,106,6,13,18,5,1)
+insert into sec_角色用户操作权限定义表(ID,角色或人员ID,业务模块ID,业务子模块ID,业务功能ID,操作权限ID,是否是角色定义) values(98,2,6,38,26,5,1)
+insert into sec_角色用户操作权限定义表(ID,角色或人员ID,业务模块ID,业务子模块ID,业务功能ID,操作权限ID,是否是角色定义) values(99,106,6,38,26,5,1)
+*****2012-10-25 *** Wu ************
+--1.采购清单表增加表“部门ID”
+alter table dev_采购清单 add 部门ID int
+*****2012-09-03 *** Wu ************
+1.sec_角色 增加两条记录（105，106）
+insert into xmis.sec_角色 values(105,'公司级采购人员','公司级采购人员',-1,null,null);
+insert into xmis.sec_角色 values(106,'事业部级采购人员','事业部级采购人员',-1,null,null);
+2.sec_人员角色 增加列 ID varchar(50)，主键列
+执行以下语句
+--生成主键，人员ID与角色ID
+UPDATE xmis.xmis.sec_人员角色 SET id='x-id-generator-'+CONVERT(VARCHAR(10),[人员ID])+'-'+CONVERT(VARCHAR(10),[角色ID])
+--查找重复项
+SELECT  ID ,
+        人员ID ,
+        角色ID ,
+        最后修改日期 ,
+        最后修改人ID
+INTO    #roletmp
+FROM    xmis.sec_人员角色 er
+WHERE   er.ID IN ( SELECT   ID
+                   FROM     [xmis].[xmis].[sec_人员角色]
+                   GROUP BY ID
+                   HAVING   COUNT(*) > 1 )
+               
+--删除重复项   
+DELETE  FROM xmis.sec_人员角色
+WHERE   ID IN ( SELECT  ID
+                FROM    [xmis].[xmis].[sec_人员角色]
+                GROUP BY ID
+                HAVING  COUNT(*) > 1 )
+                
+INSERT  INTO xmis.sec_人员角色
+        SELECT DISTINCT
+                *
+        FROM    #roletmp
+*****2012-07-20 *** Wu ************
+sys_附件主体类型增加一条 
+6	项目附件	xmis.prj_项目	NULL	NULL	NULL
+*****2012-07-12 *** Wu ************
+wf_待办表加入两个字段，发送人，发送时间，待办描述
+*****2012-04-25 *** Wu ************
+重建prj_项目进度计划
+*****2012-03-30 *** Wu ************
+prj_项目状态增加字段项目ID
+/* 为了防止任何可能出现的数据丢失问题，您应该先仔细检查此脚本，然后再在数据库设计器的上下文之外运行此脚本。*/
+BEGIN TRANSACTION
+SET QUOTED_IDENTIFIER ON
+SET ARITHABORT ON
+SET NUMERIC_ROUNDABORT OFF
+SET CONCAT_NULL_YIELDS_NULL ON
+SET ANSI_NULLS ON
+SET ANSI_PADDING ON
+SET ANSI_WARNINGS ON
+COMMIT
+BEGIN TRANSACTION
+GO
+ALTER TABLE xmis.prj_项目状态 ADD
+	项目ID nvarchar(40) NULL
+GO
+DECLARE @v sql_variant 
+SET @v = N'项目状态为自定义时，所定义项目的ID'
+EXECUTE sp_addextendedproperty N'MS_Description', @v, N'SCHEMA', N'xmis', N'TABLE', N'prj_项目状态', N'COLUMN', N'项目ID'
+GO
+ALTER TABLE xmis.prj_项目状态 SET (LOCK_ESCALATION = TABLE)
+GO
+COMMIT
+*****2012-03-16 *** Wu ************
+1.新建表：prj_项目物资采购状态
+*****2012-02-22 *** Wu ************
+1.重建表：dev_采购清单
+2.新建表：dev_采购清单明细
+*****2012-02-09 *** Wu ************
+1.新增表：dev_采购申请
+2.新增表：dev_采购申请明细
+3.新增模块及相应权限：物资管理
+*****2012-01-30 *** Wu ************
+1.修改prj_项目物资清单
+	删除列		重量单位
+	修改类型		重量		int->nvarchar(40)
+	新増列		状态		nvarchar(10)
+*****2012-01-11 *** Wu ************
+1.修改dev_物资信息库
+	删除列 		父物资ID
+	删除列 		原厂可退时间
+	删除列 		原厂可换时间
+	删除列 		原厂保修时间
+	删除列 		重量单位ID
+	删除列 		功率单位ID
+	新増列		三包信息		nvarchar(200)	
+	修改类型		物资ID		int->nvarchar(40)
+	修改类型		物资名称		int->nvarchar(40)
+	修改类型		重量		int->nvarchar(40)
+	修改类型		功率		int->nvarchar(40)
+	修改类型		规格		int->nvarchar(40)		

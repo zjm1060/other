@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping 
+	package="com.bitc.jk.xmis.model">
+	<class name="AttachmentFile" table="sys_附件">
+		<id name="id" column="附件ID">
+			<generator class="assigned"/>
+		</id>
+		<property name="fileName" column="文件名" type="string" /> 
+		<property name="uploadDate" column="上传时间" type="date" /> 
+		<property name="keyWords" column="关键字" type="string" /> 
+		<property name="filePath" column="存放路径" type="string" /> 
+		<property name="desc" column="内容描述" type="string" /> 
+		<property name="attachmentTypeID" column="附件主体类型ID" type="integer" />
+		<property name="deletedFlag" column="删除标志" type="integer" />
+		<many-to-one name="personEmp" column="上传人" class="SimpleEmployee" lazy="false" fetch="join"></many-to-one>
+	</class>
+</hibernate-mapping>

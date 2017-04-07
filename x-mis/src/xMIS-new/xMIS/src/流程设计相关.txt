@@ -1,0 +1,12 @@
+当前用户：
+Name：__self
+Display Name：当前用户
+Assignment Handler：com.bitc.jk.xmis.workflow.fire.CurrentUserAssignmentHandler
+
+上一步指定：
+Assignment Handler：com.bitc.jk.xmis.workflow.fire.PreviousStepSpecifyAssignmentHandler
+代码部分：当某节点设置成“上一步指定”时，其上一步必须在完成流转前，在代码中设置任务人。可以调用方法：
+com.bitc.jk.xmis.workflow.util.WorkflowUtil.specifyActor(IWorkflowSession session, String actorId, String performName)
+或
+com.bitc.jk.xmis.workflow.util.WorkflowUtil.specifyActors(IWorkflowSession, List<String> actorIds, String performName)
+其中参数performName是流程设计时为该步骤设置的Performer Name

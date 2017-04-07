@@ -1,0 +1,1128 @@
+RECORD      NAME = POL
+
+ENTRY      NAME	= DI1
+           LONGNAME	= '2F发电机出口21YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI2
+           LONGNAME	= '2F发电机出口21YH消谐装置接地报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI3
+           LONGNAME	= '2F发电机出口21YH消谐装置过压报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI4
+           LONGNAME	= '2F发电机出口21YH消谐装置谐振报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI5
+           LONGNAME	= '2F发电机出口21YH消谐装置异常报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610004
+           PNT_ADD	= 4
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI6
+           LONGNAME	= '2F发电机出口22YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610005
+           PNT_ADD	= 5
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI7
+           LONGNAME	= '2F发电机出口23YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610006
+           PNT_ADD	= 6
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI8
+           LONGNAME	= '2F同期装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610007
+           PNT_ADD	= 7
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI9
+           LONGNAME	= '2F自准方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610008
+           PNT_ADD	= 8
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI10
+           LONGNAME	= '2F调速器交流开关电源（24V）电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610009
+           PNT_ADD	= 9
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI11
+           LONGNAME	= '2F调速器直流开关电源（24V）电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610010
+           PNT_ADD	= 10
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI12
+           LONGNAME	= '2F调速器紧急停机电磁阀I动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610011
+           PNT_ADD	= 11
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI13
+           LONGNAME	= '2F调速器紧急停机电磁阀II动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610012
+           PNT_ADD	= 12
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI14
+           LONGNAME	= '2FA机故障报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610013
+           PNT_ADD	= 13
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI15
+           LONGNAME	= '2FB机故障报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610014
+           PNT_ADD	= 14
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI16
+           LONGNAME	= '2FC机故障报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610015
+           PNT_ADD	= 15
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI17
+           LONGNAME	= '2F调速器事故'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610016
+           PNT_ADD	= 16
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI18
+           LONGNAME	= '2F调速器电柜AC220V电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610017
+           PNT_ADD	= 17
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI19
+           LONGNAME	= '2F调速器电柜DC220V电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610018
+           PNT_ADD	= 18
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI20
+           LONGNAME	= '2F调速器远方控制方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610019
+           PNT_ADD	= 19
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI21
+           LONGNAME	= '2F一次调频'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610020
+           PNT_ADD	= 20
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI22
+           LONGNAME	= '2F调速器紧急停机电磁阀I电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610021
+           PNT_ADD	= 21
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI23
+           LONGNAME	= '2F调速器紧急停机电磁阀II电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610022
+           PNT_ADD	= 22
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI24
+           LONGNAME	= '2F调速器开机失败'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610023
+           PNT_ADD	= 23
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI25
+           LONGNAME	= '2F上导油槽油位过低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610024
+           PNT_ADD	= 24
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI26
+           LONGNAME	= '2F上导油槽油位低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610025
+           PNT_ADD	= 25
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI27
+           LONGNAME	= '2F上导油槽油位高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610026
+           PNT_ADD	= 26
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI28
+           LONGNAME	= '2F上导油槽油位过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610027
+           PNT_ADD	= 27
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI29
+           LONGNAME	= '2F推力油槽油位过低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610028
+           PNT_ADD	= 28
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI30
+           LONGNAME	= '2F推力油槽油位低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610029
+           PNT_ADD	= 29
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI31
+           LONGNAME	= '2F推力油槽油位高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610030
+           PNT_ADD	= 30
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI32
+           LONGNAME	= '2F推力油槽油位过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610031
+           PNT_ADD	= 31
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI33
+           LONGNAME	= '2F上导油槽油混水'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610032
+           PNT_ADD	= 32
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI34
+           LONGNAME	= '2F推力油槽油混水'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610033
+           PNT_ADD	= 33
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI35
+           LONGNAME	= '2F发电机制动器顶起'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610034
+           PNT_ADD	= 34
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI36
+           LONGNAME	= '2F水导油槽油位低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610035
+           PNT_ADD	= 35
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI37
+           LONGNAME	= '2F水导油槽油位高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610036
+           PNT_ADD	= 36
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI38
+           LONGNAME	= '2F接力器锁定'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610037
+           PNT_ADD	= 37
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI39
+           LONGNAME	= '2F水导轴承油槽油混水报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610038
+           PNT_ADD	= 38
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI40
+           LONGNAME	= '2F事故配压阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610039
+           PNT_ADD	= 39
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI41
+           LONGNAME	= '2F主轴密封水主用水源压力'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610040
+           PNT_ADD	= 40
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI42
+           LONGNAME	= '2F机组调速器油压控制系统PLC故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610041
+           PNT_ADD	= 41
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI43
+           LONGNAME	= '2F机组调速器油压控制系统电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610042
+           PNT_ADD	= 42
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI44
+           LONGNAME	= '2F调速器油压装置1#油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610043
+           PNT_ADD	= 43
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI45
+           LONGNAME	= '2F调速器油压装置2#油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610044
+           PNT_ADD	= 44
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI46
+           LONGNAME	= '2F调速器油压装置3#油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610045
+           PNT_ADD	= 45
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI47
+           LONGNAME	= '2F工作油罐油压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610046
+           PNT_ADD	= 46
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI48
+           LONGNAME	= '2F工作油罐油位异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610047
+           PNT_ADD	= 47
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI49
+           LONGNAME	= '2F回油箱油位异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610048
+           PNT_ADD	= 48
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI50
+           LONGNAME	= '2F回油箱油混水'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610049
+           PNT_ADD	= 49
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI51
+           LONGNAME	= '2F调速器事故油罐油压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610050
+           PNT_ADD	= 50
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI52
+           LONGNAME	= '2F调速器事故油罐油位异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610051
+           PNT_ADD	= 51
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI53
+           LONGNAME	= '2F调速器事故低油压'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610052
+           PNT_ADD	= 52
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI54
+           LONGNAME	= '2F机组技术供水控制系统PLC故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610053
+           PNT_ADD	= 53
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI55
+           LONGNAME	= '2F机组技术供水控制系统电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610054
+           PNT_ADD	= 54
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI56
+           LONGNAME	= '2F机组供水总管压力异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610055
+           PNT_ADD	= 55
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI57
+           LONGNAME	= '2F机组供水总管流量异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610056
+           PNT_ADD	= 56
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI58
+           LONGNAME	= '2F直流逆变屏直流电压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610057
+           PNT_ADD	= 57
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI59
+           LONGNAME	= '2F直流逆变屏交流电压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610058
+           PNT_ADD	= 58
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI60
+           LONGNAME	= '2F漏油箱油位过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610059
+           PNT_ADD	= 59
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI61
+           LONGNAME	= '2F漏油箱油位高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610060
+           PNT_ADD	= 60
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI62
+           LONGNAME	= '2F顶盖排水控制箱AC220V电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610061
+           PNT_ADD	= 61
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI63
+           LONGNAME	= '2F顶盖排水PLC故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610062
+           PNT_ADD	= 62
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI64
+           LONGNAME	= '2F故障录波装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610063
+           PNT_ADD	= 63
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI65
+           LONGNAME	= '2F励磁变A相1#线圈温度高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610064
+           PNT_ADD	= 64
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI66
+           LONGNAME	= '2F励磁变A相1#线圈温度过跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610065
+           PNT_ADD	= 65
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI67
+           LONGNAME	= '2F励磁变B相1#线圈温度高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610066
+           PNT_ADD	= 66
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI68
+           LONGNAME	= '2F励磁变B相1#线圈温度过跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610067
+           PNT_ADD	= 67
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI69
+           LONGNAME	= '2F励磁变C相1#线圈温度高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610068
+           PNT_ADD	= 68
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI70
+           LONGNAME	= '2F励磁变C相1#线圈温度过跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610069
+           PNT_ADD	= 69
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI71
+           LONGNAME	= '2F发电机1#高压油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610070
+           PNT_ADD	= 70
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI72
+           LONGNAME	= '2F发电机2#高压油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610071
+           PNT_ADD	= 71
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI73
+           LONGNAME	= '2FLCUF柜UPS220VAC电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610072
+           PNT_ADD	= 72
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI74
+           LONGNAME	= '2F剪断销剪断'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610073
+           PNT_ADD	= 73
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI75
+           LONGNAME	= '2FLCU远方控制方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610074
+           PNT_ADD	= 74
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI76
+           LONGNAME	= '2F定子线圈温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610075
+           PNT_ADD	= 75
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI77
+           LONGNAME	= '2F定子铁芯温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610076
+           PNT_ADD	= 76
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI78
+           LONGNAME	= '2F定子压板温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610077
+           PNT_ADD	= 77
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI79
+           LONGNAME	= '2F推力轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610078
+           PNT_ADD	= 78
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI80
+           LONGNAME	= '2F推力轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610079
+           PNT_ADD	= 79
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI81
+           LONGNAME	= '2F推力油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610080
+           PNT_ADD	= 80
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI82
+           LONGNAME	= '2F下导轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610081
+           PNT_ADD	= 81
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI83
+           LONGNAME	= '2F下导轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610082
+           PNT_ADD	= 82
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI84
+           LONGNAME	= '2F下导油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610083
+           PNT_ADD	= 83
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI85
+           LONGNAME	= '2F上导轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610084
+           PNT_ADD	= 84
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI86
+           LONGNAME	= '2F上导轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610085
+           PNT_ADD	= 85
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI87
+           LONGNAME	= '2F上导油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610086
+           PNT_ADD	= 86
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI88
+           LONGNAME	= '2F水导轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610087
+           PNT_ADD	= 87
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI89
+           LONGNAME	= '2F水导轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610088
+           PNT_ADD	= 88
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI90
+           LONGNAME	= '2F水导油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610089
+           PNT_ADD	= 89
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI91
+           LONGNAME	= '2F空冷器冷风温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610090
+           PNT_ADD	= 90
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI92
+           LONGNAME	= '2F空冷器热风温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610091
+           PNT_ADD	= 91
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI93
+           LONGNAME	= '2F发电态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610092
+           PNT_ADD	= 92
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI94
+           LONGNAME	= '2F空载态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610093
+           PNT_ADD	= 93
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI95
+           LONGNAME	= '2F空转态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610094
+           PNT_ADD	= 94
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI96
+           LONGNAME	= '2F停机态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610095
+           PNT_ADD	= 95
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI97
+           LONGNAME	= '2F开机准备态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610096
+           PNT_ADD	= 96
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI98
+           LONGNAME	= '2F开机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610097
+           PNT_ADD	= 97
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI99
+           LONGNAME	= '2F开机流程超时'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610098
+           PNT_ADD	= 98
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI100
+           LONGNAME	= '2F停机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610099
+           PNT_ADD	= 99
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI101
+           LONGNAME	= '2F停机流程超时'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610100
+           PNT_ADD	= 100
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI102
+           LONGNAME	= '2F事故停机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610101
+           PNT_ADD	= 101
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI103
+           LONGNAME	= '2F紧急停机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610102
+           PNT_ADD	= 102
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI104
+           LONGNAME	= '2FLCUB柜交流220V进线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610103
+           PNT_ADD	= 103
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI105
+           LONGNAME	= '2FLCUB柜直流220V进线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610104
+           PNT_ADD	= 104
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI106
+           LONGNAME	= '2FLCUB柜UPS交流220V进线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610105
+           PNT_ADD	= 105
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI107
+           LONGNAME	= '2F检修密封供气'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610106
+           PNT_ADD	= 106
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI108
+           LONGNAME	= '2F碳刷粉尘收集装置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610107
+           PNT_ADD	= 107
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI109
+           LONGNAME	= '2F机组密封水压力'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610108
+           PNT_ADD	= 108
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI110
+           LONGNAME	= '2F一次调频动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610109
+           PNT_ADD	= 109
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI111
+           LONGNAME	= '2F发电流程自动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610110
+           PNT_ADD	= 110
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI112
+           LONGNAME	= '2F发电流程手动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610111
+           PNT_ADD	= 111
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI113
+           LONGNAME	= '2F停机流程自动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610112
+           PNT_ADD	= 112
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI114
+           LONGNAME	= '2F停机流程手动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610113
+           PNT_ADD	= 113
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI115
+           LONGNAME	= '2F制动器粉尘收集装置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610114
+           PNT_ADD	= 114
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI116
+           LONGNAME	= '2F控制流程执行故障反馈'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610115
+           PNT_ADD	= 115
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D01
+           LONGNAME	= '2F紧急事故停机'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610116
+           PNT_ADD	= 116
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D02
+           LONGNAME	= '2F机组发电(停机到发电指令)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610117
+           PNT_ADD	= 117
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D03
+           LONGNAME	= '2F机组空载(停机到空载指令)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610118
+           PNT_ADD	= 118
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D04
+           LONGNAME	= '2F机组停机(发电到停机指令)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610119
+           PNT_ADD	= 119
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D05
+           LONGNAME	= '合发电机出口隔离刀闸G21'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610120
+           PNT_ADD	= 120
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D06
+           LONGNAME	= '分发电机出口隔离刀闸G21'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610121
+           PNT_ADD	= 121
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D07
+           LONGNAME	= '合发电机出口开关DL2'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610122
+           PNT_ADD	= 122
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D08
+           LONGNAME	= '分发电机出口开关DL2'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610123
+           PNT_ADD	= 123
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D09
+           LONGNAME	= '2F控制流程执行故障复归'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10610124
+           PNT_ADD	= 124
+           AOR_GRP	= GEN
+
+END

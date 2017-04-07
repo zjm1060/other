@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model.device">
+	<class name="DeviceInfo" table="dev_物资信息库">
+		<id column="物资ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="物资名称" generated="never" lazy="false" name="materiaName"
+			type="string" />
+		<property column="型号" generated="never" lazy="false" name="modelType"
+			type="string" />
+			<property column="商品链接地址" generated="never" lazy="false" name="factoryCommodityAddress"
+			type="string" />
+			<property column="规格" generated="never" lazy="false" name="standard"
+			type="string" />
+		<property column="重量" generated="never" lazy="false" name="weight"
+			type="string" />
+		<property column="功率" generated="never" lazy="false" name="power"
+			type="string"/>
+		<property column="照片名称" generated="never" lazy="false" name="pigName"
+			type="string" update="false"/>	
+		<property column="官方报价" generated="never" lazy="false" name="referencePrice"
+			type="big_decimal" />
+		<many-to-one class="com.bitc.jk.xmis.model.sys.Currency"
+			column="货币ID" fetch="join" lazy="false" name="currency" />
+			
+		<many-to-one class="com.bitc.jk.xmis.model.sys.Power" name="powerSuppliesUnit"
+			column="功率单位" fetch="join" lazy="false" />	
+		<many-to-one class="com.bitc.jk.xmis.model.sys.Weight" name="materialWeight"
+			column="重量单位" fetch="join" lazy="false" />
+			
+			
+			<property column="停产时间" generated="never" lazy="false" name="stopTime" 
+			type="date"/>
+		<property column="三包信息" generated="never" lazy="false" name="guarantees"
+			type="string" />
+		<property column="最后修改日期" generated="never" lazy="false"
+			name="lastModified" type="date" />
+			<property column="登记日期" generated="never" lazy="false"
+			name="newupdateDate" type="date" />
+			
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="lastModifier" />
+			
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="登记人ID" fetch="join" name="newregisterName" />	
+			
+		<many-to-one class="com.bitc.jk.xmis.model.CompanyObj"  
+			column="生产厂家ID" fetch="join" name="manufacturer" />
+			
+		<property column="配置" generated="never" lazy="false" name="configuration"
+		type="string"/>
+		<property column="体积" generated="never" lazy="false" name="volume"
+		type="string"/>
+		
+		<many-to-one class="com.bitc.jk.xmis.model.sys.Business" 
+		column="物资业务属性"  fetch="join" lazy="false" name="materialsBusiness"/>
+		
+		  <many-to-one class="com.bitc.jk.xmis.model.sys.MaterialsProperty" 
+		column="物资自身属性" fetch="join" lazy="false" name="materialItself"/>
+		
+		<many-to-one class="com.bitc.jk.xmis.model.sys.MaterialsUse" 
+		column="物资用途" fetch="join"  lazy="false" name="materialUse"/>
+		
+	
+		
+		<property column="最新采购价格" generated="never" lazy="false" name="newestPrice"
+		type="big_decimal"/>
+		<property column="投入市场日期" generated="never" lazy="false" name="listingDate"
+		type="date"/>
+	</class>
+	<class name="PurchaseRequisition" table="dev_采购申请">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="项目ID" name="projectId" type="string" />
+		<property column="备注" name="remark" type="string" />
+		<property column="状态" name="status" type="string" />
+		<property column="申请时间" name="entryDate" type="date" />
+		<!--  property column="申请流程实例ID" name="processInstanceId" type="string"></property>-->
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="申请人ID" fetch="join" lazy="false" name="entryEmp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleDeptObj"
+			column="申请人部门ID" fetch="join" lazy="false" name="dept" />
+		<set cascade="all" inverse="true" name="details" sort="unsorted">
+			<key column="申请ID" />
+			<one-to-many class="PurchaseRequisitionDetail" />
+		</set>
+	</class>
+	<class name="PurchaseRequisitionDetail" table="dev_采购申请明细">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="名称" generated="never" lazy="false" name="name"
+			type="string" />
+		<property column="项目物资ID" generated="never" lazy="false"
+			name="projectDeviceId" type="string" />
+		<property column="型号" generated="never" lazy="false" name="modelType"
+			type="string" />
+		<property column="规格" generated="never" lazy="false" name="standard"
+			type="string" />
+		<property column="重量" generated="never" lazy="false" name="weight"
+			type="string" />
+		<property column="数量" generated="never" lazy="false" name="number"
+			type="integer" />
+		<property column="参考价格" generated="never" lazy="false"
+			name="referencePrice" type="double" />
+		<property column="备注" generated="never" lazy="false" name="remark"
+			type="string" />
+		<property column="技术要求" generated="never" lazy="false"
+			name="technicalRequirement" type="string" />
+		<property column="期望到货日期" generated="never" lazy="false"
+			name="expectArrivalDate" type="date" />
+		<property name="status" column="状态">
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">
+					com.bitc.jk.xmis.model.device.PurchaseRequisitionDetailStatus 
+				</param>
+			</type>
+		</property>
+		<many-to-one class="PurchaseRequisition" column="申请ID"
+			name="purchaseRequisition" />
+		<many-to-one class="com.bitc.jk.xmis.model.sys.Currency"
+			column="货币ID" fetch="join" lazy="false" name="currency" />
+	</class>
+	<class name="PurchasingList" table="dev_采购清单">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="采购清单编码" generated="never" lazy="false"
+			name="code" type="string" />
+		<property column="备注" generated="never" lazy="false" name="remark"
+			type="string" />
+		<property column="填表时间" generated="never" lazy="false" name="entryDate"
+			type="timestamp" />
+		<property column="支出合同ID" name="contractId" type="integer" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="填表人ID" fetch="join" lazy="false" name="entryEmp" />
+		<many-to-one class="com.bitc.jk.xmis.model.CompanySimpleObj"
+			column="供货商ID" fetch="join" lazy="false" name="supplier" />
+		<set cascade="all" inverse="true" name="details" sort="unsorted">
+			<key column="清单ID" />
+			<one-to-many class="PurchasingDetail" />
+		</set>
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleDeptObj"
+			column="部门ID" fetch="join" name="dept" not-found="ignore" />
+		<property column="最后修改日期" generated="never" lazy="false"
+			name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="lastModifier" />
+	</class>
+	
+	<class name="PurchasingDetail" table="dev_采购清单明细">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<many-to-one class="PurchasingList" column="清单ID" name="purchasing" />
+		<property column="名称" generated="never" lazy="false" name="name"
+			type="string" />
+			
+			
+		<property column="申请ID" generated="never" lazy="false"
+			name="requisitionId" type="string" />
+		<property column="申请明细ID" generated="never" lazy="false"
+			name="requisitionDetailId" type="string" />
+		<!--  <property column="型号" generated="never" lazy="false" name="modelType"
+			type="string" />
+		<property column="规格" generated="never" lazy="false" name="standard"
+			type="string" />
+		<property column="重量" generated="never" lazy="false" name="weight"
+			type="string" />-->
+		<property column="数量" generated="never" lazy="false" name="number"
+			type="integer" />
+		<property column="备注" generated="never" lazy="false" name="remark"
+			type="string" />
+		<property column="技术要求" generated="never" lazy="false"
+			name="technicalRequirement" type="string" />
+		<property column="期望到货日期" generated="never" lazy="false"
+			name="expectArrivalDate" type="date" />
+		<property column="单价" generated="never" lazy="false"
+			name="univalent" type="float"/>
+		<property column="最后修改日期" generated="never" lazy="false"
+			name="lastModified" type="date" />
+		<property column="登记日期" generated="never" lazy="false"
+			name="registrationDate" type="date" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="登记人" fetch="join" name="subscriber" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="lastModifier" />
+		<many-to-one class="com.bitc.jk.xmis.model.ContractObj"
+			column="支出合同ID" name="contractID" fetch="join" />
+		<many-to-one class="DeviceInfo"
+			column="项目物资ID" fetch="join" name="deviceInfo" />
+		
+	</class>
+
+<!-- 到货清单 -->
+	<class name="DeviceInObj" table="xmis.dev_到货清单">
+		<id name="id" column="ID">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="projectId" type="string">
+			<column name="收入合同ID" />
+		</property>
+		<property name="outContractId" type="java.lang.Integer">
+			<column name="支出合同ID" />
+		</property>
+		<property name="purchasingListId" type="java.lang.String">
+			<column name="采购清单ID" />
+		</property>
+		<property name="deviceInfoId" type="java.lang.String">
+			<column name="物资ID" />
+		</property>
+		<property name="inNum" type="int">
+			<column name="到货数量" />
+		</property>
+		<property name="inDate" type="timestamp">
+			<column name="到货日期" />
+		</property>
+		<property name="positionId" type="java.lang.String">
+			<column name="存放位置ID" />
+		</property>
+		<property name="useStypeId" type="int">
+			<column name="领用级别ID" />
+		</property>
+		<property name="outFactoryDate" type="timestamp">
+			<column name="出厂日期" />
+		</property>
+		<property name="backDays" type="integer">
+			<column name="原厂可退天数" />
+		</property>
+		<property name="changeDays" type="integer">
+			<column name="原厂可换天数" />
+		</property>
+		<property name="repairDays" type="integer">
+			<column name="原厂保修天数" />
+		</property>
+		<property name="registerId" type="int">
+			<column name="登记人ID" />
+		</property>
+		<property name="registerDate" type="timestamp">
+			<column name="登记日期" />
+		</property>
+		<property name="remarks" type="java.lang.String">
+			<column name="备注" />
+		</property>
+		<property column="最后修改时间" generated="never" lazy="false"
+			name="lastModified" type="timestamp" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="最后修改人ID" fetch="join" name="lastModifier" />
+
+	</class>
+</hibernate-mapping>

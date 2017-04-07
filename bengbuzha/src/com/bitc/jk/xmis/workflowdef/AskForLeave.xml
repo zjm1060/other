@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="AskForLeave" Name="AskForLeave" DisplayName="请假申请" ResourceFile="" ResourceManager="">
+    <fpdl:DataFields>
+        <fpdl:DataField Id="AskForLeave.isForceStop" Name="isForceStop" DisplayName="强制结束" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="AskForLeave.isAgree" Name="isAgree" DisplayName="是否同意" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="AskForLeave.ischgleader" Name="ischgleader" DisplayName="" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="AskForLeave.isdptleader" Name="isdptleader" DisplayName="isdptleader" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="AskForLeave.limit3" Name="limit3" DisplayName="" DataType="INTEGER" InitialValue="3"/>
+        <fpdl:DataField Id="AskForLeave.isAgree2" Name="isAgree2" DisplayName="确认的是否同意" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="AskForLeave.limit1" Name="limit1" DisplayName="" DataType="INTEGER" InitialValue="1"/>
+        <fpdl:DataField Id="AskForLeave.limit5" Name="limit5" DisplayName="" DataType="INTEGER" InitialValue="5"/>
+    </fpdl:DataFields>
+    <fpdl:StartNode Id="AskForLeave.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="15"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="84"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="AskForLeave.Activity1" Name="Activity1" DisplayName="申请人提交申请" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="85"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="62"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.Activity1.Task1" Name="Task1" DisplayName="申请人提交申请" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="申请人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;请假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.ChargeLeaderApproval" Name="ChargeLeaderApproval" DisplayName="分管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="308"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="315"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.ChargeLeaderApproval.Task" Name="Task" DisplayName="分管领导审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,1)" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;请假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.DeptManagerApproval" Name="DeptManagerApproval" DisplayName="部门负责人" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="200"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="214"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.DeptManagerApproval.Task" Name="Task" DisplayName="部门负责人审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,0)" DisplayName="部门领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;请假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.ApplicantReportBack" Name="ApplicantReportBack" DisplayName="申请人销假" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="708"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="315"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.ApplicantReportBack.Task" Name="Task" DisplayName="销假申请" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$ids(applicantID)" DisplayName="申请人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;销假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.DeptManagerConfirm" Name="DeptManagerConfirm" DisplayName="部门负责人签字确认" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="126"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="957"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="430"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.DeptManagerConfirm.Task" Name="Task" DisplayName="部门负责人签字确认" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,0)" DisplayName="部门负责人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;销假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.OfficeManagerConfirm" Name="OfficeManagerConfirm" DisplayName="办公室主任接收" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1177"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="317"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.OfficeManagerConfirm.Task" Name="Task" DisplayName="办公室主任确认" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(officemanager_role)" DisplayName="办公室主任">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;请假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.MagenagerLeaderApproval" Name="MagenagerLeaderApproval" DisplayName="主管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="494"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="316"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.MagenagerLeaderApproval.Task" Name="Task" DisplayName="主管领导审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(magenagerleader_role)" DisplayName="主管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;请假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.DeptManagerConfirmDeptRole" Name="DeptManagerConfirmDeptRole" DisplayName="分管领导签字确认" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="124"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="959"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="316"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.DeptManagerConfirmDeptRole.Task" Name="Task" DisplayName="分管领导签字确认" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$deptLeaderRole(deptID,1)" DisplayName="分管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;销假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.DeptManagerConfirmMRole" Name="DeptManagerConfirmMRole" DisplayName="主管领导签字确认" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="126"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="960"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="198"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="AskForLeave.DeptManagerConfirmMRole.Task" Name="Task" DisplayName="主管领导签字确认" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="$role(magenagerleader_role)" DisplayName="主管领导">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="a" DisplayName="a">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/askForLeave/askForLeave.jsp?form_id={form_id}&amp;step={$taskId}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantName+&quot;销假申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.Activity10" Name="Activity10" DisplayName="部门领导角色" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="102"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="305"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="143"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.Activity11" Name="Activity11" DisplayName="分管领导角色" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="496"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="146"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.Activity12" Name="Activity12" DisplayName="强制结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="495"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="75"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.Activity13" Name="Activity13" DisplayName="强制结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="797"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="147"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.Activity14" Name="Activity14" DisplayName="忽略分管领导" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="31"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="94"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="311"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="414"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="AskForLeave.Activity15" Name="Activity15" DisplayName="短假忽略主管" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="29"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="494"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="414"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="AskForLeave.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="239"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="81"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="AskForLeave.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="239"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="337"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="AskForLeave.Synchronizer3" Name="Synchronizer3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="435"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="335"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="AskForLeave.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="838"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="336"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="AskForLeave.Synchronizer5" Name="Synchronizer5" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1121"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="338"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="AskForLeave.Synchronizer6" Name="Synchronizer6" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="645"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="336"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="AskForLeave.EndNode1" Name="EndNode1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1308"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="338"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+        <fpdl:EndNode Id="AskForLeave.EndNode2" Name="EndNode2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="670"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="82"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+        <fpdl:EndNode Id="AskForLeave.EndNode3" Name="EndNode3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="998"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="153"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="AskForLeave.Transition1" From="AskForLeave.Activity1" To="AskForLeave.Synchronizer1" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition3" From="AskForLeave.Synchronizer1" To="AskForLeave.DeptManagerApproval" Name="Transition3" DisplayName="普通员工角色">
+            <fpdl:Condition>!ischgleader&amp;&amp;!isdptleader&amp;&amp;!isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition5" From="AskForLeave.DeptManagerApproval" To="AskForLeave.Synchronizer2" Name="Transition5" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition6" From="AskForLeave.Synchronizer2" To="AskForLeave.ChargeLeaderApproval" Name="Transition6" DisplayName="">
+            <fpdl:Condition>isdptleader||(isAgree&amp;&amp;!isdptleader&amp;&amp;(days&gt;limit1))</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition7" From="AskForLeave.ChargeLeaderApproval" To="AskForLeave.Synchronizer3" Name="Transition7" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition12" From="AskForLeave.START_NODE" To="AskForLeave.Activity1" Name="Transition12" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition11" From="AskForLeave.ApplicantReportBack" To="AskForLeave.Synchronizer4" Name="Transition11" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition13" From="AskForLeave.DeptManagerConfirm" To="AskForLeave.Synchronizer5" Name="Transition13" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition14" From="AskForLeave.OfficeManagerConfirm" To="AskForLeave.EndNode1" Name="Transition14" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition15" From="AskForLeave.Synchronizer3" To="AskForLeave.MagenagerLeaderApproval" Name="Transition15" DisplayName="">
+            <fpdl:Condition>(isAgree&amp;&amp;!ischgleader&amp;&amp;!isdptleader&amp;&amp;days &gt; limit5)||(isdptleader&amp;&amp;isAgree&amp;&amp;days&gt;limit3)||ischgleader</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition16" From="AskForLeave.MagenagerLeaderApproval" To="AskForLeave.Synchronizer6" Name="Transition16" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition30" From="AskForLeave.Synchronizer6" To="AskForLeave.ApplicantReportBack" Name="Transition30" DisplayName="">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition32" From="AskForLeave.Synchronizer4" To="AskForLeave.DeptManagerConfirm" Name="Transition32" DisplayName="普通员工角色">
+            <fpdl:Condition>!ischgleader&amp;&amp;!isdptleader&amp;&amp;!isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition35" From="AskForLeave.Synchronizer5" To="AskForLeave.OfficeManagerConfirm" Name="Transition35" DisplayName="">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition21" From="AskForLeave.DeptManagerConfirmDeptRole" To="AskForLeave.Synchronizer5" Name="Transition21" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition25" From="AskForLeave.DeptManagerConfirmMRole" To="AskForLeave.Synchronizer5" Name="Transition25" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition33" From="AskForLeave.Synchronizer4" To="AskForLeave.DeptManagerConfirmDeptRole" Name="Transition33" DisplayName="部门领导角色">
+            <fpdl:Condition>isdptleader&amp;&amp;!ischgleader&amp;&amp;!isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition34" From="AskForLeave.Synchronizer4" To="AskForLeave.DeptManagerConfirmMRole" Name="Transition34" DisplayName="分管领导角色">
+            <fpdl:Condition>ischgleader&amp;&amp;!isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition19" From="AskForLeave.Synchronizer1" To="AskForLeave.Activity10" Name="Transition19" DisplayName="">
+            <fpdl:Condition>!ischgleader&amp;&amp;isdptleader&amp;&amp;!isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition20" From="AskForLeave.Activity10" To="AskForLeave.Synchronizer2" Name="Transition20" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition22" From="AskForLeave.Synchronizer1" To="AskForLeave.Activity11" Name="Transition22" DisplayName="">
+            <fpdl:Condition>ischgleader&amp;&amp;!isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition23" From="AskForLeave.Activity11" To="AskForLeave.Synchronizer3" Name="Transition23" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition24" From="AskForLeave.Synchronizer1" To="AskForLeave.Activity12" Name="Transition24" DisplayName="">
+            <fpdl:Condition>isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition26" From="AskForLeave.Activity12" To="AskForLeave.EndNode2" Name="Transition26" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition27" From="AskForLeave.Synchronizer4" To="AskForLeave.Activity13" Name="Transition27" DisplayName="">
+            <fpdl:Condition>isForceStop</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition28" From="AskForLeave.Activity13" To="AskForLeave.EndNode3" Name="Transition28" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition29" From="AskForLeave.Synchronizer2" To="AskForLeave.Activity14" Name="Transition29" DisplayName="">
+            <fpdl:Condition>days&lt;=limit1&amp;&amp;isAgree&amp;&amp;!isdptleader</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition31" From="AskForLeave.Activity14" To="AskForLeave.Synchronizer3" Name="Transition31" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition36" From="AskForLeave.Synchronizer3" To="AskForLeave.Activity15" Name="Transition36" DisplayName="">
+            <fpdl:Condition>(days&lt;=limit5&amp;&amp;isAgree&amp;&amp;!ischgleader&amp;&amp;!isdptleader )||(days&lt;=limit3&amp;&amp;isAgree&amp;&amp;isdptleader&amp;&amp;!ischgleader)</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="AskForLeave.Transition37" From="AskForLeave.Activity15" To="AskForLeave.Synchronizer6" Name="Transition37" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:Loops>
+        <fpdl:Loop Id="AskForLeave.Loop1" From="AskForLeave.Synchronizer2" To="AskForLeave.START_NODE" Name="Loop1" DisplayName="">
+            <fpdl:Condition>!isdptleader&amp;&amp;!isAgree</fpdl:Condition>
+        </fpdl:Loop>
+        <fpdl:Loop Id="AskForLeave.Loop2" From="AskForLeave.Synchronizer3" To="AskForLeave.START_NODE" Name="Loop2" DisplayName="">
+            <fpdl:Condition>!ischgleader&amp;&amp;!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(120,398)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="AskForLeave.Loop3" From="AskForLeave.Synchronizer6" To="AskForLeave.START_NODE" Name="Loop3" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(91,431)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="AskForLeave.Loop4" From="AskForLeave.Synchronizer5" To="AskForLeave.Synchronizer6" Name="Loop4" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(664,429)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+    </fpdl:Loops>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+</fpdl:WorkflowProcess>

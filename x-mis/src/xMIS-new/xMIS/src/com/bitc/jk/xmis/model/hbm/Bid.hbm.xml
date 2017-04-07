@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model.bid">
+	<class name="Bidding" table="bid_投标">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="名称" name="name" type="string" />
+		<many-to-one class="com.bitc.jk.xmis.model.CompanySimpleObj"
+			column="业主单位" fetch="join" name="bidCompany" />
+		<property column="合同价" name="contractPrice" type="big_decimal" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="方案编写" fetch="join" name="solutionWriter" />
+		<many-to-one class="com.bitc.jk.xmis.model.SimpleEmployee"
+			column="商务经理" fetch="join" name="businessManager" />
+		<property column="区域" name="region" type="string" />
+		<property column="方案" name="solution" type="string" />
+		<many-to-one class="BidCompany" column="中标单位" fetch="join"
+			name="winCompany" />
+		<property column="投标日期" name="bidDate" type="date" />
+		<bag name="bidPrices" batch-size="8" cascade="all">
+			<key column="投标ID"></key>
+			<one-to-many class="BidPrice"></one-to-many>
+		</bag>
+	</class>
+	<class name="BidPrice" table="bid_投标价格">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<many-to-one class="BidCompany" column="报价公司" fetch="join"
+			name="company" />
+		<property column="投标价" name="bidPrice" type="big_decimal" />
+		<property column="优惠价" name="preferentialPrice" type="big_decimal" />
+	</class>
+	<class name="BidCompany" table="bid_投标单位">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="名称" name="name" type="string" />
+		<property column="排序" name="order" type="int" />
+	</class>
+</hibernate-mapping>

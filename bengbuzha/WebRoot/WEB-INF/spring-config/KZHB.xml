@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"  
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+
+	<bean name="/kzhbMaint"
+		class="com.bitc.jk.xmis.web.action.KZHBAction">
+		<property name="kzhbService">
+			<ref local="kzhbServiceImpl" />
+		</property>
+		<property name="sysService">
+			<ref bean="sysService" />
+		</property>
+	</bean>
+	<bean id="kzhbServiceImpl"
+		class="com.bitc.jk.xmis.service.impl.KZHBServiceImpl">
+		<property name="kzhbDAO">
+			<ref local="kzhbDAOImpl" />
+		</property>
+	</bean>
+	<bean id="kzhbDAOImpl" parent="hibernateBaseDAO"
+		class="com.bitc.jk.xmis.dao.impl.KZHBDAOImpl">
+	</bean>	
+</beans>

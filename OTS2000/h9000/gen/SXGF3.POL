@@ -1,0 +1,1128 @@
+RECORD      NAME = POL
+
+ENTRY      NAME	= DI1
+           LONGNAME	= '3F发电机出口31YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770000
+           PNT_ADD	= 0
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI2
+           LONGNAME	= '3F发电机出口31YH消谐装置接地报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770001
+           PNT_ADD	= 1
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI3
+           LONGNAME	= '3F发电机出口31YH消谐装置过压报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770002
+           PNT_ADD	= 2
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI4
+           LONGNAME	= '3F发电机出口31YH消谐装置谐振报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770003
+           PNT_ADD	= 3
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI5
+           LONGNAME	= '3F发电机出口31YH消谐装置异常报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770004
+           PNT_ADD	= 4
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI6
+           LONGNAME	= '3F发电机出口32YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770005
+           PNT_ADD	= 5
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI7
+           LONGNAME	= '3F发电机出口33YH断线'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770006
+           PNT_ADD	= 6
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI8
+           LONGNAME	= '3F同期装置报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770007
+           PNT_ADD	= 7
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI9
+           LONGNAME	= '3F自准方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770008
+           PNT_ADD	= 8
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI10
+           LONGNAME	= '3F调速器交流开关电源（24V）电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770009
+           PNT_ADD	= 9
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI11
+           LONGNAME	= '3F调速器直流开关电源（24V）电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770010
+           PNT_ADD	= 10
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI12
+           LONGNAME	= '3F调速器紧急停机电磁阀I动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770011
+           PNT_ADD	= 11
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI13
+           LONGNAME	= '3F调速器紧急停机电磁阀II动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770012
+           PNT_ADD	= 12
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI14
+           LONGNAME	= '3FA机故障报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770013
+           PNT_ADD	= 13
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI15
+           LONGNAME	= '3FB机故障报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770014
+           PNT_ADD	= 14
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI16
+           LONGNAME	= '3FC机故障报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770015
+           PNT_ADD	= 15
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI17
+           LONGNAME	= '3F调速器事故'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770016
+           PNT_ADD	= 16
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI18
+           LONGNAME	= '3F调速器电柜AC220V电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770017
+           PNT_ADD	= 17
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI19
+           LONGNAME	= '3F调速器电柜DC220V电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770018
+           PNT_ADD	= 18
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI20
+           LONGNAME	= '3F调速器远方控制方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770019
+           PNT_ADD	= 19
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI21
+           LONGNAME	= '3F一次调频'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770020
+           PNT_ADD	= 20
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI22
+           LONGNAME	= '3F调速器紧急停机电磁阀I电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770021
+           PNT_ADD	= 21
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI23
+           LONGNAME	= '3F调速器紧急停机电磁阀II电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770022
+           PNT_ADD	= 22
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI24
+           LONGNAME	= '3F调速器开机失败'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770023
+           PNT_ADD	= 23
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI25
+           LONGNAME	= '3F上导油槽油位过低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770024
+           PNT_ADD	= 24
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI26
+           LONGNAME	= '3F上导油槽油位低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770025
+           PNT_ADD	= 25
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI27
+           LONGNAME	= '3F上导油槽油位高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770026
+           PNT_ADD	= 26
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI28
+           LONGNAME	= '3F上导油槽油位过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770027
+           PNT_ADD	= 27
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI29
+           LONGNAME	= '3F推力油槽油位过低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770028
+           PNT_ADD	= 28
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI30
+           LONGNAME	= '3F推力油槽油位低'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770029
+           PNT_ADD	= 29
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI31
+           LONGNAME	= '3F推力油槽油位高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770030
+           PNT_ADD	= 30
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI32
+           LONGNAME	= '3F推力油槽油位过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770031
+           PNT_ADD	= 31
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI33
+           LONGNAME	= '3F上导油槽油混水'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770032
+           PNT_ADD	= 32
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI34
+           LONGNAME	= '3F推力油槽油混水'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770033
+           PNT_ADD	= 33
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI35
+           LONGNAME	= '3F发电机制动器顶起'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770034
+           PNT_ADD	= 34
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI36
+           LONGNAME	= '3F水导油槽油位低报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770035
+           PNT_ADD	= 35
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI37
+           LONGNAME	= '3F水导油槽油位高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770036
+           PNT_ADD	= 36
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI38
+           LONGNAME	= '3F接力器锁定'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770037
+           PNT_ADD	= 37
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI39
+           LONGNAME	= '3F水导轴承油槽油混水报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770038
+           PNT_ADD	= 38
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI40
+           LONGNAME	= '3F事故配压阀动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770039
+           PNT_ADD	= 39
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI41
+           LONGNAME	= '3F主轴密封水主用水源压力'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770040
+           PNT_ADD	= 40
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI42
+           LONGNAME	= '3F机组调速器油压控制系统PLC故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770041
+           PNT_ADD	= 41
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI43
+           LONGNAME	= '3F机组调速器油压控制系统电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770042
+           PNT_ADD	= 42
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI44
+           LONGNAME	= '3F调速器油压装置1#油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770043
+           PNT_ADD	= 43
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI45
+           LONGNAME	= '3F调速器油压装置2#油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770044
+           PNT_ADD	= 44
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI46
+           LONGNAME	= '3F调速器油压装置3#油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770045
+           PNT_ADD	= 45
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI47
+           LONGNAME	= '3F工作油罐油压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770046
+           PNT_ADD	= 46
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI48
+           LONGNAME	= '3F工作油罐油位异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770047
+           PNT_ADD	= 47
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI49
+           LONGNAME	= '3F回油箱油位异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770048
+           PNT_ADD	= 48
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI50
+           LONGNAME	= '3F回油箱油混水'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770049
+           PNT_ADD	= 49
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI51
+           LONGNAME	= '3F调速器事故油罐油压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770050
+           PNT_ADD	= 50
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI52
+           LONGNAME	= '3F调速器事故油罐油位异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770051
+           PNT_ADD	= 51
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI53
+           LONGNAME	= '3F调速器事故低油压'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770052
+           PNT_ADD	= 52
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI54
+           LONGNAME	= '3F机组技术供水控制系统PLC故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770053
+           PNT_ADD	= 53
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI55
+           LONGNAME	= '3F机组技术供水控制系统电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770054
+           PNT_ADD	= 54
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI56
+           LONGNAME	= '3F机组供水总管压力异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770055
+           PNT_ADD	= 55
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI57
+           LONGNAME	= '3F机组供水总管流量异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770056
+           PNT_ADD	= 56
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI58
+           LONGNAME	= '3F直流逆变屏直流电压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770057
+           PNT_ADD	= 57
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI59
+           LONGNAME	= '3F直流逆变屏交流电压异常'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770058
+           PNT_ADD	= 58
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI60
+           LONGNAME	= '3F漏油箱油位过高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770059
+           PNT_ADD	= 59
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI61
+           LONGNAME	= '3F漏油箱油位高'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770060
+           PNT_ADD	= 60
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI62
+           LONGNAME	= '3F顶盖排水控制箱AC220V电源消失'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770061
+           PNT_ADD	= 61
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI63
+           LONGNAME	= '3F顶盖排水PLC故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770062
+           PNT_ADD	= 62
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI64
+           LONGNAME	= '3F故障录波装置故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770063
+           PNT_ADD	= 63
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI65
+           LONGNAME	= '3F励磁变A相1#线圈温度高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770064
+           PNT_ADD	= 64
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI66
+           LONGNAME	= '3F励磁变A相1#线圈温度过跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770065
+           PNT_ADD	= 65
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI67
+           LONGNAME	= '3F励磁变B相1#线圈温度高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770066
+           PNT_ADD	= 66
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI68
+           LONGNAME	= '3F励磁变B相1#线圈温度过跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770067
+           PNT_ADD	= 67
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI69
+           LONGNAME	= '3F励磁变C相1#线圈温度高报警'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770068
+           PNT_ADD	= 68
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI70
+           LONGNAME	= '3F励磁变C相1#线圈温度过跳闸'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770069
+           PNT_ADD	= 69
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI71
+           LONGNAME	= '3F发电机1#高压油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770070
+           PNT_ADD	= 70
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI72
+           LONGNAME	= '3F发电机2#高压油泵故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770071
+           PNT_ADD	= 71
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI73
+           LONGNAME	= '3FLCUF柜UPS220VAC电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770072
+           PNT_ADD	= 72
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI74
+           LONGNAME	= '3F剪断销剪断'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770073
+           PNT_ADD	= 73
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI75
+           LONGNAME	= '3FLCU远方控制方式'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770074
+           PNT_ADD	= 74
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI76
+           LONGNAME	= '3F定子线圈温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770075
+           PNT_ADD	= 75
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI77
+           LONGNAME	= '3F定子铁芯温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770076
+           PNT_ADD	= 76
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI78
+           LONGNAME	= '3F定子压板温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770077
+           PNT_ADD	= 77
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI79
+           LONGNAME	= '3F推力轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770078
+           PNT_ADD	= 78
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI80
+           LONGNAME	= '3F推力轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770079
+           PNT_ADD	= 79
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI81
+           LONGNAME	= '3F推力油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770080
+           PNT_ADD	= 80
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI82
+           LONGNAME	= '3F下导轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770081
+           PNT_ADD	= 81
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI83
+           LONGNAME	= '3F下导轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770082
+           PNT_ADD	= 82
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI84
+           LONGNAME	= '3F下导油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770083
+           PNT_ADD	= 83
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI85
+           LONGNAME	= '3F上导轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770084
+           PNT_ADD	= 84
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI86
+           LONGNAME	= '3F上导轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770085
+           PNT_ADD	= 85
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI87
+           LONGNAME	= '3F上导油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770086
+           PNT_ADD	= 86
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI88
+           LONGNAME	= '3F水导轴瓦温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770087
+           PNT_ADD	= 87
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI89
+           LONGNAME	= '3F水导轴瓦温度越高高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770088
+           PNT_ADD	= 88
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI90
+           LONGNAME	= '3F水导油槽温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770089
+           PNT_ADD	= 89
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI91
+           LONGNAME	= '3F空冷器冷风温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770090
+           PNT_ADD	= 90
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI92
+           LONGNAME	= '3F空冷器热风温度越高限'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770091
+           PNT_ADD	= 91
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI93
+           LONGNAME	= '3F发电态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770092
+           PNT_ADD	= 92
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI94
+           LONGNAME	= '3F空载态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770093
+           PNT_ADD	= 93
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI95
+           LONGNAME	= '3F空转态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770094
+           PNT_ADD	= 94
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI96
+           LONGNAME	= '3F停机态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770095
+           PNT_ADD	= 95
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI97
+           LONGNAME	= '3F开机准备态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770096
+           PNT_ADD	= 96
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI98
+           LONGNAME	= '3F开机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770097
+           PNT_ADD	= 97
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI99
+           LONGNAME	= '3F开机流程超时'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770098
+           PNT_ADD	= 98
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI100
+           LONGNAME	= '3F停机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770099
+           PNT_ADD	= 99
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI101
+           LONGNAME	= '3F停机流程超时'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770100
+           PNT_ADD	= 100
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI102
+           LONGNAME	= '3F事故停机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770101
+           PNT_ADD	= 101
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI103
+           LONGNAME	= '3F紧急停机流程启动'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770102
+           PNT_ADD	= 102
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI104
+           LONGNAME	= '3FLCUB柜交流220V进线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770103
+           PNT_ADD	= 103
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI105
+           LONGNAME	= '3FLCUB柜直流220V进线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770104
+           PNT_ADD	= 104
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI106
+           LONGNAME	= '3FLCUB柜UPS交流220V进线电源故障'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770105
+           PNT_ADD	= 105
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI107
+           LONGNAME	= '3F检修密封供气'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770106
+           PNT_ADD	= 106
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI108
+           LONGNAME	= '3F碳刷粉尘收集装置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770107
+           PNT_ADD	= 107
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI109
+           LONGNAME	= '3F机组密封水压力'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770108
+           PNT_ADD	= 108
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI110
+           LONGNAME	= '3F一次调频动作'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770109
+           PNT_ADD	= 109
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI111
+           LONGNAME	= '3F发电流程自动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770110
+           PNT_ADD	= 110
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI112
+           LONGNAME	= '3F发电流程手动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770111
+           PNT_ADD	= 111
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI113
+           LONGNAME	= '3F停机流程自动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770112
+           PNT_ADD	= 112
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI114
+           LONGNAME	= '3F停机流程手动状态'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770113
+           PNT_ADD	= 113
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI115
+           LONGNAME	= '3F制动器粉尘收集装置'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770114
+           PNT_ADD	= 114
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= DI116
+           LONGNAME	= '3F控制流程执行故障反馈'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770115
+           PNT_ADD	= 115
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D01
+           LONGNAME	= '3F紧急事故停机'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770116
+           PNT_ADD	= 116
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D02
+           LONGNAME	= '3F机组发电(停机到发电指令)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770117
+           PNT_ADD	= 117
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D03
+           LONGNAME	= '3F机组空载(停机到空载指令)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770118
+           PNT_ADD	= 118
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D04
+           LONGNAME	= '3F机组停机(发电到停机指令)'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770119
+           PNT_ADD	= 119
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D05
+           LONGNAME	= '合发电机出口隔离刀闸G31'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770120
+           PNT_ADD	= 120
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D06
+           LONGNAME	= '分发电机出口隔离刀闸G31'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770121
+           PNT_ADD	= 121
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D07
+           LONGNAME	= '合发电机出口开关DL3'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770122
+           PNT_ADD	= 122
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D08
+           LONGNAME	= '分发电机出口开关DL3'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770123
+           PNT_ADD	= 123
+           AOR_GRP	= GEN
+
+ENTRY      NAME	= D09
+           LONGNAME	= '3F控制流程执行故障复归'
+           PROCTYPE	= RELAY
+           MSG_DEF	= 0
+           CMD_MSG	= 0
+           ID	= 10770124
+           PNT_ADD	= 124
+           AOR_GRP	= GEN
+
+END

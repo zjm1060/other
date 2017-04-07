@@ -1,0 +1,135 @@
+.query_out_table
+{
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  border-left:1px #646c94 solid;
+  border-top:1px #646c94 solid;
+}
+.query_list_table
+{
+  font-size:9pt;
+  font-family:ËÎÌו;
+  background-color:white;
+  border:0px;
+}
+.query_list_meta_td
+{
+  font-size:10pt;
+  height:25px;
+  background-color:#b8c4f4;
+  border-right:1px #646c94 solid;
+  border-bottom:1px #646c94 solid;
+  border-left:1px while solid;
+  text-align:center;
+  vertical-align:middle;
+}
+.query_list_data_tr1
+{
+  height:18px;
+  background-color:#fef8dd;
+  cursor:hand;
+}
+.query_list_data_tr2
+{
+
+  height:18px;
+  background-color:white;
+  cursor:hand;
+}
+.query_list_data_td1
+{
+  height:18px;
+  padding-left:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+  border-bottom:1px #e4e4e4 solid;
+  word-wrap:break-word;
+  vertical-align:middle;
+}
+.query_list_data_td2
+{
+  height:18px;
+  padding-left:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+  border-bottom:1px #e4e4e4 solid;
+  word-wrap:break-word;
+  vertical-align:middle;
+}
+.query_list_checkbox
+{
+  height:14px;
+  width:14px;
+}
+.query_list_data_trSelected
+{
+  height:18px;
+  background-color:#fbf897;
+  cursor:hand;
+}
+.query_list_data_tdSelected
+{
+  height:18px;
+  padding-left:4px;
+	padding-top:2px;
+	padding-bottom:2px;
+  border-bottom:1px #e4e4e4 solid;
+  word-wrap:break-word;
+  vertical-align:middle;
+}
+.query_navigation
+{
+  font-size:10pt;
+  padding-top:4px;
+  padding-bottom:4px;
+  padding-left:4px;
+  padding-right:4px;
+  height:25px;
+  background-color:#b8c4f4;
+  vertical-align:middle;
+  color:#192C74;
+  text-decoration:none;
+}
+a.query_navi_a:link{color:#192C74;text-decoration:underline;}
+a.query_navi_a:vistited{color:#0000ff;text-decoration:none;}
+a.query_navi_a:active{color:ff0000;text-decoration:none;}
+a.query_navi_a:hover{color:#ff0000;text-decoration:underline;}
+
+.ListUtil_inputSpan{
+  width:100px;
+  text-align:center;
+}
+.ListUtil_input{
+  width:30px;
+  height:18px;
+  border:1px #859bb5 solid;
+}
+.ListUtil_btnOut{
+  width:27px;
+  height:18px;
+  border:1px #bc8815 solid;
+}
+.ListUtil_btnIn{
+  width:25px;
+  height:16px;
+  border-top:2px white solid;
+  border-right:2px #e3d65f solid;
+  border-bottom:2px #e3d65f solid;
+  border-left:2px white solid;
+  background-color:#faeb6d;
+  text-align:center;
+  cursor:hand;
+}
+
+.QueryResult
+{
+  font-size:10pt;
+  padding-top:4px;
+  padding-bottom:4px;
+  padding-left:4px;
+  padding-right:4px;
+  height:25px;
+  background-color:#b8c4f4;
+  vertical-align:middle;
+  color:#192C74;
+  text-decoration:none;

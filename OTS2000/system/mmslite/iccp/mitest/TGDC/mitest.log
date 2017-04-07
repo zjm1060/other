@@ -1,0 +1,2766 @@
+
+
+***********************************************************
+          LOGGING STARTED Thu Dec 12 18:42:30 2002
+***********************************************************
+
+00.000s SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+00.884s MEM_LOG_ERR (mem_chks.c 606) 
+  Attempting to calloc with num == 0
+
+00.887s MEM_LOG_DUMP (mem_chks.c 1185) 
+  DYNAMIC MEMORY POINTER TABLE 
+  -----------------------------  
+  Ptr 4001c500  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001c4b8  Size    24  File : ../../iccp/src/mi_icfg.c #1137
+  Ptr 4001c478  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001c438  Size    20  File : ../../iccp/src/mi_icfg.c #1135
+  Ptr 4001c3f8  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001c3b0  Size    22  File : ../../iccp/src/mi_icfg.c #1133
+  Ptr 4001c370  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001c330  Size    18  File : ../../iccp/src/mi_icfg.c #1131
+  Ptr 4001b780  Size    16  File : ../../iccp/src/mic.c #0116
+  Ptr 4001c288  Size   120  File : ../../iccp/src/mic.c #0105
+  Ptr 4001b748  Size     8  File : ../../iccp/src/mi_icfg.c #1120
+  Ptr 4001c1c0  Size   150  File : ../../iccp/src/mis.c #0545
+  Ptr 4001bb00  Size  1680  File : ../../iccp/src/mis.c #0536
+  Ptr 4001b6f0  Size    40  File : ../../iccp/src/mis.c #0532
+  Ptr 4001b6a8  Size    24  File : ../../iccp/src/mis.c #0524
+  Ptr 4001b670  Size     8  File : ../../iccp/src/mis.c #0519
+  Ptr 4001b5c0  Size   132  File : ../../iccp/src/mis.c #0513
+  Ptr 4001b588  Size     8  File : ../../iccp/src/mi_icfg.c #0636
+  Ptr 4001baa8  Size    44  File : mit_xmlc.c   #0363
+  Ptr 4001b9e0  Size   152  File : mit_xmlc.c   #0349
+  Ptr 4001b9a8  Size    12  File : ../../iccp/src/mi.c #0386
+  Ptr 4001af18  Size     4  File : ../../iccp/src/mi_icfg.c #0529
+  Ptr 4001aed8  Size    13  File : ../../iccp/src/mi_icfg.c #0527
+  Ptr 4001b7e8  Size   404  File : ../../iccp/src/mi.c #0301
+  Ptr 4001b428  Size   216  File : mit_xmlc.c   #0316
+  Ptr 4001b318  Size   228  File : mit_xmlc.c   #0306
+  Ptr 4001ae78  Size    52  File : mit_xmlc.c   #0293
+  Ptr 4000b3f8  Size     3  File : ../../iccp/src/mi_icfg.c #0451
+  Ptr 4001ada8  Size   164  File : ../../iccp/src/mi.c #0221
+  Ptr 4001afb0  Size    28  File : mit_xmlc.c   #0268
+  Ptr 4001af68  Size    28  File : mit_xmlc.c   #0268
+  Ptr 4001ad18  Size    96  File : ../../iccp/src/mis.c #0282
+  Ptr 4001acc8  Size    32  File : ../../iccp/src/mis.c #0281
+  Ptr 40012b18  Size    20  File : mit_xmlc.c   #0112
+  Total number of allocated pointers:   34
+  Total amount of memory allocated:     3830 bytes 
+  Maximum number of pointers allocated: 37
+  Maximum amount of memory allocated:   4954 bytes
+
+17160.006s TP4_LOG_ERR (tp4port.c 70) 
+  WARNING: stack not serviced for 17 seconds.
+  MAY CAUSE UNEXPECTED TIMEOUTS, DISCONNECTS, ABORTS.
+
+17160.006s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17160.006s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17160.008s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17170.064s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17170.105s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17170.197s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17179.773s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17179.775s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17179.781s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17189.824s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17189.824s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17189.826s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17199.863s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17199.863s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17199.865s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17209.895s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17209.895s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17209.896s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17219.934s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17219.934s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17219.936s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17229.973s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17229.975s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17229.977s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17240.004s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17240.004s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17240.006s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17250.033s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17250.033s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17250.035s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17260.064s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17260.064s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17260.066s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17270.094s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17270.094s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17270.096s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17280.135s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17280.135s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17280.137s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17290.164s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17290.164s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17290.166s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17392.895s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17392.928s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17393.014s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17403.062s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17403.070s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17403.070s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+17413.135s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Finish primitive
+  00000  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish primitive
+  00000  81 03 05 E1 00                                    *.....*
+  Finish primitive
+  00000  80 01 01                                          *...*
+  Finish level 1 constructor
+  Length = 24
+  00000  A4 16 80 01 01 81 03 05  E1 00 82 0C 03 6E 1C 00  *.............n..*
+  00010  00 00 00 00 00 00 01 10                           *........*
+  Finish primitive
+  00000  83 01 05                                          *...*
+  Finish primitive
+  00000  82 01 05                                          *...*
+  Finish primitive
+  00000  81 01 05                                          *...*
+  Finish primitive
+  00000  80 02 20 00                                       *.. .*
+  Finish level 0 constructor
+  Length = 39
+  00000  A8 25 80 02 20 00 81 01  05 82 01 05 83 01 05 A4  *.%.. ...........*
+  00010  16 80 01 01 81 03 05 E1  00 82 0C 03 6E 1C 00 00  *............n...*
+  00020  00 00 00 00 00 01 10                              *.......*
+
+17413.135s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Finish level 4 constructor
+  Length = 41
+  00000  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00010  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00020  00 00 00 00 00 00 00 01  10                       *.........*
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 3 constructor
+  Length = 46
+  00000  28 2C 02 01 03 A0 27 A8  25 80 02 20 00 81 01 05  *(,....'.%.. ....*
+  00010  82 01 05 83 01 05 A4 16  80 01 01 81 03 05 E1 00  *................*
+  00020  82 0C 03 6E 1C 00 00 00  00 00 00 00 01 10        *...n..........*
+  Finish level 2 constructor
+  Length = 48
+  00000  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00010  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00020  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A7 03 02 01 01                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 01                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A6 06 06 04 2B CE 0F 01                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  02 01 03                                          *...*
+  Finish level 2 constructor
+  Length = 5
+  00000  A3 03 02 01 03                                    *.....*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 04 2B CE 0F 03                                 *..+...*
+  Finish level 2 constructor
+  Length = 8
+  00000  A2 06 06 04 2B CE 0F 03                           *....+...*
+  Starting constructor @ level 2
+  Finish primitive
+  00000  06 05 28 CA 22 02 03                              *..(."..*
+  Finish level 2 constructor
+  Length = 9
+  00000  A1 07 06 05 28 CA 22 02  03                       *....(."..*
+  Finish primitive
+  00000  80 02 07 80                                       *....*
+  Finish level 1 constructor
+  Length = 89
+  00000  60 57 80 02 07 80 A1 07  06 05 28 CA 22 02 03 A2  *`W........(."...*
+  00010  06 06 04 2B CE 0F 03 A3  03 02 01 03 A6 06 06 04  *...+............*
+  00020  2B CE 0F 01 A7 03 02 01  01 BE 2E 28 2C 02 01 03  *+..........(,...*
+  00030  A0 27 A8 25 80 02 20 00  81 01 05 82 01 05 83 01  *.'.%.. .........*
+  00040  05 A4 16 80 01 01 81 03  05 E1 00 82 0C 03 6E 1C  *..............n.*
+  00050  00 00 00 00 00 00 00 01  10                       *.........*
+
+17413.137s ASN1_LOG_ENC (asn1r.c 758) 
+  Starting ASN.1 message construct
+  Starting constructor @ level 1
+  Starting constructor @ level 2
+  Starting constructor @ level 3
+  Starting constructor @ level 4
+  Starting constructor @ level 5
+  Finish level 5 constructor
+  Length = 91
+  00000  A0 59 60 57 80 02 07 80  A1 07 06 05 28 CA 22 02  *.Y`W........(.".*
+  00010  03 A2 06 06 04 2B CE 0F  03 A3 03 02 01 03 A6 06  *.....+..........*
+  00020  06 04 2B CE 0F 01 A7 03  02 01 01 BE 2E 28 2C 02  *..+..........(,.*
+  00030  01 03 A0 27 A8 25 80 02  20 00 81 01 05 82 01 05  *...'.%.. .......*
+  00040  83 01 05 A4 16 80 01 01  81 03 05 E1 00 82 0C 03  *................*
+  00050  6E 1C 00 00 00 00 00 00  00 01 10                 *n..........*
+  Finish primitive
+  00000  02 01 01                                          *...*
+  Finish level 4 constructor
+  Length = 96
+  00000  30 5E 02 01 01 A0 59 60  57 80 02 07 80 A1 07 06  *0^....Y`W.......*
+  00010  05 28 CA 22 02 03 A2 06  06 04 2B CE 0F 03 A3 03  *.(."......+.....*
+  00020  02 01 03 A6 06 06 04 2B  CE 0F 01 A7 03 02 01 01  *.......+........*
+  00030  BE 2E 28 2C 02 01 03 A0  27 A8 25 80 02 20 00 81  *..(,....'.%.. ..*
+  00040  01 05 82 01 05 83 01 05  A4 16 80 01 01 81 03 05  *................*
+  00050  E1 00 82 0C 03 6E 1C 00  00 00 00 00 00 00 01 10  *.....n..........*
+  Finish level 3 constructor
+  Length = 98
+  00000  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00010  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00020  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00030  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00040  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00050  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  00060  01 10                                             *..*
+  Starting constructor @ level 3
+  Finish level 3 constructor
+  Length = 37
+  00000  A4 23 30 0F 02 01 01 06  04 52 01 00 01 30 04 06  *.#0......R...0..*
+  00010  02 51 01 30 10 02 01 03  06 05 28 CA 22 02 01 30  *.Q.0......(."..0*
+  00020  04 06 02 51 01                                    *...Q.*
+  Finish level 2 constructor
+  Length = 154
+  00000  A2 81 97 81 04 00 00 00  01 82 04 00 00 00 03 A4  *................*
+  00010  23 30 0F 02 01 01 06 04  52 01 00 01 30 04 06 02  *#0......R...0...*
+  00020  51 01 30 10 02 01 03 06  05 28 CA 22 02 01 30 04  *Q.0......(."..0.*
+  00030  06 02 51 01 88 02 06 00  61 60 30 5E 02 01 01 A0  *..Q.....a`0^....*
+  00040  59 60 57 80 02 07 80 A1  07 06 05 28 CA 22 02 03  *Y`W........(."..*
+  00050  A2 06 06 04 2B CE 0F 03  A3 03 02 01 03 A6 06 06  *....+...........*
+  00060  04 2B CE 0F 01 A7 03 02  01 01 BE 2E 28 2C 02 01  *.+..........(,..*
+  00070  03 A0 27 A8 25 80 02 20  00 81 01 05 82 01 05 83  *..'.%.. ........*
+  00080  01 05 A4 16 80 01 01 81  03 05 E1 00 82 0C 03 6E  *...............n*
+  00090  1C 00 00 00 00 00 00 00  01 10                    *..........*
+  Finish level 1 constructor
+  Length = 162
+  00000  31 81 9F A0 03 80 01 01  A2 81 97 81 04 00 00 00  *1...............*
+  00010  01 82 04 00 00 00 03 A4  23 30 0F 02 01 01 06 04  *........#0......*
+  00020  52 01 00 01 30 04 06 02  51 01 30 10 02 01 03 06  *R...0...Q.0.....*
+  00030  05 28 CA 22 02 01 30 04  06 02 51 01 88 02 06 00  *.(."..0...Q.....*
+  00040  61 60 30 5E 02 01 01 A0  59 60 57 80 02 07 80 A1  *a`0^....Y`W.....*
+  00050  07 06 05 28 CA 22 02 03  A2 06 06 04 2B CE 0F 03  *...(."......+...*
+  00060  A3 03 02 01 03 A6 06 06  04 2B CE 0F 01 A7 03 02  *.........+......*
+  00070  01 01 BE 2E 28 2C 02 01  03 A0 27 A8 25 80 02 20  *....(,....'.%.. *
+  00080  00 81 01 05 82 01 05 83  01 05 A4 16 80 01 01 81  *................*
+  00090  03 05 E1 00 82 0C 03 6E  1C 00 00 00 00 00 00 00  *.......n........*
+  000A0  01 10                                             *..*
+
+21226.525s MEM_LOG_DUMP (mem_chks.c 1185) 
+  DYNAMIC MEMORY POINTER TABLE 
+  -----------------------------  
+  Ptr 40019f08  Size    20  File : ../../uca/leant/tp0_sock.c #0375
+  Ptr 4000b670  Size     1  File : mit_main.c   #0269
+  Ptr 40019d38  Size    40  File : miusrobj.c   #0370
+  Ptr 40019ce0  Size    40  File : miusrobj.c   #0353
+  Ptr 40019c88  Size    40  File : miusrobj.c   #0316
+  Ptr 40019c30  Size    40  File : miusrobj.c   #0299
+  Ptr 40019a60  Size   420  File : miusrobj.c   #0387
+  Ptr 4000b6d8  Size    44  File : miusrobj.c   #0238
+  Ptr 40014c88  Size   636  File : ../../mvl/src/acse/mvl_acse.c #0445
+  Ptr 40012c50  Size  8202  File : ../../mvl/src/acse/mvl_acse.c #0349
+  Ptr 40012b58  Size   200  File : ../../mvl/src/acse/mvl_acse.c #0388
+  Ptr 4000b638  Size    12  File : ../../uca/leant/osicfgx.c #1597
+  Ptr 4000b588  Size   128  File : ../../uca/leant/osicfgx.c #1570
+  Ptr 4000b6a8  Size     4  File : ../../uca/leant/osicfgx.c #1597
+  Ptr 4001aff8  Size   128  File : ../../uca/leant/osicfgx.c #1554
+  Ptr 4000b548  Size    20  File : mit_misc.c   #0281
+  Ptr 4001c500  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001c478  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001c3f8  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001c370  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 4001b780  Size    16  File : ../../iccp/src/mic.c #0116
+  Ptr 4001c288  Size   120  File : ../../iccp/src/mic.c #0105
+  Ptr 4001c1c0  Size   150  File : ../../iccp/src/mis.c #0545
+  Ptr 4001bb00  Size  1680  File : ../../iccp/src/mis.c #0536
+  Ptr 4001b6f0  Size    40  File : ../../iccp/src/mis.c #0532
+  Ptr 4001b6a8  Size    24  File : ../../iccp/src/mis.c #0524
+  Ptr 4001b670  Size     8  File : ../../iccp/src/mis.c #0519
+  Ptr 4001b5c0  Size   132  File : ../../iccp/src/mis.c #0513
+  Ptr 4001ada8  Size   164  File : ../../iccp/src/mi.c #0221
+  Ptr 4001ad18  Size    96  File : ../../iccp/src/mis.c #0282
+  Ptr 4001acc8  Size    32  File : ../../iccp/src/mis.c #0281
+  Ptr 40012b18  Size    20  File : mit_xmlc.c   #0112
+  Total number of allocated pointers:   32
+  Total amount of memory allocated:     12521 bytes 
+  Maximum number of pointers allocated: 59
+  Maximum amount of memory allocated:   33246 bytes

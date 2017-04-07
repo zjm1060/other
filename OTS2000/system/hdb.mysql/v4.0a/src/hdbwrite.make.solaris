@@ -1,0 +1,54 @@
+## -*- Makefile -*-
+##
+## User: ems
+## Time: 2006-7-5 15:07:30
+## Makefile created by Sun Studio.
+##
+## This file is generated automatically.
+##
+
+
+#### Compiler and tool definitions shared by all build targets #####
+CC = cc
+BASICOPTS = -g
+CFLAGS = $(BASICOPTS) -xCC
+
+
+# Define the target directories.
+TARGETDIR_hdbwrite.dxe=.
+
+
+all: hdbwrite.dxe
+
+## Target: hdbwrite.dxe
+CPPFLAGS_hdbwrite.dxe = \
+	-I/home/ems/database/mysql/include \
+	-I../inc
+OBJS_hdbwrite.dxe =  \
+	$(TARGETDIR_hdbwrite.dxe)/hdbwrite.o
+SYSLIBS_hdbwrite.dxe =   -L/home/ems/database/mysql/lib/ -lmysql -lm -lsocket -lnsl -lthread -lpthread -lintl 
+USERLIBS_hdbwrite.dxe = ../../../lan/v4.0a/lib/lan.lib ../../../dps/v4.0a/lib/ipclib.lib ../../../dms/v4.0a/lib/dblib.lib  ../lib/hdb.lib 
+DEPLIBS_hdbwrite.dxe = ../../../dps/v4.0a/lib/ipclib.lib  ../../../dms/v4.0a/lib/dblib.lib  
+LDLIBS_hdbwrite.dxe = $(USERLIBS_hdbwrite.dxe)
+
+
+# Link or archive
+$(TARGETDIR_hdbwrite.dxe)/hdbwrite.dxe: $(TARGETDIR_hdbwrite.dxe) $(OBJS_hdbwrite.dxe) $(DEPLIBS_hdbwrite.dxe)
+	$(LINK.c) $(CFLAGS_hdbwrite.dxe) $(CPPFLAGS_hdbwrite.dxe) -o $@ $(OBJS_hdbwrite.dxe) $(LDLIBS_hdbwrite.dxe)   $(SYSLIBS_hdbwrite.dxe)
+
+
+# Compile source files into .o files
+$(TARGETDIR_hdbwrite.dxe)/hdbwrite.o: $(TARGETDIR_hdbwrite.dxe) hdbwrite.c
+	$(COMPILE.c) $(CFLAGS_hdbwrite.dxe) $(CPPFLAGS_hdbwrite.dxe) -o $@ hdbwrite.c
+
+
+
+#### Clean target deletes all generated files ####
+clean:
+	rm -f \
+		$(TARGETDIR_hdbwrite.dxe)/hdbwrite.dxe \
+		$(TARGETDIR_hdbwrite.dxe)/hdbwrite.o \
+# Enable dependency checking
+.KEEP_STATE:
+.KEEP_STATE_FILE:.make.state.Sun-sparc-Solaris
+

@@ -1,0 +1,84 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+	<file>images/manager.png</file>
+	<file>images/server.png</file>
+	<file>images/multiserver.png</file>
+	<file>images/serverquit.png</file>
+	<file>images/workgroup.png</file>
+	<file>images/realtime.png</file>
+	<file>images/network.png</file>
+	<file>images/sync.png</file>
+	<file>images/database.png</file>
+	<file>images/system.png</file>
+	<file>images/resource.png</file>
+	<file>images/process.png</file>
+	<file>images/link.png</file>
+	<file>images/unlink.png</file>
+	<file>images/workgroup_small.png</file>
+	<file>images/checkmark.png</file>
+	<file>images/save.png</file>
+	<file>images/folder.png</file>
+	
+	<file>images/aix.png</file>
+	<file>images/windowsxp.png</file>
+	<file>images/windows7.png</file>
+	<file>images/solaris.png</file>
+	
+	<file>images/networkadapter.png</file>
+	<file>images/up.png</file>
+	<file>images/down.png</file>
+	<file>images/contract.png</file>
+	<file>images/expand.png</file>
+	<file>images/stepto.png</file>
+	<file>images/stepup.png</file>
+	<file>images/error.png</file>
+	
+	<file>images/error1.png</file>
+	<file>images/tick.png</file>
+	<file>images/warning.png</file>
+	<file>images/unknown.png</file>
+	<file>images/information.png</file>
+	<file>images/download.png</file>
+	<file>images/upload.png</file>
+	<file>images/godown.png</file>
+	<file>images/goup.png</file>
+	<file>images/waiting.png</file>
+	
+	<file>images/refresh.png</file>
+	<file>images/home.png</file>
+	<file>images/menudownload.png</file>
+	<file>images/menuupload.png</file>
+	<file>images/delete.png</file>
+	<file>images/newdirectory.png</file>
+	<file>images/retransmit.png</file>
+	
+	<file>images/config.png</file>
+	<file>images/picture.png</file>
+	<file>images/lock.png</file>
+	<file>images/dbfile.png</file>
+	<file>images/calc.png</file>
+	<file>images/voice.png</file>
+	<file>images/filesystem.png</file>
+	
+	<file>images/cdromlarge.png</file>
+	<file>images/cdromsmall.png</file>
+	<file>images/disk.png</file>
+	<file>images/memory.png</file>
+	<file>images/ddr.png</file>
+	
+	<file>images/intel.png</file>
+	<file>images/amd.png</file>
+	<file>images/processor.png</file>
+	<file>images/cpu.png</file>
+	
+	<file>images/route.png</file>
+	<file>images/route_quit.png</file>
+	<file>images/switch.png</file>
+	<file>images/switch_quit.png</file>
+	<file>images/host.png</file>
+	<file>images/host_quit.png</file>
+	
+	<file>images/connect.png</file>
+	<file>images/disconnect.png</file>
+</qresource>
+</RCC>

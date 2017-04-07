@@ -1,0 +1,54 @@
+## -*- Makefile -*-
+##
+## Project: /home/ems/system/web/v4.0a/src/webscan.prd
+## User: ems
+## Time: 06/04/21 15:13:51
+## Makefile created by Sun WorkShop.
+##
+## This file is generated automatically -- DO NOT EDIT.
+##
+
+
+
+project: /home/ems/system/web/v4.0a/src/webscan.dxe 
+
+##### Compilers and tools definitions shared by all build objects #####
+#CC=/opt/SUNWspro/bin/../WS6U1/bin/cc
+CC=cc
+CFLAGS=-g -xCC 
+
+
+###### Target: /home/ems/system/web/v4.0a/src/webscan.dxe ######
+TARGETDIR_WEBSCAN.DXE=/home/ems/system/web/v4.0a/src
+CPPFLAGS_WEBSCAN.DXE += \
+	-I/usr/openwin/include \
+	-I/usr/dt/include 
+OBJS_WEBSCAN.DXE = \
+	$(TARGETDIR_WEBSCAN.DXE)/webscan.o \
+	/home/ems/system/dms/v4.0a/lib/dblib.lib \
+	/home/ems/system/dps/v4.0a/lib/ipclib.lib \
+	/home/ems/system/lan/v4.0a/lib/lan.lib 
+
+
+# Link or archive
+/home/ems/system/web/v4.0a/src/webscan.dxe: $(OBJS_WEBSCAN.DXE) 
+	$(LINK.c)  $(CFLAGS_WEBSCAN.DXE) $(CPPFLAGS_WEBSCAN.DXE) -o /home/ems/system/web/v4.0a/src/webscan.dxe $(OBJS_WEBSCAN.DXE) \
+	/home/ems/system/dms/v4.0a/lib/dblib.lib \
+	/home/ems/system/dps/v4.0a/lib/ipclib.lib -lm -lsocket -lnsl 
+## .a's were added twice to link line to make sure they are found in a link.
+
+
+# Compile source files into .o's
+$(TARGETDIR_IEC104_COM.DXE)/webscan.o: /home/ems/system/web/v4.0a/src/webscan.c
+	$(COMPILE.c) $(CFLAGS_WEBSCAN.DXE) $(CPPFLAGS_WEBSCAN.DXE) -o $(TARGETDIR_WEBSCAN.DXE)/webscan.o /home/ems/system/iec/v4.0a/src/iec104_app_fun.c
+
+
+###### clean target: deletes generated files ######
+clean:
+	$(RM) \
+	/home/ems/system/web/v4.0a/src/webscan.dxe \
+	$(TARGETDIR_WEBSCAN.DXE)/webscan.o \
+
+# Enable dependency checking
+.KEEP_STATE:
+.KEEP_STATE_FILE: /home/ems/system/web/v4.0a/src/.make.state.Makefile.ems.webscan

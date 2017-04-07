@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
+<!--Generated with glade3 3.4.3 on Thu Dec 16 09:54:26 2010 -->
+<glade-interface>
+  <widget class="GtkDialog" id="namaseldialog">
+    <property name="width_request">560</property>
+    <property name="height_request">380</property>
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">手动报警人员选择</property>
+    <property name="resizable">False</property>
+    <property name="window_position">GTK_WIN_POS_CENTER_ON_PARENT</property>
+    <property name="icon">App.ico</property>
+    <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
+    <property name="has_separator">False</property>
+    <child internal-child="vbox">
+      <widget class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="spacing">2</property>
+        <child>
+          <widget class="GtkLayout" id="mainlayout">
+            <property name="visible">True</property>
+            <child>
+              <widget class="GtkScrolledWindow" id="treeviewscrol">
+                <property name="width_request">511</property>
+                <property name="height_request">285</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+                <property name="shadow_type">GTK_SHADOW_IN</property>
+                <child>
+                  <widget class="GtkTreeView" id="treeview">
+                    <property name="width_request">100</property>
+                    <property name="height_request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="headers_visible">False</property>
+                    <property name="headers_clickable">True</property>
+                    <property name="enable_tree_lines">True</property>
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="x">20</property>
+                <property name="y">37</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="GtkCheckButton" id="celectck">
+                <property name="width_request">100</property>
+                <property name="height_request">31</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="label" translatable="yes">全选</property>
+                <property name="response_id">0</property>
+                <property name="draw_indicator">True</property>
+              </widget>
+              <packing>
+                <property name="x">28</property>
+                <property name="y">5</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child internal-child="action_area">
+          <widget class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="homogeneous">True</property>
+            <property name="layout_style">GTK_BUTTONBOX_CENTER</property>
+            <child>
+              <widget class="GtkButton" id="okbt">
+                <property name="width_request">87</property>
+                <property name="height_request">31</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="label" translatable="yes">确认</property>
+                <property name="response_id">0</property>
+              </widget>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <widget class="GtkButton" id="closebt">
+                <property name="width_request">87</property>
+                <property name="height_request">31</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="label" translatable="yes">取消</property>
+                <property name="response_id">0</property>
+              </widget>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">GTK_PACK_END</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>

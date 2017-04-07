@@ -1,0 +1,1461 @@
+!******************************************************************
+!	file:	瀑布沟厂用电常见故障处理
+!******************************************************************
+
+!******************************************************************
+!	瀑布沟地面厂房直流进线开关3057跳闸处理
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.GY3_GY3057_DI11_TZ
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU10.POL.GY3_GY3057_DI11  ?  OPEN
+			&	PBG.LCU10.SYS.S_BHSZL3057_GZ   ?  CLOSE	
+			&	PBG.LCU10.SYS.S_BHSZL1_1QF     ?  CLOSE
+			&	PBG.LCU10.SYS.S_BHSZL1_2QF     ?  CLOSE
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH1QF
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH2QF
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJDYMK_DI00  
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJMXDY_DI04  
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH1QF
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH2QF
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJDYMK_DI00
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+EQUATION:	=      PBG.LCU10.POL.GY3_GY3071_DI11	? CLOSE
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJMXDY_DI04
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.SYS.S_BHSZL3057_GZ 
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+	
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟地面厂房直流进线开关3071跳闸处理
+!******************************************************************
+SEQUENCE:	PBG.LCU10.POL.GY3_GY3071_DI11_TZ
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU10.POL.GY3_GY3071_DI11  ?  OPEN
+			&	PBG.LCU10.SYS.S_BHSZL3071_GZ   ?  CLOSE	
+			&	PBG.LCU10.SYS.S_BHSZL1_1QF     ?  CLOSE
+			&	PBG.LCU10.SYS.S_BHSZL1_2QF     ?  CLOSE
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH1QF
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH2QF
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJDYMK_DI00  
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJMXDY_DI04  
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH1QF
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		1
+
+STEP:		PBG.LCU10.SYS.S_BHSZL1_QH2QF
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:		0
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJDYMK_DI00
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+EQUATION:	=      PBG.LCU10.POL.GY3_GY3057_DI11	? CLOSE
+
+
+STEP:		PBG.LCU10.POL.MDCP1_CDJMXDY_DI04
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+STEP:		PBG.LCU10.SYS.S_BHSZL3071_GZ
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+	
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	瀑布沟地面厂房直流负荷101Z接地故障
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL101_JD_GZ
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU10.SYS.S_BHSZL101_JD    ?  CLOSE
+			&	PBG.LCU10.SYS.S_BHSZL7_101Z    ?  CLOSE	
+
+STEP:		PBG.LCU10.POL.MDKDP1_IMD_DI01
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+			
+STEP:		PBG.LCU10.ANA.S_DMZL_ZLGZ
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 101
+
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_1JY2
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_1JY1
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 220
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_1JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 210
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_1JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 200
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_1JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟地面厂房直流负荷101Z接地故障处理
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL101_JD_FG
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU10.SYS.S_BHSZL101_JD    ?  CLOSE
+			&	PBG.LCU10.SYS.S_BHSZL7_101Z    ?  OPEN	
+
+STOP_SEQUENCE:	PBG.LCU10.SYS.S_BHSZL101_JD_GZ
+
+STEP:		PBG.LCU10.POL.MDKDP1_IMD_DI01
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL101_JD
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.LCU10.ANA.S_DMZL_ZLGZ
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_1JY2
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 230
+
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_1JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 230
+
+END_SEQUENCE:
+
+!******************************************************************
+!	瀑布沟地面厂房直流负荷246Z接地故障
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL246_JD_GZ
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU10.SYS.S_BHSZL246_JD    ?  CLOSE
+			&	PBG.LCU10.SYS.S_BHSZL8_246Z    ?  CLOSE	
+
+STEP:		PBG.LCU10.POL.MDKDP2_IMD_DI01  
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1
+
+			
+STEP:		PBG.LCU10.ANA.S_DMZL_ZLGZ
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 246
+
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_2JY2
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_2JY1
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 220
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_2JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 210
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_2JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 200
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_2JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	瀑布沟地面厂房直流负荷246Z接地故障处理
+!******************************************************************
+SEQUENCE:	PBG.LCU10.SYS.S_BHSZL246_JD_FG
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.LCU10.SYS.S_BHSZL246_JD    ?  CLOSE
+			&	PBG.LCU10.SYS.S_BHSZL8_246Z    ?  OPEN	
+
+STOP_SEQUENCE:	PBG.LCU10.SYS.S_BHSZL246_JD_GZ
+
+STEP:		PBG.LCU10.POL.MDKDP2_IMD_DI01 
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.LCU10.SYS.S_BHSZL246_JD
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		0
+
+
+STEP:		PBG.LCU10.ANA.S_DMZL_ZLGZ
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_2JY2
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 230
+
+
+STEP:		PBG.LCU10.ANA.UC_ZLP_2JY1
+DELAY:		10
+TYPE:		CALC
+EQUATION:	=C 230
+
+END_SEQUENCE:
+
+
+
+!*****************************************************************************
+!	SEQUENCE_NAME:	瀑布沟10kV I段母线接地故障现象
+!*****************************************************************************
+SEQUENCE:	PBG.LCU8.INT.I_MXGZ
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU8.SYS.S_10kVⅠ1111_AJD   ? CLOSE
+			&	PBG.LCU8.INT.CY_DL1111_SOE11	? CLOSE
+
+
+STEP:		PBG.LCU8.INT.CY_1M_SOE01
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.LCU8.ANA.S_10KV_ZLGZ
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 1111
+
+
+GO_MODEL:	PBG.LCU8.ANA.BY_050
+SPEED:		2
+
+GO_MODEL:	PBG.LCU8.ANA.BY_051
+SPEED:		2
+
+GO_MODEL:	PBG.LCU8.ANA.BY_052
+SPEED:		2
+
+GO_MODEL:	PBG.LCU8.ANA.UC10kV_Ⅰ-10
+SPEED:		2
+
+GO_MODEL:	PBG.LCU8.ANA.UC10kV_Ⅰ-11
+SPEED:		2
+
+GO_MODEL:	PBG.LCU8.ANA.UC10kV_Ⅰ-12
+SPEED:		2
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!SEQUENCE_NAME:	瀑布沟10kV I段母线接地故障处理（非ID型）（待同步）
+!******************************************************************
+SEQUENCE:	PBG.LCU8.INT.I_MXGZFG
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR: 		
+	EQUATION:	=	PBG.LCU8.SYS.S_10kVⅠ1111_AJD   ? CLOSE
+			&	PBG.LCU8.INT.CY_DL1111_SOE11  ?   OPEN
+
+
+STEP:		PBG.LCU8.INT.CY_1M_SOE01
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU8.SYS.S_10kVⅠ1111_AJD
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU8.ANA.S_10KV_ZLGZ
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STOP_MODEL:	PBG.LCU8.ANA.BY_050
+SPEED:		2
+
+STOP_MODEL:	PBG.LCU8.ANA.BY_051
+SPEED:		2
+
+STOP_MODEL:	PBG.LCU8.ANA.BY_052
+SPEED:		2
+
+STOP_MODEL:	PBG.LCU8.ANA.UC10kV_Ⅰ-10
+SPEED:		2
+
+STOP_MODEL:	PBG.LCU8.ANA.UC10kV_Ⅰ-11
+SPEED:		2
+
+STOP_MODEL:	PBG.LCU8.ANA.UC10kV_Ⅰ-12
+SPEED:		2
+
+STEP:		PBG.LCU8.ANA.BY_050
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 5.9
+
+STEP:		PBG.LCU8.ANA.BY_051
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 5.9
+
+STEP:		PBG.LCU8.ANA.BY_052
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 5.9
+
+STEP:		PBG.LCU8.ANA.UC10kV_Ⅰ-10
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU8.ANA.UC10kV_Ⅰ-11
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.LCU8.ANA.UC10kV_Ⅰ-12
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+
+
+
+!*****************************************************************************
+!	SEQUENCE_NAME:	瀑布沟渗漏集水井水位过高处理
+!
+!*****************************************************************************
+
+
+
+!******************************************************************
+!    渗漏集水井水位异常1:水位升至7米，启动1号泵,水位继续上升
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.SWYCSS1_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 8.98
+			&	PBG.LCU7.ANA.FK_80		<= 10.98
+
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_294  ? CLOSE
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_80
+SPEED:		1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    渗漏集水井水位异常1，水位至11米，启动2号泵,停止上升模型,水位下降
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.SWYCSS3_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 10.98
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_80
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+GO_MODEL:	PBG.LCU7.ANA.FK_80-0
+SPEED:		4
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!    渗漏集水井水位异常1，,水位下降至3米，停止
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.SWYCTZ_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		<= 2.98
+			&	PBG.LCU7.POL.FKDI_301		?  CLOSE
+
+
+STEP:		PBG.LCU7.SYS.S_6KVSLJ_SWYC1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_80-0
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_80
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!    渗漏集水井水位异常2:水位上升至9米，启1号泵，水位继续上升
+!******************************************************************
+SEQUENCE:	PBG.LCU7.POL.SWYCSS1_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 8.98
+			&	PBG.LCU7.ANA.FK_80		<= 10.98
+
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_294  ? CLOSE
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_80
+SPEED:		1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    渗漏集水井水位异常2:水位至11米，启动2号泵，水位继续上升，（20分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.SWYCSS3_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 10.98
+			&	PBG.LCU7.ANA.FK_80		<= 12.98
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!    渗漏集水井水位异常2，水位至13米，启动3号泵,停止上升模型，水位下降
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.SWYCSS4_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_301		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 12.98
+			
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_80
+
+
+STEP:		PBG.LCU7.POL.FKDI_302
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_80-0
+SPEED:		4
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!    渗漏集水井水位异常2，,水位下降至3米，停止
+!******************************************************************
+SEQUENCE:	PBG.LCU7.POL.SWYCTZ_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		<= 2.98
+			&	PBG.LCU7.POL.FKDI_301		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_302		?  CLOSE
+
+
+STEP:		PBG.LCU7.SYS.S_6KVSLJ_SWYC2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU7.POL.FKDI_302
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_80-0
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_80
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!    渗漏集水井水位异常3:水位上升至9米，启1号泵，水位继续上升
+!******************************************************************
+SEQUENCE:	PBG.LCU7.POL.SWYCSS1_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 8.98
+
+
+STEP:		PBG.LCU7.POL.FKDI_300
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:		1	
+EQUATION:	=	PBG.LCU7.POL.FKDI_294  ? CLOSE
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_80
+SPEED:		1
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!    渗漏集水井水位异常3:水位至11米，启动2号泵，水位继续上升，（20分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.SWYCSS3_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 10.98
+
+
+STEP:		PBG.LCU7.POL.FKDI_301
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!    渗漏集水井水位异常3，水位至13米，,水位继续上升,启动3号泵
+!******************************************************************
+SEQUENCE:	PBG.LCU7.POL.SWYCSS4_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_301		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 12.98
+
+		
+
+STEP:		PBG.LCU7.POL.FKDI_302
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    渗漏集水井水位异常3，水位达到14米，水位过高报警
+!******************************************************************
+SEQUENCE:	PBG.LCU7.POL.SWYCSS5_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVSLJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_300		?  CLOSE
+			&	PBG.LCU7.ANA.FK_80		>= 14
+			&	PBG.LCU7.POL.FKDI_301		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_302		?  CLOSE
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_80
+
+STEP:		PBG.LCU7.POL.FKDI_312
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!    检修井水位异常1:水位上升(10分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  OPEN
+			&	PBG.LCU7.POL.FKDI_399		?  OPEN
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		2
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		2
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    渗检修井水位异常1:水位升至7米，启动1号检修泵。
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS1_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 6.98
+			&	PBG.LCU7.ANA.FK_121		>= 6.98
+
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		2
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		2
+
+
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!    渗检修井水位异常1，启动1号泵，水位继续上升，（20分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS2_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 6.98
+			&	PBG.LCU7.ANA.FK_121		>= 6.98
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		1
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    渗检修井水位异常1，水位至9米，,水位继续上升,启动2号泵
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS3_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 8.98
+			&	PBG.LCU7.ANA.FK_121		>= 8.98
+			
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		1
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		1
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    渗检修井水位异常1:启动2号泵,水位下降
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCXJ_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_399		?  CLOSE
+
+			
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120-0
+SPEED:		1
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121-1
+SPEED:		1
+
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    渗检修井水位异常1:水位下降到4米，水位停止。异常复归
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCTZ_1
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC1	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_399		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		<= 3.98
+			&	PBG.LCU7.ANA.FK_121		<= 3.98
+			
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120-0
+SPEED:		1
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121-1
+SPEED:		1
+
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU7.SYS.S_6KVJXJ_SWYC1
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!    检修集水井水位异常2:水位上升(10分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  OPEN
+			&	PBG.LCU7.POL.FKDI_399		?  OPEN
+			&	PBG.LCU7.POL.FKDI_400		?  OPEN
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		2
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		2
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    检修集水井水位异常2:水位升至7米，启动1号检修泵。
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS1_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 6.98
+			&	PBG.LCU7.ANA.FK_121		>= 6.98
+
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		2
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		2
+
+
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!    检修集水井水位异常2，启动1号泵，水位继续上升，（20分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS2_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 6.98
+			&	PBG.LCU7.ANA.FK_121		>= 6.98
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		1
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!    检修集水井水位异常2:水位至9米，启动2号泵，水位继续上升，（20分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS3_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 8.98
+			&	PBG.LCU7.ANA.FK_121		>= 8.98
+
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!    检修集水井水位异常2，水位至11米，启动3号泵,停止上升模型
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS4_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_399		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 10.98
+			&	PBG.LCU7.ANA.FK_121		>= 10.98
+			
+
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		1
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		1
+
+
+STEP:		PBG.LCU7.POL.FKDI_400
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    检修集水井水位异常2，启动3号泵,水位下降
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCXJ_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 10.98
+			&	PBG.LCU7.ANA.FK_121		>= 10.98
+			&	PBG.LCU7.POL.FKDI_399		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_400		?  CLOSE
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120-0
+SPEED:		4
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121-1
+SPEED:		4
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!    检修集水井水位异常2，,水位下降至4米，停止
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCTZ_2
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC2	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		<= 3.98
+			&	PBG.LCU7.ANA.FK_121		<= 3.98
+			&	PBG.LCU7.POL.FKDI_399		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_400		?  CLOSE
+
+
+STEP:		PBG.LCU7.SYS.S_6KVJXJ_SWYC2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU7.POL.FKDI_400
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120-0
+SPEED:		4
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121-1
+SPEED:		4
+
+
+
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+!******************************************************************
+!    检修集水井水位异常3:水位上升(10分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  OPEN
+			&	PBG.LCU7.POL.FKDI_399		?  OPEN
+			&	PBG.LCU7.POL.FKDI_400		?  OPEN
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		2
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		2
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    检修集水井水位异常3:水位升至7米，启动1号检修泵。
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS1_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 6.98
+			&	PBG.LCU7.ANA.FK_121		>= 6.98
+
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		2
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		2
+
+
+STEP:		PBG.LCU7.POL.FKDI_398
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!    检修集水井水位异常3，启动1号泵，水位继续上升，（20分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS2_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 6.98
+			&	PBG.LCU7.ANA.FK_121		>= 6.98
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		1
+
+
+GO_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		1
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!    检修集水井水位异常3:水位至9米，启动2号泵，水位继续上升，（20分钟1米）
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS3_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 8.98
+			&	PBG.LCU7.ANA.FK_121		>= 8.98
+
+
+
+STEP:		PBG.LCU7.POL.FKDI_399
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!    检修集水井水位异常3，水位至11米，,水位继续上升,启动3好泵
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS4_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_399		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 10.98
+			&	PBG.LCU7.ANA.FK_121		>= 10.98
+			
+
+
+STEP:		PBG.LCU7.POL.FKDI_400
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!    检修集水井水位异常3，水位达到12米，水位过高报警
+!******************************************************************
+
+SEQUENCE:	PBG.LCU7.POL.JXSWYCSS5_3
+SEQ_TYPE: 	LOGICAL
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 		
+	EQUATION:	=	PBG.LCU7.SYS.S_6KVJXJ_SWYC3	?  CLOSE
+			&	PBG.LCU7.POL.FKDI_398		?  CLOSE
+			&	PBG.LCU7.ANA.FK_120		>= 12
+			&	PBG.LCU7.ANA.FK_121		>= 12
+			&	PBG.LCU7.POL.FKDI_399		?  CLOSE
+			&	PBG.LCU7.POL.FKDI_400		?  CLOSE
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_120
+SPEED:		1
+
+
+STOP_MODEL:	PBG.LCU7.ANA.FK_121
+SPEED:		1
+
+
+STEP:		PBG.LCU7.POL.FKDI_414
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+
+

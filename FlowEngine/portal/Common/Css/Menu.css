@@ -1,0 +1,134 @@
+A
+{
+    FONT-SIZE: 9pt;
+    COLOR: #339933;
+    TEXT-DECORATION: none
+}
+A:link
+{
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    TEXT-DECORATION: none
+}
+A.normal
+{
+    FONT-SIZE: 9pt;
+    COLOR: #bb0011;
+    TEXT-DECORATION: none
+}
+A.normal:hover
+{
+    COLOR: #0000ff;
+    TEXT-DECORATION: none
+}
+BODY
+{
+    FONT-SIZE: 9pt
+}
+BR
+{
+    FONT-SIZE: 9pt
+}
+TD
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 11pt
+}
+SELECT
+{
+    FONT-SIZE: 9pt;
+    BACKGROUND-COLOR: #eeeeee;
+    TEXT-ALIGN: center
+}
+SELECT.smallselsect
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000080
+}
+TH
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11pt
+}
+.input
+{
+    BORDER-RIGHT: #000000 2px dotted;
+    BORDER-TOP: #000000 2px dotted;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #000000 2px dotted;
+    BORDER-BOTTOM: #000000 2px dotted;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: center
+}
+INPUT.smallinput
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000080;
+    HEIGHT: 12pt
+}
+.comm
+{
+    BACKGROUND-COLOR: #fff2ac
+}
+FONT.bigfont
+{
+    FONT-SIZE: 11pt;
+    FONT-FAMILY: "ËÎÌו";
+    TEXT-DECORATION: none
+}
+TEXTAREA.smallarea
+{
+    FONT-SIZE: 9pt;
+    COLOR: #000080;
+    BACKGROUND-COLOR: white
+}
+.shadow
+{
+    FONT-SIZE: 9pt;
+    FILTER: dropshadow(color="#000011", offx=1, offy=1, positive=2);
+    MARGIN: 10px;
+    WIDTH: 100%;
+    COLOR: #aaaaaa;
+    POSITION: relative
+}
+.3d
+{
+    FONT-SIZE: 9pt;
+    FILTER: glow(color=ffffff,strength=1) shadow(color=#aaaaaa,direction:90);
+    MARGIN: 0px;
+    WIDTH: 100%;
+    COLOR: #3333ff;
+    POSITION: relative
+}
+.menuitems
+{
+    PADDING-RIGHT: 15px;
+    PADDING-LEFT: 5px;
+    FONT-SIZE: 9pt;
+    CURSOR: nw-resize;
+    COLOR: black;
+    FONT-FAMILY: "ËÎÌו"
+}
+.skin
+{
+    BORDER-RIGHT: buttonhighlight 2px outset;
+    BORDER-TOP: buttonhighlight 2px outset;
+    FONT-SIZE: 10pt;
+    VISIBILITY: hidden;
+    BORDER-LEFT: buttonhighlight 2px outset;
+    WIDTH: 120px;
+    CURSOR: default;
+    LINE-HEIGHT: 20px;
+    BORDER-BOTTOM: buttonhighlight 2px outset;
+    FONT-FAMILY: "ËÎÌו";
+    POSITION: absolute;
+    BACKGROUND-COLOR: menu;
+    TEXT-ALIGN: left
+}
+A:hover
+{
+    COLOR: #ff0000;
+    TEXT-DECORATION: none
+}

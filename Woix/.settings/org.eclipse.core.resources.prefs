@@ -1,0 +1,10 @@
+#Wed Apr 16 09:37:22 CST 2014
+eclipse.preferences.version=1
+encoding//src/com/bitc/woix/client/GetPointResultByXML.java=UTF-8
+encoding//src/com/bitc/woix/client/GetPointResultByXMLResponse.java=UTF-8
+encoding//src/com/bitc/woix/client/LoadSvg.java=UTF-8
+encoding//src/com/bitc/woix/client/LoadSvgResponse.java=UTF-8
+encoding//src/com/bitc/woix/client/WoixService.java=UTF-8
+encoding//src/com/bitc/woix/client/WoixServiceLocator.java=UTF-8
+encoding//src/com/bitc/woix/client/WoixServiceSoap.java=UTF-8
+encoding//src/com/bitc/woix/client/WoixServiceSoapStub.java=UTF-8

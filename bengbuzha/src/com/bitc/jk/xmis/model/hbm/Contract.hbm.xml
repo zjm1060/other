@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model">
+	<class name="ContractObj" table="con_合同">
+		<id column="合同ID" name="contractID">
+			<generator class="assigned"/>
+		</id>
+		<property column="合同编号" name="contractNo" type="string" />
+		<property column="合同名称" name="contractName" type="string" />
+		<property column="简称" name="abbreviation" type="string"/>
+		<property column="合同类型ID" name="contractTypeID" type="integer"/>
+		<property column="合同总额" name="contractAmt" type="double"/>
+		
+		<many-to-one name="currency" column="货币ID" class="com.bitc.jk.xmis.model.sys.Currency" lazy="false" fetch="join"></many-to-one>
+		<bag name="paymentList"  batch-size="8">
+			<key column="合同ID"></key>
+			<one-to-many class="PaymentDetailObj"></one-to-many>			
+		</bag>
+		<bag name="invoiceList"  batch-size="8">
+			<key column="发票号"></key>
+			<one-to-many class="InvoiceObj"></one-to-many>			
+		</bag>	
+		<many-to-one class="com.bitc.jk.xmis.model.ProjectObj"
+			column="项目ID" fetch="join" name="projectID" />	
+	</class>
+	<class name="CorrespondContractObj" table="con_收入支出合同对应表">
+		<id column="收入合同ID" name="revenueContractID" >
+		<generator class="assigned"/>
+		</id>
+		
+		<property column="对应ID" name="correspondID" type="integer"/>
+		<property column="金额" name="money" type="string"/>
+		<property column="备注" name="remark" type="string"/>
+		<property column="支出子合同ID" name="outlaysonContractID" type="integer"/>
+		<property column="最后修改日期" name="lastModified"  type="date"/>
+		<many-to-one class="SimpleEmployee" column="最后修改人ID"
+			fetch="join" name="lastModifier" />
+			
+		<many-to-one class="ContractObj"
+			column="支出合同ID" fetch="join" name="outlayContractID" />	
+	</class>
+	
+	
+	<class name="PaymentDetailObj" table="con_收款明细表">
+		<composite-id>
+			<key-property name="contractID" column="合同ID"/>
+			<key-property name="paymentID" column="收款ID"/>
+		</composite-id>
+		<property column="收款金额" name="paymentAmt" type="double"/>
+		<property column="收款日期" name="paymentDate" type="date"/>
+		<property column="备注" name="remark" type="string"/>
+	</class>
+	<class name="InvoiceObj" table="con_发票开具表">
+		<composite-id>
+			<key-property name="contractID" column="合同ID"/>
+			<key-property name="invoiceID" column="发票号"/>
+		</composite-id>
+		<property column="发票金额" name="invoiceAMT" type="double"/>
+		<property column="开具日期" name="invoiceDate" type="date"/>
+		<property column="备注" name="invoiecRemark" type="string"/>
+	</class>
+	<sql-query name="updateContractProjectID">
+		<![CDATA[update con_合同  set 项目ID=? where 合同ID=? or 父合同ID=?]]>
+	</sql-query>
+</hibernate-mapping>

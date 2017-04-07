@@ -1,0 +1,5 @@
+1	readonly	只读
+2	create	新建
+3	update	修改
+4	delete	删除
+5	full_control	无限制

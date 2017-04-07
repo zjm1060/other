@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.4">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>220</x>
+      <y>340</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>/QAbstractFileCompare/
+--
++void parse(const QString&amp;)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>120</x>
+      <y>10</y>
+      <w>410</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>QFileCompareFactory
+--
++ Result parse(const QString&amp;, const QString&amp;)
+--
+- int parse(const QString&amp;);
+- QStringList title(int) const;
+--
+typedef struct
+{
+	QStringList sourceTitle;
+	QStandardItemModel* source;
+	QStringList targetTitle;
+	QStandardItemModel* target;
+}Result;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>300</x>
+      <y>230</y>
+      <w>50</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;30;30;110</additional_attributes>
+  </element>
+</diagram>

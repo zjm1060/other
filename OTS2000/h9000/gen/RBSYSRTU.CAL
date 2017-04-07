@@ -1,0 +1,141 @@
+RECORD   NAME           = CALC
+
+C*** PUT ACCUMULATOR ENTRIES BELOW HERE ***
+C
+C         ***********************
+C         * CALCULATE  ENTRIES  *
+C         ***********************
+C_____________________________________
+C           STRIP 1
+
+
+ENTRY     NAME     = F1_YG_MAX_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 00 
+
+ENTRY     NAME     = F1_YG_MIN_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 01
+
+ENTRY     NAME     = F2_YG_MAX_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 02
+
+ENTRY     NAME     = F2_YG_MIN_D
+	  FORMAT   = CALC_LG
+          PNT_ADD  = 03
+                               
+ENTRY     NAME     = F3_YG_MAX_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 04
+
+ENTRY     NAME     = F3_YG_MIN_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 05
+
+ENTRY     NAME     = F4_YG_MAX_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 06
+
+ENTRY     NAME     = F4_YG_MIN_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 07
+
+ENTRY     NAME     = JZZYG_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 08
+
+ENTRY     NAME     = JZZYG_M
+          FORMAT   = CALC_LG
+          PNT_ADD  = 09
+
+ENTRY     NAME     = JZZYG_Y
+          FORMAT   = CALC_LG
+          PNT_ADD  = 10
+
+ENTRY     NAME     = JZZZXWG_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 11
+
+ENTRY     NAME     = JZZZXWG_M
+          FORMAT   = CALC_LG
+          PNT_ADD  = 12
+                                
+ENTRY     NAME     = JZZZXWG_Y
+          FORMAT   = CALC_LG
+          PNT_ADD  = 13
+                               
+ENTRY     NAME     = JZZJXWG_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 14
+
+ENTRY     NAME     = JZZJXWG_M
+          FORMAT   = CALC_LG
+          PNT_ADD  = 15
+
+ENTRY     NAME     = JZZJXWG_Y
+          FORMAT   = CALC_LG
+          PNT_ADD  = 16
+                                 
+ENTRY     NAME     = JZBSCYGDL_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 17
+
+ENTRY     NAME     = JZBSCYGDL_M
+          FORMAT   = CALC_LG
+          PNT_ADD  = 18
+
+ENTRY     NAME     = JZBSCYGDL_Y
+          FORMAT   = CALC_LG
+          PNT_ADD  = 19
+                                
+ENTRY     NAME     = CBZDL_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 20
+
+ENTRY     NAME     = CBZDL_M
+          FORMAT   = CALC_LG
+          PNT_ADD  = 21
+
+ENTRY     NAME     = CBZDL_Y
+          FORMAT   = CALC_LG
+          PNT_ADD  = 22
+
+ENTRY     NAME     = XLZDL_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 23
+
+ENTRY     NAME     = XLZDL_M
+          FORMAT   = CALC_LG
+          PNT_ADD  = 24
+
+ENTRY     NAME     = XLZDL_Y
+          FORMAT   = CALC_LG
+          PNT_ADD  = 25
+
+ENTRY     NAME     = ZYG_MAX_D
+	  FORMAT   = CALC_LG
+	  PNT_ADD  = 26
+
+ENTRY     NAME     = ZYG_MIN_D
+	  FORMAT   = CALC_LG
+	  PNT_ADD  = 27
+
+ENTRY     NAME     = UP_SW_MAX_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 28
+
+ENTRY     NAME     = UP_SW_MIN_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 29 
+
+ENTRY     NAME     = DO_SW_MAX_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 30
+
+ENTRY     NAME     = DO_SW_MIN_D
+          FORMAT   = CALC_LG
+          PNT_ADD  = 31	
+
+END
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.4"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring-config/applicationContext.xml</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>com.bitc.jk.xmis.web.SpringInit</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>com.bitc.jk.xmis.web.SessionListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>com.bitc.jk.xmis.task.TaskListener</listener-class>
+	</listener>
+
+	<!-- Http Flex Session attribute and binding listener support -->
+	<listener>
+		<listener-class>flex.messaging.HttpFlexSession</listener-class>
+	</listener>
+
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>com.bitc.jk.xmis.util.EncodingFilter</filter-class>
+	</filter>
+	<filter>
+		<display-name>LoginFilter</display-name>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.bitc.jk.xmis.web.LoginFilter</filter-class>
+		<init-param>
+			<param-name>filterRes</param-name>
+			<param-value>loginAction.do|login.jsp|dynamic.jsp|.js|.css|.jpeg|.jpg|.gif|.png|.ico</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>OpenSessionInViewFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>com.bitc.jk.xmis.web.InitActionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>3</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>3</param-value>
+		</init-param>
+		<init-param>
+			<param-name>layout</param-name>
+			<param-value>extJS</param-value>
+			<!--param-value>withoutExtJS</param-value -->
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>fileUpload</servlet-name>
+		<servlet-class>com.bitc.jk.xmis.web.FileUploadDownload</servlet-class>
+	</servlet>
+<!-- 20140507导入excel -->
+	<servlet>
+		<servlet-name>importExcel</servlet-name>
+		<servlet-class>com.bitc.jk.xmis.web.ImportExcelToDatabase</servlet-class>
+	</servlet>
+
+	<!-- MessageBroker Servlet -->
+	<servlet>
+		<servlet-name>MessageBrokerServlet</servlet-name>
+		<servlet-class>flex.messaging.MessageBrokerServlet</servlet-class>
+		<init-param>
+			<param-name>services.configuration.file</param-name>
+			<param-value>/WEB-INF/flex/services-config.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>fileUpload</servlet-name>
+		<url-pattern>/fileUpload.do</url-pattern>
+	</servlet-mapping>
+	
+<!-- 20140507导入excel -->
+	<servlet-mapping>
+		<servlet-name>importExcel</servlet-name>
+		<url-pattern>/importExcel.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MessageBrokerServlet</servlet-name>
+		<url-pattern>/workflow/messagebroker/*</url-pattern>
+	</servlet-mapping>
+
+	<display-name>xMIS</display-name>
+
+	<welcome-file-list>
+		<welcome-file>/extPortal/bitcMain.jsp</welcome-file>
+	</welcome-file-list>
+
+	<resource-ref>
+		<description>SQLServerDataSource</description>
+		<res-ref-name>jdbc/xmis</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+	<mime-mapping>
+		<extension>ico</extension>
+		<mime-type>image/x-icon</mime-type>
+	</mime-mapping>
+	<!-- 部署到集群环境时，必须去掉该段注释 <distributable/> -->
+</web-app>
+

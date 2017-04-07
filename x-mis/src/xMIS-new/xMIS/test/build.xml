@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2012-9-4 上午09:47:17                                                        
+
+     project    
+     description
+                   
+     BomWu                                                                
+     ====================================================================== -->
+<project name="project" default="default">
+	<description>
+            description
+    </description>
+
+	<!-- properies -->
+	<property name="src.dir" value="src" />
+	<property name="report.dir" value="report" />
+	<property name="classes.dir" value="../WebRoot/WEB-INF/classes" />
+	<property name="lib.dir" value="../WebRoot/WEB-INF/lib" />
+	<property name="js.dir" value="../WebRoot/resources/js" />
+	<property name="extdoc.dir" value="D:/L_File/OpenSource/ext-doc-1.0-SNAPSHOT" />
+	<property name="dist.dir" value="dist" />
+	<property name="doc.dir" value="doc" />
+	<!-- 定义classpath -->
+	<path id="master-classpath">
+		<fileset file="${lib.dir}/*.jar" />
+		<pathelement path="${classes.dir}" />
+	</path>
+
+	<!-- ================================= 
+          target: default              
+         ================================= -->
+	<target name="default" description="description">
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: buildFieldJSON                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="buildFieldJSON">
+		<java classname="util.PublicUtil" classpathref="master-classpath">
+			<arg value="org.fireflow.engine.definition.WorkflowDefinitionInfo" />
+		</java>
+	</target>
+	<!-- - - - - - - - - - - - - - - - - - 
+	          target: extdoc                      
+	     - - - - - - - - - - - - - - - - - -->
+	<target name="extdoc">
+		<copy overwrite="true" todir="${extdoc.dir}/sample/ext/src" description="copy js file">
+			<fileset dir="${js.dir}">
+			</fileset>
+			<mapper type="regexp" from="^([A-Z]{1})(.*)\.js" to="\1\2.js">
+			</mapper>
+		</copy>
+		<exec executable="${extdoc.dir}/sample/ext-doc.bat" dir="${extdoc.dir}/sample/">
+		</exec>
+	</target>
+</project>

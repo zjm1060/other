@@ -1,0 +1,80 @@
+#
+# WorkShop Project File
+#
+# This file is machine generated, do not modify
+#
+
+projectid "/home/ems/system/pas/v4.0a/src/interlocktest.prd";
+projectver 6.0;
+
+project_t cset_3ckeHs4QukuqN4iT4ddA = {
+
+    entities = {
+        {
+            name = "interlockfn.c";
+            type = C;
+            path = "interlockfn.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/pas/v4.0a/src/";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "interlocktest.c";
+            type = C;
+            path = "interlocktest.c";
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/pas/v4.0a/src/";
+            options = {
+                C_Builder<incpath>.value="/usr/openwin/include",
+                C_Builder<incpath>.value="/usr/dt/include";
+            };
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            type = AR;
+            path = "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            buildable = false;
+        },
+        {
+            name = "/usr/ems/system/pas/v4.0a/src/interlocktest.dxe";
+            type = EXE;
+            path = "/usr/ems/system/pas/v4.0a/src/interlocktest.dxe";
+            dependencies = {
+                "interlockfn.c",
+                "interlocktest.c",
+                "/usr/ems/system/dms/v4.0a/lib/dblib.a";
+            };
+            builder = C_Builder;
+            output_dir = "/usr/ems/system/pas/v4.0a/src/";
+        };
+    };
+
+    globals = {
+        {
+            id = "C_Builder";
+            builder = C_Builder;
+            options = {
+                C_Builder<debug>,
+                C_Builder<cpp_comments>;
+            };
+        };
+    };
+
+    gendata = {
+        {
+            tag = projecttype;
+            type = string_t;
+            value ="complex";
+        },
+        {
+            tag = projectdir;
+            type = string_t;
+            value ="/usr/ems/system/pas/v4.0a/src";
+        };
+    };
+};

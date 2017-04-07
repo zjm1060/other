@@ -1,0 +1,35 @@
+一、organizationAction类里的:
+1、updatePwd方法
+人员信息页面  修改缺陷管理的密码
+	//					organizationService.doUpdateMantisPwd(
+	//							Integer.parseInt(request.getParameter("userid")),
+	//							request.getParameter("pwd"), userObj.getUserID());
+	
+	//					// 密码修改 zentao同步 zentao
+	//					organizationService.doUpdateZentaoPwd(
+	//							Integer.parseInt(request.getParameter("userid")),
+	//							request.getParameter("pwd"));
+2、saveEmpInfo方法
+修改缺陷管理的邮箱、电话等基本信息
+	//				organizationService.doDubugData(empObj, userObj);//bug
+
+二、loginAction类里的：
+1、updatePwd方法
+首页  修改缺陷 管理的密码
+	//					organizationService.doUpdateMantisPwd(Integer
+	//							.parseInt(request.getParameter("userid")), request
+	//							.getParameter("pwd"), Integer
+	//							.parseInt(request.getParameter("userid")));
+	
+	//					// 密码修改 zentao同步 zentao
+	//					organizationService.doUpdateZentaoPwd(
+	//							Integer.parseInt(request.getParameter("userid")),
+	//							request.getParameter("pwd"));
+
+********************
+
+以上的方法会根据mis修改缺陷管理的mantis数据库、禅道的数据库；
+连接非192.169.11.6数据库时候应注释；
+正式部署时候需要打开注释；
+
+********************

@@ -1,0 +1,1786 @@
+!******************************************************************
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（停机）
+!******************************************************************
+!******************************************************************
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护不完全纵差I动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87G1_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP1   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_87G1_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护100%定子接地动作(注入式)-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_64G1_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP5   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_64G1_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护100%定子接地动作(3U0+3W)-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_64G2_SOE133_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP6   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_64G2_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护单元件横差动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51GN_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP4   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_51GN_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护转子表层过负荷动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51GR_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP8   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_51GR_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护过负荷动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51GF_SOE13
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP9   ? OPEN
+			&	PBG.F1.SYS.S_1FBH1_LP10  ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_51GF_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护不完全纵差II动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87G2_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP2   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB2  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_87G2_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护完全裂相横差动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87GU_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP3   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB3  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_87GU_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护转子一点接地动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_64E_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP20  ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB4  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_64E_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护励磁变速断动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_50ET_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP21  ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB5  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_50ET_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护励磁变过流动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51ET_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP22  ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB5  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_51ET_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+!**********************************************************************
+!*******                      发电机2号保护                    ********
+!**********************************************************************
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护不完全纵差I动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_87G1_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP1   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_87G1_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!SEQUENCE_NAME:	发电机2号保护100%定子接地动作(3U0+3W)-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_64G1_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP6   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_64G1_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护单元件横差动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_51GN_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP4   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_51GN_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:发电机2号保护过负荷动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_51GF_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP9   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_LP10  ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_51GF_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:发电机2号保护不完全纵差II动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_87G2_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP2   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB2  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_87G2_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:发电机2号保护完全裂相横差动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_87GU_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP3   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB3  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_87GU_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:发电机2号保护转子一点接地动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_64E_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP20  ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB4  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_64E_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:发电机2号保护励磁变速断动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_50ET_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP21  ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB5  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_50ET_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+!******************************************************************
+!	SEQUENCE_NAME:发电机2号保护励磁变过流动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_51ET_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP3   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB3  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_51ET_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（停机）-跳DL1
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87G1_SOE13_DL1
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.INT.GBPA_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.OBJ.DLKP_DL1_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.ANA.LCU_G_AIPW   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.UAC_1F_AIPW   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.LCU_G_AIQW   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（停机）-跳FCB
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87G1_SOE13_FCB
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.OBJ.LCP_FCB_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.LCP_LC_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+STEP:		PBG.F1.ANA.LCP_LC_AIA 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（停机）-去水机停机（启动事故停机流程）
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87G1_SOE13_ASD_SEQ1
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPA_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+
+
+STEP:		PBG.F1.INT.LCU_DQSGA_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（停机）-去水机停机（启动事故停机流程）
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87G1_SOE13_ASD_SEQ2
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPB_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+			+	PBG.F1.INT.GBPB_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+
+STEP:		PBG.F1.INT.LCU_DQSGB_DI00
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（停机）-去调速器停机（急停阀动作）
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_87G1_SOE13_ESD_SEQ
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPA_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_87G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G1_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GN_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GR_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_51GF_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_87G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_87GU_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_64E_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_50ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_51ET_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+
+STEP:		PBG.F1.INT.SJBP_TSJTF_SOE61
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.SLJX_DY_DI40
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.ANA.SLJX_WYB1_AIXC 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_TSA_AIKD 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_TSB_AIKD 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_TSC_AIKD 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 110
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 100
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 90
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 80
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 70
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 60
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 50
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 40
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 30
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 20
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 10
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（不停机）
+!******************************************************************
+!******************************************************************
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护过电压动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_59G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP11   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1   ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_59G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护过激磁动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_FX_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP13     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_LP14     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPA_FX_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护失步动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_78G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP15     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPA_78G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护逆功率动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_32G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP17     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPA_32G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护高频动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_81G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP18     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPA_81G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护失磁动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_40G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP12     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPA_40G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机1号保护突加电压动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_27G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP16     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPA_27G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护过电压动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_59G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP11     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPB_59G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护过激磁动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_FX_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP13     ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_LP14     ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1     ? OPEN
+
+
+STEP:		PBG.F1.INT.GBPB_FX_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护失步动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_78G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP15     ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1     ? OPEN
+
+
+
+STEP:		PBG.F1.INT.GBPB_78G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护逆功率动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_32G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP17     ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1     ? OPEN
+
+
+
+STEP:		PBG.F1.INT.GBPB_32G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护高频动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_81G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP18     ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1     ? OPEN
+
+
+
+STEP:		PBG.F1.INT.GBPB_81G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护失磁动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_40G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP12     ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1     ? OPEN
+
+
+
+STEP:		PBG.F1.INT.GBPB_40G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机2号保护突加电压动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_27G_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	
+
+
+
+STEP:		PBG.F1.INT.GBPB_27G_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护（不停机）动作-跳DL1
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_59G_SOE13_DL1
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+        EQUA_TYPE:	CHANGE
+	EQUATION:	=	PBG.F1.INT.GBPA_59G_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_FX_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPA_78G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28      ? CLOSE
+			+	PBG.F1.INT.GBPA_32G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28      ? CLOSE
+			+	PBG.F1.INT.GBPA_81G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28      ? CLOSE
+			+	PBG.F1.INT.GBPA_40G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28      ? CLOSE
+			+	PBG.F1.INT.GBPA_27G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28      ? CLOSE
+			+	PBG.F1.INT.GBPB_59G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28      ? CLOSE
+			+	PBG.F1.INT.GBPB_FX_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28      ? CLOSE
+			+	PBG.F1.INT.GBPB_78G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28       ? CLOSE
+			+	PBG.F1.INT.GBPB_32G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28       ? CLOSE
+			+	PBG.F1.INT.GBPB_81G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28       ? CLOSE
+			+	PBG.F1.INT.GBPB_40G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28       ? CLOSE
+			+	PBG.F1.INT.GBPB_27G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28       ? CLOSE
+			
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.OBJ.DLKP_DL1_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.ANA.LCU_G_AIPW 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.UAC_1F_AIPW 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+STEP:		PBG.F1.ANA.LCU_G_AIQW 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIA 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIA 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIA 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护（不停机）动作-跳FCB
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_59G_SOE13_FCB
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+        EQUA_TYPE:	CHANGE
+	EQUATION:	=	PBG.F1.INT.GBPA_59G_SOE13   ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_FX_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPA_78G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31      ? CLOSE
+			+	PBG.F1.INT.GBPA_32G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31      ? CLOSE
+			+	PBG.F1.INT.GBPA_81G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31      ? CLOSE
+			+	PBG.F1.INT.GBPB_59G_SOE13    ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31      ? CLOSE
+			+	PBG.F1.INT.GBPB_FX_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31      ? CLOSE
+			+	PBG.F1.INT.GBPB_78G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31       ? CLOSE
+			+	PBG.F1.INT.GBPB_32G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31       ? CLOSE
+			+	PBG.F1.INT.GBPB_81G_SOE13     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31       ? CLOSE
+		
+
+
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.OBJ.LCP_FCB_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIV 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIV 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIV 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.LCP_LC_AIV 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.LCP_LC_AIA 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+
+
+
+!******************************************************************
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（联跳主变）
+!******************************************************************
+
+
+!******************************************************************
+!******************************************************************
+!	SEQUENCE_NAME:发电机1号保护低压保持过流动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH1_LP7   ? OPEN
+			+	PBG.F1.SYS.S_1FBH1_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPA_51VG_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!SEQUENCE_NAME:	发电机2号保护负序电流启动和记忆的低电压过电流保护动作-无法生效
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPB_64G2_SOE13_OPEN
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUATION:	=	PBG.F1.SYS.S_1FBH2_LP7   ? OPEN
+			+	PBG.F1.SYS.S_1FBH2_MCB1  ? OPEN
+
+STEP:		PBG.F1.INT.GBPB_64G2_SOE13
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（联跳主变）-跳DL1
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_DL1
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE		
+	EQUATION:	=	PBG.F1.INT.GBPA_51VG_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP28     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP28     ? CLOSE
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.INT.DLKP_DL1_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.OBJ.DLKP_DL1_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.ANA.LCU_G_AIPW   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.UAC_1F_AIPW   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.LCU_G_AIQW   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIA   
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（联跳主变）-跳FCB
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_FCB
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_51VG_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP31     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP31     ? CLOSE
+			
+STEP:		PBG.F1.INT.LCP_FCB_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.INT.LCP_FCB_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.OBJ.LCP_FCB_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.ANA.UAC_1FA_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FB_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_1FC_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.LCP_LC_AIV  
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+
+STEP:		PBG.F1.ANA.LCP_LC_AIA 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（联跳主变）-去水机停机（启动事故停机流程）
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_ASD_SEQ1
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_51VG_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP30     ? CLOSE
+		
+
+STEP:		PBG.F1.INT.LCU_DQSGA_DI00
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（联跳主变）-去水机停机（启动事故停机流程）
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_ASD_SEQ2
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPB_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP30     ? CLOSE
+
+STEP:		PBG.F1.INT.LCU_DQSGB_DI00
+DELAY:		1
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（联跳主变）-去调速器停机（急停阀动作）
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_ESD_SEQ
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_51VG_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP29     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP29     ? CLOSE
+
+STEP:		PBG.F1.INT.SJBP_TSJTF_SOE61
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.SLJX_DY_DI40
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.ANA.SLJX_WYB1_AIXC 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_TSA_AIKD 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_TSB_AIKD 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.UAC_TSC_AIKD 
+DELAY:		0
+TYPE:		CALC
+EQUATION:	=C 0
+
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 110
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 100
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 90
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 80
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 70
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 60
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 50
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 40
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 30
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 20
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 10
+
+STEP:		PBG.F1.ANA.ZDP_SJ_AIN 
+DELAY:		5
+TYPE:		CALC
+EQUATION:	=C 0
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发发电机保护动作（联跳主变）-跳500kV断路器
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_T500
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_51VG_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP32     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_DYGL     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP32     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_FDYGL    ? CLOSE
+
+
+STEP:		PBG.LCU9.INT.LCP7_5011A_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP7_5011B_SOE11 
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP7_5011C_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP5_5012A_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP5_5012B_SOE11 
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP5_5012C_SOE11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.INT.LCP7_5011A_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP7_5011B_SOE10 
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP7_5011C_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP5_5012A_SOE10 
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP5_5012B_SOE10 
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.INT.LCP5_5012C_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU9.OBJ.LCP7_5011_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU9.OBJ.LCP5_5012_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	发电机保护动作（联跳主变）-跳高厂变DLC1
+!******************************************************************
+SEQUENCE:	PBG.F1.INT.GBPA_51VG_SOE13_DLC1
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE	
+	EQUATION:	=	PBG.F1.INT.GBPA_51VG_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_LP35     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH1_DYGL     ? CLOSE
+			+	PBG.F1.INT.GBPB_64G2_SOE13  ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_LP35     ? CLOSE
+			&	PBG.F1.SYS.S_1FBH2_FDYGL    ? CLOSE
+
+
+STEP:		PBG.LCU8.INT.CY_DLC1_SOE10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.LCU8.INT.CY_DLC1_SOE11 
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU8.OBJ.CY_DLC1_OBJ 
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.LCU8.SYS.S_10KVDLC1_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+
+
+
+
+
+
+
+

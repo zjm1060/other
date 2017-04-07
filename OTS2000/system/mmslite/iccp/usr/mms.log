@@ -1,0 +1,17 @@
+
+
+***********************************************************
+          LOGGING STARTED Mon Nov 27 11:38:43 2006
+***********************************************************
+
+Mon Nov 27 11:38:43 2006 SX_LOG_ERR (sx_dec.c 226) 
+  XML File (logcfg.xml) Open Error
+
+Mon Nov 27 11:38:43 2006 SX_LOG_ERR (logcfgx.c 464) 
+  Error: Trying again w/debug on ... 
+
+Mon Nov 27 11:38:43 2006 SX_LOG_FLOW (sx_dec.c 223) 
+  Start Decoding XML file logcfg.xml
+
+Mon Nov 27 11:38:43 2006 SX_LOG_ERR (sx_dec.c 226) 
+  XML File (logcfg.xml) Open Error

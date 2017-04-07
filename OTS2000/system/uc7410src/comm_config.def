@@ -1,0 +1,35 @@
+[COMM_TASK]
+MB_PLC="mbplc.dxe"
+ACUVIM1="acuvim.dxe"
+
+
+
+[MB_PLC]
+IPADDR1=1.22.1.105
+IPADDR2=2.22.1.105
+PORT=502
+WRITE_BASE_ADDR=5000
+READ_BASE_ADDR= 5500
+READ_DATA_NUM= 0
+
+
+
+[ACUVIM1]
+#byte swap flag
+DATA_SWAP=0
+DATA_BYTES=2
+PORT=/dev/ttyM1
+#operating mode value define
+#define RS232_MODE              0
+#define RS485_2WIRE_MODE        1
+#define RS422_MODE              2
+#define RS485_4WIRE_MODE        3
+MODE=1
+BAUD=19200
+DATA_BITS=8
+#0:no	1:even	2:odd
+PARITY=0
+START_POS=0
+DATA_NUM=16
+UNIT_NUM=1
+FIRST_UNIT_ADDR=1

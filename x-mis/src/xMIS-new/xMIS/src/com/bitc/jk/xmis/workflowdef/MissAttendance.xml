@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fpdl:WorkflowProcess PUBLIC "-//Nieyun Chen//ProcessDefinition//CN" "FireFlow_Process_Definition_Language.dtd">
+
+<fpdl:WorkflowProcess xmlns:fpdl="http://www.fireflow.org/Fireflow_Process_Definition_Language" Id="MissAttence" Name="MissAttence" DisplayName="补报考勤" ResourceFile="" ResourceManager="">
+    <fpdl:DataFields>
+        <fpdl:DataField Id="MissAttence.isAgree" Name="isAgree" DisplayName="是否通过审批" DataType="BOOLEAN" InitialValue="true"/>
+        <fpdl:DataField Id="MissAttence.isDirect" Name="isDirect" DisplayName="是否直属" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="MissAttence.isDirectorLeader" Name="isDirectorLeader" DisplayName="是事业部级领导" DataType="STRING" InitialValue="false"/>
+        <fpdl:DataField Id="MissAttence.forceStop" Name="forceStop" DisplayName="强制结束标识" DataType="BOOLEAN" InitialValue="false"/>
+        <fpdl:DataField Id="MissAttence.isSystemTask" Name="isSystemTask" DisplayName="是定时任务" DataType="BOOLEAN" InitialValue="false"/>
+    </fpdl:DataFields>
+    <fpdl:StartNode Id="MissAttence.START_NODE" Name="START_NODE" DisplayName="">
+        <fpdl:ExtendedAttributes>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="43"/>
+            <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="136"/>
+        </fpdl:ExtendedAttributes>
+    </fpdl:StartNode>
+    <fpdl:Tasks/>
+    <fpdl:Activities>
+        <fpdl:Activity Id="MissAttence.ApplyForAtendance" Name="ApplyForAtendance" DisplayName="提交补报考勤单" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="132"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="91"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="117"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MissAttence.ApplyForAtendance.Task1" Name="Task1" DisplayName="提交补报考勤单" Type="FORM" CompletionStrategy="ALL" DefaultView="EDITFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="__self" DisplayName="申请人">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>CurrentUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="MissAttenceForm" DisplayName="补考勤单子">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/attdMaint.do?method=showPage&amp;applicantID={applicantID}&amp;isOfficialTravel={isOfficialTravel}&amp;isAgent={isAgent}&amp;missAttendanceId={missAttendanceId}&amp;applicantdate={applicantdate}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantname+applicantdate+&quot;补报考勤申请未通过&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MissAttence.DeptAssign" Name="DeptAssign" DisplayName="部门主任审批" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="79"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="103"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="343"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="109"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MissAttence.DeptAssign.Task2" Name="Task2" DisplayName="部门主任审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="NONE">
+                    <fpdl:Performer Name="$deptRole(-2,deptID)" DisplayName="部门主任">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="DepartmentDirectorCheck" DisplayName="部门主任审批">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/attendance/missAttendanceList.jsp?isOfficialTravel={isOfficialTravel}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantname+applicantdate+&quot;补报考勤申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MissAttence.DivisionDeptAssign" Name="DivisionDeptAssign" DisplayName="事业部主任审批" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="84"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="112"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="788"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="106"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MissAttence.DivisionDeptAssign.Task3" Name="Task3" DisplayName="事业部主任审批" Type="FORM" CompletionStrategy="ANY" DefaultView="EDITFORM" Priority="1" LoopStrategy="NONE">
+                    <fpdl:Performer Name="$divisionDeptRole(-1,divisionID)" DisplayName="事业部主任">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>ExpressionAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="DepartmentDirectorCheck" DisplayName="事业部主任审批">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/attendance/missAttendanceList.jsp?isOfficialTravel={isOfficialTravel}</fpdl:Uri>
+                    </fpdl:EditForm>
+                    <fpdl:EventListeners>
+                        <fpdl:EventListener ClassName="missAttendanceDirectorAssignTaskListener"/>
+                    </fpdl:EventListeners>
+                    <fpdl:ExtendedAttributes>
+                        <fpdl:ExtendedAttribute Name="__title" Value="applicantname+applicantdate+&quot;补报考勤申请&quot;"/>
+                    </fpdl:ExtendedAttributes>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MissAttence.Activity10" Name="Activity10" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="78"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="344"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="31"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MissAttence.EndActivity" Name="EndActivity" DisplayName="强制结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="249"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="219"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MissAttence.SystemActivity" Name="SystemActivity" DisplayName="系统任务" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="60"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="569"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="119"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks>
+                <fpdl:Task Id="MissAttence.SystemActivity.SystemTaskList" Name="SystemTaskList" DisplayName="任务队列" Type="FORM" CompletionStrategy="ANY" DefaultView="VIEWFORM" Priority="1" LoopStrategy="REDO">
+                    <fpdl:Performer Name="-10000" DisplayName="系统">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:AssignmentHandler>SystemUserAssignmentHandler</fpdl:AssignmentHandler>
+                    </fpdl:Performer>
+                    <fpdl:EditForm Name="NullTask" DisplayName="空">
+                        <fpdl:Description></fpdl:Description>
+                        <fpdl:Uri>/attendance/missAttendanceList.jsp?</fpdl:Uri>
+                    </fpdl:EditForm>
+                </fpdl:Task>
+            </fpdl:Tasks>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MissAttence.NullActivity" Name="NullActivity" DisplayName="忽略" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="32"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="100"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="567"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="38"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+        <fpdl:Activity Id="MissAttence.NoticeApplicant" Name="NoticeApplicant" DisplayName="通过直接结束" CompletionStrategy="ALL">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="30"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="107"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="902"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="294"/>
+            </fpdl:ExtendedAttributes>
+            <fpdl:Tasks/>
+            <fpdl:TaskRefs/>
+        </fpdl:Activity>
+    </fpdl:Activities>
+    <fpdl:Synchronizers>
+        <fpdl:Synchronizer Id="MissAttence.Synchronizer1" Name="Synchronizer1" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="269"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="139"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="MissAttence.Synchronizer2" Name="Synchronizer2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="482"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="140"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="MissAttence.Synchronizer3" Name="Synchronizer3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="723"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="138"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+        <fpdl:Synchronizer Id="MissAttence.Synchronizer4" Name="Synchronizer4" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="945"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="137"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Synchronizer>
+    </fpdl:Synchronizers>
+    <fpdl:EndNodes>
+        <fpdl:EndNode Id="MissAttence.EndNode3" Name="EndNode3" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="373"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="227"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+        <fpdl:EndNode Id="MissAttence.EndNode2" Name="EndNode2" DisplayName="">
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.height" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.width" Value="20"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.x" Value="1050"/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.bounds.y" Value="300"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:EndNode>
+    </fpdl:EndNodes>
+    <fpdl:Transitions>
+        <fpdl:Transition Id="MissAttence.Transition1" From="MissAttence.START_NODE" To="MissAttence.ApplyForAtendance" Name="Transition1" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition2" From="MissAttence.ApplyForAtendance" To="MissAttence.Synchronizer1" Name="Transition2" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition4" From="MissAttence.Synchronizer1" To="MissAttence.DeptAssign" Name="Transition4" DisplayName="">
+            <fpdl:Condition>!isDirect&amp;&amp;!isDirectorLeader&amp;&amp;!forceStop</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(311,167)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition7" From="MissAttence.DeptAssign" To="MissAttence.Synchronizer2" Name="Transition7" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition18" From="MissAttence.Synchronizer1" To="MissAttence.Activity10" Name="Transition18" DisplayName="直属||事业部级领导">
+            <fpdl:Condition>(isDirect||isDirectorLeader)&amp;&amp;!forceStop</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value=""/>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(314,100)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition19" From="MissAttence.Activity10" To="MissAttence.Synchronizer2" Name="Transition19" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition11" From="MissAttence.Synchronizer1" To="MissAttence.EndActivity" Name="Transition11" DisplayName="强制结束">
+            <fpdl:Condition>forceStop</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.labelPosition" Value="(311,189)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition12" From="MissAttence.EndActivity" To="MissAttence.EndNode3" Name="Transition12" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition14" From="MissAttence.Synchronizer2" To="MissAttence.SystemActivity" Name="Transition14" DisplayName="">
+            <fpdl:Condition>isSystemTask&amp;&amp;isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition16" From="MissAttence.SystemActivity" To="MissAttence.Synchronizer3" Name="Transition16" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition17" From="MissAttence.DivisionDeptAssign" To="MissAttence.Synchronizer4" Name="Transition17" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition21" From="MissAttence.Synchronizer3" To="MissAttence.DivisionDeptAssign" Name="Transition21" DisplayName="">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition13" From="MissAttence.NullActivity" To="MissAttence.Synchronizer3" Name="Transition13" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition15" From="MissAttence.Synchronizer2" To="MissAttence.NullActivity" Name="Transition15" DisplayName="">
+            <fpdl:Condition>!isSystemTask&amp;&amp;isAgree</fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition20" From="MissAttence.NoticeApplicant" To="MissAttence.EndNode2" Name="Transition20" DisplayName="">
+            <fpdl:Condition></fpdl:Condition>
+        </fpdl:Transition>
+        <fpdl:Transition Id="MissAttence.Transition22" From="MissAttence.Synchronizer4" To="MissAttence.NoticeApplicant" Name="Transition22" DisplayName="">
+            <fpdl:Condition>isAgree</fpdl:Condition>
+        </fpdl:Transition>
+    </fpdl:Transitions>
+    <fpdl:Loops>
+        <fpdl:Loop Id="MissAttence.Loop2" From="MissAttence.Synchronizer2" To="MissAttence.START_NODE" Name="Loop2" DisplayName="被打回">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(396,261)(172,259)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+        <fpdl:Loop Id="MissAttence.Loop3" From="MissAttence.Synchronizer4" To="MissAttence.Synchronizer2" Name="Loop3" DisplayName="">
+            <fpdl:Condition>!isAgree</fpdl:Condition>
+            <fpdl:ExtendedAttributes>
+                <fpdl:ExtendedAttribute Name="FIRE_FLOW.edgePointList" Value="(882,264)(829,265)(490,263)"/>
+            </fpdl:ExtendedAttributes>
+        </fpdl:Loop>
+    </fpdl:Loops>
+    <fpdl:EventListeners>
+        <fpdl:EventListener ClassName="sendMessageProcessInstanceEventListener"/>
+    </fpdl:EventListeners>
+</fpdl:WorkflowProcess>

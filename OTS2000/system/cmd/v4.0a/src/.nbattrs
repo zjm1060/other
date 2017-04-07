@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
+<attributes version="1.0">
+    <fileobject name="cmdlib.make">
+        <attr name="MAKEFILE_TYPE" serialvalue="aced0005737200326f72672e6f70656e6964652e66696c6573797374656d732e416273747261637446696c654f626a656374245265706c616365896fa1bce4b5219f0200024c000866696c654e616d657400124c6a6176612f6c616e672f537472696e673b4c000666734e616d6571007e00017870740019636d642f76342e30612f7372632f636d646c69622e6d616b657400102f686f6d652f656d732f73797374656d"/>
+        <attr name="makeTargets" stringvalue="all, /home/ems/system/cmd/v4.0a/lib/cmdlib.lib, clean"/>
+        <attr name="makeCommand" stringvalue="dmake -m serial"/>
+        <attr name="makeOptions" stringvalue=""/>
+        <attr name="buildDirectory" stringvalue="."/>
+    </fileobject>
+    <fileobject name="CmdProcess.o">
+        <attr name="org.netbeans.modules.cpp.ElfLoader.KNOWN_ELFFILE_TYPE" stringvalue="application/x-object+elf"/>
+    </fileobject>
+    <fileobject name="Makefile.ems.cmd">
+        <attr name="MAKEFILE_TYPE" serialvalue="aced0005737200326f72672e6f70656e6964652e66696c6573797374656d732e416273747261637446696c654f626a656374245265706c616365896fa1bce4b5219f0200024c000866696c654e616d657400124c6a6176612f6c616e672f537472696e673b4c000666734e616d6571007e000178707400104d616b6566696c652e656d732e636d6474001e2f686f6d652f656d732f73797374656d2f636d642f76342e30612f737263"/>
+    </fileobject>
+</attributes>

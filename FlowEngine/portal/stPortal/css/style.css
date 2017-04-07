@@ -1,0 +1,172 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #fff1f1; MARGIN: 2px; SCROLLBAR-HIGHLIGHT-COLOR: #be0405; SCROLLBAR-SHADOW-COLOR: #be0405; SCROLLBAR-3DLIGHT-COLOR: #fff1f1; SCROLLBAR-ARROW-COLOR: #be0405; SCROLLBAR-TRACK-COLOR: #cccccc; SCROLLBAR-DARKSHADOW-COLOR: #cccccc
+}
+TD {
+	FONT: 9pt Verdana,Tahoma,宋体
+}
+A:link {
+	COLOR: #660000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #660000; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #be0405; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #be0405; TEXT-DECORATION: underline
+}
+#TxetR {
+	COLOR: #ff0000
+}
+#TextR A:link {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+#TextR A:hover {
+	COLOR: #d35455; TEXT-DECORATION: none
+}
+#RegionIdGraphic {
+	PADDING-LEFT: 7px
+}
+#GlobalToolbar {
+	
+}
+#GlobalToolbar A {
+	BORDER-RIGHT: #be0405 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #be0405 1px solid; DISPLAY: block; PADDING-LEFT: 4px; BACKGROUND: #be0405; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: #be0405 1px solid; COLOR: #ffffff; PADDING-TOP: 0px; BORDER-BOTTOM: #be0405 1px solid; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+#GlobalToolbar A:hover {
+	BORDER-RIGHT: #ffe4e1 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #ffe4e1 1px solid; DISPLAY: block; PADDING-LEFT: 4px; BACKGROUND: #ff0000; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: #ffe4e1 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ffe4e1 1px solid
+}
+#GlobalSearch {
+	PADDING-RIGHT: 8px; FONT: 68% Verdana,Tahoma,宋体; COLOR: #ffffff
+}
+.BarTitle {
+	FONT-WEIGHT: bold
+}
+.gt0 {
+	BORDER-RIGHT: #be0405 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #be0405 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 100%; PADDING-BOTTOM: 2px; BORDER-LEFT: #be0405 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #be0405 1px solid
+}
+.gt1 {
+	BORDER-RIGHT: #ffe4e1 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #ffe4e1 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 100%; BACKGROUND: #ff0000; PADDING-BOTTOM: 2px; BORDER-LEFT: #ffe4e1 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ffe4e1 1px solid
+}
+.gtsep {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 2px; FONT: 65% Verdana,Tahoma,宋体; COLOR: #ffffff; PADDING-TOP: 0px
+}
+#Banner {
+	TEXT-ALIGN: right
+}
+#LocalToolbar {
+	PADDING-RIGHT: 0px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 100%; BACKGROUND: #f1f1f1; PADDING-BOTTOM: 1px; PADDING-TOP: 2px; BORDER-BOTTOM: #999 1px solid
+}
+#LocalToolbar TD {
+	FONT-SIZE: 100%
+}
+#LocalToolbar A {
+	FONT: 11pt Verdana,Tahoma,宋体; COLOR: black; TEXT-DECORATION: none
+}
+.lt0 {
+	BORDER-RIGHT: #f1f1f1 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #f1f1f1 1px solid; PADDING-LEFT: 6px; BACKGROUND: #f1f1f1; PADDING-BOTTOM: 0px; BORDER-LEFT: #f1f1f1 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #f1f1f1 1px solid
+}
+.lt1 {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 6px; BACKGROUND: #ccc; PADDING-BOTTOM: 0px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #999 1px solid
+}
+.ltsep {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 0px; FONT: 70% Verdana,Tahoma,宋体; COLOR: #a9a9a9; PADDING-TOP: 0px
+}
+.localToolbar FORM {
+	MARGIN: 0px
+}
+.localToolbar INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; FONT: 70% Tahoma, Helvetica,宋体; MARGIN-RIGHT: 8px; PADDING-TOP: 0px
+}
+#HomePageLink TD {
+	FONT-SIZE: 100%
+}
+#HomePageLink A {
+	BORDER-RIGHT: #f1f1f1 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #f1f1f1 1px solid; DISPLAY: block; PADDING-LEFT: 6px; BACKGROUND: #f1f1f1; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: #f1f1f1 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #f1f1f1 1px solid; WHITE-SPACE: nowrap
+}
+#HomePageLink A:hover {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #999 1px solid; DISPLAY: block; PADDING-LEFT: 6px; BACKGROUND: #ccc; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #999 1px solid
+}
+#InfoBar {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 100%; BACKGROUND: #fefefe; PADDING-BOTTOM: 1px; PADDING-TOP: 2px; BORDER-BOTTOM: #999 1px solid
+}
+#FootBar {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 100%; BACKGROUND: #be0405; PADDING-BOTTOM: 1px; PADDING-TOP: 2px; BORDER-BOTTOM: #999 1px solid
+}
+.FootBarTail {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#F7D2D2', EndColorStr='#BE0405'); COLOR: #ffffff; HEIGHT: 22px
+}
+.SubTitle {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 6px; BACKGROUND: #f7f7f7; PADDING-BOTTOM: 0px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 0px; HEIGHT: 22px
+}
+.SubTitleMid {
+	BACKGROUND: #ccc
+}
+.SubTitleRed {
+	BACKGROUND: #d35455; COLOR: #ffffff; HEIGHT: 22px
+}
+.SubTitleRed2 {
+	BACKGROUND: #d35455; COLOR: #ffffff; HEIGHT: 22px
+}
+.SubTitleRed {
+	PADDING-LEFT: 8px
+}
+.SubTitleTailRed {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#D35455', EndColorStr='#F0C6C6')
+}
+.SubTitleRed {
+	BACKGROUND: #d35455; COLOR: #ffffff; HEIGHT: 22px
+}
+.SubTitleRed2 {
+	BACKGROUND: #d35455; COLOR: #ffffff; HEIGHT: 22px
+}
+.SubTitleRed {
+	PADDING-LEFT: 8px
+}
+.SubTitleTailRed {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#D35455', EndColorStr='#F0C6C6')
+}
+.SubMore {
+	FONT: 9pt Verdana,Tahoma,宋体; COLOR: #ffffff
+}
+.SubMore A {
+	FONT: 9pt Verdana,Tahoma,宋体; COLOR: #ffffff
+}
+.subWebTab {
+	BORDER-RIGHT: #f1f1f1 1px outset; BORDER-TOP: #f1f1f1 1px outset; PADDING-BOTTOM: 2px; BORDER-LEFT: #f1f1f1 1px outset; PADDING-TOP: 2px; BORDER-BOTTOM: #f1f1f1 1px outset; BACKGROUND-COLOR: #ffffff
+}
+.subListTab {
+	HEIGHT: 22px
+}
+.subTab {
+	PADDING-LEFT: 8px; LINE-HEIGHT: 20px
+}
+.Tabcell {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: Verdana,Tahoma,宋体
+}
+.Tabcell1 {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: Verdana,Tahoma,宋体
+}
+.Tabcell {
+	PADDING-LEFT: 20px; HEIGHT: 24px
+}
+#GoButton {
+	PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0em; FONT: 110% Verdana,Tahoma,宋体; MARGIN-LEFT: 6px; PADDING-TOP: 0em; POSITION: relative; TOP: 1px
+}
+.GoBt {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT: 9pt Verdana,Tahoma,宋体; BORDER-LEFT: #000000 1px solid; WIDTH: 40px; CURSOR: hand; COLOR: #000000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #000000 1px solid
+}
+.GoBtPicture {
+  background-image:url(userlogin.gif);
+	BORDER-RIGHT: #000000 0px solid; BORDER-TOP: #000000 0px solid; FONT: 9pt Verdana,Tahoma,宋体; BORDER-LEFT: #000000 0px solid;HEIGHT:52px; WIDTH: 86px; CURSOR: hand; COLOR: #000000; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #000000 0px solid
+}
+.textfield {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT: 10pt Verdana,Tahoma,宋体; BORDER-LEFT: #000000 1px solid; COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; TEXT-ALIGN: left
+}
+.textfield2 {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT: 10pt Verdana,Tahoma,宋体; BORDER-LEFT: #999999 1px solid; COLOR: #000000; BORDER-BOTTOM: #999999 1px solid; TEXT-ALIGN: left
+}
+.block_title_td {
+	FONT: 10pt Verdana,Tahoma,宋体
+}

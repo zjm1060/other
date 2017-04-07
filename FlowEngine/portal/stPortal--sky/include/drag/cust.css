@@ -1,0 +1,336 @@
+BODY
+{
+    FONT-SIZE: 70%;
+    MARGIN: 0px;
+    FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+TABLE
+{
+    FONT-SIZE: 100%;
+    FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+INPUT
+{
+    FONT-SIZE: 100%;
+    FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+TEXTAREA
+{
+    FONT-SIZE: 100%;
+    FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+SELECT
+{
+    FONT-SIZE: 100%;
+    FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+TH
+{
+    FONT-WEIGHT: normal;
+    COLOR: gray;
+    TEXT-ALIGN: left
+}
+TEXTAREA
+{
+    WIDTH: 100%
+}
+HR
+{
+    COLOR: #3366cc;
+    HEIGHT: 1px
+}
+A:link
+{
+    COLOR: #3366cc;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: #000066;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #ff3300;
+    TEXT-DECORATION: underline
+}
+INPUT.CustButton
+{
+    BACKGROUND-COLOR: #cfd5e5
+}
+.CustLabel
+{
+    COLOR: gray
+}
+.CustMaskAreaTop
+{
+    HEIGHT: 20px
+}
+.CustMaskAreaRight
+{
+    WIDTH: 50px
+}
+.CustOuterTable
+{
+    BACKGROUND-COLOR: #5f8ac5
+}
+.CustContentTable
+{
+    BACKGROUND-COLOR: white
+}
+.CustSpacer
+{
+    WIDTH: 8px;
+    HEIGHT: 1px
+}
+.CustSidebarSpacer
+{
+}
+.CustVerticalDots
+{
+    BACKGROUND-IMAGE: url(../bluedot.gif);
+    BACKGROUND-REPEAT: repeat-y;
+    BACKGROUND-COLOR: white
+}
+.CustMediumRule
+{
+    HEIGHT: 2px;
+    BACKGROUND-COLOR: #3366cc
+}
+.CustThinRule
+{
+    HEIGHT: 1px;
+    BACKGROUND-COLOR: #3366cc
+}
+.CustHeading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 180%;
+    COLOR: #3366cc;
+    FONT-FAMILY: Arial
+}
+.CustCaption
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 180%;
+    FONT-FAMILY: Arial
+}
+.CustSectionLeft
+{
+    VERTICAL-ALIGN: top;
+    WIDTH: 40%;
+    FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.CustButtonSectionLeft
+{
+    VERTICAL-ALIGN: top
+}
+.CustSectionLeftNoBorder
+{
+    VERTICAL-ALIGN: top;
+    WIDTH: 40%
+}
+.CustSectionRight
+{
+    VERTICAL-ALIGN: top;
+    FONT-FAMILY: verdana, arial, helvetica, sans-serif;
+    BACKGROUND-COLOR: whitesmoke
+}
+.CustButtonSectionRight
+{
+    VERTICAL-ALIGN: top;
+    TEXT-ALIGN: right
+}
+TD.CustTitleArea
+{
+    PADDING-BOTTOM: 7px;
+    PADDING-TOP: 7px
+}
+TD.CustCheckbox
+{
+    VERTICAL-ALIGN: top;
+    WIDTH: 20px
+}
+TD.CustCheckboxText
+{
+}
+.LayoutZonesContainer
+{
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    WIDTH: 100%;
+    HEIGHT: 80%;
+    BACKGROUND-COLOR: white
+}
+.LayoutZones
+{
+    BORDER-RIGHT: peachpuff solid;
+    BORDER-TOP: peachpuff solid;
+    BORDER-LEFT: peachpuff solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: peachpuff solid;
+    HEIGHT: 350px
+}
+.LayoutFuncZones
+{
+    BORDER-RIGHT: olive 1pt solid;
+    BORDER-TOP: olive 1pt solid;
+    BORDER-LEFT: olive 1pt solid;
+    WIDTH: 100%;
+    BORDER-BOTTOM: olive 1pt solid;
+    HEIGHT: 4in;
+    BACKGROUND-COLOR: ivory
+}
+.LayoutZoneTop
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    HEIGHT: 40pt;
+    TEXT-ALIGN: left
+}
+.LayoutZoneBottom
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    HEIGHT: 40pt;
+    TEXT-ALIGN: left
+}
+.LayoutZoneLeft
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: 1px solid;
+    WIDTH: 25%;
+    BORDER-BOTTOM: 1px solid;
+    TEXT-ALIGN: left
+}
+.LayoutZoneCenter
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    TEXT-ALIGN: left
+}
+.LayoutZoneRight
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: 1px solid;
+    WIDTH: 25%;
+    BORDER-BOTTOM: 1px solid;
+    TEXT-ALIGN: left
+}
+.LayoutDropZone
+{
+    BORDER-RIGHT: #ffae31 1px solid;
+    BORDER-TOP: #ffae31 1px solid;
+    BORDER-LEFT: #ffae31 1px solid;
+    BORDER-BOTTOM: #ffae31 1px solid
+}
+.LayoutWebPartFrame
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BORDER-LEFT: 0px;
+    WIDTH: 100%;
+    BORDER-BOTTOM: 0px
+}
+.LayoutWebPart
+{
+    BORDER-RIGHT: #3169ce 1px solid;
+    BORDER-TOP: #3169ce 1px solid;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: #3169ce 1px solid;
+    CURSOR: hand;
+    BORDER-BOTTOM: #3169ce 1px solid;
+    FONT-FAMILY: ËÎÌו;
+    BACKGROUND-COLOR: #ced7ef;
+    TEXT-ALIGN: center
+}
+.LayoutIBeam
+{
+    TABLE-LAYOUT: fixed;
+    DISPLAY: none;
+    WIDTH: 50px;
+    POSITION: absolute;
+    BORDER-COLLAPSE: collapse;
+    HEIGHT: 20px
+}
+.LayoutIBeamTDTop
+{
+    BORDER-RIGHT: #ffae31 2px solid;
+    BORDER-LEFT: #ffae31 2px solid;
+    BORDER-BOTTOM: #ffae31 2px solid
+}
+.LayoutIBeamTDBottom
+{
+    BORDER-RIGHT: #ffae31 2px solid;
+    BORDER-LEFT: #ffae31 2px solid
+}
+.LayoutIBeamTR
+{
+    HEIGHT: 5px
+}
+.UserGeneric
+{
+    PADDING-RIGHT: 7px;
+    PADDING-LEFT: 6px;
+    PADDING-BOTTOM: 7px;
+    PADDING-TOP: 4px
+}
+.UserGenericHeader
+{
+    FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 4px;
+    BORDER-BOTTOM: #5f8ac5 1px solid
+}
+.UserGenericBody
+{
+    PADDING-LEFT: 17px;
+    PADDING-BOTTOM: 7px;
+    WIDTH: 100%;
+    PADDING-TOP: 5px
+}
+.UserGenericBulletItem
+{
+    PADDING-BOTTOM: 5px;
+    PADDING-TOP: 0px
+}
+.LayoutLeftBar
+{
+    BORDER-RIGHT: thin;
+    BORDER-TOP: thin;
+    BORDER-LEFT: thin;
+    BORDER-BOTTOM: thin
+}
+.LeftBarTable
+{
+    BORDER-RIGHT: steelblue thin;
+    BORDER-TOP: steelblue thin;
+    FONT-SIZE: 9pt;
+    BORDER-LEFT: steelblue thin;
+    BORDER-BOTTOM: steelblue thin;
+    FONT-FAMILY: ËÎÌו;
+    BACKGROUND-COLOR: lightgrey
+}
+.LayoutDelZone
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    VERTICAL-ALIGN: top;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid;
+    HEIGHT: 10px;
+    TEXT-ALIGN: left
+}

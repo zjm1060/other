@@ -1,0 +1,14 @@
+17:08:11:462	pkg may be lost: src_id=1, last_pkg_num=0, cur_pkg_num=32633
+
+17:08:28:336	pkg may be lost: src_id=1, last_pkg_num=2309, cur_pkg_num=32647
+
+17:12:26:673	pkg may be lost: src_id=1, last_pkg_num=0, cur_pkg_num=32885
+
+17:20:28:346	pkg may be lost: src_id=1, last_pkg_num=3149, cur_pkg_num=33367
+
+17:24:21:242	pkg may be lost: src_id=1, last_pkg_num=0, cur_pkg_num=33595
+
+18:22:01:421	pkg may be lost: src_id=4, last_pkg_num=1000, cur_pkg_num=16652
+
+18:58:19:953	pkg may be lost: src_id=4, last_pkg_num=1000, cur_pkg_num=16923
+

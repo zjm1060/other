@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='GBK'?>
+<menu>
+<item id="muItem_ADD" text="新建子菜单项" img="new.gif"/>
+<item type="separator"/>
+<item id="muItem_EDIT" text="编辑菜单项" img="edit.gif"/>
+<item type="separator"/>
+<item id="muItem_UP" text="上移" img="undo.gif"/>
+<item type="separator"/>
+<item id="muItem_DOWN" text="下移" img="redo.gif"/>
+<item type="separator"/>
+<item id="muItem_DELETE" text="删除菜单项" img="del.gif"/>
+</menu>

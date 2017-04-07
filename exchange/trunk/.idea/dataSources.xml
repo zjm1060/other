@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="2778170625">
+    <data-source source="LOCAL" name="Sybase - @localhost" uuid="e3fb39c6-952b-4128-a502-94d74269cdf5">
+      <driver-ref>sybase.jtds</driver-ref>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sybase://localhost:2638</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>

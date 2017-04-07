@@ -1,0 +1,8 @@
+11:21:53:668	No such a point: 1.26.6-DM_STAT
+11:23:56:065	No such a point: 1.26.6-DM_STAT
+11:28:31:254	No such a point: 1.26.6-DM_STAT
+16:05:25:320	No such a point: 1.26.6-DM_STAT
+16:06:22:083	No such a point: 1.26.6-DM_STAT
+16:09:44:259	No such a point: 1.26.6-DM_STAT
+16:28:43:207	No such a point: 1.26.6-DM_STAT
+16:31:35:391	No such a point: 1.26.6-DM_STAT

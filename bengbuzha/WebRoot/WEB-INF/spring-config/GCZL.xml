@@ -1,0 +1,33 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"  
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd 
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+	
+	 <bean name="/gczlAction"
+        class="com.bitc.jk.xmis.gczl.web.GczlAction">
+        <property name="gczlService">
+            <ref local="gczlServiceImpl" />
+        </property>
+    </bean>
+    <bean id="gczlServiceImpl"
+        class="com.bitc.jk.xmis.gczl.service.impl.GczlServiceImpl">
+        <property name="gczlDao">
+            <ref local="gczlDaoImpl" />
+        </property>
+    </bean>
+  
+    <bean id="gczlDaoImpl"  class="com.bitc.jk.xmis.gczl.dao.impl.GczlDaoImpl">
+    	<property name="ht">
+            <ref bean="ht" />
+        </property>
+    	<property name="jt">
+            <ref bean="JdbcTemplate" />
+        </property>
+    </bean>	
+	</beans>

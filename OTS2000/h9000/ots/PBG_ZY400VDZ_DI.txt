@@ -1,0 +1,1459 @@
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY11现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY11_SW2_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY11_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.OBJ.ZY_ZY11_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY11现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY11_SW2_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY11_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.OBJ.ZY_ZY11_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY11监控合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.ZY_ZY11_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.ZY_ZY11_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.SYS.S_1FZY11_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY11监控分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.ZY_ZY11_OBJ_OPEN
+
+STEP:		PBG.F1.OBJ.ZY_ZY11_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.SYS.S_1FZY11_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY11储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY11_SW3_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY11_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY11储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY11_SW3_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY11_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY12现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY12_SW2_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY12_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.OBJ.ZY_ZY12_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY12现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY12_SW2_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY12_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.OBJ.ZY_ZY12_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY12监控合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.ZY_ZY12_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.ZY_ZY12_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.SYS.S_1FZY12_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY12监控分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.ZY_ZY12_OBJ_OPEN
+
+STEP:		PBG.F1.OBJ.ZY_ZY12_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.SYS.S_1FZY12_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY12储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY12_SW3_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY12_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY12储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY12_SW3_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY12_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY13现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY13_SW2_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.OBJ.ZY_ZY13_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY13现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY13_SW2_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.OBJ.ZY_ZY13_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY11监控合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.ZY_ZY13_OBJ_CLOSE
+
+STEP:		PBG.F1.OBJ.ZY_ZY13_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY13监控分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.OBJ.ZY_ZY13_OBJ_OPEN
+
+STEP:		PBG.F1.OBJ.ZY_ZY13_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY13储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY13_SW3_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY13储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY13_SW3_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY41现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY41_SW2_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY41_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.OBJ.ZY_ZY41_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY41现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY41_SW2_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY41_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.OBJ.ZY_ZY41_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY41监控合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.OBJ.ZY_ZY41_OBJ_CLOSE
+
+STEP:		PBG.F4.OBJ.ZY_ZY41_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.SYS.S_4FZY41_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY41监控分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.OBJ.ZY_ZY41_OBJ_OPEN
+
+STEP:		PBG.F4.OBJ.ZY_ZY41_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.SYS.S_4FZY41_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY41储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY41_SW3_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY41_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY41_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY41储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY41_SW3_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY41_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY42现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY42_SW2_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY42_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.OBJ.ZY_ZY42_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY42现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY42_SW2_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY42_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.OBJ.ZY_ZY42_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY42监控合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.OBJ.ZY_ZY42_OBJ_CLOSE
+
+STEP:		PBG.F4.OBJ.ZY_ZY42_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.SYS.S_4FZY42_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY42监控分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.OBJ.ZY_ZY42_OBJ_OPEN
+
+STEP:		PBG.F4.OBJ.ZY_ZY42_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.SYS.S_4FZY42_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY42储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY42_SW3_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY42_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY42_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY42储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY42_SW3_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY42_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY43现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY43_SW2_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY43_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.OBJ.ZY_ZY43_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY43现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY43_SW2_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY43_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.OBJ.ZY_ZY43_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY43监控合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.OBJ.ZY_ZY43_OBJ_CLOSE
+
+STEP:		PBG.F4.OBJ.ZY_ZY43_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.SYS.S_4FZY43_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY43监控分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.OBJ.ZY_ZY43_OBJ_OPEN
+
+STEP:		PBG.F4.OBJ.ZY_ZY43_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.SYS.S_4FZY43_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY43储能把手合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY43_SW3_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY43_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+STEP:		PBG.F4.POL.ZY_ZY43_DI07
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY43储能把手分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY43_SW3_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY43_SW3
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY103-1现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY103_SW2_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY103_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_10301_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY103-1现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY103_SW2_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY103_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_10301_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY108-1现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY108_SW2_CLOSE
+
+STEP:		PBG.F1.SYS.S_1FZY108_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_10802_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY108-1现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F1.SYS.S_1FZY108_SW2_OPEN
+
+STEP:		PBG.F1.SYS.S_1FZY108_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_10802_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY403-1现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY403_SW2_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY403_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_10301_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY403-1现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY403_SW2_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY403_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_10301_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY408-3现地合闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY408_SW2_CLOSE
+
+STEP:		PBG.F4.SYS.S_4FZY408_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F4.POL.ZY_10802_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	倒闸流程——ZY408-3现地分闸
+!******************************************************************
+SEQUENCE:	PBG.F4.SYS.S_4FZY408_SW2_OPEN
+
+STEP:		PBG.F4.SYS.S_4FZY408_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F4.POL.ZY_10802_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	1F机组400V自用电备自投装置动作ZY11、ZY12
+!******************************************************************
+SEQUENCE:	PBG.F1.POL.ZY_ZY1_BZT_TR
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+ 	EQUA_TYPE:	CHANGE 	
+	EQUATION:	=	PBG.F1.POL.ZY_ZY13_DI11		?	OPEN
+			&	PBG.F1.SYS.S_ZY13_GZ		?	CLOSE
+			&	PBG.F1.SYS.S_1FZY11_1LP1	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY11_1LP2	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY12_2LP1	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY12_2LP2	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP1	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP2	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP3	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_7QA		?	CLOSE
+			&	PBG.F1.POL.ZY_BZT_DI00		?	OPEN
+			&	PBG.F1.POL.ZY_BZT_DI61		?	OPEN
+			&	PBG.F1.POL.ZY_ZY11_DI11		?	OPEN
+			&	PBG.F1.POL.ZY_ZY12_DI11		?	CLOSE
+			&	PBG.F1.ANA.UC2_ZYD17	        >   	220
+			+	PBG.F1.POL.ZY_ZY13_DI11		?	OPEN
+			&	PBG.F1.SYS.S_ZY13_GZ		?	CLOSE
+			&	PBG.F1.SYS.S_1FZY11_1LP1	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY11_1LP2	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY12_2LP1	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY12_2LP2	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP1	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP2	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP3	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_7QA		?	CLOSE
+			&	PBG.F1.POL.ZY_BZT_DI00		?	OPEN
+			&	PBG.F1.POL.ZY_BZT_DI61		?	OPEN
+			&	PBG.F1.POL.ZY_ZY11_DI11		?	CLOSE
+			&	PBG.F1.POL.ZY_ZY12_DI11		?	OPEN
+			&	PBG.F1.ANA.UC2_ZYD1	        >   	220
+
+
+
+STEP:		PBG.F1.POL.ZY_BZT_DI61
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	60
+RESULT:  	1
+
+
+STEP:		PBG.F1.OBJ.ZY_ZY13_OBJ
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+END_SEQUENCE:
+
+
+
+!******************************************************************
+!	SEQUENCE_NAME:	1F机组400V自用电备自投装置动作恢复
+!******************************************************************
+SEQUENCE:	PBG.F1.POL.ZY_ZY11_BZT_TC
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 
+	EQUATION:	=	PBG.F1.POL.ZY_BZT_DI61		?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP4	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY11_3QA		?	CLOSE
+			&	PBG.LCU8.INT.CY_DL1111_SOE11	?	CLOSE
+			&	PBG.F1.POL.ZY_ZY11_DI11		?	OPEN
+			
+
+
+STEP:		PBG.F1.OBJ.ZY_ZY13_OBJ
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+STEP:		PBG.F1.OBJ.ZY_ZY11_OBJ
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY11_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.SYS.S_1FZY11_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_BZT_DI61
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+
+
+
+SEQUENCE:	PBG.F1.POL.ZY_ZY12_BZT_TC
+SEQ_TYPE: 	LOGICAL
+
+WAIT_FOR:
+	EQUA_TYPE:	CHANGE 	
+	EQUATION:	=	PBG.F1.POL.ZY_BZT_DI61		?	CLOSE
+			&	PBG.F1.SYS.S_1FZY13_3LP4	?	CLOSE
+			&	PBG.F1.SYS.S_1FZY12_4QA		?	CLOSE
+			&	PBG.LCU8.INT.CY_DL2112_SOE11	?	CLOSE
+			&	PBG.F1.POL.ZY_ZY12_DI11		?	OPEN
+		
+
+STEP:		PBG.F1.OBJ.ZY_ZY13_OBJ
+DELAY:		5
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.POL.ZY_ZY13_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.SYS.S_1FZY13_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+
+STEP:		PBG.F1.OBJ.ZY_ZY12_OBJ
+DELAY:		2
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI11
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_ZY12_DI10
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+STEP:		PBG.F1.SYS.S_1FZY12_SW2
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	1
+
+
+STEP:		PBG.F1.POL.ZY_BZT_DI61
+DELAY:		0
+TYPE:		LOGICAL
+ALARM_DELAY:	6
+RESULT:  	0
+
+
+END_SEQUENCE:
+

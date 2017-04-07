@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CTaskTable</class>
+ <widget class="QDialog" name="CTaskTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1197</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>案例库</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QTableWidget" name="listTask">
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>任务ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>任务名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>分类名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>工况名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>故障名称</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>属性</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>创建时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>操作提示</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>厂站名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>设备名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>适用工种</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>使用范围</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="title">
+         <string>任务筛选</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>筛选类别：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>请选择</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>任务分类</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>属性</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>工况名称</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>故障名称</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>筛选条件：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_2">
+           <item>
+            <property name="text">
+             <string>请选择</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="buttonSelectByCond">
+           <property name="styleSheet">
+            <string notr="true">font: 11pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>按筛选条件筛选</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="buttonStnDev">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 11pt &quot;宋体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>按厂站设备筛选</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonTaskAdd">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>添加任务</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonTaskModify">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>修改任务</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonTaskDel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>删除任务</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonRefresh">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>刷  新</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buttonExit">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>退  出</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>buttonTaskAdd</tabstop>
+  <tabstop>buttonTaskDel</tabstop>
+  <tabstop>buttonTaskModify</tabstop>
+  <tabstop>buttonRefresh</tabstop>
+  <tabstop>buttonExit</tabstop>
+  <tabstop>listTask</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonExit</sender>
+   <signal>clicked()</signal>
+   <receiver>CTaskTable</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>705</x>
+     <y>490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

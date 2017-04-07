@@ -1,0 +1,118 @@
+
+
+
+
+
+<HTML xmlns:DDF="urn:schemas-microsoft-com:dashboardfactory:" xmlns:DAV="DAV:" xmlns:WP="urn:schemas-microsoft-com:webpart:">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=GB2312">
+<title>工作台</title>
+<LINK rel="stylesheet" ID="lnkStylesheet" href="standard.css">
+<link href="./Common/Css/Public.css" rel="stylesheet" type="text/css">
+<link href="./Common/NewTree/NewTree.css" rel="stylesheet" type="text/css">
+<script src="./Common/NewTree/NewTree.js" language="JavaScript"></script><script src="./Common/Include/Common.js" language="javascript"></script><script src="dbview_ie.js" language="JavaScript"></script><script src="ttreeData.js" language="JavaScript"></script><script src="tTree.js" language="JavaScript"></script><script src="navigation.js" language="JavaScript"></script><SCRIPT LANGUAGE="JavaScript">
+
+				// Dashboard ID
+				var varDashboardID = "0001";
+				var varStoreASP = "PartUpdate.jsp";
+
+				// Initialize the Digital Dashboard Service Component Object
+				
+
+				var L_MinimizeTip_Text = "最小化";
+				var L_RestoreTip_Text = "恢复";
+				var L_TreeViewShow_Text = "显示树形菜单";
+				var L_TreeViewHide_Text = "隐藏树形菜单";
+
+				var m_CurrentBoardID = '0001';
+				var m_CurrentBoardType = '0';
+				var mLastMenuId="a";
+				window.attachEvent("onload",window_onload);
+                function changeMenuColor(mId){
+                	if (mLastMenuId=="a")
+				   		mLastMenuId=mId;
+				   	document.all.item(mId).className="DashNavLinkSelected";
+                    document.all.item(mId).style.color="#363638";
+					document.all.item("td_"+mId).style.backgroundColor="#D8E3FC";
+                    mLastMenuId=mId;
+				}
+				function restoreMenuColor(mId){
+					if(mId!=null)
+						if(mId!=""){
+							document.all.item(mId).className="DashNavLink";
+						}
+				}
+				function menumouseout(mTd){
+					if(mTd.id!=("td_"+mLastMenuId))
+						mTd.style.backgroundColor='#003399';
+					else
+						mTd.style.backgroundColor="#D8E3FC";
+				}
+				function menumouseover(mTd){
+					mTd.style.backgroundColor='#34cafc';
+				}
+        function window_onload()
+        {
+	        
+         	changeMenuColor(m_CurrentBoardID+"_"+m_CurrentBoardType);
+         	ifrmDashBoardContent.window.location = "dashboardEx.jsp?DashboardID=" + m_CurrentBoardID + "&DashboardType=" + m_CurrentBoardType;
+
+        }
+	function ModuleNodeOnClick(modu_id,modu_type){
+		document.all.ifrmDashBoardContent.src = "dashboardEx.jsp?DashboardID=" + modu_id + "&DashboardType=" + modu_type;
+	}
+        </SCRIPT>
+</HEAD>
+<BODY scroll="no" bgcolor="White" rightmargin="0" bottommargin="0" leftmargin="0" topmargin="0">
+<table height="100%" width="100%" cellspacing="0" cellpadding="0" border="0" class="DashTitleTable">
+<tr>
+<td>
+<table width="100%" cellspacing="0" cellpadding="0" class="DashTitleArea" border="0">
+<tr>
+<td class="DashTitleRight">
+<table border="0" cellspacing="0" cellpadding="0" height="100%">
+<tr class="DashTitleGroup">
+<td class="DashTitleImage"></td><td class="DashTitle"><span id="DashTitle"><nobr></nobr></span></td><td class="DashTitleSpacer"><img src="pixel.gif" height="1px" width="150px"></td>
+</tr>
+</table>
+</td><td class="DashTitleRight">
+<table align="right" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td style="position:relative;left:-40px;" class="DashCommandArea"><nobr><A onclick="JavaScript:ChangeSetting()" class="DashCommand" href="#">界面设置</A></nobr></td><td style="position:relative;left:-20px;" class="DashCommandArea"><nobr><A class="DashCommand" href="/portallogout">
+												退出
+											</A></nobr></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<TABLE class="DashNavArea" width="100%" cellpadding="0" cellspacing="0">
+<TR>
+<TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0001_0"><A class="DashNavLink" id="0001_0" href="default.jsp?DashboardID=0001&DashboardType=0"><nobr>工作台</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0017_0"><A class="DashNavLink" id="0017_0" href="default.jsp?DashboardID=0017&DashboardType=0"><nobr>企业文化</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0016_0"><A class="DashNavLink" id="0016_0" href="default.jsp?DashboardID=0016&DashboardType=0"><nobr>个人事务</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0003_0"><A class="DashNavLink" id="0003_0" href="default.jsp?DashboardID=0003&DashboardType=0"><nobr>协同办公</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0004_0"><A class="DashNavLink" id="0004_0" href="default.jsp?DashboardID=0004&DashboardType=0"><nobr>行政管理</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0020_0"><A class="DashNavLink" id="0020_0" href="default.jsp?DashboardID=0020&DashboardType=0"><nobr>档案管理</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0025_0"><A class="DashNavLink" id="0025_0" href="default.jsp?DashboardID=0025&DashboardType=0"><nobr>物资管理</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0023_0"><A class="DashNavLink" id="0023_0" href="default.jsp?DashboardID=0023&DashboardType=0"><nobr>资源管理</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0015_0"><A class="DashNavLink" id="0015_0" href="default.jsp?DashboardID=0015&DashboardType=0"><nobr>信息发布管理</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0019_0"><A class="DashNavLink" id="0019_0" href="default.jsp?DashboardID=0019&DashboardType=0"><nobr>企业运营</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0014_0"><A class="DashNavLink" id="0014_0" href="default.jsp?DashboardID=0014&DashboardType=0"><nobr>系统帮助</nobr></A></TD><TD onmouseout="javascript:menumouseout(this);" onmouseover="javascript:menumouseover(this);" class="DashNavCurDashArea" id="td_0001_1"><A class="DashNavLink" id="0001_1" href="default.jsp?DashboardID=0001&DashboardType=1"><nobr>网易</nobr></A></TD><td width="100%"></td>
+</TR>
+</TABLE>
+</td>
+</tr>
+<tr>
+<td class="HBar"></td>
+</tr>
+<TR height="100%">
+<TD height="100%" valign="top">
+<TABLE border="0" height="100%" width="100%" cellspacing="0" cellpadding="0" id="DetailTable">
+<td width="100%">
+<IFRAME src="" height="100%" width="100%" frameborder="0" name="ifrmDashBoardContent" id="ifrmDashBoardContent" scrolling="Auto">';
+					</IFRAME>
+</td><SCRIPT language="javascript"></SCRIPT>
+</TABLE>
+</TD>
+</TR>
+</table>
+</BODY>
+<iframe frameBorder="0" marginHeight="0" marginWidth="0" id="MoveiFrame"></iframe>
+<div name="SubDiv" id="SubDiv"></div>
+</HTML>
+

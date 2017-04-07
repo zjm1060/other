@@ -1,0 +1,60 @@
+BODY {
+	MARGIN-TOP: 4px; FONT-SIZE: 9pt; MARGIN-LEFT: 0px; COLOR: #000000; LINE-HEIGHT: 180%; MARGIN-RIGHT: 0px; FONT-FAMILY: "宋体"; BACKGROUND-COLOR: #ffffff
+}
+TD {
+	FONT-SIZE: 11pt; MARGIN-LEFT: 2px; LINE-HEIGHT: 180%; MARGIN-RIGHT: 2px; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"
+}
+.fontsize{
+FONT-SIZE: 11pt;
+}
+A:link {
+	FONT-SIZE: 11pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 11pt; COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 11pt; COLOR: #000000; TEXT-DECORATION: underline
+}
+.my A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.my A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.my A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.my A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.my2 A:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #6d6d6d; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.my2 A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #333333; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.my2 A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #333333; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.my2 A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #6d6d6d; FONT-FAMILY: "Song", "MS Shell Dlg", "宋体"; TEXT-DECORATION: none
+}
+.title1 {
+	FONT-SIZE: 11pt; COLOR: #ffffff; TEXT-DECORATION: none
+}
+.title2 {
+	FONT-SIZE: 11pt; COLOR: #771a10; TEXT-DECORATION: none
+}
+.title3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; TEXT-DECORATION: none
+}
+SELECT {
+	FONT-SIZE: 11pt; FILTER: Alpha(Opacity=50); COLOR: #000000; FONT-FAMILY: "song", "MS Shell Dlg", "宋体"; BACKGROUND-COLOR: #f5f5f5
+}
+INPUT.input1 {
+	BORDER-RIGHT: #2f4c69 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #2f4c69 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 9pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #2f4c69 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #2f4c69 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #ececec
+}
+INPUT.input2 {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 9pt; LEFT: 0px; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid; TOP: 0px; HEIGHT: 20px; BACKGROUND-COLOR: #58bff0
+}

@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ots_test", "v4.0a\src\ots_test.vcproj", "{9BEAEA2D-9136-4D56-8F03-2E8897CC25BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6868718-77D2-4E97-990B-43B9E6849361} = {C6868718-77D2-4E97-990B-43B9E6849361}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "login_test", "v4.0a\src\login_test.vcproj", "{9183F1C9-09AB-4085-BB17-E055DE5B8A2F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6868718-77D2-4E97-990B-43B9E6849361} = {C6868718-77D2-4E97-990B-43B9E6849361}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimuTrainee", "SimuTrainee\SimuTrainee.vcproj", "{EEFA4016-DF2B-31A2-988C-15DF26A4B347}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6868718-77D2-4E97-990B-43B9E6849361} = {C6868718-77D2-4E97-990B-43B9E6849361}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimuService", "SimuService\src\SimuService.vcproj", "{11E7D9C3-C421-4108-B9D0-503D0260FBD8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6868718-77D2-4E97-990B-43B9E6849361} = {C6868718-77D2-4E97-990B-43B9E6849361}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimuTutor", "SimuTutor\SimuTutor.vcproj", "{BFDADF12-6E8E-3BB8-9267-1DE3AE55D133}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6868718-77D2-4E97-990B-43B9E6849361} = {C6868718-77D2-4E97-990B-43B9E6849361}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ots_hdb", "ots_hdb\src\ots_hdb.vcproj", "{C6868718-77D2-4E97-990B-43B9E6849361}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TranslatePoint", "TranslatePoint\TranslatePoint.vcproj", "{F7DFFFB0-8F9B-301A-9DDC-B38DEC98E123}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BEAEA2D-9136-4D56-8F03-2E8897CC25BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9BEAEA2D-9136-4D56-8F03-2E8897CC25BC}.Debug|Win32.Build.0 = Debug|Win32
+		{9BEAEA2D-9136-4D56-8F03-2E8897CC25BC}.Release|Win32.ActiveCfg = Release|Win32
+		{9BEAEA2D-9136-4D56-8F03-2E8897CC25BC}.Release|Win32.Build.0 = Release|Win32
+		{9183F1C9-09AB-4085-BB17-E055DE5B8A2F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9183F1C9-09AB-4085-BB17-E055DE5B8A2F}.Debug|Win32.Build.0 = Debug|Win32
+		{9183F1C9-09AB-4085-BB17-E055DE5B8A2F}.Release|Win32.ActiveCfg = Release|Win32
+		{9183F1C9-09AB-4085-BB17-E055DE5B8A2F}.Release|Win32.Build.0 = Release|Win32
+		{EEFA4016-DF2B-31A2-988C-15DF26A4B347}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EEFA4016-DF2B-31A2-988C-15DF26A4B347}.Debug|Win32.Build.0 = Debug|Win32
+		{EEFA4016-DF2B-31A2-988C-15DF26A4B347}.Release|Win32.ActiveCfg = Release|Win32
+		{EEFA4016-DF2B-31A2-988C-15DF26A4B347}.Release|Win32.Build.0 = Release|Win32
+		{11E7D9C3-C421-4108-B9D0-503D0260FBD8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11E7D9C3-C421-4108-B9D0-503D0260FBD8}.Debug|Win32.Build.0 = Debug|Win32
+		{11E7D9C3-C421-4108-B9D0-503D0260FBD8}.Release|Win32.ActiveCfg = Release|Win32
+		{11E7D9C3-C421-4108-B9D0-503D0260FBD8}.Release|Win32.Build.0 = Release|Win32
+		{BFDADF12-6E8E-3BB8-9267-1DE3AE55D133}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFDADF12-6E8E-3BB8-9267-1DE3AE55D133}.Debug|Win32.Build.0 = Debug|Win32
+		{BFDADF12-6E8E-3BB8-9267-1DE3AE55D133}.Release|Win32.ActiveCfg = Release|Win32
+		{BFDADF12-6E8E-3BB8-9267-1DE3AE55D133}.Release|Win32.Build.0 = Release|Win32
+		{C6868718-77D2-4E97-990B-43B9E6849361}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6868718-77D2-4E97-990B-43B9E6849361}.Debug|Win32.Build.0 = Debug|Win32
+		{C6868718-77D2-4E97-990B-43B9E6849361}.Release|Win32.ActiveCfg = Release|Win32
+		{C6868718-77D2-4E97-990B-43B9E6849361}.Release|Win32.Build.0 = Release|Win32
+		{F7DFFFB0-8F9B-301A-9DDC-B38DEC98E123}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7DFFFB0-8F9B-301A-9DDC-B38DEC98E123}.Debug|Win32.Build.0 = Debug|Win32
+		{F7DFFFB0-8F9B-301A-9DDC-B38DEC98E123}.Release|Win32.ActiveCfg = Release|Win32
+		{F7DFFFB0-8F9B-301A-9DDC-B38DEC98E123}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+	GlobalSection(Qt) = preSolution
+		Integration = True
+	EndGlobalSection
+EndGlobal

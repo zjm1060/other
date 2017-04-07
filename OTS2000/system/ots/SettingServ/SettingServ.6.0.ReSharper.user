@@ -1,0 +1,46 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:RawSocketServerWorker.cpp" caret="10666" fromTop="92" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="7449" fromTop="26" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SettingServ.cpp" caret="16669" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SettingServ.cpp" caret="13562" fromTop="14" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SettingServ.cpp" caret="13556" fromTop="14" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="6532" fromTop="18" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="1825" fromTop="29" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SettingServ.cpp" caret="16518" fromTop="13" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SettingServ.cpp" caret="16526" fromTop="14" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="10388" fromTop="25" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="8571" fromTop="22" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="8439" fromTop="37" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="8091" fromTop="28" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="7872" fromTop="21" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="7194" fromTop="15" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="7190" fromTop="14" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="8409" fromTop="24" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="7507" fromTop="17" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="7720" fromTop="24" />
+      <File id="B750A240-8032-4053-9816-A03058F8AFA1/f:SimComm_Teacher.cpp" caret="7414" fromTop="18" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

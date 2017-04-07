@@ -1,0 +1,65 @@
+mitest.mak: mit_var.c
+"miusrobj.h", 第 317 行: 警告: 换行符不是文件中的最后一个字符
+"mit_var.c", 第 1815 行: 警告: 参数 #2 与原型不兼容:
+	原型: 指向 union _mi_dv_data_union {float r, unsigned char s, signed long d, struct  {..} rq, unsigned char sq, struct  {..} dq, struct  {..} rqt, struct  {..} sqt, struct  {..} dqt, struct  {..} re, struct  {..} se, struct  {..} de, struct  {..} ts_name, unsigned char ds_cond, signed short ec_detected, signed long ts_timestamp} 的指针 :"mit_var.c"，第 1649 行
+	参数: 指向 struct _mi_dv_data_union {} 的指针 
+"mit_var.c", 第 2044 行: 警告: 参数 #2 与原型不兼容:
+	原型: 指向 union _mi_dv_data_union {float r, unsigned char s, signed long d, struct  {..} rq, unsigned char sq, struct  {..} dq, struct  {..} rqt, struct  {..} sqt, struct  {..} dqt, struct  {..} re, struct  {..} se, struct  {..} de, struct  {..} ts_name, unsigned char ds_cond, signed short ec_detected, signed long ts_timestamp} 的指针 :"mit_var.c"，第 1937 行
+	参数: 指向 struct _mi_dv_data_union {} 的指针 
+mitest.mak: mit_xmlc.c
+"miusrobj.h", 第 317 行: 警告: 换行符不是文件中的最后一个字符
+mitest.mak: miusrobj.c
+"miusrobj.h", 第 317 行: 警告: 换行符不是文件中的最后一个字符
+"miusrobj.c", 第 17 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1116 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1139 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1162 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1185 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1208 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1231 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1254 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1341 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1412 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1435 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1730 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1753 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1824 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1847 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1870 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1893 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1916 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 1987 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2010 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2081 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2168 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2239 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2326 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2429 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2516 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2619 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2642 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2665 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2688 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2711 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2734 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2757 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2828 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 2899 行: 警告: 类型后的存储类将被废弃
+"miusrobj.c", 第 3002 行: 警告: 类型后的存储类将被废弃
+mitest.mak: ../../src/mmsop_en.c
+mitest.mak: ../../mvl/src/mvlop_en.c
+"../../mvl/src/mvlop_en.c", 第 49 行: 警告: 类型后的存储类将被废弃
+mitest.mak: ../../mvl/src/acse/mvl_acse.c
+"../../mvl/src/acse/mvl_acse.c", 第 163 行: 警告: 类型后的存储类将被废弃
+mitest.mak: ../../src/ukey.c
+"../../src/ukey.c", 第 419 行: 警告: 参数 #2 与原型不兼容:
+	原型: 指向 struct fd_set {long 的 array[32] fds_bits} 的指针 :"/usr/include/sys/select.h"，第 140 行
+	参数: 指向 int 的指针 
+"../../src/ukey.c", 第 419 行: 警告: 参数 #3 与原型不兼容:
+	原型: 指向 struct fd_set {long 的 array[32] fds_bits} 的指针 :"/usr/include/sys/select.h"，第 140 行
+	参数: 指向 int 的指针 
+"../../src/ukey.c", 第 419 行: 警告: 参数 #4 与原型不兼容:
+	原型: 指向 struct fd_set {long 的 array[32] fds_bits} 的指针 :"/usr/include/sys/select.h"，第 140 行
+	参数: 指向 int 的指针 
+FINISHED GENERATING ./mitest EXECUTABLE
+-----------------------------------------------------

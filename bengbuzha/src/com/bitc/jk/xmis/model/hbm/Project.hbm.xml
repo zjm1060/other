@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.bitc.jk.xmis.model">
+	<class name="ProjectObj" table="prj_项目">
+		<id column="项目ID" name="projectID" type="string">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="项目编码" name="projectCode" type="string" />
+		<property column="启动日期" name="startDate" type="date" />
+		<property column="项目名称" name="projectName" type="string" />
+		<property column="创建时间" name="createTime" type="date" />
+		<many-to-one class="ProjectType" column="项目类型ID" fetch="join"
+			lazy="false" name="type" not-found="ignore" />
+		<many-to-one class="ProjectStatus" column="项目状态ID" fetch="join"
+			lazy="false" name="status" />
+		<many-to-one class="ContractObj" column="项目合同ID" name="mainContract" />
+		<many-to-one class="SimpleEmployee" column="项目经理ID" fetch="join"
+			name="manager" not-found="ignore" />
+		<many-to-one class="SimpleDeptObj" column="执行部门" fetch="join"
+			name="executiveDept" not-found="ignore" />
+		<many-to-one class="SimpleEmployee" column="创建人ID" fetch="join"
+			name="creator" not-found="ignore" />
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="SimpleEmployee" column="最后修改人ID"
+			fetch="join" name="lastModifier" />
+		<bag batch-size="4" name="contractList">
+			<key column="项目ID" />
+			<one-to-many class="ContractObj" />
+		</bag>
+	</class>
+	<class name="ProjectType" table="prj_项目类型">
+		<id column="项目类型ID" name="id">
+			<generator class="assigned" />
+		</id>
+		<property column="项目类型" name="name" type="string" />
+	</class>
+	<class name="ProjectStatus" table="prj_项目状态">
+		<id column="项目状态ID" name="id">
+			<generator class="assigned" />
+		</id>
+		<property column="项目状态" name="name" type="string" />
+		<property column="项目状态解释" name="description" type="string" />
+		<property column="是否自定义" name="custom" type="boolean" />
+		<property column="项目ID" name="projectId" type="string" />
+	</class>
+	<class name="ProjectSchedulePlan" table="prj_项目进度计划">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<property column="预计开始日期" name="startDate" type="date" />
+		<property column="实际开始日期" name="actualStartDate" type="date" />
+		<many-to-one class="SimpleEmployee" column="最后修改人ID"
+			fetch="join" name="lastModifier" />
+		<many-to-one name="project" class="ProjectObj" column="项目ID"
+			fetch="join"></many-to-one>
+		<many-to-one name="status" class="ProjectStatus" column="项目状态ID"
+			fetch="join"></many-to-one>
+	</class>
+	<class name="DeviceObj" table="prj_项目物资清单">
+		<id column="项目物资ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="设备名称" name="name" type="string" />
+		<property column="项目ID" name="projectID" type="string" />
+		<property column="数量" name="number" type="integer" />
+		<property column="型号" name="modelType" type="string" />
+		<property column="规格" name="standard" type="string" />
+		<property column="重量" name="weight" type="string" />
+		<property column="参考价格" name="referencePrice" type="double" />
+		<many-to-one class="com.bitc.jk.xmis.model.sys.Currency"
+			column="货币ID" fetch="join" lazy="false" name="currency" />
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="SimpleEmployee" column="最后修改人ID"
+			fetch="join" name="lastModifier" lazy="false" />
+		<set name="purchaseStatus" fetch="join" lazy="false" inverse="true">
+			<key column="项目设备ID" not-null="true" />
+			<one-to-many class="ProjectDevicePurchaseStatus" />
+		</set>
+		<!-- 
+		<property name="outContractCode" type="string" >
+			<formula>( xmis.f_getOutContractCodeByProjectID(项目ID))</formula>
+		</property>
+					
+		<property name="outContractID" type="string" >
+			<formula>( xmis.f_getOutContractIDByProjectID(项目ID))</formula>
+		</property>
+					
+		<property name="outContractName" type="string" >
+			<formula>( xmis.f_getOutContractNameByProjectID(项目ID))</formula>
+		</property>
+		 -->			
+	</class>
+	<class name="ProjectDevicePurchaseStatus" table="prj_项目物资采购状态">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="数量" name="number" type="integer" />
+		<property column="项目设备ID" name="projectDeviceId" type="string" />
+		<property column="采购申请明细ID" name="purchaseRequisitionDetailId"
+			type="string" />
+		<property column="状态" name="status" type="string" />
+	</class>
+	<class name="ProjectTaskObj" table="prj_项目任务表">
+		<id column="项目任务ID" name="taskID">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="任务名称" name="taskName" type="string" />
+		<property column="项目ID" name="projectID" type="string" />
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="SimpleEmployee" column="最后修改人ID"
+			fetch="join" name="lastModifier" />
+		<many-to-one class="DepartmentObj" column="承接部门ID" fetch="join"
+			lazy="false" name="assigedToDept" />
+		<many-to-one class="SimpleEmployee" column="布置人ID" fetch="join"
+			lazy="false" name="grantor" />
+		<bag name="members">
+			<key column="项目任务ID" />
+			<one-to-many class="ProjectTaskMember" />
+		</bag>
+	</class>
+	<class name="ProjectTaskStatus" table="prj_任务状态">
+		<id column="任务状态ID" name="id">
+			<generator class="assigned" />
+		</id>
+		<property column="任务状态" name="name" type="string" />
+	</class>
+	<class name="ProjectTaskMember" table="prj_项目任务成员">
+		<id column="ID" name="id">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="项目任务ID" name="projectTaskId" type="string" />
+		<property column="最后修改日期" name="lastModified" type="timestamp" />
+		<many-to-one class="SimpleEmployee" column="最后修改人ID"
+			fetch="join" name="lastModifier" />
+		<many-to-one class="SimpleEmployee" column="项目成员ID" fetch="join"
+			lazy="false" name="member" />
+		<property column="承担任务" name="taskDesc" type="string" />
+		<property column="成员角色" name="role" type="int" />
+		<property column="备注" name="remark" type="string" />
+	</class>
+	<query name="getDeviceListByProjectId">from DeviceObj d where d.projectID = ?</query>
+	<query name="getTaskListByProjectID">from ProjectTaskObj t where t.projectID = ?</query>
+</hibernate-mapping>

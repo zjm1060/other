@@ -1,0 +1,139 @@
+.cpNavigationRow {
+  height:24px; width:100%; margin:0px; border:1px solid #000000; 
+  background-color:#b22222; color:#ffffff; font-size: 12px;
+  font-family:arial,helvetica,sans-serif; text-align:center;  cursor:default;}
+
+.cpMonthNavImages {
+  padding-left:4px; padding-right:4px; padding-top:1px; 
+  padding-bottom:1px; cursor:hand;}
+
+.cpYearNavImages {
+  padding-left:4px; padding-right:4px; padding-top:1px; 
+  padding-bottom:1px; cursor:hand;}
+
+.cpYearNavigation,.cpMonthNavigation { 
+  height:21px;  margin:0px; padding-top:2px; 
+  background-color:#b22222; text-align:center; vertical-align:center; 
+  text-decoration:none; color:#ffffff; font-weight:bold; 
+  } 
+  
+.cpYearNavigationSelect,.cpMonthNavigationSelect { 
+  height:18px;  margin:2px; padding:1px;
+  background-color:#ffffff; text-align:center; vertical-align:center; 
+  text-decoration:none; color:#000000; font-weight:bold; 
+  } 
+  
+.cpYearNavigation,.cpMonthNavigation, .cpYearNavigationSelect,.cpMonthNavigationSelect,
+.cpTodayText,.cpTodayTextDisabled,.cpText { 
+  font-family:arial; font-size:12px; } 
+
+.cpCurrentMonthDate,.cpWeekEndDate,cpWeekEndDateDisabled,
+.cpCurrentMonthDateDisabled,.cpOtherMonthDate,.cpOtherMonthDateDisabled,
+.cpCurrentDate,.cpCurrentDateWeekEnd,.cpCurrentDateDisabled, .cpCurrentDateWeekEndDisabled{ 
+  font-family:arial; font-size:12px; } 
+
+.cpDayColumnHeader,  {
+  padding:2px; font-size: 11px; font-weight:bold; text-align:center; color:#000000 }
+
+.cpBodyTable {
+  table-layout:fixed;cursor:default; width:100%; 
+  border:1px solid #000000; margin:0px; border-collapse:separate }
+  
+.cpHeaderRow {
+  height:18px; text-align:center; vertical-align:middle; 
+  color:#ffffff; background-color:#008800; 
+  font-family:arial,helvetica,sans-serif; cursor:default; }
+  
+.cpDataRow {
+  height:18px; text-align:center; vertical-align:middle; }
+  
+  
+TD.cpDayColumnHeader { 
+  text-align:center; border:solid thin #C0C0C0;border-width:0 0 1 0; } 
+  
+.cpCurrentMonthDate, .cpWeekEndDate, .cpOtherMonthDate, .cpCurrentDate, .cpCurrentDateWeekEnd { 
+  text-align:center; text-decoration:none; } 
+  
+A.cpCurrentMonthDate, A.cpWeekEndDate, A.cpOtherMonthDate, A.cpCurrentDate, A.cpCurrentDateWeekEnd { 
+  text-align:center; text-decoration:none; } 
+  
+A:visited.cpCurrentMonthDate, A:visited.cpWeekEndDate, A:visited.cpOtherMonthDate, 
+A:visited.cpCurrentDate, A:visited.cpCurrentDateWeekEnd { 
+  text-align:center; text-decoration:none; } 
+  
+A:hover.cpCurrentMonthDate, A:hover.cpWeekEndDate, A:hover.cpOtherMonthDate, 
+A:hover.cpCurrentDate, A:hover.cpCurrentDateWeekEnd { 
+  text-align:center; text-decoration:none; } 
+  
+.cpCurrentMonthDateDisabled, .cpOtherMonthDateDisabled, .cpCurrentDateDisabled, 
+.cpWeekEndDateDisabled, .cpCurrentDateWeekEndDisabled { 
+  text-align:center; text-decoration:line-through; } 
+
+A.cpCurrentMonthDateDisabled, A.cpOtherMonthDateDisabled, A.cpCurrentDateDisabled, 
+A.cpWeekEndDateDisabled, A.cpCurrentDateWeekEndDisabled { 
+  text-align:center; text-decoration:line-through; } 
+
+A:visited.cpCurrentMonthDateDisabled, A:visited.cpOtherMonthDateDisabled, A:visited.cpCurrentDateDisabled, 
+A:visited.cpWeekEndDateDisabled, A:visited.cpCurrentDateWeekEndDisabled { 
+  text-align:center; text-decoration:line-through; } 
+
+A:hover.cpCurrentMonthDateDisabled, A:hover.cpOtherMonthDateDisabled, A:hover.cpCurrentDateDisabled, 
+A:hover.cpWeekEndDateDisabled, A:hover.cpCurrentDateWeekEndDisabled { 
+  text-align:center; text-decoration:line-through; } 
+
+.cpCurrentMonthDate, .cpCurrentDate { 
+  color:#000000; } 
+
+A.cpCurrentMonthDate, A.cpCurrentDate { 
+  color:#000000; } 
+
+A:visited.cpCurrentMonthDate, A:visited.cpCurrentDate { 
+  color:#000000; } 
+
+A:hover.cpCurrentMonthDate, A:hover.cpCurrentDate { 
+  color:#000000; } 
+  
+.cpOtherMonthDate, A.cpOtherMonthDate, A:visited.cpOtherMonthDate, A:hover.cpOtherMonthDate { 
+  color:#ADAA9C; } 
+  
+.cpWeekEndDate, .cpCurrentDateWeekEnd, .cpWeekEndDateDisabled, .cpCurrentDateWeekEndDisabled { 
+  color:#990000; } 
+  
+A.cpWeekEndDate, A.cpCurrentDateWeekEnd, A.cpWeekEndDateDisabled, A.cpCurrentDateWeekEndDisabled { 
+  color:#990000; } 
+  
+A:visited.cpWeekEndDate, A:visited.cpCurrentDateWeekEnd, A:visited.cpWeekEndDateDisabled, A:visited.cpCurrentDateWeekEndDisabled { 
+  color:#990000; } 
+  
+A:hover.cpWeekEndDate, A:hover.cpCurrentDateWeekEnd, A:hover.cpWeekEndDateDisabled, A:hover.cpCurrentDateWeekEndDisabled { 
+  color:#990000; } 
+  
+TD.cpCurrentDate, TD.cpCurrentDateWeekEnd { 
+  border:1px solid #800000; 
+  color:#000000; background-color:#ffffff; }
+  
+TD.cpCurrentDateDisabled { 
+  border-width:1; border:solid thin #FFAAAA; } 
+  
+TD.cpTodayText, TD.cpTodayTextDisabled { 
+  border:solid thin #C0C0C0; border-width:1 0 0 0;} 
+  
+A.cpTodayText, SPAN.cpTodayTextDisabled { 
+  height:18px; } 
+  
+A.cpTodayText:link, A.cpTodayText:active, A.cpTodayText:visited {
+	BORDER-RIGHT: #000000 1px outset; BORDER-TOP: #eae8e4 2px outset; 
+	BORDER-LEFT: #eae8e4 2px outset; BORDER-BOTTOM: #000000 1px outset; 
+	PADDING-RIGHT: 9px; PADDING-LEFT: 8px; 
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 1px; 
+	FONT-SIZE: 12px; VERTICAL-ALIGN: middle; 
+	HEIGHT: 18px; TEXT-ALIGN: center; 
+	TEXT-DECORATION: none; BACKGROUND: #d4d0c8; COLOR: #000000
+}
+  
+.cpTodayTextDisabled { 
+  color:#D0D0D0; } 
+  
+.cpBorder {
+width:172px; table-layout:fixed;
+} 

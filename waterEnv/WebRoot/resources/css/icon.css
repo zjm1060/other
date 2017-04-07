@@ -1,0 +1,166 @@
+.sms {
+    background-image: url("../image/sms.gif") !important;
+}
+
+.meeting {
+    background-image: url("../image/meeting.png") !important;
+}
+
+.schedule {
+    background-image: url("../image/schedule.png") !important;
+}
+
+.sms-send-large {
+    background-image: url("../image/sms-send.png") !important;
+}
+
+.sms-send-16 {
+    background-image: url("../image/sms_send_16.png") !important;
+}
+
+.contact-large {
+    background-image: url("../image/sms-send.png") !important;
+}
+
+.add {
+    background-image: url("../image/add.png") !important;
+}
+
+.add24 {
+    background-image: url("../image/add_24_24.png") !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.linechart{
+    background-color:white;
+    background-image: url("../image/chart_line.png") !important;
+}
+
+.accept {
+    background-image: url("../image/accept.png") !important;
+}
+
+.delete {
+    background-image: url("../image/delete.gif") !important;
+}
+
+.delete24 {
+    background-image: url("../image/delete_24_24.png") !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.edit {
+    background-image: url("../image/edit.png") !important;
+}
+
+.export24 {
+    background-image: url("../image/export_24_24.png") !important;
+}
+
+.xls {
+    background-image: url("../image/xls.gif") !important;
+}
+
+.person {
+    background-image: url("../image/person.png") !important;
+}
+
+.icon-search {
+    background-image: url("../image/search.png") !important;
+}
+
+.icon-user {
+    background-image: url("../image/user.png") !important;
+}
+
+.icon-person {
+    background-image: url("../image/user.png") !important;
+}
+
+.icon-user-add {
+    background-image: url("../image/user_add.png") !important;
+}
+
+.icon-user-delete {
+    background-image: url("../image/user_delete.png") !important;
+}
+
+.icon-group {
+    background-image: url("../image/group.gif") !important;
+}
+
+.icon-contactgroup {
+    background-image: url("../image/contact_group.png") !important;
+}
+
+.icon-contactgroup-large {
+    background-image: url("../image/contact_group_32_32.png") !important;
+}
+
+.icon-contactgroup-locked {
+    background-image: url("../image/contact_group_locked.png") !important;
+}
+
+.icon-contactgroup-locked-large {
+    background-image: url("../image/contact_group_32_32.png") !important;
+}
+
+.icon-company {
+    background-image: url("../image/company.png") !important;
+}
+
+.icon-company-large {
+    background-image: url("../image/company_32_32.png") !important;
+}
+
+.icon-department {
+    background-image: url("../image/department.png") !important;
+}
+
+.icon-department-large {
+    background-image: url("../image/department_32_32.png") !important;
+}
+
+.icon-group-add {
+    background-image: url("../image/group_add.png") !important;
+}
+
+.icon-org-gears {
+    background-image: url("../image/group_gear.png") !important;
+}
+
+.icon-login-16 {
+    background-image: url("../image/login_16.png") !important;
+}
+
+.icon-login-btn {
+    background-image: url("../image/login_btn.png") !important;
+}
+
+.search-item-icon-group {
+    background-image: url("../image/group.gif") !important;
+}
+
+.search-item-icon-contact {
+    background-image: url("../image/person.png") !important;
+}
+
+.detail24 {
+    background-image: url("../image/detail_24_24.png") !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.print24{
+    background-image: url("../image/print_24_24.png") !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.supervision24{
+    background-image: url("../image/supervision24.png") !important;
+    width: 24px !important;
+    height: 24px !important;
+}

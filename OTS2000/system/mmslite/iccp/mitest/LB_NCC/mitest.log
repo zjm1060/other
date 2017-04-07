@@ -1,0 +1,194 @@
+
+
+***********************************************************
+          LOGGING STARTED Sun Jun  8 12:31:22 2003
+***********************************************************
+
+00.000s SLOGALWAYS (logcfgx.c 503) 
+  Logging config complete
+
+06.039s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'NDC_1_DC1'
+      Association 'NDC_LB_LINK'
+        Local AR 'LB_1_DC1'
+          Ignoring AP Title
+          Ignoring AE Qualifier
+          Local address match level 1
+        Remote AR 'net1'
+          AP Title mismatch
+          Remote address match level 0
+
+06.053s MILOG_NERR (mi.c 1433) 
+  Initiate ind, MIS_VCC not matched ...
+
+06.054s MIT_ERROR (mit_usr.c 206) 
+  MI Initiate Indication Error detected:
+
+06.055s MIT_ERROR (mit_usr.c 208) 
+  Could not match remote
+
+06.057s MVLLOG_NERR (mvl_acse.c 1309) 
+  ACSE: User does not want connection
+
+12.038s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'NDC_1_DC1'
+      Association 'NDC_LB_LINK'
+        Local AR 'LB_1_DC1'
+          Ignoring AP Title
+          Ignoring AE Qualifier
+          Local address match level 1
+        Remote AR 'net1'
+          AP Title mismatch
+          Remote address match level 0
+
+12.051s MILOG_NERR (mi.c 1433) 
+  Initiate ind, MIS_VCC not matched ...
+
+12.053s MIT_ERROR (mit_usr.c 206) 
+  MI Initiate Indication Error detected:
+
+12.054s MIT_ERROR (mit_usr.c 208) 
+  Could not match remote
+
+12.055s MVLLOG_NERR (mvl_acse.c 1309) 
+  ACSE: User does not want connection
+
+18.038s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'NDC_1_DC1'
+      Association 'NDC_LB_LINK'
+        Local AR 'LB_1_DC1'
+          Ignoring AP Title
+          Ignoring AE Qualifier
+          Local address match level 1
+        Remote AR 'net1'
+          AP Title mismatch
+          Remote address match level 0
+
+18.051s MILOG_NERR (mi.c 1433) 
+  Initiate ind, MIS_VCC not matched ...
+
+18.053s MIT_ERROR (mit_usr.c 206) 
+  MI Initiate Indication Error detected:
+
+18.054s MIT_ERROR (mit_usr.c 208) 
+  Could not match remote
+
+18.055s MVLLOG_NERR (mvl_acse.c 1309) 
+  ACSE: User does not want connection
+
+24.038s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'NDC_1_DC1'
+      Association 'NDC_LB_LINK'
+        Local AR 'LB_1_DC1'
+          Ignoring AP Title
+          Ignoring AE Qualifier
+          Local address match level 1
+        Remote AR 'net1'
+          AP Title mismatch
+          Remote address match level 0
+
+24.051s MILOG_NERR (mi.c 1433) 
+  Initiate ind, MIS_VCC not matched ...
+
+24.053s MIT_ERROR (mit_usr.c 206) 
+  MI Initiate Indication Error detected:
+
+24.054s MIT_ERROR (mit_usr.c 208) 
+  Could not match remote
+
+24.055s MVLLOG_NERR (mvl_acse.c 1309) 
+  ACSE: User does not want connection
+
+30.038s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'NDC_1_DC1'
+      Association 'NDC_LB_LINK'
+        Local AR 'LB_1_DC1'
+          Ignoring AP Title
+          Ignoring AE Qualifier
+          Local address match level 1
+        Remote AR 'net1'
+          AP Title mismatch
+          Remote address match level 0
+
+30.052s MILOG_NERR (mi.c 1433) 
+  Initiate ind, MIS_VCC not matched ...
+
+30.053s MIT_ERROR (mit_usr.c 206) 
+  MI Initiate Indication Error detected:
+
+30.054s MIT_ERROR (mit_usr.c 208) 
+  Could not match remote
+
+30.056s MVLLOG_NERR (mvl_acse.c 1309) 
+  ACSE: User does not want connection
+
+36.038s MILOG_ADDR (mi.c 1556) 
+  Association Indication: find the target Remote/Association
+    Looking at Remote 'NDC_1_DC1'
+      Association 'NDC_LB_LINK'
+        Local AR 'LB_1_DC1'
+          Ignoring AP Title
+          Ignoring AE Qualifier
+          Local address match level 1
+        Remote AR 'net1'
+          AP Title mismatch
+          Remote address match level 0
+
+36.052s MILOG_NERR (mi.c 1433) 
+  Initiate ind, MIS_VCC not matched ...
+
+36.054s MIT_ERROR (mit_usr.c 206) 
+  MI Initiate Indication Error detected:
+
+36.055s MIT_ERROR (mit_usr.c 208) 
+  Could not match remote
+
+36.056s MVLLOG_NERR (mvl_acse.c 1309) 
+  ACSE: User does not want connection
+
+43.614s MEM_LOG_DUMP (mem_chks.c 1185) 
+  DYNAMIC MEMORY POINTER TABLE 
+  -----------------------------  
+  Ptr 4000b7c8  Size     1  File : mit_main.c   #0269
+  Ptr 40019980  Size    40  File : miusrobj.c   #0370
+  Ptr 40019928  Size    40  File : miusrobj.c   #0343
+  Ptr 400198d0  Size    40  File : miusrobj.c   #0316
+  Ptr 40019878  Size    40  File : miusrobj.c   #0289
+  Ptr 400196a8  Size   420  File : miusrobj.c   #0387
+  Ptr 40019650  Size    44  File : miusrobj.c   #0236
+  Ptr 40016988  Size   636  File : ../../mvl/src/acse/mvl_acse.c #0453
+  Ptr 40014950  Size  8202  File : ../../mvl/src/acse/mvl_acse.c #0349
+  Ptr 40014858  Size   200  File : ../../mvl/src/acse/mvl_acse.c #0388
+  Ptr 4001a8e8  Size     5  File : ../../uca/leant/osicfgx.c #1597
+  Ptr 4001a838  Size   128  File : ../../uca/leant/osicfgx.c #1570
+  Ptr 4001ab28  Size     9  File : ../../uca/leant/osicfgx.c #1597
+  Ptr 4001aa78  Size   128  File : ../../uca/leant/osicfgx.c #1554
+  Ptr 40012f28  Size  6400  File : mit_misc.c   #0281
+  Ptr 400364b0  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 40036428  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 400363a8  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 40036320  Size    16  File : ../../iccp/src/mic.c #0207
+  Ptr 400357c0  Size    16  File : ../../iccp/src/mic.c #0116
+  Ptr 40036238  Size   120  File : ../../iccp/src/mic.c #0105
+  Ptr 40033be0  Size   100  File : ../../iccp/src/misb5.c #0337
+  Ptr 40035588  Size   375  File : ../../iccp/src/mis.c #0545
+  Ptr 400344f0  Size  4200  File : ../../iccp/src/mis.c #0536
+  Ptr 40033b50  Size   100  File : ../../iccp/src/mis.c #0532
+  Ptr 40033fa8  Size  1304  File : ../../iccp/src/mis.c #0524
+  Ptr 40033b18  Size     8  File : ../../iccp/src/mis.c #0519
+  Ptr 40033a68  Size   132  File : ../../iccp/src/mis.c #0513
+  Ptr 40032358  Size   164  File : ../../iccp/src/mi.c #0222
+  Ptr 40030770  Size  7100  File : ../../iccp/src/misb5.c #0102
+  Ptr 4001c578  Size   100  File : ../../iccp/src/misb5.c #0101
+  Ptr 4001b5e8  Size  3936  File : ../../iccp/src/mis.c #0282
+  Ptr 4001b098  Size  1312  File : ../../iccp/src/mis.c #0281
+  Ptr 40012ee8  Size    20  File : mit_xmlc.c   #0112
+  Total number of allocated pointers:   34
+  Total amount of memory allocated:     35384 bytes 
+  Maximum number of pointers allocated: 775
+  Maximum amount of memory allocated:   109695 bytes

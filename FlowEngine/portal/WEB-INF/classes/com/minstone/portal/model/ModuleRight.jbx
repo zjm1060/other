@@ -1,0 +1,13 @@
+[PropertyInfo]
+allowUse,int,false,false, , ,false,<default>
+belongDept,String,false,false, , ,false,<default>
+denyUse,int,false,false, , ,false,<default>
+moduleId,String,false,false,moduleId,moduleId,true,<default>
+userCode,String,false,false, , ,false,<default>
+userName,String,false,false, , ,false,<default>
+userType,int,false,false, , ,false,<default>
+[IconNames]
+
+
+
+

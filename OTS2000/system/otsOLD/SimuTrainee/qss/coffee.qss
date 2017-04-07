@@ -1,0 +1,146 @@
+.QWidget {
+   background-color: beige;
+
+ }
+
+/* Set the selection colors for all widgets. */
+QWidget {
+    selection-color: black;
+    selection-background-color: Silver;
+    color: black;
+}
+QAbstractItemView {
+    show-decoration-selected: 1;
+}
+
+/* Nice Windows-XP-style password character. */
+QLineEdit[echoMode="2"] {
+    lineedit-password-character: 9679;
+}
+
+/* We provide a min-width and min-height for push buttons
+   so that they look elegant regardless of the width of the text. */
+QPushButton {
+    background-color: palegoldenrod;
+    border-width: 1px;
+    border-color: darkkhaki;
+    border-style: solid;
+    border-radius: 5;
+    padding: 3px;
+   /* min-width: 9ex;
+    min-height: 2.5ex;*/
+}
+QToolButton {
+    background-color: palegoldenrod;
+    border-width: 1px;
+    border-color: darkkhaki;
+    border-style: solid;
+    border-radius: 5;
+    padding: 3px;
+   /* min-width: 9ex;
+    min-height: 2.5ex;*/
+}
+
+QPushButton:hover,QToolButton:hover {
+   background-color: khaki;
+}
+
+/* Increase the padding, so the text is shifted when the button is
+   pressed. */
+QPushButton:pressed ,QToolButton:pressed {
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #d0d67c;
+}
+
+QLabel, QAbstractButton {
+    font: bold;
+}
+
+/* Mark mandatory fields with a brownish color. */
+.mandatory {
+    color: brown;
+}
+
+/* Bold text on status bar looks awful. */
+QStatusBar QLabel {
+   font: normal;
+}
+
+QStatusBar::item {
+    border-width: 1;
+    border-color: darkkhaki;
+    border-style: solid;
+    border-radius: 2;
+}
+
+QComboBox, QLineEdit, QSpinBox, QTextEdit, QListView {
+    background-color: cornsilk;
+    selection-color: #0a214c; 
+    selection-background-color: #C19A6B;
+}
+
+QListView {
+    show-decoration-selected: 1;
+}
+
+QListView::item:hover {
+    background-color: wheat;
+}
+
+/* We reserve 1 pixel space in padding. When we get the focus,
+   we kill the padding and enlarge the border. This makes the items
+   glow. */
+QLineEdit {
+    border-width: 1px;
+    padding: 1px;
+    border-style: solid;
+    border-color: darkkhaki;
+    border-radius: 5px;
+}
+
+/* As mentioned above, eliminate the padding and increase the border. */
+QLineEdit:focus, QFrame:focus {
+    border-width: 3px;
+    padding: 0px;
+}
+
+/* A QLabel is a QFrame ... */
+QLabel {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+/* A QToolTip is a QLabel ... */
+QToolTip {
+    border: 2px solid darkkhaki;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 200;
+}
+
+/* Nice to have the background color change when hovered. */
+QRadioButton:hover, QCheckBox:hover {
+    background-color: wheat;
+}
+
+/* Force the dialog's buttons to follow the Windows guidelines. */
+QDialogButtonBox {
+    button-layout: 0;
+}
+ QSlider::groove:horizontal {
+     border: 1px solid #999999;
+     height: 8px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+     margin: 2px 0;
+ }
+
+ QSlider::handle:horizontal {
+     background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);
+     border: 1px solid #5c5c5c;
+     width: 18px;
+     margin: -2px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+     border-radius: 3px;
+ }
+

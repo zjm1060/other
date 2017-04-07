@@ -1,0 +1,55 @@
+## -*- Makefile -*-
+##
+## User: ems
+## Time: 2006-7-5 15:07:30
+## Makefile created by Sun Studio.
+##
+## This file is generated automatically.
+##
+
+
+#### Compiler and tool definitions shared by all build targets #####
+CC = cc
+BASICOPTS = -g
+CFLAGS = $(BASICOPTS) -xCC
+
+
+# Define the target directories.
+TARGETDIR_curvetest.dxe=.
+
+
+all: curvetest.dxe
+
+## Target: curvetest.dxe
+CPPFLAGS_curvetest.dxe = \
+	-I$(ORACLE_HOME)/precomp/public \
+	-I$(ORACLE_HOME)/rdbms/demo \
+	-I../inc
+OBJS_curvetest.dxe =  \
+	$(TARGETDIR_curvetest.dxe)/curvetest.o
+SYSLIBS_curvetest.dxe =   -L$(ORACLE_HOME)/lib/ -L$(ORACLE_HOME)/rdbms/lib/ -lclntsh -lm -lsocket -lnsl -lthread -lpthread -lintl 
+USERLIBS_curvetest.dxe = ../../../lan/v4.0a/lib/lan.lib ../../../dps/v4.0a/lib/ipclib.lib ../../../dms/v4.0a/lib/dblib.lib  ../lib/hdb.lib 
+DEPLIBS_curvetest.dxe = ../../../dps/v4.0a/lib/ipclib.lib  ../../../dms/v4.0a/lib/dblib.lib  
+LDLIBS_curvetest.dxe = $(USERLIBS_curvetest.dxe)
+
+
+# Link or archive
+$(TARGETDIR_curvetest.dxe)/curvetest.dxe: $(TARGETDIR_curvetest.dxe) $(OBJS_curvetest.dxe) $(DEPLIBS_curvetest.dxe)
+	$(LINK.c) $(CFLAGS_curvetest.dxe) $(CPPFLAGS_curvetest.dxe) -o $@ $(OBJS_curvetest.dxe) $(LDLIBS_curvetest.dxe)   $(SYSLIBS_curvetest.dxe)
+
+
+# Compile source files into .o files
+$(TARGETDIR_curvetest.dxe)/curvetest.o: $(TARGETDIR_curvetest.dxe) curvetest.c
+	$(COMPILE.c) $(CFLAGS_curvetest.dxe) $(CPPFLAGS_curvetest.dxe) -o $@ curvetest.c
+
+
+
+#### Clean target deletes all generated files ####
+clean:
+	rm -f \
+		$(TARGETDIR_curvetest.dxe)/curvetest.dxe \
+		$(TARGETDIR_curvetest.dxe)/curvetest.o \
+# Enable dependency checking
+.KEEP_STATE:
+.KEEP_STATE_FILE:.make.state.Sun-sparc-Solaris
+
